@@ -35,7 +35,7 @@ const koKR = {
     placeholder: "이 문서를 더 좋게 만들 방법을 알려주세요.",
   },
   demoVideo: {
-    visualPlanningAria: "Agent-Native 시각적 계획 데모",
+    visualPlanningAria: "FB Factory 시각적 계획 데모",
   },
   docBlocks: {
     blockLabel: "{{alias}} 블록",
@@ -77,8 +77,8 @@ const koKR = {
     close: "닫기",
   },
   agent: {
-    emptyState: "Agent-Native에 대해 무엇이든 물어보세요",
-    suggestionGettingStarted: "Agent-Native는 어떻게 시작하나요?",
+    emptyState: "FB Factory에 대해 무엇이든 물어보세요",
+    suggestionGettingStarted: "FB Factory는 어떻게 시작하나요?",
     suggestionActions: "actions는 어떻게 동작하나요?",
     suggestionPolling: "폴링 동기화 모델을 설명해줘",
     suggestionDeploy: "프로덕션에 배포하려면?",
@@ -100,14 +100,14 @@ const koKR = {
     hero: {
       titleLine1: "agentic apps 를 위한",
       titleAccent: "framework",
-      body: "앱과 에이전트 중 하나를 고를 필요가 없습니다. Agent-Native 앱은 둘 다입니다.",
+      body: "앱과 에이전트 중 하나를 고를 필요가 없습니다. FB Factory 앱은 둘 다입니다.",
       primaryCta: "app 사용해 보기",
       secondaryCta: "문서 읽기",
     },
     code: {
       quickStartComment: "명령 하나로 app 만들기",
       skillInstallComment:
-        "이미 쓰는 coding agent 에 Agent-Native 계획 기능 추가",
+        "이미 쓰는 coding agent 에 FB Factory 계획 기능 추가",
       frameworkComment:
         "하나의 action 이 agent, UI, HTTP, MCP, A2A, CLI 를 구동합니다.",
       frameworkDescription: "로컬 app-agent loop 에서 hello 를 보냅니다.",
@@ -115,7 +115,7 @@ const koKR = {
     actionSurface: {
       eyebrow: "겉에 붙인 AI가 아니라 깊이 agentic",
       title: "하나의 action이 전체 표면을 엽니다",
-      body: "작업을 한 번만 정의하세요. Agent-Native는 이를 UI action, agent 도구, HTTP endpoint, MCP/A2A 표면, CLI 명령, 권한 검사, 감사 기록으로 바꿉니다.",
+      body: "작업을 한 번만 정의하세요. FB Factory는 이를 UI action, agent 도구, HTTP endpoint, MCP/A2A 표면, CLI 명령, 권한 검사, 감사 기록으로 바꿉니다.",
       buildAction: "Action 만들기",
       benefits: {
         oneActionDefinition: {
@@ -149,7 +149,7 @@ const koKR = {
       title: "agentic 앱을 위한 내장 모듈",
       body: "Agents가 처음부터 즉흥적으로 만들면 안 되는 프로덕션 부분을 사람이 검증한 조각으로 제공합니다. 그대로 쓰거나, 소스를 확인하거나, 앱에 다른 것이 필요할 때 교체하세요.",
       pageBody:
-        "Agent-Native는 agents가 즉흥적으로 만들면 안 되는 프로덕션 작업을 위해 사람이 검증한 조각을 제공합니다. 그대로 쓰거나, 소스를 확인하거나, 제품에 맞게 교체하세요.",
+        "FB Factory는 agents가 즉흥적으로 만들면 안 되는 프로덕션 작업을 위해 사람이 검증한 조각을 제공합니다. 그대로 쓰거나, 소스를 확인하거나, 제품에 맞게 교체하세요.",
       viewAll: "모든 모듈 보기",
       browseApps: "모듈로 만든 앱 보기",
       items: {
@@ -214,7 +214,7 @@ const koKR = {
     framework: {
       title: "agent-native apps 를 위한 framework",
       body1:
-        "Agent-Native 는 agentic applications를 만들기 위한 오픈소스 framework 입니다. Chat에서 시작하고, shared actions를 정의한 뒤, 같은 state를 중심으로 UI, jobs, 협업을 추가하세요.",
+        "FB Factory 는 agentic applications를 만들기 위한 오픈소스 framework 입니다. Chat에서 시작하고, shared actions를 정의한 뒤, 같은 state를 중심으로 UI, jobs, 협업을 추가하세요.",
       body2:
         "로컬 PGlite 또는 호스팅 PostgreSQL과 호스팅 제공자, 모델 스택, app 코드를 사용하세요.",
       cta: "framework 가이드 읽기",
@@ -242,7 +242,7 @@ const koKR = {
       },
     },
     templates: {
-      title: "Agent-Native app 사용해 보기",
+      title: "FB Factory app 사용해 보기",
       eyebrow: "작동하는 app에서 시작하고 agent가 발전시키게 하세요.",
       cta: "apps 보기",
     },
@@ -288,7 +288,7 @@ const koKR = {
         saas: "SaaS 도구",
         agents: "원시 AI 에이전트",
         internal: "내부 도구",
-        native: "Agent-Native App",
+        native: "FB Factory App",
       },
       rows: {
         ui: "UI",
@@ -328,7 +328,7 @@ const koKR = {
     batteries: {
       titleLine1: "필수 기능 포함,",
       titleLine2: "실전 검증 완료",
-      body: "빈 프롬프트와 즉흥적인 코드에서 시작하는 대신, Agent-Native는 실제 소프트웨어를 만드는 데 필요한 검증된 구성 요소와 모범 사례를 에이전트에 제공합니다.",
+      body: "빈 프롬프트와 즉흥적인 코드에서 시작하는 대신, FB Factory는 실제 소프트웨어를 만드는 데 필요한 검증된 구성 요소와 모범 사례를 에이전트에 제공합니다.",
       browseToolkits: "툴킷 둘러보기",
     },
     featureCloud: {
@@ -501,12 +501,12 @@ const koKR = {
     },
     stack: {
       title: "나만의 스택을 가져오세요",
-      body: "Agent-Native는 오픈 소스 TypeScript입니다. 모델, 데이터베이스, 호스팅을 선택하고 애플리케이션 코드를 자신의 저장소에 보관하세요.",
-      exploreApps: "Agent-Native로 만든 앱 살펴보기",
+      body: "FB Factory는 오픈 소스 TypeScript입니다. 모델, 데이터베이스, 호스팅을 선택하고 애플리케이션 코드를 자신의 저장소에 보관하세요.",
+      exploreApps: "FB Factory로 만든 앱 살펴보기",
     },
     showcase: {
-      title: "Agent-Native로 만든 실제 앱",
-      body: "무료로 사용하거나 무한히 커스터마이즈할 수 있는 Agent-Native 오픈 소스 앱입니다.",
+      title: "FB Factory로 만든 실제 앱",
+      body: "무료로 사용하거나 무한히 커스터마이즈할 수 있는 FB Factory 오픈 소스 앱입니다.",
       browseApps: "앱 살펴보기",
       scrollLeft: "앱 왼쪽으로 스크롤",
       scrollRight: "앱 오른쪽으로 스크롤",
@@ -555,7 +555,7 @@ const koKR = {
     title: "귀하가 소유한 오픈 소스 에이전트 기반 앱",
     eyebrow: "작동하는 app에서 시작하고 agent가 발전시키게 하세요.",
     body: "모든 것을 맞춤 설정할 수 있습니다.",
-    firstPartyTitle: "Agent-Native가 만든 앱",
+    firstPartyTitle: "FB Factory가 만든 앱",
     community:
       "빈 앱에서 시작하고 싶다면 프레임워크 가이드로 처음부터 시작하세요.",
     createYourOwn: "처음부터 시작",
@@ -564,7 +564,7 @@ const koKR = {
       "작성자가 관리하는 앱을 찾아보세요. 호스팅 버전이 있으면 사용해 보고, 소스 코드를 확인해 직접 맞춤 설정할 수 있습니다.",
     submitCommunityTemplate: "앱 제출",
     communityEmpty:
-      "커뮤니티 등록을 받고 있습니다. 명확한 목적의 Agent-Native 앱을 게시하고 카탈로그에 제출하세요.",
+      "커뮤니티 등록을 받고 있습니다. 명확한 목적의 FB Factory 앱을 게시하고 카탈로그에 제출하세요.",
     publishGuide: "게시 가이드 읽기",
     communityTrust:
       "커뮤니티 앱은 타사 코드입니다. 실행하기 전에 소스 코드, 라이선스, 종속성 및 설치 스크립트를 검토하세요.",
@@ -650,10 +650,10 @@ const koKR = {
   },
   templateDetail: {
     allTemplates: "모든 앱",
-    notFoundMetaTitle: "앱을 찾을 수 없음 — Agent-Native",
+    notFoundMetaTitle: "앱을 찾을 수 없음 - FB Factory",
     notFoundTitle: "앱을 찾을 수 없습니다.",
     notFoundBody: "사용 가능한 앱을 찾으려면 앱 카탈로그를 탐색하세요.",
-    badge: "Agent-Native {{name}}",
+    badge: "FB Factory {{name}}",
     title: "{{name}} 앱",
   },
   templates: {
@@ -834,9 +834,9 @@ const koKR = {
         "소스를 연결하고 AI 에이전트에게 첫 번째 차트를 요청하세요.",
       finalCtaButton: "데이터 살펴보기",
       faq: {
-        question1: "Agent-Native Analytics는 무엇인가요?",
+        question1: "FB Factory Analytics는 무엇인가요?",
         answer1:
-          "Agent-Native Analytics는 무료 오픈소스 AI 분석 도구입니다. 연결된 데이터에 관해 AI 에이전트에게 질문하고, 쿼리를 살펴보고, 재사용 가능한 대시보드를 만들 수 있습니다. 세션 리플레이, 오류 추적, 가동 시간 모니터링도 포함되어 있습니다.",
+          "FB Factory Analytics는 무료 오픈소스 AI 분석 도구입니다. 연결된 데이터에 관해 AI 에이전트에게 질문하고, 쿼리를 살펴보고, 재사용 가능한 대시보드를 만들 수 있습니다. 세션 리플레이, 오류 추적, 가동 시간 모니터링도 포함되어 있습니다.",
         question2: "Analytics를 사용하려면 SQL을 알아야 하나요?",
         answer2:
           "일반적인 언어로 질문하고 AI 에이전트가 쿼리를 작성하도록 할 수 있습니다. BigQuery의 경우 Explorer에서 테이블, 지표, 필터를 선택해 차트를 만들 수도 있습니다. 확인용으로 SQL은 항상 제공되며, 데이터를 잘 아는 사람이 소스 연결이나 지표 정의를 도와야 할 수도 있습니다.",
@@ -953,9 +953,9 @@ const koKR = {
       s057: "호스팅 데모 참고",
       s058: "양방향 동기화",
       faq: {
-        question1: "Agent-Native Calendar란 무엇인가요?",
+        question1: "FB Factory Calendar란 무엇인가요?",
         answer1:
-          "Agent-Native Calendar는 Google Calendar와 연결되는 무료 오픈 소스 AI 일정 관리 도구입니다. AI 에이전트로 일정을 관리하고 미팅 시간을 찾거나, 예약 링크를 공유해 다른 사람이 나와 일정을 잡게 할 수 있습니다.",
+          "FB Factory Calendar는 Google Calendar와 연결되는 무료 오픈 소스 AI 일정 관리 도구입니다. AI 에이전트로 일정을 관리하고 미팅 시간을 찾거나, 예약 링크를 공유해 다른 사람이 나와 일정을 잡게 할 수 있습니다.",
         question2: "어떤 캘린더를 연결할 수 있나요?",
         answer2:
           "여러 Google 계정을 연결해 일정을 함께 볼 수 있습니다. 새로 만들거나 수정한 일정은 선택한 계정의 기본 캘린더에 기록됩니다. 읽기 전용 ICS나 webcal 피드도 표시할 수 있지만, 이는 Outlook이나 Apple 캘린더와의 양방향 연동이 아닙니다. 공유된 Google 캘린더는 보기 전용이며 예약 가능 시간을 차단하지 않습니다.",
@@ -972,9 +972,9 @@ const koKR = {
     },
     assets: {
       faq: {
-        question1: "Agent-Native Assets는 무엇인가요?",
+        question1: "FB Factory Assets는 무엇인가요?",
         answer1:
-          "Agent-Native Assets는 AI 이미지·동영상 생성 기능을 갖춘 무료 오픈소스 브랜드 자산 라이브러리입니다. 기존 미디어를 정리하고 브랜드 레퍼런스를 제공한 뒤, AI 에이전트와 함께 여러 프로젝트에서 자산을 생성, 편집, 재사용할 수 있습니다.",
+          "FB Factory Assets는 AI 이미지·동영상 생성 기능을 갖춘 무료 오픈소스 브랜드 자산 라이브러리입니다. 기존 미디어를 정리하고 브랜드 레퍼런스를 제공한 뒤, AI 에이전트와 함께 여러 프로젝트에서 자산을 생성, 편집, 재사용할 수 있습니다.",
         question2: "Assets는 브랜드 가이드라인을 어떻게 활용하나요?",
         answer2:
           "로고, 참고 이미지, 색상, 스타일 노트를 브랜드 키트에 추가하세요. 재사용 가능한 템플릿은 특정 콘텐츠 유형에 대한 지침을 제공합니다. AI 에이전트는 이 맥락을 활용해 생성을 이끌며, 저장하기 전에 결과를 검토하고 다듬을 수 있습니다.",
@@ -983,7 +983,7 @@ const koKR = {
           "네. 기존 미디어를 업로드하거나 URL에서 자산을 가져온 뒤, 생성된 작업과 함께 라이브러리와 폴더로 정리하세요. 라이브러리를 둘러보고 검색하거나, 자산을 레퍼런스로 재사용하거나, 다른 프로젝트용으로 내보낼 수 있습니다.",
         question4: "제 AI 에이전트가 다른 앱에서 Assets를 사용할 수 있나요?",
         answer4:
-          "네. 지원되는 에이전트를 Assets의 MCP 통합을 통해 연결하면 채팅에서 미디어를 검색, 생성, 선택할 수 있습니다. Agent-Native 앱도 자산을 요청하거나 선택기를 삽입할 수 있습니다. 실제로 제공되는 경험은 호스트 앱과 Assets의 연결 방식에 따라 달라집니다.",
+          "네. 지원되는 에이전트를 Assets의 MCP 통합을 통해 연결하면 채팅에서 미디어를 검색, 생성, 선택할 수 있습니다. FB Factory 앱도 자산을 요청하거나 선택기를 삽입할 수 있습니다. 실제로 제공되는 경험은 호스트 앱과 Assets의 연결 방식에 따라 달라집니다.",
         question5: "Assets가 생성된 이미지에 실제 로고를 사용할 수 있나요?",
         answer5:
           "네. 브랜드 키트에 기준 로고를 설정하고 생성 시 로고 합성을 활성화하세요. Assets는 생성 후 원본 로고를 이미지에 배치하므로 이미지 모델이 로고를 다시 그리지 않습니다. 사용하기 전에 배치 상태와 주변 이미지를 확인하세요.",
@@ -1145,9 +1145,9 @@ const koKR = {
       s060: "캡처할 항목을 선택한 다음 Clips에서 녹화를 시작하세요.",
       s062: "모든 템플릿 보기",
       faq: {
-        question1: "Agent-Native Clips란 무엇인가요?",
+        question1: "FB Factory Clips란 무엇인가요?",
         answer1:
-          "Agent-Native Clips는 버그, 피드백, 사용법을 AI 에이전트와 공유할 수 있는 무료 오픈소스 화면 녹화 도구입니다. AI 에이전트에게 녹화의 전사와 타임스탬프가 찍힌 이미지를 제공하며, 사람들도 같은 클립을 시청할 수 있습니다.",
+          "FB Factory Clips는 버그, 피드백, 사용법을 AI 에이전트와 공유할 수 있는 무료 오픈소스 화면 녹화 도구입니다. AI 에이전트에게 녹화의 전사와 타임스탬프가 찍힌 이미지를 제공하며, 사람들도 같은 클립을 시청할 수 있습니다.",
         question2: "Claude, ChatGPT, Cursor와 녹화 내용을 공유할 수 있나요?",
         answer2:
           "Clips는 전사 내용과 타임스탬프가 찍힌 이미지를 담은, 에이전트가 읽을 수 있는 링크를 제공합니다. 두 가지를 모두 활용하려면 에이전트가 링크된 콘텐츠를 열고 이미지를 읽을 수 있어야 합니다. 일부 채팅 모드는 전사 내용은 읽을 수 있지만 이미지는 별도로 업로드해야 합니다.",
@@ -1283,9 +1283,9 @@ const koKR = {
       s061: "문서 읽기",
       s062: "모든 템플릿 보기",
       faq: {
-        question1: "Agent-Native Content란 무엇인가요?",
+        question1: "FB Factory Content란 무엇인가요?",
         answer1:
-          "Agent-Native Content는 문서, 작업, 데이터베이스를 위한 무료 오픈소스 워크스페이스입니다. AI 문서 편집기와 구조화된 테이블, 공유 페이지를 결합해 사람과 연결된 AI 에이전트가 함께 읽고 업데이트할 수 있게 해줍니다.",
+          "FB Factory Content는 문서, 작업, 데이터베이스를 위한 무료 오픈소스 워크스페이스입니다. AI 문서 편집기와 구조화된 테이블, 공유 페이지를 결합해 사람과 연결된 AI 에이전트가 함께 읽고 업데이트할 수 있게 해줍니다.",
         question2: "Content에서 제 AI 에이전트를 사용할 수 있나요?",
         answer2:
           "네. Content는 Claude Code, Codex, Cursor 같은 지원 도구를 위한 MCP 연결을 제공합니다. 연결하고 접근 권한을 승인하면, 에이전트가 사용 가능한 문서와 데이터베이스로 작업할 수 있습니다. Content에 내장된 에이전트도 사용할 수 있습니다.",
@@ -1407,9 +1407,9 @@ const koKR = {
       s060: "모든 템플릿 보기",
       s061: "100% 무료, 오픈 소스, 사용자 지정 가능.",
       faq: {
-        question1: "Agent-Native Design이란 무엇인가요?",
+        question1: "FB Factory Design이란 무엇인가요?",
         answer1:
-          "Agent-Native Design은 무료 오픈소스 AI 디자인 및 프로토타이핑 도구입니다. AI 에이전트로 인터랙티브 HTML 프로토타입을 만들고, 브랜드를 적용하고, 비주얼 컨트롤이나 채팅으로 디자인을 다듬으세요. 결과물을 공유해 피드백을 받거나 개발을 위해 내보낼 수 있습니다.",
+          "FB Factory Design은 무료 오픈소스 AI 디자인 및 프로토타이핑 도구입니다. AI 에이전트로 인터랙티브 HTML 프로토타입을 만들고, 브랜드를 적용하고, 비주얼 컨트롤이나 채팅으로 디자인을 다듬으세요. 결과물을 공유해 피드백을 받거나 개발을 위해 내보낼 수 있습니다.",
         question2: "AI가 생성한 후에 디자인을 편집할 수 있나요?",
         answer2:
           "네. 비주얼 컨트롤로 텍스트, 간격, 스타일을 조정하거나, AI 에이전트에게 디자인 변경을 요청하세요. 여러 방향을 비교해 보고 선택한 방향을 계속 다듬어 갈 수 있습니다.",
@@ -1430,7 +1430,7 @@ const koKR = {
       heroEyebrow: "Dispatch",
       heroTitle: "AI 에이전트를 한곳에서 조율하세요",
       heroDescription:
-        "Dispatch는 연결된 Agent-Native 앱에 작업을 위임하고, 반복 작업을 예약하고, 공유 연결을 관리하는 무료 오픈소스 AI 에이전트 오케스트레이션 앱입니다.",
+        "Dispatch는 연결된 FB Factory 앱에 작업을 위임하고, 반복 작업을 예약하고, 공유 연결을 관리하는 무료 오픈소스 AI 에이전트 오케스트레이션 앱입니다.",
       heroCta: "작업 위임하기",
       useCasesHeading: "Dispatch로 무엇을 할 수 있나요?",
       useCasesBody:
@@ -1521,9 +1521,9 @@ const koKR = {
       s053: "문서 읽기",
       s054: "모든 템플릿 보기",
       faq: {
-        question1: "Agent-Native Dispatch란 무엇인가요?",
+        question1: "FB Factory Dispatch란 무엇인가요?",
         answer1:
-          "Agent-Native Dispatch는 Agent-Native 워크스페이스를 위한 무료 오픈소스 AI 에이전트 오케스트레이션 앱입니다. 연결된 앱 전반의 요청을 조율하고, 지원되는 채널에서 메시지를 수신하며, 반복 작업을 예약하고, 공유 통합을 관리합니다.",
+          "FB Factory Dispatch는 FB Factory 워크스페이스를 위한 무료 오픈소스 AI 에이전트 오케스트레이션 앱입니다. 연결된 앱 전반의 요청을 조율하고, 지원되는 채널에서 메시지를 수신하며, 반복 작업을 예약하고, 공유 통합을 관리합니다.",
         question2: "Dispatch는 어떤 앱과 함께 작동할 수 있나요?",
         answer2:
           "Dispatch는 워크스페이스에 연결되어 사용 가능한 앱(예: Analytics 또는 Mail)에 작업을 위임합니다. 각 앱은 자체 작업과 데이터를 처리합니다. Dispatch에 사용을 요청하기 전에 관련 연결과 권한을 구성하세요.",
@@ -1640,9 +1640,9 @@ const koKR = {
       s058: "문서 읽기",
       s059: "모든 템플릿 보기",
       faq: {
-        question1: "Agent-Native Forms란 무엇인가요?",
+        question1: "FB Factory Forms란 무엇인가요?",
         answer1:
-          "Agent-Native Forms는 무료 오픈 소스 AI 양식 빌더입니다. AI 에이전트로 양식과 설문을 만들고, 필드를 시각적으로 편집하고, 공개 링크를 게시하고, 같은 앱에서 응답을 검토하거나 분석할 수 있습니다.",
+          "FB Factory Forms는 무료 오픈 소스 AI 양식 빌더입니다. AI 에이전트로 양식과 설문을 만들고, 필드를 시각적으로 편집하고, 공개 링크를 게시하고, 같은 앱에서 응답을 검토하거나 분석할 수 있습니다.",
         question2: "AI가 만든 양식을 나중에 편집할 수 있나요?",
         answer2:
           "네. 시각적 편집기에서 질문, 라벨, 옵션, 필수 필드, 필드 순서를 변경하거나 AI 에이전트에게 변경을 요청할 수 있습니다. 두 방식 모두 같은 양식을 업데이트합니다. 이전 응답을 기반으로 조건부 질문을 추가할 수도 있습니다.",
@@ -1659,9 +1659,9 @@ const koKR = {
     },
     mail: {
       faq: {
-        question1: "Agent-Native Mail은 무엇인가요?",
+        question1: "FB Factory Mail은 무엇인가요?",
         answer1:
-          "Agent-Native Mail은 AI 이메일 어시스턴트를 갖춘 무료 오픈소스 Gmail 이메일 클라이언트입니다. 메시지를 읽고 검색하고, 대화를 요약하고, 답장을 작성하고, 받은편지함이나 AI 에이전트를 통해 이메일을 정리할 수 있습니다.",
+          "FB Factory Mail은 AI 이메일 어시스턴트를 갖춘 무료 오픈소스 Gmail 이메일 클라이언트입니다. 메시지를 읽고 검색하고, 대화를 요약하고, 답장을 작성하고, 받은편지함이나 AI 에이전트를 통해 이메일을 정리할 수 있습니다.",
         question2: "Mail이 기존 Gmail 계정과 연동되나요?",
         answer2:
           "네. 기존 Gmail 계정을 연결하면 Mail을 통해 이메일을 읽고 보낼 수 있습니다. 여러 Gmail 계정을 연결해 한 번에 검색할 수도 있습니다. Mail은 새 이메일 주소를 제공하지 않으며, 현재는 Outlook이나 다른 이메일 제공업체가 아닌 Gmail을 지원합니다.",
@@ -1726,7 +1726,7 @@ const koKR = {
       s007Primary: "Superhuman 및 Gmail에 대한",
       s007Secondary: "오픈 소스 대안",
       s008: "사용해 보기",
-      s009: "호스팅된 데모는 Gmail 액세스를 위해 Agent-Native의 공유 Google 앱을 사용하므로 Google은 계속하기 전에 확인을 요청할 수 있습니다. 자신의 Google OAuth 클라이언트를 사용하려면 로컬에서 실행하세요.",
+      s009: "호스팅된 데모는 Gmail 액세스를 위해 FB Factory의 공유 Google 앱을 사용하므로 Google은 계속하기 전에 확인을 요청할 수 있습니다. 자신의 Google OAuth 클라이언트를 사용하려면 로컬에서 실행하세요.",
       s010: "당신이 할 수 있는 일",
       s011: "귀하의 이메일 클라이언트를 귀하가 완전히 소유한 AI 기반 받은 편지함으로 교체하는 데 필요한 모든 것입니다.",
       s012: "키보드 단축키",
@@ -1781,9 +1781,9 @@ const koKR = {
     },
     plan: {
       faq: {
-        question1: "Agent-Native Plans는 무엇인가요?",
+        question1: "FB Factory Plans는 무엇인가요?",
         answer1:
-          "Agent-Native Plans는 AI 코딩 에이전트를 위한 무료 오픈소스 시각적 계획 도구입니다. 다이어그램, 와이어프레임, 주석이 달린 코드, 댓글로 구현 계획을 검토하거나 완료된 변경 사항의 시각적 요약을 만들 수 있습니다.",
+          "FB Factory Plans는 AI 코딩 에이전트를 위한 무료 오픈소스 시각적 계획 도구입니다. 다이어그램, 와이어프레임, 주석이 달린 코드, 댓글로 구현 계획을 검토하거나 완료된 변경 사항의 시각적 요약을 만들 수 있습니다.",
         question2: "Plans를 코딩 에이전트와 함께 사용하려면 어떻게 하나요?",
         answer2:
           "`npx @agent-native/core@latest skills add visual-plan` 명령으로 계획 스킬과 커넥터를 설치한 다음, 사용 중인 클라이언트에 맞는 인증 단계를 완료하세요. 설치 가이드는 Claude Code와 Codex를 포함한 클라이언트를 다룹니다. 에이전트에게 시각적 구현 계획을 요청하려면 `/visual-plan`을 사용하세요.",
@@ -1943,9 +1943,9 @@ const koKR = {
       s057: "문서 읽기",
       s058: "모든 템플릿 보기",
       faq: {
-        question1: "Agent-Native Slides란 무엇인가요?",
+        question1: "FB Factory Slides란 무엇인가요?",
         answer1:
-          "Agent-Native Slides는 무료 오픈소스 AI 프레젠테이션 제작 도구입니다. AI 에이전트로 아이디어와 참고 자료를 바탕으로 브랜드에 맞는 덱을 만든 다음, 슬라이드를 직접 편집하거나 발표하거나 PowerPoint로 내보낼 수 있습니다.",
+          "FB Factory Slides는 무료 오픈소스 AI 프레젠테이션 제작 도구입니다. AI 에이전트로 아이디어와 참고 자료를 바탕으로 브랜드에 맞는 덱을 만든 다음, 슬라이드를 직접 편집하거나 발표하거나 PowerPoint로 내보낼 수 있습니다.",
         question2: "AI가 생성한 후에도 슬라이드를 편집할 수 있나요?",
         answer2:
           "네. 비주얼 편집기에서 텍스트, 레이아웃, 스타일을 직접 편집하거나, AI 에이전트에게 선택한 슬라이드를 수정하도록 요청할 수 있습니다. 첫 초안 이후에도 프레젠테이션을 계속 다듬을 수 있습니다.",
@@ -2040,9 +2040,9 @@ const koKR = {
     },
     chat: {
       faq: {
-        question1: "Agent-Native Chat란 무엇인가요?",
+        question1: "FB Factory Chat란 무엇인가요?",
         answer1:
-          "Agent-Native Chat은 개발자를 위한 무료 오픈소스 AI 채팅 앱 기반입니다. 저장된 스레드, 에이전트 채팅 인터페이스, 인증, 공유 actions, 실시간 동기화를 제공합니다. 애플리케이션에 맞는 도메인별 데이터와 동작은 직접 추가합니다.",
+          "FB Factory Chat은 개발자를 위한 무료 오픈소스 AI 채팅 앱 기반입니다. 저장된 스레드, 에이전트 채팅 인터페이스, 인증, 공유 actions, 실시간 동기화를 제공합니다. 애플리케이션에 맞는 도메인별 데이터와 동작은 직접 추가합니다.",
         question2: "Chat은 완성된 AI 어시스턴트인가요?",
         answer2:
           "Chat은 동작하는 대화형 인터페이스와 그 기반이 되는 프레임워크를 제공합니다. 예시 action이 포함되어 있지만, 비즈니스 워크플로와 provider 연동은 직접 구현하고 설정해야 합니다.",
@@ -2051,7 +2051,7 @@ const koKR = {
           "네. 워크플로에 필요한 목록, 대기열, 편집기 등 다른 화면을 위한 라우트와 컴포넌트를 추가하세요. 에이전트가 사용하는 것과 동일한 actions 및 애플리케이션 데이터에 연결하면 됩니다.",
         question4: "Chat에 제 비즈니스 도구와의 연동이 포함되어 있나요?",
         answer4:
-          "이 최소 템플릿에는 도메인별 provider 연동이 포함되어 있지 않습니다. 앱에 필요한 연결과 접근 규칙을 직접 추가하세요. 워크플로에 이미 맞는 Agent-Native 앱이 있다면, 그 템플릿이 더 적합한 출발점일 수 있습니다.",
+          "이 최소 템플릿에는 도메인별 provider 연동이 포함되어 있지 않습니다. 앱에 필요한 연결과 접근 규칙을 직접 추가하세요. 워크플로에 이미 맞는 FB Factory 앱이 있다면, 그 템플릿이 더 적합한 출발점일 수 있습니다.",
         question5: "제 버전으로 커스터마이즈해서 배포할 수 있나요?",
         answer5:
           "네. CLI로 복사본을 만들고 actions, 데이터, 인터페이스를 추가한 뒤 애플리케이션을 배포하세요. 환경에 맞게 인증과 provider 접근을 설정하고, 사용자와 공유하기 전에 추가한 워크플로를 테스트하세요.",
@@ -2105,14 +2105,14 @@ const koKR = {
     metaTitle:
       "Agent Skills - 코딩 에이전트를 위한 Visual Plan, Visual Recap, Visual Edit",
     metaDescription:
-      "코딩 에이전트가 시각적 계획, PR 요약, 로컬 시각적 편집을 사용할 수 있도록 Agent-Native 앱 기반 스킬을 설치합니다.",
+      "코딩 에이전트가 시각적 계획, PR 요약, 로컬 시각적 편집을 사용할 수 있도록 FB Factory 앱 기반 스킬을 설치합니다.",
     metaOgDescription:
-      "호스팅, 검사, 커스터마이즈가 가능한 Agent-Native 앱으로 코딩 에이전트에 슬래시 명령을 추가하세요.",
+      "호스팅, 검사, 커스터마이즈가 가능한 FB Factory 앱으로 코딩 에이전트에 슬래시 명령을 추가하세요.",
     metaKeywords:
       "agent skills, visual plan, visual recap, visual edit, 코딩 에이전트, Claude Code, Codex, PR 리뷰, 계획, agent-native",
     heroTitle: "코딩 에이전트에 새로운 능력을 더하세요",
     heroBody:
-      "완전히 커스터마이즈할 수 있는 Agent-Native 앱 기반 스킬을 설치하세요. 구현 전 시각적 계획, 변경 후 시각적 PR 요약, 로컬 UI 흐름의 시각적 편집을 제공합니다.",
+      "완전히 커스터마이즈할 수 있는 FB Factory 앱 기반 스킬을 설치하세요. 구현 전 시각적 계획, 변경 후 시각적 PR 요약, 로컬 UI 흐름의 시각적 편집을 제공합니다.",
     sectionTitle: "코딩 에이전트를 위한 앱 기반 스킬",
     sectionBody:
       "호스팅된 공유 앱 링크, 로컬 파일 또는 자체 호스팅/커스텀 앱을 사용할 수 있으며, 에이전트는 필요한 지침과 해당 MCP 표면을 받습니다.",
@@ -2149,9 +2149,9 @@ const koKR = {
     },
   },
   downloadPage: {
-    title: "Agent-Native 다운로드",
+    title: "FB Factory 다운로드",
     body: "회의, 디자인, 프레젠테이션, 데이터, 일정 관리, 이메일 등을 위한 에이전틱 앱을 하나의 데스크톱 앱에서 사용해 보세요.",
-    openDesktop: "Agent-Native 열기",
+    openDesktop: "FB Factory 열기",
     downloadInstaller: "설치 프로그램 다운로드",
     downloadStarted: "다운로드가 시작되었습니다",
     downloadAgain: "작동하지 않았나요? 다시 다운로드해 보세요",
@@ -2164,7 +2164,7 @@ const koKR = {
     nightly: "Nightly",
     runFromSource: "직접 만들기",
     runFromSourceBody:
-      "명령줄에서 Agent-Native 앱을 생성하고 macOS, Windows, Linux에서 로컬로 실행하세요.",
+      "명령줄에서 FB Factory 앱을 생성하고 macOS, Windows, Linux에서 로컬로 실행하세요.",
     platforms: {
       mac: {
         primary: "Apple Silicon용 다운로드",
@@ -2192,7 +2192,7 @@ const koKR = {
   },
   brandPage: {
     eyebrow: "브랜드 자료",
-    title: "Agent-Native 로고",
+    title: "FB Factory 로고",
     body: "기사, 프레젠테이션, 커뮤니티 프로젝트에 사용할 공식 로고와 심볼을 다운로드하세요. SVG 파일은 어떤 크기에서도 선명하며 투명 배경을 지원합니다.",
     horizontal: {
       title: "가로형 로고",
@@ -2225,14 +2225,14 @@ const koKR = {
     lastUpdated: "마지막 업데이트: {{date}}",
     resources: {
       eyebrow: "법률 리소스",
-      title: "Agent-Native 법률 리소스",
+      title: "FB Factory 법률 리소스",
       intro:
-        "Agent-Native 호스팅 애플리케이션과 서비스에 적용되는 독립적인 법률 정책입니다.",
+        "FB Factory 호스팅 애플리케이션과 서비스에 적용되는 독립적인 법률 정책입니다.",
       agentNative: {
-        title: "Agent-Native 정책",
-        body: "이 페이지들은 공통 정책 체계를 Agent-Native 오픈 소스 프로젝트와 호스팅 예제에 맞게 조정합니다.",
-        terms: "Agent-Native 서비스 약관",
-        privacy: "Agent-Native 개인정보 처리방침",
+        title: "FB Factory 정책",
+        body: "이 페이지들은 공통 정책 체계를 FB Factory 오픈 소스 프로젝트와 호스팅 예제에 맞게 조정합니다.",
+        terms: "FB Factory 서비스 약관",
+        privacy: "FB Factory 개인정보 처리방침",
       },
       builder: {
         title: "호스팅 서비스 추가 정책",
@@ -2249,18 +2249,18 @@ const koKR = {
       },
       notIncluded: {
         title: "포함되지 않는 상업적 조건",
-        body: "Agent-Native에는 유료 요금제나 엔터프라이즈 계약이 없습니다. 엔터프라이즈 SLA, 지원 약관, DPA, 보안 부록, 전문 서비스 약관 및 요금과 같은 상업 자료는 포함되지 않습니다.",
+        body: "FB Factory에는 유료 요금제나 엔터프라이즈 계약이 없습니다. 엔터프라이즈 SLA, 지원 약관, DPA, 보안 부록, 전문 서비스 약관 및 요금과 같은 상업 자료는 포함되지 않습니다.",
       },
     },
     privacy: {
       eyebrow: "개인 정보 보호 정책",
-      title: "Agent-Native 호스팅된 애플리케이션",
+      title: "FB Factory 호스팅된 애플리케이션",
       intro:
-        "이 정책은 Builder.io이 Agent-Native 호스팅 애플리케이션, 호스팅 템플릿, 데모 및 공식 브라우저 확장 프로그램을 운영할 때 데이터를 수집, 사용, 공유 및 유지하는 방법을 설명합니다.",
+        "이 정책은 Builder.io이 FB Factory 호스팅 애플리케이션, 호스팅 템플릿, 데모 및 공식 브라우저 확장 프로그램을 운영할 때 데이터를 수집, 사용, 공유 및 유지하는 방법을 설명합니다.",
       scopeCards: {
         hosted: {
           title: "호스팅된 앱",
-          body: "Builder.io이(가) 귀하를 위해 Agent-Native 서비스 또는 호스팅 템플릿을 운영할 때 보장됩니다.",
+          body: "Builder.io이(가) 귀하를 위해 FB Factory 서비스 또는 호스팅 템플릿을 운영할 때 보장됩니다.",
         },
         openSource: {
           title: "오픈 소스",
@@ -2275,7 +2275,7 @@ const koKR = {
         scope: "범위",
         information: "우리가 수집하는 정보",
         cookies: "쿠키 및 분석",
-        clipsExtension: "Agent-Native Clips Chrome 확장 프로그램",
+        clipsExtension: "FB Factory Clips Chrome 확장 프로그램",
         use: "우리가 정보를 사용하는 방법",
         sharing: "공유 및 제3자",
         chromeLimitedUse: "Chrome Web Store 제한된 사용",
@@ -2285,24 +2285,24 @@ const koKR = {
       },
       paragraphs: {
         scope1:
-          "Agent-Native은 오픈 소스이며 소스 코드는 MIT 라이선스에 따라 제공됩니다. 이 정책은 Agent-Native 사용자를 위해 Builder.io에서 운영하는 호스팅된 애플리케이션 및 서비스에만 적용됩니다. 포크, 사용자 정의 템플릿, 개인 배포 또는 자체 호스팅 버전을 포함하여 다른 사람의 코드 사용에는 적용되지 않습니다. 자체 배포를 운영하는 경우 자체 데이터 관행 및 개인정보 보호정책에 대한 책임은 귀하에게 있습니다.",
+          "FB Factory은 오픈 소스이며 소스 코드는 MIT 라이선스에 따라 제공됩니다. 이 정책은 FB Factory 사용자를 위해 Builder.io에서 운영하는 호스팅된 애플리케이션 및 서비스에만 적용됩니다. 포크, 사용자 정의 템플릿, 개인 배포 또는 자체 호스팅 버전을 포함하여 다른 사람의 코드 사용에는 적용되지 않습니다. 자체 배포를 운영하는 경우 자체 데이터 관행 및 개인정보 보호정책에 대한 책임은 귀하에게 있습니다.",
         scope2Prefix:
           "이 정책은 Builder.io의 광범위한 정책을 보완하기 위한 것입니다.",
-        scope2Suffix: "Agent-Native 호스팅된 애플리케이션 동작에 대해.",
+        scope2Suffix: "FB Factory 호스팅된 애플리케이션 동작에 대해.",
         cookies:
-          "Agent-Native 문서 사이트와 호스팅 애플리케이션은 인증 및 보안, 언어 또는 테마와 같은 기본 설정 저장, 구성된 분석 기술을 위해 필요한 쿠키를 사용할 수 있습니다. 배포 환경에서 구성된 경우 문서 사이트는 Google Analytics 또는 Google Tag Manager를 로드할 수 있으며, 호스팅 서비스는 안정성과 기능 사용량을 측정하기 위해 퍼스트 파티 분석을 사용할 수 있습니다. 호스팅 애플리케이션 콘텐츠를 제3자 광고에 사용하지 않습니다. 브라우저 설정에서 쿠키를 관리할 수 있지만 필요한 쿠키를 비활성화하면 로그인이나 다른 기능을 사용하지 못할 수 있습니다.",
+          "FB Factory 문서 사이트와 호스팅 애플리케이션은 인증 및 보안, 언어 또는 테마와 같은 기본 설정 저장, 구성된 분석 기술을 위해 필요한 쿠키를 사용할 수 있습니다. 배포 환경에서 구성된 경우 문서 사이트는 Google Analytics 또는 Google Tag Manager를 로드할 수 있으며, 호스팅 서비스는 안정성과 기능 사용량을 측정하기 위해 퍼스트 파티 분석을 사용할 수 있습니다. 호스팅 애플리케이션 콘텐츠를 제3자 광고에 사용하지 않습니다. 브라우저 설정에서 쿠키를 관리할 수 있지만 필요한 쿠키를 비활성화하면 로그인이나 다른 기능을 사용하지 못할 수 있습니다.",
         clips1:
-          "Agent-Native Clips Chrome extension는 브라우저 기반 녹화를 시작하는 데 도움이 되며, 활성화되면 브라우저 진단을 클립에 첨부할 수 있습니다. 선택한 캡처 소스, 포함하도록 선택한 카메라 및 마이크 미디어, 활성 탭 제목 및 URL, 확장 프로그램을 호스팅된 Clips에 연결하는 데 필요한 인증 상태를 수집할 수 있습니다.",
+          "FB Factory Clips Chrome extension는 브라우저 기반 녹화를 시작하는 데 도움이 되며, 활성화되면 브라우저 진단을 클립에 첨부할 수 있습니다. 선택한 캡처 소스, 포함하도록 선택한 카메라 및 마이크 미디어, 활성 탭 제목 및 URL, 확장 프로그램을 호스팅된 Clips에 연결하는 데 필요한 인증 상태를 수집할 수 있습니다.",
         clips2:
           "Developer logs are optional. 활성화되면 확장 프로그램은 수정된 콘솔 메시지, JavaScript 예외를 수집하고 기록이 활성화되는 동안 선택한 탭에서 메서드, URL, 상태, 타이밍 및 실패 세부 정보와 같은 메타데이터 가져오기/XHR을 수집할 수 있습니다. 확장은 요청 본문, 응답 본문, 쿠키 또는 인증 헤더를 수집하도록 설계되지 않았습니다.",
         clipsAnchor:
           "Chrome Web Store 공개의 경우 이 섹션을 확장 개인정보 보호 정책 앵커로 사용하세요.",
         sharing1:
-          "우리는 Agent-Native 호스팅된 애플리케이션 데이터를 판매하거나 제3자 광고에 사용하지 않습니다. 당사는 귀하가 사용하는 기능에 해당 서비스가 필요할 때 클라우드 인프라, 스토리지, 인증, 이메일, 관찰 가능성, AI 및 전사 제공업체와 같은 호스팅 서비스 운영을 돕는 서비스 제공업체와 데이터를 공유합니다.",
+          "우리는 FB Factory 호스팅된 애플리케이션 데이터를 판매하거나 제3자 광고에 사용하지 않습니다. 당사는 귀하가 사용하는 기능에 해당 서비스가 필요할 때 클라우드 인프라, 스토리지, 인증, 이메일, 관찰 가능성, AI 및 전사 제공업체와 같은 호스팅 서비스 운영을 돕는 서비스 제공업체와 데이터를 공유합니다.",
         sharing2:
           "통합을 연결하면 호스팅된 앱은 구성 및 공급자의 자체 조건에 따라 해당 공급자와 데이터를 보내거나 해당 공급자로부터 데이터를 받을 수 있습니다. 또한 보안, 남용 방지, 법률 준수 또는 사용자와 서비스 보호를 위해 필요한 경우 정보를 공개할 수도 있습니다.",
         chromeLimitedUse:
-          "Agent-Native Clips Chrome extension의 경우 Chrome extension API에서 받은 정보의 사용은 제한된 사용 요구 사항을 포함하여 Chrome Web Store 사용자 데이터 정책을 준수합니다. 확장 프로그램에서 수집한 브라우저 활동은 광고, 재판매, 신용도 또는 관련 없는 프로파일링이 아닌 사용자 대상 기록 및 진단 워크플로를 제공하는 데 사용됩니다.",
+          "FB Factory Clips Chrome extension의 경우 Chrome extension API에서 받은 정보의 사용은 제한된 사용 요구 사항을 포함하여 Chrome Web Store 사용자 데이터 정책을 준수합니다. 확장 프로그램에서 수집한 브라우저 활동은 광고, 재판매, 신용도 또는 관련 없는 프로파일링이 아닌 사용자 대상 기록 및 진단 워크플로를 제공하는 데 사용됩니다.",
         retention1:
           "당사는 서비스를 제공하고, 작업 공간 기록을 유지하고, 의무를 준수하고, 분쟁을 해결하거나, 신뢰성과 보안을 향상시키는 데 필요한 기간 동안 호스팅된 애플리케이션 데이터를 보관합니다. 사용자는 가능한 경우 관련 애플리케이션 컨트롤을 통해 클립, 문서, 리소스 및 기타 호스팅된 앱 콘텐츠를 삭제할 수 있습니다.",
         retention2:
@@ -2310,7 +2310,7 @@ const koKR = {
         security:
           "당사는 액세스 제어, 전송 암호화, 모니터링 및 운영 보안 관행을 포함하여 호스팅된 애플리케이션 데이터를 보호하기 위해 고안된 합리적인 관리적, 기술적, 조직적 보호 장치를 사용합니다. 어떤 온라인 서비스도 완벽한 보안을 보장할 수 없으므로 사용자는 해당 정보를 호스팅된 애플리케이션과 공유하려는 의도가 아닌 이상 녹음이나 프롬프트에 비밀이나 민감한 정보를 포함하지 않아야 합니다.",
         changes1:
-          "Agent-Native 호스팅 애플리케이션이 변경되면 이 정책을 업데이트할 수 있습니다. 페이지 상단의 업데이트 날짜는 정책이 마지막으로 개정된 날짜를 보여줍니다.",
+          "FB Factory 호스팅 애플리케이션이 변경되면 이 정책을 업데이트할 수 있습니다. 페이지 상단의 업데이트 날짜는 정책이 마지막으로 개정된 날짜를 보여줍니다.",
         changes2Prefix:
           "개인 정보 보호 요청이나 질문이 있는 경우 다음 목록에 나열된 지원 및 개인 정보 보호 채널을 통해 Builder.io에 문의하세요.",
       },
@@ -2321,7 +2321,7 @@ const koKR = {
         },
         hostedContent: {
           title: "호스팅된 애플리케이션 콘텐츠",
-          body: "Content 녹음, 대화 내용, 문서, 댓글, 작업, 프롬프트, 상담원 응답, 파일 및 구성과 같은 호스팅된 Agent-Native 템플릿에서 생성하거나 업로드합니다.",
+          body: "Content 녹음, 대화 내용, 문서, 댓글, 작업, 프롬프트, 상담원 응답, 파일 및 구성과 같은 호스팅된 FB Factory 템플릿에서 생성하거나 업로드합니다.",
         },
         integrations: {
           title: "연결된 통합 데이터",
@@ -2334,7 +2334,7 @@ const koKR = {
       },
       uses: {
         provide:
-          "호스팅된 Agent-Native 애플리케이션과 해당 에이전트 워크플로를 제공, 동기화 및 운영합니다.",
+          "호스팅된 FB Factory 애플리케이션과 해당 에이전트 워크플로를 제공, 동기화 및 운영합니다.",
         transform:
           "호스팅된 앱에 요청하면 콘텐츠를 기록, 복사, 요약, 검색, 공유 또는 변환할 수 있습니다.",
         auth: "사용자를 인증하고, 조직을 관리하고, 액세스 제어를 시행하고, 남용을 방지합니다.",
@@ -2344,18 +2344,18 @@ const koKR = {
       },
       links: {
         builderPrivacy: "개인 정보 보호 정책",
-        builderPrivacyFull: "Builder.io 개인정보 보호정책",
+        builderPrivacyFull: "FutureBuild 개인정보 보호정책",
       },
     },
     about: {
-      eyebrow: "Agent-Native 소개",
+      eyebrow: "FB Factory 소개",
       title: "에이전트와 사람을 위한 오픈 소스 앱",
       intro:
-        "Agent-Native는 AI 에이전트와 사용자 인터페이스가 같은 액션, 데이터, 애플리케이션 상태를 공유하는 앱을 만들기 위한 오픈 소스 프레임워크입니다.",
+        "FB Factory는 AI 에이전트와 사용자 인터페이스가 같은 액션, 데이터, 애플리케이션 상태를 공유하는 앱을 만들기 위한 오픈 소스 프레임워크입니다.",
       sections: {
         project: {
           title: "공유 운영 모델",
-          body: "Agent-Native는 에이전트와 인터페이스를 동등한 파트너로 다룹니다. 하나의 액션이 UI 컨트롤, 에이전트 도구, HTTP 엔드포인트, MCP 또는 A2A 기능, CLI 명령과 감사 가능한 워크플로를 지원합니다. 공유 SQL 상태가 사람의 화면과 에이전트의 화면을 일치시킵니다.",
+          body: "FB Factory는 에이전트와 인터페이스를 동등한 파트너로 다룹니다. 하나의 액션이 UI 컨트롤, 에이전트 도구, HTTP 엔드포인트, MCP 또는 A2A 기능, CLI 명령과 감사 가능한 워크플로를 지원합니다. 공유 SQL 상태가 사람의 화면과 에이전트의 화면을 일치시킵니다.",
         },
         openSource: {
           title: "기본값은 오픈 소스",
@@ -2363,19 +2363,19 @@ const koKR = {
         },
         hosted: {
           title: "호스팅과 자체 호스팅",
-          body: "Builder.io는 agent-native.com에서 Agent-Native 호스팅 앱과 문서를 운영합니다. 직접 앱을 배포하고 운영하려는 팀도 이 프레임워크를 사용할 수 있습니다. 액션 계약, 접근 경계, 에이전트 지침과 공개 프로토콜은 코드와 문서에서 확인할 수 있습니다.",
+          body: "Builder.io는 agent-native.com에서 FB Factory 호스팅 앱과 문서를 운영합니다. 직접 앱을 배포하고 운영하려는 팀도 이 프레임워크를 사용할 수 있습니다. 액션 계약, 접근 경계, 에이전트 지침과 공개 프로토콜은 코드와 문서에서 확인할 수 있습니다.",
         },
         community: {
           title: "공개적으로 만드는 프로젝트",
-          body: "프로젝트는 GitHub issue, pull request, 문서와 Agent-Native 커뮤니티를 통해 공개적으로 개발됩니다. 문서에서 아키텍처를 배우고, 코드에서 구현을 검증하고, 사용 사례를 논의하거나 변경 사항에 기여할 수 있습니다.",
+          body: "프로젝트는 GitHub issue, pull request, 문서와 FB Factory 커뮤니티를 통해 공개적으로 개발됩니다. 문서에서 아키텍처를 배우고, 코드에서 구현을 검증하고, 사용 사례를 논의하거나 변경 사항에 기여할 수 있습니다.",
         },
       },
     },
     contact: {
       eyebrow: "문의",
-      title: "Agent-Native에 대해 Builder.io에 문의",
+      title: "FB Factory에 대해 Builder.io에 문의",
       intro:
-        "Agent-Native에 대한 질문, 문제 신고, 개선 제안 또는 보안 우려는 아래 지원, 소스, 커뮤니티 채널을 이용해 주세요.",
+        "FB Factory에 대한 질문, 문제 신고, 개선 제안 또는 보안 우려는 아래 지원, 소스, 커뮤니티 채널을 이용해 주세요.",
       emailLabel: "support@builder.io로 이메일 보내기",
       sections: {
         support: {
@@ -2392,19 +2392,19 @@ const koKR = {
         },
         legal: {
           title: "법률 및 개인정보 보호",
-          body: "개인정보 보호 질문은 지원팀에 연락하기 전에 Agent-Native 개인정보 처리방침과 Builder.io 법률 자료를 확인하세요. Builder.io, Inc. 주소는 95 3rd Street, 2nd Floor, San Francisco, CA 94103, United States입니다. 호스팅 서비스 약관과 자체 호스팅 책임은 서비스 약관에 설명되어 있습니다.",
+          body: "개인정보 보호 질문은 지원팀에 연락하기 전에 FB Factory 개인정보 처리방침과 FutureBuild 법률 자료를 확인하세요. FutureBuild, Inc. 주소는 95 3rd Street, 2nd Floor, San Francisco, CA 94103, United States입니다. 호스팅 서비스 약관과 자체 호스팅 책임은 서비스 약관에 설명되어 있습니다.",
         },
       },
     },
     terms: {
       eyebrow: "서비스 약관",
-      title: "Agent-Native 호스팅된 애플리케이션",
+      title: "FB Factory 호스팅된 애플리케이션",
       intro:
-        "이 약관은 Builder.io이(가) 귀하를 위해 Agent-Native 호스팅 애플리케이션, 호스팅 템플릿, 데모 및 공식 호스팅 서비스를 운영할 때 적용됩니다.",
+        "이 약관은 Builder.io이(가) 귀하를 위해 FB Factory 호스팅 애플리케이션, 호스팅 템플릿, 데모 및 공식 호스팅 서비스를 운영할 때 적용됩니다.",
       scopeCards: {
         hosted: {
           title: "호스팅된 앱",
-          body: "Builder.io에서 운영하는 Agent-Native 앱이나 템플릿을 사용할 때 보장됩니다.",
+          body: "Builder.io에서 운영하는 FB Factory 앱이나 템플릿을 사용할 때 보장됩니다.",
         },
         openSource: {
           title: "오픈 소스",
@@ -2412,7 +2412,7 @@ const koKR = {
         },
         selfHosted: {
           title: "자체 호스팅",
-          body: "귀하 또는 다른 사람이 운영하는 별도의 배포는 Builder.io 호스팅 서비스가 아닙니다.",
+          body: "귀하 또는 다른 사람이 운영하는 별도의 배포는 FutureBuild 호스팅 서비스가 아닙니다.",
         },
       },
       sections: {
@@ -2429,53 +2429,53 @@ const koKR = {
       },
       paragraphs: {
         scope1:
-          "Agent-Native은 오픈 소스이며 해당 소스 코드는 MIT 라이선스에 따라 제공됩니다. 본 약관은 Agent-Native 사용자를 위해 Builder.io에서 운영하는 호스팅된 애플리케이션 및 서비스에만 적용됩니다. Builder.io 외부에서 작동하는 포크, 사용자 정의 템플릿, 개인 배포 또는 자체 호스팅 버전에는 적용되지 않습니다.",
+          "FB Factory은 오픈 소스이며 해당 소스 코드는 MIT 라이선스에 따라 제공됩니다. 본 약관은 FB Factory 사용자를 위해 Builder.io에서 운영하는 호스팅된 애플리케이션 및 서비스에만 적용됩니다. FutureBuild 외부에서 작동하는 포크, 사용자 정의 템플릿, 개인 배포 또는 자체 호스팅 버전에는 적용되지 않습니다.",
         scope2Prefix: "이 용어는 Builder.io의 더 넓은 범위를 보완합니다.",
-        scope2Middle: "그리고 Agent-Native",
+        scope2Middle: "그리고 FB Factory",
         scope2Suffix:
-          "회사 또는 조직을 대신하여 호스팅된 Agent-Native 앱을 사용하는 경우 귀하는 해당 조직에 대해 이러한 약관을 수락할 권한이 있음을 나타냅니다.",
+          "회사 또는 조직을 대신하여 호스팅된 FB Factory 앱을 사용하는 경우 귀하는 해당 조직에 대해 이러한 약관을 수락할 권한이 있음을 나타냅니다.",
         scope3:
-          "Agent-Native에는 유료 플랜이나 유료 호스팅 구독이 없습니다. 주문서, 요금, 엔터프라이즈 지원, 서비스 수준 및 데이터 처리 부속서와 같은 Builder.io의 상업적 조건은 별도로 서면 합의하지 않는 한 이 제공 범위에 포함되지 않습니다.",
+          "FB Factory에는 유료 플랜이나 유료 호스팅 구독이 없습니다. 주문서, 요금, 엔터프라이즈 지원, 서비스 수준 및 데이터 처리 부속서와 같은 Builder.io의 상업적 조건은 별도로 서면 합의하지 않는 한 이 제공 범위에 포함되지 않습니다.",
         hostedService:
-          "Builder.io은 호스팅된 Agent-Native 애플리케이션, 템플릿, 데모, 공유 작업 공간, 브라우저 확장 프로그램 및 관련 에이전트 워크플로를 제공할 수 있습니다. 호스팅 서비스는 제품이 발전함에 따라 업데이트, 제한, 일시 중단 또는 중단될 수 있습니다.",
+          "Builder.io은 호스팅된 FB Factory 애플리케이션, 템플릿, 데모, 공유 작업 공간, 브라우저 확장 프로그램 및 관련 에이전트 워크플로를 제공할 수 있습니다. 호스팅 서비스는 제품이 발전함에 따라 업데이트, 제한, 일시 중단 또는 중단될 수 있습니다.",
         accounts1:
-          "귀하는 계정 정보의 정확성, 계정 활동 및 자격 증명 보안 유지에 대한 책임이 있습니다. 호스팅된 Agent-Native 앱에는 조직 기능, 초대, 공유 리소스, 연결된 통합 및 앱별 액세스 제어가 포함될 수 있습니다. 사용자를 초대하고 사용 권한이 있는 서비스만 연결하세요.",
+          "귀하는 계정 정보의 정확성, 계정 활동 및 자격 증명 보안 유지에 대한 책임이 있습니다. 호스팅된 FB Factory 앱에는 조직 기능, 초대, 공유 리소스, 연결된 통합 및 앱별 액세스 제어가 포함될 수 있습니다. 사용자를 초대하고 사용 권한이 있는 서비스만 연결하세요.",
         accounts2:
-          "계정, 작업공간, 통합 또는 공유 리소스가 손상되거나 오용되었다고 생각되면 즉시 Builder.io 지원팀에 문의하세요.",
+          "계정, 작업공간, 통합 또는 공유 리소스가 손상되거나 오용되었다고 생각되면 즉시 FutureBuild 지원팀에 문의하세요.",
         content1:
-          "귀하는 호스팅된 Agent-Native 앱을 생성, 업로드, 기록, 가져오기 또는 연결하는 콘텐츠의 소유권을 보유합니다. 호스팅된 앱과 해당 에이전트 워크플로가 작동할 수 있도록 해당 콘텐츠를 호스팅, 처리, 전송, 표시, 변환, 분석 및 저장하는 데 필요한 제한된 권한을 Builder.io에 부여합니다.",
+          "귀하는 호스팅된 FB Factory 앱을 생성, 업로드, 기록, 가져오기 또는 연결하는 콘텐츠의 소유권을 보유합니다. 호스팅된 앱과 해당 에이전트 워크플로가 작동할 수 있도록 해당 콘텐츠를 호스팅, 처리, 전송, 표시, 변환, 분석 및 저장하는 데 필요한 제한된 권한을 Builder.io에 부여합니다.",
         content2:
           "귀하는 귀하가 서비스에 제공하는 콘텐츠, 녹음, 프롬프트, 파일, 자격 증명 및 연결된 통합 데이터에 필요한 권리와 권한을 보유할 책임이 있습니다.",
         agents1:
-          "호스팅된 Agent-Native 앱은 귀하의 요청에 따라 AI 에이전트, 도구, 자동화 및 공급자 통합을 실행할 수 있습니다. AI에서 생성된 출력은 불완전하거나, 부정확하거나, 특정 용도에 적합하지 않을 수 있습니다. 중요한 출력, 작업, 내보내기 및 메시지를 사용하기 전에 검토하세요.",
+          "호스팅된 FB Factory 앱은 귀하의 요청에 따라 AI 에이전트, 도구, 자동화 및 공급자 통합을 실행할 수 있습니다. AI에서 생성된 출력은 불완전하거나, 부정확하거나, 특정 용도에 적합하지 않을 수 있습니다. 중요한 출력, 작업, 내보내기 및 메시지를 사용하기 전에 검토하세요.",
         agents2:
           "귀하가 제3자 서비스를 연결하는 경우 해당 서비스 사용에는 해당 서비스의 자체 약관, 제한, 허가 및 개인 정보 보호 관행이 적용됩니다.",
         openSource:
-          "본 약관은 Agent-Native 코드에 대한 오픈 소스 라이선스를 변경하지 않습니다. Agent-Native을 다운로드, 포크, 수정 또는 자체 호스팅하는 경우 MIT 라이선스와 자체 배포에 대해 설정한 조건이 해당 사용에 적용됩니다. 귀하는 귀하가 운영하는 배포에 대한 보안, 개인 정보 보호, 규정 준수, 운영 및 사용자 지원에 대한 책임이 있습니다.",
+          "본 약관은 FB Factory 코드에 대한 오픈 소스 라이선스를 변경하지 않습니다. FB Factory을 다운로드, 포크, 수정 또는 자체 호스팅하는 경우 MIT 라이선스와 자체 배포에 대해 설정한 조건이 해당 사용에 적용됩니다. 귀하는 귀하가 운영하는 배포에 대한 보안, 개인 정보 보호, 규정 준수, 운영 및 사용자 지원에 대한 책임이 있습니다.",
         suspensionPrefix:
-          "Builder.io은(는) 사용자 보호, 법률 준수, 남용 방지, 보안 위험 해결 또는 서비스 운영을 위해 필요한 경우 호스팅된 Agent-Native 서비스에 대한 액세스를 일시 중지하거나 제한할 수 있습니다. You may stop using the hosted service at any time. Some data may remain in backups, logs, or audit records for a limited period as described in the",
+          "Builder.io은(는) 사용자 보호, 법률 준수, 남용 방지, 보안 위험 해결 또는 서비스 운영을 위해 필요한 경우 호스팅된 FB Factory 서비스에 대한 액세스를 일시 중지하거나 제한할 수 있습니다. You may stop using the hosted service at any time. Some data may remain in backups, logs, or audit records for a limited period as described in the",
         disclaimers1:
-          "호스팅된 Agent-Native 서비스는 해당 법률 및 Builder.io과 체결한 별도의 서면 계약에 따라 있는 그대로, 이용 가능한 대로 제공됩니다. Builder.io는 호스팅된 앱, 통합, 자동화 또는 AI 출력이 중단되지 않거나 오류가 없거나 모든 요구 사항을 충족한다고 보장하지 않습니다.",
+          "호스팅된 FB Factory 서비스는 해당 법률 및 Builder.io과 체결한 별도의 서면 계약에 따라 있는 그대로, 이용 가능한 대로 제공됩니다. Builder.io는 호스팅된 앱, 통합, 자동화 또는 AI 출력이 중단되지 않거나 오류가 없거나 모든 요구 사항을 충족한다고 보장하지 않습니다.",
         disclaimers2Prefix:
-          "법이 허용하는 최대 한도 내에서 호스팅된 Agent-Native 서비스에 대한 Builder.io의 책임은 Builder.io의 더 넓은 범위에 설명된 대로 제한됩니다.",
+          "법이 허용하는 최대 한도 내에서 호스팅된 FB Factory 서비스에 대한 Builder.io의 책임은 Builder.io의 더 넓은 범위에 설명된 대로 제한됩니다.",
         disclaimers2Suffix: "또는 귀하의 사용에 적용되는 다른 서면 계약.",
         changes1:
-          "Agent-Native 호스팅 애플리케이션이 변경되면 본 약관을 업데이트할 수 있습니다. 페이지 상단의 업데이트 날짜는 약관이 마지막으로 수정된 날짜를 보여줍니다.",
+          "FB Factory 호스팅 애플리케이션이 변경되면 본 약관을 업데이트할 수 있습니다. 페이지 상단의 업데이트 날짜는 약관이 마지막으로 수정된 날짜를 보여줍니다.",
         changes2Prefix:
           "이 약관에 대한 질문이 있는 경우 Builder.io에 나열된 지원 채널을 통해 Builder.io에 문의하세요.",
       },
       hostedServicePoints: {
         create:
-          "호스팅된 Agent-Native 작업 공간과 템플릿 앱을 만들고 운영하세요.",
+          "호스팅된 FB Factory 작업 공간과 템플릿 앱을 만들고 운영하세요.",
         workflows:
           "사용하기로 선택한 상담원 워크플로, 작업, 자동화 및 통합을 실행하세요.",
         store:
           "서비스 제공에 필요한 호스팅된 앱 콘텐츠, 설정, 조직 데이터 및 연결된 계정 상태를 저장합니다.",
         improve:
-          "호스팅된 Agent-Native 서비스를 측정, 보호, 디버깅 및 개선합니다.",
+          "호스팅된 FB Factory 서비스를 측정, 보호, 디버깅 및 개선합니다.",
       },
       acceptableUse: {
-        laws: "호스팅된 Agent-Native 앱을 사용하여 법률을 위반하거나, 권리를 침해하거나, 사람이나 시스템에 해를 끼치지 마세요.",
+        laws: "호스팅된 FB Factory 앱을 사용하여 법률을 위반하거나, 권리를 침해하거나, 사람이나 시스템에 해를 끼치지 마세요.",
         bypass:
           "액세스 제어, 속도 제한, 보안 경계 또는 테넌트 격리를 우회하려고 시도하지 마십시오.",
         malware:
@@ -2502,9 +2502,9 @@ const koKR = {
     gettingStarted: "시작하기",
     gettingStartedActions: "Add an Action",
     gettingStartedPages: "Add a Page",
-    whatIsAgentNative: "Agent-Native란?",
+    whatIsAgentNative: "FB Factory란?",
     agentSurfaces: "Agent 표면",
-    agentNativeConfig: "Agent-Native Config",
+    agentNativeConfig: "FB Factory Config",
     keyConcepts: "핵심 개념",
     agentNativeToolkit: "Toolkit",
     toolkitOverview: "개요",
@@ -2640,7 +2640,7 @@ const koKR = {
     syncingTemplateChanges: "템플릿 변경 사항 동기화",
     writingAgentInstructions: "Agent 지침 작성",
     embeddingSdk: "임베딩 SDK",
-    agentNativeCodeUi: "Agent-Native 코드 UI",
+    agentNativeCodeUi: "FB Factory 코드 UI",
     harnessAgents: "Harness 에이전트",
     adapters: "어댑터",
     cliAdapters: "CLI 어댑터",

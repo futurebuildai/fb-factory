@@ -45,17 +45,17 @@ const BRAND_ASSETS: BrandAsset[] = [
 
 export const meta = () =>
   withDefaultSocialImage([
-    { title: "Agent-Native brand assets" },
+    { title: "FB Factory brand assets" },
     {
       name: "description",
       content:
-        "Download official Agent-Native logos and symbols for articles, presentations, and community projects.",
+        "Download official FB Factory logos and symbols for articles, presentations, and community projects.",
     },
-    { property: "og:title", content: "Agent-Native brand assets" },
+    { property: "og:title", content: "FB Factory brand assets" },
     {
       property: "og:description",
       content:
-        "Official Agent-Native horizontal logos and symbols, ready to download as SVG files.",
+        "Official FB Factory horizontal logos and symbols, ready to download as SVG files.",
     },
   ]);
 

@@ -22,7 +22,7 @@ export const meta = () =>
   withTemplateSocialImage(
     [
       {
-        title: "Free AI Form Builder | Agent-Native Forms",
+        title: "Free AI Form Builder | FB Factory Forms",
       },
       {
         name: "description",
@@ -31,7 +31,7 @@ export const meta = () =>
       },
       {
         property: "og:title",
-        content: "Free AI Form Builder | Agent-Native Forms",
+        content: "Free AI Form Builder | FB Factory Forms",
       },
       {
         property: "og:description",

@@ -1,4 +1,4 @@
-# Agent-Native Privacy Policy
+# FB Factory Privacy Policy
 
 Updated September 3, 2026
 Effective date: September 3, 2026
@@ -6,13 +6,13 @@ Effective date: September 3, 2026
 The operator of the hosted services covered by this policy is referred to as
 "we," "us," or "our." We value your privacy.
 
-Agent-Native provides an open-source framework and related hosted applications,
+FB Factory provides an open-source framework and related hosted applications,
 hosted examples, demos, browser extensions, and other hosted services
 (collectively, the "Services").
 
 This Privacy Policy covers the personal information that we may process:
 
-- About individuals who visit the Agent-Native website or other websites where
+- About individuals who visit the FB Factory website or other websites where
   this Privacy Policy is posted or linked (collectively, the "Sites");
 - About individuals who use the Services, including people who create or join
   hosted workspaces;
@@ -23,7 +23,7 @@ This Privacy Policy covers the personal information that we may process:
 
 This policy does not apply to the data practices of people or organizations
 that operate forks, customized applications, private deployments, or
-self-hosted versions of the Agent-Native framework. It also does not apply to
+self-hosted versions of the FB Factory framework. It also does not apply to
 third-party websites, applications, services, or integrations that you access
 through the Sites or Services. Those operators are responsible for their own
 privacy practices and notices.
@@ -145,9 +145,9 @@ third-party advertising based on hosted application content.
 You may disable cookies through your browser settings, although some features
 of the Sites or Services may not function correctly if you do so.
 
-## Agent-Native Clips Chrome Extension {#clips-chrome-extension}
+## FB Factory Clips Chrome Extension {#clips-chrome-extension}
 
-The Agent-Native Clips Chrome extension helps you start browser-based
+The FB Factory Clips Chrome extension helps you start browser-based
 recordings and, when enabled, attach browser diagnostics to a clip. It may
 collect the selected capture source, camera and microphone media you choose to
 include, the active tab title and URL, and authentication state needed to
@@ -193,7 +193,7 @@ applicable privacy right.
 When you make a request about information processed on behalf of an
 organization, you may need to submit the request directly to that organization.
 For requests about our own data practices, use the contact method published on
-the Agent-Native Site. We will verify requests as required by applicable law.
+the FB Factory Site. We will verify requests as required by applicable law.
 
 ## Data Retention
 
@@ -223,7 +223,7 @@ application.
 
 We do not knowingly collect or solicit personal information from anyone under 18. If we learn that we have collected personal information from a person under
 18, we will delete it promptly where required by law. Use the contact method
-published on the Agent-Native Site if you believe we may have information from
+published on the FB Factory Site if you believe we may have information from
 or about someone under 18.
 
 ## Third Parties
@@ -270,4 +270,4 @@ requires otherwise.
 ## Contact Us
 
 If you have questions about this Privacy Policy or our privacy practices, use
-the contact method published on the Agent-Native Site.
+the contact method published on the FB Factory Site.

@@ -11,21 +11,21 @@ const UPDATED_AT = "September 2, 2026";
 export const meta = () =>
   withDefaultSocialImage([
     {
-      title: "Legal Resources - Agent-Native",
+      title: "Legal Resources - FB Factory",
     },
     {
       name: "description",
       content:
-        "Standalone Agent-Native hosted-service terms, privacy, acceptable-use, AI, safety, copyright, takedown, and law-enforcement policies.",
+        "Standalone FB Factory hosted-service terms, privacy, acceptable-use, AI, safety, copyright, takedown, and law-enforcement policies.",
     },
     {
       property: "og:title",
-      content: "Legal Resources - Agent-Native",
+      content: "Legal Resources - FB Factory",
     },
     {
       property: "og:description",
       content:
-        "Standalone Agent-Native hosted-service terms, privacy, acceptable-use, AI, safety, copyright, takedown, and law-enforcement policies.",
+        "Standalone FB Factory hosted-service terms, privacy, acceptable-use, AI, safety, copyright, takedown, and law-enforcement policies.",
     },
   ]);
 

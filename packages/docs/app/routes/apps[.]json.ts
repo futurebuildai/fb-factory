@@ -6,7 +6,7 @@ export async function loader() {
     ...templates.map((app) => ({
       id: app.slug,
       name: app.name,
-      description: `Agent-Native ${app.name} app`,
+      description: `FB Factory ${app.name} app`,
       url: app.demoUrl,
       // Catalog rows are pointers, not trust assertions. Dispatch verifies
       // the target agent card before showing Connect or starting a handoff.

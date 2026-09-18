@@ -16,7 +16,7 @@ vi.mock("@agent-native/core/client/api-path", () => ({
 vi.mock("@agent-native/core/client/i18n", () => ({
   useT: () => (key: string) => {
     const messages: Record<string, string> = {
-      "downloadPage.title": "Download Agent-Native",
+      "downloadPage.title": "Download FB Factory",
       "downloadPage.body": "All your apps in one desktop shell.",
       "downloadPage.downloadInstaller": "Download installer",
       "downloadPage.downloadStarted": "Download started",
@@ -62,7 +62,7 @@ const productionManifest = {
   pub_date: "2026-08-20T00:00:00Z",
   assets: [
     {
-      name: "Agent-Native-arm64.dmg",
+      name: "FB Factory-arm64.dmg",
       url: "https://downloads.example.com/production.dmg",
       size: 123,
       kind: "mac-arm64",
@@ -76,7 +76,7 @@ const nightlyManifest = {
   pub_date: "2026-08-20T00:00:00Z",
   assets: [
     {
-      name: "Agent-Native Nightly-arm64.dmg",
+      name: "FB Factory Nightly-arm64.dmg",
       url: "https://downloads.example.com/nightly.dmg",
       size: 123,
       kind: "mac-arm64",
@@ -122,7 +122,7 @@ describe("DownloadPage", () => {
     });
 
     expect(
-      screen.getByRole("heading", { name: "Download Agent-Native" }),
+      screen.getByRole("heading", { name: "Download FB Factory" }),
     ).toBeTruthy();
     expect(screen.queryByText(productionManifest.version)).toBeNull();
     expect(screen.queryByText(nightlyManifest.version)).toBeNull();
@@ -136,11 +136,11 @@ describe("DownloadPage", () => {
     fireEvent.click(screen.getByRole("radio", { name: "Nightly" }));
 
     expect(
-      screen.getByRole("heading", { name: "Download Agent-Native Nightly" }),
+      screen.getByRole("heading", { name: "Download FB Factory Nightly" }),
     ).toBeTruthy();
     expect(
       screen
-        .getByRole("heading", { name: "Download Agent-Native Nightly" })
+        .getByRole("heading", { name: "Download FB Factory Nightly" })
         .querySelector("span"),
     ).toBeNull();
     expect(
@@ -162,7 +162,7 @@ describe("DownloadPage", () => {
     fireEvent.click(screen.getByRole("radio", { name: "Stable" }));
 
     expect(
-      screen.getByRole("heading", { name: "Download Agent-Native" }),
+      screen.getByRole("heading", { name: "Download FB Factory" }),
     ).toBeTruthy();
     await waitFor(() => {
       expect(

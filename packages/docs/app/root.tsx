@@ -77,7 +77,7 @@ const JSON_LD = JSON.stringify({
   "@graph": [
     {
       "@type": "Organization",
-      name: "Builder.io",
+      name: "FutureBuild",
       url: "https://builder.io",
       sameAs: ["https://github.com/BuilderIO/agent-native"],
       contactPoint: {
@@ -97,14 +97,14 @@ const JSON_LD = JSON.stringify({
     },
     {
       "@type": "WebSite",
-      name: "Agent-Native",
+      name: "FB Factory",
       url: SITE_URL,
       description:
         "Open source framework for building agentic applications where AI agents and UI share the same database and state.",
     },
     {
       "@type": "SoftwareApplication",
-      name: "Agent-Native",
+      name: "FB Factory",
       applicationCategory: "DeveloperApplication",
       operatingSystem: "Cross-platform",
       description:
@@ -114,7 +114,7 @@ const JSON_LD = JSON.stringify({
       license: "https://opensource.org/licenses/MIT",
       sourceOrganization: {
         "@type": "Organization",
-        name: "Builder.io",
+        name: "FutureBuild",
         url: "https://builder.io",
       },
     },
@@ -234,7 +234,7 @@ export const links = () => [
 ];
 
 export const meta = () => [
-  { title: "Agent-Native — The Agentic Application Framework" },
+  { title: "FB Factory - The Agentic Application Framework" },
   {
     name: "description",
     content:
@@ -243,7 +243,7 @@ export const meta = () => [
   ...defaultSocialImageMeta(),
   {
     property: "og:title",
-    content: "Agent-Native — The Agentic Application Framework",
+    content: "FB Factory - The Agentic Application Framework",
   },
   {
     property: "og:description",
@@ -362,7 +362,7 @@ function SeoLinks() {
     <>
       <link rel="canonical" href={canonical} />
       <meta property="og:url" content={canonical} />
-      <meta property="og:site_name" content="Agent-Native" />
+      <meta property="og:site_name" content="FB Factory" />
       {markdownPath ? (
         <link
           rel="alternate"

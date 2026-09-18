@@ -24,7 +24,7 @@ export const meta = () =>
   withTemplateSocialImage(
     [
       {
-        title: "Free Visual Planning for AI Coding | Agent-Native Plans",
+        title: "Free Visual Planning for AI Coding | FB Factory Plans",
       },
       {
         name: "description",
@@ -33,7 +33,7 @@ export const meta = () =>
       },
       {
         property: "og:title",
-        content: "Free Visual Planning for AI Coding | Agent-Native Plans",
+        content: "Free Visual Planning for AI Coding | FB Factory Plans",
       },
       {
         property: "og:description",

@@ -88,7 +88,7 @@ describe("desktop update asset route", () => {
         code: "desktop_release_unavailable",
         message: "Desktop release information is temporarily unavailable.",
         resolution:
-          "Retry shortly. If the problem persists, check the Agent-Native release page.",
+          "Retry shortly. If the problem persists, check the FB Factory release page.",
       },
     });
 
@@ -168,13 +168,13 @@ describe("desktop update asset route", () => {
           json: async () => [
             {
               tag_name: "v0.1.0-nightly.1",
-              name: "Agent-Native Nightly v0.1.0-nightly.1",
+              name: "FB Factory Nightly v0.1.0-nightly.1",
               published_at: "2026-01-02T00:00:00Z",
               draft: false,
               prerelease: true,
               assets: [
                 {
-                  name: "Agent-Native-Nightly-arm64.dmg",
+                  name: "FB Factory-Nightly-arm64.dmg",
                   browser_download_url: "https://example.com/nightly.dmg",
                   size: 10,
                 },
@@ -232,9 +232,9 @@ describe("desktop update asset route", () => {
                 size: 123,
               },
               {
-                name: "Agent-Native-arm64.dmg",
+                name: "FB Factory-arm64.dmg",
                 browser_download_url:
-                  "https://example.com/Agent-Native-arm64.dmg",
+                  "https://example.com/FB Factory-arm64.dmg",
                 size: 123,
               },
             ],

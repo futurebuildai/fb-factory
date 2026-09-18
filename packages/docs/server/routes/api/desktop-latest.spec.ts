@@ -10,24 +10,20 @@ import {
 } from "../../../lib/desktop-releases";
 
 describe("classifyDesktopAsset", () => {
-  it("recognizes Agent-Native desktop installers", () => {
-    expect(classifyDesktopAsset("Agent-Native-arm64.dmg")).toBe("mac-arm64");
-    expect(classifyDesktopAsset("Agent-Native-x64.dmg")).toBe("mac-x64");
-    expect(classifyDesktopAsset("Agent Native-x64.dmg")).toBe("mac-x64");
-    expect(classifyDesktopAsset("Agent Native Nightly-arm64.dmg")).toBe(
+  it("recognizes FB Factory desktop installers", () => {
+    expect(classifyDesktopAsset("FB Factory-arm64.dmg")).toBe("mac-arm64");
+    expect(classifyDesktopAsset("FB Factory-x64.dmg")).toBe("mac-x64");
+    expect(classifyDesktopAsset("FB Factory-x64.dmg")).toBe("mac-x64");
+    expect(classifyDesktopAsset("FB Factory Nightly-arm64.dmg")).toBe(
       "mac-arm64",
     );
-    expect(classifyDesktopAsset("Agent-Native-x64.exe")).toBe("windows-x64");
-    expect(classifyDesktopAsset("Agent-Native-arm64.exe")).toBe(
-      "windows-arm64",
-    );
-    expect(classifyDesktopAsset("Agent-Native-x64.tar.xz")).toBe(
-      "linux-tar-x64",
-    );
-    expect(classifyDesktopAsset("Agent-Native-x86_64.AppImage")).toBe(
+    expect(classifyDesktopAsset("FB Factory-x64.exe")).toBe("windows-x64");
+    expect(classifyDesktopAsset("FB Factory-arm64.exe")).toBe("windows-arm64");
+    expect(classifyDesktopAsset("FB Factory-x64.tar.xz")).toBe("linux-tar-x64");
+    expect(classifyDesktopAsset("FB Factory-x86_64.AppImage")).toBe(
       "linux-appimage-x64",
     );
-    expect(classifyDesktopAsset("Agent-Native-arm64.deb")).toBe(
+    expect(classifyDesktopAsset("FB Factory-arm64.deb")).toBe(
       "linux-deb-arm64",
     );
   });
@@ -44,7 +40,7 @@ describe("classifyDesktopAsset", () => {
     expect(isDesktopUpdaterAsset("Agent.Native-0.1.7-85-arm64-mac.zip")).toBe(
       true,
     );
-    expect(isDesktopUpdaterAsset("Agent-Native-x64.exe.blockmap")).toBe(true);
+    expect(isDesktopUpdaterAsset("FB Factory-x64.exe.blockmap")).toBe(true);
     expect(
       isDesktopUpdaterAsset("Agent.Native-0.1.7-85-arm64-mac.zip.blockmap"),
     ).toBe(true);
@@ -65,7 +61,7 @@ function release(
     prerelease: options.prerelease ?? false,
     assets: [
       {
-        name: options.assetName ?? "Agent-Native-arm64.dmg",
+        name: options.assetName ?? "FB Factory-arm64.dmg",
         browser_download_url: `https://example.com/${tag}.dmg`,
         size: 123,
       },
@@ -140,7 +136,7 @@ describe("getDesktopDownloadManifest", () => {
       vi.fn(async () =>
         jsonResponse([
           release("v2.0.0-nightly.4", "2026-01-02T00:00:00Z", {
-            assetName: "Agent-Native Nightly-arm64.dmg",
+            assetName: "FB Factory Nightly-arm64.dmg",
             prerelease: true,
           }),
           release("v1.0.0", "2026-01-01T00:00:00Z"),

@@ -144,7 +144,7 @@ export function Footer() {
           <div className="flex w-[320px] flex-[1_1_240px] flex-col items-start gap-[var(--spacing-4)]">
             <Link
               to={localizedPath("/")}
-              aria-label="Agent-Native"
+              aria-label="FB Factory"
               className="flex text-[var(--b-text-primary)]"
             >
               <Logo />
@@ -178,7 +178,7 @@ export function Footer() {
         <div className="flex items-center gap-[var(--spacing-6)]">
           <span className="font-[family-name:var(--b-font-mono)] text-[length:var(--b-t-label-2)] font-medium tracking-[0.04em] text-[var(--b-text-primary)]">
             {/* i18n-ignore: a year and the wordmark, nothing translatable */}©
-            2026 AGENT-NATIVE
+            2026 FB Factory
           </span>
           <div
             aria-hidden

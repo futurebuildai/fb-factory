@@ -14,7 +14,7 @@ export function acceptsMarkdown(accept: string | undefined): boolean {
 export function buildMarkdownNotFoundResponse(): Response {
   const content = `# Page not found
 
-The requested Agent-Native page does not exist.
+The requested FB Factory page does not exist.
 
 Try one of these machine-readable entry points:
 

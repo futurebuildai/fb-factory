@@ -62,7 +62,7 @@ export function TemplateComparisonTable({
                   <span className="inline-flex items-center gap-2">
                     <LogoMark className="size-5" />
                     <span className="font-semibold tracking-tight">
-                      Agent-Native {column.agentNative.name}
+                      FB Factory {column.agentNative.name}
                     </span>
                   </span>
                 ) : (

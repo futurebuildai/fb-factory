@@ -26,7 +26,7 @@ export const meta = () =>
   withTemplateSocialImage(
     [
       {
-        title: "Free AI Chat App Starter | Agent-Native Chat",
+        title: "Free AI Chat App Starter | FB Factory Chat",
       },
       {
         name: "description",
@@ -35,7 +35,7 @@ export const meta = () =>
       },
       {
         property: "og:title",
-        content: "Free AI Chat App Starter | Agent-Native Chat",
+        content: "Free AI Chat App Starter | FB Factory Chat",
       },
       {
         property: "og:description",

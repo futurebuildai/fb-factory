@@ -35,7 +35,7 @@ const jaJP = {
     placeholder: "このドキュメントをより良くする方法を教えてください。",
   },
   demoVideo: {
-    visualPlanningAria: "Agent-Native ビジュアルプランニングのデモ",
+    visualPlanningAria: "FB Factory ビジュアルプランニングのデモ",
   },
   docBlocks: {
     blockLabel: "{{alias}} ブロック",
@@ -77,8 +77,8 @@ const jaJP = {
     close: "閉じる",
   },
   agent: {
-    emptyState: "Agent-Native について何でも聞いてください",
-    suggestionGettingStarted: "Agent-Native はどう始めますか？",
+    emptyState: "FB Factory について何でも聞いてください",
+    suggestionGettingStarted: "FB Factory はどう始めますか？",
     suggestionActions: "actions はどのように動きますか？",
     suggestionPolling: "ポーリング同期モデルを説明して",
     suggestionDeploy: "本番環境へデプロイするには？",
@@ -100,14 +100,14 @@ const jaJP = {
     hero: {
       titleLine1: "agentic apps のための",
       titleAccent: "framework",
-      body: "アプリとエージェントのどちらかを選ぶ必要はありません。Agent-Native アプリはその両方です。",
+      body: "アプリとエージェントのどちらかを選ぶ必要はありません。FB Factory アプリはその両方です。",
       primaryCta: "app を試す",
       secondaryCta: "ドキュメントを読む",
     },
     code: {
       quickStartComment: "1 つのコマンドで app を作成",
       skillInstallComment:
-        "すでに使っている coding agent に Agent-Native の計画機能を追加する",
+        "すでに使っている coding agent に FB Factory の計画機能を追加する",
       frameworkComment:
         "1 つの action が agent、UI、HTTP、MCP、A2A、CLI を動かします。",
       frameworkDescription: "ローカルの app-agent loop から hello を返します。",
@@ -115,7 +115,7 @@ const jaJP = {
     actionSurface: {
       eyebrow: "後付けAIではなく、深くエージェント指向",
       title: "ひとつのアクションで全体のサーフェスを使える",
-      body: "操作を一度だけ定義します。Agent-Native はそれを UI アクション、agent ツール、HTTP エンドポイント、MCP/A2A 面、CLI コマンド、権限チェック、監査証跡にします。",
+      body: "操作を一度だけ定義します。FB Factory はそれを UI アクション、agent ツール、HTTP エンドポイント、MCP/A2A 面、CLI コマンド、権限チェック、監査証跡にします。",
       buildAction: "アクションを作る",
       benefits: {
         oneActionDefinition: {
@@ -149,7 +149,7 @@ const jaJP = {
       title: "agentic アプリ向けの組み込みモジュール",
       body: "本番で必要な部品のうち、agents がゼロから作るべきでないものを人が検証済みで用意しています。そのまま使い、ソースを確認し、必要ならモジュールを置き換えられます。",
       pageBody:
-        "Agent-Native は、本番作業で agents が即興するべきでない部品を人が検証済みで提供します。そのまま使い、ソースを確認し、製品に合わせて置き換えられます。",
+        "FB Factory は、本番作業で agents が即興するべきでない部品を人が検証済みで提供します。そのまま使い、ソースを確認し、製品に合わせて置き換えられます。",
       viewAll: "すべてのモジュールを見る",
       browseApps: "モジュールで作られたアプリを見る",
       items: {
@@ -214,7 +214,7 @@ const jaJP = {
     framework: {
       title: "agent-native apps のための framework",
       body1:
-        "Agent-Native は agentic applications を構築するためのオープンソース framework です。Chat から始め、共有 actions を定義し、同じ state を中心に UI、jobs、コラボレーションを追加できます。",
+        "FB Factory は agentic applications を構築するためのオープンソース framework です。Chat から始め、共有 actions を定義し、同じ state を中心に UI、jobs、コラボレーションを追加できます。",
       body2:
         "ローカル PGlite またはホスト型 PostgreSQL、ホスティングプロバイダー、モデルスタック、app コードを使用できます。",
       cta: "framework ガイドを読む",
@@ -242,7 +242,7 @@ const jaJP = {
       },
     },
     templates: {
-      title: "Agent-Native app を試す",
+      title: "FB Factory app を試す",
       eyebrow: "動く app から始め、agent に進化させます。",
       cta: "apps を見る",
     },
@@ -288,7 +288,7 @@ const jaJP = {
         saas: "SaaS ツール",
         agents: "生の AI Agents",
         internal: "内部ツール",
-        native: "Agent-Native App",
+        native: "FB Factory App",
       },
       rows: {
         ui: "UI",
@@ -328,7 +328,7 @@ const jaJP = {
     batteries: {
       titleLine1: "必要なものを内蔵、",
       titleLine2: "実戦で検証済み",
-      body: "空のプロンプトや場当たり的なコードから始める代わりに、Agent-Native は実用的なソフトウェア構築に必要な実戦済みの部品とベストプラクティスをエージェントに提供します。",
+      body: "空のプロンプトや場当たり的なコードから始める代わりに、FB Factory は実用的なソフトウェア構築に必要な実戦済みの部品とベストプラクティスをエージェントに提供します。",
       browseToolkits: "ツールキットを見る",
     },
     featureCloud: {
@@ -501,12 +501,12 @@ const jaJP = {
     },
     stack: {
       title: "独自のスタックを持ち込む",
-      body: "Agent-Native はオープンソース TypeScript です。モデル、データベース、ホスティングを選び、アプリケーションコードを自分のリポジトリに保持できます。",
-      exploreApps: "Agent-Native で作られたアプリを見る",
+      body: "FB Factory はオープンソース TypeScript です。モデル、データベース、ホスティングを選び、アプリケーションコードを自分のリポジトリに保持できます。",
+      exploreApps: "FB Factory で作られたアプリを見る",
     },
     showcase: {
-      title: "Agent-Native で作られた実際のアプリ",
-      body: "無料で使うことも、無限にカスタマイズすることもできる Agent-Native のオープンソースアプリ。",
+      title: "FB Factory で作られた実際のアプリ",
+      body: "無料で使うことも、無限にカスタマイズすることもできる FB Factory のオープンソースアプリ。",
       browseApps: "アプリを見る",
       scrollLeft: "アプリを左へスクロール",
       scrollRight: "アプリを右へスクロール",
@@ -555,7 +555,7 @@ const jaJP = {
     title: "あなたが所有するオープンソースのエージェントネイティブ アプリ",
     eyebrow: "動く app から始め、agent に進化させます。",
     body: "すべてをカスタマイズできます。",
-    firstPartyTitle: "Agent-Native が作成",
+    firstPartyTitle: "FB Factory が作成",
     community:
       "空のアプリから始めたい場合は、フレームワークガイドでゼロから始められます。",
     createYourOwn: "ゼロから始める",
@@ -564,7 +564,7 @@ const jaJP = {
       "作者が管理するアプリを見つけましょう。ホスト版があれば試用でき、ソースコードを確認して自分でカスタマイズできます。",
     submitCommunityTemplate: "アプリを送信",
     communityEmpty:
-      "コミュニティ掲載を受け付けています。目的を絞った Agent-Native アプリを公開し、カタログに申請してください。",
+      "コミュニティ掲載を受け付けています。目的を絞った FB Factory アプリを公開し、カタログに申請してください。",
     publishGuide: "公開ガイドを読む",
     communityTrust:
       "コミュニティアプリは第三者のコードです。実行前にソースコード、ライセンス、依存関係、インストールスクリプトを確認してください。",
@@ -625,14 +625,14 @@ const jaJP = {
   buildFromScratch: {
     title: "ゼロから構築",
     description:
-      "フレームワークガイドから始めるか、Builder.io のクラウドコーディングエージェントでオンライン構築できます。",
+      "フレームワークガイドから始めるか、FutureBuild のクラウドコーディングエージェントでオンライン構築できます。",
     readDocs: "ドキュメントを読む",
     buildOnline: "オンラインで構築",
     popoverTitle: "ブラウザで構築",
     popoverBody:
-      "Builder.io を使って、クラウドで agent-native アプリをすばやく生成できます。",
+      "FutureBuild を使って、クラウドで agent-native アプリをすばやく生成できます。",
     waitlistBody:
-      "Builder.io はクラウドで agent-native アプリを起動してカスタマイズできます。actions、認証、SQL 状態、エージェントチャット込みです。早期アクセスの待機リストに参加してください。",
+      "FutureBuild はクラウドで agent-native アプリを起動してカスタマイズできます。actions、認証、SQL 状態、エージェントチャット込みです。早期アクセスの待機リストに参加してください。",
     emailLabel: "メール",
     emailPlaceholder: "you@company.com",
     joinWaitlist: "待機リストに参加",
@@ -652,10 +652,10 @@ const jaJP = {
   },
   templateDetail: {
     allTemplates: "すべてのアプリ",
-    notFoundMetaTitle: "アプリが見つかりません — Agent-Native",
+    notFoundMetaTitle: "アプリが見つかりません - FB Factory",
     notFoundTitle: "アプリが見つかりません",
     notFoundBody: "アプリ カタログを参照して、利用可能なアプリを見つけます。",
-    badge: "Agent-Native {{name}}",
+    badge: "FB Factory {{name}}",
     title: "{{name}} アプリ",
   },
   templates: {
@@ -836,9 +836,9 @@ const jaJP = {
         "ソースを接続して、AIエージェントに最初のチャートを頼みましょう。",
       finalCtaButton: "データを探索",
       faq: {
-        question1: "Agent-Native Analyticsとは何ですか？",
+        question1: "FB Factory Analyticsとは何ですか？",
         answer1:
-          "Agent-Native Analyticsは無料でオープンソースのAI分析ツールです。接続されたデータについてAIエージェントに質問し、クエリを調べ、再利用可能なダッシュボードを作成できます。セッションリプレイ、エラー追跡、稼働監視も含まれています。",
+          "FB Factory Analyticsは無料でオープンソースのAI分析ツールです。接続されたデータについてAIエージェントに質問し、クエリを調べ、再利用可能なダッシュボードを作成できます。セッションリプレイ、エラー追跡、稼働監視も含まれています。",
         question2: "Analyticsを使うのにSQLの知識は必要ですか？",
         answer2:
           "自然な言葉で質問し、AIエージェントにクエリを書かせることができます。BigQueryの場合、Explorerでテーブル、指標、フィルターを選択してチャートを作成することもできます。確認用にSQLは常に利用でき、データに詳しい人がソースの接続や指標の定義を手伝う必要がある場合もあります。",
@@ -957,9 +957,9 @@ const jaJP = {
       s057: "ホスト版デモの注意",
       s058: "双方向同期",
       faq: {
-        question1: "Agent-Native Calendar とは何ですか？",
+        question1: "FB Factory Calendar とは何ですか？",
         answer1:
-          "Agent-Native Calendar は、Google Calendar と連携する無料のオープンソース AI スケジューリングアシスタントです。AI エージェントで予定を管理したり空き時間を探したりできるほか、予約リンクを共有して他の人に予約してもらうこともできます。",
+          "FB Factory Calendar は、Google Calendar と連携する無料のオープンソース AI スケジューリングアシスタントです。AI エージェントで予定を管理したり空き時間を探したりできるほか、予約リンクを共有して他の人に予約してもらうこともできます。",
         question2: "どのカレンダーを接続できますか？",
         answer2:
           "複数の Google アカウントを接続して、それぞれの予定をまとめて表示できます。新規・更新された予定は、選択したアカウントのメインカレンダーに書き込まれます。読み取り専用の ICS や webcal フィードを表示することもできますが、これらは Outlook や Apple カレンダーとの双方向連携ではありません。共有された Google カレンダーは表示のみで、予約の空き状況をブロックすることはありません。",
@@ -976,9 +976,9 @@ const jaJP = {
     },
     assets: {
       faq: {
-        question1: "Agent-Native Assetsとは何ですか？",
+        question1: "FB Factory Assetsとは何ですか？",
         answer1:
-          "Agent-Native Assetsは、AIによる画像・動画生成機能を備えた無料でオープンソースのブランドアセットライブラリです。既存のメディアを整理し、ブランドリファレンスを与えて、AIエージェントと一緒に複数のプロジェクトでアセットを生成、編集、再利用できます。",
+          "FB Factory Assetsは、AIによる画像・動画生成機能を備えた無料でオープンソースのブランドアセットライブラリです。既存のメディアを整理し、ブランドリファレンスを与えて、AIエージェントと一緒に複数のプロジェクトでアセットを生成、編集、再利用できます。",
         question2: "Assetsは私のブランドガイドラインをどのように使いますか？",
         answer2:
           "ロゴ、参考画像、カラー、スタイルメモをブランドキットに追加します。再利用可能なテンプレートは特定のコンテンツ種別向けの指示を提供します。AIエージェントはそのコンテキストを使って生成を導き、保存前に結果を確認・調整できます。",
@@ -987,7 +987,7 @@ const jaJP = {
           "はい。既存のメディアをアップロードするか、URLからアセットをインポートし、生成したコンテンツと一緒にライブラリとフォルダで整理できます。ライブラリの閲覧や検索、アセットを参照として再利用、他のプロジェクト用にエクスポートすることもできます。",
         question4: "AIエージェントは他のアプリからAssetsを利用できますか？",
         answer4:
-          "はい。対応エージェントをAssetsのMCP連携経由で接続すれば、チャットからメディアの検索、生成、選択ができます。Agent-Nativeアプリもアセットをリクエストしたり、ピッカーを埋め込んだりできます。利用できる体験は、ホストアプリとAssetsとの連携内容によって異なります。",
+          "はい。対応エージェントをAssetsのMCP連携経由で接続すれば、チャットからメディアの検索、生成、選択ができます。FB Factoryアプリもアセットをリクエストしたり、ピッカーを埋め込んだりできます。利用できる体験は、ホストアプリとAssetsとの連携内容によって異なります。",
         question5: "Assetsは生成画像に実際のロゴを使えますか？",
         answer5:
           "はい。ブランドキットで正規のロゴを設定し、生成時にロゴコンポジットを有効にします。Assetsは生成後に元のロゴを画像に配置するため、画像モデルがロゴを描き直すことはありません。使用前に配置と周囲の画像を確認してください。",
@@ -1150,9 +1150,9 @@ const jaJP = {
       s060: "キャプチャする内容を選択して、Clips で録画を開始します。",
       s062: "すべてのテンプレートを表示",
       faq: {
-        question1: "Agent-Native Clipsとは何ですか?",
+        question1: "FB Factory Clipsとは何ですか?",
         answer1:
-          "Agent-Native Clipsは、バグ、フィードバック、手順の説明をAIエージェントと共有するための無料でオープンソースの画面録画ツールです。録画の文字起こしとタイムスタンプ付き画像をAIエージェントに提供し、人も同じクリップを視聴できます。",
+          "FB Factory Clipsは、バグ、フィードバック、手順の説明をAIエージェントと共有するための無料でオープンソースの画面録画ツールです。録画の文字起こしとタイムスタンプ付き画像をAIエージェントに提供し、人も同じクリップを視聴できます。",
         question2: "Claude、ChatGPT、Cursorと録画を共有できますか?",
         answer2:
           "Clipsはエージェントが読み取れるリンクを提供し、文字起こしとタイムスタンプ付きの画像が含まれます。両方を利用するには、エージェントがリンク先のコンテンツを開き、画像を読み取れる必要があります。一部のチャットモードは文字起こしは読めますが、画像は別途アップロードする必要があります。",
@@ -1288,9 +1288,9 @@ const jaJP = {
       s061: "ドキュメントを読む",
       s062: "すべてのテンプレートを表示",
       faq: {
-        question1: "Agent-Native Content とは何ですか？",
+        question1: "FB Factory Content とは何ですか？",
         answer1:
-          "Agent-Native Content は、ドキュメント、タスク、データベースのための無料でオープンソースのワークスペースです。AI ドキュメントエディターと、構造化されたテーブルや共有ページを組み合わせており、人と接続された AI エージェントが一緒に読み書きできます。",
+          "FB Factory Content は、ドキュメント、タスク、データベースのための無料でオープンソースのワークスペースです。AI ドキュメントエディターと、構造化されたテーブルや共有ページを組み合わせており、人と接続された AI エージェントが一緒に読み書きできます。",
         question2: "Content で自分の AI エージェントを使えますか？",
         answer2:
           "はい。Content は Claude Code、Codex、Cursor などの対応ツール向けに MCP 接続を提供します。接続してアクセスを許可すると、エージェントは利用可能なドキュメントやデータベースを操作できるようになります。Content 組み込みのエージェントも利用できます。",
@@ -1413,9 +1413,9 @@ const jaJP = {
       s060: "すべてのテンプレートを表示",
       s061: "100% 無料、オープンソース、カスタマイズ可能。",
       faq: {
-        question1: "Agent-Native Designとは何ですか？",
+        question1: "FB Factory Designとは何ですか？",
         answer1:
-          "Agent-Native Designは、無料でオープンソースのAIデザイン・プロトタイピングツールです。AIエージェントとインタラクティブなHTMLプロトタイプを作成し、ブランドを適用して、ビジュアルコントロールやチャットでデザインを調整できます。仕上がりをフィードバック用に共有したり、開発用にエクスポートしたりできます。",
+          "FB Factory Designは、無料でオープンソースのAIデザイン・プロトタイピングツールです。AIエージェントとインタラクティブなHTMLプロトタイプを作成し、ブランドを適用して、ビジュアルコントロールやチャットでデザインを調整できます。仕上がりをフィードバック用に共有したり、開発用にエクスポートしたりできます。",
         question2: "AIが生成した後でもデザインを編集できますか？",
         answer2:
           "はい。ビジュアルコントロールでテキスト、間隔、スタイルを調整するか、AIエージェントにデザインの変更を依頼できます。複数の方向性を比較し、選んだものをさらに磨き続けられます。",
@@ -1436,7 +1436,7 @@ const jaJP = {
       heroEyebrow: "Dispatch",
       heroTitle: "AI エージェントを一箇所でまとめて調整",
       heroDescription:
-        "Dispatch は、接続された Agent-Native アプリへの作業の委任、定期タスクのスケジュール設定、共有接続の管理を行う、無料のオープンソース AI エージェントオーケストレーションアプリです。",
+        "Dispatch は、接続された FB Factory アプリへの作業の委任、定期タスクのスケジュール設定、共有接続の管理を行う、無料のオープンソース AI エージェントオーケストレーションアプリです。",
       heroCta: "タスクを委任",
       useCasesHeading: "Dispatch でできること",
       useCasesBody:
@@ -1528,9 +1528,9 @@ const jaJP = {
       s053: "ドキュメントを読む",
       s054: "すべてのテンプレートを表示",
       faq: {
-        question1: "Agent-Native Dispatch とは何ですか？",
+        question1: "FB Factory Dispatch とは何ですか？",
         answer1:
-          "Agent-Native Dispatch は、Agent-Native ワークスペース向けの無料のオープンソース AI エージェントオーケストレーションアプリです。接続されたアプリ間のリクエストを調整し、対応チャンネルからのメッセージを受信し、定期タスクをスケジュールし、共有インテグレーションを管理します。",
+          "FB Factory Dispatch は、FB Factory ワークスペース向けの無料のオープンソース AI エージェントオーケストレーションアプリです。接続されたアプリ間のリクエストを調整し、対応チャンネルからのメッセージを受信し、定期タスクをスケジュールし、共有インテグレーションを管理します。",
         question2: "Dispatch はどのアプリと連携できますか？",
         answer2:
           "Dispatch は、ワークスペース内で接続され利用可能なアプリ（Analytics や Mail など）に作業を委任します。各アプリは自身のタスクとデータを処理します。Dispatch にそれらのアプリを使わせる前に、関連する接続と権限を設定してください。",
@@ -1648,9 +1648,9 @@ const jaJP = {
       s058: "ドキュメントを読む",
       s059: "すべてのテンプレートを表示",
       faq: {
-        question1: "Agent-Native Formsとは何ですか？",
+        question1: "FB Factory Formsとは何ですか？",
         answer1:
-          "Agent-Native Formsは無料でオープンソースのAIフォームビルダーです。AIエージェントでフォームやアンケートを作成し、フィールドを視覚的に編集し、公開リンクを発行して、同じアプリ内で回答を確認・分析できます。",
+          "FB Factory Formsは無料でオープンソースのAIフォームビルダーです。AIエージェントでフォームやアンケートを作成し、フィールドを視覚的に編集し、公開リンクを発行して、同じアプリ内で回答を確認・分析できます。",
         question2: "AIが作成したフォームを後から編集できますか？",
         answer2:
           "はい。質問、ラベル、選択肢、必須項目、フィールドの順序をビジュアルエディターで変更するか、AIエージェントに変更を依頼できます。どちらの方法でも同じフォームが更新されます。以前の回答に基づいて条件付きの質問を追加することもできます。",
@@ -1668,9 +1668,9 @@ const jaJP = {
     },
     mail: {
       faq: {
-        question1: "Agent-Native Mailとは何ですか？",
+        question1: "FB Factory Mailとは何ですか？",
         answer1:
-          "Agent-Native Mailは、AIメールアシスタントを備えた、無料でオープンソースのGmail用メールクライアントです。メッセージを読んで検索したり、会話を要約したり、返信を下書きしたり、受信トレイやAIエージェントを通じてメールを整理したりできます。",
+          "FB Factory Mailは、AIメールアシスタントを備えた、無料でオープンソースのGmail用メールクライアントです。メッセージを読んで検索したり、会話を要約したり、返信を下書きしたり、受信トレイやAIエージェントを通じてメールを整理したりできます。",
         question2: "既存のGmailアカウントでMailを使えますか？",
         answer2:
           "はい。既存のGmailアカウントを接続すれば、Mailでメールの読み書きができます。複数のGmailアカウントを接続して、まとめて検索することもできます。Mailは新しいメールアドレスを提供するものではなく、現時点ではOutlookなど他のメールプロバイダーではなくGmailに対応しています。",
@@ -1736,7 +1736,7 @@ const jaJP = {
       s007Primary: "Superhuman および Gmail の",
       s007Secondary: "オープンソース代替品",
       s008: "試す",
-      s009: "ホストされたデモは、Gmail アクセスに Agent-Native の共有 Google アプリを使用するため、Google は続行する前に確認を求める場合があります。ローカルで実行して、独自の Google OAuth クライアントを使用します。",
+      s009: "ホストされたデモは、Gmail アクセスに FB Factory の共有 Google アプリを使用するため、Google は続行する前に確認を求める場合があります。ローカルで実行して、独自の Google OAuth クライアントを使用します。",
       s010: "できること",
       s011: "電子メール クライアントを完全に所有する AI を搭載した受信トレイに置き換えるのに必要なものがすべて揃っています。",
       s012: "キーボードショートカット",
@@ -1791,9 +1791,9 @@ const jaJP = {
     },
     plan: {
       faq: {
-        question1: "Agent-Native Plans とは何ですか？",
+        question1: "FB Factory Plans とは何ですか？",
         answer1:
-          "Agent-Native Plans は、AI コーディングエージェント向けの無料・オープンソースのビジュアル計画ツールです。図、ワイヤーフレーム、注釈付きコード、コメントを使って実装プランをレビューしたり、完了した変更のビジュアルな振り返りを生成したりできます。",
+          "FB Factory Plans は、AI コーディングエージェント向けの無料・オープンソースのビジュアル計画ツールです。図、ワイヤーフレーム、注釈付きコード、コメントを使って実装プランをレビューしたり、完了した変更のビジュアルな振り返りを生成したりできます。",
         question2: "自分のコーディングエージェントで Plans を使うには？",
         answer2:
           "`npx @agent-native/core@latest skills add visual-plan` を実行して、計画スキルとコネクタをインストールし、お使いのクライアントで認証を済ませてください。インストールガイドでは Claude Code や Codex などのクライアントを取り上げています。`/visual-plan` を使うと、エージェントにビジュアルな実装プランを依頼できます。",
@@ -1955,9 +1955,9 @@ const jaJP = {
       s057: "ドキュメントを読む",
       s058: "すべてのテンプレートを表示",
       faq: {
-        question1: "Agent-Native Slidesとは何ですか？",
+        question1: "FB Factory Slidesとは何ですか？",
         answer1:
-          "Agent-Native Slidesは無料でオープンソースのAIプレゼンテーション作成ツールです。アイデアや参考資料からAIエージェントでブランドに沿ったデッキを作成し、スライドを自分で編集したり、発表したり、PowerPointにエクスポートしたりできます。",
+          "FB Factory Slidesは無料でオープンソースのAIプレゼンテーション作成ツールです。アイデアや参考資料からAIエージェントでブランドに沿ったデッキを作成し、スライドを自分で編集したり、発表したり、PowerPointにエクスポートしたりできます。",
         question2: "AIが生成した後でもスライドを編集できますか？",
         answer2:
           "はい。ビジュアルエディタでテキスト、レイアウト、スタイルを直接編集するか、AIエージェントに選択したスライドの修正を依頼できます。最初のドラフトの後も、プレゼンテーションを改善し続けられます。",
@@ -2056,9 +2056,9 @@ const jaJP = {
     },
     chat: {
       faq: {
-        question1: "Agent-Native Chat とは何ですか？",
+        question1: "FB Factory Chat とは何ですか？",
         answer1:
-          "Agent-Native Chat は開発者向けの無料でオープンソースの AI チャットアプリの土台です。保存されたスレッド、エージェントチャットインターフェース、認証、共有 actions、ライブ同期を備えています。アプリケーション固有のデータと振る舞いはあなたが追加します。",
+          "FB Factory Chat は開発者向けの無料でオープンソースの AI チャットアプリの土台です。保存されたスレッド、エージェントチャットインターフェース、認証、共有 actions、ライブ同期を備えています。アプリケーション固有のデータと振る舞いはあなたが追加します。",
         question2: "Chat は完成した AI アシスタントですか？",
         answer2:
           "Chat は動作する会話インターフェースとその基盤となるフレームワークを提供します。サンプルの action を含みますが、業務ワークフローやプロバイダー連携はあなた自身で実装・設定するものです。",
@@ -2067,7 +2067,7 @@ const jaJP = {
           "はい。ワークフローに必要なリスト、キュー、エディタなどのビュー向けにルートとコンポーネントを追加してください。エージェントが使うのと同じ actions とアプリケーションデータに接続できます。",
         question4: "Chat には業務ツールとの連携が含まれますか？",
         answer4:
-          "この最小構成のテンプレートには、特定ドメイン向けのプロバイダー連携は含まれません。アプリに必要な連携とアクセスルールを追加してください。ワークフローに合う既存の Agent-Native アプリがあれば、そちらのテンプレートの方が適した出発点になる場合があります。",
+          "この最小構成のテンプレートには、特定ドメイン向けのプロバイダー連携は含まれません。アプリに必要な連携とアクセスルールを追加してください。ワークフローに合う既存の FB Factory アプリがあれば、そちらのテンプレートの方が適した出発点になる場合があります。",
         question5: "自分の版をカスタマイズしてデプロイできますか？",
         answer5:
           "はい。CLI でコピーを作成し、actions、データ、インターフェースを追加してから、アプリケーションをデプロイしてください。環境に合わせて認証とプロバイダーアクセスを設定し、追加したワークフローをユーザーに共有する前にテストしてください。",
@@ -2122,14 +2122,14 @@ const jaJP = {
     metaTitle:
       "Agent Skills - コーディングエージェント向け Visual Plan、Visual Recap、Visual Edit",
     metaDescription:
-      "コーディングエージェントが視覚的な計画、PR レビュー要約、ローカルの視覚編集を使えるように、Agent-Native アプリベースのスキルをインストールします。",
+      "コーディングエージェントが視覚的な計画、PR レビュー要約、ローカルの視覚編集を使えるように、FB Factory アプリベースのスキルをインストールします。",
     metaOgDescription:
-      "ホスト、確認、カスタマイズできる Agent-Native アプリで、コーディングエージェントにスラッシュコマンドを追加します。",
+      "ホスト、確認、カスタマイズできる FB Factory アプリで、コーディングエージェントにスラッシュコマンドを追加します。",
     metaKeywords:
       "agent skills, visual plan, visual recap, visual edit, コーディングエージェント, Claude Code, Codex, PR レビュー, 計画, agent-native",
     heroTitle: "コーディングエージェントに新しい力を追加",
     heroBody:
-      "完全にカスタマイズできる Agent-Native アプリベースのスキルをインストールします。実装前の視覚的な計画、変更後の視覚的な PR レビュー要約、ローカル UI フローの視覚編集に対応します。",
+      "完全にカスタマイズできる FB Factory アプリベースのスキルをインストールします。実装前の視覚的な計画、変更後の視覚的な PR レビュー要約、ローカル UI フローの視覚編集に対応します。",
     sectionTitle: "コーディングエージェント向けアプリベーススキル",
     sectionBody:
       "ホストされた共有可能なアプリリンク、ローカルファイル、自分でホストまたはカスタマイズしたアプリを使えます。必要に応じて、エージェントには指示と対応する MCP サーフェスが渡されます。",
@@ -2166,9 +2166,9 @@ const jaJP = {
     },
   },
   downloadPage: {
-    title: "Agent-Native をダウンロード",
+    title: "FB Factory をダウンロード",
     body: "会議、デザイン、プレゼンテーション、データ、スケジューリング、メールなど向けのエージェント型アプリを、1 つのデスクトップアプリでお試しください。",
-    openDesktop: "Agent-Native を開く",
+    openDesktop: "FB Factory を開く",
     downloadInstaller: "インストーラーをダウンロード",
     downloadStarted: "ダウンロードを開始しました",
     downloadAgain: "うまくいきませんでしたか？もう一度ダウンロード",
@@ -2181,7 +2181,7 @@ const jaJP = {
     nightly: "Nightly",
     runFromSource: "自分で構築する",
     runFromSourceBody:
-      "コマンドラインから Agent-Native アプリを作成し、macOS、Windows、Linux でローカルに実行します。",
+      "コマンドラインから FB Factory アプリを作成し、macOS、Windows、Linux でローカルに実行します。",
     platforms: {
       mac: {
         primary: "Apple Silicon 向けをダウンロード",
@@ -2209,7 +2209,7 @@ const jaJP = {
   },
   brandPage: {
     eyebrow: "ブランド素材",
-    title: "Agent-Native ロゴ",
+    title: "FB Factory ロゴ",
     body: "記事、プレゼンテーション、コミュニティプロジェクト向けの公式ロゴとマークをダウンロードできます。SVG ファイルはどのサイズでも鮮明で、透明な背景に対応しています。",
     horizontal: {
       title: "横長ロゴ",
@@ -2242,14 +2242,14 @@ const jaJP = {
     lastUpdated: "最終更新日: {{date}}",
     resources: {
       eyebrow: "法務リソース",
-      title: "Agent-Native の法務リソース",
+      title: "FB Factory の法務リソース",
       intro:
-        "Agent-Native のホスト型アプリケーションとサービスに適用される独立した法務ポリシーです。",
+        "FB Factory のホスト型アプリケーションとサービスに適用される独立した法務ポリシーです。",
       agentNative: {
-        title: "Agent-Native のポリシー",
-        body: "これらのページは、共通のポリシーを Agent-Native のオープンソースプロジェクトとホスト型サンプル向けに調整したものです。",
-        terms: "Agent-Native 利用規約",
-        privacy: "Agent-Native プライバシーポリシー",
+        title: "FB Factory のポリシー",
+        body: "これらのページは、共通のポリシーを FB Factory のオープンソースプロジェクトとホスト型サンプル向けに調整したものです。",
+        terms: "FB Factory 利用規約",
+        privacy: "FB Factory プライバシーポリシー",
       },
       builder: {
         title: "ホスト型サービスの追加ポリシー",
@@ -2266,18 +2266,18 @@ const jaJP = {
       },
       notIncluded: {
         title: "含まれない商用条件",
-        body: "Agent-Native には有料プランもエンタープライズ契約もありません。エンタープライズ SLA、サポート条件、DPA、セキュリティ補遺、プロフェッショナルサービス条件、料金などの商用資料は含まれません。",
+        body: "FB Factory には有料プランもエンタープライズ契約もありません。エンタープライズ SLA、サポート条件、DPA、セキュリティ補遺、プロフェッショナルサービス条件、料金などの商用資料は含まれません。",
       },
     },
     privacy: {
       eyebrow: "プライバシーポリシー",
-      title: "Agent-Native ホスト型アプリケーション",
+      title: "FB Factory ホスト型アプリケーション",
       intro:
-        "このポリシーでは、Builder.io がホストされる Agent-Native アプリケーション、ホストされるテンプレート、デモ、および公式ブラウザー拡張機能を操作する際に、データを収集、使用、共有、および保持する方法について説明します。",
+        "このポリシーでは、FutureBuild がホストされる FB Factory アプリケーション、ホストされるテンプレート、デモ、および公式ブラウザー拡張機能を操作する際に、データを収集、使用、共有、および保持する方法について説明します。",
       scopeCards: {
         hosted: {
           title: "ホストされているアプリ",
-          body: "Builder.io が Agent-Native サービスまたはホストされたテンプレートを操作する場合に適用されます。",
+          body: "FutureBuild が FB Factory サービスまたはホストされたテンプレートを操作する場合に適用されます。",
         },
         openSource: {
           title: "オープンソース",
@@ -2292,7 +2292,7 @@ const jaJP = {
         scope: "範囲",
         information: "当社が収集する情報",
         cookies: "Cookie と分析",
-        clipsExtension: "Agent-Native Clips Chrome 拡張機能",
+        clipsExtension: "FB Factory Clips Chrome 拡張機能",
         use: "情報の使用方法",
         sharing: "共有とサードパーティ",
         chromeLimitedUse: "Chrome Web Store 限定使用",
@@ -2302,25 +2302,24 @@ const jaJP = {
       },
       paragraphs: {
         scope1:
-          "Agent-Native はオープン ソースであり、ソース コードは MIT ライセンスに基づいて入手できます。このポリシーは、Builder.io が Agent-Native ユーザー向けに運用するホスト型アプリケーションおよびサービスにのみ適用されます。これは、フォーク、カスタマイズされたテンプレート、プライベート展開、自己ホスト型バージョンなど、他人によるコードの使用には適用されません。独自の展開を運用する場合は、独自のデータ慣行とプライバシー ポリシーに対して責任を負います。",
+          "FB Factory はオープン ソースであり、ソース コードは MIT ライセンスに基づいて入手できます。このポリシーは、FutureBuild が FB Factory ユーザー向けに運用するホスト型アプリケーションおよびサービスにのみ適用されます。これは、フォーク、カスタマイズされたテンプレート、プライベート展開、自己ホスト型バージョンなど、他人によるコードの使用には適用されません。独自の展開を運用する場合は、独自のデータ慣行とプライバシー ポリシーに対して責任を負います。",
         scope2Prefix:
-          "このポリシーは、Builder.io の広範なポリシーを補足することを目的としています。",
-        scope2Suffix:
-          "Agent-Native ホストされたアプリケーションの動作について。",
+          "このポリシーは、FutureBuild の広範なポリシーを補足することを目的としています。",
+        scope2Suffix: "FB Factory ホストされたアプリケーションの動作について。",
         cookies:
-          "Agent-Native のドキュメントサイトとホスト型アプリケーションでは、認証とセキュリティ、言語やテーマなどの設定の保存、構成された分析技術のために必要な Cookie を使用する場合があります。ドキュメントサイトでは、デプロイで設定されている場合に Google Analytics または Google Tag Manager を読み込むことがあり、ホスト型サービスでは信頼性や機能の利用状況を測定するためにファーストパーティ分析を使用する場合があります。ホスト型アプリケーションのコンテンツを第三者広告には使用しません。Cookie はブラウザ設定で管理できますが、必要な Cookie を無効にするとサインインなどの機能が使えなくなる場合があります。",
+          "FB Factory のドキュメントサイトとホスト型アプリケーションでは、認証とセキュリティ、言語やテーマなどの設定の保存、構成された分析技術のために必要な Cookie を使用する場合があります。ドキュメントサイトでは、デプロイで設定されている場合に Google Analytics または Google Tag Manager を読み込むことがあり、ホスト型サービスでは信頼性や機能の利用状況を測定するためにファーストパーティ分析を使用する場合があります。ホスト型アプリケーションのコンテンツを第三者広告には使用しません。Cookie はブラウザ設定で管理できますが、必要な Cookie を無効にするとサインインなどの機能が使えなくなる場合があります。",
         clips1:
-          "Agent-Native Clips Chrome extension は、ブラウザベースの録画を開始し、有効になっている場合はブラウザ診断をクリップに添付するのに役立ちます。 It may collect the selected capture source, camera and microphone media you choose to include, the active tab title and URL, and authentication state needed to connect the extension to hosted Clips.",
+          "FB Factory Clips Chrome extension は、ブラウザベースの録画を開始し、有効になっている場合はブラウザ診断をクリップに添付するのに役立ちます。 It may collect the selected capture source, camera and microphone media you choose to include, the active tab title and URL, and authentication state needed to connect the extension to hosted Clips.",
         clips2:
           "開発者ログはオプションです。有効にすると、拡張機能は編集されたコンソール メッセージ、JavaScript 例外、および記録がアクティブなときに選択したタブからメソッド、URL、ステータス、タイミング、失敗の詳細などのフェッチ/XHR メタデータを収集できます。この拡張機能は、リクエスト本文、応答本文、Cookie、または認証ヘッダーを収集するように設計されていません。",
         clipsAnchor:
           "Chrome Web Store の開示については、このセクションを拡張プライバシー ポリシー アンカーとして使用します。",
         sharing1:
-          "当社は、Agent-Native がホストするアプリケーション データを販売したり、サードパーティの広告に使用したりすることはありません。 We share data with service providers that help operate the hosted service, such as cloud infrastructure, storage, authentication, email, observability, AI, and transcription providers, when those services are needed for the feature you use.",
+          "当社は、FB Factory がホストするアプリケーション データを販売したり、サードパーティの広告に使用したりすることはありません。 We share data with service providers that help operate the hosted service, such as cloud infrastructure, storage, authentication, email, observability, AI, and transcription providers, when those services are needed for the feature you use.",
         sharing2:
           "インテグレーションに接続すると、ホストされているアプリは、設定およびプロバイダー独自の条件に従って、そのプロバイダーとの間でデータを送受信することがあります。 We may also disclose information when required for security, abuse prevention, legal compliance, or to protect users and the service.",
         chromeLimitedUse:
-          "Agent-Native Clips Chrome extension については、Chrome extension APIs から受け取った情報の使用は、限定使用要件を含む Chrome Web Store ユーザー データ ポリシーに準拠します。この拡張機能によって収集されたブラウザー アクティビティは、広告、再販、信用度、または無関係のプロファイリングではなく、ユーザー向けの記録と診断ワークフローを提供するために使用されます。",
+          "FB Factory Clips Chrome extension については、Chrome extension APIs から受け取った情報の使用は、限定使用要件を含む Chrome Web Store ユーザー データ ポリシーに準拠します。この拡張機能によって収集されたブラウザー アクティビティは、広告、再販、信用度、または無関係のプロファイリングではなく、ユーザー向けの記録と診断ワークフローを提供するために使用されます。",
         retention1:
           "当社は、サービスの提供、ワークスペースの履歴の維持、義務の遵守、紛争の解決、または信頼性とセキュリティの向上に必要な限り、ホストされたアプリケーション データを保持します。 Users can delete clips, documents, resources, and other hosted app content through the relevant application controls where available.",
         retention2:
@@ -2328,9 +2327,9 @@ const jaJP = {
         security:
           "当社は、アクセス制御、トランスポート暗号化、監視、運用上のセキュリティ慣行など、ホストされたアプリケーション データを保護するために設計された合理的な管理上、技術上、および組織上の安全対策を講じています。どのオンライン サービスも完全なセキュリティを保証することはできないため、ユーザーは、ホストされているアプリケーションと情報を共有するつもりがない限り、記録やプロンプトに秘密や機密情報を含めないようにする必要があります。",
         changes1:
-          "Agent-Native ホスト型アプリケーションの変更に応じて、このポリシーを更新する場合があります。ページの上部にある更新日は、ポリシーが最後に改訂された日を示します。",
+          "FB Factory ホスト型アプリケーションの変更に応じて、このポリシーを更新する場合があります。ページの上部にある更新日は、ポリシーが最後に改訂された日を示します。",
         changes2Prefix:
-          "プライバシーのリクエストや質問がある場合は、以下にリストされているサポートおよびプライバシー チャネルを通じて Builder.io までお問い合わせください。",
+          "プライバシーのリクエストや質問がある場合は、以下にリストされているサポートおよびプライバシー チャネルを通じて FutureBuild までお問い合わせください。",
       },
       dataCategories: {
         account: {
@@ -2339,7 +2338,7 @@ const jaJP = {
         },
         hostedContent: {
           title: "ホストされるアプリケーションのコンテンツ",
-          body: "Content では、録画、トランスクリプト、ドキュメント、コメント、タスク、プロンプト、エージェントの応答、ファイル、構成など、ホストされた Agent-Native テンプレートを作成またはアップロードします。",
+          body: "Content では、録画、トランスクリプト、ドキュメント、コメント、タスク、プロンプト、エージェントの応答、ファイル、構成など、ホストされた FB Factory テンプレートを作成またはアップロードします。",
         },
         integrations: {
           title: "接続された統合データ",
@@ -2352,7 +2351,7 @@ const jaJP = {
       },
       uses: {
         provide:
-          "ホストされた Agent-Native アプリケーションとそのエージェント ワークフローを提供、同期、操作します。",
+          "ホストされた FB Factory アプリケーションとそのエージェント ワークフローを提供、同期、操作します。",
         transform:
           "ホストされているアプリにコンテンツを記録、文字起こし、要約、検索、共有、または変換するように依頼する場合。",
         auth: "ユーザーを認証し、組織を管理し、アクセス制御を実施し、悪用を防止します。",
@@ -2363,18 +2362,18 @@ const jaJP = {
       },
       links: {
         builderPrivacy: "プライバシーポリシー",
-        builderPrivacyFull: "Builder.io プライバシー ポリシー",
+        builderPrivacyFull: "FutureBuild プライバシー ポリシー",
       },
     },
     about: {
-      eyebrow: "Agent-Native について",
+      eyebrow: "FB Factory について",
       title: "エージェントと人のためのオープンソースアプリ",
       intro:
-        "Agent-Native は、AI エージェントとユーザーインターフェースが同じアクション、データ、アプリケーション状態を共有するアプリを構築するためのオープンソースフレームワークです。",
+        "FB Factory は、AI エージェントとユーザーインターフェースが同じアクション、データ、アプリケーション状態を共有するアプリを構築するためのオープンソースフレームワークです。",
       sections: {
         project: {
           title: "共有された実行モデル",
-          body: "Agent-Native ではエージェントとインターフェースを対等なパートナーとして扱います。1つのアクションが UI コントロール、エージェントツール、HTTP エンドポイント、MCP または A2A の機能、CLI コマンド、監査可能なワークフローを支えます。共有 SQL 状態によって人とエージェントの表示が一致します。",
+          body: "FB Factory ではエージェントとインターフェースを対等なパートナーとして扱います。1つのアクションが UI コントロール、エージェントツール、HTTP エンドポイント、MCP または A2A の機能、CLI コマンド、監査可能なワークフローを支えます。共有 SQL 状態によって人とエージェントの表示が一致します。",
         },
         openSource: {
           title: "標準でオープンソース",
@@ -2382,19 +2381,19 @@ const jaJP = {
         },
         hosted: {
           title: "ホスト型と自己ホスト型",
-          body: "Builder.io は agent-native.com で Agent-Native のホスト型アプリとドキュメントを運用しています。自分でアプリをデプロイし保守したいチームにも対応します。アクション契約、アクセス境界、エージェント指示、公開プロトコルはコードとドキュメントで確認できます。",
+          body: "FutureBuild は agent-native.com で FB Factory のホスト型アプリとドキュメントを運用しています。自分でアプリをデプロイし保守したいチームにも対応します。アクション契約、アクセス境界、エージェント指示、公開プロトコルはコードとドキュメントで確認できます。",
         },
         community: {
           title: "公開開発",
-          body: "このプロジェクトは GitHub の issue、pull request、ドキュメント、Agent-Native コミュニティを通じて公開で開発されています。ドキュメントで設計を学び、コードで実装を確認し、ユースケースを相談したり変更に貢献したりできます。",
+          body: "このプロジェクトは GitHub の issue、pull request、ドキュメント、FB Factory コミュニティを通じて公開で開発されています。ドキュメントで設計を学び、コードで実装を確認し、ユースケースを相談したり変更に貢献したりできます。",
         },
       },
     },
     contact: {
       eyebrow: "お問い合わせ",
-      title: "Agent-Native について Builder.io に連絡する",
+      title: "FB Factory について FutureBuild に連絡する",
       intro:
-        "Agent-Native に関する質問、問題の報告、改善提案、安全性に関する懸念には、以下のサポート、ソース、コミュニティの窓口をご利用ください。",
+        "FB Factory に関する質問、問題の報告、改善提案、安全性に関する懸念には、以下のサポート、ソース、コミュニティの窓口をご利用ください。",
       emailLabel: "support@builder.io にメールする",
       sections: {
         support: {
@@ -2407,23 +2406,23 @@ const jaJP = {
         },
         security: {
           title: "セキュリティ報告",
-          body: "未修正の脆弱性を公開 issue やチャットで開示しないでください。利用可能なセキュリティ窓口から Builder.io に連絡し、再現と評価に必要な情報だけを提供してください。認証情報、非公開データ、悪用手順は通常のサポート依頼に含めないでください。",
+          body: "未修正の脆弱性を公開 issue やチャットで開示しないでください。利用可能なセキュリティ窓口から FutureBuild に連絡し、再現と評価に必要な情報だけを提供してください。認証情報、非公開データ、悪用手順は通常のサポート依頼に含めないでください。",
         },
         legal: {
           title: "法律とプライバシー",
-          body: "プライバシーに関する質問は、サポートへ連絡する前に Agent-Native のプライバシーポリシーと Builder.io の法務リソースをご確認ください。Builder.io, Inc. の住所は 95 3rd Street, 2nd Floor, San Francisco, CA 94103, United States です。ホスト型サービスの規約と自己ホストの責任は利用規約に記載されています。",
+          body: "プライバシーに関する質問は、サポートへ連絡する前に FB Factory のプライバシーポリシーと FutureBuild の法務リソースをご確認ください。FutureBuild, Inc. の住所は 95 3rd Street, 2nd Floor, San Francisco, CA 94103, United States です。ホスト型サービスの規約と自己ホストの責任は利用規約に記載されています。",
         },
       },
     },
     terms: {
       eyebrow: "利用規約",
-      title: "Agent-Native ホスト型アプリケーション",
+      title: "FB Factory ホスト型アプリケーション",
       intro:
-        "これらの規約は、Builder.io が Agent-Native ホスト型アプリケーション、ホスト型テンプレート、デモ、および公式ホスト型サービスを運用する場合に適用されます。",
+        "これらの規約は、FutureBuild が FB Factory ホスト型アプリケーション、ホスト型テンプレート、デモ、および公式ホスト型サービスを運用する場合に適用されます。",
       scopeCards: {
         hosted: {
           title: "ホストされているアプリ",
-          body: "Builder.io によって操作される Agent-Native アプリまたはテンプレートを使用する場合に適用されます。",
+          body: "FutureBuild によって操作される FB Factory アプリまたはテンプレートを使用する場合に適用されます。",
         },
         openSource: {
           title: "オープンソース",
@@ -2431,7 +2430,7 @@ const jaJP = {
         },
         selfHosted: {
           title: "自己ホスト型",
-          body: "あなたまたは他の人が運用する個別の展開は、Builder.io ホスト型サービスではありません。",
+          body: "あなたまたは他の人が運用する個別の展開は、FutureBuild ホスト型サービスではありません。",
         },
       },
       sections: {
@@ -2448,55 +2447,55 @@ const jaJP = {
       },
       paragraphs: {
         scope1:
-          "Agent-Native はオープン ソースであり、そのソース コードは MIT ライセンスの下で入手できます。 These terms apply only to hosted applications and services operated by Builder.io for Agent-Native users. They do not govern forks, custom templates, private deployments, or self-hosted versions operated outside Builder.io.",
+          "FB Factory はオープン ソースであり、そのソース コードは MIT ライセンスの下で入手できます。 These terms apply only to hosted applications and services operated by FutureBuild for FB Factory users. They do not govern forks, custom templates, private deployments, or self-hosted versions operated outside FutureBuild.",
         scope2Prefix:
-          "これらの用語は、Builder.io のより広範な内容を補足するものです",
-        scope2Middle: "そしてAgent-Native",
+          "これらの用語は、FutureBuild のより広範な内容を補足するものです",
+        scope2Middle: "そしてFB Factory",
         scope2Suffix:
-          "企業または組織を代表してホストされた Agent-Native アプリを使用する場合、その組織に対してこれらの規約に同意する権限があることを表明することになります。",
+          "企業または組織を代表してホストされた FB Factory アプリを使用する場合、その組織に対してこれらの規約に同意する権限があることを表明することになります。",
         scope3:
-          "Agent-Native には有料プランや有料のホスティングサブスクリプションはありません。注文書、料金、エンタープライズサポート、サービスレベル、データ処理に関する追加条項などの Builder.io の商用条件は、別途書面で合意されない限り、この提供内容には含まれません。",
+          "FB Factory には有料プランや有料のホスティングサブスクリプションはありません。注文書、料金、エンタープライズサポート、サービスレベル、データ処理に関する追加条項などの FutureBuild の商用条件は、別途書面で合意されない限り、この提供内容には含まれません。",
         hostedService:
-          "Builder.io は、ホストされた Agent-Native アプリケーション、テンプレート、デモ、共有ワークスペース、ブラウザ拡張機能、および関連するエージェント ワークフローを提供する場合があります。 The hosted service may be updated, limited, suspended, or discontinued as the product evolves.",
+          "FutureBuild は、ホストされた FB Factory アプリケーション、テンプレート、デモ、共有ワークスペース、ブラウザ拡張機能、および関連するエージェント ワークフローを提供する場合があります。 The hosted service may be updated, limited, suspended, or discontinued as the product evolves.",
         accounts1:
-          "あなたは、アカウント情報の正確性、アカウントでのアクティビティ、および資格情報の安全な保管について責任を負います。ホストされた Agent-Native アプリには、組織機能、招待状、共有リソース、接続された統合、およびアプリ固有のアクセス制御が含まれる場合があります。 Only invite users and connect services you are authorized to use.",
+          "あなたは、アカウント情報の正確性、アカウントでのアクティビティ、および資格情報の安全な保管について責任を負います。ホストされた FB Factory アプリには、組織機能、招待状、共有リソース、接続された統合、およびアプリ固有のアクセス制御が含まれる場合があります。 Only invite users and connect services you are authorized to use.",
         accounts2:
-          "アカウント、ワークスペース、統合、または共有リソースが侵害されているか悪用されていると思われる場合は、速やかに Builder.io サポートにご連絡ください。",
+          "アカウント、ワークスペース、統合、または共有リソースが侵害されているか悪用されていると思われる場合は、速やかに FutureBuild サポートにご連絡ください。",
         content1:
-          "あなたは、ホストされた Agent-Native アプリを作成、アップロード、記録、インポート、または接続するコンテンツの所有権を保持します。 You grant Builder.io the limited permission needed to host, process, transmit, display, transform, analyze, and store that content so the hosted app and its agent workflows can operate.",
+          "あなたは、ホストされた FB Factory アプリを作成、アップロード、記録、インポート、または接続するコンテンツの所有権を保持します。 You grant FutureBuild the limited permission needed to host, process, transmit, display, transform, analyze, and store that content so the hosted app and its agent workflows can operate.",
         content2:
           "お客様は、サービスに提供するコンテンツ、録音、プロンプト、ファイル、認証情報、および接続された統合データに必要な権利と許可を取得する責任があります。",
         agents1:
-          "Hosted Agent-Native apps can run AI agents, tools, automations, and provider integrations at your request. AI で生成された出力は、不完全、不正確、または特定の用途には不適切である可能性があります。 Review important outputs, actions, exports, and messages before relying on them.",
+          "Hosted FB Factory apps can run AI agents, tools, automations, and provider integrations at your request. AI で生成された出力は、不完全、不正確、または特定の用途には不適切である可能性があります。 Review important outputs, actions, exports, and messages before relying on them.",
         agents2:
           "サードパーティのサービスに接続する場合、それらのサービスの使用には、引き続き独自の条件、制限、許可、およびプライバシー慣行が適用されます。",
         openSource:
-          "これらの条件は、Agent-Native コードのオープンソース ライセンスを変更するものではありません。 If you download, fork, modify, or self-host Agent-Native, the MIT license and the terms you set for your own deployment govern that use. You are responsible for security, privacy, compliance, operations, and user support for deployments you operate.",
+          "これらの条件は、FB Factory コードのオープンソース ライセンスを変更するものではありません。 If you download, fork, modify, or self-host FB Factory, the MIT license and the terms you set for your own deployment govern that use. You are responsible for security, privacy, compliance, operations, and user support for deployments you operate.",
         suspensionPrefix:
-          "Builder.io は、ユーザーの保護、法律の遵守、悪用の防止、セキュリティ リスクへの対処、またはサービスの運用に必要な場合、ホストされている Agent-Native サービスへのアクセスを一時停止または制限することがあります。ホストされているサービスの使用はいつでも停止できます。一部のデータは、「」で説明されているように、限られた期間バックアップ、ログ、または監査レコードに残る場合があります。",
+          "FutureBuild は、ユーザーの保護、法律の遵守、悪用の防止、セキュリティ リスクへの対処、またはサービスの運用に必要な場合、ホストされている FB Factory サービスへのアクセスを一時停止または制限することがあります。ホストされているサービスの使用はいつでも停止できます。一部のデータは、「」で説明されているように、限られた期間バックアップ、ログ、または監査レコードに残る場合があります。",
         disclaimers1:
-          "Hosted Agent-Native services are provided on an as-is and as-available basis, subject to applicable law and any separate written agreement you have with Builder.io. Builder.io は、ホストされるアプリ、統合、自動化、または AI 出力が中断されないこと、エラーがないこと、またはすべての要件を満たすことを保証しません。",
+          "Hosted FB Factory services are provided on an as-is and as-available basis, subject to applicable law and any separate written agreement you have with FutureBuild. FutureBuild は、ホストされるアプリ、統合、自動化、または AI 出力が中断されないこと、エラーがないこと、またはすべての要件を満たすことを保証しません。",
         disclaimers2Prefix:
-          "法律で許可される最大限の範囲で、ホスト型 Agent-Native サービスに対する Builder.io の責任は、Builder.io の広範な規定に記載されているように制限されます。",
+          "法律で許可される最大限の範囲で、ホスト型 FB Factory サービスに対する FutureBuild の責任は、FutureBuild の広範な規定に記載されているように制限されます。",
         disclaimers2Suffix:
           "またはお客様の使用に適用される別の書面による契約。",
         changes1:
-          "Agent-Native ホスト型アプリケーションの変更に応じて、これらの規約を更新する場合があります。ページ上部の更新日は、規約が最後に改訂された日を示します。",
+          "FB Factory ホスト型アプリケーションの変更に応じて、これらの規約を更新する場合があります。ページ上部の更新日は、規約が最後に改訂された日を示します。",
         changes2Prefix:
-          "これらの用語に関する質問については、Builder.io のサポート チャネルを通じて Builder.io にお問い合わせください。",
+          "これらの用語に関する質問については、FutureBuild のサポート チャネルを通じて FutureBuild にお問い合わせください。",
       },
       hostedServicePoints: {
         create:
-          "ホストされた Agent-Native ワークスペースとテンプレート アプリを作成して操作します。",
+          "ホストされた FB Factory ワークスペースとテンプレート アプリを作成して操作します。",
         workflows:
           "使用することを選択したエージェントのワークフロー、アクション、自動化、および統合を実行します。",
         store:
           "サービスを提供するために必要な、ホストされているアプリのコンテンツ、設定、組織データ、接続されたアカウントの状態を保存します。",
         improve:
-          "ホストされた Agent-Native サービスを測定、保護、デバッグ、改善します。",
+          "ホストされた FB Factory サービスを測定、保護、デバッグ、改善します。",
       },
       acceptableUse: {
-        laws: "ホストされている Agent-Native アプリを使用して、法律違反、権利侵害、または人やシステムに危害を加えないでください。",
+        laws: "ホストされている FB Factory アプリを使用して、法律違反、権利侵害、または人やシステムに危害を加えないでください。",
         bypass:
           "アクセス制御、レート制限、セキュリティ境界、またはテナントの分離をバイパスしようとしないでください。",
         malware:
@@ -2523,9 +2522,9 @@ const jaJP = {
     gettingStarted: "はじめに",
     gettingStartedActions: "Add an Action",
     gettingStartedPages: "Add a Page",
-    whatIsAgentNative: "Agent-Native とは？",
+    whatIsAgentNative: "FB Factory とは？",
     agentSurfaces: "Agent サーフェス",
-    agentNativeConfig: "Agent-Native Config",
+    agentNativeConfig: "FB Factory Config",
     keyConcepts: "主要概念",
     agentNativeToolkit: "ツールキット",
     toolkitOverview: "概要",
@@ -2661,7 +2660,7 @@ const jaJP = {
     syncingTemplateChanges: "テンプレート変更の同期",
     writingAgentInstructions: "Agent 指示を書く",
     embeddingSdk: "埋め込み SDK",
-    agentNativeCodeUi: "Agent-Native コード UI",
+    agentNativeCodeUi: "FB Factory コード UI",
     harnessAgents: "Harness エージェント",
     adapters: "アダプター",
     cliAdapters: "CLI アダプター",

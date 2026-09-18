@@ -33,8 +33,8 @@ function safeAssetName(value: string | undefined): string {
 
 function assetNameCandidates(assetName: string): string[] {
   const candidates = [assetName];
-  if (/^Agent-Native-.+-mac\.zip\.blockmap$/i.test(assetName)) {
-    candidates.push(assetName.replace(/^Agent-Native-/i, "Agent.Native-"));
+  if (/^FB Factory-.+-mac\.zip\.blockmap$/i.test(assetName)) {
+    candidates.push(assetName.replace(/^FB Factory-/i, "Agent.Native-"));
   }
   return candidates;
 }
@@ -94,7 +94,7 @@ export default defineEventHandler(async (event) => {
           : "Desktop release information is temporarily unavailable.",
         resolution: isClientError
           ? "Use a supported updater asset from the OpenAPI specification."
-          : "Retry shortly. If the problem persists, check the Agent-Native release page.",
+          : "Retry shortly. If the problem persists, check the FB Factory release page.",
       },
       isClientError ? "no-store" : "public, max-age=30",
     );

@@ -59,13 +59,13 @@ describe("desktop latest manifest route", () => {
       jsonResponse([
         {
           tag_name: "v1.2.4-nightly.1",
-          name: "Agent-Native Nightly v1.2.4-nightly.1",
+          name: "FB Factory Nightly v1.2.4-nightly.1",
           published_at: "2026-08-20T00:00:00Z",
           draft: false,
           prerelease: true,
           assets: [
             {
-              name: "Agent-Native Nightly-arm64.dmg",
+              name: "FB Factory Nightly-arm64.dmg",
               browser_download_url: "https://downloads.example.com/nightly.dmg",
               size: 123,
             },
@@ -101,13 +101,13 @@ describe("desktop latest manifest route", () => {
       jsonResponse([
         {
           tag_name: "v1.2.4-nightly.1",
-          name: "Agent-Native Nightly v1.2.4-nightly.1",
+          name: "FB Factory Nightly v1.2.4-nightly.1",
           published_at: "2026-08-20T00:00:00Z",
           draft: false,
           prerelease: true,
           assets: [
             {
-              name: "Agent-Native Nightly-arm64.dmg",
+              name: "FB Factory Nightly-arm64.dmg",
               browser_download_url: "https://downloads.example.com/nightly.dmg",
               size: 123,
             },
@@ -115,13 +115,13 @@ describe("desktop latest manifest route", () => {
         },
         {
           tag_name: "v1.2.3",
-          name: "Agent-Native v1.2.3",
+          name: "FB Factory v1.2.3",
           published_at: "2026-08-19T00:00:00Z",
           draft: false,
           prerelease: false,
           assets: [
             {
-              name: "Agent-Native-arm64.dmg",
+              name: "FB Factory-arm64.dmg",
               browser_download_url: "https://downloads.example.com/stable.dmg",
               size: 123,
             },

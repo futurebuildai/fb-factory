@@ -21,9 +21,9 @@ export const meta = ({
   if (!policy) return withDefaultSocialImage([{ title: "Not Found" }]);
 
   return withDefaultSocialImage([
-    { title: policy.title + " - Agent-Native" },
+    { title: policy.title + " - FB Factory" },
     { name: "description", content: policy.description },
-    { property: "og:title", content: policy.title + " - Agent-Native" },
+    { property: "og:title", content: policy.title + " - FB Factory" },
     { property: "og:description", content: policy.description },
   ]);
 };

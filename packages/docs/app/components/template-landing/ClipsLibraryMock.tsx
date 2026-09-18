@@ -57,7 +57,7 @@ const LIBRARY_RECORDINGS: Array<{
   viewCount: number;
 }> = [
   {
-    title: "Introducing Agent-Native Clips",
+    title: "Introducing FB Factory Clips",
     thumbnail: "/clips/build-your-own.jpg",
     duration: "1:58",
     relative: "2 days ago",

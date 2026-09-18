@@ -179,7 +179,7 @@ export function SiteHeader({ starCount }: SiteHeaderProps) {
           <LogoContextMenu brandHref={localizedPath("/brand")}>
             <Link
               to={localizedPath("/")}
-              aria-label="Agent-Native"
+              aria-label="FB Factory"
               className="flex text-[var(--b-text-primary)]"
             >
               <Logo />

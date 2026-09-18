@@ -76,12 +76,12 @@ export const meta = ({
 }) => {
   const doc = data ?? loaderData;
   if (!doc)
-    return withDefaultSocialImage([{ title: "Not Found — Agent-Native" }]);
+    return withDefaultSocialImage([{ title: "Not Found - FB Factory" }]);
   return withDocsSocialImage(
     [
-      { title: `${doc.title} — Agent-Native` },
+      { title: `${doc.title} - FB Factory` },
       { name: "description", content: doc.description },
-      { property: "og:title", content: `${doc.title} — Agent-Native` },
+      { property: "og:title", content: `${doc.title} - FB Factory` },
       { property: "og:description", content: doc.description },
       { property: "og:type", content: "article" },
     ],

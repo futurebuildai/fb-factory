@@ -35,7 +35,7 @@ const zhCN = {
     placeholder: "告诉我们怎样能让这些文档更好。",
   },
   demoVideo: {
-    visualPlanningAria: "Agent-Native 可视化规划演示",
+    visualPlanningAria: "FB Factory 可视化规划演示",
   },
   docBlocks: {
     blockLabel: "{{alias}} 区块",
@@ -75,8 +75,8 @@ const zhCN = {
     close: "关闭",
   },
   agent: {
-    emptyState: "向我询问任何有关 Agent-Native 的问题",
-    suggestionGettingStarted: "如何开始使用 Agent-Native？",
+    emptyState: "向我询问任何有关 FB Factory 的问题",
+    suggestionGettingStarted: "如何开始使用 FB Factory？",
     suggestionActions: "actions 如何工作？",
     suggestionPolling: "解释轮询同步模型",
     suggestionDeploy: "如何部署到生产环境？",
@@ -97,20 +97,20 @@ const zhCN = {
     hero: {
       titleLine1: "面向",
       titleAccent: "agentic apps 的框架",
-      body: "无需在应用和 agent 之间做选择。Agent-Native 应用两者兼具。",
+      body: "无需在应用和 agent 之间做选择。FB Factory 应用两者兼具。",
       primaryCta: "试用一个 app",
       secondaryCta: "阅读文档",
     },
     code: {
       quickStartComment: "用一条命令创建 app",
-      skillInstallComment: "把 Agent-Native 规划加入你已经使用的 coding agent",
+      skillInstallComment: "把 FB Factory 规划加入你已经使用的 coding agent",
       frameworkComment: "一个 action 驱动 agent、UI、HTTP、MCP、A2A 和 CLI。",
       frameworkDescription: "从本地 app-agent loop 打招呼。",
     },
     actionSurface: {
       eyebrow: "真正面向代理，而不是外挂式 AI",
       title: "一个 action 覆盖完整能力面",
-      body: "只定义一次操作。Agent-Native 会把它变成 UI action、agent 工具、HTTP 端点、MCP/A2A 能力面、CLI 命令、权限检查和审计记录。",
+      body: "只定义一次操作。FB Factory 会把它变成 UI action、agent 工具、HTTP 端点、MCP/A2A 能力面、CLI 命令、权限检查和审计记录。",
       buildAction: "构建一个 action",
       benefits: {
         oneActionDefinition: {
@@ -144,7 +144,7 @@ const zhCN = {
       title: "面向 agentic 应用的内置模块",
       body: "这些生产级部分经过人工验证，agent 不应该从零临时发明。你可以直接使用、检查源码，或在应用需要不同能力时替换模块。",
       pageBody:
-        "Agent-Native 提供经过人工验证的生产级组件，避免 agent 从零 improvisation。你可以直接使用、检查源码，或在产品需要不同能力时替换模块。",
+        "FB Factory 提供经过人工验证的生产级组件，避免 agent 从零 improvisation。你可以直接使用、检查源码，或在产品需要不同能力时替换模块。",
       viewAll: "查看所有模块",
       browseApps: "浏览由模块构建的应用",
       items: {
@@ -209,7 +209,7 @@ const zhCN = {
     framework: {
       title: "面向 agent-native apps 的框架",
       body1:
-        "Agent-Native 是一个开源框架，用来构建 agentic applications：从 Chat 开始，定义共享 actions，再围绕同一份 state 添加 UI、jobs 和协作。",
+        "FB Factory 是一个开源框架，用来构建 agentic applications：从 Chat 开始，定义共享 actions，再围绕同一份 state 添加 UI、jobs 和协作。",
       body2:
         "使用本地 PGlite 或托管 PostgreSQL，以及你自己的托管服务、模型栈和 app 代码。",
       cta: "阅读框架指南",
@@ -236,7 +236,7 @@ const zhCN = {
       },
     },
     templates: {
-      title: "试用一个 Agent-Native app",
+      title: "试用一个 FB Factory app",
       eyebrow: "从一个可运行的 app 开始，让 agent 继续改进它。",
       cta: "查看 apps",
     },
@@ -276,12 +276,12 @@ const zhCN = {
     },
     comparison: {
       titleLine1: "不必在 app 和 agent 之间二选一。",
-      titleAccent: "Agent-Native apps 二者兼备。",
+      titleAccent: "FB Factory apps 二者兼备。",
       columns: {
         saas: "SaaS 工具",
         agents: "原始 AI Agents",
         internal: "内部工具",
-        native: "Agent-Native App",
+        native: "FB Factory App",
       },
       rows: {
         ui: "UI",
@@ -321,7 +321,7 @@ const zhCN = {
     batteries: {
       titleLine1: "内置全套能力，",
       titleLine2: "久经实战检验",
-      body: "不必从空白提示词和临时拼凑的代码开始，Agent-Native 为代理提供构建真实软件所需的可靠部件和最佳实践。",
+      body: "不必从空白提示词和临时拼凑的代码开始，FB Factory 为代理提供构建真实软件所需的可靠部件和最佳实践。",
       browseToolkits: "浏览工具包",
     },
     featureCloud: {
@@ -492,12 +492,12 @@ const zhCN = {
     },
     stack: {
       title: "使用你自己的技术栈",
-      body: "Agent-Native 是开源 TypeScript。选择你的模型、数据库和托管方式，并将应用代码保留在你的代码仓库中。",
-      exploreApps: "探索用 Agent-Native 构建的应用",
+      body: "FB Factory 是开源 TypeScript。选择你的模型、数据库和托管方式，并将应用代码保留在你的代码仓库中。",
+      exploreApps: "探索用 FB Factory 构建的应用",
     },
     showcase: {
-      title: "用 Agent-Native 构建的真实应用",
-      body: "可免费使用或无限定制的开源 Agent-Native 应用。",
+      title: "用 FB Factory 构建的真实应用",
+      body: "可免费使用或无限定制的开源 FB Factory 应用。",
       browseApps: "浏览应用",
       scrollLeft: "向左滚动应用",
       scrollRight: "向右滚动应用",
@@ -526,7 +526,7 @@ const zhCN = {
       local: "本地构建",
       localDescription: "使用 CLI 在你的计算机上构建。",
       cloud: "云端构建",
-      cloudDescription: "使用 Builder.io 在浏览器中构建。",
+      cloudDescription: "使用 FutureBuild 在浏览器中构建。",
     },
     cloud: {
       intro:
@@ -544,7 +544,7 @@ const zhCN = {
     title: "您拥有的开源、代理本机应用程序",
     eyebrow: "从一个可运行的 app 开始，让 agent 继续改进它。",
     body: "你可以自定义一切。",
-    firstPartyTitle: "Agent-Native 官方应用",
+    firstPartyTitle: "FB Factory 官方应用",
     community: "想要空白应用？从框架指南开始从零构建。",
     createYourOwn: "从零开始",
     communityTitle: "社区应用",
@@ -552,7 +552,7 @@ const zhCN = {
       "探索由作者维护的社区应用。有托管版本时可以先体验，也可以查看源代码并自行定制。",
     submitCommunityTemplate: "提交应用",
     communityEmpty:
-      "社区目录现已开放。请发布专注于明确场景的 Agent-Native 应用并提交收录。",
+      "社区目录现已开放。请发布专注于明确场景的 FB Factory 应用并提交收录。",
     publishGuide: "阅读发布指南",
     communityTrust:
       "社区应用属于第三方代码。运行前请检查源代码、许可证、依赖项和安装脚本。",
@@ -607,13 +607,13 @@ const zhCN = {
   },
   buildFromScratch: {
     title: "从零开始构建",
-    description: "从框架指南开始，或使用 Builder.io 的云端编码代理在线构建。",
+    description: "从框架指南开始，或使用 FutureBuild 的云端编码代理在线构建。",
     readDocs: "阅读文档",
     buildOnline: "在线构建",
     popoverTitle: "在浏览器中构建",
-    popoverBody: "使用 Builder.io 在云端快速生成 agent-native 应用。",
+    popoverBody: "使用 FutureBuild 在云端快速生成 agent-native 应用。",
     waitlistBody:
-      "Builder.io 可以在云端启动并自定义 agent-native 应用 — 包含 actions、auth、SQL 状态和 agent chat。加入候补名单以获取早期访问权限。",
+      "FutureBuild 可以在云端启动并自定义 agent-native 应用 - 包含 actions、auth、SQL 状态和 agent chat。加入候补名单以获取早期访问权限。",
     emailLabel: "邮箱",
     emailPlaceholder: "you@company.com",
     joinWaitlist: "加入候补名单",
@@ -631,10 +631,10 @@ const zhCN = {
   },
   templateDetail: {
     allTemplates: "所有应用",
-    notFoundMetaTitle: "未找到应用 — Agent-Native",
+    notFoundMetaTitle: "未找到应用 - FB Factory",
     notFoundTitle: "找不到应用",
     notFoundBody: "浏览应用目录以查找可用的应用程序。",
-    badge: "Agent-Native {{name}}",
+    badge: "FB Factory {{name}}",
     title: "{{name}} 应用",
   },
   templates: {
@@ -811,9 +811,9 @@ const zhCN = {
       finalCtaBody: "连接一个数据源，让你的 AI 智能体生成第一张图表。",
       finalCtaButton: "探索你的数据",
       faq: {
-        question1: "什么是 Agent-Native Analytics？",
+        question1: "什么是 FB Factory Analytics？",
         answer1:
-          "Agent-Native Analytics 是一款免费开源的 AI 分析工具。向 AI 智能体询问关于已连接数据的问题，检查查询，并构建可复用的仪表板。它还包括会话回放、错误跟踪和正常运行时间监控。",
+          "FB Factory Analytics 是一款免费开源的 AI 分析工具。向 AI 智能体询问关于已连接数据的问题，检查查询，并构建可复用的仪表板。它还包括会话回放、错误跟踪和正常运行时间监控。",
         question2: "使用 Analytics 需要会 SQL 吗？",
         answer2:
           "你可以用自然语言提问，让你的 AI 智能体编写查询。对于 BigQuery，你也可以在 Explorer 中通过选择数据表、指标和筛选条件来构建图表。SQL 始终可供查看，熟悉你数据的人可能需要帮忙连接数据源和定义指标。",
@@ -929,9 +929,9 @@ const zhCN = {
       s057: "托管演示说明",
       s058: "双向同步",
       faq: {
-        question1: "Agent-Native Calendar 是什么？",
+        question1: "FB Factory Calendar 是什么？",
         answer1:
-          "Agent-Native Calendar 是一款免费开源的 AI 日程助手，可连接到 Google Calendar。使用 AI 代理管理事件、查找会议时间，或分享预约链接让他人可以与你预约。",
+          "FB Factory Calendar 是一款免费开源的 AI 日程助手，可连接到 Google Calendar。使用 AI 代理管理事件、查找会议时间，或分享预约链接让他人可以与你预约。",
         question2: "我可以连接哪些日历？",
         answer2:
           "连接多个 Google 账户，即可一起查看它们的事件。新建和更新的事件会写入所选账户的主日历。你还可以显示只读的 ICS 或 webcal 订阅；这些不是与 Outlook 或 Apple 日历的双向集成。共享的 Google 日历仅供查看，不会阻挡预约的可用性。",
@@ -948,9 +948,9 @@ const zhCN = {
     },
     assets: {
       faq: {
-        question1: "什么是 Agent-Native Assets？",
+        question1: "什么是 FB Factory Assets？",
         answer1:
-          "Agent-Native Assets 是一款免费开源的品牌素材库，具备 AI 图片和视频生成能力。你可以整理现有媒体、提供品牌参考资料，并与 AI 智能体协作，在多个项目中生成、编辑和复用素材。",
+          "FB Factory Assets 是一款免费开源的品牌素材库，具备 AI 图片和视频生成能力。你可以整理现有媒体、提供品牌参考资料，并与 AI 智能体协作，在多个项目中生成、编辑和复用素材。",
         question2: "Assets 如何使用我的品牌规范？",
         answer2:
           "把你的标志、参考图片、颜色和风格说明添加到品牌套件中。可复用模板会针对特定内容类型提供生成指示。你的 AI 智能体会依据这些上下文来指导生成过程，你也可以在保存前查看并完善结果。",
@@ -959,7 +959,7 @@ const zhCN = {
           "可以。上传现有媒体，或通过 URL 导入素材，然后将其与生成内容一起归入素材库和文件夹中。你可以浏览、搜索素材库，把素材当作参考再次使用，或将其导出用于其他项目。",
         question4: "我的 AI 智能体可以从其他应用调用 Assets 吗？",
         answer4:
-          "可以。通过 Assets 的 MCP 集成连接受支持的智能体，即可在聊天中搜索、生成和选择媒体。Agent-Native 应用也可以请求素材或嵌入选择器。具体的可用体验取决于宿主应用及其与 Assets 的连接方式。",
+          "可以。通过 Assets 的 MCP 集成连接受支持的智能体，即可在聊天中搜索、生成和选择媒体。FB Factory 应用也可以请求素材或嵌入选择器。具体的可用体验取决于宿主应用及其与 Assets 的连接方式。",
         question5: "Assets 能在生成的图片中使用我的真实标志吗？",
         answer5:
           "可以。在品牌套件中设置一个标准标志，并在生成时启用标志合成。Assets 会在生成完成后把原始标志置入图片，因此图像模型不会重新绘制它。使用前请检查标志的位置以及周围图像的效果。",
@@ -1119,9 +1119,9 @@ const zhCN = {
       s060: "选择要捕获的内容，然后在 Clips 中开始录制。",
       s062: "查看所有模板",
       faq: {
-        question1: "什么是 Agent-Native Clips?",
+        question1: "什么是 FB Factory Clips?",
         answer1:
-          "Agent-Native Clips 是一款免费开源的屏幕录制工具,用于向 AI 智能体分享错误、反馈和操作演示。它会为你的 AI 智能体提供一份录制内容的文字记录和带时间戳的图片,而人们也可以观看同一段录制内容。",
+          "FB Factory Clips 是一款免费开源的屏幕录制工具,用于向 AI 智能体分享错误、反馈和操作演示。它会为你的 AI 智能体提供一份录制内容的文字记录和带时间戳的图片,而人们也可以观看同一段录制内容。",
         question2: "我可以把录制内容分享给 Claude、ChatGPT 或 Cursor 吗?",
         answer2:
           "Clips 会提供一个 AI 智能体可读的链接,其中包含文字记录和带时间戳的图片。你的智能体需要能够打开链接内容并读取图片才能同时用到两者。部分聊天模式可以读取文字记录,但需要你单独上传图片。",
@@ -1256,9 +1256,9 @@ const zhCN = {
       s061: "阅读文档",
       s062: "查看所有模板",
       faq: {
-        question1: "什么是 Agent-Native Content？",
+        question1: "什么是 FB Factory Content？",
         answer1:
-          "Agent-Native Content 是一款免费开源的文档、任务和数据库工作空间。它将 AI 文档编辑器与结构化表格和共享页面结合在一起，让你和连接的 AI 智能体可以一起阅读和更新内容。",
+          "FB Factory Content 是一款免费开源的文档、任务和数据库工作空间。它将 AI 文档编辑器与结构化表格和共享页面结合在一起，让你和连接的 AI 智能体可以一起阅读和更新内容。",
         question2: "我可以在 Content 中使用自己的 AI 智能体吗？",
         answer2:
           "可以。Content 为 Claude Code、Codex、Cursor 等受支持的工具提供 MCP 连接。连接并授权访问后，你的智能体就可以处理它能访问的文档和数据库。你也可以使用 Content 内置的智能体。",
@@ -1377,9 +1377,9 @@ const zhCN = {
       s060: "查看所有模板",
       s061: "100% 免费、开源且可自定义。",
       faq: {
-        question1: "什么是 Agent-Native Design？",
+        question1: "什么是 FB Factory Design？",
         answer1:
-          "Agent-Native Design 是一款免费开源的 AI 设计与原型工具。用 AI 智能体创建交互式 HTML 原型，应用你的品牌风格，并通过可视化控制或聊天来完善设计。分享成果以获取反馈，或导出用于开发。",
+          "FB Factory Design 是一款免费开源的 AI 设计与原型工具。用 AI 智能体创建交互式 HTML 原型，应用你的品牌风格，并通过可视化控制或聊天来完善设计。分享成果以获取反馈，或导出用于开发。",
         question2: "AI 生成设计之后，我可以编辑吗？",
         answer2:
           "可以。使用可视化控制调整文字、间距和样式，或让 AI 智能体修改设计。你可以比较不同方向，并持续完善你选定的方案。",
@@ -1400,7 +1400,7 @@ const zhCN = {
       heroEyebrow: "Dispatch",
       heroTitle: "在一个地方协调你的 AI 代理",
       heroDescription:
-        "Dispatch 是一款免费的开源 AI 代理编排应用，用于将工作委派给已连接的 Agent-Native 应用、安排周期性任务，并管理共享连接。",
+        "Dispatch 是一款免费的开源 AI 代理编排应用，用于将工作委派给已连接的 FB Factory 应用、安排周期性任务，并管理共享连接。",
       heroCta: "委派一项任务",
       useCasesHeading: "你能用 Dispatch 做什么？",
       useCasesBody:
@@ -1491,9 +1491,9 @@ const zhCN = {
       s053: "阅读文档",
       s054: "查看所有模板",
       faq: {
-        question1: "什么是 Agent-Native Dispatch？",
+        question1: "什么是 FB Factory Dispatch？",
         answer1:
-          "Agent-Native Dispatch 是一款面向 Agent-Native 工作区的免费开源 AI 代理编排应用。它可以协调跨已连接应用的请求，接收来自受支持渠道的消息，安排周期性任务，并管理共享集成。",
+          "FB Factory Dispatch 是一款面向 FB Factory 工作区的免费开源 AI 代理编排应用。它可以协调跨已连接应用的请求，接收来自受支持渠道的消息，安排周期性任务，并管理共享集成。",
         question2: "Dispatch 可以与哪些应用配合使用？",
         answer2:
           "Dispatch 会将工作委派给已连接且在你工作区中可用的应用，例如 Analytics 或 Mail。每个应用负责处理自己的任务和数据。在让 Dispatch 使用这些应用之前，请先配置好相关连接和授权。",
@@ -1610,9 +1610,9 @@ const zhCN = {
       s058: "阅读文档",
       s059: "查看所有模板",
       faq: {
-        question1: "什么是 Agent-Native Forms？",
+        question1: "什么是 FB Factory Forms？",
         answer1:
-          "Agent-Native Forms 是一款免费开源的 AI 表单构建工具。用 AI 智能体创建表单和问卷，以可视化方式编辑字段，发布公开链接，并在同一个应用中查看或分析回复。",
+          "FB Factory Forms 是一款免费开源的 AI 表单构建工具。用 AI 智能体创建表单和问卷，以可视化方式编辑字段，发布公开链接，并在同一个应用中查看或分析回复。",
         question2: "AI 生成表单后我还能编辑吗？",
         answer2:
           "可以。你可以在可视化编辑器中修改问题、标签、选项、必填字段和字段顺序，也可以让 AI 智能体帮你修改。两种方式更新的都是同一个表单。你还可以根据之前的回答添加条件问题。",
@@ -1629,9 +1629,9 @@ const zhCN = {
     },
     mail: {
       faq: {
-        question1: "什么是 Agent-Native Mail？",
+        question1: "什么是 FB Factory Mail？",
         answer1:
-          "Agent-Native Mail 是一款面向 Gmail 的免费开源邮件客户端，内置 AI 邮件助手。你可以阅读和搜索邮件、总结对话、起草回复，并通过收件箱或你的 AI 智能体整理邮件。",
+          "FB Factory Mail 是一款面向 Gmail 的免费开源邮件客户端，内置 AI 邮件助手。你可以阅读和搜索邮件、总结对话、起草回复，并通过收件箱或你的 AI 智能体整理邮件。",
         question2: "Mail 能配合我现有的 Gmail 账号使用吗？",
         answer2:
           "可以。连接你现有的 Gmail 账号，即可通过 Mail 收发邮件。你可以连接多个 Gmail 账号并同时搜索所有账号。Mail 不会提供新的邮箱地址，目前也只支持 Gmail，暂不支持 Outlook 或其他邮件服务商。",
@@ -1694,7 +1694,7 @@ const zhCN = {
       s007Primary: "Superhuman 和 Gmail 的",
       s007Secondary: "开源替代方案",
       s008: "试用",
-      s009: "托管演示使用 Agent-Native 的共享 Google 应用程序进行 Gmail 访问，因此 Google 可能会要求您确认后再继续。在本地运行以使用您自己的 Google OAuth 客户端。",
+      s009: "托管演示使用 FB Factory 的共享 Google 应用程序进行 Gmail 访问，因此 Google 可能会要求您确认后再继续。在本地运行以使用您自己的 Google OAuth 客户端。",
       s010: "你能做什么",
       s011: "将电子邮件客户端替换为您完全拥有的 AI 驱动的收件箱所需的一切。",
       s012: "键盘快捷键",
@@ -1749,9 +1749,9 @@ const zhCN = {
     },
     plan: {
       faq: {
-        question1: "什么是 Agent-Native Plans？",
+        question1: "什么是 FB Factory Plans？",
         answer1:
-          "Agent-Native Plans 是一款面向 AI 编码代理的免费开源可视化规划工具。通过图表、线框图、带注释的代码和评论来审阅实现计划，或为已完成的改动生成可视化回顾。",
+          "FB Factory Plans 是一款面向 AI 编码代理的免费开源可视化规划工具。通过图表、线框图、带注释的代码和评论来审阅实现计划，或为已完成的改动生成可视化回顾。",
         question2: "如何在我的编码代理中使用 Plans？",
         answer2:
           "使用 `npx @agent-native/core@latest skills add visual-plan` 安装规划技能和连接器，然后为你的客户端完成身份验证步骤。安装指南涵盖了包括 Claude Code 和 Codex 在内的多种客户端。使用 `/visual-plan` 让你的代理生成一份可视化的实现计划。",
@@ -1910,9 +1910,9 @@ const zhCN = {
       s057: "阅读文档",
       s058: "查看所有模板",
       faq: {
-        question1: "什么是 Agent-Native Slides？",
+        question1: "什么是 FB Factory Slides？",
         answer1:
-          "Agent-Native Slides 是一款免费开源的 AI 演示文稿制作工具。用 AI 智能体根据你的想法和素材创建符合品牌风格的演示文稿，然后自己编辑幻灯片、进行演示，或导出为 PowerPoint。",
+          "FB Factory Slides 是一款免费开源的 AI 演示文稿制作工具。用 AI 智能体根据你的想法和素材创建符合品牌风格的演示文稿，然后自己编辑幻灯片、进行演示，或导出为 PowerPoint。",
         question2: "AI 生成后我还能编辑幻灯片吗？",
         answer2:
           "可以。直接在可视化编辑器中编辑文字、布局和样式，或者让 AI 智能体修改选中的幻灯片。你可以在第一版之后持续完善这份演示文稿。",
@@ -2005,9 +2005,9 @@ const zhCN = {
     },
     chat: {
       faq: {
-        question1: "Agent-Native Chat 是什么？",
+        question1: "FB Factory Chat 是什么？",
         answer1:
-          "Agent-Native Chat 是一款面向开发者的免费开源 AI 聊天应用脚手架，提供已保存的对话串、agent 聊天界面、认证、共享 actions 和实时同步。你可以为自己的应用添加特定领域的数据和行为。",
+          "FB Factory Chat 是一款面向开发者的免费开源 AI 聊天应用脚手架，提供已保存的对话串、agent 聊天界面、认证、共享 actions 和实时同步。你可以为自己的应用添加特定领域的数据和行为。",
         question2: "Chat 是一个成品 AI 助手吗？",
         answer2:
           "Chat 提供一个可用的对话界面以及背后的框架。它包含一个示例 action，但业务工作流和第三方服务集成需要你自己实现和配置。",
@@ -2016,7 +2016,7 @@ const zhCN = {
           "可以。为你工作流所需的列表、队列、编辑器或其他视图添加路由和组件，并将它们连接到 agent 使用的同一套 actions 和应用数据上。",
         question4: "Chat 是否包含与我业务工具的连接？",
         answer4:
-          "这个极简模板不包含特定领域的服务集成。请为你的应用添加所需的连接和访问规则。如果已有某个 Agent-Native 应用正好匹配你的工作流，它的模板可能是更合适的起点。",
+          "这个极简模板不包含特定领域的服务集成。请为你的应用添加所需的连接和访问规则。如果已有某个 FB Factory 应用正好匹配你的工作流，它的模板可能是更合适的起点。",
         question5: "我可以自定义并部署自己的版本吗？",
         answer5:
           "可以。用 CLI 创建一份副本，添加你的 actions、数据和界面，然后部署你的应用。为你的环境配置认证和服务访问权限，并在与用户分享之前测试你新增的工作流。",
@@ -2070,14 +2070,14 @@ const zhCN = {
     metaTitle:
       "代理技能 - 面向编码代理的 Visual Plan、Visual Recap 和 Visual Edit",
     metaDescription:
-      "安装由 Agent-Native 应用支持的技能，让你的编码代理能进行可视化规划、PR 回顾和本地可视化编辑。",
+      "安装由 FB Factory 应用支持的技能，让你的编码代理能进行可视化规划、PR 回顾和本地可视化编辑。",
     metaOgDescription:
-      "为你的编码代理添加由 Agent-Native 应用驱动的斜杠命令，可托管、检查并自定义。",
+      "为你的编码代理添加由 FB Factory 应用驱动的斜杠命令，可托管、检查并自定义。",
     metaKeywords:
       "代理技能, visual plan, visual recap, visual edit, 编码代理, Claude Code, Codex, PR 审查, 规划, agent-native",
     heroTitle: "给你的编码代理新的超能力",
     heroBody:
-      "安装由 Agent-Native 应用支持、可完全自定义的应用技能：实现前做可视化规划，变更落地后做可视化 PR 回顾，并可视化编辑本地 UI 流程。",
+      "安装由 FB Factory 应用支持、可完全自定义的应用技能：实现前做可视化规划，变更落地后做可视化 PR 回顾，并可视化编辑本地 UI 流程。",
     sectionTitle: "面向编码代理的应用支持技能",
     sectionBody:
       "使用托管的可分享应用链接、本地文件，或自托管/自定义应用；代理会获得指令，并在需要时获得匹配的 MCP 表面。",
@@ -2114,9 +2114,9 @@ const zhCN = {
     },
   },
   downloadPage: {
-    title: "下载 Agent-Native",
+    title: "下载 FB Factory",
     body: "试用面向会议、设计、演示文稿、数据、日程安排、邮件等场景的智能体应用，全部集成在一个桌面应用中。",
-    openDesktop: "打开 Agent-Native",
+    openDesktop: "打开 FB Factory",
     downloadInstaller: "下载安装程序",
     downloadStarted: "下载已开始",
     downloadAgain: "没有成功？再次尝试下载",
@@ -2129,7 +2129,7 @@ const zhCN = {
     nightly: "Nightly",
     runFromSource: "自己构建",
     runFromSourceBody:
-      "通过命令行创建一个 Agent-Native 应用，并在 macOS、Windows 或 Linux 上本地运行。",
+      "通过命令行创建一个 FB Factory 应用，并在 macOS、Windows 或 Linux 上本地运行。",
     platforms: {
       mac: {
         primary: "下载 Apple Silicon 版本",
@@ -2157,7 +2157,7 @@ const zhCN = {
   },
   brandPage: {
     eyebrow: "品牌资源",
-    title: "Agent-Native 标志",
+    title: "FB Factory 标志",
     body: "下载用于文章、演示文稿和社区项目的官方标志与图形。SVG 文件在任何尺寸下都保持清晰，并支持透明背景。",
     horizontal: {
       title: "横版标志",
@@ -2190,13 +2190,13 @@ const zhCN = {
     lastUpdated: "上次更新：{{date}}",
     resources: {
       eyebrow: "法律资源",
-      title: "Agent-Native 法律资源",
-      intro: "适用于 Agent-Native 托管应用和服务的独立法律政策。",
+      title: "FB Factory 法律资源",
+      intro: "适用于 FB Factory 托管应用和服务的独立法律政策。",
       agentNative: {
-        title: "Agent-Native 政策",
-        body: "这些页面将通用政策框架调整为适用于 Agent-Native 开源项目和托管示例的版本。",
-        terms: "Agent-Native 服务条款",
-        privacy: "Agent-Native 隐私政策",
+        title: "FB Factory 政策",
+        body: "这些页面将通用政策框架调整为适用于 FB Factory 开源项目和托管示例的版本。",
+        terms: "FB Factory 服务条款",
+        privacy: "FB Factory 隐私政策",
       },
       builder: {
         title: "托管服务的其他政策",
@@ -2213,18 +2213,18 @@ const zhCN = {
       },
       notIncluded: {
         title: "不包含商业条款",
-        body: "Agent-Native 没有付费计划或企业合同。不包含企业 SLA、支持条款、DPA、安全附录、专业服务条款和费用等商业材料。",
+        body: "FB Factory 没有付费计划或企业合同。不包含企业 SLA、支持条款、DPA、安全附录、专业服务条款和费用等商业材料。",
       },
     },
     privacy: {
       eyebrow: "隐私政策",
-      title: "Agent-Native 托管应用程序",
+      title: "FB Factory 托管应用程序",
       intro:
-        "本政策解释了 Builder.io 在运行 Agent-Native 托管应用程序、托管模板、演示和官方浏览器扩展时如何收集、使用、共享和保留数据。",
+        "本政策解释了 FutureBuild 在运行 FB Factory 托管应用程序、托管模板、演示和官方浏览器扩展时如何收集、使用、共享和保留数据。",
       scopeCards: {
         hosted: {
           title: "托管应用程序",
-          body: "当 Builder.io 为您运营 Agent-Native 服务或托管模板时涵盖。",
+          body: "当 FutureBuild 为您运营 FB Factory 服务或托管模板时涵盖。",
         },
         openSource: {
           title: "开源",
@@ -2239,7 +2239,7 @@ const zhCN = {
         scope: "适用范围",
         information: "我们收集的信息",
         cookies: "Cookie 和分析",
-        clipsExtension: "Agent-Native Clips Chrome 扩展",
+        clipsExtension: "FB Factory Clips Chrome 扩展",
         use: "我们如何使用信息",
         sharing: "共享和第三方",
         chromeLimitedUse: "Chrome Web Store 限制使用",
@@ -2249,23 +2249,23 @@ const zhCN = {
       },
       paragraphs: {
         scope1:
-          "Agent-Native 是开源的，源代码可在 MIT 许可证下获得。本政策仅适用于 Builder.io 为 Agent-Native 用户运营的托管应用程序和服务。它不适用于其他人对代码的使用，包括分叉、自定义模板、私有部署或自托管版本。如果您操作自己的部署，则您应对自己的数据实践和隐私政策负责。",
-        scope2Prefix: "本政策旨在补充 Builder.io 更广泛的政策",
-        scope2Suffix: "对于 Agent-Native 托管应用程序行为。",
+          "FB Factory 是开源的，源代码可在 MIT 许可证下获得。本政策仅适用于 FutureBuild 为 FB Factory 用户运营的托管应用程序和服务。它不适用于其他人对代码的使用，包括分叉、自定义模板、私有部署或自托管版本。如果您操作自己的部署，则您应对自己的数据实践和隐私政策负责。",
+        scope2Prefix: "本政策旨在补充 FutureBuild 更广泛的政策",
+        scope2Suffix: "对于 FB Factory 托管应用程序行为。",
         cookies:
-          "Agent-Native 文档网站和托管应用程序可能使用必要的 Cookie 来进行身份验证和安全保护、保存语言或主题等偏好设置，以及运行已配置的分析技术。如果部署进行了配置，文档网站可能会加载 Google Analytics 或 Google Tag Manager；托管服务也可能使用第一方分析来衡量可靠性和功能使用情况。我们不会将托管应用程序内容用于第三方广告。你可以在浏览器设置中管理 Cookie，但禁用必要 Cookie 可能会导致无法登录或使用其他功能。",
+          "FB Factory 文档网站和托管应用程序可能使用必要的 Cookie 来进行身份验证和安全保护、保存语言或主题等偏好设置，以及运行已配置的分析技术。如果部署进行了配置，文档网站可能会加载 Google Analytics 或 Google Tag Manager；托管服务也可能使用第一方分析来衡量可靠性和功能使用情况。我们不会将托管应用程序内容用于第三方广告。你可以在浏览器设置中管理 Cookie，但禁用必要 Cookie 可能会导致无法登录或使用其他功能。",
         clips1:
-          "Agent-Native Clips Chrome extension 可帮助您开始基于浏览器的录制，并在启用后将浏览器诊断附加到剪辑。它可能会收集所选的捕获源、您选择包含的摄像头和麦克风媒体、活动选项卡标题和 URL，以及将扩展程序连接到托管 Clips 所需的身份验证状态。",
+          "FB Factory Clips Chrome extension 可帮助您开始基于浏览器的录制，并在启用后将浏览器诊断附加到剪辑。它可能会收集所选的捕获源、您选择包含的摄像头和麦克风媒体、活动选项卡标题和 URL，以及将扩展程序连接到托管 Clips 所需的身份验证状态。",
         clips2:
           "开发者日志是可选的。启用后，扩展程序可能会在记录处于活动状态时从所选选项卡收集经过编辑的控制台消息、JavaScript 异常和 fetch/XHR 元数据，例如方法、URL、状态、计时和失败详细信息。该扩展程序并非旨在收集请求正文、响应正文、cookie 或授权标头。",
         clipsAnchor:
           "对于 Chrome Web Store 披露，请使用此部分作为扩展隐私政策锚点：",
         sharing1:
-          "我们不会出售 Agent-Native 托管应用程序数据或将其用于第三方广告。当您使用的功能需要这些服务时，我们会与帮助运营托管服务的服务提供商共享数据，例如云基础设施、存储、身份验证、电子邮件、可观察性、AI 和转录提供商。",
+          "我们不会出售 FB Factory 托管应用程序数据或将其用于第三方广告。当您使用的功能需要这些服务时，我们会与帮助运营托管服务的服务提供商共享数据，例如云基础设施、存储、身份验证、电子邮件、可观察性、AI 和转录提供商。",
         sharing2:
           "当您连接集成时，托管应用程序可能会根据您的配置和提供商自己的条款向该提供商发送数据或从该提供商接收数据。为了安全、防止滥用、遵守法律或保护用户和服务，我们也可能会在需要时披露信息。",
         chromeLimitedUse:
-          "对于 Agent-Native Clips Chrome extension，我们对从 Chrome extension APIs 收到的信息的使用遵守 Chrome Web Store 用户数据政策，包括限制使用要求。扩展程序收集的浏览器活动用于提供面向用户的记录和诊断工作流程，而不是用于广告、转售、信誉或不相关的分析。",
+          "对于 FB Factory Clips Chrome extension，我们对从 Chrome extension APIs 收到的信息的使用遵守 Chrome Web Store 用户数据政策，包括限制使用要求。扩展程序收集的浏览器活动用于提供面向用户的记录和诊断工作流程，而不是用于广告、转售、信誉或不相关的分析。",
         retention1:
           "我们会根据需要保留托管应用程序数据，以提供服务、维护工作区历史记录、遵守义务、解决争议或提高可靠性和安全性。用户可以通过相关的应用程序控件（如果可用）删除剪辑、文档、资源和其他托管应用程序内容。",
         retention2:
@@ -2273,9 +2273,9 @@ const zhCN = {
         security:
           "我们使用合理的管理、技术和组织保障措施来保护托管应用程序数据，包括访问控制、传输加密、监控和操作安全实践。没有任何在线服务可以保证完美的安全性，因此用户应避免在录音或提示中包含秘密或敏感信息，除非他们打算与托管应用程序共享该信息。",
         changes1:
-          "随着 Agent-Native 托管应用程序的变化，我们可能会更新此政策。页面顶部的更新日期显示该政策上次修订的时间。",
+          "随着 FB Factory 托管应用程序的变化，我们可能会更新此政策。页面顶部的更新日期显示该政策上次修订的时间。",
         changes2Prefix:
-          "对于隐私请求或疑问，请通过以下列出的支持和隐私渠道联系 Builder.io",
+          "对于隐私请求或疑问，请通过以下列出的支持和隐私渠道联系 FutureBuild",
       },
       dataCategories: {
         account: {
@@ -2284,7 +2284,7 @@ const zhCN = {
         },
         hostedContent: {
           title: "托管应用程序内容",
-          body: "Content 您在托管 Agent-Native 模板中创建或上传，例如录音、成绩单、文档、评论、任务、提示、代理响应、文件和配置。",
+          body: "Content 您在托管 FB Factory 模板中创建或上传，例如录音、成绩单、文档、评论、任务、提示、代理响应、文件和配置。",
         },
         integrations: {
           title: "连接的集成数据",
@@ -2296,8 +2296,7 @@ const zhCN = {
         },
       },
       uses: {
-        provide:
-          "提供、同步和操作托管的 Agent-Native 应用程序及其代理工作流程。",
+        provide: "提供、同步和操作托管的 FB Factory 应用程序及其代理工作流程。",
         transform:
           "当您要求托管应用程序执行此操作时，可以记录、转录、总结、搜索、共享或转换内容。",
         auth: "验证用户身份、管理组织、实施访问控制并防止滥用。",
@@ -2306,38 +2305,38 @@ const zhCN = {
       },
       links: {
         builderPrivacy: "隐私政策",
-        builderPrivacyFull: "Builder.io 隐私政策",
+        builderPrivacyFull: "FutureBuild 隐私政策",
       },
     },
     about: {
-      eyebrow: "关于 Agent-Native",
+      eyebrow: "关于 FB Factory",
       title: "为代理与人打造的开源应用",
       intro:
-        "Agent-Native 是一个开源框架，用于构建让 AI 代理与用户界面共享相同操作、数据和应用状态的应用程序。",
+        "FB Factory 是一个开源框架，用于构建让 AI 代理与用户界面共享相同操作、数据和应用状态的应用程序。",
       sections: {
         project: {
           title: "共享的运行模型",
-          body: "Agent-Native 将代理和界面视为平等伙伴。同一个 action 可以驱动 UI 控件、代理工具、HTTP 端点、MCP 或 A2A 能力、CLI 命令和可审计流程。共享的 SQL 状态让人的视图和代理的视图保持一致，而不是再创建一套隐藏系统。",
+          body: "FB Factory 将代理和界面视为平等伙伴。同一个 action 可以驱动 UI 控件、代理工具、HTTP 端点、MCP 或 A2A 能力、CLI 命令和可审计流程。共享的 SQL 状态让人的视图和代理的视图保持一致，而不是再创建一套隐藏系统。",
         },
         openSource: {
           title: "默认开源",
-          body: "源代码以 MIT 许可证发布在 BuilderIO/agent-native 仓库中。开发者可以检查实现、在本地运行、选择数据库和模型供应商，并根据产品需求进行调整。托管的 Agent-Native 服务与 fork 和自托管部署分开运营。",
+          body: "源代码以 MIT 许可证发布在 BuilderIO/agent-native 仓库中。开发者可以检查实现、在本地运行、选择数据库和模型供应商，并根据产品需求进行调整。托管的 FB Factory 服务与 fork 和自托管部署分开运营。",
         },
         hosted: {
           title: "托管与自托管",
-          body: "Builder.io 在 agent-native.com 运营托管的 Agent-Native 应用和文档。框架也适合希望部署和维护自己应用的团队。相同的 action 合约、访问边界、代理指令和公开协议都可以在源代码和文档中检查。",
+          body: "FutureBuild 在 agent-native.com 运营托管的 FB Factory 应用和文档。框架也适合希望部署和维护自己应用的团队。相同的 action 合约、访问边界、代理指令和公开协议都可以在源代码和文档中检查。",
         },
         community: {
           title: "公开构建",
-          body: "项目通过 GitHub issue、pull request、文档和 Agent-Native 社区公开开发。阅读文档了解架构，查看源代码验证实现，或加入社区讨论使用场景并贡献改进。",
+          body: "项目通过 GitHub issue、pull request、文档和 FB Factory 社区公开开发。阅读文档了解架构，查看源代码验证实现，或加入社区讨论使用场景并贡献改进。",
         },
       },
     },
     contact: {
       eyebrow: "联系",
-      title: "联系 Builder.io 了解 Agent-Native",
+      title: "联系 FutureBuild 了解 FB Factory",
       intro:
-        "使用以下支持、源码和社区渠道提问、报告问题、提出改进建议，或反馈 Agent-Native 的安全问题。",
+        "使用以下支持、源码和社区渠道提问、报告问题、提出改进建议，或反馈 FB Factory 的安全问题。",
       emailLabel: "发送邮件至 support@builder.io",
       sections: {
         support: {
@@ -2350,23 +2349,23 @@ const zhCN = {
         },
         security: {
           title: "安全报告",
-          body: "不要在公开 issue 或聊天中披露尚未修复的漏洞。请通过可用的安全渠道联系 Builder.io，只提供复现和评估所需的信息。请勿在普通支持请求中提供凭据、私有数据或漏洞利用材料。",
+          body: "不要在公开 issue 或聊天中披露尚未修复的漏洞。请通过可用的安全渠道联系 FutureBuild，只提供复现和评估所需的信息。请勿在普通支持请求中提供凭据、私有数据或漏洞利用材料。",
         },
         legal: {
           title: "法律与隐私",
-          body: "有关隐私的问题请先阅读 Agent-Native 隐私政策和 Builder.io 法律资源，再联系支持团队。Builder.io, Inc. 地址为 95 3rd Street, 2nd Floor, San Francisco, CA 94103, United States。托管服务条款和自托管责任见服务条款。",
+          body: "有关隐私的问题请先阅读 FB Factory 隐私政策和 FutureBuild 法律资源，再联系支持团队。FutureBuild, Inc. 地址为 95 3rd Street, 2nd Floor, San Francisco, CA 94103, United States。托管服务条款和自托管责任见服务条款。",
         },
       },
     },
     terms: {
       eyebrow: "服务条款",
-      title: "Agent-Native 托管应用程序",
+      title: "FB Factory 托管应用程序",
       intro:
-        "当 Builder.io 为您运营 Agent-Native 托管应用程序、托管模板、演示和官方托管服务时，这些条款适用。",
+        "当 FutureBuild 为您运营 FB Factory 托管应用程序、托管模板、演示和官方托管服务时，这些条款适用。",
       scopeCards: {
         hosted: {
           title: "托管应用程序",
-          body: "当您使用由 Builder.io 操作的 Agent-Native 应用程序或模板时，将受到保护。",
+          body: "当您使用由 FutureBuild 操作的 FB Factory 应用程序或模板时，将受到保护。",
         },
         openSource: {
           title: "开源",
@@ -2374,7 +2373,7 @@ const zhCN = {
         },
         selfHosted: {
           title: "自托管",
-          body: "由您或其他人操作的单独部署不是 Builder.io 托管服务。",
+          body: "由您或其他人操作的单独部署不是 FutureBuild 托管服务。",
         },
       },
       sections: {
@@ -2391,50 +2390,50 @@ const zhCN = {
       },
       paragraphs: {
         scope1:
-          "Agent-Native 是开源的，其源代码可在 MIT 许可证下获得。这些条款仅适用于 Builder.io 为 Agent-Native 用户运营的托管应用程序和服务。它们不管理在 Builder.io 之外运行的分叉、自定义模板、私有部署或自托管版本。",
-        scope2Prefix: "这些术语补充了 Builder.io 的更广泛范围",
-        scope2Middle: "和 Agent-Native",
+          "FB Factory 是开源的，其源代码可在 MIT 许可证下获得。这些条款仅适用于 FutureBuild 为 FB Factory 用户运营的托管应用程序和服务。它们不管理在 FutureBuild 之外运行的分叉、自定义模板、私有部署或自托管版本。",
+        scope2Prefix: "这些术语补充了 FutureBuild 的更广泛范围",
+        scope2Middle: "和 FB Factory",
         scope2Suffix:
-          "如果您代表公司或组织使用托管 Agent-Native 应用程序，则表示您有权接受该组织的这些条款。",
+          "如果您代表公司或组织使用托管 FB Factory 应用程序，则表示您有权接受该组织的这些条款。",
         scope3:
-          "Agent-Native 没有付费计划或付费托管订阅。除非另行签署书面协议，Builder.io 的商业条款（例如订单表、费用、企业支持、服务级别和数据处理附录）不属于本服务的一部分。",
+          "FB Factory 没有付费计划或付费托管订阅。除非另行签署书面协议，FutureBuild 的商业条款（例如订单表、费用、企业支持、服务级别和数据处理附录）不属于本服务的一部分。",
         hostedService:
-          "Builder.io 可以提供托管的 Agent-Native 应用程序、模板、演示、共享工作区、浏览器扩展和相关代理工作流程。随着产品的发展，托管服务可能会更新、限制、暂停或终止。",
+          "FutureBuild 可以提供托管的 FB Factory 应用程序、模板、演示、共享工作区、浏览器扩展和相关代理工作流程。随着产品的发展，托管服务可能会更新、限制、暂停或终止。",
         accounts1:
-          "您对帐户信息的准确性、帐户下的活动以及保证凭据的安全负责。托管 Agent-Native 应用程序可能包括组织功能、邀请、共享资源、连接集成和特定于应用程序的访问控制。仅邀请用户并连接您有权使用的服务。",
+          "您对帐户信息的准确性、帐户下的活动以及保证凭据的安全负责。托管 FB Factory 应用程序可能包括组织功能、邀请、共享资源、连接集成和特定于应用程序的访问控制。仅邀请用户并连接您有权使用的服务。",
         accounts2:
-          "如果您认为帐户、工作区、集成或共享资源已被泄露或滥用，请立即联系 Builder.io 支持人员。",
+          "如果您认为帐户、工作区、集成或共享资源已被泄露或滥用，请立即联系 FutureBuild 支持人员。",
         content1:
-          "您保留对您创建、上传、记录、导入或连接到托管 Agent-Native 应用程序的内容的所有权。您授予 Builder.io 托管、处理、传输、显示、转换、分析和存储该内容所需的有限权限，以便托管应用程序及其代理工作流程可以运行。",
+          "您保留对您创建、上传、记录、导入或连接到托管 FB Factory 应用程序的内容的所有权。您授予 FutureBuild 托管、处理、传输、显示、转换、分析和存储该内容所需的有限权限，以便托管应用程序及其代理工作流程可以运行。",
         content2:
           "您有责任拥有您向服务提供的内容、录音、提示、文件、凭据和连接的集成数据所需的权利和权限。",
         agents1:
-          "托管 Agent-Native 应用程序可以根据您的要求运行 AI 代理、工具、自动化和提供商集成。 AI 生成的输出可能不完整、不准确或不适合特定用途。在依赖重要的输出、操作、导出和消息之前先对其进行审查。",
+          "托管 FB Factory 应用程序可以根据您的要求运行 AI 代理、工具、自动化和提供商集成。 AI 生成的输出可能不完整、不准确或不适合特定用途。在依赖重要的输出、操作、导出和消息之前先对其进行审查。",
         agents2:
           "当您连接第三方服务时，您对这些服务的使用仍受其自身的条款、限制、权限和隐私惯例的约束。",
         openSource:
-          "这些条款不会更改 Agent-Native 代码的开源许可。如果您下载、分叉、修改或自托管 Agent-Native，则 MIT 许可证和您为自己的部署设置的条款将管辖该使用。您负责您所操作的部署的安全性、隐私性、合规性、操作和用户支持。",
+          "这些条款不会更改 FB Factory 代码的开源许可。如果您下载、分叉、修改或自托管 FB Factory，则 MIT 许可证和您为自己的部署设置的条款将管辖该使用。您负责您所操作的部署的安全性、隐私性、合规性、操作和用户支持。",
         suspensionPrefix:
-          "当需要保护用户、遵守法律、防止滥用、解决安全风险或运营服务时，Builder.io 可以暂停或限制对托管 Agent-Native 服务的访问。您可以随时停止使用托管服务。某些数据可能会在备份、日志或审核记录中保留一段有限的时间，如",
+          "当需要保护用户、遵守法律、防止滥用、解决安全风险或运营服务时，FutureBuild 可以暂停或限制对托管 FB Factory 服务的访问。您可以随时停止使用托管服务。某些数据可能会在备份、日志或审核记录中保留一段有限的时间，如",
         disclaimers1:
-          "托管 Agent-Native 服务按原样和可用状态提供，并遵守适用法律以及您与 Builder.io 签订的任何单独书面协议。 Builder.io 不保证托管应用程序、集成、自动化或 AI 输出不会中断、无错误或满足所有要求。",
+          "托管 FB Factory 服务按原样和可用状态提供，并遵守适用法律以及您与 FutureBuild 签订的任何单独书面协议。 FutureBuild 不保证托管应用程序、集成、自动化或 AI 输出不会中断、无错误或满足所有要求。",
         disclaimers2Prefix:
-          "在法律允许的最大范围内，Builder.io 对托管 Agent-Native 服务的责任受到 Builder.io 更广泛的条款中所述的限制。",
+          "在法律允许的最大范围内，FutureBuild 对托管 FB Factory 服务的责任受到 FutureBuild 更广泛的条款中所述的限制。",
         disclaimers2Suffix: "或适用于您的使用的其他书面协议。",
         changes1:
-          "随着 Agent-Native 托管应用程序的变化，我们可能会更新这些条款。页面顶部的更新日期显示了条款的最新修订时间。",
+          "随着 FB Factory 托管应用程序的变化，我们可能会更新这些条款。页面顶部的更新日期显示了条款的最新修订时间。",
         changes2Prefix:
-          "如果对这些条款有疑问，请通过 Builder.io 中列出的支持渠道联系 Builder.io",
+          "如果对这些条款有疑问，请通过 FutureBuild 中列出的支持渠道联系 FutureBuild",
       },
       hostedServicePoints: {
-        create: "创建和操作托管 Agent-Native 工作区和模板应用程序。",
+        create: "创建和操作托管 FB Factory 工作区和模板应用程序。",
         workflows: "运行您选择使用的代理工作流程、操作、自动化和集成。",
         store:
           "存储提供服务所需的托管应用程序内容、设置、组织数据和连接帐户状态。",
-        improve: "测量、保护、调试和改进托管 Agent-Native 服务。",
+        improve: "测量、保护、调试和改进托管 FB Factory 服务。",
       },
       acceptableUse: {
-        laws: "请勿使用托管 Agent-Native 应用程序来违反法律、侵犯权利或伤害人员或系统。",
+        laws: "请勿使用托管 FB Factory 应用程序来违反法律、侵犯权利或伤害人员或系统。",
         bypass: "不要尝试绕过访问控制、速率限制、安全边界或租户隔离。",
         malware: "请勿上传恶意软件、凭证盗窃材料或旨在破坏服务的内容。",
         spam: "请勿使用该服务发送垃圾邮件、未经授权进行抓取或滥用连接的提供商。",
@@ -2459,9 +2458,9 @@ const zhCN = {
     gettingStarted: "入门",
     gettingStartedActions: "Add an Action",
     gettingStartedPages: "Add a Page",
-    whatIsAgentNative: "什么是 Agent-Native？",
+    whatIsAgentNative: "什么是 FB Factory？",
     agentSurfaces: "Agent 界面",
-    agentNativeConfig: "Agent-Native Config",
+    agentNativeConfig: "FB Factory Config",
     keyConcepts: "核心概念",
     agentNativeToolkit: "工具包",
     toolkitOverview: "概览",
@@ -2597,7 +2596,7 @@ const zhCN = {
     syncingTemplateChanges: "同步模板变更",
     writingAgentInstructions: "编写 Agent 指令",
     embeddingSdk: "嵌入 SDK",
-    agentNativeCodeUi: "Agent-Native 代码 UI",
+    agentNativeCodeUi: "FB Factory 代码 UI",
     harnessAgents: "Harness 代理",
     adapters: "适配器",
     cliAdapters: "CLI 适配器",

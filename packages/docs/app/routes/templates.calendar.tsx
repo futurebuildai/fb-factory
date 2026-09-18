@@ -22,7 +22,7 @@ export const meta = () =>
   withTemplateSocialImage(
     [
       {
-        title: "Free AI Scheduling Assistant | Agent-Native Calendar",
+        title: "Free AI Scheduling Assistant | FB Factory Calendar",
       },
       {
         name: "description",
@@ -31,7 +31,7 @@ export const meta = () =>
       },
       {
         property: "og:title",
-        content: "Free AI Scheduling Assistant | Agent-Native Calendar",
+        content: "Free AI Scheduling Assistant | FB Factory Calendar",
       },
       {
         property: "og:description",

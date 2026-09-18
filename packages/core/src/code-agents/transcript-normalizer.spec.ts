@@ -75,6 +75,7 @@ describe("normalizeCodeAgentTranscript", () => {
         type: "assistant_delta",
         seq: 3,
       }),
+      // agent-native-brand-ok: raw upstream runner output fixture
       event("evt-final", "system", "**Agent-Native**\n\n- `core` package", {
         role: "assistant",
         seq: 4,
@@ -88,6 +89,7 @@ describe("normalizeCodeAgentTranscript", () => {
       expect.objectContaining({
         type: "assistant",
         source: "runner-stdout",
+        // agent-native-brand-ok: raw upstream runner output fixture
         text: "**Agent-Native**\n\n- `core` package",
         eventIds: ["evt-delta-1", "evt-delta-2", "evt-delta-3", "evt-final"],
         suppressedDuplicateEventIds: ["evt-final"],

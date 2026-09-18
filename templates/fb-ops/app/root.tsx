@@ -5,7 +5,7 @@ import {
   AppProviders,
   createAgentNativeQueryClient,
 } from "@agent-native/core/client/hooks";
-import { getLocaleInitScript, useT } from "@agent-native/core/client/i18n";
+import { getLocaleInitScript } from "@agent-native/core/client/i18n";
 import { getThemeInitScript } from "@agent-native/core/client/theme";
 import { useQueryClient } from "@tanstack/react-query";
 import { useState } from "react";

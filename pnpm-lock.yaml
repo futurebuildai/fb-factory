@@ -4323,7 +4323,7 @@ importers:
         specifier: 'catalog:'
         version: 3.44.0(react@19.2.7)
       zod:
-        specifier: ^4.4.3
+        specifier: ^4.3.6
         version: 4.6.5
     devDependencies:
       '@agent-native/code-agents-ui':

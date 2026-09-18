@@ -1,9 +1,9 @@
 {
   "openapi": "3.2.0",
   "info": {
-    "title": "Agent-Native public API",
+    "title": "FB Factory public API",
     "version": "1.0.0",
-    "description": "Machine-readable HTTP and MCP entry points published by Agent-Native. The desktop release endpoints are public and the MCP endpoint uses the authentication described in the Authentication documentation.",
+    "description": "Machine-readable HTTP and MCP entry points published by FB Factory. The desktop release endpoints are public and the MCP endpoint uses the authentication described in the Authentication documentation.",
     "contact": {
       "name": "Builder.io support",
       "email": "support@builder.io",
@@ -13,11 +13,11 @@
   "servers": [
     {
       "url": "https://www.agent-native.com",
-      "description": "Agent-Native production site"
+      "description": "FB Factory production site"
     }
   ],
   "externalDocs": {
-    "description": "Agent-Native developer documentation",
+    "description": "FB Factory developer documentation",
     "url": "https://www.agent-native.com/docs/external-agents"
   },
   "paths": {
@@ -67,7 +67,7 @@
           {
             "name": "asset",
             "in": "path",
-            "description": "Supported updater or release asset filename, such as latest-mac.yml, nightly/latest-mac.yml, or Agent-Native-1.0.0-mac.zip.",
+            "description": "Supported updater or release asset filename, such as latest-mac.yml, nightly/latest-mac.yml, or FB Factory-1.0.0-mac.zip.",
             "required": true,
             "schema": {
               "type": "string",
@@ -75,7 +75,7 @@
               "examples": [
                 "latest-mac.yml",
                 "nightly/latest-mac.yml",
-                "Agent-Native-1.0.0-mac.zip"
+                "FB Factory-1.0.0-mac.zip"
               ]
             }
           }
@@ -108,7 +108,7 @@
     "/mcp": {
       "post": {
         "tags": ["MCP"],
-        "summary": "Call the Agent-Native MCP server",
+        "summary": "Call the FB Factory MCP server",
         "description": "Streamable HTTP Model Context Protocol endpoint. Authenticate with the standard remote MCP OAuth flow or a supported bearer token, then use the MCP initialize, tools/list, and tools/call methods.",
         "operationId": "handleMcpProtocolRequest",
         "security": [{ "bearerAuth": [] }],

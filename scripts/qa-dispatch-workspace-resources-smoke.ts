@@ -260,7 +260,7 @@ async function callAction<T = any>(
         method,
         credentials: "include",
         headers: {
-          "X-FB Factory-CSRF": "1",
+          "X-Agent-Native-CSRF": "1",
         },
       };
       if (method === "GET") {
@@ -299,7 +299,7 @@ async function createSharedOverride(page: Page) {
         credentials: "include",
         headers: {
           "Content-Type": "application/json",
-          "X-FB Factory-CSRF": "1",
+          "X-Agent-Native-CSRF": "1",
         },
         body: JSON.stringify({
           path,

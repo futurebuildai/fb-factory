@@ -37,9 +37,9 @@ describe("client track", () => {
     const [url, init] = fetchMock.mock.calls[0];
     expect(url).toBe("/_agent-native/track");
     expect(init.headers).toMatchObject({
-      "X-FB Factory-CSRF": "1",
-      "X-FB Factory-Session-Id": "run-42",
-      "X-FB Factory-Client-Platform": "web",
+      "X-Agent-Native-CSRF": "1",
+      "X-Agent-Native-Session-Id": "run-42",
+      "X-Agent-Native-Client-Platform": "web",
     });
     expect(JSON.parse(init.body)).toEqual({
       name: "checkout.completed",
@@ -56,10 +56,10 @@ describe("client track", () => {
     await track("checkout.completed");
 
     expect(fetchMock.mock.calls[0][1].headers).not.toHaveProperty(
-      "X-FB Factory-Session-Id",
+      "X-Agent-Native-Session-Id",
     );
     expect(fetchMock.mock.calls[0][1].headers).toMatchObject({
-      "X-FB Factory-Client-Platform": "web",
+      "X-Agent-Native-Client-Platform": "web",
     });
   });
 });

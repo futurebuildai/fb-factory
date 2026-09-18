@@ -24,12 +24,12 @@ describe("MCP embed headers", () => {
   });
 
   it("allows frontend action-client headers from embedded apps", () => {
-    expect(MCP_EMBED_CORS_ALLOW_HEADERS).toContain("X-FB Factory-Frontend");
+    expect(MCP_EMBED_CORS_ALLOW_HEADERS).toContain("X-Agent-Native-Frontend");
     expect(MCP_EMBED_CORS_ALLOW_HEADERS).toContain(
-      "X-FB Factory-Client-Compatibility",
+      "X-Agent-Native-Client-Compatibility",
     );
-    expect(MCP_EMBED_CORS_ALLOW_HEADERS).toContain("X-FB Factory-Build-Id");
-    expect(MCP_EMBED_CORS_ALLOW_HEADERS).toContain("X-FB Factory-Browser-Tab");
+    expect(MCP_EMBED_CORS_ALLOW_HEADERS).toContain("X-Agent-Native-Build-Id");
+    expect(MCP_EMBED_CORS_ALLOW_HEADERS).toContain("X-Agent-Native-Browser-Tab");
   });
 
   it("hands cookies to the desktop dev renderer only in development", () => {
@@ -45,7 +45,7 @@ describe("MCP embed headers", () => {
     // answers its sign-in preflight from this list instead of the auth CORS
     // handler. Dropping the header here breaks desktop login in local dev only.
     expect(MCP_EMBED_CORS_ALLOW_HEADERS).toContain(
-      "X-FB Factory-Desktop-Verifier",
+      "X-Agent-Native-Desktop-Verifier",
     );
   });
 

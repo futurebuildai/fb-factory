@@ -97,7 +97,7 @@ describe("embedApp", () => {
     );
     expect(html).not.toContain("document.head.prepend(base)");
     expect(html).toContain("resolveTransplantAppDocumentSource");
-    expect(html).toContain('"X-FB Factory-Embed-Transplant": "1"');
+    expect(html).toContain('"X-Agent-Native-Embed-Transplant": "1"');
     expect(html).toContain('Accept: "application/json"');
     expect(html).toContain("const data = await response.json()");
     expect(html).toContain('typeof data.location === "string"');

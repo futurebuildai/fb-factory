@@ -4782,7 +4782,7 @@ export function createCoreRoutesPlugin(
       // code can fan out to the SAME server-side providers (PostHog/Mixpanel/
       // etc.) that server `track()` reaches. Authenticated + first-party only:
       // the CSRF middleware above (mounted before route handlers) already
-      // requires the X-FB Factory-CSRF marker the client helper sends, and we
+      // requires the X-Agent-Native-CSRF marker the client helper sends, and we
       // require a resolved session so this can't become an open relay. Events
       // are attributed to the resolved user/org — never a client-supplied id.
       // Best-effort: invalid bodies 400, everything else returns 204 and

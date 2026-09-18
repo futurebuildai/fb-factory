@@ -542,7 +542,7 @@ function readMcpAuthHeaders(value: unknown): Record<string, string> {
   if (!value || typeof value !== "object" || Array.isArray(value)) return {};
   const headers = value as Record<string, unknown>;
   const authHeaders: Record<string, string> = {};
-  for (const name of ["Authorization", "X-FB Factory-Owner-Email"]) {
+  for (const name of ["Authorization", "X-Agent-Native-Owner-Email"]) {
     if (typeof headers[name] === "string" && headers[name].trim()) {
       authHeaders[name] = headers[name].trim();
     }

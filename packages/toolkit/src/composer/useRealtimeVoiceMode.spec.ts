@@ -310,9 +310,9 @@ describe("Realtime voice client transport", () => {
           status: 200,
           headers: {
             "Content-Type": "application/sdp",
-            "X-FB Factory-Realtime-Capability": "capability-1",
-            "X-FB Factory-Realtime-Protocol": "live",
-            "X-FB Factory-Realtime-Model": "gpt-live-1",
+            "X-Agent-Native-Realtime-Capability": "capability-1",
+            "X-Agent-Native-Realtime-Protocol": "live",
+            "X-Agent-Native-Realtime-Model": "gpt-live-1",
           },
         }),
     );
@@ -344,11 +344,11 @@ describe("Realtime voice client transport", () => {
         body: "offer-sdp",
         headers: {
           "Content-Type": "application/sdp",
-          "X-FB Factory-Browser-Tab": "tab-1",
-          "X-FB Factory-Realtime-Protocol": "realtime",
-          "X-FB Factory-Realtime-Language": "en",
-          "X-FB Factory-Realtime-Intelligence": "instant",
-          "X-FB Factory-Realtime-Voice": "marin",
+          "X-Agent-Native-Browser-Tab": "tab-1",
+          "X-Agent-Native-Realtime-Protocol": "realtime",
+          "X-Agent-Native-Realtime-Language": "en",
+          "X-Agent-Native-Realtime-Intelligence": "instant",
+          "X-Agent-Native-Realtime-Voice": "marin",
         },
       }),
     );
@@ -389,8 +389,8 @@ describe("Realtime voice client transport", () => {
         method: "POST",
         signal,
         headers: expect.objectContaining({
-          "X-FB Factory-Browser-Tab": "tab-1",
-          "X-FB Factory-Realtime-Capability": "capability-1",
+          "X-Agent-Native-Browser-Tab": "tab-1",
+          "X-Agent-Native-Realtime-Capability": "capability-1",
         }),
         body: JSON.stringify({
           name: "navigate",

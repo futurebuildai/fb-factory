@@ -8,7 +8,7 @@ const ANALYTICS_SESSION_KEY = "agent-native.analytics.session";
 const SESSION_IDLE_TIMEOUT_MS = 30 * 60 * 1000;
 
 export const MOBILE_ANALYTICS_PLATFORM = "mobile" as const;
-export const MOBILE_ANALYTICS_PLATFORM_HEADER = "X-FB Factory-Client-Platform";
+export const MOBILE_ANALYTICS_PLATFORM_HEADER = "X-Agent-Native-Client-Platform";
 
 const chatApp = TEMPLATE_APPS.find((app) => app.id === "chat");
 export const DEFAULT_MOBILE_ANALYTICS_BASE_URL =
@@ -77,7 +77,7 @@ export async function getMobileAnalyticsHeaders(): Promise<
     const sessionId = await getOrCreateAnalyticsSessionId();
     return {
       [MOBILE_ANALYTICS_PLATFORM_HEADER]: MOBILE_ANALYTICS_PLATFORM,
-      "X-FB Factory-Session-Id": sessionId,
+      "X-Agent-Native-Session-Id": sessionId,
     };
   } catch {
     return {
@@ -109,9 +109,9 @@ export async function trackMobileEvent(
         Authorization: `Bearer ${token}`,
         Accept: "application/json",
         "Content-Type": "application/json",
-        "X-FB Factory-CSRF": "1",
+        "X-Agent-Native-CSRF": "1",
         [MOBILE_ANALYTICS_PLATFORM_HEADER]: MOBILE_ANALYTICS_PLATFORM,
-        "X-FB Factory-Session-Id": sessionId,
+        "X-Agent-Native-Session-Id": sessionId,
       },
       body: JSON.stringify({
         name,

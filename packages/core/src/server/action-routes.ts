@@ -192,7 +192,7 @@ function readTimezoneHeader(event: any): string | undefined {
 /**
  * True when the request originated from the browser action client
  * (`useActionQuery` / `useActionMutation` / `callAction`), which tags every
- * call with `X-FB Factory-Frontend: 1`. Used to set `ctx.caller` to
+ * call with `X-Agent-Native-Frontend: 1`. Used to set `ctx.caller` to
  * `"frontend"` vs a bare programmatic `"http"` POST. The header carries no
  * auth weight — it only narrows the caller tag for tracking/branching.
  */
@@ -256,8 +256,8 @@ function handleOptionsRequest(event: any): string {
       event,
       "Access-Control-Allow-Headers",
       cors.credentials
-        ? `Content-Type,Authorization,X-Requested-With,X-Request-Source,X-FB Factory-Browser-Tab,X-FB Factory-CSRF,X-User-Timezone,X-FB Factory-Session-Id,X-FB Factory-Client-Platform,X-FB Factory-Tool-Bridge,X-FB Factory-Tool-Id,X-FB Factory-Frontend,X-FB Factory-Client-Compatibility,X-FB Factory-Build-Id,${EMBED_TARGET_HEADER}`
-        : `${MCP_EMBED_CORS_ALLOW_HEADERS},X-FB Factory-Tool-Bridge,X-FB Factory-Tool-Id,X-FB Factory-Frontend,X-FB Factory-Client-Compatibility,X-FB Factory-Build-Id`,
+        ? `Content-Type,Authorization,X-Requested-With,X-Request-Source,X-Agent-Native-Browser-Tab,X-Agent-Native-CSRF,X-User-Timezone,X-Agent-Native-Session-Id,X-Agent-Native-Client-Platform,X-Agent-Native-Tool-Bridge,X-Agent-Native-Tool-Id,X-Agent-Native-Frontend,X-Agent-Native-Client-Compatibility,X-Agent-Native-Build-Id,${EMBED_TARGET_HEADER}`
+        : `${MCP_EMBED_CORS_ALLOW_HEADERS},X-Agent-Native-Tool-Bridge,X-Agent-Native-Tool-Id,X-Agent-Native-Frontend,X-Agent-Native-Client-Compatibility,X-Agent-Native-Build-Id`,
     );
   }
 
@@ -514,7 +514,7 @@ function mountActionRoutesInternal(
         setResponseHeader(
           event,
           "Access-Control-Expose-Headers",
-          "X-FB Factory-Client-Mismatch,X-FB Factory-Build-Id,X-FB Factory-Client-Compatibility",
+          "X-Agent-Native-Client-Mismatch,X-Agent-Native-Build-Id,X-Agent-Native-Client-Compatibility",
         );
 
         // Browser action calls are RPCs over the framework transport. The
@@ -538,11 +538,11 @@ function mountActionRoutesInternal(
           if (receivedCompatibility !== requiredCompatibility) {
             const serverBuildId = currentBuildId();
             setResponseStatus(event, 409);
-            setResponseHeader(event, "X-FB Factory-Client-Mismatch", "1");
-            setResponseHeader(event, "X-FB Factory-Build-Id", serverBuildId);
+            setResponseHeader(event, "X-Agent-Native-Client-Mismatch", "1");
+            setResponseHeader(event, "X-Agent-Native-Build-Id", serverBuildId);
             setResponseHeader(
               event,
-              "X-FB Factory-Client-Compatibility",
+              "X-Agent-Native-Client-Compatibility",
               requiredCompatibility,
             );
             return {
@@ -556,7 +556,7 @@ function mountActionRoutesInternal(
 
         // (audit H5) Per-action `toolCallable` opt-out for the tools-iframe
         // bridge. The bridge tags every outbound action call with
-        // X-FB Factory-Tool-Bridge: 1. When that header is present and the
+        // X-Agent-Native-Tool-Bridge: 1. When that header is present and the
         // action declares `toolCallable: false`, we 403 — used by the
         // framework's share-resource / unshare-resource /
         // set-resource-visibility for defense-in-depth on auth-adjacent
@@ -808,7 +808,7 @@ function mountActionRoutesInternal(
             }
 
             // Run the action. Tag the caller: browser calls (useActionQuery /
-            // useActionMutation / callAction) send X-FB Factory-Frontend: 1,
+            // useActionMutation / callAction) send X-Agent-Native-Frontend: 1,
             // so they become "frontend"; bare programmatic POSTs are "http".
             // userEmail / orgId mirror the request context resolved above (do
             // NOT inject a dev identity — leave undefined when unauthenticated).

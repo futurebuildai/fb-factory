@@ -4505,7 +4505,7 @@ describe("server/auth", () => {
           origin,
         );
         expect(event.res.headers.get("access-control-allow-headers")).toContain(
-          "X-FB Factory-Embed-Transplant",
+          "X-Agent-Native-Embed-Transplant",
         );
         expect(
           event.res.headers.get("access-control-allow-credentials"),

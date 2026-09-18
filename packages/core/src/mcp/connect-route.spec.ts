@@ -400,7 +400,7 @@ describe("handleMcpConnect", () => {
         Authorization: `Bearer ${data.token}`,
       });
       expect(data.mcpServerEntry.headers).not.toHaveProperty(
-        "X-FB Factory-MCP-Full-Catalog",
+        "X-Agent-Native-MCP-Full-Catalog",
       );
       expect(Math.round(lifetimeDays)).toBe(365);
       expect(tokenRows[0]).toMatchObject({
@@ -425,7 +425,7 @@ describe("handleMcpConnect", () => {
         type: "http",
         url: "http://localhost:4321/mcp",
         headers: {
-          "X-FB Factory-Owner-Email": "u@example.com",
+          "X-Agent-Native-Owner-Email": "u@example.com",
         },
       });
     });
@@ -647,7 +647,7 @@ describe("handleMcpConnect", () => {
       expect(data.status).toBe("approved");
       expect(data.token).toBe("");
       expect(data.mcpServerEntry.headers).toEqual({
-        "X-FB Factory-Owner-Email": "u@example.com",
+        "X-Agent-Native-Owner-Email": "u@example.com",
       });
     });
 
@@ -691,7 +691,7 @@ describe("handleMcpConnect", () => {
         Authorization: `Bearer ${data.token}`,
       });
       expect(data.mcpServerEntry.headers).not.toHaveProperty(
-        "X-FB Factory-MCP-Full-Catalog",
+        "X-Agent-Native-MCP-Full-Catalog",
       );
       expect(Math.round(lifetimeDays)).toBe(365);
       expect(verified?.jti).toBeTruthy();

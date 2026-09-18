@@ -290,7 +290,7 @@ async function clipsRequest<T>(
       headers: {
         Accept: "application/json",
         Authorization: `Bearer ${session.token}`,
-        "X-FB Factory-Client": "mobile",
+        "X-Agent-Native-Client": "mobile",
         ...options.headers,
       },
       body: options.body,

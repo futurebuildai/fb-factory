@@ -358,7 +358,7 @@ describe("runDeviceFlow", () => {
             mcpServerEntry: {
               type: "http",
               url: "http://localhost:4321/mcp",
-              headers: { "X-FB Factory-Owner-Email": "u@example.com" },
+              headers: { "X-Agent-Native-Owner-Email": "u@example.com" },
             },
           },
         ]),
@@ -370,7 +370,7 @@ describe("runDeviceFlow", () => {
       token: undefined,
       mcpUrl: "http://localhost:4321/mcp",
       serverName: "agent-native-analytics-local",
-      headers: { "X-FB Factory-Owner-Email": "u@example.com" },
+      headers: { "X-Agent-Native-Owner-Email": "u@example.com" },
     });
   });
 
@@ -579,13 +579,13 @@ describe("writeConfigs", () => {
       undefined,
       "project",
       root,
-      { "X-FB Factory-Owner-Email": "u@example.com" },
+      { "X-Agent-Native-Owner-Email": "u@example.com" },
     );
     const cfg = JSON.parse(fs.readFileSync(written[0].file, "utf-8"));
     expect(cfg.mcpServers["agent-native-analytics-local"]).toEqual({
       type: "http",
       url: "http://localhost:4321/mcp",
-      headers: { "X-FB Factory-Owner-Email": "u@example.com" },
+      headers: { "X-Agent-Native-Owner-Email": "u@example.com" },
     });
   });
 
@@ -690,10 +690,10 @@ describe("writeConfigs", () => {
         undefined,
         "project",
         root,
-        { "X-FB Factory-Owner-Email": "u@example.com" },
+        { "X-Agent-Native-Owner-Email": "u@example.com" },
       );
       const toml = fs.readFileSync(written[0].file, "utf-8");
-      expect(toml).toContain('"X-FB Factory-Owner-Email" = "u@example.com"');
+      expect(toml).toContain('"X-Agent-Native-Owner-Email" = "u@example.com"');
       expect(toml).not.toContain("Authorization");
     } finally {
       process.env.HOME = HOME;
@@ -948,7 +948,7 @@ describe("runConnect", () => {
       const toml = fs.readFileSync(codexFile, "utf-8");
       expect(toml).toContain('[mcp_servers."plan"]');
       expect(toml).toContain('"Authorization" = "Bearer fresh-token"');
-      expect(toml).not.toContain("X-FB Factory-MCP-Full-Catalog");
+      expect(toml).not.toContain("X-Agent-Native-MCP-Full-Catalog");
     } finally {
       process.env.HOME = oldHome;
     }
@@ -1590,7 +1590,7 @@ describe("runConnect", () => {
         "utf-8",
       );
       expect(codexToml).toContain('"Authorization" = "Bearer tok-device"');
-      expect(codexToml).not.toContain("X-FB Factory-MCP-Full-Catalog");
+      expect(codexToml).not.toContain("X-Agent-Native-MCP-Full-Catalog");
       const coworkCfg = JSON.parse(
         fs.readFileSync(path.join(home, ".cowork", "mcp.json"), "utf-8"),
       );
@@ -1900,7 +1900,7 @@ describe("runConnect", () => {
       type: "http",
       url: "http://127.0.0.1:8080/mail/mcp",
       headers: {
-        "X-FB Factory-Owner-Email": "u@example.com",
+        "X-Agent-Native-Owner-Email": "u@example.com",
       },
     });
     const savedProfiles = JSON.parse(fs.readFileSync(profilesFile, "utf-8"));
@@ -1980,8 +1980,8 @@ describe("runConnect", () => {
 
       let toml = fs.readFileSync(codexFile, "utf-8");
       expect(toml).toContain('url = "http://127.0.0.1:8080/mail/mcp"');
-      expect(toml).toContain('"X-FB Factory-Owner-Email" = "u@example.com"');
-      expect(toml).not.toContain("X-FB Factory-MCP-Full-Catalog");
+      expect(toml).toContain('"X-Agent-Native-Owner-Email" = "u@example.com"');
+      expect(toml).not.toContain("X-Agent-Native-MCP-Full-Catalog");
 
       await runConnect(["prod", "--apps", "mail", "--client", "codex"], {
         profilesFile,

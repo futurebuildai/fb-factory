@@ -40,8 +40,8 @@ describe("mobile analytics", () => {
       expect.objectContaining({
         headers: expect.objectContaining({
           Authorization: "Bearer mobile-session-token",
-          "X-FB Factory-Client-Platform": "mobile",
-          "X-FB Factory-Session-Id": expect.stringMatching(/^session_/),
+          "X-Agent-Native-Client-Platform": "mobile",
+          "X-Agent-Native-Session-Id": expect.stringMatching(/^session_/),
         }),
       }),
     );

@@ -3,7 +3,7 @@ import { expect, type APIRequestContext } from "@playwright/test";
 export async function resetInbox(request: APIRequestContext) {
   const listResponse = await request.get(
     "/_agent-native/actions/list-inbox-items",
-    { headers: { "X-FB Factory-Frontend": "1" } },
+    { headers: { "X-Agent-Native-Frontend": "1" } },
   );
   expect(listResponse.ok()).toBeTruthy();
   const { items } = (await listResponse.json()) as {
@@ -16,7 +16,7 @@ export async function resetInbox(request: APIRequestContext) {
       {
         headers: {
           "Content-Type": "application/json",
-          "X-FB Factory-Frontend": "1",
+          "X-Agent-Native-Frontend": "1",
         },
         data: { inboxItemId: item.id },
       },
@@ -56,7 +56,7 @@ export async function createInboxItem(
     {
       headers: {
         "Content-Type": "application/json",
-        "X-FB Factory-Frontend": "1",
+        "X-Agent-Native-Frontend": "1",
       },
       data: { title },
     },

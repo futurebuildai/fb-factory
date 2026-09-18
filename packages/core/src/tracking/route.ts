@@ -12,7 +12,7 @@
  *
  * Security: this is an authenticated, first-party-only endpoint. It is mounted
  * behind the framework CSRF middleware (which requires the
- * `X-FB Factory-CSRF` header / JSON content type / same-origin marker that
+ * `X-Agent-Native-CSRF` header / JSON content type / same-origin marker that
  * the client helper always sends) and it requires a resolved session so it
  * cannot be used as an open analytics relay. Events are attributed to the
  * resolved `userId` (and `orgId` when the request has an active org), never to

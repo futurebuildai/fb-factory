@@ -1620,7 +1620,9 @@ function localPackageTarball(packageDir: string): string {
         npm_config_cache: npmCacheDir,
         npm_config_ignore_scripts: "true",
       },
-      stdio: "pipe",
+      // The pack listing is not parsed and can exceed the default exec
+      // buffer on packages with large file trees; discard it.
+      stdio: "ignore",
     },
   );
 
@@ -1659,7 +1661,7 @@ function localPackageTarball(packageDir: string): string {
         npm_config_cache: repackNpmCacheDir,
         npm_config_ignore_scripts: "true",
       },
-      stdio: "pipe",
+      stdio: "ignore",
     },
   );
   const repackedTarballs = fs
@@ -1742,7 +1744,10 @@ function ensureLocalPackageBuildOutputs(packageDir: string): void {
       cwd: packageDir,
       encoding: "utf-8",
       env: { ...process.env, npm_config_cache: npmCacheDir },
-      stdio: "pipe",
+      // Build logs can exceed the default exec buffer; only the exit status
+      // matters here, so the output goes to the parent stdio instead of the
+      // captured buffer.
+      stdio: "inherit",
     });
   } catch (cause) {
     throw new Error(
@@ -2128,7 +2133,15 @@ function postProcessStandalone(
         pkg.optionalDependencies,
       ].some((deps) => Boolean(deps?.["node-pty"]));
       fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2) + "\n");
-    } catch {}
+    } catch (error) {
+      // Dependency resolution failing must be visible; a silently unresolved
+      // catalog: or workspace: ref only detonates later, inside the
+      // scaffolded app's own install, where the cause is invisible.
+      console.error(
+        `create: standalone dependency resolution failed for ${targetDir}:`,
+        error instanceof Error ? error.message : String(error),
+      );
+    }
   }
 
   // Write pnpm-workspace.yaml for pnpm v11 compatibility. pnpm v11 no longer

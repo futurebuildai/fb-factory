@@ -155,6 +155,7 @@ const EXPECTED_ACTIVE_TEMPLATES = [
   "design",
   "dispatch",
   "factory",
+  "fb-ops",
   "forms",
   "mail",
   "plan",

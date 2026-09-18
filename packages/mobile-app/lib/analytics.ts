@@ -8,7 +8,8 @@ const ANALYTICS_SESSION_KEY = "agent-native.analytics.session";
 const SESSION_IDLE_TIMEOUT_MS = 30 * 60 * 1000;
 
 export const MOBILE_ANALYTICS_PLATFORM = "mobile" as const;
-export const MOBILE_ANALYTICS_PLATFORM_HEADER = "X-Agent-Native-Client-Platform";
+export const MOBILE_ANALYTICS_PLATFORM_HEADER =
+  "X-Agent-Native-Client-Platform";
 
 const chatApp = TEMPLATE_APPS.find((app) => app.id === "chat");
 export const DEFAULT_MOBILE_ANALYTICS_BASE_URL =

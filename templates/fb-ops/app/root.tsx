@@ -6,23 +6,15 @@ import {
   createAgentNativeQueryClient,
 } from "@agent-native/core/client/hooks";
 import { getLocaleInitScript, useT } from "@agent-native/core/client/i18n";
-import {
-  CommandMenu,
-  useCommandMenuShortcut,
-} from "@agent-native/core/client/navigation";
 import { getThemeInitScript } from "@agent-native/core/client/theme";
-import { IconHierarchy2, IconSun, IconMoon } from "@tabler/icons-react";
 import { useQueryClient } from "@tanstack/react-query";
-import { useTheme } from "next-themes";
-import { useCallback, useState } from "react";
+import { useState } from "react";
 import {
   Links,
   Meta,
   Outlet,
   Scripts,
   ScrollRestoration,
-  useLocation,
-  useNavigate,
 } from "react-router";
 import type { LinksFunction } from "react-router";
 
@@ -68,6 +60,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           suppressHydrationWarning
           dangerouslySetInnerHTML={{ __html: LOCALE_INIT_SCRIPT }}
         />
+        {/* guard:allow-raw-color: fixed browser chrome color, matches the theme background token */}
         <meta name="theme-color" content="#18181B" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta
@@ -99,65 +92,9 @@ function DbSyncSetup() {
   return null;
 }
 
-function ThemeToggleItem() {
-  const { resolvedTheme, setTheme } = useTheme();
-  const t = useT();
-  const isDark = resolvedTheme === "dark";
-  return (
-    <CommandMenu.Item
-      onSelect={() => setTheme(isDark ? "light" : "dark")}
-      keywords={["theme", "dark", "light", "mode"]}
-    >
-      {isDark ? <IconSun size={16} /> : <IconMoon size={16} />}
-      {t("root.toggleTheme")}
-    </CommandMenu.Item>
-  );
-}
-
 function AppContent() {
-  const [cmdkOpen, setCmdkOpen] = useState(false);
-  const navigate = useNavigate();
-  const t = useT();
-  const location = useLocation();
-  const isChatThread = location.pathname.startsWith("/chat/");
-  useCommandMenuShortcut(useCallback(() => setCmdkOpen(true), []));
   return (
     <>
-      <CommandMenu open={cmdkOpen} onOpenChange={setCmdkOpen}>
-        <CommandMenu.Group heading={t("root.commandActions")}>
-          {isChatThread ? (
-            <CommandMenu.Item
-              onSelect={() =>
-                window.dispatchEvent(new Event("agent-chat:new-chat"))
-              }
-            >
-              {t("chat.newChat")}
-            </CommandMenu.Item>
-          ) : null}
-          {!isChatThread && location.pathname !== "/home" ? (
-            <CommandMenu.Item onSelect={() => navigate("/home")}>
-              {t("navigation.chat")}
-            </CommandMenu.Item>
-          ) : null}
-          <CommandMenu.Item
-            onSelect={() => navigate("/settings/agent")}
-            keywords={[
-              "agent",
-              "context",
-              "files",
-              "connections",
-              "jobs",
-              "access",
-            ]}
-          >
-            <IconHierarchy2 size={16} />
-            {t("settings.openAgentSettings")}
-          </CommandMenu.Item>
-        </CommandMenu.Group>
-        <CommandMenu.Group heading={t("root.commandAppearance")}>
-          <ThemeToggleItem />
-        </CommandMenu.Group>
-      </CommandMenu>
       <AppLayout>
         <Outlet />
       </AppLayout>

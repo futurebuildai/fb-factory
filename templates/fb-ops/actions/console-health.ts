@@ -46,6 +46,7 @@ export default defineAction({
             detail,
           };
         } catch (error) {
+          // Typed failure: status "error" is distinct from every HTTP status.
           return {
             name: env.name,
             url: env.url,

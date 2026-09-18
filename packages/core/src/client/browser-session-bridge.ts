@@ -160,7 +160,7 @@ async function postJson(
       credentials: "include",
       headers: {
         "Content-Type": "application/json",
-        "X-FB Factory-CSRF": "1",
+        "X-Agent-Native-CSRF": "1",
       },
       body: JSON.stringify(body ?? {}),
       ...(controller ? { signal: controller.signal } : {}),
@@ -185,7 +185,7 @@ async function deleteJson(
       method: "DELETE",
       credentials: "include",
       headers: {
-        "X-FB Factory-CSRF": "1",
+        "X-Agent-Native-CSRF": "1",
       },
       ...(controller ? { signal: controller.signal } : {}),
     });

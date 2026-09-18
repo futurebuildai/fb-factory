@@ -35,7 +35,7 @@ import {
 
 const TARGET_CHAT_PATH = "/_agent-native/agent-chat";
 /**
- * `X-FB Factory-Embed-Target` names the path a bearer embed token was minted
+ * `X-Agent-Native-Embed-Target` names the path a bearer embed token was minted
  * for. Without it the target only honours the token on requests whose own path
  * matches, which an agent-chat call never does. Duplicated from
  * `@agent-native/core/shared/embed-auth` because that constant is not part of

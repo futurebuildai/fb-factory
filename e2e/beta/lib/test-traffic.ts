@@ -1,7 +1,7 @@
 import type { BrowserContext } from "@playwright/test";
 
 export const BETA_E2E_TEST_TRAFFIC_HEADERS = {
-  "X-FB Factory-Test-Traffic": "beta-e2e",
+  "X-Agent-Native-Test-Traffic": "beta-e2e",
 } as const;
 
 /** Mark browser code before any document script can initialize telemetry. */

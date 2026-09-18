@@ -1,4 +1,5 @@
-export const ANALYTICS_CLIENT_PLATFORM_HEADER = "X-FB Factory-Client-Platform";
+export const ANALYTICS_CLIENT_PLATFORM_HEADER =
+  "X-Agent-Native-Client-Platform";
 export const ANALYTICS_CLIENT_PLATFORM_PROPERTY = "client_platform";
 export const ANALYTICS_CLIENT_PLATFORM_BODY_FIELD =
   "__agentNativeClientPlatform";

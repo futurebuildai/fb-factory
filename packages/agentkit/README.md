@@ -728,14 +728,14 @@ a capability it cannot prove.
 
 ## Ownership and application mapping
 
-| Concern                                        | Owner                               | AgentKit boundary                                                                                                                 |
-| ---------------------------------------------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| Concern                                        | Owner                             | AgentKit boundary                                                                                                                 |
+| ---------------------------------------------- | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | Agent execution, persistence, auth, and access | FB Factory or the host backend    | Implement `AgentTransport` or use the Core adapter                                                                                |
-| Conversation state and commands                | One `AgentKitController`            | Pass one client/source to `AgentChat`, inject a host-owned controller into `AgentKitRoot`, or compose `AgentKitProvider` directly |
+| Conversation state and commands                | One `AgentKitController`          | Pass one client/source to `AgentChat`, inject a host-owned controller into `AgentKitRoot`, or compose `AgentKitProvider` directly |
 | App operations                                 | FB Factory `defineAction` actions | Route stable widget action ids through `invokeAction`                                                                             |
 | Visible app context                            | FB Factory application state      | Resolve smart objects and client effects in host callbacks                                                                        |
-| Agent UI semantics                             | AgentKit                            | Use components, hooks, slots, and renderer registries                                                                             |
-| Design system and workspace chrome             | Toolkit plus app-owned adapters     | Compose around AgentKit without moving runtime ownership                                                                          |
+| Agent UI semantics                             | AgentKit                          | Use components, hooks, slots, and renderer registries                                                                             |
+| Design system and workspace chrome             | Toolkit plus app-owned adapters   | Compose around AgentKit without moving runtime ownership                                                                          |
 
 Protocol ids and smart objects are references, not authorization grants. The
 host authenticates the transport, scopes every thread read, checks every action

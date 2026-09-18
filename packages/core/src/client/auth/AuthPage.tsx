@@ -1338,7 +1338,7 @@ export function AuthPage(props: AuthPageProps) {
             `${apiPath("/_agent-native/auth/desktop-exchange")}?flow_id=${encodeURIComponent(flowId)}`,
             {
               headers: verifier
-                ? { "X-FB Factory-Desktop-Verifier": verifier }
+                ? { "X-Agent-Native-Desktop-Verifier": verifier }
                 : undefined,
             },
           );
@@ -1604,7 +1604,7 @@ export function AuthPage(props: AuthPageProps) {
           method: "POST",
           headers: {
             Accept: "application/json",
-            "X-FB Factory-Desktop-Verifier": verifier,
+            "X-Agent-Native-Desktop-Verifier": verifier,
           },
         },
       );

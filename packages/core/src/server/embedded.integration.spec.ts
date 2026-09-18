@@ -201,7 +201,7 @@ describe("embedded FB Factory host fixture", () => {
     await expect(
       dispatch(nitroApp, "/_agent-native/actions/host-echo", {
         method: "POST",
-        headers: { "X-FB Factory-CSRF": "1" },
+        headers: { "X-Agent-Native-CSRF": "1" },
         body: { value: "ok" },
       }),
     ).resolves.toMatchObject({
@@ -216,7 +216,7 @@ describe("embedded FB Factory host fixture", () => {
     await expect(
       dispatch(nitroApp, "/_agent-native/browser-sessions", {
         method: "POST",
-        headers: { "X-FB Factory-CSRF": "1" },
+        headers: { "X-Agent-Native-CSRF": "1" },
         body: {
           session: { id: "tab-1", label: "Builder editor" },
           context: {
@@ -264,7 +264,7 @@ describe("embedded FB Factory host fixture", () => {
 
     const created = await dispatch(nitroApp, "/_agent-native/extensions", {
       method: "POST",
-      headers: { "X-FB Factory-CSRF": "1" },
+      headers: { "X-Agent-Native-CSRF": "1" },
       body: {
         name: "Embedded fixture extension",
         description: "Stored through host-auth embedded runtime",
@@ -290,7 +290,7 @@ describe("embedded FB Factory host fixture", () => {
         `/_agent-native/extensions/data/${extensionId}/notes`,
         {
           method: "POST",
-          headers: { "X-FB Factory-CSRF": "1" },
+          headers: { "X-Agent-Native-CSRF": "1" },
           body: {
             id: "case-progress",
             data: { text: "Case-safe private note" },
@@ -339,7 +339,7 @@ describe("embedded FB Factory host fixture", () => {
         `/_agent-native/extensions/data/${extensionId}/notes/case-progress?scope=user`,
         {
           method: "DELETE",
-          headers: { "X-FB Factory-CSRF": "1" },
+          headers: { "X-Agent-Native-CSRF": "1" },
         },
       ),
     ).resolves.toMatchObject({
@@ -365,7 +365,7 @@ describe("embedded FB Factory host fixture", () => {
     await expect(
       dispatch(nitroApp, `/_agent-native/extensions/${extensionId}`, {
         method: "PUT",
-        headers: { "X-FB Factory-CSRF": "1" },
+        headers: { "X-Agent-Native-CSRF": "1" },
         body: { visibility: "org" },
       }),
     ).resolves.toMatchObject({
@@ -382,7 +382,7 @@ describe("embedded FB Factory host fixture", () => {
         `/_agent-native/extensions/data/${extensionId}/notes`,
         {
           method: "POST",
-          headers: { "X-FB Factory-CSRF": "1" },
+          headers: { "X-Agent-Native-CSRF": "1" },
           body: {
             id: "content-1",
             scope: "org",
@@ -444,7 +444,7 @@ describe("embedded FB Factory host fixture", () => {
         `/_agent-native/extensions/data/${extensionId}/notes`,
         {
           method: "POST",
-          headers: { "X-FB Factory-CSRF": "1" },
+          headers: { "X-Agent-Native-CSRF": "1" },
           body: {
             id: "viewer-write",
             scope: "org",
@@ -465,7 +465,7 @@ describe("embedded FB Factory host fixture", () => {
         `/_agent-native/extensions/data/${extensionId}/notes/content-1?scope=org`,
         {
           method: "DELETE",
-          headers: { "X-FB Factory-CSRF": "1" },
+          headers: { "X-Agent-Native-CSRF": "1" },
         },
       ),
     ).resolves.toMatchObject({
@@ -511,7 +511,7 @@ describe("embedded FB Factory host fixture", () => {
         `/_agent-native/extensions/data/${extensionId}/notes`,
         {
           method: "POST",
-          headers: { "X-FB Factory-CSRF": "1" },
+          headers: { "X-Agent-Native-CSRF": "1" },
           body: {
             id: "editor-write",
             scope: "org",
@@ -535,7 +535,7 @@ describe("embedded FB Factory host fixture", () => {
         `/_agent-native/extensions/data/${extensionId}/notes/editor-write?scope=org`,
         {
           method: "DELETE",
-          headers: { "X-FB Factory-CSRF": "1" },
+          headers: { "X-Agent-Native-CSRF": "1" },
         },
       ),
     ).resolves.toMatchObject({
@@ -567,7 +567,7 @@ describe("embedded FB Factory host fixture", () => {
         `/_agent-native/extensions/data/${extensionId}/notes`,
         {
           method: "POST",
-          headers: { "X-FB Factory-CSRF": "1" },
+          headers: { "X-Agent-Native-CSRF": "1" },
           body: {
             id: "admin-write",
             scope: "org",
@@ -590,7 +590,7 @@ describe("embedded FB Factory host fixture", () => {
         `/_agent-native/extensions/data/${extensionId}/notes/admin-write?scope=org`,
         {
           method: "DELETE",
-          headers: { "X-FB Factory-CSRF": "1" },
+          headers: { "X-Agent-Native-CSRF": "1" },
         },
       ),
     ).resolves.toMatchObject({
@@ -622,7 +622,7 @@ describe("embedded FB Factory host fixture", () => {
         `/_agent-native/extensions/data/${extensionId}/notes`,
         {
           method: "POST",
-          headers: { "X-FB Factory-CSRF": "1" },
+          headers: { "X-Agent-Native-CSRF": "1" },
           body: {
             id: "stranger-write",
             scope: "org",
@@ -649,7 +649,7 @@ describe("embedded FB Factory host fixture", () => {
         `/_agent-native/extensions/data/${extensionId}/notes/content-1?scope=org`,
         {
           method: "DELETE",
-          headers: { "X-FB Factory-CSRF": "1" },
+          headers: { "X-Agent-Native-CSRF": "1" },
         },
       ),
     ).resolves.toMatchObject({

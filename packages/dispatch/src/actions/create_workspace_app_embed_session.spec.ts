@@ -54,7 +54,7 @@ describe("assertWorkspaceEmbedSessionCaller", () => {
       assertWorkspaceEmbedSessionCaller(
         new Headers({
           "Sec-Fetch-Site": "cross-site",
-          "X-FB Factory-CSRF": "1",
+          "X-Agent-Native-CSRF": "1",
         }),
       ),
     ).resolves.toBeUndefined();

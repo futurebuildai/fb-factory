@@ -1,8 +1,8 @@
 {
   "name": "agent-native",
-  "version": "1.0.0+codex.8e8e4d55970a",
-  "description": "Open and operate granted Agent-Native apps through Dispatch MCP, with inline app surfaces and current browser screen state.",
-  "author": { "name": "Agent-Native", "url": "https://agent-native.com" },
+  "version": "1.0.0+codex.439cc4058276",
+  "description": "Open and operate granted FB Factory apps through Dispatch MCP, with inline app surfaces and current browser screen state.",
+  "author": { "name": "FB Factory", "url": "https://agent-native.com" },
   "homepage": "https://dispatch.agent-native.com",
   "license": "MIT",
   "keywords": [
@@ -15,17 +15,17 @@
   "skills": "./skills/",
   "mcpServers": "./.mcp.json",
   "interface": {
-    "displayName": "Agent-Native",
-    "shortDescription": "Open and operate granted Agent-Native apps through Dispatch MCP, with inline app surfaces and current browser screen state.",
-    "longDescription": "Agent-Native packages agent instructions, app actions, an MCP connector, and inline UI surfaces as an installable skill. The plugin connects to hosted Agent-Native by default; use the Agent-Native CLI when you need a custom/self-hosted app URL.",
-    "developerName": "Agent-Native",
+    "displayName": "FB Factory",
+    "shortDescription": "Open and operate granted FB Factory apps through Dispatch MCP, with inline app surfaces and current browser screen state.",
+    "longDescription": "FB Factory packages agent instructions, app actions, an MCP connector, and inline UI surfaces as an installable skill. The plugin connects to hosted FB Factory by default; use the FB Factory CLI when you need a custom/self-hosted app URL.",
+    "developerName": "FB Factory",
     "category": "Productivity",
     "capabilities": ["Interactive", "Read", "Write"],
     "websiteURL": "https://dispatch.agent-native.com",
     "defaultPrompt": [
-      "Open Agent-Native where useful",
-      "Use Agent-Native for app-backed workflows",
-      "Search Agent-Native and return usable context"
+      "Open FB Factory where useful",
+      "Use FB Factory for app-backed workflows",
+      "Search FB Factory and return usable context"
     ],
     "brandColor": "#0F766E"
   }

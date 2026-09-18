@@ -1,4 +1,4 @@
-# Agent-Native Content capability encyclopedia
+# FB Factory Content capability encyclopedia
 
 <!-- Generated from the atomic records in chapters/, features/, and capabilities/. Do not edit this projection directly. -->
 

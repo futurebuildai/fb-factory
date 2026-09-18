@@ -2080,7 +2080,7 @@ async function getHandler() {
         headers: {
           "Access-Control-Allow-Origin": "*",
           "Access-Control-Allow-Methods": "GET,HEAD,POST,PUT,PATCH,DELETE,OPTIONS",
-          "Access-Control-Allow-Headers": "Content-Type,Authorization,X-Requested-With,X-Request-Source,X-FB Factory-CSRF,X-User-Timezone,X-FB Factory-Session-Id,X-FB Factory-Client-Platform,X-FB Factory-Desktop-Verifier,X-FB Factory-Test-Traffic,X-FB Factory-Tool-Bridge,X-FB Factory-Tool-Id,X-FB Factory-Frontend,X-FB Factory-Client-Compatibility,X-FB Factory-Build-Id,X-FB Factory-Embed-Target",
+          "Access-Control-Allow-Headers": "Content-Type,Authorization,X-Requested-With,X-Request-Source,X-Agent-Native-CSRF,X-User-Timezone,X-Agent-Native-Session-Id,X-Agent-Native-Client-Platform,X-Agent-Native-Desktop-Verifier,X-Agent-Native-Test-Traffic,X-Agent-Native-Tool-Bridge,X-Agent-Native-Tool-Id,X-Agent-Native-Frontend,X-Agent-Native-Client-Compatibility,X-Agent-Native-Build-Id,X-Agent-Native-Embed-Target",
         },
       });
     }

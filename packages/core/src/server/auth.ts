@@ -2831,10 +2831,10 @@ function applyCorsHeaders(
           "Authorization",
           "X-Requested-With",
           "X-Request-Source",
-          "X-FB Factory-CSRF",
+          "X-Agent-Native-CSRF",
           "X-User-Timezone",
-          "X-FB Factory-Desktop-Verifier",
-          "X-FB Factory-Test-Traffic",
+          "X-Agent-Native-Desktop-Verifier",
+          "X-Agent-Native-Test-Traffic",
           EMBED_TARGET_HEADER,
         ].join(","),
   );

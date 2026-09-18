@@ -611,11 +611,11 @@ export function InlineExtensionFrame({
         }
 
         const finalHeaders = new Headers(options.headers ?? undefined);
-        finalHeaders.set("X-FB Factory-Extension-Bridge", "1");
-        finalHeaders.set("X-FB Factory-Extension-Id", resolvedId);
-        finalHeaders.set("X-FB Factory-Tool-Bridge", "1");
-        finalHeaders.set("X-FB Factory-Tool-Id", resolvedId);
-        finalHeaders.set("X-FB Factory-Browser-Tab", getBrowserTabId());
+        finalHeaders.set("X-Agent-Native-Extension-Bridge", "1");
+        finalHeaders.set("X-Agent-Native-Extension-Id", resolvedId);
+        finalHeaders.set("X-Agent-Native-Tool-Bridge", "1");
+        finalHeaders.set("X-Agent-Native-Tool-Id", resolvedId);
+        finalHeaders.set("X-Agent-Native-Browser-Tab", getBrowserTabId());
         const res = await fetch(agentNativePath(path), {
           ...options,
           headers: finalHeaders,

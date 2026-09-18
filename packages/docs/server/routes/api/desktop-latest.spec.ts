@@ -13,8 +13,8 @@ describe("classifyDesktopAsset", () => {
   it("recognizes FB Factory desktop installers", () => {
     expect(classifyDesktopAsset("FB Factory-arm64.dmg")).toBe("mac-arm64");
     expect(classifyDesktopAsset("FB Factory-x64.dmg")).toBe("mac-x64");
-    expect(classifyDesktopAsset("FB Factory-x64.dmg")).toBe("mac-x64");
-    expect(classifyDesktopAsset("FB Factory Nightly-arm64.dmg")).toBe(
+    expect(classifyDesktopAsset("Agent Native-x64.dmg")).toBe("mac-x64");
+    expect(classifyDesktopAsset("Agent Native Nightly-arm64.dmg")).toBe(
       "mac-arm64",
     );
     expect(classifyDesktopAsset("FB Factory-x64.exe")).toBe("windows-x64");

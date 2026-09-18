@@ -2655,14 +2655,14 @@ export function getAccessTokens(): string[] {
  * (`accessFilter`, `resolveAccess`, `resolveCredential`) would return
  * empty / wrong data. The `agent-native mcp install` flow writes
  * `AGENT_NATIVE_OWNER_EMAIL` into the client config env and the stdio proxy
- * forwards it as the `X-FB Factory-Owner-Email` request header (see
+ * forwards it as the `X-Agent-Native-Owner-Email` request header (see
  * `mcp/stdio.ts#authHeaders`). We trust that owner hint *only* on the
  * static-token path — JWT auth already carries a cryptographically verified
  * `sub`, so the header is ignored there and never widens JWT scope.
  *
  * Precedence is server-trusted-first: the server process's
  * `AGENT_NATIVE_OWNER_EMAIL` env (set out-of-band by the operator / deploy)
- * ALWAYS wins, and a client-supplied `X-FB Factory-Owner-Email` header is
+ * ALWAYS wins, and a client-supplied `X-Agent-Native-Owner-Email` header is
  * honored *only as a fallback when that env is unset*. A static `ACCESS_TOKEN`
  * is a shared bearer secret; letting a request header override a
  * server-configured owner would let anyone holding a leaked token act as any
@@ -2819,7 +2819,7 @@ function orgIdFromConnectTokenResolution(
  *   - { authed: true, identity } when verified — `identity` is derived from
  *     the JWT (`sub` / `org_domain`) for JWT auth, with stored org scope for
  *     legacy connect tokens; or from the
- *     `AGENT_NATIVE_OWNER_EMAIL` env / `X-FB Factory-Owner-Email` header
+ *     `AGENT_NATIVE_OWNER_EMAIL` env / `X-Agent-Native-Owner-Email` header
  *     for static-token auth (the `agent-native mcp install` flow). `identity`
  *     is undefined only for true dev-open with no owner hint.
  *   - { authed: false } on rejection.
@@ -2831,7 +2831,7 @@ function orgIdFromConnectTokenResolution(
  * MCP endpoint loses tenant identity and downstream `accessFilter` /
  * `resolveCredential` calls fall back to platform-wide defaults.
  *
- * `ownerEmailHeader` is the forwarded `X-FB Factory-Owner-Email` value; it
+ * `ownerEmailHeader` is the forwarded `X-Agent-Native-Owner-Email` value; it
  * is consulted ONLY on the static-token / dev-open path (never to influence
  * verified JWT identity), so the install flow runs tools as the configured
  * owner instead of an unscoped anonymous caller.

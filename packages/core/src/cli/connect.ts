@@ -1487,7 +1487,7 @@ function ownerEmailFromEntry(
 ): string | undefined {
   const headers = savedEntryHeaders(saved);
   return (
-    headers["X-FB Factory-Owner-Email"] || decodeJwtSub(headers.Authorization)
+    headers["X-Agent-Native-Owner-Email"] || decodeJwtSub(headers.Authorization)
   );
 }
 
@@ -1569,7 +1569,7 @@ async function devHeadersForApp(params: {
     headers.Authorization = `Bearer ${accessToken || a2aToken}`;
   }
   if (ownerEmail) {
-    headers["X-FB Factory-Owner-Email"] = ownerEmail;
+    headers["X-Agent-Native-Owner-Email"] = ownerEmail;
   }
   // Local dev defaults to the compact/connector catalog + tool-search, same as
   // every other client. The local server still honors AGENT_NATIVE_MCP_FULL_CATALOG=1
@@ -1745,7 +1745,7 @@ async function connectDevProfile(
         sourceEntry,
         baseDir,
       });
-      if (!headers?.["X-FB Factory-Owner-Email"]) {
+      if (!headers?.["X-Agent-Native-Owner-Email"]) {
         ownerWarnings.add(app.name);
       }
       const file = writeHttpEntryForClient(

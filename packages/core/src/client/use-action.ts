@@ -330,13 +330,13 @@ async function performActionFetch<T>(
   const browserTabId = getBrowserTabId();
   const headers: Record<string, string> = {
     "Content-Type": "application/json",
-    "X-FB Factory-Browser-Tab": browserTabId,
+    "X-Agent-Native-Browser-Tab": browserTabId,
     // Tag browser-originated action calls so the server can set
     // `ctx.caller = "frontend"` (vs a bare programmatic `"http"` POST).
-    // Mirrors the X-FB Factory-Tool-Bridge: 1 convention. The header is
+    // Mirrors the X-Agent-Native-Tool-Bridge: 1 convention. The header is
     // safe to expose: CORS allows it (see action-routes.ts) and it carries
     // no auth weight — it only narrows the caller tag.
-    "X-FB Factory-Frontend": "1",
+    "X-Agent-Native-Frontend": "1",
     ...(options?.includeRequestSource !== false
       ? {
           // The server copies this onto the emitted action sync event.
@@ -348,10 +348,10 @@ async function performActionFetch<T>(
   };
   const compatibilityVersion = clientCompatibilityVersion();
   if (compatibilityVersion) {
-    headers["X-FB Factory-Client-Compatibility"] = compatibilityVersion;
+    headers["X-Agent-Native-Client-Compatibility"] = compatibilityVersion;
   }
   const buildId = clientBuildId();
-  if (buildId) headers["X-FB Factory-Build-Id"] = buildId;
+  if (buildId) headers["X-Agent-Native-Build-Id"] = buildId;
   const tz = resolveUserTimezone();
   if (tz) {
     headers["x-user-timezone"] = tz;
@@ -361,7 +361,7 @@ async function performActionFetch<T>(
   // one `$session_id` in traces and session replay.
   const browserSessionId = getOrCreateAnalyticsSessionId();
   if (browserSessionId) {
-    headers["X-FB Factory-Session-Id"] = browserSessionId;
+    headers["X-Agent-Native-Session-Id"] = browserSessionId;
   }
   headers[ANALYTICS_CLIENT_PLATFORM_HEADER] = getAnalyticsClientPlatform();
   const init: RequestInit = {
@@ -441,12 +441,12 @@ async function performActionFetch<T>(
 
     if (
       res.status === 409 &&
-      res.headers.get("X-FB Factory-Client-Mismatch") === "1"
+      res.headers.get("X-Agent-Native-Client-Mismatch") === "1"
     ) {
       const serverBuildId =
-        res.headers.get("X-FB Factory-Build-Id") ?? "latest";
+        res.headers.get("X-Agent-Native-Build-Id") ?? "latest";
       const requiredCompatibility =
-        res.headers.get("X-FB Factory-Client-Compatibility") ?? "unknown";
+        res.headers.get("X-Agent-Native-Client-Compatibility") ?? "unknown";
       reloadForClientCompatibilityMismatch(
         serverBuildId,
         requiredCompatibility,

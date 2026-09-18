@@ -10,7 +10,7 @@ const SELF_PATHS = new Set([
   "scripts/guard-agent-native-brand.ts",
   "scripts/guard-agent-native-brand.test.ts",
 ]);
-const LEGACY_ASSET_RE = /\bagent[ \t]+native(?:[ \t]+nightly)?-/gi;
+const LEGACY_ASSET_RE = /\bagent[ \t-]+native(?:[ \t]+nightly)?-/gi;
 // The product name is "FB Factory". Any capitalized spelling of the upstream
 // name in prose is a violation; lowercase forms stay legal because they are
 // the technical namespace (package scope, CLI binary, routes, env vars,
@@ -29,9 +29,10 @@ const WRONG_FACTORY_TOKEN_RE =
   /^(?:FB|Fb|fb)[_-]?[Ff]actory$|^(?:FBFactory|fbfactory|FBfactory)$/;
 
 // Paths that keep upstream wording on purpose: release history, CI workflow
-// metadata, repo skills, the upstream docs corpus and its examples, and
-// template apps this deployment retires (kept for upstream fidelity). The
-// i18n term lists and baselines cite the old name as data.
+// metadata, repo skills, the upstream docs corpus and its examples, the
+// skills shipped inside template apps, and template apps this deployment
+// retires (kept for upstream fidelity). The i18n term lists and baselines
+// cite the old name as data.
 const EXEMPT_PATH_RES: RegExp[] = [
   /(^|\/)CHANGELOG\.md$/,
   /(^|\/)changelog\//,
@@ -46,6 +47,7 @@ const EXEMPT_PATH_RES: RegExp[] = [
 // upstream wording.
 const CHECKED_TEMPLATE_RE =
   /^templates\/(?:dispatch|assets|tasks|fb-[a-z0-9-]+)\//;
+const TEMPLATE_SKILLS_RE = /^templates\/[a-z0-9-]+\/\.agents\//;
 
 export interface BrandFile {
   path: string;
@@ -61,9 +63,10 @@ export function isExemptBrandPath(filePath: string): boolean {
   ) {
     return true;
   }
-  // Template apps this deployment ships or builds get checked; the rest keep
-  // upstream wording.
+  // Template skill directories keep upstream wording; every other template
+  // file is exempt only when the template is retired.
   if (filePath.startsWith("templates/")) {
+    if (TEMPLATE_SKILLS_RE.test(filePath)) return true;
     return !CHECKED_TEMPLATE_RE.test(filePath);
   }
   return EXEMPT_PATH_RES.some((re) => re.test(filePath));

@@ -609,7 +609,7 @@ export async function instrumentAgentLoop(opts: {
    * replay — distinct from `$ai_session_id`, which is the thread.
    *
    * Defaults to the in-flight request context, which the agent-chat route
-   * populates from the `X-FB Factory-Session-Id` header.
+   * populates from the `X-Agent-Native-Session-Id` header.
    */
   browserSessionId?: string;
   classifyError?: (error: unknown) =>

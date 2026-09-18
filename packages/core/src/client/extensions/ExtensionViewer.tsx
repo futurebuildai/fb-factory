@@ -968,16 +968,16 @@ export function ExtensionViewer({ extensionId }: ExtensionViewerProps) {
           return;
         }
         // (audit H5) Tag every outbound bridge request with the
-        // X-FB Factory-Extension-Bridge sentinel so the action-routes layer can
+        // X-Agent-Native-Extension-Bridge sentinel so the action-routes layer can
         // enforce per-action `toolCallable` opt-in. The header is added by
         // the parent — it is NOT taken from the iframe-supplied options
         // (which were filtered by sanitizeExtensionRequestOptions).
         const finalHeaders = new Headers(options.headers ?? undefined);
-        finalHeaders.set("X-FB Factory-Extension-Bridge", "1");
-        finalHeaders.set("X-FB Factory-Extension-Id", extensionId);
-        finalHeaders.set("X-FB Factory-Tool-Bridge", "1");
-        finalHeaders.set("X-FB Factory-Tool-Id", extensionId);
-        finalHeaders.set("X-FB Factory-Browser-Tab", getBrowserTabId());
+        finalHeaders.set("X-Agent-Native-Extension-Bridge", "1");
+        finalHeaders.set("X-Agent-Native-Extension-Id", extensionId);
+        finalHeaders.set("X-Agent-Native-Tool-Bridge", "1");
+        finalHeaders.set("X-Agent-Native-Tool-Id", extensionId);
+        finalHeaders.set("X-Agent-Native-Browser-Tab", getBrowserTabId());
         const res = await fetch(agentNativePath(path), {
           ...options,
           headers: finalHeaders,

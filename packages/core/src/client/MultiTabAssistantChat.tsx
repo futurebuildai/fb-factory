@@ -2552,7 +2552,7 @@ export function MultiTabAssistantChat({
               agentNativePath("/_agent-native/application-state/chat-command"),
               {
                 method: "DELETE",
-                headers: { "X-FB Factory-CSRF": "1" },
+                headers: { "X-Agent-Native-CSRF": "1" },
               },
             ).catch(() => {});
           }

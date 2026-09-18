@@ -34,7 +34,7 @@ export interface AgentNativeBrowserSessionBridgeOptions extends AgentNativeHostR
   /** Stable tab/session id. Defaults to the host-provided session id. */
   sessionId?: string;
   /**
-   * Direct in-app session identity. Use this when the Agent-Native chat is
+   * Direct in-app session identity. Use this when the FB Factory chat is
    * rendered inside the host app instead of inside a sidecar iframe.
    */
   session?: string | Partial<AgentNativeHostSession>;
@@ -160,7 +160,7 @@ async function postJson(
       credentials: "include",
       headers: {
         "Content-Type": "application/json",
-        "X-Agent-Native-CSRF": "1",
+        "X-FB Factory-CSRF": "1",
       },
       body: JSON.stringify(body ?? {}),
       ...(controller ? { signal: controller.signal } : {}),
@@ -185,7 +185,7 @@ async function deleteJson(
       method: "DELETE",
       credentials: "include",
       headers: {
-        "X-Agent-Native-CSRF": "1",
+        "X-FB Factory-CSRF": "1",
       },
       ...(controller ? { signal: controller.signal } : {}),
     });

@@ -10,7 +10,7 @@ export default function MarketingHomeRoute() {
     <MarketingHome
       appName="{{APP_TITLE}}"
       tagline="Build with your AI agent."
-      description="A starter app for building Agent-Native workflows."
+      description="A starter app for building FB Factory workflows."
       primaryActionHref={appPath("/home")}
       secondaryActionHref={appPath("/sign-in")}
     />

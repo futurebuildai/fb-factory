@@ -111,7 +111,7 @@ export function createCodeAgentChatAdapter(
     async *run({ messages, abortSignal, runConfig }: ChatModelRunOptions) {
       const runId = options.runIdRef.current;
       if (!runId) {
-        yield errorResult("Select an Agent-Native Code session first.");
+        yield errorResult("Select an FB Factory Code session first.");
         await Promise.resolve();
         return;
       }

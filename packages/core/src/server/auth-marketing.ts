@@ -25,7 +25,7 @@ export interface ResolveBuiltInAuthMarketingOptions {
 
 export const BUILT_IN_AUTH_MARKETING: Record<string, AuthMarketingContent> = {
   analytics: {
-    appName: "Agent-Native Analytics",
+    appName: "FB Factory Analytics",
     screenshotPath: "/auth-marketing/analytics.webp",
     screenshotWidth: 927,
     screenshotHeight: 818,
@@ -38,7 +38,7 @@ export const BUILT_IN_AUTH_MARKETING: Record<string, AuthMarketingContent> = {
     ],
   },
   brain: {
-    appName: "Agent-Native Brain",
+    appName: "FB Factory Brain",
     tagline:
       "A company memory layer where raw conversations become reviewed, searchable institutional knowledge.",
     features: [
@@ -48,7 +48,7 @@ export const BUILT_IN_AUTH_MARKETING: Record<string, AuthMarketingContent> = {
     ],
   },
   calendar: {
-    appName: "Agent-Native Calendar",
+    appName: "FB Factory Calendar",
     screenshotPath: "/auth-marketing/calendar.webp",
     screenshotWidth: 914,
     screenshotHeight: 818,
@@ -61,7 +61,7 @@ export const BUILT_IN_AUTH_MARKETING: Record<string, AuthMarketingContent> = {
     ],
   },
   clips: {
-    appName: "Agent-Native Clips",
+    appName: "FB Factory Clips",
     screenshotPath: "/auth-marketing/clips.webp",
     screenshotWidth: 914,
     screenshotHeight: 818,
@@ -75,7 +75,7 @@ export const BUILT_IN_AUTH_MARKETING: Record<string, AuthMarketingContent> = {
     ],
   },
   content: {
-    appName: "Agent-Native Content",
+    appName: "FB Factory Content",
     screenshotPath: "/auth-marketing/content.webp",
     screenshotWidth: 914,
     screenshotHeight: 818,
@@ -88,7 +88,7 @@ export const BUILT_IN_AUTH_MARKETING: Record<string, AuthMarketingContent> = {
     ],
   },
   plan: {
-    appName: "Agent-Native Plan",
+    appName: "FB Factory Plan",
     screenshotPath: "/auth-marketing/plan.webp",
     screenshotWidth: 914,
     screenshotHeight: 818,
@@ -105,7 +105,7 @@ export const BUILT_IN_AUTH_MARKETING: Record<string, AuthMarketingContent> = {
     },
   },
   design: {
-    appName: "Agent-Native Design",
+    appName: "FB Factory Design",
     screenshotPath: "/auth-marketing/design.webp",
     screenshotWidth: 914,
     screenshotHeight: 818,
@@ -118,7 +118,7 @@ export const BUILT_IN_AUTH_MARKETING: Record<string, AuthMarketingContent> = {
     ],
   },
   dispatch: {
-    appName: "Agent-Native Dispatch",
+    appName: "FB Factory Dispatch",
     screenshotPath: "/auth-marketing/dispatch.webp",
     screenshotWidth: 914,
     screenshotHeight: 818,
@@ -131,7 +131,7 @@ export const BUILT_IN_AUTH_MARKETING: Record<string, AuthMarketingContent> = {
     ],
   },
   forms: {
-    appName: "Agent-Native Forms",
+    appName: "FB Factory Forms",
     screenshotPath: "/auth-marketing/forms.webp",
     screenshotWidth: 914,
     screenshotHeight: 818,
@@ -144,7 +144,7 @@ export const BUILT_IN_AUTH_MARKETING: Record<string, AuthMarketingContent> = {
     ],
   },
   assets: {
-    appName: "Agent-Native Assets",
+    appName: "FB Factory Assets",
     screenshotPath: "/auth-marketing/assets.webp",
     screenshotWidth: 914,
     screenshotHeight: 818,
@@ -157,7 +157,7 @@ export const BUILT_IN_AUTH_MARKETING: Record<string, AuthMarketingContent> = {
     ],
   },
   mail: {
-    appName: "Agent-Native Mail",
+    appName: "FB Factory Mail",
     screenshotPath: "/auth-marketing/mail.webp",
     screenshotWidth: 927,
     screenshotHeight: 818,
@@ -169,7 +169,7 @@ export const BUILT_IN_AUTH_MARKETING: Record<string, AuthMarketingContent> = {
     ],
   },
   slides: {
-    appName: "Agent-Native Slides",
+    appName: "FB Factory Slides",
     screenshotPath: "/auth-marketing/slides.webp",
     screenshotWidth: 914,
     screenshotHeight: 818,
@@ -182,7 +182,7 @@ export const BUILT_IN_AUTH_MARKETING: Record<string, AuthMarketingContent> = {
     ],
   },
   chat: {
-    appName: "Agent-Native Chat",
+    appName: "FB Factory Chat",
     screenshotPath: "/auth-marketing/chat.webp",
     screenshotWidth: 914,
     screenshotHeight: 818,
@@ -195,7 +195,7 @@ export const BUILT_IN_AUTH_MARKETING: Record<string, AuthMarketingContent> = {
     ],
   },
   crm: {
-    appName: "Agent-Native CRM",
+    appName: "FB Factory CRM",
     tagline:
       "A complete Native SQL CRM or a connected companion grounded in its source system.",
     features: [
@@ -205,7 +205,7 @@ export const BUILT_IN_AUTH_MARKETING: Record<string, AuthMarketingContent> = {
     ],
   },
   factory: {
-    appName: "Agent-Native Factory",
+    appName: "FB Factory Factory",
     tagline:
       "Build agent factories: work in one end, shipped changes out the other, with gates you control.",
     features: [
@@ -215,7 +215,7 @@ export const BUILT_IN_AUTH_MARKETING: Record<string, AuthMarketingContent> = {
     ],
   },
   tasks: {
-    appName: "Agent-Native Tasks",
+    appName: "FB Factory Tasks",
     tagline:
       "Manage your personal tasks: triage in the inbox, finish from the list. Use an agent that can do all of that for you.",
     features: [

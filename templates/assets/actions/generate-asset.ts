@@ -118,7 +118,7 @@ const action = defineAction({
       title: "Generate Assets",
       description:
         "Generate image candidates and choose the final asset in the real Assets Library picker.",
-      iframeTitle: "Agent-Native Assets",
+      iframeTitle: "FB Factory Assets",
       openLabel: "Open Assets picker",
       height: 760,
       connectDomains: ["https://cdn.builder.io"],

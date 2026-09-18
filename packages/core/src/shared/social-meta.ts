@@ -14,7 +14,7 @@ export const AGENT_NATIVE_SOCIAL_IMAGE_CACHE_BUSTER = "background-v1";
 export const AGENT_NATIVE_SOCIAL_IMAGE_WIDTH = "1200";
 export const AGENT_NATIVE_SOCIAL_IMAGE_HEIGHT = "630";
 export const AGENT_NATIVE_SOCIAL_IMAGE_TYPE = "image/png";
-export const AGENT_NATIVE_SOCIAL_IMAGE_ALT = "Agent-Native app preview";
+export const AGENT_NATIVE_SOCIAL_IMAGE_ALT = "FB Factory app preview";
 
 export function withAgentNativeSocialImageCacheBuster(image: string): string {
   const separator = image.includes("?") ? "&" : "?";

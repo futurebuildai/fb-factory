@@ -467,11 +467,11 @@ export function EmbeddedExtension({
         // (audit H5) Same extension-bridge tagging as <ExtensionViewer>. action-routes
         // uses these headers to enforce per-action `toolCallable` opt-in.
         const finalHeaders = new Headers(options.headers ?? undefined);
-        finalHeaders.set("X-Agent-Native-Extension-Bridge", "1");
-        finalHeaders.set("X-Agent-Native-Extension-Id", extensionId);
-        finalHeaders.set("X-Agent-Native-Tool-Bridge", "1");
-        finalHeaders.set("X-Agent-Native-Tool-Id", extensionId);
-        finalHeaders.set("X-Agent-Native-Browser-Tab", getBrowserTabId());
+        finalHeaders.set("X-FB Factory-Extension-Bridge", "1");
+        finalHeaders.set("X-FB Factory-Extension-Id", extensionId);
+        finalHeaders.set("X-FB Factory-Tool-Bridge", "1");
+        finalHeaders.set("X-FB Factory-Tool-Id", extensionId);
+        finalHeaders.set("X-FB Factory-Browser-Tab", getBrowserTabId());
         const res = await fetch(agentNativePath(path), {
           ...options,
           headers: finalHeaders,

@@ -23,11 +23,11 @@ import { withDefaultSocialImage } from "../seo";
 
 export const meta = () =>
   withDefaultSocialImage([
-    { title: "Download — Agent-Native" },
+    { title: "Download - FB Factory" },
     {
       name: "description",
       content:
-        "Download Agent-Native for macOS, Windows, or Linux. Try open source agentic apps for meetings, design, presentations, analytics, email, and more.",
+        "Download FB Factory for macOS, Windows, or Linux. Try open source agentic apps for meetings, design, presentations, analytics, email, and more.",
     },
   ]);
 

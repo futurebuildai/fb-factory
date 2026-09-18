@@ -19,9 +19,9 @@ schema, API, file, and architecture changes become the same `data-model`,
 now they summarize work that exists. A reviewer scans the shape of the change
 before spending attention on the literal lines.
 
-## Publish As An Agent-Native Plan — Never Inline
+## Publish As An FB Factory Plan - Never Inline
 
-The deliverable is ALWAYS a published Agent-Native Plan, created with
+The deliverable is ALWAYS a published FB Factory Plan, created with
 `create-visual-recap` on the Plan MCP connector — NEVER inline chat content (not
 Markdown prose, an ASCII sketch, a table, a fenced "wireframe", or a "here's the
 recap" summary). A recap's entire value is the hosted, interactive, annotatable
@@ -256,7 +256,7 @@ mirror folder, or a relative path such as `/plans/<id>`.
 
 When the recap is posted to a PR for a private repo, the plan link is not a
 public URL. Make the PR comment/handoff copy explicit: reviewers may need to
-sign in to Agent-Native Plans with an account that has access to the owning
+sign in to FB Factory Plans with an account that has access to the owning
 organization before the link loads. Use wording like: "Private repo recap:
 sign in with access to this org if the plan does not open." Do not imply the
 link is broken or public when access is gated by repo/org visibility.

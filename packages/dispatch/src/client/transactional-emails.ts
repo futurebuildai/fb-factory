@@ -113,7 +113,7 @@ export async function callAppAction<T>(
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
-      "X-Agent-Native-Frontend": "1",
+      "X-FB Factory-Frontend": "1",
     },
     ...(method === "POST" ? { body: JSON.stringify(params) } : {}),
   });

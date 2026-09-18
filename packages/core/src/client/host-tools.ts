@@ -181,7 +181,7 @@ export function createAgentNativeHostTools(
     [AGENT_NATIVE_HOST_TOOL_NAMES.viewHostScreen]: {
       name: AGENT_NATIVE_HOST_TOOL_NAMES.viewHostScreen,
       description:
-        "View the current host app screen and context exposed to the embedded Agent-Native iframe, including route, selection, resource, user, organization, capabilities, and screen snapshot when available.",
+        "View the current host app screen and context exposed to the embedded FB Factory iframe, including route, selection, resource, user, organization, capabilities, and screen snapshot when available.",
       parameters: EMPTY_PARAMETERS,
       execute: async () => requestAgentNativeHostContext(options),
     },

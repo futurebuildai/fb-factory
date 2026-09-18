@@ -20,7 +20,7 @@ export interface AgentComposerFrameProps {
 /**
  * The single visual shell for agent chat composition.
  *
- * AssistantChat, PromptComposer, and host surfaces such as Agent-Native Code
+ * AssistantChat, PromptComposer, and host surfaces such as FB Factory Code
  * all render this same frame so the composer does not drift across products.
  */
 export function AgentComposerFrame({

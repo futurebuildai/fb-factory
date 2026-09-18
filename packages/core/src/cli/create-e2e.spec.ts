@@ -240,7 +240,7 @@ describe("standalone scaffold — chat template", { timeout: 180_000 }, () => {
       runCommand: async () => 0,
     });
     expect(fs.readFileSync(toolkitSkill, "utf-8")).toContain(
-      "# Agent-Native Toolkit",
+      "# FB Factory Toolkit",
     );
   });
 
@@ -403,7 +403,7 @@ describe("standalone scaffold — headless template", { timeout: 60000 }, () => 
       coreVersion: expect.any(String),
       shape: "standalone",
     });
-    expect(agents).toContain("This is a headless Agent-Native app");
+    expect(agents).toContain("This is a headless FB Factory app");
     expect(agents).toContain("This app is not stateless");
     expect(agents).toContain("Chat template");
     expect(agents).toContain("integration blueprints");

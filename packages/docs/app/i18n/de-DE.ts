@@ -35,7 +35,7 @@ const deDE = {
     placeholder: "Sag uns, wie diese Dokumentation besser werden kann.",
   },
   demoVideo: {
-    visualPlanningAria: "Agent-Native Demo für visuelle Planung",
+    visualPlanningAria: "FB Factory Demo für visuelle Planung",
   },
   docBlocks: {
     blockLabel: "{{alias}}-Block",
@@ -77,8 +77,8 @@ const deDE = {
     close: "schließen",
   },
   agent: {
-    emptyState: "Frag mich alles über Agent-Native",
-    suggestionGettingStarted: "Wie starte ich mit Agent-Native?",
+    emptyState: "Frag mich alles über FB Factory",
+    suggestionGettingStarted: "Wie starte ich mit FB Factory?",
     suggestionActions: "Wie funktionieren actions?",
     suggestionPolling: "Erkläre das Polling-Sync-Modell",
     suggestionDeploy: "Wie deploye ich in Produktion?",
@@ -100,14 +100,14 @@ const deDE = {
     hero: {
       titleLine1: "Das Framework für",
       titleAccent: "agentic Apps",
-      body: "Entscheide dich nicht zwischen Apps und Agents. Agent-Native-Apps sind beides.",
+      body: "Entscheide dich nicht zwischen Apps und Agents. FB Factory-Apps sind beides.",
       primaryCta: "App ausprobieren",
       secondaryCta: "Docs lesen",
     },
     code: {
       quickStartComment: "Erstelle eine App mit einem Befehl",
       skillInstallComment:
-        "Füge Agent-Native-Planung zu einem coding agent hinzu, den du bereits nutzt",
+        "Füge FB Factory-Planung zu einem coding agent hinzu, den du bereits nutzt",
       frameworkComment:
         "Ein action treibt agent, UI, HTTP, MCP, A2A und CLI an.",
       frameworkDescription: "Sage Hallo aus dem lokalen app-agent loop.",
@@ -115,7 +115,7 @@ const deDE = {
     actionSurface: {
       eyebrow: "Wirklich agentisch, nicht nur KI daneben",
       title: "Eine Aktion gibt dir die gesamte Oberfläche",
-      body: "Definiere eine Operation einmal. Agent-Native macht daraus UI-Aktion, Agent-Tool, HTTP-Endpunkt, MCP/A2A-Oberfläche, CLI-Befehl, Berechtigungsprüfung und Audit-Trail.",
+      body: "Definiere eine Operation einmal. FB Factory macht daraus UI-Aktion, Agent-Tool, HTTP-Endpunkt, MCP/A2A-Oberfläche, CLI-Befehl, Berechtigungsprüfung und Audit-Trail.",
       buildAction: "Eine Aktion erstellen",
       benefits: {
         oneActionDefinition: {
@@ -149,7 +149,7 @@ const deDE = {
       title: "Eingebaute Module für agentische Apps",
       body: "Von Menschen geprüfte Bausteine für Produktionsbereiche, die Agents nicht neu erfinden sollten. Nutze sie direkt, prüfe den Source oder ersetze das Modul, wenn deine App etwas anderes braucht.",
       pageBody:
-        "Agent-Native liefert von Menschen geprüfte Bausteine für Produktionsarbeit, die Agents nicht improvisieren sollten. Nutze sie direkt, prüfe den Source oder ersetze das Modul, wenn dein Produkt etwas anderes braucht.",
+        "FB Factory liefert von Menschen geprüfte Bausteine für Produktionsarbeit, die Agents nicht improvisieren sollten. Nutze sie direkt, prüfe den Source oder ersetze das Modul, wenn dein Produkt etwas anderes braucht.",
       viewAll: "Alle Module ansehen",
       browseApps: "Apps aus Modulen ansehen",
       items: {
@@ -214,7 +214,7 @@ const deDE = {
     framework: {
       title: "Das Framework für agent-native apps",
       body1:
-        "Agent-Native ist ein Open-Source-Framework zum Bau von agentic applications: Starte mit Chat, definiere gemeinsame actions und ergänze dann UI, jobs und Zusammenarbeit rund um denselben state.",
+        "FB Factory ist ein Open-Source-Framework zum Bau von agentic applications: Starte mit Chat, definiere gemeinsame actions und ergänze dann UI, jobs und Zusammenarbeit rund um denselben state.",
       body2:
         "Verwenden Sie lokales PGlite oder gehostetes PostgreSQL sowie Ihren Hosting-Anbieter, Model-Stack und app-Code.",
       cta: "Framework-Guide lesen",
@@ -242,7 +242,7 @@ const deDE = {
       },
     },
     templates: {
-      title: "Teste eine Agent-Native-App",
+      title: "Teste eine FB Factory-App",
       eyebrow:
         "Starte mit einer funktionierenden App und lass sie vom Agenten weiterentwickeln.",
       cta: "Apps ansehen",
@@ -284,12 +284,12 @@ const deDE = {
     },
     comparison: {
       titleLine1: "Wählen Sie nicht zwischen Apps und Agents.",
-      titleAccent: "Agent-Native apps sind beides.",
+      titleAccent: "FB Factory apps sind beides.",
       columns: {
         saas: "SaaS-Tools",
         agents: "Rohe AI-Agenten",
         internal: "Interne Tools",
-        native: "Agent-Native App",
+        native: "FB Factory App",
       },
       rows: {
         ui: "UI",
@@ -329,7 +329,7 @@ const deDE = {
     batteries: {
       titleLine1: "Alles dabei,",
       titleLine2: "praxiserprobt",
-      body: "Statt mit einem leeren Prompt und improvisiertem Code zu starten, gibt Agent-Native Agenten bewährte Bausteine und Best Practices, um echte Software zu bauen.",
+      body: "Statt mit einem leeren Prompt und improvisiertem Code zu starten, gibt FB Factory Agenten bewährte Bausteine und Best Practices, um echte Software zu bauen.",
       browseToolkits: "Toolkits ansehen",
     },
     featureCloud: {
@@ -503,12 +503,12 @@ const deDE = {
     },
     stack: {
       title: "Bring deinen eigenen Stack mit",
-      body: "Agent-Native ist Open-Source-TypeScript. Wähle dein Modell, deine Datenbank und dein Hosting und behalte den Anwendungscode in deinem Repository.",
-      exploreApps: "Mit Agent-Native gebaute Apps entdecken",
+      body: "FB Factory ist Open-Source-TypeScript. Wähle dein Modell, deine Datenbank und dein Hosting und behalte den Anwendungscode in deinem Repository.",
+      exploreApps: "Mit FB Factory gebaute Apps entdecken",
     },
     showcase: {
-      title: "Echte Apps mit Agent-Native",
-      body: "Open-Source-Agent-Native-Apps, die du kostenlos nutzen oder grenzenlos anpassen kannst.",
+      title: "Echte Apps mit FB Factory",
+      body: "Open-Source-FB Factory-Apps, die du kostenlos nutzen oder grenzenlos anpassen kannst.",
       browseApps: "Apps durchsuchen",
       scrollLeft: "Apps nach links scrollen",
       scrollRight: "Apps nach rechts scrollen",
@@ -537,7 +537,7 @@ const deDE = {
       local: "Lokal entwickeln",
       localDescription: "Mit der CLI auf Ihrem Computer entwickeln.",
       cloud: "In der Cloud entwickeln",
-      cloudDescription: "Im Browser mit Builder.io entwickeln.",
+      cloudDescription: "Im Browser mit FutureBuild entwickeln.",
     },
     cloud: {
       intro:
@@ -554,11 +554,11 @@ const deDE = {
     },
   },
   templatesPage: {
-    title: "Open-Source-Agent-Native Apps, die Sie besitzen",
+    title: "Open-Source-FB Factory Apps, die Sie besitzen",
     eyebrow:
       "Starte mit einer funktionierenden App und lass sie vom Agenten weiterentwickeln.",
     body: "Du kannst alles anpassen.",
-    firstPartyTitle: "Von Agent-Native erstellt",
+    firstPartyTitle: "Von FB Factory erstellt",
     community:
       "Du möchtest lieber eine leere App? Starte von Grund auf mit dem Framework-Guide.",
     createYourOwn: "Von Grund auf starten",
@@ -567,7 +567,7 @@ const deDE = {
       "Entdecke Apps, die von ihren Autorinnen und Autoren gepflegt werden. Teste eine gehostete Version oder prüfe den Quellcode und passe ihn selbst an.",
     submitCommunityTemplate: "App einreichen",
     communityEmpty:
-      "Die Community-Liste ist offen. Veröffentliche eine fokussierte Agent-Native-App und reiche sie für den Katalog ein.",
+      "Die Community-Liste ist offen. Veröffentliche eine fokussierte FB Factory-App und reiche sie für den Katalog ein.",
     publishGuide: "Veröffentlichungsleitfaden lesen",
     communityTrust:
       "Community-Apps sind Code von Drittanbietern. Prüfe Quellcode, Lizenz, Abhängigkeiten und Installationsskripte vor der Ausführung.",
@@ -628,14 +628,14 @@ const deDE = {
   buildFromScratch: {
     title: "Von Grund auf bauen",
     description:
-      "Starte mit dem Framework-Leitfaden oder baue online mit dem Cloud-Coding-Agenten von Builder.io.",
+      "Starte mit dem Framework-Leitfaden oder baue online mit dem Cloud-Coding-Agenten von FutureBuild.",
     readDocs: "Dokumentation lesen",
     buildOnline: "Online bauen",
     popoverTitle: "Im Browser entwickeln",
     popoverBody:
-      "Generiere schnell agent-native Apps in der Cloud mit Builder.io.",
+      "Generiere schnell agent-native Apps in der Cloud mit FutureBuild.",
     waitlistBody:
-      "Builder.io kann eine agent-native App in der Cloud starten und anpassen — inklusive Actions, Auth, SQL-Status und Agent-Chat. Trag dich für frühen Zugriff in die Warteliste ein.",
+      "FutureBuild kann eine agent-native App in der Cloud starten und anpassen - inklusive Actions, Auth, SQL-Status und Agent-Chat. Trag dich für frühen Zugriff in die Warteliste ein.",
     emailLabel: "E-Mail",
     emailPlaceholder: "du@firma.com",
     joinWaitlist: "Warteliste beitreten",
@@ -656,11 +656,11 @@ const deDE = {
   },
   templateDetail: {
     allTemplates: "Alle Apps",
-    notFoundMetaTitle: "App nicht gefunden — Agent-Native",
+    notFoundMetaTitle: "App nicht gefunden - FB Factory",
     notFoundTitle: "App nicht gefunden",
     notFoundBody:
       "Durchsuchen Sie den App-Katalog, um eine verfügbare App zu finden.",
-    badge: "Agent-Native {{name}}",
+    badge: "FB Factory {{name}}",
     title: "{{name}}-App",
   },
   templates: {
@@ -702,7 +702,7 @@ const deDE = {
     forms: {
       replaces: "Ersetzt oder erweitert Typeform, Google Forms",
       description:
-        "Agent-Nativer Formularersteller. Generieren Sie Formulare aus einer Eingabeaufforderung, bearbeiten Sie Felder visuell oder im Dialog und senden Sie Übermittlungen an Slack, Discord, Google Sheets oder Webhooks.",
+        "FB Factoryr Formularersteller. Generieren Sie Formulare aus einer Eingabeaufforderung, bearbeiten Sie Felder visuell oder im Dialog und senden Sie Übermittlungen an Slack, Discord, Google Sheets oder Webhooks.",
     },
     assets: {
       replaces:
@@ -734,9 +734,9 @@ const deDE = {
     },
     analytics: {
       faq: {
-        question1: "Was ist Agent-Native Analytics?",
+        question1: "Was ist FB Factory Analytics?",
         answer1:
-          "Agent-Native Analytics ist ein kostenloses Open-Source-KI-Analysetool. Stelle einem KI-Agenten Fragen zu verbundenen Daten, untersuche Abfragen und erstelle wiederverwendbare Dashboards. Es umfasst außerdem Sitzungswiedergabe, Fehlerverfolgung und Uptime-Monitoring.",
+          "FB Factory Analytics ist ein kostenloses Open-Source-KI-Analysetool. Stelle einem KI-Agenten Fragen zu verbundenen Daten, untersuche Abfragen und erstelle wiederverwendbare Dashboards. Es umfasst außerdem Sitzungswiedergabe, Fehlerverfolgung und Uptime-Monitoring.",
         question2: "Muss ich SQL können, um Analytics zu nutzen?",
         answer2:
           "Du kannst Fragen in einfacher Sprache stellen und deinen KI-Agenten die Abfragen schreiben lassen. Für BigQuery kannst du im Explorer auch Diagramme erstellen, indem du Tabellen, Kennzahlen und Filter auswählst. SQL bleibt zur Prüfung verfügbar, und jemand, der sich mit deinen Daten auskennt, muss möglicherweise beim Verbinden von Quellen und Definieren von Kennzahlen helfen.",
@@ -861,9 +861,9 @@ const deDE = {
     },
     calendar: {
       faq: {
-        question1: "Was ist Agent-Native Calendar?",
+        question1: "Was ist FB Factory Calendar?",
         answer1:
-          "Agent-Native Calendar ist ein kostenloser Open-Source-KI-Planungsassistent, der sich mit Google Calendar verbindet. Nutze einen KI-Agenten, um Termine zu verwalten und Besprechungstermine zu finden, oder teile Buchungslinks, damit andere Termine bei dir vereinbaren können.",
+          "FB Factory Calendar ist ein kostenloser Open-Source-KI-Planungsassistent, der sich mit Google Calendar verbindet. Nutze einen KI-Agenten, um Termine zu verwalten und Besprechungstermine zu finden, oder teile Buchungslinks, damit andere Termine bei dir vereinbaren können.",
         question2: "Welche Kalender kann ich verbinden?",
         answer2:
           "Verbinde mehrere Google-Konten, um ihre Termine gemeinsam anzuzeigen. Neue und aktualisierte Termine werden in den Hauptkalender des ausgewählten Kontos geschrieben. Du kannst außerdem schreibgeschützte ICS- oder Webcal-Feeds anzeigen; das sind keine zweiseitigen Outlook- oder Apple-Calendar-Integrationen. Freigegebene Google-Kalender sind schreibgeschützt und blockieren keine Buchungsverfügbarkeit.",
@@ -984,9 +984,9 @@ const deDE = {
     },
     assets: {
       faq: {
-        question1: "Was ist Agent-Native Assets?",
+        question1: "Was ist FB Factory Assets?",
         answer1:
-          "Agent-Native Assets ist eine kostenlose Open-Source-Markenbibliothek mit KI-Bild- und Videogenerierung. Organisieren Sie vorhandene Medien, stellen Sie Markenreferenzen bereit und arbeiten Sie mit einem KI-Agenten, um Assets projektübergreifend zu erzeugen, zu bearbeiten und wiederzuverwenden.",
+          "FB Factory Assets ist eine kostenlose Open-Source-Markenbibliothek mit KI-Bild- und Videogenerierung. Organisieren Sie vorhandene Medien, stellen Sie Markenreferenzen bereit und arbeiten Sie mit einem KI-Agenten, um Assets projektübergreifend zu erzeugen, zu bearbeiten und wiederzuverwenden.",
         question2: "Wie nutzt Assets meine Markenrichtlinien?",
         answer2:
           "Fügen Sie Ihrem Markenkit Ihr Logo, Referenzbilder, Farben und Stilnotizen hinzu. Wiederverwendbare Vorlagen liefern Anweisungen für bestimmte Inhaltstypen. Ihr KI-Agent nutzt diesen Kontext, um die Generierung zu steuern, und Sie können die Ergebnisse vor dem Speichern überprüfen und verfeinern.",
@@ -997,7 +997,7 @@ const deDE = {
         question4:
           "Kann mein KI-Agent Assets aus einer anderen App heraus verwenden?",
         answer4:
-          "Ja. Verbinden Sie einen unterstützten Agenten über die MCP-Integration von Assets, um Medien im Chat zu suchen, zu generieren und auszuwählen. Agent-Native-Apps können Assets auch anfordern oder eine Auswahl einbetten. Der verfügbare Funktionsumfang hängt von der Host-App und ihrer Verbindung zu Assets ab.",
+          "Ja. Verbinden Sie einen unterstützten Agenten über die MCP-Integration von Assets, um Medien im Chat zu suchen, zu generieren und auszuwählen. FB Factory-Apps können Assets auch anfordern oder eine Auswahl einbetten. Der verfügbare Funktionsumfang hängt von der Host-App und ihrer Verbindung zu Assets ab.",
         question5:
           "Kann Assets mein tatsächliches Logo in generierten Bildern verwenden?",
         answer5:
@@ -1050,9 +1050,9 @@ const deDE = {
     },
     chat: {
       faq: {
-        question1: "Was ist Agent-Native Chat?",
+        question1: "Was ist FB Factory Chat?",
         answer1:
-          "Agent-Native Chat ist eine kostenlose Open-Source-KI-Chat-App-Vorlage für Entwickler. Sie enthält gespeicherte Threads, eine Agent-Chat-Oberfläche, Authentifizierung, gemeinsame Actions und Live-Sync. Sie ergänzen die domänenspezifischen Daten und das Verhalten für Ihre Anwendung.",
+          "FB Factory Chat ist eine kostenlose Open-Source-KI-Chat-App-Vorlage für Entwickler. Sie enthält gespeicherte Threads, eine Agent-Chat-Oberfläche, Authentifizierung, gemeinsame Actions und Live-Sync. Sie ergänzen die domänenspezifischen Daten und das Verhalten für Ihre Anwendung.",
         question2: "Ist Chat ein fertiger KI-Assistent?",
         answer2:
           "Chat liefert eine funktionierende Konversationsoberfläche und das Framework dahinter. Es enthält eine Beispiel-Action, aber Geschäftsworkflows und Provider-Integrationen implementieren und konfigurieren Sie selbst.",
@@ -1062,7 +1062,7 @@ const deDE = {
           "Ja. Fügen Sie Routen und Komponenten für Listen, Warteschlangen, Editoren oder andere Ansichten hinzu, die Ihr Workflow benötigt. Verbinden Sie sie mit denselben Actions und Anwendungsdaten, die der Agent nutzt.",
         question4: "Enthält Chat Verbindungen zu meinen Geschäftstools?",
         answer4:
-          "Die minimale Vorlage enthält keine domänenspezifischen Provider-Integrationen. Fügen Sie die Verbindungen und Zugriffsregeln hinzu, die Ihre App benötigt. Wenn eine bestehende Agent-Native-App bereits zu Ihrem Workflow passt, ist deren Vorlage möglicherweise der passendere Ausgangspunkt.",
+          "Die minimale Vorlage enthält keine domänenspezifischen Provider-Integrationen. Fügen Sie die Verbindungen und Zugriffsregeln hinzu, die Ihre App benötigt. Wenn eine bestehende FB Factory-App bereits zu Ihrem Workflow passt, ist deren Vorlage möglicherweise der passendere Ausgangspunkt.",
         question5: "Kann ich meine eigene Version anpassen und bereitstellen?",
         answer5:
           "Ja. Erstellen Sie mit der CLI eine Kopie, fügen Sie Ihre Actions, Daten und Oberfläche hinzu und stellen Sie Ihre Anwendung bereit. Konfigurieren Sie Authentifizierung und Provider-Zugriff für Ihre Umgebung und testen Sie die hinzugefügten Workflows, bevor Sie sie mit Ihren Nutzern teilen.",
@@ -1229,9 +1229,9 @@ const deDE = {
       s060: "Wählen Sie aus, was Sie aufnehmen möchten, und starten Sie dann die Aufnahme in Clips.",
       s062: "Alle Vorlagen anzeigen",
       faq: {
-        question1: "Was ist Agent-Native Clips?",
+        question1: "Was ist FB Factory Clips?",
         answer1:
-          "Agent-Native Clips ist ein kostenloser Open-Source-Bildschirmrecorder zum Teilen von Fehlern, Feedback und Anleitungen mit KI-Agenten. Er gibt deinem KI-Agenten ein Transkript und zeitgestempelte Bilder einer Aufnahme, während Menschen sich denselben Clip ansehen können.",
+          "FB Factory Clips ist ein kostenloser Open-Source-Bildschirmrecorder zum Teilen von Fehlern, Feedback und Anleitungen mit KI-Agenten. Er gibt deinem KI-Agenten ein Transkript und zeitgestempelte Bilder einer Aufnahme, während Menschen sich denselben Clip ansehen können.",
         question2: "Kann ich Aufnahmen mit Claude, ChatGPT oder Cursor teilen?",
         answer2:
           "Clips stellt einen für Agenten lesbaren Link mit Transkript und zeitgestempelten Bildern bereit. Dein Agent muss den verlinkten Inhalt öffnen und Bilder lesen können, um beides zu nutzen. Manche Chat-Modi können das Transkript lesen, benötigen aber ein separat hochgeladenes Bild.",
@@ -1264,9 +1264,9 @@ const deDE = {
     },
     content: {
       faq: {
-        question1: "Was ist Agent-Native Content?",
+        question1: "Was ist FB Factory Content?",
         answer1:
-          "Agent-Native Content ist ein kostenloser Open-Source-Arbeitsbereich für Dokumente, Aufgaben und Datenbanken. Er kombiniert einen KI-Dokumenteditor mit strukturierten Tabellen und gemeinsamen Seiten, die Menschen und verbundene KI-Agenten gemeinsam lesen und bearbeiten können.",
+          "FB Factory Content ist ein kostenloser Open-Source-Arbeitsbereich für Dokumente, Aufgaben und Datenbanken. Er kombiniert einen KI-Dokumenteditor mit strukturierten Tabellen und gemeinsamen Seiten, die Menschen und verbundene KI-Agenten gemeinsam lesen und bearbeiten können.",
         question2: "Kann ich meinen eigenen KI-Agenten mit Content verwenden?",
         answer2:
           "Ja. Content bietet eine MCP-Verbindung für unterstützte Tools wie Claude Code, Codex und Cursor. Nach dem Verbinden und Autorisieren des Zugriffs kann dein Agent mit den Dokumenten und Datenbanken arbeiten, auf die er Zugriff hat. Du kannst auch den in Content integrierten Agenten verwenden.",
@@ -1390,9 +1390,9 @@ const deDE = {
     },
     design: {
       faq: {
-        question1: "Was ist Agent-Native Design?",
+        question1: "Was ist FB Factory Design?",
         answer1:
-          "Agent-Native Design ist ein kostenloses Open-Source-Tool für KI-Design und Prototyping. Erstelle mit einem KI-Agenten interaktive HTML-Prototypen, wende deine Marke an und verfeinere Designs mit visuellen Steuerelementen oder im Chat. Teile das Ergebnis für Feedback oder exportiere es für die Entwicklung.",
+          "FB Factory Design ist ein kostenloses Open-Source-Tool für KI-Design und Prototyping. Erstelle mit einem KI-Agenten interaktive HTML-Prototypen, wende deine Marke an und verfeinere Designs mit visuellen Steuerelementen oder im Chat. Teile das Ergebnis für Feedback oder exportiere es für die Entwicklung.",
         question2:
           "Kann ich ein Design bearbeiten, nachdem die KI es generiert hat?",
         answer2:
@@ -1514,9 +1514,9 @@ const deDE = {
     },
     dispatch: {
       faq: {
-        question1: "Was ist Agent-Native Dispatch?",
+        question1: "Was ist FB Factory Dispatch?",
         answer1:
-          "Agent-Native Dispatch ist eine kostenlose Open-Source-KI-Agent-Orchestrierungs-App für einen Agent-Native-Workspace. Sie koordiniert Anfragen über verbundene Apps hinweg, empfängt Nachrichten von unterstützten Kanälen, plant wiederkehrende Aufgaben und verwaltet gemeinsame Integrationen.",
+          "FB Factory Dispatch ist eine kostenlose Open-Source-KI-Agent-Orchestrierungs-App für einen FB Factory-Workspace. Sie koordiniert Anfragen über verbundene Apps hinweg, empfängt Nachrichten von unterstützten Kanälen, plant wiederkehrende Aufgaben und verwaltet gemeinsame Integrationen.",
         question2: "Mit welchen Apps kann Dispatch zusammenarbeiten?",
         answer2:
           "Dispatch delegiert an Apps, die in deinem Workspace verbunden und verfügbar sind, etwa Analytics oder Mail. Jede App übernimmt ihre eigenen Aufgaben und Daten. Richte die entsprechenden Verbindungen und Berechtigungen ein, bevor du Dispatch bittest, sie zu nutzen.",
@@ -1535,7 +1535,7 @@ const deDE = {
       heroEyebrow: "Dispatch",
       heroTitle: "Koordiniere deine KI-Agents an einem Ort",
       heroDescription:
-        "Dispatch ist eine kostenlose Open-Source-KI-Agent-Orchestrierungs-App, um Arbeit an verbundene Agent-Native-Apps zu delegieren, wiederkehrende Aufgaben zu planen und gemeinsame Verbindungen zu verwalten.",
+        "Dispatch ist eine kostenlose Open-Source-KI-Agent-Orchestrierungs-App, um Arbeit an verbundene FB Factory-Apps zu delegieren, wiederkehrende Aufgaben zu planen und gemeinsame Verbindungen zu verwalten.",
       heroCta: "Delegiere eine Aufgabe",
       useCasesHeading: "Was kannst du mit Dispatch machen?",
       useCasesBody:
@@ -1583,7 +1583,7 @@ const deDE = {
       s008: "Sprechen Sie mit Ihrem Agenten über Slack, Telegram oder einen beliebigen Messenger und er wird an Ihre anderen Apps weitergeleitet. Jobs, Speicher, Genehmigungen und A2A-Delegierung – alles an einem Ort.",
       s009: "Ausprobieren",
       s010: "Was Sie tun können",
-      s011: "Dispatch ist die dem Messenger zugewandte Eingangstür für Ihren gesamten Agent-Native-Stack.",
+      s011: "Dispatch ist die dem Messenger zugewandte Eingangstür für Ihren gesamten FB Factory-Stack.",
       s012: "Bidirektionale Nachrichtenübermittlung mit Thread-Kontext, Block Kit-Antworten und Inline-Genehmigungen. Sprechen Sie von überall.",
       s013: "Dispatch leitet Arbeit über das A2A-Protokoll an Ihre anderen agentennativen Apps weiter. Mail, Folien, Design – alles über einen Chat erreichbar.",
       s014: "Wiederkehrende Jobs",
@@ -1630,9 +1630,9 @@ const deDE = {
     },
     forms: {
       faq: {
-        question1: "Was ist Agent-Native Forms?",
+        question1: "Was ist FB Factory Forms?",
         answer1:
-          "Agent-Native Forms ist ein kostenloser Open-Source-KI-Formular-Builder. Erstelle Formulare und Umfragen mit einem KI-Agenten, bearbeite Felder visuell, veröffentliche einen öffentlichen Link und sieh dir die Antworten in derselben App an oder lass sie analysieren.",
+          "FB Factory Forms ist ein kostenloser Open-Source-KI-Formular-Builder. Erstelle Formulare und Umfragen mit einem KI-Agenten, bearbeite Felder visuell, veröffentliche einen öffentlichen Link und sieh dir die Antworten in derselben App an oder lass sie analysieren.",
         question2:
           "Kann ich ein Formular bearbeiten, nachdem die KI es erstellt hat?",
         answer2:
@@ -1751,9 +1751,9 @@ const deDE = {
     },
     mail: {
       faq: {
-        question1: "Was ist Agent-Native Mail?",
+        question1: "Was ist FB Factory Mail?",
         answer1:
-          "Agent-Native Mail ist ein kostenloser, quelloffener E-Mail-Client für Gmail mit einem KI-E-Mail-Assistenten. Lies und durchsuche Nachrichten, fasse Unterhaltungen zusammen, entwirf Antworten und organisiere deine E-Mails über den Posteingang oder deinen KI-Agenten.",
+          "FB Factory Mail ist ein kostenloser, quelloffener E-Mail-Client für Gmail mit einem KI-E-Mail-Assistenten. Lies und durchsuche Nachrichten, fasse Unterhaltungen zusammen, entwirf Antworten und organisiere deine E-Mails über den Posteingang oder deinen KI-Agenten.",
         question2: "Funktioniert Mail mit meinem bestehenden Gmail-Konto?",
         answer2:
           "Ja. Verbinde dein bestehendes Gmail-Konto, um E-Mails über Mail zu lesen und zu senden. Du kannst mehrere Gmail-Konten verbinden und kontoübergreifend suchen. Mail stellt keine neue E-Mail-Adresse bereit und unterstützt derzeit Gmail statt Outlook oder anderer E-Mail-Anbieter.",
@@ -1820,7 +1820,7 @@ const deDE = {
       s007Primary: "Die Open-Source-Alternative zu",
       s007Secondary: "Superhuman und Gmail",
       s008: "Ausprobieren",
-      s009: "Die gehostete Demo nutzt die gemeinsame Google-App von Agent-Native für den Zugriff auf Gmail, sodass Google Sie möglicherweise um eine Bestätigung bittet, bevor Sie fortfahren. Lokal ausführen, um Ihren eigenen Google OAuth-Client zu verwenden.",
+      s009: "Die gehostete Demo nutzt die gemeinsame Google-App von FB Factory für den Zugriff auf Gmail, sodass Google Sie möglicherweise um eine Bestätigung bittet, bevor Sie fortfahren. Lokal ausführen, um Ihren eigenen Google OAuth-Client zu verwenden.",
       s010: "Was Sie tun können",
       s011: "Alles, was Sie brauchen, um Ihren E-Mail-Client durch einen AI-basierten Posteingang zu ersetzen, der Ihnen vollständig gehört.",
       s012: "Tastaturkürzel",
@@ -1875,9 +1875,9 @@ const deDE = {
     },
     plan: {
       faq: {
-        question1: "Was ist Agent-Native Plans?",
+        question1: "Was ist FB Factory Plans?",
         answer1:
-          "Agent-Native Plans ist ein kostenloses Open-Source-Tool zur visuellen Planung für KI-Coding-Agenten. Prüfe Implementierungspläne mit Diagrammen, Wireframes, kommentiertem Code und Kommentaren, oder lass dir visuelle Zusammenfassungen abgeschlossener Änderungen erstellen.",
+          "FB Factory Plans ist ein kostenloses Open-Source-Tool zur visuellen Planung für KI-Coding-Agenten. Prüfe Implementierungspläne mit Diagrammen, Wireframes, kommentiertem Code und Kommentaren, oder lass dir visuelle Zusammenfassungen abgeschlossener Änderungen erstellen.",
         question2: "Wie verwende ich Plans mit meinem Coding-Agenten?",
         answer2:
           "Installiere die Planungs-Skills und den Connector mit `npx @agent-native/core@latest skills add visual-plan` und schließe anschließend die Authentifizierung für deinen Client ab. Der Installationsleitfaden deckt Clients wie Claude Code und Codex ab. Nutze `/visual-plan`, um deinen Agenten um einen visuellen Implementierungsplan zu bitten.",
@@ -1939,9 +1939,9 @@ const deDE = {
     },
     slides: {
       faq: {
-        question1: "Was ist Agent-Native Slides?",
+        question1: "Was ist FB Factory Slides?",
         answer1:
-          "Agent-Native Slides ist ein kostenloser Open-Source-KI-Präsentationsersteller. Erstelle mit einem KI-Agenten markenkonforme Decks aus deinen Ideen und Quellmaterialien, bearbeite die Folien dann selbst, präsentiere sie oder exportiere sie nach PowerPoint.",
+          "FB Factory Slides ist ein kostenloser Open-Source-KI-Präsentationsersteller. Erstelle mit einem KI-Agenten markenkonforme Decks aus deinen Ideen und Quellmaterialien, bearbeite die Folien dann selbst, präsentiere sie oder exportiere sie nach PowerPoint.",
         question2:
           "Kann ich Folien bearbeiten, nachdem die KI sie generiert hat?",
         answer2:
@@ -2149,14 +2149,14 @@ const deDE = {
     metaTitle:
       "Agent Skills - Visual Plan, Visual Recap und Visual Edit fuer Coding Agents",
     metaDescription:
-      "Installiere Agent-Native appgestuetzte Skills fuer visuelle Planung, PR-Recaps und lokale visuelle Bearbeitung in deinem Coding Agent.",
+      "Installiere FB Factory appgestuetzte Skills fuer visuelle Planung, PR-Recaps und lokale visuelle Bearbeitung in deinem Coding Agent.",
     metaOgDescription:
-      "Gib deinem Coding Agent Slash-Commands auf Basis von Agent-Native Apps, die du hosten, pruefen und anpassen kannst.",
+      "Gib deinem Coding Agent Slash-Commands auf Basis von FB Factory Apps, die du hosten, pruefen und anpassen kannst.",
     metaKeywords:
       "Agent Skills, Visual Plan, Visual Recap, Visual Edit, Coding Agent, Claude Code, Codex, PR Review, Planung, agent-native",
     heroTitle: "Gib deinem Coding Agent neue Superkraefte",
     heroBody:
-      "Installiere appgestuetzte Skills mit Agent-Native Apps, die du voll anpassen kannst: visuelle Planung vor der Umsetzung, visuelle PR-Recaps nach den Aenderungen und visuelle Bearbeitung lokaler UI-Flows.",
+      "Installiere appgestuetzte Skills mit FB Factory Apps, die du voll anpassen kannst: visuelle Planung vor der Umsetzung, visuelle PR-Recaps nach den Aenderungen und visuelle Bearbeitung lokaler UI-Flows.",
     sectionTitle: "Appgestuetzte Skills fuer Coding Agents",
     sectionBody:
       "Nutze gehostete teilbare App-Links, lokale Dateien oder eine selbst gehostete/angepasste App; dein Agent erhaelt Anweisungen plus die passende MCP-Oberflaeche, wenn sie gebraucht wird.",
@@ -2193,9 +2193,9 @@ const deDE = {
     },
   },
   downloadPage: {
-    title: "Agent-Native herunterladen",
+    title: "FB Factory herunterladen",
     body: "Probieren Sie agentische Apps für Meetings, Design, Präsentationen, Daten, Terminplanung, E-Mail und mehr aus – alles in einer Desktop-App.",
-    openDesktop: "Agent-Native öffnen",
+    openDesktop: "FB Factory öffnen",
     downloadInstaller: "Installer herunterladen",
     downloadStarted: "Download gestartet",
     downloadAgain: "Hat es nicht funktioniert? Erneut herunterladen",
@@ -2208,7 +2208,7 @@ const deDE = {
     nightly: "Nightly",
     runFromSource: "Bauen Sie Ihr eigenes",
     runFromSourceBody:
-      "Erstellen Sie eine Agent-Native-App über die Befehlszeile und führen Sie sie lokal unter macOS, Windows oder Linux aus.",
+      "Erstellen Sie eine FB Factory-App über die Befehlszeile und führen Sie sie lokal unter macOS, Windows oder Linux aus.",
     platforms: {
       mac: {
         primary: "Für Apple Silicon herunterladen",
@@ -2236,7 +2236,7 @@ const deDE = {
   },
   brandPage: {
     eyebrow: "Markenmaterial",
-    title: "Agent-Native-Logos",
+    title: "FB Factory-Logos",
     body: "Lade die offiziellen Logos und Bildmarken für Artikel, Präsentationen und Community-Projekte herunter. SVG-Dateien bleiben in jeder Größe scharf und unterstützen transparente Hintergründe.",
     horizontal: {
       title: "Horizontales Logo",
@@ -2269,14 +2269,14 @@ const deDE = {
     lastUpdated: "Zuletzt aktualisiert: {{date}}",
     resources: {
       eyebrow: "Rechtliche Ressourcen",
-      title: "Rechtliche Ressourcen für Agent-Native",
+      title: "Rechtliche Ressourcen für FB Factory",
       intro:
-        "Eigenständige rechtliche Richtlinien von Agent-Native für gehostete Anwendungen und Dienste.",
+        "Eigenständige rechtliche Richtlinien von FB Factory für gehostete Anwendungen und Dienste.",
       agentNative: {
-        title: "Agent-Native-Richtlinien",
-        body: "Diese Seiten passen den gemeinsamen Richtlinienrahmen an das Open-Source-Projekt und die gehosteten Beispiele von Agent-Native an.",
-        terms: "Agent-Native-Nutzungsbedingungen",
-        privacy: "Agent-Native-Datenschutzerklärung",
+        title: "FB Factory-Richtlinien",
+        body: "Diese Seiten passen den gemeinsamen Richtlinienrahmen an das Open-Source-Projekt und die gehosteten Beispiele von FB Factory an.",
+        terms: "FB Factory-Nutzungsbedingungen",
+        privacy: "FB Factory-Datenschutzerklärung",
       },
       builder: {
         title: "Weitere Richtlinien für den gehosteten Dienst",
@@ -2293,18 +2293,18 @@ const deDE = {
       },
       notIncluded: {
         title: "Nicht enthaltene kommerzielle Bedingungen",
-        body: "Agent-Native hat keine kostenpflichtigen Tarife und keinen Enterprise-Vertrag. Kommerzielle Unterlagen wie Enterprise-SLAs, Supportbedingungen, DPAs, Sicherheitszusätze, Professional-Services-Bedingungen und Gebühren sind nicht enthalten.",
+        body: "FB Factory hat keine kostenpflichtigen Tarife und keinen Enterprise-Vertrag. Kommerzielle Unterlagen wie Enterprise-SLAs, Supportbedingungen, DPAs, Sicherheitszusätze, Professional-Services-Bedingungen und Gebühren sind nicht enthalten.",
       },
     },
     privacy: {
       eyebrow: "Datenschutzrichtlinie",
-      title: "Agent-Native gehostete Anwendungen",
+      title: "FB Factory gehostete Anwendungen",
       intro:
-        "In dieser Richtlinie wird erläutert, wie Builder.io Daten sammelt, verwendet, weitergibt und speichert, wenn es von Agent-Native gehostete Anwendungen, gehostete Vorlagen, Demos und offizielle Browsererweiterungen betreibt.",
+        "In dieser Richtlinie wird erläutert, wie FutureBuild Daten sammelt, verwendet, weitergibt und speichert, wenn es von FB Factory gehostete Anwendungen, gehostete Vorlagen, Demos und offizielle Browsererweiterungen betreibt.",
       scopeCards: {
         hosted: {
           title: "Gehostete Apps",
-          body: "Abgedeckt, wenn Builder.io den Agent-Native-Dienst oder die gehostete Vorlage für Sie betreibt.",
+          body: "Abgedeckt, wenn FutureBuild den FB Factory-Dienst oder die gehostete Vorlage für Sie betreibt.",
         },
         openSource: {
           title: "Open Source",
@@ -2319,7 +2319,7 @@ const deDE = {
         scope: "Umfang",
         information: "Informationen, die wir sammeln",
         cookies: "Cookies und Analysen",
-        clipsExtension: "Agent-Native Clips Chrome-Erweiterung",
+        clipsExtension: "FB Factory Clips Chrome-Erweiterung",
         use: "Wie wir Informationen nutzen",
         sharing: "Weitergabe und Dritte",
         chromeLimitedUse: "Chrome Web Store eingeschränkte Nutzung",
@@ -2329,25 +2329,25 @@ const deDE = {
       },
       paragraphs: {
         scope1:
-          "Agent-Native ist Open Source und der Quellcode ist unter der MIT-Lizenz verfügbar. Diese Richtlinie gilt nur für gehostete Anwendungen und Dienste, die von Builder.io für Agent-Native-Benutzer betrieben werden. Sie gilt nicht für die Nutzung des Codes durch Dritte, einschließlich Forks, benutzerdefinierter Vorlagen, privater Bereitstellungen oder selbst gehosteter Versionen. Wenn Sie Ihre eigene Bereitstellung betreiben, sind Sie für Ihre eigenen Datenpraktiken und Datenschutzrichtlinien verantwortlich.",
+          "FB Factory ist Open Source und der Quellcode ist unter der MIT-Lizenz verfügbar. Diese Richtlinie gilt nur für gehostete Anwendungen und Dienste, die von FutureBuild für FB Factory-Benutzer betrieben werden. Sie gilt nicht für die Nutzung des Codes durch Dritte, einschließlich Forks, benutzerdefinierter Vorlagen, privater Bereitstellungen oder selbst gehosteter Versionen. Wenn Sie Ihre eigene Bereitstellung betreiben, sind Sie für Ihre eigenen Datenpraktiken und Datenschutzrichtlinien verantwortlich.",
         scope2Prefix:
-          "Diese Richtlinie soll das allgemeinere von Builder.io ergänzen",
+          "Diese Richtlinie soll das allgemeinere von FutureBuild ergänzen",
         scope2Suffix:
-          "für das Verhalten gehosteter Anwendungen von Agent-Native.",
+          "für das Verhalten gehosteter Anwendungen von FB Factory.",
         cookies:
-          "Die Agent-Native-Dokumentationsseite und gehostete Anwendungen können notwendige Cookies für Authentifizierung und Sicherheit, für Präferenzen wie Sprache oder Design sowie konfigurierte Analysetechnologien verwenden. Die Dokumentationsseite kann Google Analytics oder Google Tag Manager laden, wenn die Bereitstellung dies konfiguriert, und der gehostete Dienst kann First-Party-Analysen zur Messung von Zuverlässigkeit und Funktionsnutzung verwenden. Wir nutzen Inhalte gehosteter Anwendungen nicht für Werbung Dritter. Cookies lassen sich über die Browsereinstellungen steuern; das Deaktivieren notwendiger Cookies kann jedoch die Anmeldung oder andere Funktionen verhindern.",
+          "Die FB Factory-Dokumentationsseite und gehostete Anwendungen können notwendige Cookies für Authentifizierung und Sicherheit, für Präferenzen wie Sprache oder Design sowie konfigurierte Analysetechnologien verwenden. Die Dokumentationsseite kann Google Analytics oder Google Tag Manager laden, wenn die Bereitstellung dies konfiguriert, und der gehostete Dienst kann First-Party-Analysen zur Messung von Zuverlässigkeit und Funktionsnutzung verwenden. Wir nutzen Inhalte gehosteter Anwendungen nicht für Werbung Dritter. Cookies lassen sich über die Browsereinstellungen steuern; das Deaktivieren notwendiger Cookies kann jedoch die Anmeldung oder andere Funktionen verhindern.",
         clips1:
-          "Mit Agent-Native Clips Chrome extension können Sie browserbasierte Aufzeichnungen starten und, wenn aktiviert, Browser-Diagnosen an einen Clip anhängen. Möglicherweise werden die ausgewählte Aufnahmequelle, die von Ihnen ausgewählten Kamera- und Mikrofonmedien, der Titel und die URL der aktiven Registerkarte sowie der Authentifizierungsstatus erfasst, der zum Herstellen einer Verbindung der Erweiterung mit dem gehosteten Clips erforderlich ist.",
+          "Mit FB Factory Clips Chrome extension können Sie browserbasierte Aufzeichnungen starten und, wenn aktiviert, Browser-Diagnosen an einen Clip anhängen. Möglicherweise werden die ausgewählte Aufnahmequelle, die von Ihnen ausgewählten Kamera- und Mikrofonmedien, der Titel und die URL der aktiven Registerkarte sowie der Authentifizierungsstatus erfasst, der zum Herstellen einer Verbindung der Erweiterung mit dem gehosteten Clips erforderlich ist.",
         clips2:
           "Entwicklerprotokolle sind optional. Wenn die Erweiterung aktiviert ist, kann sie geschwärzte Konsolenmeldungen, JavaScript-Ausnahmen und fetch/XHR-Metadaten wie Methode, URL, Status, Timing und Fehlerdetails von der ausgewählten Registerkarte sammeln, während eine Aufzeichnung aktiv ist. Die Erweiterung ist nicht zum Sammeln von Anforderungstexten, Antworttexten, Cookies oder Autorisierungsheadern konzipiert.",
         clipsAnchor:
           "Für Chrome Web Store-Offenlegungen verwenden Sie diesen Abschnitt als Erweiterung der Datenschutzrichtlinie:",
         sharing1:
-          "Wir verkaufen von Agent-Native gehostete Anwendungsdaten nicht und verwenden sie nicht für Werbung Dritter. Wir geben Daten an Dienstanbieter weiter, die beim Betrieb des gehosteten Dienstes helfen, z. B. Cloud-Infrastruktur, Speicherung, Authentifizierung, E-Mail, Observability, AI und Transkriptionsanbieter, wenn diese Dienste für die von Ihnen genutzte Funktion benötigt werden.",
+          "Wir verkaufen von FB Factory gehostete Anwendungsdaten nicht und verwenden sie nicht für Werbung Dritter. Wir geben Daten an Dienstanbieter weiter, die beim Betrieb des gehosteten Dienstes helfen, z. B. Cloud-Infrastruktur, Speicherung, Authentifizierung, E-Mail, Observability, AI und Transkriptionsanbieter, wenn diese Dienste für die von Ihnen genutzte Funktion benötigt werden.",
         sharing2:
           "Wenn Sie eine Integration verbinden, kann die gehostete App entsprechend Ihrer Konfiguration und den eigenen Bedingungen des Anbieters Daten an diesen Anbieter senden oder Daten von diesem empfangen. Wir können Informationen auch offenlegen, wenn dies aus Sicherheitsgründen, zur Verhinderung von Missbrauch, zur Einhaltung gesetzlicher Vorschriften oder zum Schutz von Benutzern und des Dienstes erforderlich ist.",
         chromeLimitedUse:
-          "Für die Agent-Native Clips Chrome extension richtet sich unsere Nutzung der von Chrome extension APIs erhaltenen Informationen nach der Chrome Web Store-Benutzerdatenrichtlinie, einschließlich der Anforderungen zur eingeschränkten Nutzung. Die von der Erweiterung gesammelten Browseraktivitäten werden zur Bereitstellung des benutzerseitigen Aufzeichnungs- und Diagnose-Workflows verwendet, nicht für Werbung, Weiterverkauf, Kreditwürdigkeit oder unabhängige Profilerstellung.",
+          "Für die FB Factory Clips Chrome extension richtet sich unsere Nutzung der von Chrome extension APIs erhaltenen Informationen nach der Chrome Web Store-Benutzerdatenrichtlinie, einschließlich der Anforderungen zur eingeschränkten Nutzung. Die von der Erweiterung gesammelten Browseraktivitäten werden zur Bereitstellung des benutzerseitigen Aufzeichnungs- und Diagnose-Workflows verwendet, nicht für Werbung, Weiterverkauf, Kreditwürdigkeit oder unabhängige Profilerstellung.",
         retention1:
           "Wir bewahren gehostete Anwendungsdaten so lange auf, wie es für die Bereitstellung des Dienstes, die Pflege des Arbeitsbereichsverlaufs, die Einhaltung von Verpflichtungen, die Beilegung von Streitigkeiten oder die Verbesserung der Zuverlässigkeit und Sicherheit erforderlich ist. Benutzer können Clips, Dokumente, Ressourcen und andere gehostete App-Inhalte über die entsprechenden Anwendungssteuerelemente löschen, sofern verfügbar.",
         retention2:
@@ -2355,9 +2355,9 @@ const deDE = {
         security:
           "Wir nutzen angemessene administrative, technische und organisatorische Sicherheitsmaßnahmen zum Schutz gehosteter Anwendungsdaten, einschließlich Zugriffskontrollen, Transportverschlüsselung, Überwachung und betrieblicher Sicherheitspraktiken. Kein Onlinedienst kann perfekte Sicherheit garantieren, daher sollten Benutzer es vermeiden, Geheimnisse oder sensible Informationen in Aufzeichnungen oder Eingabeaufforderungen aufzunehmen, es sei denn, sie beabsichtigen, diese Informationen mit der gehosteten Anwendung zu teilen.",
         changes1:
-          "Wir können diese Richtlinie aktualisieren, wenn sich die von Agent-Native gehosteten Anwendungen ändern. Das Aktualisierungsdatum oben auf der Seite zeigt an, wann die Richtlinie zuletzt überarbeitet wurde.",
+          "Wir können diese Richtlinie aktualisieren, wenn sich die von FB Factory gehosteten Anwendungen ändern. Das Aktualisierungsdatum oben auf der Seite zeigt an, wann die Richtlinie zuletzt überarbeitet wurde.",
         changes2Prefix:
-          "Bei Anfragen oder Fragen zum Datenschutz wenden Sie sich über die im aufgeführten Support- und Datenschutzkanäle an Builder.io",
+          "Bei Anfragen oder Fragen zum Datenschutz wenden Sie sich über die im aufgeführten Support- und Datenschutzkanäle an FutureBuild",
       },
       dataCategories: {
         account: {
@@ -2366,7 +2366,7 @@ const deDE = {
         },
         hostedContent: {
           title: "Gehostete Anwendungsinhalte",
-          body: "Content Sie erstellen oder laden in gehostete Agent-Native-Vorlagen hoch, z. B. Aufzeichnungen, Transkripte, Dokumente, Kommentare, Aufgaben, Eingabeaufforderungen, Agentenantworten, Dateien und Konfigurationen.",
+          body: "Content Sie erstellen oder laden in gehostete FB Factory-Vorlagen hoch, z. B. Aufzeichnungen, Transkripte, Dokumente, Kommentare, Aufgaben, Eingabeaufforderungen, Agentenantworten, Dateien und Konfigurationen.",
         },
         integrations: {
           title: "Verbundene Integrationsdaten",
@@ -2379,7 +2379,7 @@ const deDE = {
       },
       uses: {
         provide:
-          "Bereitstellen, Synchronisieren und Betreiben gehosteter Agent-Native-Anwendungen und ihrer Agent-Workflows.",
+          "Bereitstellen, Synchronisieren und Betreiben gehosteter FB Factory-Anwendungen und ihrer Agent-Workflows.",
         transform:
           "Zeichnen Sie Inhalte auf, transkribieren Sie sie, fassen Sie sie zusammen, suchen Sie sie, teilen Sie sie mit anderen oder transformieren Sie sie, wenn Sie die gehostete App dazu auffordern.",
         auth: "Authentifizieren Sie Benutzer, verwalten Sie Organisationen, erzwingen Sie Zugriffskontrollen und verhindern Sie Missbrauch.",
@@ -2390,18 +2390,18 @@ const deDE = {
       },
       links: {
         builderPrivacy: "Datenschutzrichtlinie",
-        builderPrivacyFull: "Builder.io Datenschutzrichtlinie",
+        builderPrivacyFull: "FutureBuild Datenschutzrichtlinie",
       },
     },
     about: {
-      eyebrow: "Über Agent-Native",
+      eyebrow: "Über FB Factory",
       title: "Open-Source-Apps für Agents und Menschen",
       intro:
-        "Agent-Native ist ein Open-Source-Framework für Anwendungen, in denen KI-Agents und Benutzeroberflächen dieselben Aktionen, Daten und den Anwendungsstatus teilen.",
+        "FB Factory ist ein Open-Source-Framework für Anwendungen, in denen KI-Agents und Benutzeroberflächen dieselben Aktionen, Daten und den Anwendungsstatus teilen.",
       sections: {
         project: {
           title: "Ein gemeinsames Betriebsmodell",
-          body: "Agent-Native behandelt Agent und Oberfläche als gleichwertige Partner. Eine Aktion kann ein UI-Steuerelement, ein Agent-Tool, eine HTTP-Route, eine MCP- oder A2A-Fähigkeit, einen CLI-Befehl und einen prüfbaren Ablauf versorgen. Gemeinsamer SQL-Status hält die menschliche und die Agentenansicht synchron.",
+          body: "FB Factory behandelt Agent und Oberfläche als gleichwertige Partner. Eine Aktion kann ein UI-Steuerelement, ein Agent-Tool, eine HTTP-Route, eine MCP- oder A2A-Fähigkeit, einen CLI-Befehl und einen prüfbaren Ablauf versorgen. Gemeinsamer SQL-Status hält die menschliche und die Agentenansicht synchron.",
         },
         openSource: {
           title: "Standardmäßig Open Source",
@@ -2409,19 +2409,19 @@ const deDE = {
         },
         hosted: {
           title: "Gehostet und selbst gehostet",
-          body: "Builder.io betreibt die gehosteten Agent-Native-Anwendungen und die Dokumentation auf agent-native.com. Das Framework ist auch für Teams gedacht, die eigene Anwendungen bereitstellen und betreuen möchten. Aktionsverträge, Zugriffsgrenzen, Agentenanweisungen und öffentliche Protokolle sind im Code und in der Dokumentation prüfbar.",
+          body: "FutureBuild betreibt die gehosteten FB Factory-Anwendungen und die Dokumentation auf agent-native.com. Das Framework ist auch für Teams gedacht, die eigene Anwendungen bereitstellen und betreuen möchten. Aktionsverträge, Zugriffsgrenzen, Agentenanweisungen und öffentliche Protokolle sind im Code und in der Dokumentation prüfbar.",
         },
         community: {
           title: "Öffentlich entwickelt",
-          body: "Das Projekt wird offen über GitHub-Issues, Pull Requests, Dokumentation und die Agent-Native-Community entwickelt. Lies die Dokumentation zur Architektur, prüfe den Quellcode einer Implementierung oder tausche dich über einen Anwendungsfall aus und trage eine Änderung bei.",
+          body: "Das Projekt wird offen über GitHub-Issues, Pull Requests, Dokumentation und die FB Factory-Community entwickelt. Lies die Dokumentation zur Architektur, prüfe den Quellcode einer Implementierung oder tausche dich über einen Anwendungsfall aus und trage eine Änderung bei.",
         },
       },
     },
     contact: {
       eyebrow: "Kontakt",
-      title: "Builder.io zu Agent-Native kontaktieren",
+      title: "FutureBuild zu FB Factory kontaktieren",
       intro:
-        "Nutze die Support-, Quellcode- und Community-Kanäle für Fragen, Fehlerberichte, Verbesserungsvorschläge oder Sicherheitsmeldungen zu Agent-Native.",
+        "Nutze die Support-, Quellcode- und Community-Kanäle für Fragen, Fehlerberichte, Verbesserungsvorschläge oder Sicherheitsmeldungen zu FB Factory.",
       emailLabel: "support@builder.io per E-Mail kontaktieren",
       sections: {
         support: {
@@ -2434,23 +2434,23 @@ const deDE = {
         },
         security: {
           title: "Sicherheitsmeldungen",
-          body: "Veröffentliche eine ungepatchte Schwachstelle nicht in einem öffentlichen Issue oder Chat. Kontaktiere Builder.io über den verfügbaren Sicherheitskanal und sende nur die zur Reproduktion und Bewertung nötigen Informationen. Halte Zugangsdaten, private Daten und Exploit-Material aus normalen Supportanfragen heraus.",
+          body: "Veröffentliche eine ungepatchte Schwachstelle nicht in einem öffentlichen Issue oder Chat. Kontaktiere FutureBuild über den verfügbaren Sicherheitskanal und sende nur die zur Reproduktion und Bewertung nötigen Informationen. Halte Zugangsdaten, private Daten und Exploit-Material aus normalen Supportanfragen heraus.",
         },
         legal: {
           title: "Rechtliches und Datenschutz",
-          body: "Bei Datenschutzfragen lies zuerst die Agent-Native-Datenschutzrichtlinie und die rechtlichen Ressourcen von Builder.io. Builder.io, Inc. befindet sich in 95 3rd Street, 2nd Floor, San Francisco, CA 94103, Vereinigte Staaten. Bedingungen für den gehosteten Dienst und Pflichten beim Self-Hosting stehen in den Nutzungsbedingungen.",
+          body: "Bei Datenschutzfragen lies zuerst die FB Factory-Datenschutzrichtlinie und die rechtlichen Ressourcen von FutureBuild. FutureBuild, Inc. befindet sich in 95 3rd Street, 2nd Floor, San Francisco, CA 94103, Vereinigte Staaten. Bedingungen für den gehosteten Dienst und Pflichten beim Self-Hosting stehen in den Nutzungsbedingungen.",
         },
       },
     },
     terms: {
       eyebrow: "Nutzungsbedingungen",
-      title: "Agent-Native gehostete Anwendungen",
+      title: "FB Factory gehostete Anwendungen",
       intro:
-        "Diese Bedingungen gelten, wenn Builder.io von Agent-Native gehostete Anwendungen, gehostete Vorlagen, Demos und offizielle gehostete Dienste für Sie betreibt.",
+        "Diese Bedingungen gelten, wenn FutureBuild von FB Factory gehostete Anwendungen, gehostete Vorlagen, Demos und offizielle gehostete Dienste für Sie betreibt.",
       scopeCards: {
         hosted: {
           title: "Gehostete Apps",
-          body: "Abgedeckt, wenn Sie eine von Builder.io betriebene Agent-Native-App oder -Vorlage verwenden.",
+          body: "Abgedeckt, wenn Sie eine von FutureBuild betriebene FB Factory-App oder -Vorlage verwenden.",
         },
         openSource: {
           title: "Open Source",
@@ -2458,7 +2458,7 @@ const deDE = {
         },
         selfHosted: {
           title: "Selbst gehostet",
-          body: "Separate Bereitstellungen, die von Ihnen oder einer anderen Person betrieben werden, sind keine Builder.io gehosteten Dienste.",
+          body: "Separate Bereitstellungen, die von Ihnen oder einer anderen Person betrieben werden, sind keine FutureBuild gehosteten Dienste.",
         },
       },
       sections: {
@@ -2475,54 +2475,55 @@ const deDE = {
       },
       paragraphs: {
         scope1:
-          "Agent-Native ist Open Source und sein Quellcode ist unter der MIT-Lizenz verfügbar. Diese Bedingungen gelten nur für gehostete Anwendungen und Dienste, die von Builder.io für Agent-Native-Benutzer betrieben werden. Sie gelten nicht für Forks, benutzerdefinierte Vorlagen, private Bereitstellungen oder selbst gehostete Versionen, die außerhalb von Builder.io betrieben werden.",
-        scope2Prefix: "Diese Begriffe ergänzen das allgemeinere von Builder.io",
-        scope2Middle: "und der Agent-Native",
+          "FB Factory ist Open Source und sein Quellcode ist unter der MIT-Lizenz verfügbar. Diese Bedingungen gelten nur für gehostete Anwendungen und Dienste, die von FutureBuild für FB Factory-Benutzer betrieben werden. Sie gelten nicht für Forks, benutzerdefinierte Vorlagen, private Bereitstellungen oder selbst gehostete Versionen, die außerhalb von FutureBuild betrieben werden.",
+        scope2Prefix:
+          "Diese Begriffe ergänzen das allgemeinere von FutureBuild",
+        scope2Middle: "und der FB Factory",
         scope2Suffix:
-          "Wenn Sie eine gehostete Agent-Native-App im Namen eines Unternehmens oder einer Organisation nutzen, erklären Sie, dass Sie befugt sind, diese Bedingungen für diese Organisation zu akzeptieren.",
+          "Wenn Sie eine gehostete FB Factory-App im Namen eines Unternehmens oder einer Organisation nutzen, erklären Sie, dass Sie befugt sind, diese Bedingungen für diese Organisation zu akzeptieren.",
         scope3:
-          "Agent-Native bietet keine kostenpflichtigen Tarife oder kostenpflichtigen Hosting-Abonnements an. Kommerzielle Bedingungen von Builder.io, etwa Bestellformulare, Gebühren, Enterprise-Support, Service-Level und Nachträge zur Datenverarbeitung, sind nicht Teil dieses Angebots, sofern sie nicht separat schriftlich vereinbart wurden.",
+          "FB Factory bietet keine kostenpflichtigen Tarife oder kostenpflichtigen Hosting-Abonnements an. Kommerzielle Bedingungen von FutureBuild, etwa Bestellformulare, Gebühren, Enterprise-Support, Service-Level und Nachträge zur Datenverarbeitung, sind nicht Teil dieses Angebots, sofern sie nicht separat schriftlich vereinbart wurden.",
         hostedService:
-          "Builder.io kann gehostete Agent-Native-Anwendungen, Vorlagen, Demos, freigegebene Arbeitsbereiche, Browsererweiterungen und zugehörige Agenten-Workflows bereitstellen. Der gehostete Dienst kann im Zuge der Weiterentwicklung des Produkts aktualisiert, eingeschränkt, ausgesetzt oder eingestellt werden.",
+          "FutureBuild kann gehostete FB Factory-Anwendungen, Vorlagen, Demos, freigegebene Arbeitsbereiche, Browsererweiterungen und zugehörige Agenten-Workflows bereitstellen. Der gehostete Dienst kann im Zuge der Weiterentwicklung des Produkts aktualisiert, eingeschränkt, ausgesetzt oder eingestellt werden.",
         accounts1:
-          "Sie sind für die Richtigkeit der Kontoinformationen, der Aktivitäten unter Ihrem Konto und die Sicherheit der Anmeldeinformationen verantwortlich. Gehostete Agent-Native-Apps können Organisationsfunktionen, Einladungen, freigegebene Ressourcen, verbundene Integrationen und app-spezifische Zugriffskontrollen umfassen. Laden Sie nur Benutzer ein und verbinden Sie Dienste, zu deren Nutzung Sie berechtigt sind.",
+          "Sie sind für die Richtigkeit der Kontoinformationen, der Aktivitäten unter Ihrem Konto und die Sicherheit der Anmeldeinformationen verantwortlich. Gehostete FB Factory-Apps können Organisationsfunktionen, Einladungen, freigegebene Ressourcen, verbundene Integrationen und app-spezifische Zugriffskontrollen umfassen. Laden Sie nur Benutzer ein und verbinden Sie Dienste, zu deren Nutzung Sie berechtigt sind.",
         accounts2:
-          "Wenn Sie glauben, dass ein Konto, ein Arbeitsbereich, eine Integration oder eine freigegebene Ressource kompromittiert oder missbraucht wurde, wenden Sie sich umgehend an den Builder.io-Support.",
+          "Wenn Sie glauben, dass ein Konto, ein Arbeitsbereich, eine Integration oder eine freigegebene Ressource kompromittiert oder missbraucht wurde, wenden Sie sich umgehend an den FutureBuild-Support.",
         content1:
-          "Sie behalten das Eigentum an den Inhalten, die Sie erstellen, hochladen, aufzeichnen, importieren oder mit gehosteten Agent-Native-Apps verbinden. Sie erteilen Builder.io die eingeschränkte Berechtigung, die zum Hosten, Verarbeiten, Übertragen, Anzeigen, Transformieren, Analysieren und Speichern dieser Inhalte erforderlich ist, damit die gehostete App und ihre Agent-Workflows funktionieren können.",
+          "Sie behalten das Eigentum an den Inhalten, die Sie erstellen, hochladen, aufzeichnen, importieren oder mit gehosteten FB Factory-Apps verbinden. Sie erteilen FutureBuild die eingeschränkte Berechtigung, die zum Hosten, Verarbeiten, Übertragen, Anzeigen, Transformieren, Analysieren und Speichern dieser Inhalte erforderlich ist, damit die gehostete App und ihre Agent-Workflows funktionieren können.",
         content2:
           "Sie sind dafür verantwortlich, über die erforderlichen Rechte und Berechtigungen für Inhalte, Aufzeichnungen, Eingabeaufforderungen, Dateien, Anmeldeinformationen und verbundene Integrationsdaten zu verfügen, die Sie dem Dienst bereitstellen.",
         agents1:
-          "Gehostete Agent-Native-Apps können auf Ihren Wunsch AI-Agenten, Tools, Automatisierungen und Anbieterintegrationen ausführen. Die von AI generierte Ausgabe ist möglicherweise unvollständig, ungenau oder für eine bestimmte Verwendung ungeeignet. Überprüfen Sie wichtige Ausgaben, Aktionen, Exporte und Nachrichten, bevor Sie sich darauf verlassen.",
+          "Gehostete FB Factory-Apps können auf Ihren Wunsch AI-Agenten, Tools, Automatisierungen und Anbieterintegrationen ausführen. Die von AI generierte Ausgabe ist möglicherweise unvollständig, ungenau oder für eine bestimmte Verwendung ungeeignet. Überprüfen Sie wichtige Ausgaben, Aktionen, Exporte und Nachrichten, bevor Sie sich darauf verlassen.",
         agents2:
           "Wenn Sie Dienste Dritter verbinden, unterliegt Ihre Nutzung dieser Dienste weiterhin deren eigenen Bedingungen, Beschränkungen, Berechtigungen und Datenschutzpraktiken.",
         openSource:
-          "Diese Bedingungen ändern nicht die Open-Source-Lizenz für Agent-Native-Code. Wenn Sie Agent-Native herunterladen, forken, ändern oder selbst hosten, regeln die MIT-Lizenz und die Bedingungen, die Sie für Ihre eigene Bereitstellung festlegen, diese Nutzung. Sie sind für Sicherheit, Datenschutz, Compliance, Betrieb und Benutzerunterstützung für die von Ihnen betriebenen Bereitstellungen verantwortlich.",
+          "Diese Bedingungen ändern nicht die Open-Source-Lizenz für FB Factory-Code. Wenn Sie FB Factory herunterladen, forken, ändern oder selbst hosten, regeln die MIT-Lizenz und die Bedingungen, die Sie für Ihre eigene Bereitstellung festlegen, diese Nutzung. Sie sind für Sicherheit, Datenschutz, Compliance, Betrieb und Benutzerunterstützung für die von Ihnen betriebenen Bereitstellungen verantwortlich.",
         suspensionPrefix:
-          "Builder.io kann den Zugriff auf gehostete Agent-Native-Dienste aussetzen oder einschränken, wenn dies zum Schutz von Benutzern, zur Einhaltung von Gesetzen, zur Verhinderung von Missbrauch, zur Bewältigung von Sicherheitsrisiken oder zum Betrieb des Dienstes erforderlich ist. Sie können die Nutzung des gehosteten Dienstes jederzeit beenden. Einige Daten können für einen begrenzten Zeitraum in Backups, Protokollen oder Prüfaufzeichnungen verbleiben, wie im beschrieben",
+          "FutureBuild kann den Zugriff auf gehostete FB Factory-Dienste aussetzen oder einschränken, wenn dies zum Schutz von Benutzern, zur Einhaltung von Gesetzen, zur Verhinderung von Missbrauch, zur Bewältigung von Sicherheitsrisiken oder zum Betrieb des Dienstes erforderlich ist. Sie können die Nutzung des gehosteten Dienstes jederzeit beenden. Einige Daten können für einen begrenzten Zeitraum in Backups, Protokollen oder Prüfaufzeichnungen verbleiben, wie im beschrieben",
         disclaimers1:
-          "Gehostete Agent-Native-Dienste werden im Ist-Zustand und nach Verfügbarkeit bereitgestellt, vorbehaltlich des geltenden Rechts und einer separaten schriftlichen Vereinbarung, die Sie mit Builder.io haben. Builder.io garantiert nicht, dass gehostete Apps, Integrationen, Automatisierungen oder AI-Ausgaben unterbrechungsfrei und fehlerfrei sind oder alle Anforderungen erfüllen.",
+          "Gehostete FB Factory-Dienste werden im Ist-Zustand und nach Verfügbarkeit bereitgestellt, vorbehaltlich des geltenden Rechts und einer separaten schriftlichen Vereinbarung, die Sie mit FutureBuild haben. FutureBuild garantiert nicht, dass gehostete Apps, Integrationen, Automatisierungen oder AI-Ausgaben unterbrechungsfrei und fehlerfrei sind oder alle Anforderungen erfüllen.",
         disclaimers2Prefix:
-          "Im größtmöglichen gesetzlich zulässigen Umfang ist die Haftung von Builder.io für gehostete Agent-Native-Dienste wie in den allgemeinen Bestimmungen von Builder.io beschrieben beschränkt",
+          "Im größtmöglichen gesetzlich zulässigen Umfang ist die Haftung von FutureBuild für gehostete FB Factory-Dienste wie in den allgemeinen Bestimmungen von FutureBuild beschrieben beschränkt",
         disclaimers2Suffix:
           "oder eine andere schriftliche Vereinbarung, die für Ihre Nutzung gilt.",
         changes1:
-          "Wir können diese Bedingungen aktualisieren, wenn sich die von Agent-Native gehosteten Anwendungen ändern. Das Aktualisierungsdatum oben auf der Seite zeigt an, wann die Bedingungen zuletzt überarbeitet wurden.",
+          "Wir können diese Bedingungen aktualisieren, wenn sich die von FB Factory gehosteten Anwendungen ändern. Das Aktualisierungsdatum oben auf der Seite zeigt an, wann die Bedingungen zuletzt überarbeitet wurden.",
         changes2Prefix:
-          "Bei Fragen zu diesen Bedingungen wenden Sie sich über die in Builder.io aufgeführten Supportkanäle an Builder.io",
+          "Bei Fragen zu diesen Bedingungen wenden Sie sich über die in FutureBuild aufgeführten Supportkanäle an FutureBuild",
       },
       hostedServicePoints: {
         create:
-          "Erstellen und betreiben Sie gehostete Agent-Native-Arbeitsbereiche und Vorlagen-Apps.",
+          "Erstellen und betreiben Sie gehostete FB Factory-Arbeitsbereiche und Vorlagen-Apps.",
         workflows:
           "Führen Sie Agenten-Workflows, Aktionen, Automatisierungen und Integrationen aus, die Sie verwenden möchten.",
         store:
           "Speichern Sie gehostete App-Inhalte, Einstellungen, Organisationsdaten und den Status des verbundenen Kontos, die für die Bereitstellung des Dienstes erforderlich sind.",
         improve:
-          "Messen, sichern, debuggen und verbessern Sie gehostete Agent-Native-Dienste.",
+          "Messen, sichern, debuggen und verbessern Sie gehostete FB Factory-Dienste.",
       },
       acceptableUse: {
-        laws: "Verwenden Sie gehostete Agent-Native-Apps nicht, um gegen Gesetze zu verstoßen, Rechte zu verletzen oder Personen oder Systemen zu schaden.",
+        laws: "Verwenden Sie gehostete FB Factory-Apps nicht, um gegen Gesetze zu verstoßen, Rechte zu verletzen oder Personen oder Systemen zu schaden.",
         bypass:
           "Versuchen Sie nicht, Zugriffskontrollen, Ratenbeschränkungen, Sicherheitsgrenzen oder die Isolierung von Mandanten zu umgehen.",
         malware:
@@ -2549,9 +2550,9 @@ const deDE = {
     gettingStarted: "Erste Schritte",
     gettingStartedActions: "Add an Action",
     gettingStartedPages: "Add a Page",
-    whatIsAgentNative: "Was ist Agent-Native?",
+    whatIsAgentNative: "Was ist FB Factory?",
     agentSurfaces: "Agent-Oberflächen",
-    agentNativeConfig: "Agent-Native Config",
+    agentNativeConfig: "FB Factory Config",
     keyConcepts: "Schlüsselkonzepte",
     agentNativeToolkit: "Toolkit",
     toolkitOverview: "Überblick",
@@ -2687,7 +2688,7 @@ const deDE = {
     syncingTemplateChanges: "Template-Änderungen synchronisieren",
     writingAgentInstructions: "Agent-Anweisungen schreiben",
     embeddingSdk: "Einbettungs-SDK",
-    agentNativeCodeUi: "Agent-Native-Code-UI",
+    agentNativeCodeUi: "FB Factory-Code-UI",
     harnessAgents: "Harness-Agents",
     adapters: "Adapter",
     cliAdapters: "CLI-Adapter",

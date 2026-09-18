@@ -3047,7 +3047,7 @@ function URLSync({ browserTabId }: { browserTabId?: string }) {
         agentNativePath(`/_agent-native/application-state/${command.key}`),
         {
           method: "DELETE",
-          headers: { "X-Agent-Native-CSRF": "1" },
+          headers: { "X-FB Factory-CSRF": "1" },
         },
       ).catch(() => {});
       queryClient.setQueryData(setUrlQueryKey, null);
@@ -3059,7 +3059,7 @@ function URLSync({ browserTabId }: { browserTabId?: string }) {
     // don't cause repeated navigation.
     fetch(agentNativePath(`/_agent-native/application-state/${command.key}`), {
       method: "DELETE",
-      headers: { "X-Agent-Native-CSRF": "1" },
+      headers: { "X-FB Factory-CSRF": "1" },
     }).catch(() => {});
     try {
       const current = new URL(window.location.href);

@@ -25,7 +25,7 @@ export const meta = () =>
   withTemplateSocialImage(
     [
       {
-        title: "Free AI Presentation Maker | Agent-Native Slides",
+        title: "Free AI Presentation Maker | FB Factory Slides",
       },
       {
         name: "description",
@@ -34,7 +34,7 @@ export const meta = () =>
       },
       {
         property: "og:title",
-        content: "Free AI Presentation Maker | Agent-Native Slides",
+        content: "Free AI Presentation Maker | FB Factory Slides",
       },
       {
         property: "og:description",

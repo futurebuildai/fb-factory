@@ -1,5 +1,5 @@
 /**
- * First-party, Sentry-style browser error capture for the Agent-Native
+ * First-party, Sentry-style browser error capture for the FB Factory
  * analytics SDK.
  *
  * Two responsibilities:

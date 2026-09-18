@@ -5,12 +5,12 @@ import { withDefaultSocialImage } from "../seo";
 export const meta = () =>
   withDefaultSocialImage([
     {
-      title: "Agent-Native Privacy Policy",
+      title: "FB Factory Privacy Policy",
     },
     {
       name: "description",
       content:
-        "Standalone privacy policy for Agent-Native hosted applications and related services.",
+        "Standalone privacy policy for FB Factory hosted applications and related services.",
     },
   ]);
 

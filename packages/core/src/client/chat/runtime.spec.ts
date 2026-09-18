@@ -260,7 +260,7 @@ describe("createHttpAgentChatRuntime", () => {
 });
 
 describe("createAgentNativeChatRuntime", () => {
-  it("wraps the existing Agent-Native chat endpoint and normalizes SSE events", async () => {
+  it("wraps the existing FB Factory chat endpoint and normalizes SSE events", async () => {
     const fetchMock = vi.fn().mockResolvedValue(
       sseResponse([
         {
@@ -372,7 +372,7 @@ describe("createAgentNativeChatRuntime", () => {
     });
   });
 
-  it("exposes truthful rich capabilities for the Agent-Native stream", () => {
+  it("exposes truthful rich capabilities for the FB Factory stream", () => {
     const runtime = createAgentNativeChatRuntime();
 
     expect(runtime.capabilities.rich).toEqual({

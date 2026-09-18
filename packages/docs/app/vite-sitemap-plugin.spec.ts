@@ -98,7 +98,7 @@ describe("docs agent web generation", () => {
     const terms = pages.find((page) => page.path === "/es-es/terms/");
 
     expect(privacy?.markdown).toContain(
-      "# Agent-Native Privacy Policy\n\nUpdated September 3, 2026\nEffective date: September 3, 2026",
+      "# FB Factory Privacy Policy\n\nUpdated September 3, 2026\nEffective date: September 3, 2026",
     );
     expect(terms?.markdown).toContain("/es-es/legal/acceptable-use/");
     expect(terms?.markdown).not.toContain("](/legal/acceptable-use)");

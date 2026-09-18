@@ -157,7 +157,7 @@ describe("CommandMenu docs group", () => {
     expect(document.body.textContent).toContain("Open transcript");
   });
 
-  it("offers the shared About Agent-Native surface and matches version searches", () => {
+  it("offers the shared About FB Factory surface and matches version searches", () => {
     act(() => {
       root.render(
         <CommandMenu
@@ -175,13 +175,13 @@ describe("CommandMenu docs group", () => {
       );
     });
 
-    expect(document.body.textContent).toContain("About Agent-Native");
+    expect(document.body.textContent).toContain("About FB Factory");
     search("version");
-    expect(document.body.textContent).toContain("About Agent-Native");
+    expect(document.body.textContent).toContain("About FB Factory");
     expect(document.body.textContent).not.toContain("Create a project");
   });
 
-  it("opens About Agent-Native after closing the command menu", () => {
+  it("opens About FB Factory after closing the command menu", () => {
     vi.useFakeTimers();
     try {
       const onOpenChange = vi.fn();
@@ -204,7 +204,7 @@ describe("CommandMenu docs group", () => {
 
       const aboutItem = [
         ...document.querySelectorAll<HTMLElement>("[cmdk-item]"),
-      ].find((item) => item.textContent?.includes("About Agent-Native"));
+      ].find((item) => item.textContent?.includes("About FB Factory"));
       expect(aboutItem).toBeTruthy();
 
       act(() => aboutItem?.click());

@@ -22,7 +22,7 @@ export const meta = () =>
   withTemplateSocialImage(
     [
       {
-        title: "Free AI Email Assistant for Gmail | Agent-Native Mail",
+        title: "Free AI Email Assistant for Gmail | FB Factory Mail",
       },
       {
         name: "description",
@@ -31,7 +31,7 @@ export const meta = () =>
       },
       {
         property: "og:title",
-        content: "Free AI Email Assistant for Gmail | Agent-Native Mail",
+        content: "Free AI Email Assistant for Gmail | FB Factory Mail",
       },
       {
         property: "og:description",

@@ -158,10 +158,10 @@ export async function runCodeAgentConnector(
   if (!config) {
     output.write(
       [
-        "Agent-Native Code remote connector is not paired.",
+        "FB Factory Code remote connector is not paired.",
         "",
         `Expected device config: ${configPath}`,
-        "Pair this device from Agent-Native, or set AGENT_NATIVE_REMOTE_DEVICE_PATH to a JSON file containing a device token.",
+        "Pair this device from FB Factory, or set AGENT_NATIVE_REMOTE_DEVICE_PATH to a JSON file containing a device token.",
         "Then run: agent-native code serve --relay-url <relay-url>",
         "",
       ].join("\n"),
@@ -173,7 +173,7 @@ export async function runCodeAgentConnector(
   if (!relayUrl) {
     output.write(
       [
-        "Agent-Native Code remote connector needs a relay URL.",
+        "FB Factory Code remote connector needs a relay URL.",
         "",
         "Run: agent-native code serve --relay-url https://your-agent-native-app.example",
         `Or add "relayUrl" to ${configPath}.`,
@@ -218,7 +218,7 @@ class RemoteCodeAgentConnector {
     }
 
     this.output.write(
-      `Agent-Native Code remote connector serving ${this.relayUrl}\n`,
+      `FB Factory Code remote connector serving ${this.relayUrl}\n`,
     );
 
     let backoffMs = this.pollIntervalMs();
@@ -545,7 +545,7 @@ class RemoteCodeAgentConnector {
     appendCodeAgentTranscriptEvent({
       runId: run.id,
       kind: "status",
-      message: "Remote Agent-Native Code run queued.",
+      message: "Remote FB Factory Code run queued.",
       metadata: { status: "queued", phase: "queued", commandId: command.id },
     });
     this.remoteRunIds.add(run.id);
@@ -686,7 +686,7 @@ class RemoteCodeAgentConnector {
       runId,
       kind: "status",
       message: killed
-        ? "Remote stop requested for Agent-Native Code runner."
+        ? "Remote stop requested for FB Factory Code runner."
         : "Remote stop requested; no active runner process was found.",
       metadata: {
         source: "remote-connector",

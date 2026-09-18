@@ -108,7 +108,7 @@ const messages: AgentChatTranslation = {
   "onboarding.capability.about": "حول {{label}}",
   "onboarding.capability.why": "لماذا نحتاج إلى {{label}}",
   "onboarding.openAiKeySettings": "فتح إعدادات مفاتيح الذكاء الاصطناعي",
-  "aboutAgentNative.title": "حول Agent-Native",
+  "aboutAgentNative.title": "حول FB Factory",
   "aboutAgentNative.version": "الإصدار",
   "aboutAgentNative.environment": "البيئة",
   "aboutAgentNative.build": "البنية",
@@ -268,7 +268,7 @@ const messages: AgentChatTranslation = {
   "composer.plan": "تخطيط",
   "composer.planDescription": "بحث للقراءة فقط وموافقة أولًا",
   "composer.planDesktopRequired":
-    "افتح Agent-Native Desktop لاستخدام وضع التخطيط.",
+    "افتح FB Factory Desktop لاستخدام وضع التخطيط.",
   "composer.previewAttachment": "معاينة {{name}}",
   "composer.reasoning": "الاستدلال",
   "composer.reasoningEffort.auto": "تلقائي",

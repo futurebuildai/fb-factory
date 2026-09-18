@@ -272,7 +272,7 @@ describe("AgentKit protocol validation", () => {
           source: {
             id: "app-agent-native",
             kind: "app",
-            label: "Agent-Native",
+            label: "FB Factory",
           },
         },
       }),

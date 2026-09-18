@@ -1,6 +1,6 @@
 # @agent-native/dispatch
 
-Dispatch is the Agent-Native workspace control plane and a separate product.
+Dispatch is the FB Factory workspace control plane and a separate product.
 It is not a Toolkit capability module.
 
 Workspace control plane for agent-native apps — vault, integrations,

@@ -28,7 +28,7 @@ function buildHeaders(requestSource?: string): Record<string, string> {
     "Content-Type": "application/json",
   };
   if (typeof window !== "undefined") {
-    headers["X-Agent-Native-Browser-Tab"] = getBrowserTabId();
+    headers["X-FB Factory-Browser-Tab"] = getBrowserTabId();
   }
   if (requestSource) headers["X-Request-Source"] = requestSource;
   return headers;
@@ -37,7 +37,7 @@ function buildHeaders(requestSource?: string): Record<string, string> {
 function browserTabHeaders(): Record<string, string> | undefined {
   return typeof window === "undefined"
     ? undefined
-    : { "X-Agent-Native-Browser-Tab": getBrowserTabId() };
+    : { "X-FB Factory-Browser-Tab": getBrowserTabId() };
 }
 
 async function parseAppStateResponse<T>(
@@ -246,7 +246,7 @@ export async function deleteClientAppState(
     // DELETE carries no JSON body, so this custom header is the only
     // same-origin marker the CSRF check can see from an embedded frame.
     headers: {
-      "X-Agent-Native-CSRF": "1",
+      "X-FB Factory-CSRF": "1",
       ...(browserTabHeaders() ?? {}),
       ...(options.requestSource
         ? { "X-Request-Source": options.requestSource }

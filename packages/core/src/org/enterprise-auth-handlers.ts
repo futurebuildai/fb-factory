@@ -81,7 +81,7 @@ function isMissingBetterAuthOrganizationMembership(error: unknown): boolean {
 
 /**
  * Better Auth's SSO access check only knows about Better Auth organizations.
- * Agent-Native deliberately keeps its roster in `org_members`, so an admin
+ * FB Factory deliberately keeps its roster in `org_members`, so an admin
  * who did not create the provider can receive this error even after the
  * framework route has authorized them. Those requests use the framework's
  * scoped operation below instead of widening Better Auth's organization
@@ -370,7 +370,7 @@ export const createSSOProviderHandler = defineEventHandler(
       let result: unknown;
       try {
         // Pass organizationId when Better Auth's organization plugin is
-        // present. Agent-Native deliberately owns roster state in
+        // present. FB Factory deliberately owns roster state in
         // org_members, so the stock plugin may reject this before insert.
         result = await providerAPI.registerSSOProvider({
           headers: requestHeaders(event),

@@ -1023,7 +1023,7 @@ switch (command) {
 
   case "plugin": {
     // Import a standard Agent Plugin's Skills and remote MCP entries into the
-    // current Agent-Native workspace.
+    // current FB Factory workspace.
     import("./agent-plugin.js")
       .then((m) => m.runAgentPlugin(args))
       .catch((err) => {
@@ -1267,8 +1267,8 @@ switch (command) {
     console.log(`agent-native v${_version}
 
 Usage:
-  agent-native                  Launch Agent-Native Code workspace
-  agent-native "fix tests"      Start an Agent-Native Code coding session
+  agent-native                  Launch FB Factory Code workspace
+  agent-native "fix tests"      Start an FB Factory Code coding session
   agent-native dev              Start development server
                                 (or the workspace gateway at a workspace root)
   agent-native build            Build for production (client + server)
@@ -1285,9 +1285,9 @@ Usage:
                                 multi-select template picker. Use --standalone
                                 for a single-app scaffold, or choose Community
                                 template to install a public GitHub repository.
-  agent-native code             Launch Agent-Native Code workspace. Type a task or
+  agent-native code             Launch FB Factory Code workspace. Type a task or
                                 use goals like /migrate and /audit.
-  agent-native code serve       Run the Agent-Native Code remote connector.
+  agent-native code serve       Run the FB Factory Code remote connector.
   agent-native mcp <cmd>        Connect external coding agents over MCP.
                                 cmds: serve | install | uninstall | status |
                                 token (--client claude-code|codex|cowork|
@@ -1323,7 +1323,7 @@ Usage:
   agent-native plan <cmd>       Plan helpers for block catalogs and local files.
                                 cmds: blocks | local init | local check |
                                 local serve | local verify | local preview
-  agent-native migrate <source> Create an Agent-Native Code /migrate session, or use
+  agent-native migrate <source> Create an FB Factory Code /migrate session, or use
                                 --emit for a portable own-agent dossier.
   agent-native upgrade          Bring an existing app/workspace to current
                                 @agent-native/* packages, refresh scaffold

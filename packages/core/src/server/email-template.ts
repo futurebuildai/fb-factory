@@ -67,7 +67,7 @@ export interface RenderEmailArgs {
   brandName?: string;
   /**
    * Optional absolute `https://` logo URL shown in the brand header. When a
-   * valid URL is provided it replaces the default embedded Agent-Native logo;
+   * valid URL is provided it replaces the default embedded FB Factory logo;
    * anything else (missing, relative, non-https) falls back to that logo.
    */
   brandLogoUrl?: string;
@@ -123,7 +123,7 @@ export function renderEmail(args: RenderEmailArgs): RenderedEmail {
   const preheader = args.preheader || "";
   const brand = sanitizeHexColor(args.brandColor);
   const brandName =
-    args.brandName?.trim() || getAppConfig().app.name || "Agent-Native";
+    args.brandName?.trim() || getAppConfig().app.name || "FB Factory";
   const logoSrc =
     sanitizeLogoUrl(args.brandLogoUrl) ??
     `cid:${AGENT_NATIVE_EMAIL_LOGO_CONTENT_ID}`;

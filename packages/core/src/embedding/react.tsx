@@ -122,7 +122,7 @@ export const EmbeddedApp = forwardRef<EmbeddedAppRef, EmbeddedAppProps>(
       onReady,
       onMessage,
       onRequest,
-      title = "Agent-Native embedded app",
+      title = "FB Factory embedded app",
       sandbox = "allow-scripts allow-same-origin allow-forms allow-popups allow-downloads",
       allow = "clipboard-read; clipboard-write; microphone; fullscreen",
       referrerPolicy = "strict-origin-when-cross-origin",

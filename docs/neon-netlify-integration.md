@@ -102,7 +102,7 @@ in each template's `server/plugins/db.ts` — additive SQL only
 
 ## Follow-ups
 
-- **Agent-Native Plans DNS/TLS.** The Plans Neon project and Netlify site are
+- **FB Factory Plans DNS/TLS.** The Plans Neon project and Netlify site are
   configured and included in the preview-branch workflows. To complete the
   public cutover, `plan.agent-native.com` should resolve as a DNS-only CNAME to
   `agent-native-plan.netlify.app`; then provision/verify TLS in Netlify.

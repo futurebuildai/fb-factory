@@ -511,7 +511,7 @@ describe("resolveNitroBuildReplacements", () => {
     );
   });
 
-  it("prefers the shared Agent-Native build id over source revisions", () => {
+  it("prefers the shared FB Factory build id over source revisions", () => {
     const replacements = resolveNitroBuildReplacements({
       AGENT_NATIVE_BUILD_ID: " agent-build-123 ",
       COMMIT_REF: "commit-auth-client-123",
@@ -1679,7 +1679,7 @@ export default defineAppConfig({ app: { homePath: "/inbox" } });
     expect(html).toContain("https://public@example/4511270423822336");
   });
 
-  it("injects runtime Agent-Native Analytics config into generated worker SSR HTML", async () => {
+  it("injects runtime FB Factory Analytics config into generated worker SSR HTML", async () => {
     vi.stubEnv("AGENT_NATIVE_ANALYTICS_PUBLIC_KEY", "anpk_test");
     vi.stubEnv(
       "AGENT_NATIVE_ANALYTICS_ENDPOINT",
@@ -1701,7 +1701,7 @@ export default defineAppConfig({ app: { homePath: "/inbox" } });
     );
   });
 
-  it("bakes build-time Agent-Native Analytics config into workers", async () => {
+  it("bakes build-time FB Factory Analytics config into workers", async () => {
     vi.stubEnv("AGENT_NATIVE_ANALYTICS_PUBLIC_KEY", undefined);
     vi.stubEnv("AGENT_NATIVE_ANALYTICS_ENDPOINT", undefined);
     vi.stubEnv("VITE_AGENT_NATIVE_ANALYTICS_PUBLIC_KEY", undefined);
@@ -1731,7 +1731,7 @@ export default defineAppConfig({ app: { homePath: "/inbox" } });
     );
   });
 
-  it("bakes code-defined Agent-Native Analytics config into workers", async () => {
+  it("bakes code-defined FB Factory Analytics config into workers", async () => {
     vi.stubEnv("AGENT_NATIVE_ANALYTICS_PUBLIC_KEY", undefined);
     vi.stubEnv("AGENT_NATIVE_ANALYTICS_ENDPOINT", undefined);
     vi.stubEnv("VITE_AGENT_NATIVE_ANALYTICS_PUBLIC_KEY", undefined);
@@ -2010,9 +2010,9 @@ export default {
 
     expect(response.status).toBe(204);
     const allowHeaders = response.headers.get("Access-Control-Allow-Headers");
-    expect(allowHeaders).toContain("X-Agent-Native-Frontend");
-    expect(allowHeaders).toContain("X-Agent-Native-Client-Compatibility");
-    expect(allowHeaders).toContain("X-Agent-Native-Build-Id");
+    expect(allowHeaders).toContain("X-FB Factory-Frontend");
+    expect(allowHeaders).toContain("X-FB Factory-Client-Compatibility");
+    expect(allowHeaders).toContain("X-FB Factory-Build-Id");
     expect(allowHeaders).toContain("X-User-Timezone");
   });
 

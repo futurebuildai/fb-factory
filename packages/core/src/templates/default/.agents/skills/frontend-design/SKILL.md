@@ -44,7 +44,7 @@ Before styling a new app or workspace surface, define its product mode,
 audience, visual world, palette family, type treatment, composition, shape
 language, and anti-references in `DESIGN.md`. Read
 `references/visual-direction.md` for the direction families and review
-vocabulary. This is the Impeccable-inspired design contract for Agent-Native
+vocabulary. This is the Impeccable-inspired design contract for FB Factory
 apps: understand the product, name the mode, deal a few coherent directions,
 commit to one, and audit the result instead of averaging back to a starter.
 
@@ -155,9 +155,9 @@ yours to apply.
 
 **Beat convergence, not just defaults.** You sample toward the "on-distribution" center, so naming what to avoid is not enough: every "don't" needs a "do", or you converge on the next safe option. Commit to one named direction, pair any reference with the reason it fits, and match implementation effort to the vision. If the brief is open, consider two or three coherent visual worlds, then commit to one instead of averaging them. When building on an existing app, inspect its tokens/type/components first and treat any drift back to a default as a missing token to pin, not something to re-prompt.
 
-## Agent-Native UI Rules
+## FB Factory UI Rules
 
-- Agent-Native apps use React and Vite. The default adapter uses Tailwind CSS,
+- FB Factory apps use React and Vite. The default adapter uses Tailwind CSS,
   shadcn/ui, and `@tabler/icons-react`, but an app may register a different
   company design system in `app/design-system.ts`.
 - **Use the app's design-system seam for standard UI.** Inspect

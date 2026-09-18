@@ -39,8 +39,8 @@ export function ComputerConnectSheet({
           </Pressable>
         </View>
         <Text className="mb-5 text-muted-foreground text-[15px] leading-6">
-          Open Agent-Native Desktop on your laptop and sign in with this
-          account. When it appears here, choose it from the computer menu.
+          Open FB Factory Desktop on your laptop and sign in with this account.
+          When it appears here, choose it from the computer menu.
         </Text>
         <Pressable
           className="mb-3 h-12 items-center justify-center rounded-xl bg-primary active:opacity-75"

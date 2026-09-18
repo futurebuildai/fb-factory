@@ -48,7 +48,7 @@ export const meta = ({ params }: { params: { slug?: string } }) => {
     enUS.templates[template.slug as keyof typeof enUS.templates];
   return withTemplateSocialImage(
     [
-      { title: `Agent-Native ${template.name} App` },
+      { title: `FB Factory ${template.name} App` },
       {
         name: "description",
         content: templateCopy.description,

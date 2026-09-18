@@ -57,7 +57,7 @@ export default defineAction({
     resource: embedApp({
       title: "Review draft",
       description: "Open the generated draft in the real Mail compose UI.",
-      iframeTitle: "Agent-Native Mail",
+      iframeTitle: "FB Factory Mail",
       openLabel: "Open in Mail",
     }),
   },

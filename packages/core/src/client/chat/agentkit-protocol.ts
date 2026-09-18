@@ -173,7 +173,7 @@ const DISCOVERABLE_CAPABILITIES = [
 export const AGENT_NATIVE_PROTOCOL_METADATA_KEY = "x-agent-native";
 
 /**
- * Structured Agent-Native references carried through the protocol's metadata
+ * Structured FB Factory references carried through the protocol's metadata
  * extension point. Values remain references and identifiers; credential or
  * large content bodies do not belong here. These fields describe the context
  * used by an authorized runtime; receiving them never replaces server-side

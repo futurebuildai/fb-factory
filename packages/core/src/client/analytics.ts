@@ -156,7 +156,7 @@ export type ConfigureTrackingOptions = {
   /** Platform attribution attached to every event emitted by this client. */
   clientPlatform?: AnalyticsClientPlatform;
   /**
-   * Agent-Native first-party analytics public key. This mirrors hosted
+   * FB Factory first-party analytics public key. This mirrors hosted
    * analytics SDKs where consumers pass the key at setup time instead of
    * relying on build-time environment variables.
    */
@@ -1628,7 +1628,7 @@ function errorCaptureAutoEnabled(): boolean {
     (import.meta.env as Record<string, string | undefined>)
       ?.VITE_AGENT_NATIVE_ANALYTICS_PUBLIC_KEY;
   // A PostHog public key is an equally explicit opt-in — an app running
-  // PostHog and no Agent-Native Analytics should still report browser crashes.
+  // PostHog and no FB Factory Analytics should still report browser crashes.
   return !!publicKey || !!posthogErrorConfig();
 }
 

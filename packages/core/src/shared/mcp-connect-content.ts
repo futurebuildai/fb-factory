@@ -70,7 +70,7 @@ export const MCP_CONNECT_GUIDES: readonly McpConnectGuide[] = [
     steps: [
       "In ChatGPT web, open Settings → Apps → Advanced settings and enable developer mode if your workspace requires it.",
       "Choose Create app, paste the MCP URL above, select OAuth, and scan the tools.",
-      "Sign in with your Agent-Native account, approve the requested scopes, and enable the app in a chat.",
+      "Sign in with your FB Factory account, approve the requested scopes, and enable the app in a chat.",
     ],
     action: {
       kind: "link",
@@ -85,7 +85,7 @@ export const MCP_CONNECT_GUIDES: readonly McpConnectGuide[] = [
     steps: [
       "Open Cursor → Settings → MCP.",
       "Click Add MCP Server, paste the MCP URL above, save.",
-      "When prompted, sign in with your Agent-Native account and approve the MCP scopes.",
+      "When prompted, sign in with your FB Factory account and approve the MCP scopes.",
     ],
     note: "Cursor supports remote-OAuth MCP servers, same paste-URL flow as Claude — no terminal needed.",
   },
@@ -284,7 +284,7 @@ const MCP_CONNECT_GUIDE_TRANSLATIONS: Partial<
       steps: [
         "En la web de ChatGPT, abre Settings → Apps → Advanced settings y activa el modo de desarrollador si tu espacio de trabajo lo requiere.",
         "Elige Create app, pega la URL de MCP de arriba, selecciona OAuth y revisa las herramientas.",
-        "Inicia sesión con tu cuenta de Agent-Native, aprueba los ámbitos solicitados y activa la app en un chat.",
+        "Inicia sesión con tu cuenta de FB Factory, aprueba los ámbitos solicitados y activa la app en un chat.",
       ],
       actionLabel: "Abrir ChatGPT",
       note: "Las apps MCP personalizadas están disponibles en los espacios de trabajo web de ChatGPT compatibles. Los espacios Business, Enterprise y Edu admiten MCP completo, incluidas las acciones de escritura; Pro admite lectura y búsqueda en modo de desarrollador. Si no aparece Apps o Create app, tu plan o la política del espacio de trabajo no permite esta configuración. Es posible que los administradores deban activar el modo de desarrollador o publicar la app.",
@@ -293,7 +293,7 @@ const MCP_CONNECT_GUIDE_TRANSLATIONS: Partial<
       steps: [
         "Abre Cursor → Settings → MCP.",
         "Haz clic en Add MCP Server, pega la URL de MCP de arriba y guarda.",
-        "Cuando se te solicite, inicia sesión con tu cuenta de Agent-Native y aprueba los ámbitos de MCP.",
+        "Cuando se te solicite, inicia sesión con tu cuenta de FB Factory y aprueba los ámbitos de MCP.",
       ],
       note: "Cursor admite servidores MCP remotos con OAuth y ofrece el mismo flujo de pegar la URL que Claude, sin necesidad de usar la terminal.",
     },
@@ -337,7 +337,7 @@ const MCP_CONNECT_GUIDE_TRANSLATIONS: Partial<
       steps: [
         "Dans ChatGPT sur le web, ouvrez Settings → Apps → Advanced settings et activez le mode développeur si votre espace de travail l’exige.",
         "Choisissez Create app, collez l’URL MCP ci-dessus, sélectionnez OAuth et analysez les outils.",
-        "Connectez-vous avec votre compte Agent-Native, approuvez les champs d’application demandés et activez l’app dans un chat.",
+        "Connectez-vous avec votre compte FB Factory, approuvez les champs d’application demandés et activez l’app dans un chat.",
       ],
       actionLabel: "Ouvrir ChatGPT",
       note: "Les apps MCP personnalisées sont disponibles dans les espaces de travail web ChatGPT compatibles. Les espaces Business, Enterprise et Edu prennent en charge MCP intégralement, y compris les actions d’écriture ; Pro prend en charge la lecture et la récupération en mode développeur. Si Apps ou Create app n’apparaît pas, votre forfait ou la politique de votre espace de travail n’autorise pas cette configuration. Les administrateurs devront peut-être activer le mode développeur ou publier l’app.",
@@ -346,7 +346,7 @@ const MCP_CONNECT_GUIDE_TRANSLATIONS: Partial<
       steps: [
         "Ouvrez Cursor → Settings → MCP.",
         "Cliquez sur Add MCP Server, collez l’URL MCP ci-dessus et enregistrez.",
-        "Lorsque vous y êtes invité, connectez-vous avec votre compte Agent-Native et approuvez les champs d’application MCP.",
+        "Lorsque vous y êtes invité, connectez-vous avec votre compte FB Factory et approuvez les champs d’application MCP.",
       ],
       note: "Cursor prend en charge les serveurs MCP distants avec OAuth et propose le même flux de collage d’URL que Claude, sans terminal.",
     },
@@ -390,7 +390,7 @@ const MCP_CONNECT_GUIDE_TRANSLATIONS: Partial<
       steps: [
         "Öffne in ChatGPT im Web Settings → Apps → Advanced settings und aktiviere den Entwicklermodus, falls dein Arbeitsbereich dies erfordert.",
         "Wähle Create app, füge die MCP-URL oben ein, wähle OAuth und prüfe die Tools.",
-        "Melde dich mit deinem Agent-Native-Konto an, genehmige die angeforderten Bereiche und aktiviere die App in einem Chat.",
+        "Melde dich mit deinem FB Factory-Konto an, genehmige die angeforderten Bereiche und aktiviere die App in einem Chat.",
       ],
       actionLabel: "ChatGPT öffnen",
       note: "Benutzerdefinierte MCP-Apps sind in unterstützten ChatGPT-Webarbeitsbereichen verfügbar. Business-, Enterprise- und Edu-Arbeitsbereiche unterstützen vollständiges MCP einschließlich Schreibaktionen; Pro unterstützt Lesen und Abrufen im Entwicklermodus. Wenn Apps oder Create app fehlen, erlauben dein Tarif oder die Richtlinien deines Arbeitsbereichs diese Einrichtung nicht. Arbeitsbereich-Admins müssen möglicherweise den Entwicklermodus aktivieren oder die App veröffentlichen.",
@@ -399,7 +399,7 @@ const MCP_CONNECT_GUIDE_TRANSLATIONS: Partial<
       steps: [
         "Öffne Cursor → Settings → MCP.",
         "Klicke auf Add MCP Server, füge die MCP-URL oben ein und speichere.",
-        "Melde dich bei der Aufforderung mit deinem Agent-Native-Konto an und genehmige die MCP-Bereiche.",
+        "Melde dich bei der Aufforderung mit deinem FB Factory-Konto an und genehmige die MCP-Bereiche.",
       ],
       note: "Cursor unterstützt entfernte MCP-Server mit OAuth und denselben URL-Einfügeablauf wie Claude, ganz ohne Terminal.",
     },
@@ -443,7 +443,7 @@ const MCP_CONNECT_GUIDE_TRANSLATIONS: Partial<
       steps: [
         "No ChatGPT web, abra Settings → Apps → Advanced settings e ative o modo de desenvolvedor se o seu espaço de trabalho exigir.",
         "Escolha Create app, cole a URL MCP acima, selecione OAuth e verifique as ferramentas.",
-        "Entre com sua conta Agent-Native, aprove os escopos solicitados e ative o app em um chat.",
+        "Entre com sua conta FB Factory, aprove os escopos solicitados e ative o app em um chat.",
       ],
       actionLabel: "Abrir ChatGPT",
       note: "Apps MCP personalizados estão disponíveis em espaços de trabalho web compatíveis do ChatGPT. Os espaços Business, Enterprise e Edu oferecem suporte completo a MCP, incluindo ações de escrita; o Pro oferece suporte a leitura e busca no modo de desenvolvedor. Se Apps ou Create app não aparecer, seu plano ou a política do espaço de trabalho não permite essa configuração. Talvez os administradores precisem ativar o modo de desenvolvedor ou publicar o app.",
@@ -452,7 +452,7 @@ const MCP_CONNECT_GUIDE_TRANSLATIONS: Partial<
       steps: [
         "Abra Cursor → Settings → MCP.",
         "Clique em Add MCP Server, cole a URL MCP acima e salve.",
-        "Quando solicitado, entre com sua conta Agent-Native e aprove os escopos MCP.",
+        "Quando solicitado, entre com sua conta FB Factory e aprove os escopos MCP.",
       ],
       note: "O Cursor aceita servidores MCP remotos com OAuth e oferece o mesmo fluxo de colar a URL do Claude, sem terminal.",
     },
@@ -496,7 +496,7 @@ const MCP_CONNECT_GUIDE_TRANSLATIONS: Partial<
       steps: [
         "在 ChatGPT 网页版中打开 Settings → Apps → Advanced settings；如果工作区要求，请启用开发者模式。",
         "选择 Create app，粘贴上面的 MCP URL，选择 OAuth，然后扫描工具。",
-        "使用 Agent-Native 账户登录，批准请求的权限范围，并在聊天中启用该应用。",
+        "使用 FB Factory 账户登录，批准请求的权限范围，并在聊天中启用该应用。",
       ],
       actionLabel: "打开 ChatGPT",
       note: "自定义 MCP 应用适用于受支持的 ChatGPT 网页工作区。Business、Enterprise 和 Edu 工作区支持完整 MCP，包括写入操作；Pro 在开发者模式下支持读取和获取。如果看不到 Apps 或 Create app，你的套餐或工作区策略不允许此设置。工作区管理员可能需要启用开发者模式或发布应用。",
@@ -505,7 +505,7 @@ const MCP_CONNECT_GUIDE_TRANSLATIONS: Partial<
       steps: [
         "打开 Cursor → Settings → MCP。",
         "点击 Add MCP Server，粘贴上面的 MCP URL，然后保存。",
-        "出现提示时，使用 Agent-Native 账户登录并批准 MCP 权限范围。",
+        "出现提示时，使用 FB Factory 账户登录并批准 MCP 权限范围。",
       ],
       note: "Cursor 支持远程 OAuth MCP 服务器，使用与 Claude 相同的粘贴 URL 流程，无需终端。",
     },
@@ -549,7 +549,7 @@ const MCP_CONNECT_GUIDE_TRANSLATIONS: Partial<
       steps: [
         "在 ChatGPT 網頁版中開啟 Settings → Apps → Advanced settings；如果工作區要求，請啟用開發人員模式。",
         "選擇 Create app，貼上方的 MCP URL，選擇 OAuth，然後掃描工具。",
-        "使用 Agent-Native 帳戶登入，核准要求的權限範圍，並在聊天中啟用該應用程式。",
+        "使用 FB Factory 帳戶登入，核准要求的權限範圍，並在聊天中啟用該應用程式。",
       ],
       actionLabel: "開啟 ChatGPT",
       note: "自訂 MCP 應用程式適用於受支援的 ChatGPT 網頁工作區。Business、Enterprise 和 Edu 工作區支援完整 MCP，包括寫入動作；Pro 在開發人員模式下支援讀取和擷取。如果看不到 Apps 或 Create app，你的方案或工作區政策不允許此設定。工作區管理員可能需要啟用開發人員模式或發佈應用程式。",
@@ -558,7 +558,7 @@ const MCP_CONNECT_GUIDE_TRANSLATIONS: Partial<
       steps: [
         "開啟 Cursor → Settings → MCP。",
         "按一下 Add MCP Server，貼上方的 MCP URL，然後儲存。",
-        "出現提示時，使用 Agent-Native 帳戶登入並核准 MCP 權限範圍。",
+        "出現提示時，使用 FB Factory 帳戶登入並核准 MCP 權限範圍。",
       ],
       note: "Cursor 支援遠端 OAuth MCP 伺服器，使用與 Claude 相同的貼上 URL 流程，不需要終端機。",
     },
@@ -602,7 +602,7 @@ const MCP_CONNECT_GUIDE_TRANSLATIONS: Partial<
       steps: [
         "ChatGPT ウェブ版で Settings → Apps → Advanced settings を開き、ワークスペースで必要な場合は開発者モードを有効にします。",
         "Create app を選び、上の MCP URL を貼り付け、OAuth を選択してツールをスキャンします。",
-        "Agent-Native アカウントでサインインし、要求されたスコープを承認して、チャットでアプリを有効にします。",
+        "FB Factory アカウントでサインインし、要求されたスコープを承認して、チャットでアプリを有効にします。",
       ],
       actionLabel: "ChatGPT を開く",
       note: "カスタム MCP アプリは、対応している ChatGPT ウェブワークスペースで利用できます。Business、Enterprise、Edu のワークスペースは書き込み操作を含む完全な MCP をサポートし、Pro は開発者モードで読み取りと取得をサポートします。Apps または Create app が表示されない場合、プランまたはワークスペースのポリシーでこの設定が許可されていません。ワークスペース管理者が開発者モードを有効にするか、アプリを公開する必要がある場合があります。",
@@ -611,7 +611,7 @@ const MCP_CONNECT_GUIDE_TRANSLATIONS: Partial<
       steps: [
         "Cursor → Settings → MCP を開きます。",
         "Add MCP Server をクリックし、上の MCP URL を貼り付けて保存します。",
-        "求められたら Agent-Native アカウントでサインインし、MCP スコープを承認します。",
+        "求められたら FB Factory アカウントでサインインし、MCP スコープを承認します。",
       ],
       note: "Cursor はリモート OAuth MCP サーバーをサポートしており、ターミナルを使わず Claude と同じ URL 貼り付けフローで設定できます。",
     },
@@ -655,7 +655,7 @@ const MCP_CONNECT_GUIDE_TRANSLATIONS: Partial<
       steps: [
         "ChatGPT 웹에서 Settings → Apps → Advanced settings를 열고 워크스페이스에서 요구하는 경우 개발자 모드를 활성화합니다.",
         "Create app을 선택하고 위의 MCP URL을 붙여 넣은 다음 OAuth를 선택하고 도구를 스캔합니다.",
-        "Agent-Native 계정으로 로그인하고 요청된 범위를 승인한 다음 채팅에서 앱을 활성화합니다.",
+        "FB Factory 계정으로 로그인하고 요청된 범위를 승인한 다음 채팅에서 앱을 활성화합니다.",
       ],
       actionLabel: "ChatGPT 열기",
       note: "사용자 지정 MCP 앱은 지원되는 ChatGPT 웹 워크스페이스에서 사용할 수 있습니다. Business, Enterprise, Edu 워크스페이스는 쓰기 작업을 포함한 전체 MCP를 지원하고, Pro는 개발자 모드에서 읽기와 가져오기를 지원합니다. Apps 또는 Create app이 표시되지 않으면 요금제나 워크스페이스 정책에서 이 설정을 허용하지 않는 것입니다. 워크스페이스 관리자가 개발자 모드를 활성화하거나 앱을 게시해야 할 수 있습니다.",
@@ -664,7 +664,7 @@ const MCP_CONNECT_GUIDE_TRANSLATIONS: Partial<
       steps: [
         "Cursor → Settings → MCP를 엽니다.",
         "Add MCP Server를 클릭하고 위의 MCP URL을 붙여 넣은 다음 저장합니다.",
-        "메시지가 표시되면 Agent-Native 계정으로 로그인하고 MCP 범위를 승인합니다.",
+        "메시지가 표시되면 FB Factory 계정으로 로그인하고 MCP 범위를 승인합니다.",
       ],
       note: "Cursor는 원격 OAuth MCP 서버를 지원하며 터미널 없이 Claude와 같은 URL 붙여 넣기 흐름을 사용합니다.",
     },
@@ -708,7 +708,7 @@ const MCP_CONNECT_GUIDE_TRANSLATIONS: Partial<
       steps: [
         "ChatGPT वेब में Settings → Apps → Advanced settings खोलें और अगर आपका workspace कहता है तो developer mode चालू करें।",
         "Create app चुनें, ऊपर दिया MCP URL पेस्ट करें, OAuth चुनें और tools को स्कैन करें।",
-        "अपने Agent-Native खाते से साइन इन करें, मांगे गए scopes को मंज़ूरी दें और चैट में app चालू करें।",
+        "अपने FB Factory खाते से साइन इन करें, मांगे गए scopes को मंज़ूरी दें और चैट में app चालू करें।",
       ],
       actionLabel: "ChatGPT खोलें",
       note: "कस्टम MCP apps समर्थित ChatGPT वेब workspaces में उपलब्ध हैं। Business, Enterprise और Edu workspaces write actions सहित पूर्ण MCP का समर्थन करते हैं; Pro developer mode में read और fetch का समर्थन करता है। अगर Apps या Create app दिखाई नहीं देता, तो आपका plan या workspace policy इस सेटअप की अनुमति नहीं देता। Workspace admins को developer mode चालू करने या app प्रकाशित करने की ज़रूरत पड़ सकती है।",
@@ -717,7 +717,7 @@ const MCP_CONNECT_GUIDE_TRANSLATIONS: Partial<
       steps: [
         "Cursor → Settings → MCP खोलें।",
         "Add MCP Server पर क्लिक करें, ऊपर दिया MCP URL पेस्ट करें और सेव करें।",
-        "पूछे जाने पर अपने Agent-Native खाते से साइन इन करें और MCP scopes को मंज़ूरी दें।",
+        "पूछे जाने पर अपने FB Factory खाते से साइन इन करें और MCP scopes को मंज़ूरी दें।",
       ],
       note: "Cursor remote-OAuth MCP servers का समर्थन करता है और terminal के बिना Claude जैसा paste-URL flow देता है।",
     },
@@ -761,7 +761,7 @@ const MCP_CONNECT_GUIDE_TRANSLATIONS: Partial<
       steps: [
         "في ChatGPT على الويب، افتح Settings → Apps → Advanced settings وفعّل وضع المطوّر إذا تطلّب ذلك نطاق عملك.",
         "اختر Create app، والصق عنوان MCP أعلاه، وحدد OAuth، ثم افحص الأدوات.",
-        "سجّل الدخول بحساب Agent-Native، ووافق على النطاقات المطلوبة، وفعّل التطبيق في إحدى المحادثات.",
+        "سجّل الدخول بحساب FB Factory، ووافق على النطاقات المطلوبة، وفعّل التطبيق في إحدى المحادثات.",
       ],
       actionLabel: "فتح ChatGPT",
       note: "تتوفر تطبيقات MCP المخصصة في مساحات عمل ChatGPT على الويب المدعومة. تدعم مساحات Business وEnterprise وEdu بروتوكول MCP بالكامل، بما في ذلك إجراءات الكتابة؛ بينما يدعم Pro القراءة والجلب في وضع المطوّر. إذا لم يظهر Apps أو Create app، فلا تسمح خطتك أو سياسة مساحة العمل بهذا الإعداد. قد يحتاج مسؤولو مساحة العمل إلى تفعيل وضع المطوّر أو نشر التطبيق.",
@@ -770,7 +770,7 @@ const MCP_CONNECT_GUIDE_TRANSLATIONS: Partial<
       steps: [
         "افتح Cursor → Settings → MCP.",
         "انقر على Add MCP Server، والصق عنوان MCP أعلاه، ثم احفظ.",
-        "عند الطلب، سجّل الدخول بحساب Agent-Native ووافق على نطاقات MCP.",
+        "عند الطلب، سجّل الدخول بحساب FB Factory ووافق على نطاقات MCP.",
       ],
       note: "يدعم Cursor خوادم MCP البعيدة باستخدام OAuth، مع نفس طريقة لصق العنوان المتوفرة في Claude، من دون الحاجة إلى الطرفية.",
     },

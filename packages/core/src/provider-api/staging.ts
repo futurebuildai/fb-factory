@@ -231,7 +231,7 @@ function isProviderQuotaCooldown(response: Record<string, unknown>): boolean {
   const headers = response.headers as Record<string, string> | undefined;
   const quotaHeader =
     headers?.["x-agent-native-provider-quota"] ??
-    headers?.["X-Agent-Native-Provider-Quota"];
+    headers?.["X-FB Factory-Provider-Quota"];
   if (quotaHeader === "exhausted") return true;
   const json = response.json as Record<string, unknown> | undefined;
   return json?.error === "provider_quota_exhausted";

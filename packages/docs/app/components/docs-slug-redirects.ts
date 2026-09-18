@@ -26,7 +26,7 @@ export const DOCS_SLUG_REDIRECTS: Record<string, string> = {
   resources: "agent-resources",
   secrets: "security",
   workspace: "agent-resources",
-  // FAQ folded into What Is Agent-Native and rehomed into the docs it
+  // FAQ folded into What Is FB Factory and rehomed into the docs it
   // answered questions about (deployment, environment-variables,
   // writing-agent-instructions, cloneable-saas, key-concepts,
   // syncing-template-changes).

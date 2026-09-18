@@ -281,7 +281,7 @@ function buildHeadlessSystemPrompt(actionNames: string[]): string {
       ? `Available local actions: ${actionNames.join(", ")}.`
       : "No local actions were discovered.";
   return [
-    "You are the app agent for this Agent-Native project.",
+    "You are the app agent for this FB Factory project.",
     "Use the registered app actions as your source of truth for doing work.",
     "Use framework-search first for questions that may span the version-matched docs and source; it supports bounded substring, wildcard, SQL-like, and safe-regex matching.",
     "Use docs-search or source-search for a focused page/file read after framework-search identifies the relevant evidence.",
@@ -318,7 +318,7 @@ export async function createHeadlessBuiltinActions(): Promise<
       readOnly: true,
       tool: {
         description:
-          "Search version-matched Agent-Native docs and readable Core, Toolkit, and first-party template source together. Use this first when a docs answer may require implementation evidence; supports substring, glob, SQL-like, and safe regex modes.",
+          "Search version-matched FB Factory docs and readable Core, Toolkit, and first-party template source together. Use this first when a docs answer may require implementation evidence; supports substring, glob, SQL-like, and safe regex modes.",
         parameters: {
           type: "object",
           properties: {
@@ -365,7 +365,7 @@ export async function createHeadlessBuiltinActions(): Promise<
       readOnly: true,
       tool: {
         description:
-          "Search and read version-matched Agent-Native framework documentation bundled in @agent-native/core, plus bundled AGENTS.md and codebase skills. Use --list to see pages, --query to search, and --slug to read a page.",
+          "Search and read version-matched FB Factory framework documentation bundled in @agent-native/core, plus bundled AGENTS.md and codebase skills. Use --list to see pages, --query to search, and --slug to read a page.",
         parameters: {
           type: "object",
           properties: {

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Generates the committed plugin-marketplace bundle that turns this repository
- * itself into installable Agent-Native app marketplaces for both Claude Code and
+ * itself into installable FB Factory app marketplaces for both Claude Code and
  * Codex.
  *
  * The canonical skill content lives in the repo's exported `skills/` directory
@@ -272,7 +272,7 @@ async function expectedFiles(): Promise<GeneratedFile[]> {
         version: codexPluginVersion(app),
         description: manifest.description,
         author: {
-          name: "Agent-Native",
+          name: "FB Factory",
           url: "https://agent-native.com",
         },
         homepage: manifest.hosted.url,
@@ -329,7 +329,7 @@ async function expectedFiles(): Promise<GeneratedFile[]> {
           displayName: manifest.displayName,
           description: manifest.description,
           author: {
-            name: "Agent-Native",
+            name: "FB Factory",
             url: "https://agent-native.com",
           },
           homepage: manifest.hosted.url,
@@ -351,7 +351,7 @@ async function expectedFiles(): Promise<GeneratedFile[]> {
           version: codexPluginVersion(app),
           description: manifest.description,
           author: {
-            name: "Agent-Native",
+            name: "FB Factory",
             url: "https://agent-native.com",
           },
           homepage: manifest.hosted.url,
@@ -366,8 +366,8 @@ async function expectedFiles(): Promise<GeneratedFile[]> {
               `${manifest.displayName} packages agent instructions, app actions, ` +
               "an MCP connector, and inline UI surfaces as an installable skill. " +
               `The plugin connects to hosted ${manifest.displayName} by default; ` +
-              "use the Agent-Native CLI when you need a custom/self-hosted app URL.",
-            developerName: "Agent-Native",
+              "use the FB Factory CLI when you need a custom/self-hosted app URL.",
+            developerName: "FB Factory",
             category: "Productivity",
             capabilities: ["Interactive", "Read", "Write"],
             websiteURL: manifest.hosted.url,
@@ -388,9 +388,9 @@ async function expectedFiles(): Promise<GeneratedFile[]> {
     await jsonFile(join(".claude-plugin", "marketplace.json"), {
       name: CLAUDE_MARKETPLACE_NAME,
       description:
-        "Agent-Native app-backed skills that bundle instructions, MCP connectors, and UI surfaces.",
+        "FB Factory app-backed skills that bundle instructions, MCP connectors, and UI surfaces.",
       owner: {
-        name: "Agent-Native",
+        name: "FB Factory",
       },
       plugins: APP_BUNDLES.map((app) => {
         const manifest = manifestFor(app);
@@ -415,7 +415,7 @@ async function expectedFiles(): Promise<GeneratedFile[]> {
       name: CLAUDE_MARKETPLACE_NAME,
       interface: {
         displayName:
-          "Agent-Native app-backed skills that bundle instructions, MCP connectors, and UI surfaces.",
+          "FB Factory app-backed skills that bundle instructions, MCP connectors, and UI surfaces.",
       },
       plugins: APP_BUNDLES.map((app) => {
         const name = pluginName(app);

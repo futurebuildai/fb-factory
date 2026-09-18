@@ -311,7 +311,7 @@ function NativeClipPlayerContent({
             uri: videoUrl,
             headers: {
               Authorization: `Bearer ${sessionToken}`,
-              "X-Agent-Native-Client": "mobile",
+              "X-FB Factory-Client": "mobile",
             },
             metadata: { title: detail.recording.title },
           }

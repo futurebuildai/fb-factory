@@ -69,12 +69,12 @@ function assertSourceContract(): void {
   assert.match(
     codeAgentsApp,
     /<PromptComposer[\s\S]*className="code-agents-standard-composer code-agents-composer-shell"[\s\S]*layoutVariant=\{variant\}/,
-    "Agent-Native Code should render the shared PromptComposer shell",
+    "FB Factory Code should render the shared PromptComposer shell",
   );
   assert.match(
     codeAgentsApp,
     /<NewSessionComposer[\s\S]*\/>[\s\S]*<ProjectFolderPicker[\s\S]*variant="bar"/,
-    "Agent-Native Code should keep the folder picker below the new-session composer",
+    "FB Factory Code should keep the folder picker below the new-session composer",
   );
 
   const toolbarStart = tiptapComposer.indexOf("agent-composer-toolbar");
@@ -127,12 +127,12 @@ function assertSourceContract(): void {
   assert.match(
     codeAgentsApp,
     /showingSelectedRunDetail[\s\S]*code-agents-overview--chat/,
-    "Agent-Native Code should mark selected transcript views with a chat layout class",
+    "FB Factory Code should mark selected transcript views with a chat layout class",
   );
   assert.match(
     codeStyles,
     /\.code-agents-overview--chat\s*\{[\s\S]*overflow:\s*hidden/,
-    "Selected Agent-Native Code transcripts should keep scrolling inside the chat, not the outer overview",
+    "Selected FB Factory Code transcripts should keep scrolling inside the chat, not the outer overview",
   );
 }
 
@@ -214,8 +214,8 @@ function fixtureHtml(): string {
     </style>
   </head>
   <body>
-    <section class="code-agents-surface" aria-label="Agent-Native Code">
-      <aside class="code-agents-rail" aria-label="Agent-Native Code goals and sessions"></aside>
+    <section class="code-agents-surface" aria-label="FB Factory Code">
+      <aside class="code-agents-rail" aria-label="FB Factory Code goals and sessions"></aside>
       <main class="code-agents-main">
         <div class="code-agents-overview">
           <div class="code-agents-start">
@@ -280,9 +280,9 @@ function fixtureHtml(): string {
       data-smoke="code-chat-layout"
       class="code-agents-surface"
       style="height: 420px; width: 900px; margin: 32px auto;"
-      aria-label="Agent-Native Code chat layout"
+      aria-label="FB Factory Code chat layout"
     >
-      <aside class="code-agents-rail" aria-label="Agent-Native Code goals and sessions"></aside>
+      <aside class="code-agents-rail" aria-label="FB Factory Code goals and sessions"></aside>
       <main class="code-agents-main">
         <div data-smoke="code-chat-overview" class="code-agents-overview code-agents-overview--chat">
           <div class="code-agents-detail code-agents-detail--chat">
@@ -538,7 +538,7 @@ async function main(): Promise<void> {
         folder: '[data-smoke="code-folder-picker"]',
       },
     );
-    assertComposerGeometry(codeSnapshot, "Agent-Native Code composer", {
+    assertComposerGeometry(codeSnapshot, "FB Factory Code composer", {
       hasFolder: true,
     });
 
@@ -589,19 +589,19 @@ async function main(): Promise<void> {
     assert.equal(
       chatLayout.overviewOverflowY,
       "hidden",
-      "Agent-Native Code selected chat view should not create an outer scroll layer",
+      "FB Factory Code selected chat view should not create an outer scroll layer",
     );
     assert.ok(
       chatLayout.innerCanScroll,
-      "Agent-Native Code selected chat view should keep transcript scrolling inside the chat",
+      "FB Factory Code selected chat view should keep transcript scrolling inside the chat",
     );
     assert.ok(
       chatLayout.scrollBottom <= chatLayout.composerTop + 1,
-      "Agent-Native Code selected chat scroll area should end before the composer",
+      "FB Factory Code selected chat scroll area should end before the composer",
     );
     assert.ok(
       chatLayout.lastBottom <= chatLayout.composerTop + 1,
-      "Agent-Native Code selected chat content should not sit under the composer",
+      "FB Factory Code selected chat content should not sit under the composer",
     );
   } finally {
     await browser.close();

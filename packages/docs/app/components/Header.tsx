@@ -170,7 +170,7 @@ export default function Header() {
               <Link
                 data-an-prefetch="viewport"
                 to={localizedPath("/")}
-                aria-label="Agent-Native"
+                aria-label="FB Factory"
                 className="flex min-w-0 shrink-0 items-center gap-2 text-[var(--fg)] no-underline"
                 suppressHydrationWarning
               >
@@ -192,7 +192,7 @@ export default function Header() {
                 />
                 <img
                   src="/agent-native-logo-light.svg"
-                  alt="Agent-Native"
+                  alt="FB Factory"
                   width={1286}
                   height={317}
                   className="hidden aspect-[1286/317] h-10 w-auto min-[380px]:block dark:hidden"
@@ -201,7 +201,7 @@ export default function Header() {
                 />
                 <img
                   src="/agent-native-logo-dark.svg"
-                  alt="Agent-Native"
+                  alt="FB Factory"
                   width={1286}
                   height={317}
                   className="hidden aspect-[1286/317] h-10 w-auto min-[380px]:dark:block"

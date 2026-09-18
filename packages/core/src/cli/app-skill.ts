@@ -314,8 +314,7 @@ export function normalizeAppSkillManifest(raw: unknown): AppSkillManifest {
     id,
     displayName: stringValue(raw.displayName) ?? id,
     description:
-      stringValue(raw.description) ??
-      `Agent-Native app-backed skill for ${id}.`,
+      stringValue(raw.description) ?? `FB Factory app-backed skill for ${id}.`,
     ...(stringValue(raw.version) ? { version: stringValue(raw.version) } : {}),
     hosted: {
       url: hostedUrl,
@@ -660,7 +659,7 @@ function standardAgentPluginManifest(
     version,
     description: manifest.description,
     author: {
-      name: "Agent-Native",
+      name: "FB Factory",
       url: "https://agent-native.com",
     },
     homepage: manifest.hosted.url,
@@ -779,7 +778,7 @@ function writeCodexPluginAdapter(
     version,
     description: manifest.description,
     author: {
-      name: "Agent-Native",
+      name: "FB Factory",
       url: "https://agent-native.com",
     },
     homepage: manifest.hosted.url,
@@ -799,7 +798,7 @@ function writeCodexPluginAdapter(
       longDescription:
         `${manifest.displayName} packages agent instructions, app actions, ` +
         "an MCP connector, and inline UI surfaces as an installable skill.",
-      developerName: "Agent-Native",
+      developerName: "FB Factory",
       category: "Productivity",
       capabilities: ["Interactive", "Read", "Write"],
       websiteURL: manifest.hosted.url,
@@ -831,9 +830,9 @@ function writeClaudeMarketplaceAdapter(
   writeJson(path.join(adapterDir, ".claude-plugin", "marketplace.json"), {
     name: marketplaceName,
     description:
-      "Agent-Native app-backed skills that bundle instructions, MCP connectors, and UI surfaces.",
+      "FB Factory app-backed skills that bundle instructions, MCP connectors, and UI surfaces.",
     owner: {
-      name: "Agent-Native",
+      name: "FB Factory",
     },
     plugins: [
       {
@@ -859,7 +858,7 @@ function writeClaudeMarketplaceAdapter(
     displayName: manifest.displayName,
     description: manifest.description,
     author: {
-      name: "Agent-Native",
+      name: "FB Factory",
       url: "https://agent-native.com",
     },
     homepage: manifest.hosted.url,

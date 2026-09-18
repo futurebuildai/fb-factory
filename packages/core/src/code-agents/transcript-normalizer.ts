@@ -551,11 +551,11 @@ function isLowSignalLifecycleEvent(event: CodeAgentTranscriptEvent): boolean {
 }
 
 const LOW_SIGNAL_STATUS_MESSAGES = [
-  /^Agent-Native Code run started\.?$/i,
-  /^Agent-Native Code run completed\.?$/i,
-  /^Agent-Native Code process exited\.?$/i,
-  /^Starting local Agent-Native Code execution\.?$/i,
-  /^Remote Agent-Native Code run queued\.?$/i,
+  /^FB Factory Code run started\.?$/i,
+  /^FB Factory Code run completed\.?$/i,
+  /^FB Factory Code process exited\.?$/i,
+  /^Starting local FB Factory Code execution\.?$/i,
+  /^Remote FB Factory Code run queued\.?$/i,
   /^Connected \d+ MCP tools? for this run\.?$/i,
 ];
 
@@ -660,11 +660,11 @@ function stripRunnerDiagnostics(
 const RUNNER_DIAGNOSTIC_LINE_PATTERNS = {
   engineDetect: /^\[engine-detect\][^\r\n]*(?:\r?\n|$)/gm,
   builderEngine: /^\[builder-engine\]\s*[←→][^\r\n]*(?:\r?\n|$)/gm,
-  // Strip the "Agent-Native Code session started." banner block that the CLI
+  // Strip the "FB Factory Code session started." banner block that the CLI
   // prints to stdout at the start of every run. It is informational for
   // terminal users but clutters the chat transcript.
   sessionStartedBanner:
-    /\n?Agent-Native Code session started\.[\s\S]*?Streaming output below\. The transcript is saved with this run\.\n?/,
+    /\n?FB Factory Code session started\.[\s\S]*?Streaming output below\. The transcript is saved with this run\.\n?/,
 };
 
 function toolEventType(

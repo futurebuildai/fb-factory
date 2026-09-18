@@ -101,7 +101,7 @@ const messages: AgentChatTranslation = {
   "onboarding.capability.about": "关于{{label}}",
   "onboarding.capability.why": "为什么需要{{label}}",
   "onboarding.openAiKeySettings": "打开 AI 密钥设置",
-  "aboutAgentNative.title": "关于 Agent-Native",
+  "aboutAgentNative.title": "关于 FB Factory",
   "aboutAgentNative.version": "版本",
   "aboutAgentNative.environment": "环境",
   "aboutAgentNative.build": "构建",
@@ -257,8 +257,7 @@ const messages: AgentChatTranslation = {
   "composer.pastedTextError": "无法附加粘贴的文本。",
   "composer.plan": "规划",
   "composer.planDescription": "先进行只读研究并获取批准",
-  "composer.planDesktopRequired":
-    "请打开 Agent-Native Desktop 以使用规划模式。",
+  "composer.planDesktopRequired": "请打开 FB Factory Desktop 以使用规划模式。",
   "composer.previewAttachment": "预览 {{name}}",
   "composer.reasoning": "推理",
   "composer.reasoningEffort.auto": "自动",

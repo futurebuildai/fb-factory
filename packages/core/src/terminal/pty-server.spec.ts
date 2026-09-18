@@ -156,10 +156,10 @@ describe("createPtyWebSocketServer", () => {
 
     expect(
       resolvePtySpawnHelper(
-        "/Applications/Agent-Native.app/Contents/Resources/app.asar/node_modules/node-pty/package.json",
+        "/Applications/FB Factory.app/Contents/Resources/app.asar/node_modules/node-pty/package.json",
       ),
     ).toBe(
-      `/Applications/Agent-Native.app/Contents/Resources/app.asar.unpacked/node_modules/node-pty/prebuilds/${process.platform}-${process.arch}/spawn-helper`,
+      `/Applications/FB Factory.app/Contents/Resources/app.asar.unpacked/node_modules/node-pty/prebuilds/${process.platform}-${process.arch}/spawn-helper`,
     );
   });
 

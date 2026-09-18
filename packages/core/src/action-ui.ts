@@ -7,7 +7,7 @@ export const ACTION_CHAT_UI_WORKSPACE_FILE_RENDERER = "core.workspace-file";
 
 export interface ActionChatUIConfig {
   /**
-   * Exact renderer id to use in Agent-Native chat. This is native first-party
+   * Exact renderer id to use in FB Factory chat. This is native first-party
    * React UI, distinct from MCP Apps resources for external hosts.
    */
   renderer: string;

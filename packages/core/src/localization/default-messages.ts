@@ -118,7 +118,7 @@ const messages = {
     profileNameEdit: "Edit name",
     profileNamePlaceholder: "Your name",
     profileNameDescription:
-      "This name is used when referring to you across Agent-Native apps.",
+      "This name is used when referring to you across FB Factory apps.",
     profileSave: "Save changes",
     profileSaving: "Saving...",
     profileSaved: "Profile updated",
@@ -582,12 +582,12 @@ const messages = {
       threadDebugSelectPrompt: "Select a failed run or thread to inspect.",
       browserChatUnavailableTitle: "Browser chat session unavailable",
       browserChatUnavailableDescription:
-        "Reconnect from the Agent-Native browser extension.",
+        "Reconnect from the FB Factory browser extension.",
       browserChatPlaceholder: "Ask about this page…",
       browserChatAttachedPlaceholder: "Ask about {{page}}…",
       browserConnectTitle: "Connect browser chat",
       browserConnectDescription:
-        "Allow the Agent-Native Chrome extension to open this Dispatch chat session. The connection uses a one-time, short-lived ticket.",
+        "Allow the FB Factory Chrome extension to open this Dispatch chat session. The connection uses a one-time, short-lived ticket.",
       browserConnectInvalid:
         "This connection request is invalid. Start again from the extension.",
       browserConnectConnected:
@@ -595,7 +595,7 @@ const messages = {
       browserConnectConnecting: "Connecting…",
       browserConnectButton: "Connect",
       browserConnectOpenFromExtension:
-        "Open this page from the Agent-Native Chrome extension.",
+        "Open this page from the FB Factory Chrome extension.",
       browserConnectFailed: "The browser extension did not connect.",
     },
   },
@@ -609,7 +609,7 @@ const messages = {
     useBuilder: "Use Builder",
     openDesktopToEditCode: "Open Desktop to edit code",
     codeUnavailableDescription:
-      "Source-code changes and CLI access are available in the Agent-Native Desktop app.",
+      "Source-code changes and CLI access are available in the FB Factory Desktop app.",
     downloadDesktop: "Download Desktop",
     chatMode: "Chat mode",
     chat: "Chat",
@@ -1041,7 +1041,7 @@ const messages = {
       '"{{feature}}" creates or modifies source code, which needs Desktop or Builder from this surface.',
     subtitle:
       "This action creates or modifies source code, which needs Desktop or Builder from this surface.",
-    desktopTitle: "Use Agent-Native Desktop",
+    desktopTitle: "Use FB Factory Desktop",
     desktopDescription:
       "Open the project in the desktop app to enable source edits and CLI access.",
     builderAgentTitle: "Use Builder.io Agent",
@@ -1557,7 +1557,7 @@ const messages = {
           "Bring Figma design context and canvas actions into an agent.",
         useCase: "Design files, components, variables, design systems, canvas",
         setupNote:
-          "The Figma integration only allows clients listed in Figma's integration catalog, so this remote endpoint cannot connect from Agent-Native yet. Use the Figma REST API fallback with a personal access token for reading file and node context; canvas actions remain unavailable until Figma approves Agent-Native.",
+          "The Figma integration only allows clients listed in Figma's integration catalog, so this remote endpoint cannot connect from FB Factory yet. Use the Figma REST API fallback with a personal access token for reading file and node context; canvas actions remain unavailable until Figma approves FB Factory.",
       },
       canva: {
         description: "Search, create, and update Canva designs and assets.",
@@ -1571,7 +1571,7 @@ const messages = {
           "Search Vercel docs and inspect projects, deployments, and logs.",
         useCase: "Deployments, projects, logs, domains, hosting, documentation",
         setupNote:
-          "The Vercel integration only accepts reviewed and approved AI clients. Agent-Native must be added to Vercel's supported-client list before a generic framework connection will work.",
+          "The Vercel integration only accepts reviewed and approved AI clients. FB Factory must be added to Vercel's supported-client list before a generic framework connection will work.",
       },
       github: {
         description:
@@ -1586,7 +1586,7 @@ const messages = {
           "Search Slack conversations and take workspace actions through its integration.",
         useCase: "Messages, channels, people, company memory, workflows",
         setupNote:
-          "The Slack integration requires a registered Slack app with a fixed app ID. Dynamic client registration is not supported, and only Slack Marketplace or internal apps may connect. Use Slack's managed messaging OAuth flow for Agent-Native workflows.",
+          "The Slack integration requires a registered Slack app with a fixed app ID. Dynamic client registration is not supported, and only Slack Marketplace or internal apps may connect. Use Slack's managed messaging OAuth flow for FB Factory workflows.",
       },
       asana: {
         description:
@@ -1631,7 +1631,7 @@ const messages = {
         description: "Work with PayPal payments, invoices, and commerce data.",
         useCase: "Payments, invoices, transactions, merchant operations",
         setupNote:
-          "PayPal exposes OAuth discovery and login for its remote agent integration. Agent-Native uses the currently live /sse endpoint; review the merchant permissions before authorizing.",
+          "PayPal exposes OAuth discovery and login for its remote agent integration. FB Factory uses the currently live /sse endpoint; review the merchant permissions before authorizing.",
       },
       box: {
         description: "Search and manage files and folders in Box.",

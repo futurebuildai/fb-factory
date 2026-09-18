@@ -2338,7 +2338,7 @@ describe("Vite MCP embed headers", () => {
     expect(setHeader).toHaveBeenCalledWith("Vary", "Origin");
     expect(setHeader).toHaveBeenCalledWith(
       "Access-Control-Allow-Headers",
-      expect.stringContaining("X-Agent-Native-Embed-Target"),
+      expect.stringContaining("X-FB Factory-Embed-Target"),
     );
     expect(setHeader).toHaveBeenCalledWith(
       "Cross-Origin-Resource-Policy",

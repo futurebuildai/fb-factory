@@ -23,7 +23,7 @@ export interface AgentNativeFrameProps extends Omit<
   IframeHTMLAttributes<HTMLIFrameElement>,
   "src"
 > {
-  /** URL of the Agent-Native sidecar/frame app. */
+  /** URL of the FB Factory sidecar/frame app. */
   agentUrl: string;
   /**
    * Exact trusted sidecar origin. Defaults to `new URL(agentUrl).origin`.
@@ -84,7 +84,7 @@ export const AgentNativeFrame = forwardRef<
     auth,
     onBridgeEvent,
     onBridgeReady,
-    title = "Agent-Native assistant",
+    title = "FB Factory assistant",
     sandbox = "allow-scripts allow-same-origin allow-forms allow-popups allow-downloads",
     allow = "clipboard-read; clipboard-write; microphone; fullscreen",
     referrerPolicy = "strict-origin-when-cross-origin",

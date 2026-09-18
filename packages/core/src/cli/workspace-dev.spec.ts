@@ -559,7 +559,7 @@ describe("workspace dev startup", () => {
 
     const res = await fetch(url, { redirect: "manual" });
     expect(res.status).toBe(200);
-    expect(await res.text()).toContain("Agent-Native Workspace");
+    expect(await res.text()).toContain("FB Factory Workspace");
     expect(fake.startedApps()).toEqual([]);
   });
 

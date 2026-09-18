@@ -22,7 +22,7 @@ export const meta = () =>
   withTemplateSocialImage(
     [
       {
-        title: "Free AI Analytics Tool | Agent-Native Analytics",
+        title: "Free AI Analytics Tool | FB Factory Analytics",
       },
       {
         name: "description",
@@ -31,7 +31,7 @@ export const meta = () =>
       },
       {
         property: "og:title",
-        content: "Free AI Analytics Tool | Agent-Native Analytics",
+        content: "Free AI Analytics Tool | FB Factory Analytics",
       },
       {
         property: "og:description",

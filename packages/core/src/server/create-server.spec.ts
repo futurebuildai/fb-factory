@@ -63,7 +63,7 @@ describe("createServer", () => {
     expect(res.status).toBe(204);
     expect(res.headers.get("Access-Control-Allow-Origin")).toBe(origin);
     expect(res.headers.get("Access-Control-Allow-Headers")).toContain(
-      "X-Agent-Native-Embed-Transplant",
+      "X-FB Factory-Embed-Transplant",
     );
     expect(res.headers.get("Access-Control-Allow-Headers")).toContain(
       "X-User-Timezone",

@@ -33,7 +33,7 @@ import { signRealtimeSubscribeToken } from "./short-lived-token.js";
 /**
  * Reserved env var holding the app's per-project HMAC secret. Injected by the
  * Builder provisioning path (`SYSTEM_RESERVED_KEYS` + prod allowlist); see the
- * Agent-Native Realtime Sync tech spec.
+ * FB Factory Realtime Sync tech spec.
  */
 export const REALTIME_HMAC_SECRET_ENV = "AGENT_NATIVE_REALTIME_HMAC_SECRET";
 

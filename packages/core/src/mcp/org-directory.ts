@@ -301,7 +301,7 @@ async function fetchOrgAppsResultInternal(
           Accept: "application/json",
           ...protectionHeaders,
           ...(opts?.includeDirectoryApp
-            ? { "X-Agent-Native-Include-Directory-App": "1" }
+            ? { "X-FB Factory-Include-Directory-App": "1" }
             : {}),
         },
         ...(protectionHeaders["x-vercel-protection-bypass"]

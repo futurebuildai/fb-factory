@@ -232,7 +232,7 @@ function makeWebEvent(opts: MakeEventOpts): any {
     "content-type": "application/json",
     // A deployed app (non-loopback host) is authenticated — header-only
     // dev-open is loopback-only now (security: a public deploy with no
-    // secret must not be impersonable via X-Agent-Native-Owner-Email).
+    // secret must not be impersonable via X-FB Factory-Owner-Email).
     // Tests that exercise the unauthenticated path override this.
     authorization: "Bearer test-access-token",
     ...(opts.headers ?? {}),
@@ -330,7 +330,7 @@ vi.mock("../server/framework-request-handler.js", () => ({
 
 const config = {
   name: "agent-native-mail",
-  title: "Agent-Native Mail",
+  title: "FB Factory Mail",
   appId: "mail",
   description: "Mail app",
   instructions: "Call get-mail-settings before drafting.",
@@ -687,7 +687,7 @@ describe("handleMcpRequest — web-standard runtime fallback (no Node req/res)",
     expect(out.id).toBe(1);
     expect(out.error).toBeUndefined();
     expect(out.result.serverInfo.name).toBe("agent-native-mail");
-    expect(out.result.serverInfo.title).toBe("Agent-Native Mail");
+    expect(out.result.serverInfo.title).toBe("FB Factory Mail");
     expect(out.result.serverInfo.description).toBe("Mail app");
     expect(out.result.instructions).toContain(
       "Call get-mail-settings before drafting.",

@@ -1,10 +1,10 @@
 # Environment variables
 
-This is the exhaustive maintainer inventory for Agent-Native. It covers
+This is the exhaustive maintainer inventory for FB Factory. It covers
 variables used by first-party runtime code, templates, build/deploy scripts,
 and checked-in `.env.example` files.
 
-The published [Agent-Native docs site](/docs/environment-variables) is a
+The published [FB Factory docs site](/docs/environment-variables) is a
 curated framework/workspace reference. It intentionally leaves template-only,
 provider-catalog, and CI/host plumbing out of the user-facing page.
 
@@ -29,7 +29,7 @@ The focused user-facing guides remain authoritative for their areas:
 ## Configuration-first rule
 
 For committed, non-secret public app defaults, `agent-native.config.ts` is the
-primary configuration API and the [Agent-Native app configuration
+primary configuration API and the [FB Factory app configuration
 guide](../packages/core/docs/content/agent-native-config.mdx) is the primary
 reference. Put the default in that file first. Use the deterministic
 `AGENT_NATIVE_CONFIG_<PATH>` alias only when a public value must vary by
@@ -206,7 +206,7 @@ workspace connection when available.
 | `CLIPS_*`                                  | Clips media workers, transcription, remuxing, compression, desktop builds, and Sentry settings.                                                                                          |
 | `CONTENT_*`                                | Content demo, E2E, parity, and public-base-url settings.                                                                                                                                 |
 | `DISPATCH_*`                               | Dispatch database, workspace smoke, owner, builder, vault, and sender-trust settings.                                                                                                    |
-| `AGENT_NATIVE_WORKSPACE_REPO_URL`          | Optional Git repository URL that Dispatch provisions as the Builder project for hosted workspace app creation. Defaults to the Agent-Native workspace repository.                        |
+| `AGENT_NATIVE_WORKSPACE_REPO_URL`          | Optional Git repository URL that Dispatch provisions as the Builder project for hosted workspace app creation. Defaults to the FB Factory workspace repository.                        |
 | `PLAN_*`                                   | Plan local/hosted URLs, publishing, guest limits, E2E, recap, and visual-answer integration.                                                                                             |
 | `FACTORY_*`                                | Factory public URL, webhook, and Builder integration settings.                                                                                                                           |
 | `CRM_*`                                    | CRM enrichment and provider settings.                                                                                                                                                    |
@@ -447,8 +447,8 @@ only in code.
 | `agent.erroredRunRetentionMs`                 | `AGENT_ERRORED_RUN_RETENTION_MS`                                                                                         | number  | —                                            | How long an errored agent run row is kept, in milliseconds.                                                                                                                                                                                               |
 | `agent.backgroundNoProgressTimeoutMs`         | `AGENT_BACKGROUND_NO_PROGRESS_TIMEOUT_MS`                                                                                | number  | `150000`                                     | No-progress backstop for a background-function run, in milliseconds. 0 disables it.                                                                                                                                                                       |
 | `agent.backgroundRunHardTimeoutMs`            | `AGENT_BACKGROUND_RUN_HARD_TIMEOUT_MS`                                                                                   | number  | `600000`                                     | Hard abort for one in-process background automation run, in milliseconds. This is the host's real function budget for scheduled work.                                                                                                                     |
-| `analytics.agentNativePublicKey`              | `AGENT_NATIVE_ANALYTICS_PUBLIC_KEY`, `VITE_AGENT_NATIVE_ANALYTICS_PUBLIC_KEY`, `AGENT_NATIVE_BUILD_ANALYTICS_PUBLIC_KEY` | string  | —                                            | Public key for first-party Agent-Native Analytics events.                                                                                                                                                                                                 |
-| `analytics.agentNativeEndpoint`               | `AGENT_NATIVE_ANALYTICS_ENDPOINT`, `VITE_AGENT_NATIVE_ANALYTICS_ENDPOINT`, `AGENT_NATIVE_BUILD_ANALYTICS_ENDPOINT`       | string  | `"https://analytics.agent-native.com/track"` | Endpoint for first-party Agent-Native Analytics events.                                                                                                                                                                                                   |
+| `analytics.agentNativePublicKey`              | `AGENT_NATIVE_ANALYTICS_PUBLIC_KEY`, `VITE_AGENT_NATIVE_ANALYTICS_PUBLIC_KEY`, `AGENT_NATIVE_BUILD_ANALYTICS_PUBLIC_KEY` | string  | -                                            | Public key for first-party FB Factory Analytics events.                                                                                                                                                                                                 |
+| `analytics.agentNativeEndpoint`               | `AGENT_NATIVE_ANALYTICS_ENDPOINT`, `VITE_AGENT_NATIVE_ANALYTICS_ENDPOINT`, `AGENT_NATIVE_BUILD_ANALYTICS_ENDPOINT`       | string  | `"https://analytics.agent-native.com/track"` | Endpoint for first-party FB Factory Analytics events.                                                                                                                                                                                                   |
 | `app.id`                                      | `AGENT_NATIVE_APP_ID`, `APP_ID`, `AGENT_APP`                                                                             | string  | —                                            | Stable identity of this app deployment.                                                                                                                                                                                                                   |
 | `app.legacyId`                                | `AGENT_APP`                                                                                                              | string  | —                                            | Deprecated app identity retained for historical data compatibility.                                                                                                                                                                                       |
 | `app.workspaceId`                             | `AGENT_NATIVE_WORKSPACE_APP_ID`, `VITE_AGENT_NATIVE_WORKSPACE_APP_ID`                                                    | string  | —                                            | Identity assigned by a workspace deploy. Credential grants are scoped to this.                                                                                                                                                                            |

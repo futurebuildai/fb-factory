@@ -101,7 +101,7 @@ describe("Portal transfer context", () => {
     appendCodeAgentTranscriptEvent({
       runId: "task-target",
       kind: "status",
-      message: "Remote Agent-Native Code run queued.",
+      message: "Remote FB Factory Code run queued.",
     });
 
     const context = createPortalTransferContext({

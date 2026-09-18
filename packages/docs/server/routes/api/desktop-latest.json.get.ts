@@ -33,7 +33,7 @@ export default defineEventHandler(async (event) => {
         code: "desktop_release_unavailable",
         message: "Desktop release information is temporarily unavailable.",
         resolution:
-          "Retry shortly. If the problem persists, check the Agent-Native release page.",
+          "Retry shortly. If the problem persists, check the FB Factory release page.",
       },
       "public, max-age=30",
     );

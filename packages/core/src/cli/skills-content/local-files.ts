@@ -92,7 +92,7 @@ The local-files contract:
   explicitly opts into publishing.
 
 Local-files mode prevents plan/recap content from being uploaded to the
-Agent-Native Plan server or database. It does not by itself make the coding agent's language model local;
+FB Factory Plan server or database. It does not by itself make the coding agent's language model local;
 for that stronger boundary the host agent/model must also be local or otherwise
 approved by the user.
 

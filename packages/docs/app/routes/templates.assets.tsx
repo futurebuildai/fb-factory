@@ -22,7 +22,7 @@ export const meta = () =>
   withTemplateSocialImage(
     [
       {
-        title: "Free Brand Asset Management & AI Images | Agent-Native Assets",
+        title: "Free Brand Asset Management & AI Images | FB Factory Assets",
       },
       {
         name: "description",
@@ -31,8 +31,7 @@ export const meta = () =>
       },
       {
         property: "og:title",
-        content:
-          "Free Brand Asset Management & AI Images | Agent-Native Assets",
+        content: "Free Brand Asset Management & AI Images | FB Factory Assets",
       },
       {
         property: "og:description",

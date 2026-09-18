@@ -286,7 +286,7 @@ async function remoteFetch<T>(
         Accept: "application/json",
         "Content-Type": "application/json",
         Authorization: `Bearer ${token}`,
-        "X-Agent-Native-Client": "mobile",
+        "X-FB Factory-Client": "mobile",
       },
       body: options.body ? JSON.stringify(options.body) : undefined,
     });

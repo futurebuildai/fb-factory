@@ -81,19 +81,18 @@ const messages = {
     },
     pages: {
       browserChatUnavailableTitle: "浏览器聊天会话不可用",
-      browserChatUnavailableDescription:
-        "请从 Agent-Native 浏览器扩展重新连接。",
+      browserChatUnavailableDescription: "请从 FB Factory 浏览器扩展重新连接。",
       browserChatPlaceholder: "询问此页面…",
       browserChatAttachedPlaceholder: "询问 {{page}}…",
       browserConnectTitle: "连接浏览器聊天",
       browserConnectDescription:
-        "允许 Agent-Native Chrome 扩展打开此 Dispatch 聊天会话。连接使用一次性的短期票据。",
+        "允许 FB Factory Chrome 扩展打开此 Dispatch 聊天会话。连接使用一次性的短期票据。",
       browserConnectInvalid: "此连接请求无效。请从扩展重新开始。",
       browserConnectConnected: "浏览器聊天已连接。你可以关闭此标签页。",
       browserConnectConnecting: "正在连接…",
       browserConnectButton: "连接",
       browserConnectOpenFromExtension:
-        "请从 Agent-Native Chrome 扩展打开此页面。",
+        "请从 FB Factory Chrome 扩展打开此页面。",
       browserConnectFailed: "浏览器扩展未能连接。",
       appsDescription: "打开工作区应用程序并从 Dispatch 开始创建新应用程序。",
       appsDescriptionWithWorkspace:
@@ -219,7 +218,7 @@ const messages = {
     useBuilder: "使用生成器",
     openDesktopToEditCode: "打开桌面编辑代码",
     codeUnavailableDescription:
-      "Agent-Native 桌面应用程序中提供源代码更改和 CLI 访问。",
+      "FB Factory 桌面应用程序中提供源代码更改和 CLI 访问。",
     downloadDesktop: "下载桌面",
     chatMode: "聊天模式",
     chat: "聊天",
@@ -331,7 +330,7 @@ const messages = {
     subtitleWithFeature:
       '"{{feature}}" creates or modifies source code, which needs Desktop or Builder from this surface.',
     subtitle: "此操作创建或修改源代码，需要此界面的 Desktop 或 Builder。",
-    desktopTitle: "使用Agent-Native桌面",
+    desktopTitle: "使用FB Factory桌面",
     desktopDescription: "在桌面应用程序中打开项目以启用源代码编辑和 CLI 访问。",
     builderAgentTitle: "使用Builder.io代理",
     builderAgentDescription:

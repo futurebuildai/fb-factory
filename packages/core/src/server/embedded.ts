@@ -59,16 +59,16 @@ export interface AgentNativeEmbeddedAuthOptions extends Omit<
 > {
   /**
    * Resolve the already-authenticated host user. Return null for anonymous
-   * requests. No Agent-Native login is shown when this is supplied.
+   * requests. No FB Factory login is shown when this is supplied.
    */
   getSession: AgentNativeEmbeddedGetSession;
 }
 
 export interface AgentNativeEmbeddedPluginOptions {
   /**
-   * Database used by Agent-Native managed tables. Defaults to the existing
+   * Database used by FB Factory managed tables. Defaults to the existing
    * DATABASE_URL environment variable. For embedded SaaS installs, prefer a
-   * dedicated Agent-Native database/schema unless you explicitly want
+   * dedicated FB Factory database/schema unless you explicitly want
    * framework-owned tables in the host product database.
    */
   databaseUrl?: string;

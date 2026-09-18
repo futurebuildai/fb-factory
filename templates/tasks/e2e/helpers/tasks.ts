@@ -3,7 +3,7 @@ import { expect, type APIRequestContext } from "@playwright/test";
 export async function resetTasks(request: APIRequestContext) {
   const listResponse = await request.get(
     "/_agent-native/actions/list-tasks?includeDone=true",
-    { headers: { "X-Agent-Native-Frontend": "1" } },
+    { headers: { "X-FB Factory-Frontend": "1" } },
   );
   expect(listResponse.ok()).toBeTruthy();
   const { tasks } = (await listResponse.json()) as {
@@ -16,7 +16,7 @@ export async function resetTasks(request: APIRequestContext) {
       {
         headers: {
           "Content-Type": "application/json",
-          "X-Agent-Native-Frontend": "1",
+          "X-FB Factory-Frontend": "1",
         },
         data: { taskId: task.id },
       },
@@ -85,7 +85,7 @@ export async function createTask(request: APIRequestContext, title: string) {
   const response = await request.post("/_agent-native/actions/create-task", {
     headers: {
       "Content-Type": "application/json",
-      "X-Agent-Native-Frontend": "1",
+      "X-FB Factory-Frontend": "1",
     },
     data: { title },
   });

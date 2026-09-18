@@ -25,7 +25,7 @@ const reportedSegmentSchema = z.object({
 
 export default defineAction({
   description:
-    "Report an external agent host's visible context segments to Context X-Ray. External reports are advisory unless the content came from Agent-Native.",
+    "Report an external agent host's visible context segments to Context X-Ray. External reports are advisory unless the content came from FB Factory.",
   schema: z.object({
     threadId: z.string(),
     model: z.string().optional(),

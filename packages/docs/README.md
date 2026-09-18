@@ -1,6 +1,6 @@
-# Agent-Native Docs
+# FB Factory Docs
 
-This package builds the public docs site for Agent-Native.
+This package builds the public docs site for FB Factory.
 
 ## Source
 

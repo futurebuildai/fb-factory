@@ -337,7 +337,7 @@ async function selectRawByKey(
 /**
  * Create or refresh a managed install. Re-installs may rotate tokens inside
  * the same owner/org scope, but cannot silently move an existing provider
- * installation into another Agent-Native tenant.
+ * installation into another FB Factory tenant.
  */
 export async function upsertIntegrationInstallation(
   input: UpsertIntegrationInstallationInput,

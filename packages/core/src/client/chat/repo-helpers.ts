@@ -138,7 +138,7 @@ export function withLastAssistantRunDuration<T extends NormalizedRepo>(
  * `threadRuntime.import()`. assistant-ui's `MessageRepository` throws
  * "MessageRepository(performOp/link): A message with the same id already exists
  * in the parent tree" when the imported messages contain the same id more than
- * once (Sentry AGENT-NATIVE-BROWSER-2Q). Duplicate ids are never valid thread
+ * once (Sentry FB Factory-BROWSER-2Q). Duplicate ids are never valid thread
  * data — they come from optimistic+echo races, streaming reconnect replays, or
  * multi-tab merges — so keep only the LAST occurrence of each id (the most
  * recent, most complete copy). parentId references stay valid because the

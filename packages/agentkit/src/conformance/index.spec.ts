@@ -858,7 +858,7 @@ describe("production AgentKit adapter targets", () => {
     );
   });
 
-  it("runs the baseline contract through Core's Agent-Native adapter", async () => {
+  it("runs the baseline contract through Core's FB Factory adapter", async () => {
     const transport = createAgentKitProtocolAdapter(
       createCoreRuntime("completed"),
       { now: () => occurredAt },

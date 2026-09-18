@@ -1,15 +1,15 @@
 export const AN_SKILL_MD = `---
 name: an
 description: >-
-  Open and operate Agent-Native workspace apps through Dispatch MCP, with
+  Open and operate FB Factory workspace apps through Dispatch MCP, with
   inline app surfaces, browser-session authentication, and current screen state.
 metadata:
   visibility: exported
 ---
 
-# Agent-Native Apps
+# FB Factory Apps
 
-Use \`/an <app>\` to open an Agent-Native app beside the conversation and keep
+Use \`/an <app>\` to open an FB Factory app beside the conversation and keep
 the app's live UI and the agent's actions in the same workflow. The first
 argument is the Dispatch app id. For example, \`/an slides\` opens the Slides
 editor. After it opens, the user can sign in in that browser surface and ask
@@ -76,10 +76,10 @@ never guess a tool name.
 
 The Dispatch MCP connector identifies the calling agent, while the embedded app
 uses the user's browser session. Let the user complete sign-in in the rendered
-Agent-Native browser surface. Never request, copy, or store passwords, OAuth
+FB Factory browser surface. Never request, copy, or store passwords, OAuth
 codes, cookies, or access tokens.
 
-The generic Agent-Native plugin registers Dispatch at
+The generic FB Factory plugin registers Dispatch at
 \`https://dispatch.agent-native.com/mcp\` for hosts that support plugin MCP
 configuration. ChatGPT custom connectors use the same URL with OAuth. After
 installing or changing a connector, reload Claude/Cowork/ChatGPT or reconnect
@@ -102,11 +102,11 @@ and rescan the MCP server if the new tools or inline surface are not visible.
 `;
 
 export const AN_COMMAND_MD = `---
-description: Open and operate a granted Agent-Native app through Dispatch MCP.
+description: Open and operate a granted FB Factory app through Dispatch MCP.
 argument-hint: <app> [request]
 ---
 
-Use the an skill. Treat the first argument as the Agent-Native Dispatch app id.
+Use the an skill. Treat the first argument as the FB Factory Dispatch app id.
 For \`/an slides\`, call \`open_app\` with app \`slides\`, path "/", embed
 true, and chrome \`full\`. Keep the returned link if the host cannot render
 the inline MCP App. Any remaining arguments are the user's request after the

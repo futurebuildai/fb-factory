@@ -197,7 +197,7 @@ async function sendLocalCodeBackgroundAgentFollowUp(
       runId: activeRun.id,
       run: currentBackgroundRun(activeRun.id),
       queued: true,
-      message: "Follow-up queued for the active Agent-Native Code run.",
+      message: "Follow-up queued for the active FB Factory Code run.",
     };
   }
 
@@ -217,7 +217,7 @@ async function sendLocalCodeBackgroundAgentFollowUp(
       : currentBackgroundRun(activeRun.id),
     queued: false,
     message: updated
-      ? "Follow-up executed for the Agent-Native Code run."
+      ? "Follow-up executed for the FB Factory Code run."
       : undefined,
     error: updated ? undefined : `Run not found: ${activeRun.id}`,
   };
@@ -243,7 +243,7 @@ async function controlLocalCodeBackgroundAgentRun(
           ? toBackgroundAgentRun(approved)
           : currentBackgroundRun(run.id),
         message: approved
-          ? "Pending approval executed for the Agent-Native Code run."
+          ? "Pending approval executed for the FB Factory Code run."
           : undefined,
         error: approved ? undefined : `Run not found: ${run.id}`,
       };
@@ -259,7 +259,7 @@ async function controlLocalCodeBackgroundAgentRun(
           ? toBackgroundAgentRun(denied)
           : currentBackgroundRun(run.id),
         message: denied
-          ? "Pending approval denied for the Agent-Native Code run."
+          ? "Pending approval denied for the FB Factory Code run."
           : undefined,
         error: denied ? undefined : `Run not found: ${run.id}`,
       };
@@ -293,8 +293,8 @@ async function controlLocalCodeBackgroundAgentRun(
         run: currentBackgroundRun(run.id),
         message:
           input.command === "resume"
-            ? "Agent-Native Code run resuming in the background."
-            : "Agent-Native Code run retrying in the background.",
+            ? "FB Factory Code run resuming in the background."
+            : "FB Factory Code run retrying in the background.",
       };
     }
     case "stop":
@@ -324,7 +324,7 @@ function stopLocalCodeBackgroundAgentRun(
       ok: true,
       runId,
       run: toBackgroundAgentRun(run),
-      message: "Agent-Native Code run is already finished.",
+      message: "FB Factory Code run is already finished.",
     };
   }
 
@@ -332,7 +332,7 @@ function stopLocalCodeBackgroundAgentRun(
     runId,
     kind: "status",
     message:
-      "Stop requested for Agent-Native Code run. No process signal was sent.",
+      "Stop requested for FB Factory Code run. No process signal was sent.",
     metadata: {
       source: "background-agent-controller",
       stoppedWithoutSignal: true,
@@ -360,7 +360,7 @@ function stopLocalCodeBackgroundAgentRun(
     runId,
     run: updated ? toBackgroundAgentRun(updated) : null,
     message: updated
-      ? "Agent-Native Code run marked stopped without signaling a process."
+      ? "FB Factory Code run marked stopped without signaling a process."
       : undefined,
     error: updated ? undefined : `Run not found: ${runId}`,
   };

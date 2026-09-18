@@ -63,22 +63,22 @@ export function sitemapPlugin(): Plugin {
     fs.readFileSync(path.resolve(rootDir, "package.json"), "utf8"),
   );
   return createAgentWebVitePlugin({
-    siteName: "Agent-Native",
+    siteName: "FB Factory",
     siteUrl: SITE_URL,
     description:
       "Open source framework for building apps where AI agents and UI share one state model.",
     pages: () => buildAgentWebPages(rootDir),
     whenToUse: [
-      "Use Agent-Native when an AI agent and a user-facing UI need to share the same actions, SQL data, and application state.",
+      "Use FB Factory when an AI agent and a user-facing UI need to share the same actions, SQL data, and application state.",
       "Start with the documentation when you are building an agentic app, adding an action, or exposing a safe capability to external agents.",
       "Connect the MCP server when an external host such as Claude, ChatGPT, Codex, or Cursor should drive the app through its actions.",
     ],
     developerResources: [
       {
-        title: "When to use Agent-Native",
+        title: "When to use FB Factory",
         url: docsPathForSlug("external-agents"),
         description:
-          "Use Agent-Native when an agent and a UI need to work against the same actions, SQL state, and application state.",
+          "Use FB Factory when an agent and a UI need to work against the same actions, SQL state, and application state.",
       },
       {
         title: "OpenAPI specification",
@@ -117,7 +117,7 @@ export function sitemapPlugin(): Plugin {
         title: "CLI package",
         url: "https://www.npmjs.com/package/@agent-native/core",
         description:
-          "Install the official Agent-Native CLI and framework package from npm.",
+          "Install the official FB Factory CLI and framework package from npm.",
       },
       {
         title: "Source repository",
@@ -395,30 +395,30 @@ function buildDocsSitePages(rootDir: string): DocsSitePage[] {
   return sortPages([
     {
       path: "/",
-      title: "Agent-Native",
+      title: "FB Factory",
       description:
         "Framework for building agentic apps where AI agents and UI share the same database and state.",
-      markdown: `# Agent-Native
+      markdown: `# FB Factory
 
-Agent-Native is an open source framework for building apps where AI agents and UI share the same database, actions, and application state.
+FB Factory is an open source framework for building apps where AI agents and UI share the same database, actions, and application state.
 `,
       lastmod: gitLastmod(path.resolve(rootDir, "app/routes/_index.tsx")),
     },
     {
       path: sitePathForLocale("/download"),
-      title: "Download Agent-Native",
-      description: "Download the Agent-Native desktop app.",
+      title: "Download FB Factory",
+      description: "Download the FB Factory desktop app.",
       markdown:
-        "# Download Agent-Native\n\nDownload the Agent-Native desktop app.\n",
+        "# Download FB Factory\n\nDownload the FB Factory desktop app.\n",
       lastmod: gitLastmod(path.resolve(rootDir, "app/routes/download.tsx")),
     },
     {
       path: sitePathForLocale("/brand"),
-      title: "Agent-Native Brand Assets",
+      title: "FB Factory Brand Assets",
       description:
-        "Download official Agent-Native logos and symbols for articles, presentations, and community projects.",
+        "Download official FB Factory logos and symbols for articles, presentations, and community projects.",
       markdown:
-        "# Agent-Native Brand Assets\n\nDownload official Agent-Native horizontal logos and symbols as SVG files for light and dark backgrounds.\n",
+        "# FB Factory Brand Assets\n\nDownload official FB Factory horizontal logos and symbols as SVG files for light and dark backgrounds.\n",
       lastmod: gitLastmod(path.resolve(rootDir, "app/routes/brand.tsx")),
     },
     {
@@ -488,19 +488,19 @@ Agent-Native is an open source framework for building apps where AI agents and U
     ...localizedLegalPages,
     {
       path: sitePathForLocale("/apps"),
-      title: "Agent-Native Apps",
-      description: "Cloneable SaaS apps built with Agent-Native.",
+      title: "FB Factory Apps",
+      description: "Cloneable SaaS apps built with FB Factory.",
       markdown:
-        "# Agent-Native Apps\n\nCloneable SaaS apps built with Agent-Native.\n",
+        "# FB Factory Apps\n\nCloneable SaaS apps built with FB Factory.\n",
       lastmod: gitLastmod(path.resolve(rootDir, "app/routes/templates.tsx")),
     },
     {
       path: sitePathForLocale("/pricing"),
-      title: "Pricing — Agent-Native",
+      title: "Pricing - FB Factory",
       description:
-        "Agent-Native is MIT licensed and free for unlimited users, apps, and environments. Pay only for the infrastructure you choose.",
+        "FB Factory is MIT licensed and free for unlimited users, apps, and environments. Pay only for the infrastructure you choose.",
       markdown:
-        "# Pricing\n\nAgent-Native is MIT licensed and free for unlimited users, apps, and environments. Pay only for the infrastructure you choose.\n",
+        "# Pricing\n\nFB Factory is MIT licensed and free for unlimited users, apps, and environments. Pay only for the infrastructure you choose.\n",
       lastmod: gitLastmod(path.resolve(rootDir, "app/routes/pricing.tsx")),
     },
     {

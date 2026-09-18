@@ -624,7 +624,7 @@ async function cmdStatus(): Promise<void> {
   const hasA2A =
     !!process.env.A2A_SECRET || !!getEnvValue(envContent, "A2A_SECRET");
 
-  logOut(`Agent-Native MCP status`);
+  logOut(`FB Factory MCP status`);
   logOut(`  App:        ${appId}`);
   logOut(
     hostedUrl

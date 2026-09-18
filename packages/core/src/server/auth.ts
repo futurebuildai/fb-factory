@@ -425,7 +425,7 @@ export interface AuthOptions {
   };
   /**
    * Optional email signup legal copy for the built-in login page.
-   * Leave unset to use Agent-Native links only on `*.agent-native.com` hosts,
+   * Leave unset to use FB Factory links only on `*.agent-native.com` hosts,
    * pass false to suppress, or pass URLs for custom/self-hosted policies.
    */
   signupLegalNotice?: OnboardingHtmlOptions["signupLegalNotice"];
@@ -2831,10 +2831,10 @@ function applyCorsHeaders(
           "Authorization",
           "X-Requested-With",
           "X-Request-Source",
-          "X-Agent-Native-CSRF",
+          "X-FB Factory-CSRF",
           "X-User-Timezone",
-          "X-Agent-Native-Desktop-Verifier",
-          "X-Agent-Native-Test-Traffic",
+          "X-FB Factory-Desktop-Verifier",
+          "X-FB Factory-Test-Traffic",
           EMBED_TARGET_HEADER,
         ].join(","),
   );
@@ -3380,7 +3380,7 @@ function desktopMagicLinkLandingPage(
         `<input type="hidden" name="${escapeHtmlAttr(name)}" value="${escapeHtmlAttr(value)}">`,
     )
     .join("");
-  const html = `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Continue sign-in</title></head><body><main><h1>Continue signing in</h1><p>Click continue to finish signing in to the Agent-Native desktop app.</p><form method="post" action="${safeActionUrl}" autocomplete="off">${hiddenInputs}<button type="submit">Continue</button></form></main></body></html>`;
+  const html = `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Continue sign-in</title></head><body><main><h1>Continue signing in</h1><p>Click continue to finish signing in to the FB Factory desktop app.</p><form method="post" action="${safeActionUrl}" autocomplete="off">${hiddenInputs}<button type="submit">Continue</button></form></main></body></html>`;
   return new Response(html, {
     status: 200,
     headers: {
@@ -3775,7 +3775,7 @@ function createAuthGuardFn(
       return;
     }
 
-    // Cross-app SSO ("Sign in with Agent-Native") — CLIENT side. Both the
+    // Cross-app SSO ("Sign in with FB Factory") - CLIENT side. Both the
     // `/login` entry point and the `/callback` (hit by a user who is, by
     // definition, NOT yet signed in to THIS app) must bypass the blanket
     // 401-for-/_agent-native/*: they resolve / mint the browser session

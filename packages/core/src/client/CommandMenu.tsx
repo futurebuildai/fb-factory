@@ -315,7 +315,7 @@ export interface CommandMenuProps {
    */
   changelogKey?: string;
   /**
-   * Whether to show the built-in "About Agent-Native" entry. Defaults to true
+   * Whether to show the built-in "About FB Factory" entry. Defaults to true
    * for app-shell menus that provide a changelog; set false for local menus.
    */
   showAbout?: boolean;
@@ -425,7 +425,7 @@ export function CommandMenu({
       .includes(search.toLowerCase());
   const showChangelogRow = hasChangelog && changelogRowMatches;
   const aboutLabel = t("agentChat.aboutAgentNative.title", {
-    defaultValue: "About Agent-Native",
+    defaultValue: "About FB Factory",
   });
   const aboutVersionLabel = t("agentChat.aboutAgentNative.version", {
     defaultValue: "Version",

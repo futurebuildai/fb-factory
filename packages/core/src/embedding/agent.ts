@@ -109,7 +109,7 @@ function extractTaskText(task: Task): string {
 }
 
 /**
- * Send a text prompt to an Agent-Native A2A endpoint and yield text deltas.
+ * Send a text prompt to an FB Factory A2A endpoint and yield text deltas.
  */
 export async function* sendMessage(
   url: string,

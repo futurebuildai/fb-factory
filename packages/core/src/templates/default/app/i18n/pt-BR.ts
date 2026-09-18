@@ -87,13 +87,12 @@ const messages = {
     },
     pages: {
       browserChatUnavailableTitle: "Sessão de chat do navegador indisponível",
-      browserChatUnavailableDescription:
-        "Reconecte pela extensão Agent-Native.",
+      browserChatUnavailableDescription: "Reconecte pela extensão FB Factory.",
       browserChatPlaceholder: "Pergunte sobre esta página…",
       browserChatAttachedPlaceholder: "Pergunte sobre {{page}}…",
       browserConnectTitle: "Conectar chat do navegador",
       browserConnectDescription:
-        "Permita que a extensão Agent-Native do Chrome abra esta sessão do Dispatch. A conexão usa um ticket único e de curta duração.",
+        "Permita que a extensão FB Factory do Chrome abra esta sessão do Dispatch. A conexão usa um ticket único e de curta duração.",
       browserConnectInvalid:
         "Esta solicitação de conexão é inválida. Recomece pela extensão.",
       browserConnectConnected:
@@ -101,7 +100,7 @@ const messages = {
       browserConnectConnecting: "Conectando…",
       browserConnectButton: "Conectar",
       browserConnectOpenFromExtension:
-        "Abra esta página pela extensão Agent-Native do Chrome.",
+        "Abra esta página pela extensão FB Factory do Chrome.",
       browserConnectFailed: "A extensão do navegador não se conectou.",
       appsDescription:
         "Abra aplicativos de espaço de trabalho e inicie a criação de novos aplicativos em Dispatch.",
@@ -234,7 +233,7 @@ const messages = {
     useBuilder: "Usar o Construtor",
     openDesktopToEditCode: "Abra o Desktop para editar o código",
     codeUnavailableDescription:
-      "Alterações no código-fonte e acesso ao CLI estão disponíveis no aplicativo Agent-Native Desktop.",
+      "Alterações no código-fonte e acesso ao CLI estão disponíveis no aplicativo FB Factory Desktop.",
     downloadDesktop: "Baixar área de trabalho",
     chatMode: "Modo de bate-papo",
     chat: "Chat",
@@ -355,7 +354,7 @@ const messages = {
       '"{{feature}}" creates or modifies source code, which needs Desktop or Builder from this surface.',
     subtitle:
       "Esta ação cria ou modifica o código-fonte, que precisa do Desktop ou Builder desta superfície.",
-    desktopTitle: "Use a área de trabalho Agent-Native",
+    desktopTitle: "Use a área de trabalho FB Factory",
     desktopDescription:
       "Abra o projeto no aplicativo de desktop para permitir edições de origem e acesso CLI.",
     builderAgentTitle: "Usar Agente Builder.io",

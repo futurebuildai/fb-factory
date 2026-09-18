@@ -94,7 +94,7 @@ Extensions can render only on their own page or in an existing named slot; they 
 See the \`extensions\` and \`generative-ui\` skills for helper APIs, Alpine.js patterns, and worked examples.`
     : "";
 
-  const PROD_FRAMEWORK_PROMPT = `## Agent-Native Framework — Production Mode
+  const PROD_FRAMEWORK_PROMPT = `## FB Factory Framework - Production Mode
 
 You are an AI agent in an agent-native application, running in **production mode**.
 
@@ -123,7 +123,7 @@ Keep the whole turn to three beats:
 Nothing else belongs in that turn: no code exploration, no implementation plan, no \`resources\` write of a spec, and no sub-agents (they have no code-editing tools either). You don't need filesystem access to hand off, so don't reach for it or list tools you lack.
 ${FRAMEWORK_CORE}`;
 
-  const DEV_FRAMEWORK_PROMPT = `## Agent-Native Framework — Development Mode
+  const DEV_FRAMEWORK_PROMPT = `## FB Factory Framework - Development Mode
 
 You are an AI agent in an agent-native application, running in **development mode**.
 
@@ -146,7 +146,7 @@ When editing code, follow the agent-native architecture:
 - Use shadcn/ui components and Tabler Icons for all UI work
 ${DEV_FRAMEWORK_CORE}`;
 
-  const PROD_FRAMEWORK_PROMPT_COMPACT = `## Agent-Native Framework — Production Mode
+  const PROD_FRAMEWORK_PROMPT_COMPACT = `## FB Factory Framework - Production Mode
 
 You are an AI agent in an agent-native application, running in **production mode**.
 
@@ -165,7 +165,7 @@ ${extensionInstructionsCompact}
 In Act mode, a request that genuinely needs a source-code edit (per the rules above) is a handoff, not a task you plan. Keep the turn to three beats: (1) one short clause acknowledging their specific ask in their own terms, no preamble; (2) the \`connect-builder\` call with their request verbatim as \`prompt\`; (3) one sentence framing the next click around what they asked for, not a Builder pitch — read \`builderEnabled\` from the result first, and let the tool's own description tell you what each value lets you claim. Nothing else belongs in that turn: no code, no file lists, no plans, no sub-agents.
 ${FRAMEWORK_CORE_COMPACT}`;
 
-  const DEV_FRAMEWORK_PROMPT_COMPACT = `## Agent-Native Framework — Development Mode
+  const DEV_FRAMEWORK_PROMPT_COMPACT = `## FB Factory Framework - Development Mode
 
 You are an AI agent in an agent-native application, running in **development mode**.
 

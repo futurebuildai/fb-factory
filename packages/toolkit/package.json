@@ -1,7 +1,7 @@
 {
   "name": "@agent-native/toolkit",
   "version": "0.20.2",
-  "description": "Reusable app-building UI and helpers for Agent-Native apps.",
+  "description": "Reusable app-building UI and helpers for FB Factory apps.",
   "homepage": "https://github.com/BuilderIO/agent-native#readme",
   "bugs": {
     "url": "https://github.com/BuilderIO/agent-native/issues"

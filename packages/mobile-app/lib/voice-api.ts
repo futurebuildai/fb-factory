@@ -65,7 +65,7 @@ export async function transcribeMobileAudio(
       headers: {
         Accept: "application/json",
         Authorization: `Bearer ${session.token}`,
-        "X-Agent-Native-Client": "mobile",
+        "X-FB Factory-Client": "mobile",
       },
       body: form,
       signal,

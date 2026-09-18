@@ -41,7 +41,7 @@ describe("client application-state helpers", () => {
       {
         method: "GET",
         cache: "no-store",
-        headers: { "X-Agent-Native-Browser-Tab": expect.any(String) },
+        headers: { "X-FB Factory-Browser-Tab": expect.any(String) },
         signal: undefined,
       },
     );
@@ -141,7 +141,7 @@ describe("client application-state helpers", () => {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
-          "X-Agent-Native-Browser-Tab": expect.any(String),
+          "X-FB Factory-Browser-Tab": expect.any(String),
           "X-Request-Source": "tab-1",
         },
         body: JSON.stringify(value),
@@ -167,7 +167,7 @@ describe("client application-state helpers", () => {
       {
         method: "DELETE",
         headers: {
-          "X-Agent-Native-CSRF": "1",
+          "X-FB Factory-CSRF": "1",
           "X-Request-Source": "tab-1",
         },
         keepalive: undefined,
@@ -179,7 +179,7 @@ describe("client application-state helpers", () => {
       "/_agent-native/application-state/selection",
       {
         method: "DELETE",
-        headers: { "X-Agent-Native-CSRF": "1" },
+        headers: { "X-FB Factory-CSRF": "1" },
         keepalive: true,
         signal: undefined,
       },
@@ -189,7 +189,7 @@ describe("client application-state helpers", () => {
       "/_agent-native/application-state/selection",
       {
         method: "DELETE",
-        headers: { "X-Agent-Native-CSRF": "1" },
+        headers: { "X-FB Factory-CSRF": "1" },
         keepalive: undefined,
         signal: undefined,
       },

@@ -51,9 +51,9 @@ describe("agent web generators", () => {
 
   it("builds llms files and Markdown mirrors from one page list", () => {
     const files = buildAgentWebStaticFiles({
-      siteName: "Agent-Native",
+      siteName: "FB Factory",
       siteUrl: "https://www.agent-native.com",
-      description: "Agent-Native framework docs.",
+      description: "FB Factory framework docs.",
       config,
       pages: [
         {
@@ -97,11 +97,11 @@ describe("agent web generators", () => {
 
   it("lists developer resources in both llms files", () => {
     const files = buildAgentWebStaticFiles({
-      siteName: "Agent-Native",
+      siteName: "FB Factory",
       siteUrl: "https://www.agent-native.com",
       config,
       whenToUse: [
-        "Use Agent-Native when an agent and UI share actions and state.",
+        "Use FB Factory when an agent and UI share actions and state.",
       ],
       pages: [],
       developerResources: [
@@ -164,7 +164,7 @@ describe("agent web generators", () => {
   // page points structured data at a redirect.
   it("gives breadcrumb items the page's trailing slash", () => {
     const jsonLd = buildPageJsonLd({
-      siteName: "Agent-Native",
+      siteName: "FB Factory",
       siteUrl: "https://www.agent-native.com",
       page: { path: "/docs/actions-overview/", title: "Actions" },
     });
@@ -179,7 +179,7 @@ describe("agent web generators", () => {
 
   it("leaves breadcrumbs bare for a bare page path", () => {
     const jsonLd = buildPageJsonLd({
-      siteName: "Agent-Native",
+      siteName: "FB Factory",
       siteUrl: "https://www.agent-native.com",
       page: { path: "/docs/actions-overview", title: "Actions" },
     });

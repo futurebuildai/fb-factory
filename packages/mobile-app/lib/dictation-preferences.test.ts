@@ -75,8 +75,8 @@ describe("mobile dictation preferences", () => {
         },
         {
           id: "vocab_2",
-          term: "Agent-Native",
-          replacement: "Agent-Native",
+          term: "FB Factory",
+          replacement: "FB Factory",
           usesCount: 4,
         },
       ],
@@ -86,7 +86,7 @@ describe("mobile dictation preferences", () => {
       "User style preference: Keep Builder product names capitalized.",
     );
     expect(instructions).toContain("builder eye oh -> Builder.io");
-    expect(instructions).toContain("Agent-Native");
+    expect(instructions).toContain("FB Factory");
   });
 });
 
@@ -101,7 +101,7 @@ describe("mobile personal vocabulary actions", () => {
         {
           id: "vocab_1",
           term: "agent-native",
-          replacement: "Agent-Native",
+          replacement: "FB Factory",
           usesCount: 3.8,
         },
         { id: "", term: "ignored", replacement: "ignored" },
@@ -112,7 +112,7 @@ describe("mobile personal vocabulary actions", () => {
       {
         id: "vocab_1",
         term: "agent-native",
-        replacement: "Agent-Native",
+        replacement: "FB Factory",
         usesCount: 3,
       },
     ]);

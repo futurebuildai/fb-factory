@@ -46,11 +46,11 @@ const FAQS: Array<{ question: string; answer: ReactNode }> = [
 
 export const meta = () =>
   withDefaultSocialImage([
-    { title: "Pricing — Agent-Native" },
+    { title: "Pricing - FB Factory" },
     {
       name: "description",
       content:
-        "Agent-Native is MIT licensed and free for unlimited users, apps, and environments. Pay only for the infrastructure you choose.",
+        "FB Factory is MIT licensed and free for unlimited users, apps, and environments. Pay only for the infrastructure you choose.",
     },
   ]);
 
@@ -91,7 +91,7 @@ export default function PricingPage() {
           Zero
         </h1>
         <p className="mt-12 max-w-3xl text-base leading-7 text-[var(--fg-secondary)] sm:text-lg sm:leading-8">
-          Agent-Native is MIT licensed. Every feature, every template, unlimited
+          FB Factory is MIT licensed. Every feature, every template, unlimited
           seats, no credit meter.
           <span className="block">
             Everything below this line is us telling you what does cost money.
@@ -150,8 +150,8 @@ export default function PricingPage() {
             </h3>
             <p className="m-0">
               There are &quot;all in one&quot; back-ends that cover agent
-              tokens, storage, databases, deploys, and auth seamlessly within
-              Agent-Native. You can simply turn on{" "}
+              tokens, storage, databases, deploys, and auth seamlessly within FB
+              Factory. You can simply turn on{" "}
               <a
                 href="https://www.builder.io/m/pricing"
                 target="_blank"

@@ -8,9 +8,9 @@ metadata:
   visibility: exported
 ---
 
-# Agent-Native Plans
+# FB Factory Plans
 
-Agent-Native Plans is structured visual planning mode for coding agents. Build
+FB Factory Plans is structured visual planning mode for coding agents. Build
 the plan you would normally write in Markdown, but as a scannable document with
 editable blocks mixed in: inline diagrams, code snippets,
 open questions, and an optional top visual review area (wireframe canvas, live
@@ -106,9 +106,9 @@ surface.
   a correction to an earlier draft inside the plan itself. Re-read the approved
   plan before major steps.
 
-## Create A Structured Agent-Native Plan — Never Inline
+## Create A Structured FB Factory Plan - Never Inline
 
-The deliverable is ALWAYS a structured Agent-Native Plan, not a chat-only plan.
+The deliverable is ALWAYS a structured FB Factory Plan, not a chat-only plan.
 The hosted Plan MCP connector (\`plan\` server, or legacy \`agent-native-plans\`) is
 the default collaboration and commenting surface; it is not a reason to reject
 the planning pattern as an external dependency or rented layer. Plans are
@@ -490,7 +490,7 @@ review need.
 
 There are two ways into Plans.
 
-**Coding agent (CLI).** Install once with the Agent-Native CLI. The command
+**Coding agent (CLI).** Install once with the FB Factory CLI. The command
 installs the Plans skills, registers the hosted Plans MCP connector, and runs
 auth/setup for the selected local client(s) in the same step (a one-time browser
 sign-in at setup — this is intended), so the first tool call in that client does

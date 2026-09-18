@@ -30,7 +30,7 @@ describe("renderVerifySignupEmail", () => {
     expect(rendered.appSender).toBeUndefined();
   });
 
-  it("does not present an unrecognized app as an Agent-Native app", () => {
+  it("does not present an unrecognized app as an FB Factory app", () => {
     vi.stubEnv("APP_NAME", "Acme Portal");
 
     const rendered = renderVerifySignupEmail({
@@ -39,7 +39,7 @@ describe("renderVerifySignupEmail", () => {
     });
 
     expect(rendered.subject).toBe("Verify your email for Acme Portal");
-    expect(rendered.html).not.toContain("Agent-Native Acme Portal");
+    expect(rendered.html).not.toContain("FB Factory Acme Portal");
   });
 
   it("uses a custom package name when app branding is not configured", () => {
@@ -52,7 +52,7 @@ describe("renderVerifySignupEmail", () => {
 
     expect(rendered.subject).toBe("Verify your email for Try Marisco");
     expect(rendered.html).toContain('alt="Try Marisco"');
-    expect(rendered.html).not.toContain("Agent-Native");
+    expect(rendered.html).not.toContain("FB Factory");
     expect(rendered.appSender).toBeUndefined();
   });
 
@@ -64,10 +64,10 @@ describe("renderVerifySignupEmail", () => {
       verifyUrl: "https://example.com/verify?token=abc",
     });
 
-    expect(rendered.subject).toBe("Verify your email for Agent-Native Slides");
+    expect(rendered.subject).toBe("Verify your email for FB Factory Slides");
     expect(rendered.html).toContain('src="cid:agent-native-logo"');
     expect(rendered.appSender).toMatchObject({
-      name: "Agent-Native Slides",
+      name: "FB Factory Slides",
       slug: "slides",
     });
   });
@@ -82,7 +82,7 @@ describe("renderVerifySignupEmail", () => {
     });
 
     expect(rendered.subject).toBe("Verify your email for Slides");
-    expect(rendered.html).not.toContain("Agent-Native");
+    expect(rendered.html).not.toContain("FB Factory");
     expect(rendered.appSender).toBeUndefined();
   });
 

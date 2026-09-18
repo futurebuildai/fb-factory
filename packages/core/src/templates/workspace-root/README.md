@@ -1,4 +1,4 @@
-# {{APP_TITLE}} — Agent-Native Workspace
+# {{APP_TITLE}} - FB Factory Workspace
 
 A monorepo hosting multiple agent-native apps that all inherit from a single
 private **shared** package. The framework provides the defaults; this package

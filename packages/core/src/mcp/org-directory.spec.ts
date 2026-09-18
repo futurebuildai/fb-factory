@@ -179,7 +179,7 @@ describe("fetchOrgApps", () => {
     const fetchSpy = vi.fn(async (_url: string, init?: RequestInit) => {
       expect(
         (init?.headers as Record<string, string>)[
-          "X-Agent-Native-Include-Directory-App"
+          "X-FB Factory-Include-Directory-App"
         ],
       ).toBe("1");
       return new Response(JSON.stringify({ apps: [] }), {
@@ -200,7 +200,7 @@ describe("fetchOrgApps", () => {
     const fetchSpy = vi.fn(async (_url: string, init?: RequestInit) => {
       const includeDirectory =
         (init?.headers as Record<string, string>)[
-          "X-Agent-Native-Include-Directory-App"
+          "X-FB Factory-Include-Directory-App"
         ] === "1";
       return new Response(
         JSON.stringify({

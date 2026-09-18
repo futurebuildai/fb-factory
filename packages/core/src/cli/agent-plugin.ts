@@ -4,7 +4,7 @@
  * The importer intentionally handles only local plugin directories. Skills are
  * copied as inert files into the workspace's agent-visible `.agents/skills`
  * tree, and remote Streamable HTTP MCP entries are translated to the
- * Agent-Native `mcp.config.json` shape without copying package headers.
+ * FB Factory `mcp.config.json` shape without copying package headers.
  * A plugin package is not a credential store and this command never executes
  * a plugin's scripts or stdio servers.
  */
@@ -170,7 +170,7 @@ Usage:
   agent-native plugin import <path> [--into <workspace>] [--yes] [--force] [--dry-run] [--json]
 
 Commands:
-  import   Import a standard Agent Plugin's Skills and remote MCP servers into an Agent-Native workspace.
+  import   Import a standard Agent Plugin's Skills and remote MCP servers into an FB Factory workspace.
 
 The importer copies Skills into a namespaced .agents/skills/<plugin>/<skill> path and
 maps Streamable HTTP MCP servers into mcp.config.json. Package headers are
@@ -1217,7 +1217,7 @@ export function importAgentPlugin(
   );
   if (pathExists(targetDir) && !fs.statSync(targetDir).isDirectory()) {
     throw new Error(
-      `Agent-Native import target must be a directory: ${targetDir}`,
+      `FB Factory import target must be a directory: ${targetDir}`,
     );
   }
   if (isPathInside(plugin.rootDir, targetDir, true)) {
@@ -1225,7 +1225,7 @@ export function importAgentPlugin(
       "Agent Plugin import target must not be the plugin directory or one of its children.",
     );
   }
-  assertNoSymlinkInExistingPath(targetDir, "Agent-Native import target");
+  assertNoSymlinkInExistingPath(targetDir, "FB Factory import target");
 
   const slug = pluginSlug(plugin.manifest.name);
   const skillsTargetDir = canonicalPathForComparison(
@@ -1236,7 +1236,7 @@ export function importAgentPlugin(
     !fs.statSync(skillsTargetDir).isDirectory()
   ) {
     throw new Error(
-      `Agent-Native skills target must be a directory: ${skillsTargetDir}`,
+      `FB Factory skills target must be a directory: ${skillsTargetDir}`,
     );
   }
   assertPathOutside(plugin.rootDir, skillsTargetDir, "Imported skills target");

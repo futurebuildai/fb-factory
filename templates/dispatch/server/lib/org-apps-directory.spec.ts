@@ -221,7 +221,7 @@ describe("buildOrgAppsResponse", () => {
         {
           id: "mail",
           name: "Mail",
-          description: "Agent-Native email",
+          description: "FB Factory email",
           url: "https://mail.agent-native.com/",
         },
         {
@@ -244,7 +244,7 @@ describe("buildOrgAppsResponse", () => {
       name: "Mail",
       url: "https://mail.agent-native.com",
       a2aUrl: "https://mail.agent-native.com/_agent-native/a2a",
-      capabilities: "Agent-Native email",
+      capabilities: "FB Factory email",
     });
     const cal = res.apps.find((a) => a.id === "calendar")!;
     expect(cal.capabilities).toBeUndefined();

@@ -137,7 +137,7 @@ describe("resolveCodeCommand", () => {
     });
   });
 
-  it("handles resume/status/ui/stop at the generic Agent-Native Code layer", () => {
+  it("handles resume/status/ui/stop at the generic FB Factory Code layer", () => {
     expect(resolveCodeCommand(["resume", "--last"])).toEqual({
       kind: "control",
       subcommand: "resume",
@@ -284,7 +284,7 @@ describe("codeShellIntro", () => {
 
     const intro = codeShellIntro();
 
-    expect(intro).toContain("Agent-Native Code v");
+    expect(intro).toContain("FB Factory Code v");
     expect(intro).toContain(`cwd: ${cwd}`);
     expect(intro).toContain("default: Auto mode (full-auto)");
     expect(intro).not.toContain("\u001b[");
@@ -344,7 +344,7 @@ describe("handleCodeShellLine", () => {
     });
 
     expect(calls).toEqual([]);
-    expect(output.read()).toContain("Agent-Native Code status");
+    expect(output.read()).toContain("FB Factory Code status");
     expect(output.read()).toContain("Existing task");
   });
 
@@ -368,7 +368,7 @@ describe("handleCodeShellLine", () => {
     });
 
     expect(calls).toEqual([]);
-    expect(output.read()).toContain(`Agent-Native Code logs: ${run.id}`);
+    expect(output.read()).toContain(`FB Factory Code logs: ${run.id}`);
     expect(output.read()).toContain("Existing task");
     expect(output.read()).toContain("Events: 0");
   });
@@ -388,7 +388,7 @@ describe("handleCodeShellLine", () => {
     ).resolves.toBe("continue");
 
     expect(calls).toEqual([]);
-    expect(output.read()).toContain("Available Agent-Native Code goals:");
+    expect(output.read()).toContain("Available FB Factory Code goals:");
   });
 
   it("exits for /exit and /quit", async () => {
@@ -486,7 +486,7 @@ describe("generic task sessions", () => {
     expect(
       listCodeAgentTranscriptEvents(runs[0].id).map((event) => event.kind),
     ).toEqual(["user", "status", "status", "system", "status"]);
-    expect(output.read()).toContain("Agent-Native Code session started.");
+    expect(output.read()).toContain("FB Factory Code session started.");
     expect(output.read()).toContain("Task complete.");
   });
 
@@ -725,7 +725,7 @@ describe("generic task sessions", () => {
     });
   });
 
-  it("shows generic Agent-Native Code status for the last run", async () => {
+  it("shows generic FB Factory Code status for the last run", async () => {
     useTempCodeAgentsHome();
     const cwd = process.cwd();
     createCodeAgentRunRecord({
@@ -740,7 +740,7 @@ describe("generic task sessions", () => {
     await runCode(["status", "--last"], { output: output.stream });
 
     const text = output.read();
-    expect(text).toContain("Agent-Native Code status");
+    expect(text).toContain("FB Factory Code status");
     expect(text).toContain("Existing task");
     expect(text).toContain("paused (review)");
     expect(text).toContain(`Cwd:        ${cwd}`);
@@ -783,7 +783,7 @@ describe("generic task sessions", () => {
     await runCode(["stop", "--last"], { output: output.stream });
 
     const [updated] = listCodeAgentRunRecords("task");
-    expect(output.read()).toContain("Agent-Native Code stop");
+    expect(output.read()).toContain("FB Factory Code stop");
     expect(output.read()).toContain("Stop requested");
     expect(updated).toMatchObject({
       id: run.id,
@@ -845,7 +845,7 @@ describe("generic task sessions", () => {
     // After approval the run auto-resumes. In the test environment there is no
     // LLM provider so it will land on missing-credentials, not needs-approval.
     expect(updated?.status).not.toBe("needs-approval");
-    expect(output.read()).toContain("Agent-Native Code approve");
+    expect(output.read()).toContain("FB Factory Code approve");
     expect(output.read()).toContain(
       "Approved command finished with exit code 0",
     );
@@ -863,7 +863,7 @@ describe("generic task sessions", () => {
     await runCode(["list"], { output: output.stream });
 
     const text = output.read();
-    expect(text).toContain("Agent-Native Code sessions");
+    expect(text).toContain("FB Factory Code sessions");
     expect(text).toContain(run.id);
     expect(text).toContain("Auto mode");
     expect(text).toContain("agent-native code status <runId>");
@@ -884,7 +884,7 @@ describe("generic task sessions", () => {
     await runCode(["resume", run.id], { output: output.stream });
 
     const text = output.read();
-    expect(text).toContain("Agent-Native Code resume");
+    expect(text).toContain("FB Factory Code resume");
     expect(text).toContain("Title:   Existing task");
     expect(text).toContain("Mode:    Plan mode");
     expect(text).toContain(`agent-native code run ${run.id}`);
@@ -912,10 +912,10 @@ describe("runCode shell", () => {
     });
 
     const text = output.read();
-    expect(text).toContain("Agent-Native Code v");
+    expect(text).toContain("FB Factory Code v");
     expect(text).toContain(`cwd: ${cwd}`);
     expect(text).toContain("default: Auto mode (full-auto)");
-    expect(text).toContain("Available Agent-Native Code goals:");
+    expect(text).toContain("Available FB Factory Code goals:");
     expect(text).toContain("code> ");
     expect(listCodeAgentRunRecords()).toEqual([]);
   });

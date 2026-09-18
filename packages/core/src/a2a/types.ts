@@ -106,7 +106,7 @@ export interface AgentCapabilities {
   streaming?: boolean;
   pushNotifications?: boolean;
   stateTransitionHistory?: boolean;
-  /** The app supports the Agent-Native identity connect handoff. */
+  /** The app supports the FB Factory identity connect handoff. */
   connect?: boolean;
   extendedAgentCard?: boolean;
 }

@@ -90,7 +90,7 @@ vi.mock("../i18n.js", () => ({
       "settings.profileDescription":
         "Your name, profile photo, and signed-in identity.",
       "settings.profileNameDescription":
-        "This name is used when referring to you across Agent-Native apps.",
+        "This name is used when referring to you across FB Factory apps.",
       "settings.profileNameEdit": "Edit name",
       "settings.profileNameLabel": "Name",
       "settings.profileNamePlaceholder": "Your name",

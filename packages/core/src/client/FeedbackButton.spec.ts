@@ -20,7 +20,7 @@ describe("resolveFeedbackUrl", () => {
     expect(resolveFeedbackUrl(undefined, "example.com")).toBeNull();
   });
 
-  it("uses the Agent-Native feedback form on first-party production hosts", () => {
+  it("uses the FB Factory feedback form on first-party production hosts", () => {
     vi.stubEnv("VITE_AGENT_NATIVE_FEEDBACK_URL", "");
     vi.stubGlobal("location", { hostname: "analytics.agent-native.com" });
 
@@ -34,7 +34,7 @@ describe("resolveFeedbackUrl", () => {
     expect(resolveFeedbackUrl(undefined, "fakeagent-native.com")).toBeNull();
   });
 
-  it("uses the Agent-Native feedback form on local first-party template hosts", () => {
+  it("uses the FB Factory feedback form on local first-party template hosts", () => {
     vi.stubEnv("VITE_AGENT_NATIVE_FEEDBACK_URL", "");
 
     expect(resolveFeedbackUrl(undefined, "localhost")).toBe(

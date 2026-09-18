@@ -64,7 +64,7 @@ import {
 } from "./workspace-resources-store.js";
 
 const SETTINGS_KEY = "dispatch-app-creation-settings";
-const DEFAULT_BUILDER_WORKSPACE_PROJECT_NAME = "Agent-Native Workspace";
+const DEFAULT_BUILDER_WORKSPACE_PROJECT_NAME = "FB Factory Workspace";
 const APP_CREATION_SETTINGS_AUTHORIZATION_MESSAGE =
   "Only organization owners and admins can update app creation settings.";
 const APP_CREATION_SETTINGS_REQUIRED_MESSAGE =
@@ -86,7 +86,7 @@ const AUTONOMOUS_WORKSPACE_APP_CREATION_CONTRACT = [
   "- This is a background implementation run launched by the turn-into-app workflow. Treat the source brief and latest user request as authorization to build the app now; do not return a proposal or wait for another turn.",
   "- Do not ask the user questions during the initial build and do not invoke a clarification, guided-question, or choice flow for a non-blocking decision.",
   "- If the confirmed source brief describes a spreadsheet source-review or input/output confirmation surface, implement that review UI as part of the first-run app experience and seed it with the bounded candidates and mapping; keep the background build autonomous and do not send a question back from the Builder run.",
-  "- When the source or a tool presents a recommended option, choose it and continue. When no recommendation is present, choose the most direct, conservative default supported by the source and normal Agent-Native conventions.",
+  "- When the source or a tool presents a recommended option, choose it and continue. When no recommendation is present, choose the most direct, conservative default supported by the source and normal FB Factory conventions.",
   "- Resolve product, visual, copy, layout, route, data-model, dependency, and integration choices yourself. If an input is missing, use an empty state or clearly labeled representative sample so the workflow is demonstrable; never invent private facts or credentials.",
   "- Treat the source brief's unknowns and follow-up items as assumptions to record in the app README or a visible Assumptions / Review section, not as questions to send back to the user.",
   "- If a nonessential integration or provider is unavailable, build the supported boundary and leave a precise setup note; do not stop to ask which equivalent to use.",
@@ -2664,7 +2664,7 @@ function buildWorkspaceAppPrompt(input: {
         ? `Dispatch will create workspace resource grants for the selected resources for appId "${appId}". After the app exists, sync workspace resources so the app receives both global and selected shared resources.`
         : "Do not grant any selected-only Dispatch workspace resources unless the user asks later.",
       "",
-      "Agent-Native rules (these are the framework's contract — not optional):",
+      "FB Factory rules (these are the framework's contract - not optional):",
       `- Persist ALL data in SQL via Drizzle. Add tables to apps/${appId}/server/db/schema.ts and migrations to apps/${appId}/server/plugins/db.ts. NEVER use localStorage, sessionStorage, IndexedDB, or in-memory state for anything the user expects to persist — agent and UI must read the same source of truth.`,
       `- Define every create/read/update/delete as an action in apps/${appId}/actions/ using defineAction. The agent calls these as tools and the frontend calls them via useActionQuery / useActionMutation. If you must raw-fetch framework action endpoints, use agentNativePath("/_agent-native/actions/<name>") so mounted apps call the right URL. Don't add /api/* routes for CRUD.`,
       "- Build the UI from shadcn/ui components in app/components/ui/ (Button, Input, Dialog, Popover, Card, etc.) and Tailwind utilities. Don't author bespoke CSS classes in global.css unless you genuinely need a primitive that shadcn doesn't ship.",
@@ -2964,7 +2964,7 @@ export async function startWorkspaceAppCreation(input: {
         err,
         fallbackDetail: "Builder could not provision the workspace project",
         builderErrorMessage:
-          "Builder could not prepare the connected Agent-Native workspace. Try again in a moment.",
+          "Builder could not prepare the connected FB Factory workspace. Try again in a moment.",
       });
     }
   }

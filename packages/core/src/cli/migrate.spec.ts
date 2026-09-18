@@ -88,7 +88,7 @@ describe("parseMigrateArgs", () => {
     });
   });
 
-  it("creates a generic Agent-Native Code session by default", async () => {
+  it("creates a generic FB Factory Code session by default", async () => {
     const root = fs.mkdtempSync(path.join(os.tmpdir(), "an-migrate-"));
     tmpRoots.push(root);
     process.env.AGENT_NATIVE_CODE_AGENTS_HOME = path.join(root, "code-agents");
@@ -142,14 +142,14 @@ describe("parseMigrateArgs", () => {
       listCodeAgentTranscriptEvents(runs[0].id).map((event) => event.kind),
     ).toEqual(["user", "status", "artifact", "note", "status"]);
     expect(log.mock.calls.join("\n")).toContain(
-      "Agent-Native Code /migrate session created.",
+      "FB Factory Code /migrate session created.",
     );
     expect(log.mock.calls.join("\n")).toContain("Artifacts:");
     expect(log.mock.calls.join("\n")).toContain(
       "agent-native code attach --last",
     );
     expect(log.mock.calls.join("\n")).toContain(
-      "Migration stays in Agent-Native Code. No hidden app/template was scaffolded.",
+      "Migration stays in FB Factory Code. No hidden app/template was scaffolded.",
     );
   });
 
@@ -238,7 +238,7 @@ describe("parseMigrateArgs", () => {
     );
 
     expect(agentsMd).toContain("Treat source as read-only");
-    expect(playbook).toContain("Use With Agent-Native Code Or Desktop");
+    expect(playbook).toContain("Use With FB Factory Code Or Desktop");
     expect(ir).toMatchObject({
       site: { framework: "nextjs" },
     });
@@ -361,7 +361,7 @@ describe("parseMigrateArgs", () => {
     expect(isExpectedMigrationCliError(new Error("disk exploded"))).toBe(false);
   });
 
-  it("status output points empty users at the Agent-Native Code slash command", async () => {
+  it("status output points empty users at the FB Factory Code slash command", async () => {
     const root = fs.mkdtempSync(path.join(os.tmpdir(), "an-migrate-status-"));
     tmpRoots.push(root);
     process.env.AGENT_NATIVE_CODE_AGENTS_HOME = path.join(root, "code-agents");

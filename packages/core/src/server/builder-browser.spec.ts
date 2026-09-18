@@ -113,7 +113,7 @@ describe("Builder account provisioning", () => {
               privateKey: "bpk-test-provisioned",
               publicKey: "space-test-provisioned",
               userId: "user-test-provisioned",
-              orgName: "Agent-Native Workspace",
+              orgName: "FB Factory Workspace",
               orgKind: "vcp",
               subscription: "vcp:v3:level1",
             },
@@ -1006,7 +1006,7 @@ describe("Builder callback CSRF state", () => {
       );
     });
 
-    it("adds Agent-Native signup attribution to cli-auth and callback URLs", () => {
+    it("adds FB Factory signup attribution to cli-auth and callback URLs", () => {
       const cliAuthUrl = buildBuilderCliAuthUrl(
         "https://alice.agent-native.com",
         signBuilderCallbackState("alice@example.com"),
@@ -1044,7 +1044,7 @@ describe("Builder callback CSRF state", () => {
       expect(redirectUrl.searchParams.has("utm_source")).toBe(false);
     });
 
-    it("adds Agent-Native signup attribution to standard OAuth URLs", () => {
+    it("adds FB Factory signup attribution to standard OAuth URLs", () => {
       const authorizationUrl = withBuilderConnectTrackingParams(
         "https://mcp.builder.io/oauth/authorize?client_id=test#consent",
         {
@@ -1951,7 +1951,7 @@ describe("Builder callback CSRF state", () => {
             status: "success",
             project: {
               id: "project-123",
-              name: "Agent-Native Workspace",
+              name: "FB Factory Workspace",
               repoUrl:
                 "https://github.com/BuilderIO/builder-agent-native-workspace",
             },
@@ -1962,12 +1962,12 @@ describe("Builder callback CSRF state", () => {
       vi.stubGlobal("fetch", fetchSpy);
 
       const result = await createBuilderProject({
-        name: "Agent-Native Workspace",
+        name: "FB Factory Workspace",
       });
 
       expect(result).toEqual({
         projectId: "project-123",
-        name: "Agent-Native Workspace",
+        name: "FB Factory Workspace",
         repoUrl: "https://github.com/BuilderIO/builder-agent-native-workspace",
         browserUrl: "https://builder.io/app/projects/project-123",
         created: true,
@@ -1980,7 +1980,7 @@ describe("Builder callback CSRF state", () => {
           kind: "template",
           templateId: "agent-native-starter",
         },
-        name: "Agent-Native Workspace",
+        name: "FB Factory Workspace",
       });
     });
 
@@ -1991,7 +1991,7 @@ describe("Builder callback CSRF state", () => {
             projects: [
               {
                 id: "project-123",
-                name: "Agent-Native Workspace",
+                name: "FB Factory Workspace",
                 repoUrl:
                   "https://github.com/BuilderIO/builder-agent-native-workspace.git",
               },
@@ -2030,7 +2030,7 @@ describe("Builder callback CSRF state", () => {
             JSON.stringify({
               project: {
                 id: "project-created",
-                name: "Agent-Native Workspace",
+                name: "FB Factory Workspace",
               },
             }),
             { status: 200, headers: { "Content-Type": "application/json" } },
@@ -2039,7 +2039,7 @@ describe("Builder callback CSRF state", () => {
       vi.stubGlobal("fetch", fetchSpy);
 
       const result = await ensureBuilderProject({
-        name: "Agent-Native Workspace",
+        name: "FB Factory Workspace",
         repoUrl: "https://github.com/BuilderIO/legacy-workspace",
       });
 
@@ -2053,7 +2053,7 @@ describe("Builder callback CSRF state", () => {
           kind: "repo",
           repoUrl: "https://github.com/BuilderIO/legacy-workspace",
         },
-        name: "Agent-Native Workspace",
+        name: "FB Factory Workspace",
       });
     });
   });

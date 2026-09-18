@@ -19,7 +19,7 @@ import { isBrowserExtensionIdAllowed } from "../server/lib/browser-extension-all
 
 export default defineAction({
   description:
-    "Create a one-time authenticated Dispatch browser-chat embed session for an approved Agent-Native Chrome extension.",
+    "Create a one-time authenticated Dispatch browser-chat embed session for an approved FB Factory Chrome extension.",
   schema: z
     .object({
       nonce: browserChatNonceSchema,
@@ -74,7 +74,7 @@ export default defineAction({
     const remote = await createRemoteDevice({
       ownerEmail,
       orgId: requestContext?.orgId ?? null,
-      label: "Agent-Native for Chrome",
+      label: "FB Factory for Chrome",
       platform: "chrome-extension",
       metadata: {
         browserExtension: { extensionId },

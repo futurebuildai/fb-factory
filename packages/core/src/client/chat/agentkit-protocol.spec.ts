@@ -1385,7 +1385,7 @@ describe("createAgentKitProtocolAdapter", () => {
     expect(cancelled).toHaveBeenCalledOnce();
   });
 
-  it("carries Agent-Native context, identity, access, audit, trace, and delegation metadata", async () => {
+  it("carries FB Factory context, identity, access, audit, trace, and delegation metadata", async () => {
     let receivedInput: { metadata?: Record<string, unknown> } | undefined;
     async function* events(): AsyncIterable<AgentChatRuntimeEvent> {
       yield {

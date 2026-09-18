@@ -10,6 +10,9 @@ Ease
 Ease In
 Ease In/Out
 Ease Out
+FB Factory
+FB Factory App
+FB Factory Config
 JetBrains Mono
 Playfair Display
 ~/.claude/ on a local disk

@@ -155,7 +155,7 @@ const HEADLESS_OPTION = {
 const COMMUNITY_OPTION = {
   name: "community",
   label: "Community template",
-  hint: "Install a third-party Agent-Native app from a public GitHub repository",
+  hint: "Install a third-party FB Factory app from a public GitHub repository",
 };
 
 export interface CreateAppOptions {
@@ -1549,7 +1549,7 @@ function communityTemplateTrustMessage(selection: string): string | undefined {
   const community = parseCommunityTemplateSelection(selection, false);
   if (!community) return undefined;
   return [
-    `${community.repo} is third-party code and is not reviewed or maintained by Agent-Native.`,
+    `${community.repo} is third-party code and is not reviewed or maintained by FB Factory.`,
     "The CLI downloads source only; it does not install dependencies or run template scripts.",
     "Review the generated files before running pnpm install.",
     community.ref
@@ -1984,7 +1984,7 @@ function ensureGuardedScaffold(appDir: string): void {
 
   // Community templates may use vite/next/another build command instead of
   // `agent-native build`, so attach the strict check to the package lifecycle.
-  // Agent-Native builds already run doctor and get strictness from the config.
+  // FB Factory builds already run doctor and get strictness from the config.
   if (
     typeof scripts.build === "string" &&
     !/\bagent-native\s+build\b/.test(scripts.build) &&
@@ -2036,7 +2036,7 @@ function ensureGuardedScaffold(appDir: string): void {
   } else {
     fs.writeFileSync(
       agentsPath,
-      `# Agent-Native project instructions\n\n${GUARDED_VERIFICATION_GUIDANCE}`,
+      `# FB Factory project instructions\n\n${GUARDED_VERIFICATION_GUIDANCE}`,
     );
     setupAgentSymlinks(appDir);
   }
@@ -2707,7 +2707,7 @@ function assertSafeCommunityArchiveListing(listing: string): void {
   });
   if (unsafeEntry) {
     throw new ValidationError(
-      "Community template archives may only contain Agent-Native's canonical internal symlinks (CLAUDE.md and .claude/skills). Remove other symbolic or hard links and try again.",
+      "Community template archives may only contain FB Factory's canonical internal symlinks (CLAUDE.md and .claude/skills). Remove other symbolic or hard links and try again.",
     );
   }
 }
@@ -2818,7 +2818,7 @@ function assertCommunityTemplateRoot(targetDir: string, repo: string): void {
   const packagePath = path.join(targetDir, "package.json");
   if (!fs.existsSync(packagePath)) {
     throw new ValidationError(
-      `Community template ${repo} is not an Agent-Native app at the repository root: package.json was not found. Point to a repository whose root is the app.`,
+      `Community template ${repo} is not an FB Factory app at the repository root: package.json was not found. Point to a repository whose root is the app.`,
     );
   }
 
@@ -2845,7 +2845,7 @@ function assertCommunityTemplateRoot(targetDir: string, repo: string): void {
   );
   if (!usesAgentNativeCore) {
     throw new ValidationError(
-      `Community template ${repo} is not an Agent-Native app at the repository root. Its package.json must directly depend on @agent-native/core in dependencies, devDependencies, or peerDependencies.`,
+      `Community template ${repo} is not an FB Factory app at the repository root. Its package.json must directly depend on @agent-native/core in dependencies, devDependencies, or peerDependencies.`,
     );
   }
 }

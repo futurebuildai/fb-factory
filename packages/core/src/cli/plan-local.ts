@@ -2674,7 +2674,7 @@ function writeLocalPlanSkeleton(input: {
     "",
     "## Review Surface",
     "",
-    "Author the structured plan or recap here. You can add Agent-Native Plan MDX",
+    "Author the structured plan or recap here. You can add FB Factory Plan MDX",
     'blocks such as `<WireframeBlock><Screen surface="browser">...</Screen></WireframeBlock>`,',
     "`<Diagram />`, `<TabsBlock />`, `<FileTree />`, or `<Diff />`; the local",
     "preview will show the source without publishing it to the Plan app.",
@@ -3064,7 +3064,7 @@ async function runBlocks(
   }
 }
 
-const HELP = `agent-native plan — local Agent-Native Plan helpers
+const HELP = `agent-native plan - local FB Factory Plan helpers
 
 Usage:
   agent-native plan blocks [--format reference|schema] [--app-url <url>] [--out <file>] [--json]

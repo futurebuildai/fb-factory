@@ -982,7 +982,7 @@ export function useBuilderConnectFlow(
         });
         if (opened) activePopupRef.current = opened;
         if (!opened) {
-          // Agent-Native Desktop handles the popup in Electron and reports
+          // FB Factory Desktop handles the popup in Electron and reports
           // null to the embedded webview, so null is not a blocker here.
         }
       } else {

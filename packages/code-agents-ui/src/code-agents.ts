@@ -162,5 +162,5 @@ export function getCodeAgentAppConfig(
   if (goal.id === "migrate") {
     return getMigrationWorkbenchAppConfig(apps);
   }
-  throw new Error(`Unknown Agent-Native Code goal: ${goal.id}`);
+  throw new Error(`Unknown FB Factory Code goal: ${goal.id}`);
 }

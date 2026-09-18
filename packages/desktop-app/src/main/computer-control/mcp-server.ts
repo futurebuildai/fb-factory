@@ -425,7 +425,7 @@ export class DesktopComputerMcpBridge {
           screen = {
             available: false,
             guidance:
-              "Enable Agent-Native in System Settings > Privacy & Security > Screen Recording to include a desktop image.",
+              "Enable FB Factory in System Settings > Privacy & Security > Screen Recording to include a desktop image.",
           };
         }
         content.unshift({
@@ -578,7 +578,7 @@ export class DesktopComputerMcpBridge {
       "browser_screenshot",
       {
         description:
-          "Capture the pixels of the currently active Agent-Native inline browser surface, including an app tab or chat-first browser sidebar. This is separate from attached Chrome control.",
+          "Capture the pixels of the currently active FB Factory inline browser surface, including an app tab or chat-first browser sidebar. This is separate from attached Chrome control.",
         annotations: { readOnlyHint: true, openWorldHint: false },
       },
       async () => {
@@ -601,7 +601,7 @@ export class DesktopComputerMcpBridge {
       "browser_status",
       {
         description:
-          "Read Agent-Native Chrome extension, native-host, and task attachment status.",
+          "Read FB Factory Chrome extension, native-host, and task attachment status.",
         annotations: { readOnlyHint: true, openWorldHint: false },
       },
       async () => {
@@ -1033,7 +1033,7 @@ export class DesktopComputerMcpBridge {
   private assertBrowserContext(): RunContext {
     const context = this.assertMutationContext();
     if (!context.browserRegistration || !this.options.browserBridge) {
-      throw new Error("Agent-Native browser control is unavailable.");
+      throw new Error("FB Factory browser control is unavailable.");
     }
     return context;
   }

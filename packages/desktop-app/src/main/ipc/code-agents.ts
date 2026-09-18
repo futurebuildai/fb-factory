@@ -141,7 +141,7 @@ export interface CodeAgentsIpcDeps {
 }
 
 /**
- * Registers the clipboard + Agent-Native Code (background code-agent) IPC
+ * Registers the clipboard + FB Factory Code (background code-agent) IPC
  * surface: run listing/creation/transcripts, follow-ups, control commands,
  * computer-use setup, provider settings, projects, terminal launch, and the
  * remote connector pairing flow.
@@ -218,7 +218,7 @@ export function registerCodeAgentsIpc(deps: CodeAgentsIpcDeps): void {
           status: "unavailable",
           goalId,
           runs: [],
-          error: `Unknown Agent-Native Code goal: ${goalId}`,
+          error: `Unknown FB Factory Code goal: ${goalId}`,
         });
       }
       const runs = listDesktopCodeAgentRuns(goal.id);

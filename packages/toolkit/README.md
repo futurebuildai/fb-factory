@@ -1,6 +1,6 @@
 # @agent-native/toolkit
 
-Reusable app-building UI and helpers for Agent-Native apps.
+Reusable app-building UI and helpers for FB Factory apps.
 
 `@agent-native/core` owns the foundational runtime contracts: actions, server
 plugins, DB, app state, agent chat transport, sharing stores, collaboration
@@ -31,7 +31,7 @@ attachments, and application-state adapters. Both layers are reusable, and
 Toolkit stays Core-free. The provider-neutral event contract lives in
 [`@agent-native/agentkit/protocol`](../agentkit/README.md).
 
-AgentKit is an independent implementation optimized for Agent-Native workflows.
+AgentKit is an independent implementation optimized for FB Factory workflows.
 The protocol README records the shared product goals and clean implementation
 boundary; it is not a runtime dependency or compatibility layer for another
 chat product.

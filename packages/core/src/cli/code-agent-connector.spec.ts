@@ -153,7 +153,7 @@ describe("runCodeAgentConnector", () => {
       expect.arrayContaining([
         expect.objectContaining({
           kind: "status",
-          message: "Remote Agent-Native Code run queued.",
+          message: "Remote FB Factory Code run queued.",
         }),
       ]),
     );

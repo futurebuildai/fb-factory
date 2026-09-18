@@ -50,17 +50,17 @@ This is a pnpm monorepo. Workspaces are defined in `pnpm-workspace.yaml`.
 | Package             | Description                                                                                                         |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------- |
 | `core`              | Core framework library (`@agent-native/core`) -- CLI, server plugins, agent tools, Vite plugin                      |
-| `code-agents-ui`    | Reusable React UI for Agent-Native Code surfaces                                                                    |
+| `code-agents-ui`    | Reusable React UI for FB Factory Code surfaces                                                                    |
 | `desktop-app`       | Electron desktop app                                                                                                |
 | `dispatch`          | Workspace control plane -- vault, integrations, destinations, scheduled jobs, and cross-app delegation as a drop-in |
 | `docs`              | Documentation site                                                                                                  |
-| `embedding`         | Embed Agent-Native apps, pickers, and agents inside other apps                                                      |
+| `embedding`         | Embed FB Factory apps, pickers, and agents inside other apps                                                      |
 | `frame`             | Local dev frame -- agent chat + CLI sidebar wrapping the app iframe                                                 |
 | `migrate`           | Migration Workbench engine for moving existing apps to agent-native with verifiable, resumable migration runs       |
 | `mobile-app`        | Mobile app                                                                                                          |
 | `pinpoint`          | Visual feedback and annotation tool for agent-native web applications                                               |
 | `scheduling`        | Scheduling primitives -- event types, availability, bookings, team scheduling, workflows, routing forms             |
-| `shared-app-config` | Shared Agent-Native app catalog and configuration helpers                                                           |
+| `shared-app-config` | Shared FB Factory app catalog and configuration helpers                                                           |
 
 ### Templates (`templates/`)
 

@@ -303,8 +303,8 @@ async function responseError(response: Response): Promise<Error> {
 }
 
 /**
- * Creates the production AgentKit transport for Agent-Native applications.
- * It binds the portable protocol to durable Agent-Native threads, queue
+ * Creates the production AgentKit transport for FB Factory applications.
+ * It binds the portable protocol to durable FB Factory threads, queue
  * persistence, approval continuation, and the built-in streaming endpoint.
  */
 export function createAgentNativeAgentKitTransport(
@@ -577,7 +577,7 @@ export function createAgentNativeAgentKitTransport(
           const repository = storedRepository(source);
           if (!Array.isArray(repository.messages)) {
             throw new Error(
-              "The Agent-Native thread cannot be forked from a message without durable history.",
+              "The FB Factory thread cannot be forked from a message without durable history.",
             );
           }
           const throughIndex = repository.messages.findIndex(

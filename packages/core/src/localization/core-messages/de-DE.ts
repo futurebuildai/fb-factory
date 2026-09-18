@@ -116,7 +116,7 @@ const messages: AgentChatTranslation = {
   "onboarding.capability.about": "Über {{label}}",
   "onboarding.capability.why": "Warum {{label}} benötigt wird",
   "onboarding.openAiKeySettings": "KI-Schlüsseleinstellungen öffnen",
-  "aboutAgentNative.title": "Über Agent-Native",
+  "aboutAgentNative.title": "Über FB Factory",
   "aboutAgentNative.version": "Version",
   "aboutAgentNative.environment": "Umgebung",
   "aboutAgentNative.build": "Build",
@@ -496,7 +496,7 @@ const messages: AgentChatTranslation = {
   "composer.planDescription":
     "Zuerst schreibgeschützte Recherche und Genehmigung",
   "composer.planDesktopRequired":
-    "Öffne Agent-Native Desktop, um den Planmodus zu verwenden.",
+    "Öffne FB Factory Desktop, um den Planmodus zu verwenden.",
   "composer.previewAttachment": "Vorschau {{name}}",
   "composer.reasoning": "Denkaufwand",
   "composer.reasoningEffort.auto": "Auto",

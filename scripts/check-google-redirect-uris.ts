@@ -239,7 +239,7 @@ function parseHost(value: string): string {
     host.includes(":") ||
     !/^(?:[a-z0-9-]+\.)+(?:agent-native\.com|builder\.io)$/i.test(host)
   ) {
-    throw new Error(`--host must be an Agent-Native hostname (got ${value})`);
+    throw new Error(`--host must be an FB Factory hostname (got ${value})`);
   }
   return host.toLowerCase();
 }

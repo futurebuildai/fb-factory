@@ -926,7 +926,7 @@ const rawLiteralCallNames = [
 ];
 
 const rawLiteralAllowPatterns = [
-  /^(?:Agent-Native|GitHub|LinkedIn|HubSpot)$/,
+  /^(?:FB Factory|GitHub|LinkedIn|HubSpot)$/,
   /^[A-Z0-9_./:@#?&=%+ -]+$/,
   /^[a-z0-9_./:@#?&=%+ -]+$/,
   /^\d+$/,

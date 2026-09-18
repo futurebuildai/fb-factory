@@ -2282,7 +2282,7 @@ describe("recap usage parsing", () => {
     });
   });
 
-  it("reads Agent-Native Code usage for OpenAI-compatible providers", () => {
+  it("reads FB Factory Code usage for OpenAI-compatible providers", () => {
     expect(
       parseOpenAiCompatibleUsage(
         JSON.stringify({

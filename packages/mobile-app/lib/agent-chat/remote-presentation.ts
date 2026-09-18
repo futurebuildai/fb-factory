@@ -11,11 +11,11 @@ export interface RemoteChatState {
 }
 
 const LIFECYCLE_MESSAGES = [
-  /^Agent-Native Code run started\.?$/i,
-  /^Agent-Native Code run completed\.?$/i,
-  /^Agent-Native Code process exited\.?$/i,
-  /^Starting local Agent-Native Code execution\.?$/i,
-  /^Remote Agent-Native Code run queued\.?$/i,
+  /^FB Factory Code run started\.?$/i,
+  /^FB Factory Code run completed\.?$/i,
+  /^FB Factory Code process exited\.?$/i,
+  /^Starting local FB Factory Code execution\.?$/i,
+  /^Remote FB Factory Code run queued\.?$/i,
   /^Connected \d+ MCP tools? for this run\.?$/i,
 ];
 

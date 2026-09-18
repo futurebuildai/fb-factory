@@ -704,7 +704,7 @@ function clearPendingSelection() {
     {
       method: "DELETE",
       keepalive: true,
-      headers: { "X-Agent-Native-CSRF": "1" },
+      headers: { "X-FB Factory-CSRF": "1" },
     },
   ).catch(() => {});
   if (typeof window !== "undefined") {
@@ -2327,7 +2327,7 @@ export interface AssistantChatProps {
   /**
    * Bring-your-own agent runtime. When supplied, AssistantChat keeps the
    * standard composer/transcript/tool rendering shell but sends turns through
-   * this runtime instead of the built-in Agent-Native SSE endpoint. If
+   * this runtime instead of the built-in FB Factory SSE endpoint. If
    * `createAdapter` is also supplied, the adapter override takes precedence.
    */
   runtime?: AgentChatRuntime;
@@ -2449,7 +2449,7 @@ export function clearChatStorage(tabId?: string) {
 function ensureMessageMetadata(repo: any): any {
   // Drop duplicate message ids before import — assistant-ui's MessageRepository
   // throws "performOp/link: A message with the same id already exists in the
-  // parent tree" (Sentry AGENT-NATIVE-BROWSER-2Q) when fed repeated ids. No-op
+  // parent tree" (Sentry FB Factory-BROWSER-2Q) when fed repeated ids. No-op
   // for the normal no-duplicate case. See dedupeRepoMessagesById.
   repo = dropEmptyAssistantMessages(dedupeRepoMessagesById(repo));
   if (!repo?.messages || !Array.isArray(repo.messages)) return repo;
@@ -2884,7 +2884,7 @@ const AssistantChatInner = forwardRef<
   // user message and the `performRoundtrip` call that tries to record the
   // assistant placeholder against that user message's id. The internal-bug
   // throw turns into an unhandled rejection that Sentry captures from the
-  // assets.agent-native.com prompt composer (AGENT-NATIVE-BROWSER-18). Fix
+  // assets.agent-native.com prompt composer (FB Factory-BROWSER-18). Fix
   // it by relinking to the current head whenever the requested parent has
   // gone missing instead of throwing.
   useEffect(

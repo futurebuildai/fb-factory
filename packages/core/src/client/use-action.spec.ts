@@ -135,9 +135,9 @@ describe("callAction", () => {
           status: 409,
           headers: {
             "Content-Type": "application/json",
-            "X-Agent-Native-Client-Mismatch": "1",
-            "X-Agent-Native-Build-Id": "server-build",
-            "X-Agent-Native-Client-Compatibility": "spaces-v2",
+            "X-FB Factory-Client-Mismatch": "1",
+            "X-FB Factory-Build-Id": "server-build",
+            "X-FB Factory-Client-Compatibility": "spaces-v2",
           },
         },
       ),
@@ -148,8 +148,8 @@ describe("callAction", () => {
       callAction("list-files", {}, { method: "GET" }),
     ).rejects.toMatchObject({ status: 409, code: "client_build_mismatch" });
     expect(fetchMock.mock.calls[0]?.[1]?.headers).toMatchObject({
-      "X-Agent-Native-Client-Compatibility": "spaces-v1",
-      "X-Agent-Native-Build-Id": "client-build",
+      "X-FB Factory-Client-Compatibility": "spaces-v1",
+      "X-FB Factory-Build-Id": "client-build",
     });
     expect(replace).toHaveBeenCalledWith(
       "https://content.example/page/one?__an_build=server-build",
@@ -166,7 +166,7 @@ describe("callAction", () => {
           headers: {
             "Content-Type": "application/json",
             "Content-Length": "11",
-            "X-Agent-Native-Request-Id": "request-123",
+            "X-FB Factory-Request-Id": "request-123",
             "Server-Timing":
               "app;dur=120, startup;dur=45, startup-db;dur=44, startup-db-connect;dur=30, db;dur=60, db-connect;dur=35, db-slowest;dur=40",
           },
@@ -209,7 +209,7 @@ describe("callAction", () => {
             status: 403,
             headers: {
               "Content-Type": "application/json",
-              "X-Agent-Native-Request-Id": "request-forbidden",
+              "X-FB Factory-Request-Id": "request-forbidden",
             },
           },
         ),
@@ -303,7 +303,7 @@ describe("callAction", () => {
       "X-Request-Source",
     );
     expect(fetchMock.mock.calls[0]?.[1]?.headers).toMatchObject({
-      "X-Agent-Native-Browser-Tab": expect.any(String),
+      "X-FB Factory-Browser-Tab": expect.any(String),
     });
   });
 
@@ -328,7 +328,7 @@ describe("callAction", () => {
     await callAction("log-meal", { name: "Salad" });
 
     expect(fetchMock.mock.calls[0]?.[1]?.headers).toMatchObject({
-      "X-Agent-Native-Session-Id": "run-42",
+      "X-FB Factory-Session-Id": "run-42",
     });
   });
 
@@ -357,7 +357,7 @@ describe("callAction", () => {
       "X-Request-Source",
     );
     expect(fetchMock.mock.calls[0]?.[1]?.headers).toMatchObject({
-      "X-Agent-Native-Browser-Tab": expect.any(String),
+      "X-FB Factory-Browser-Tab": expect.any(String),
     });
   });
 
@@ -704,7 +704,7 @@ describe("tryCallActionKeepalive", () => {
         cache: "no-store",
         headers: expect.objectContaining({
           "Content-Type": "application/json",
-          "X-Agent-Native-Frontend": "1",
+          "X-FB Factory-Frontend": "1",
         }),
         body: JSON.stringify({ id: "file-1", content: "updated" }),
       }),

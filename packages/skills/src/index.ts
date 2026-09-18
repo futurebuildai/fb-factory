@@ -60,7 +60,7 @@ export interface InstallSkillsOptions {
   promptPlanMcpUrl?: () => Promise<string | null>;
   /**
    * Register the hosted MCP server for app-backed skills (e.g. visual-plan /
-   * visual-recap → the Agent-Native Plan MCP). Defaults to `true`; pass
+   * visual-recap → the FB Factory Plan MCP). Defaults to `true`; pass
    * `false` (CLI `--no-mcp`) to install the skill files only.
    */
   mcp?: boolean;
@@ -458,7 +458,7 @@ export async function runSkillsCli(
       return;
     }
     if (shouldShowDelegatedStartupProgress(parsed, options)) {
-      process.stderr.write("Preparing Agent-Native skills...\n");
+      process.stderr.write("Preparing FB Factory skills...\n");
     }
     const loadedSource = shouldLoadPublicCatalog(parsed)
       ? await materializeSource(parsed.source ?? DEFAULT_SKILLS_SOURCE)
@@ -705,7 +705,7 @@ export async function installSkills(
     const skillFileClients = clients.filter(supportsSkillFiles);
     if (skillFileClients.length === 0 && mcpApps.length === 0) {
       throw new Error(
-        "Claude Cowork is MCP-only for Agent-Native skills. Choose Codex, Claude Code, Pi, Cursor, OpenCode, or GitHub Copilot for local skill files, or install an app-backed skill with MCP enabled.",
+        "Claude Cowork is MCP-only for FB Factory skills. Choose Codex, Claude Code, Pi, Cursor, OpenCode, or GitHub Copilot for local skill files, or install an app-backed skill with MCP enabled.",
       );
     }
 
@@ -776,7 +776,7 @@ export async function installSkills(
       }
 
       // Register the hosted MCP server for app-backed skills (visual-plan /
-      // visual-recap → Agent-Native Plan) so the agent can actually call them,
+      // visual-recap → FB Factory Plan) so the agent can actually call them,
       // not just read the SKILL.md. On by default; `--no-mcp` installs the
       // skill files only. One registration per app, so visual-plan +
       // visual-recap share a single "plan" server.

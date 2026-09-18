@@ -25,7 +25,7 @@ export const meta = () =>
   withTemplateSocialImage(
     [
       {
-        title: "Free Screen Recorder for AI Agents | Agent-Native Clips",
+        title: "Free Screen Recorder for AI Agents | FB Factory Clips",
       },
       {
         name: "description",
@@ -34,7 +34,7 @@ export const meta = () =>
       },
       {
         property: "og:title",
-        content: "Free Screen Recorder for AI Agents | Agent-Native Clips",
+        content: "Free Screen Recorder for AI Agents | FB Factory Clips",
       },
       {
         property: "og:description",
@@ -116,7 +116,7 @@ const KEY_FEATURES = [
 
 const CLIP_PREVIEWS = [
   {
-    title: "Introducing Agent-Native Clips",
+    title: "Introducing FB Factory Clips",
     href: firstPartyAppUrl("https://clips.agent-native.com/share/B0AgxdvzuZ7H"),
     thumbnail: "/clips/B0AgxdvzuZ7H.jpg",
   },

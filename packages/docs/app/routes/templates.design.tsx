@@ -25,7 +25,7 @@ export const meta = () =>
   withTemplateSocialImage(
     [
       {
-        title: "Free AI Design & Prototyping Tool | Agent-Native Design",
+        title: "Free AI Design & Prototyping Tool | FB Factory Design",
       },
       {
         name: "description",
@@ -34,7 +34,7 @@ export const meta = () =>
       },
       {
         property: "og:title",
-        content: "Free AI Design & Prototyping Tool | Agent-Native Design",
+        content: "Free AI Design & Prototyping Tool | FB Factory Design",
       },
       {
         property: "og:description",

@@ -382,7 +382,7 @@ describe("agent-native config environment aliases", () => {
     },
   ])("rejects unknown keys inside JSON fragments: %o", (env) => {
     expect(() => readAgentNativeConfigEnv(env)).toThrow(
-      "unsupported Agent-Native config path",
+      "unsupported FB Factory config path",
     );
   });
 });

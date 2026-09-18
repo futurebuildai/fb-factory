@@ -1,13 +1,13 @@
 ---
 name: agent-native-docs
-description: "How to look up version-matched Agent-Native framework docs and source in node_modules. Use before coding against @agent-native/core APIs or advanced features."
+description: "How to look up version-matched FB Factory framework docs and source in node_modules. Use before coding against @agent-native/core APIs or advanced features."
 ---
 
-# Agent-Native Docs Lookup
+# FB Factory Docs Lookup
 
 ## Rule
 
-Before implementing non-trivial Agent-Native functionality, read the
+Before implementing non-trivial FB Factory functionality, read the
 version-matched docs installed with `@agent-native/core`. When implementation
 examples or template patterns matter, inspect the packaged source corpus too.
 

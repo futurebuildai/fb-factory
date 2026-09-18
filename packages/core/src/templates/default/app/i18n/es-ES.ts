@@ -88,12 +88,12 @@ const messages = {
       browserChatUnavailableTitle:
         "La sesión de chat del navegador no está disponible",
       browserChatUnavailableDescription:
-        "Vuelve a conectarte desde la extensión Agent-Native.",
+        "Vuelve a conectarte desde la extensión FB Factory.",
       browserChatPlaceholder: "Pregunta sobre esta página…",
       browserChatAttachedPlaceholder: "Pregunta sobre {{page}}…",
       browserConnectTitle: "Conectar el chat del navegador",
       browserConnectDescription:
-        "Permite que la extensión de Chrome Agent-Native abra esta sesión de Dispatch. La conexión usa un ticket único y de corta duración.",
+        "Permite que la extensión de Chrome FB Factory abra esta sesión de Dispatch. La conexión usa un ticket único y de corta duración.",
       browserConnectInvalid:
         "Esta solicitud de conexión no es válida. Vuelve a empezar desde la extensión.",
       browserConnectConnected:
@@ -101,7 +101,7 @@ const messages = {
       browserConnectConnecting: "Conectando…",
       browserConnectButton: "Conectar",
       browserConnectOpenFromExtension:
-        "Abre esta página desde la extensión de Chrome Agent-Native.",
+        "Abre esta página desde la extensión de Chrome FB Factory.",
       browserConnectFailed: "La extensión del navegador no se conectó.",
       appsDescription:
         "Abra las aplicaciones del espacio de trabajo y comience la creación de nuevas aplicaciones desde Dispatch.",
@@ -235,7 +235,7 @@ const messages = {
     useBuilder: "Usar constructor",
     openDesktopToEditCode: "Abra el escritorio para editar el código",
     codeUnavailableDescription:
-      "Los cambios del código fuente y el acceso a CLI están disponibles en la aplicación de escritorio Agent-Native.",
+      "Los cambios del código fuente y el acceso a CLI están disponibles en la aplicación de escritorio FB Factory.",
     downloadDesktop: "Descargar escritorio",
     chatMode: "modo chat",
     chat: "Chat",
@@ -357,7 +357,7 @@ const messages = {
       '"{{feature}}" creates or modifies source code, which needs Desktop or Builder from this surface.',
     subtitle:
       "Esta acción crea o modifica el código fuente, que necesita Desktop o Builder desde esta superficie.",
-    desktopTitle: "Utilice el escritorio Agent-Native",
+    desktopTitle: "Utilice el escritorio FB Factory",
     desktopDescription:
       "Abra el proyecto en la aplicación de escritorio para habilitar las ediciones de origen y el acceso a CLI.",
     builderAgentTitle: "Utilice el agente Builder.io",

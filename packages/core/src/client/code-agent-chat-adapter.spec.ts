@@ -113,7 +113,7 @@ describe("codeAgentTranscriptEventsToContent", () => {
           "Approval required before running this command: destructive recursive delete.",
           "Approval id: approval-20260710120000",
           "Command: rm -rf tmp",
-          "The run is paused; approve from the Agent-Native Code UI/CLI if this command is intentional.",
+          "The run is paused; approve from the FB Factory Code UI/CLI if this command is intentional.",
         ].join("\n"),
       }),
     ]);

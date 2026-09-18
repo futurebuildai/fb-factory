@@ -70,7 +70,7 @@ describe("renderMarkdownToHtml", () => {
 # Company
 
 - Company: Example Co
-- Product: Agent-Native workspace for internal teams
+- Product: FB Factory workspace for internal teams
 \`\`\`
 `);
 

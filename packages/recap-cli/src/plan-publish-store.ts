@@ -42,7 +42,7 @@ export function planPublishConfigPath(): string {
 }
 
 /**
- * Whether `url`'s host is the first-party Agent-Native Plans app whose token
+ * Whether `url`'s host is the first-party FB Factory Plans app whose token
  * we should mirror to the canonical publish file. Only the hosted Plans app
  * (`plan.agent-native.com`) qualifies — mirroring tokens for other
  * agent-native subdomains (assets, mail, …) would silently overwrite the

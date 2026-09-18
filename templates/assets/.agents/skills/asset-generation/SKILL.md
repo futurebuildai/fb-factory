@@ -150,7 +150,7 @@ only when one actually ran.
 - Local customization: run `npx @agent-native/core@latest app-skill launch --local` from the
   Assets app-skill manifest, or pass `--into <path>` for editable source.
 - For MCP callers, `generate-asset` is the portable first choice because the
-  same MCP App picker renders inline in Agent-Native chat, ChatGPT, and Claude
+  same MCP App picker renders inline in FB Factory chat, ChatGPT, and Claude
   when the host supports MCP Apps. Include exact `assetId`, `runId`, media type,
   and URLs in the final response so the caller can attach or embed the media.
   Include `presetId` and `sessionId` when present.

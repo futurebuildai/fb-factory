@@ -430,7 +430,7 @@ describe("automatic server action WebMCP registration", () => {
       expect.any(Object),
     );
     expect(fetchMock.mock.calls[0]?.[1]?.headers).toMatchObject({
-      "X-Agent-Native-Browser-Tab": expect.any(String),
+      "X-FB Factory-Browser-Tab": expect.any(String),
     });
     expect(fetchMock).toHaveBeenNthCalledWith(
       2,
@@ -438,7 +438,7 @@ describe("automatic server action WebMCP registration", () => {
       expect.objectContaining({ method: "POST" }),
     );
     expect(fetchMock.mock.calls[1]?.[1]?.headers).toMatchObject({
-      "X-Agent-Native-Browser-Tab": expect.any(String),
+      "X-FB Factory-Browser-Tab": expect.any(String),
     });
   });
 
@@ -520,7 +520,7 @@ describe("automatic server action WebMCP registration", () => {
       expect.objectContaining({ credentials: "same-origin" }),
     );
     expect(fetchMock.mock.calls[0]?.[1]?.headers).toMatchObject({
-      "X-Agent-Native-Browser-Tab": expect.any(String),
+      "X-FB Factory-Browser-Tab": expect.any(String),
     });
     expect(fetchMock).toHaveBeenNthCalledWith(
       2,
@@ -533,7 +533,7 @@ describe("automatic server action WebMCP registration", () => {
       }),
     );
     expect(fetchMock.mock.calls[1]?.[1]?.headers).toMatchObject({
-      "X-Agent-Native-Browser-Tab": expect.any(String),
+      "X-FB Factory-Browser-Tab": expect.any(String),
     });
   });
 

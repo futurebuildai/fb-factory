@@ -12,7 +12,7 @@ describe("desktop chat-first shell", () => {
     expect(appSource).toContain("content-area content-area--chat-first");
     expect(appSource).toContain("<CodeAgentsHub");
     expect(appSource).toContain("<DesktopIdentityGate");
-    expect(appSource).toContain('appName="Agent-Native Desktop"');
+    expect(appSource).toContain('appName="FB Factory Desktop"');
     expect(appSource).not.toContain("desktopIdentityGateDismissed");
     expect(appSource).not.toContain("onDesktopIdentitySyncFailure");
     expect(appSource).toContain(".getStatus()");

@@ -82,18 +82,18 @@ const messages = {
     pages: {
       browserChatUnavailableTitle: "瀏覽器聊天工作階段無法使用",
       browserChatUnavailableDescription:
-        "請從 Agent-Native 瀏覽器擴充功能重新連線。",
+        "請從 FB Factory 瀏覽器擴充功能重新連線。",
       browserChatPlaceholder: "詢問此頁面…",
       browserChatAttachedPlaceholder: "詢問 {{page}}…",
       browserConnectTitle: "連接瀏覽器聊天",
       browserConnectDescription:
-        "允許 Agent-Native Chrome 擴充功能開啟此 Dispatch 聊天工作階段。連線使用一次性的短期票證。",
+        "允許 FB Factory Chrome 擴充功能開啟此 Dispatch 聊天工作階段。連線使用一次性的短期票證。",
       browserConnectInvalid: "此連線要求無效。請從擴充功能重新開始。",
       browserConnectConnected: "瀏覽器聊天已連線。你可以關閉此分頁。",
       browserConnectConnecting: "連線中…",
       browserConnectButton: "連線",
       browserConnectOpenFromExtension:
-        "請從 Agent-Native Chrome 擴充功能開啟此頁面。",
+        "請從 FB Factory Chrome 擴充功能開啟此頁面。",
       browserConnectFailed: "瀏覽器擴充功能未能連線。",
       appsDescription: "開啟工作區應用程式並從 Dispatch 開始建立新應用程式。",
       appsDescriptionWithWorkspace:
@@ -217,7 +217,7 @@ const messages = {
     useBuilder: "使用生成器",
     openDesktopToEditCode: "開啟桌面編輯程式碼",
     codeUnavailableDescription:
-      "Agent-Native 桌面應用程式中提供來源程式碼更改和 CLI 存取。",
+      "FB Factory 桌面應用程式中提供來源程式碼更改和 CLI 存取。",
     downloadDesktop: "下載桌面",
     chatMode: "聊天模式",
     chat: "聊天",
@@ -330,7 +330,7 @@ const messages = {
     subtitleWithFeature:
       "「{{feature}}」會建立或修改原始碼，因此需要從此介面使用 Desktop 或 Builder。",
     subtitle: "此操作建立或修改來源程式碼，需要此介面的 Desktop 或 Builder。",
-    desktopTitle: "使用 Agent-Native 桌面",
+    desktopTitle: "使用 FB Factory 桌面",
     desktopDescription:
       "在桌面應用程式中開啟專案以啟用來源程式碼編輯和 CLI 存取。",
     builderAgentTitle: "使用 Builder.io 代理",

@@ -301,7 +301,7 @@ describe("server/sentry", () => {
     });
 
     it("drops ErrorEvent rejections whose only in_app frames are bundled SDK chunks", async () => {
-      // Production shape from AGENT-NATIVE-BROWSER-6: serverless bundles place
+      // Production shape from FB Factory-BROWSER-6: serverless bundles place
       // the Sentry SDK under the app root (/var/task/_libs/@sentry/...), so
       // those instrumentation frames carry in_app: true and defeated the
       // original !hasApplicationFrame check — 574 events leaked through.

@@ -2021,8 +2021,8 @@ export function buildRecapPrompt(input: {
   lines.push("");
   lines.push(
     input.localFiles
-      ? `You are running non-interactively in local-files privacy mode. Follow the **visual-recap skill** included verbatim below to turn this PR's diff into a grounded Agent-Native Plan MDX folder, but do not publish it or call any Plan MCP/action write tool.`
-      : `You are running non-interactively in CI. Follow the **visual-recap skill** included verbatim below to turn this PR's diff into a grounded Agent-Native Plan, then publish it.`,
+      ? `You are running non-interactively in local-files privacy mode. Follow the **visual-recap skill** included verbatim below to turn this PR's diff into a grounded FB Factory Plan MDX folder, but do not publish it or call any Plan MCP/action write tool.`
+      : `You are running non-interactively in CI. Follow the **visual-recap skill** included verbatim below to turn this PR's diff into a grounded FB Factory Plan, then publish it.`,
   );
   lines.push("");
   if (input.forkPr) {
@@ -2945,7 +2945,7 @@ export function buildRecapRepairPrompt(input: {
   return [
     "# Repair rejected visual recap source",
     "",
-    "The hosted Agent-Native Plan parser rejected the authored recap source. This is the only repair turn for this workflow run.",
+    "The hosted FB Factory Plan parser rejected the authored recap source. This is the only repair turn for this workflow run.",
     "",
     `- Source file: \`${sourcePath}\``,
     `- Hosted parser diagnostic: ${reason || "No diagnostic was returned."}`,
@@ -4839,7 +4839,7 @@ export function parseCodexUsage(jsonl: string): ParsedUsage | null {
   };
 }
 
-/** Parse the usage sidecar emitted by an Agent-Native Code run. */
+/** Parse the usage sidecar emitted by an FB Factory Code run. */
 export function parseOpenAiCompatibleUsage(json: string): ParsedUsage | null {
   const obj = parseLastJsonObject(json);
   const usage = obj?.usage ?? obj;

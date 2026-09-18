@@ -83,7 +83,7 @@ test.describe("Tasks reorder and layout", () => {
         {
           headers: {
             "Content-Type": "application/json",
-            "X-Agent-Native-Frontend": "1",
+            "X-FB Factory-Frontend": "1",
           },
           data: { title },
         },
@@ -101,7 +101,7 @@ test.describe("Tasks reorder and layout", () => {
       {
         headers: {
           "Content-Type": "application/json",
-          "X-Agent-Native-Frontend": "1",
+          "X-FB Factory-Frontend": "1",
         },
         data: { taskIds: ids.slice().reverse() },
       },

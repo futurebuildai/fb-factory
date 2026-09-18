@@ -195,7 +195,7 @@ function agentNativeA2AEndpoint(urlOrOrigin: string): string {
     }
   } catch {
     // coercion-ok: invalid URL input intentionally uses the conventional endpoint fallback.
-    // Fall through and append the conventional Agent-Native endpoint.
+    // Fall through and append the conventional FB Factory endpoint.
   }
   return `${value}/_agent-native/a2a`;
 }
@@ -1004,7 +1004,7 @@ function openAppTool(
       resource: embedApp({
         title: "Open app",
         description: "Render the requested app route inline.",
-        iframeTitle: "Agent-Native app",
+        iframeTitle: "FB Factory app",
         openLabel: "Open app",
       }),
     },

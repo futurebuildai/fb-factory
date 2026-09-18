@@ -1,5 +1,5 @@
 /**
- * Identity-authority primitives for "Sign in with Agent-Native".
+ * Identity-authority primitives for "Sign in with FB Factory".
  *
  * Dispatch is the identity authority. The browser receives only a short-lived
  * one-time authorization code. The client redeems it server-to-server with a

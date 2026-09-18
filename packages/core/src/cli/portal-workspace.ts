@@ -183,7 +183,7 @@ export async function createPortalHandoff(input: {
           executeGit,
           ["config", "--get", "user.name"],
           repositoryPath,
-        )) ?? "Agent-Native Portal";
+        )) ?? "FB Factory Portal";
       const authorEmail =
         (await optionalGitOutput(
           executeGit,

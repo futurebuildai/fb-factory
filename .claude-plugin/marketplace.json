@@ -1,12 +1,12 @@
 {
   "name": "agent-native-apps",
-  "description": "Agent-Native app-backed skills that bundle instructions, MCP connectors, and UI surfaces.",
-  "owner": { "name": "Agent-Native" },
+  "description": "FB Factory app-backed skills that bundle instructions, MCP connectors, and UI surfaces.",
+  "owner": { "name": "FB Factory" },
   "plugins": [
     {
       "name": "agent-native",
-      "displayName": "Agent-Native",
-      "description": "Open and operate granted Agent-Native apps through Dispatch MCP, with inline app surfaces and current browser screen state.",
+      "displayName": "FB Factory",
+      "description": "Open and operate granted FB Factory apps through Dispatch MCP, with inline app surfaces and current browser screen state.",
       "source": "./.agents/plugins/agent-native",
       "autoUpdate": true,
       "homepage": "https://dispatch.agent-native.com",
@@ -20,7 +20,7 @@
     },
     {
       "name": "agent-native-visual-plans",
-      "displayName": "Agent-Native Plan",
+      "displayName": "FB Factory Plan",
       "description": "Create rich interactive visual plans, recaps, and repo-native visual docs with diagrams, file maps, annotated code and diffs, API/schema summaries, feedback, and HTML export.",
       "source": "./.agents/plugins/agent-native-visual-plans",
       "autoUpdate": true,
@@ -51,7 +51,7 @@
     {
       "name": "agent-native-turn-into-app",
       "displayName": "Turn Into App",
-      "description": "Turn visible project context, a proven thread, skill, or workflow into a runnable Agent-Native app. On Claude or ChatGPT Web, it hands a bounded source brief to Builder through Dispatch; local code agents can build and verify in a workspace.",
+      "description": "Turn visible project context, a proven thread, skill, or workflow into a runnable FB Factory app. On Claude or ChatGPT Web, it hands a bounded source brief to Builder through Dispatch; local code agents can build and verify in a workspace.",
       "source": "./.agents/plugins/agent-native-turn-into-app",
       "autoUpdate": true,
       "homepage": "https://dispatch.agent-native.com",

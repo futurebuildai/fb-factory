@@ -52,7 +52,7 @@ function skill(overrides: Partial<AgentSkill> = {}): AgentSkill {
 function card(overrides: Partial<AgentCard> = {}): AgentCard {
   return {
     name: "Analytics",
-    description: "Agent-Native analytics agent",
+    description: "FB Factory analytics agent",
     url: "https://analytics.example.test/_agent-native/a2a",
     version: "1.0.0",
     protocolVersion: "0.3",
@@ -197,7 +197,7 @@ describe("describe-workspace-apps", () => {
     const output = await run({ app: "analytics" }, undefined, "coach");
 
     expect(output).toContain("Product analytics, funnels, and session replay.");
-    expect(output).not.toContain("Agent-Native analytics agent");
+    expect(output).not.toContain("FB Factory analytics agent");
   });
 
   it("falls back to the card description when the manifest has none", async () => {
@@ -205,7 +205,7 @@ describe("describe-workspace-apps", () => {
 
     const output = await run({ app: "analytics" }, undefined, "coach");
 
-    expect(output).toContain("Agent-Native analytics agent");
+    expect(output).toContain("FB Factory analytics agent");
   });
 
   it("lists the real app ids when the requested app does not exist", async () => {

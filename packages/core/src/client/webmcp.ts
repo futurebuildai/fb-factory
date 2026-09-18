@@ -1241,7 +1241,7 @@ export function createAgentNativeServerActionWebMcpRegistration(options?: {
           credentials: "same-origin",
           headers: {
             Accept: "application/json",
-            "X-Agent-Native-Browser-Tab": getBrowserTabId(),
+            "X-FB Factory-Browser-Tab": getBrowserTabId(),
           },
         },
       );
@@ -1270,7 +1270,7 @@ export function createAgentNativeServerActionWebMcpRegistration(options?: {
               headers: {
                 Accept: "application/json",
                 "Content-Type": "application/json",
-                "X-Agent-Native-Browser-Tab": getBrowserTabId(),
+                "X-FB Factory-Browser-Tab": getBrowserTabId(),
               },
               body: JSON.stringify(args),
               ...(runtime.signal ? { signal: runtime.signal } : {}),

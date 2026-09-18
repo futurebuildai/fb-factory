@@ -401,7 +401,7 @@ class AISDKEngine implements AgentEngine {
         // ("Function tools with reasoning_effort are not supported for
         // <model> in /v1/chat/completions. To use function tools, use
         // /v1/responses or set reasoning_effort to 'none'.") — a real prod
-        // incident, e.g. Sentry AGENT-NATIVE-BROWSER-94 on gpt-5.6-terra.
+        // incident, e.g. Sentry FB Factory-BROWSER-94 on gpt-5.6-terra.
         // `createProviderModel` forces Chat Completions specifically for a
         // custom `baseUrl` (many OpenAI-compatible gateways/proxies don't
         // implement Responses — see that comment). In that exact combination

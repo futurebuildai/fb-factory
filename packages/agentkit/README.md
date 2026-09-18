@@ -1,6 +1,6 @@
 # AgentKit
 
-Agent-Native is the application framework and execution platform. It owns
+FB Factory is the application framework and execution platform. It owns
 actions, SQL data, application state, agent execution, authentication, access
 control, and deployment. AgentKit is its agent interaction and experience layer:
 the portable conversation protocol, the deterministic headless client,
@@ -8,7 +8,7 @@ transports, React bindings, and composable agent UI. Toolkit supplies the
 semantic design-system and workspace building blocks that AgentKit composes
 with.
 
-AgentKit stays provider-neutral. An Agent-Native app uses the first-party Core
+AgentKit stays provider-neutral. An FB Factory app uses the first-party Core
 adapter. Another backend implements `AgentTransport` directly or exposes the
 versioned HTTP contract. Persistence, authorization, file storage, and agent
 execution always stay outside this package.
@@ -47,7 +47,7 @@ pnpm add @agent-native/agentkit @agent-native/core
 ```
 
 Generated Chat apps already include a compatible version. Core is needed only
-for the first-party Agent-Native transport. `react` and `react-dom` 19 are
+for the first-party FB Factory transport. `react` and `react-dom` 19 are
 optional peer dependencies required only by the `/react` entries.
 
 ## Minimal React integration
@@ -152,7 +152,7 @@ The slot receives the typed request and its run id, and resolves it through
 [Connection requests](#connection-requests) for the replay-safe lifecycle, the
 reason taxonomy, and the delegated-agent case.
 
-Agent-Native Chat replaces the generic card with Core's MCP connection surface,
+FB Factory Chat replaces the generic card with Core's MCP connection surface,
 which resolves the provider through the workspace catalog, preserves the exact
 run across OAuth, and resumes it after setup. Agent-authored values never supply
 OAuth URLs, credentials, or scopes, and an existing connection may still require
@@ -178,7 +178,7 @@ whenever they know the operation; `inferAgentActivityKind()` is the fallback.
 
 The HTTP adapter uses versioned JSON envelopes for commands and resumable
 server-sent events for run streams. Its server half is a standard Fetch handler,
-so the same contract runs in Node, serverless, and edge hosts. Agent-Native apps
+so the same contract runs in Node, serverless, and edge hosts. FB Factory apps
 normally use `createAgentNativeAgentKitTransport()`; use `/http` when another
 backend needs the portable AgentKit boundary, or when a host intentionally
 exposes a separate AgentKit route. In React, `AgentChat`'s `endpoint` mode
@@ -540,7 +540,7 @@ Compile-time types are not a substitute for protocol validation.
 
 Core provides two first-party adapters:
 `createAgentNativeAgentKitTransport()` binds AgentKit to the production
-Agent-Native thread, queue, approval, and streaming runtime, and
+FB Factory thread, queue, approval, and streaming runtime, and
 `createAgentKitProtocolAdapter()` adapts a host-owned Core `AgentChatRuntime`.
 
 ### Design principles
@@ -650,7 +650,7 @@ The request intentionally has no URL, credential, token, or scope fields. The
 host resolves `provider` through its authenticated connection catalog and owns
 OAuth, credential storage, grants, and scope policy, which keeps contextual
 cards demand-driven without letting agent-authored data define a setup endpoint
-or permission set. Agent-Native carries this provider-only shape through
+or permission set. FB Factory carries this provider-only shape through
 authenticated A2A task metadata too, so a delegated agent pauses the caller's
 visible run instead of degrading the dependency into an opaque remote failure.
 
@@ -730,17 +730,17 @@ a capability it cannot prove.
 
 | Concern                                        | Owner                               | AgentKit boundary                                                                                                                 |
 | ---------------------------------------------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| Agent execution, persistence, auth, and access | Agent-Native or the host backend    | Implement `AgentTransport` or use the Core adapter                                                                                |
+| Agent execution, persistence, auth, and access | FB Factory or the host backend    | Implement `AgentTransport` or use the Core adapter                                                                                |
 | Conversation state and commands                | One `AgentKitController`            | Pass one client/source to `AgentChat`, inject a host-owned controller into `AgentKitRoot`, or compose `AgentKitProvider` directly |
-| App operations                                 | Agent-Native `defineAction` actions | Route stable widget action ids through `invokeAction`                                                                             |
-| Visible app context                            | Agent-Native application state      | Resolve smart objects and client effects in host callbacks                                                                        |
+| App operations                                 | FB Factory `defineAction` actions | Route stable widget action ids through `invokeAction`                                                                             |
+| Visible app context                            | FB Factory application state      | Resolve smart objects and client effects in host callbacks                                                                        |
 | Agent UI semantics                             | AgentKit                            | Use components, hooks, slots, and renderer registries                                                                             |
 | Design system and workspace chrome             | Toolkit plus app-owned adapters     | Compose around AgentKit without moving runtime ownership                                                                          |
 
 Protocol ids and smart objects are references, not authorization grants. The
 host authenticates the transport, scopes every thread read, checks every action
 invocation, and re-resolves objects before opening them. The generic HTTP
-handler must be mounted behind those controls. The Agent-Native adapter keeps
+handler must be mounted behind those controls. The FB Factory adapter keeps
 the existing Core request and access boundaries.
 
 ## Configure, compose, then eject
@@ -809,7 +809,7 @@ adapters to migrate without weakening the v2 lifecycle contract.
 
 Keep the Core runtime and replace the presentation boundary in one pass:
 
-1. Create `createAgentNativeAgentKitTransport()` for the default Agent-Native
+1. Create `createAgentNativeAgentKitTransport()` for the default FB Factory
    runtime. A custom `AgentChatRuntime` can use
    `createAgentKitProtocolAdapter()` from `@agent-native/core/client/chat`.
 2. Replace the existing Core transcript component with `AgentChat`, or with

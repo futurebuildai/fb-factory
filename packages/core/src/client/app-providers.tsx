@@ -289,7 +289,7 @@ function readDocumentTitleFallback(): string {
         document.querySelector<HTMLMetaElement>(selector)?.content ?? "",
     )
     .find((title) => isHumanReadableDocumentTitle(title));
-  return normalizeDocumentTitle(metadataTitle, "Agent-Native");
+  return normalizeDocumentTitle(metadataTitle, "FB Factory");
 }
 
 function EmbeddedThemeSync() {
@@ -338,7 +338,7 @@ function DocumentTitleGuard({ fallbackTitle }: { fallbackTitle?: string }) {
   useEffect(() => {
     let lastKnownTitle = normalizeDocumentTitle(
       initialTitleRef.current ?? fallbackTitle ?? readDocumentTitleFallback(),
-      fallbackTitle ?? "Agent-Native",
+      fallbackTitle ?? "FB Factory",
     );
 
     const repairTitle = () => {
@@ -347,7 +347,7 @@ function DocumentTitleGuard({ fallbackTitle }: { fallbackTitle?: string }) {
         lastKnownTitle = currentTitle;
         return;
       }
-      const nextTitle = normalizeDocumentTitle(lastKnownTitle, "Agent-Native");
+      const nextTitle = normalizeDocumentTitle(lastKnownTitle, "FB Factory");
       if (currentTitle !== nextTitle) document.title = nextTitle;
     };
 

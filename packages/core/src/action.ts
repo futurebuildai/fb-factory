@@ -730,7 +730,7 @@ interface DefineActionWithSchema<
    *  interactive app iframes. Text/deep-link tool results remain the fallback
    *  for CLI and non-UI hosts. */
   mcpApp?: ActionMcpAppConfig;
-  /** Optional native Agent-Native chat renderer for this action's structured
+  /** Optional native FB Factory chat renderer for this action's structured
    *  result. This is first-party React UI, not arbitrary HTML/JS. */
   chatUI?: ActionChatUIConfig;
   /**
@@ -888,7 +888,7 @@ interface DefineActionWithParams<
   link?: ActionLinkBuilder;
   /** Optional MCP Apps UI resource. See schema overload above. */
   mcpApp?: ActionMcpAppConfig;
-  /** Optional native Agent-Native chat renderer. See schema overload above. */
+  /** Optional native FB Factory chat renderer. See schema overload above. */
   chatUI?: ActionChatUIConfig;
   /** Per-tool timeout override in milliseconds. See schema overload above. */
   timeoutMs?: number;

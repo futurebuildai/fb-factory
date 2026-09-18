@@ -330,7 +330,7 @@ function ErrorScreen({ error }: { error: unknown }) {
                 {copy.reload}
               </button>
               <ErrorReportActions
-                appName="Agent-Native"
+                appName="FB Factory"
                 title={title}
                 details={details}
                 status={status}

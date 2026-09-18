@@ -5,12 +5,12 @@ import { withDefaultSocialImage } from "../seo";
 export const meta = () =>
   withDefaultSocialImage([
     {
-      title: "Agent-Native Hosted Services Terms",
+      title: "FB Factory Hosted Services Terms",
     },
     {
       name: "description",
       content:
-        "Standalone terms for Agent-Native hosted applications, hosted examples, demos, and related services.",
+        "Standalone terms for FB Factory hosted applications, hosted examples, demos, and related services.",
     },
   ]);
 

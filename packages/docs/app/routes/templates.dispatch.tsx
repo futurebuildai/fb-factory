@@ -22,7 +22,7 @@ export const meta = () =>
   withTemplateSocialImage(
     [
       {
-        title: "Free AI Agent Orchestration | Agent-Native Dispatch",
+        title: "Free AI Agent Orchestration | FB Factory Dispatch",
       },
       {
         name: "description",
@@ -31,7 +31,7 @@ export const meta = () =>
       },
       {
         property: "og:title",
-        content: "Free AI Agent Orchestration | Agent-Native Dispatch",
+        content: "Free AI Agent Orchestration | FB Factory Dispatch",
       },
       {
         property: "og:description",

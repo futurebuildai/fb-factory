@@ -1,15 +1,15 @@
-# Agent-Native Hosted Services Terms
+# FB Factory Hosted Services Terms
 
 Updated September 3, 2026
 Effective date: September 3, 2026
 
-These Agent-Native Hosted Services Terms (the "Terms") govern the hosted
+These FB Factory Hosted Services Terms (the "Terms") govern the hosted
 applications, hosted examples, demos, browser extensions, and related services
-operated under the Agent-Native name (collectively, the "Service"). The
+operated under the FB Factory name (collectively, the "Service"). The
 operator of the Service is referred to as "we" or "us." The person or entity
 accessing or using the Service is referred to as "you" or "Customer."
 
-Agent-Native is also an open-source framework available under the MIT License.
+FB Factory is also an open-source framework available under the MIT License.
 These Terms apply only to the Service operated by us. They do not govern the
 framework source code, forks, customized applications, private deployments, or
 self-hosted versions operated outside the Service.
@@ -22,10 +22,10 @@ is under common control with a party to these Terms.
 1.2. "Authorized User" means your employees, contractors, and agents whom you
 authorize to access and use the Service.
 
-1.3. "Agent-Native Site" means the Agent-Native website and other websites
+1.3. "FB Factory Site" means the FB Factory website and other websites
 where these Terms are posted or linked.
 
-1.4. "Hosted Agent-Native Application" and "Hosted Application" mean any
+1.4. "Hosted FB Factory Application" and "Hosted Application" mean any
 website, application, service, or other digital property that you build,
 configure, or deploy using the Service.
 
@@ -56,7 +56,7 @@ Laws.
 1.12. "Data Protection Laws" means all laws applicable to the processing of
 Personal Data under these Terms.
 
-1.13. "Service" means the hosted Agent-Native applications, hosted examples,
+1.13. "Service" means the hosted FB Factory applications, hosted examples,
 demos, browser extensions, and related services operated by us, including the
 Hosting Services.
 
@@ -73,7 +73,7 @@ Service. Your access to and use of the Service is governed by these Terms and
 the policies incorporated into them.
 
 2.3. We may change these Terms at any time by posting revised Terms on the
-Agent-Native Site. Changes are effective when posted unless applicable law
+FB Factory Site. Changes are effective when posted unless applicable law
 requires a different process.
 
 2.4. We may make updates to the Service from time to time.
@@ -86,7 +86,7 @@ Service and corresponding Documentation during the period the Service is made
 available to you, solely for your own use and for the invited users you
 authorize.
 
-3.2. Free Service and Beta Releases. Agent-Native currently has no paid plans
+3.2. Free Service and Beta Releases. FB Factory currently has no paid plans
 or paid hosted subscriptions. The free Service and any beta releases are
 provided on an "as is" and "as available" basis without representation,
 warranty, support, maintenance, storage, service-level agreement, or
@@ -100,7 +100,7 @@ writing.
 ## 4. RESTRICTIONS AND RESPONSIBILITIES
 
 The restrictions in this Section apply only to the hosted Service. They do not
-restrict the rights granted by the MIT License for the Agent-Native source
+restrict the rights granted by the MIT License for the FB Factory source
 code.
 
 4.1. Restrictions. You will not, and will ensure that your Authorized Users
@@ -178,7 +178,7 @@ reference to the Disclosing Party's Confidential Information.
 
 5.2. Proprietary Rights. We own and retain all right, title, and interest in
 and to the hosted Service, Documentation, and related technology. The
-Agent-Native source code remains available under the MIT License. You own and
+FB Factory source code remains available under the MIT License. You own and
 retain all right, title, and interest in and to Customer Data. Nothing in
 these Terms transfers ownership of Customer Data to us or changes the MIT
 License.
@@ -200,7 +200,7 @@ data.
 
 ## 6. NO FEES OR PAYMENT
 
-6.1. Agent-Native currently has no paid plans, paid hosted subscriptions,
+6.1. FB Factory currently has no paid plans, paid hosted subscriptions,
 order forms, fees, or automatic charges. Nothing in these Terms creates a
 payment obligation.
 
@@ -276,7 +276,7 @@ Customer Data. Where a Hosted Application collects End-User Personal Data,
 Customer will provide End Users with any privacy notice required by applicable
 law.
 
-9.3. The [Agent-Native Privacy Policy](/privacy) describes our collection,
+9.3. The [FB Factory Privacy Policy](/privacy) describes our collection,
 use, sharing, retention, and deletion of personal information. No
 data-processing addendum, security addendum, or other additional privacy
 commitment applies unless separately agreed in writing.
@@ -333,11 +333,11 @@ cannot legally be limited.
 
 12.6. Entire Agreement. These Terms and the policies incorporated by reference constitute the entire agreement between you and us about the Service and supersede prior agreements about that subject. No failure or delay by either party in exercising a right constitutes a waiver.
 
-12.7. Notices. Notices to us must use the current contact method published on the Agent-Native Site. We may send notices to the email address associated with your account or by posting them in the Service.
+12.7. Notices. Notices to us must use the current contact method published on the FB Factory Site. We may send notices to the email address associated with your account or by posting them in the Service.
 
 12.8. Incorporated Policies. The following documents form part of these Terms. If an incorporated policy conflicts with these Terms about that policy's subject matter, the incorporated policy controls:
 
-- [Agent-Native Privacy Policy](/privacy)
+- [FB Factory Privacy Policy](/privacy)
 - [Acceptable Use Policy](/legal/acceptable-use)
 - [AI Terms](/legal/ai-terms)
 - [Platform Rules](/legal/platform-rules)

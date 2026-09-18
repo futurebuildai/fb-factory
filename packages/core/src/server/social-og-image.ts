@@ -366,7 +366,7 @@ function resolveAgentNativeOgImageBrand(
       appName:
         requestMarketing?.appName ||
         (trustedFirstPartyHost
-          ? "Agent-Native"
+          ? "FB Factory"
           : resolveAgentNativeOgImageAppName(event)),
       mode,
     };
@@ -450,7 +450,7 @@ async function loadLogoDataUrl(
     const response = await ssrfSafeFetch(
       url,
       {
-        headers: { "User-Agent": "Agent-Native OG Image" },
+        headers: { "User-Agent": "FB Factory OG Image" },
         signal: controller.signal,
       },
       { httpsOnly: true, maxRedirects: 2 },
@@ -552,7 +552,7 @@ export function renderAgentNativeOgImageSvg(
       : "";
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${WIDTH}" height="${HEIGHT}" viewBox="0 0 ${WIDTH} ${HEIGHT}">
-  <title>${escapeSvg(title)}${mode === "agent-native" ? " - Agent-Native preview" : " preview"}</title>
+  <title>${escapeSvg(title)}${mode === "agent-native" ? " - FB Factory preview" : " preview"}</title>
   <image x="0" y="0" width="${WIDTH}" height="${HEIGHT}" href="${AGENT_NATIVE_OG_BACKGROUND_DATA_URL}" preserveAspectRatio="xMidYMid slice"/>
   ${logo ? `<g transform="translate(80 116) scale(0.94)">${logo}</g>` : ""}
   <g>

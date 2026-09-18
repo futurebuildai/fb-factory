@@ -37,7 +37,7 @@ const INITIAL_TOOL_NAMES = [
 export default createAgentChatPlugin({
   appId: "assets",
   mcp: {
-    title: "Agent-Native Assets",
+    title: "FB Factory Assets",
     description:
       "Create, search, select, and export brand image and video assets from Assets.",
     websiteUrl: "/",

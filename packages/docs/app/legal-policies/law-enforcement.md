@@ -2,7 +2,7 @@
 
 Updated September 2, 2026
 
-> This standalone Agent-Native policy applies only to hosted Agent-Native services operated under the Agent-Native name. The MIT-licensed framework, forks, and self-hosted deployments are outside its scope. The English version controls.
+> This standalone FB Factory policy applies only to hosted FB Factory services operated under the FB Factory name. The MIT-licensed framework, forks, and self-hosted deployments are outside its scope. The English version controls.
 
 This policy is informational. It does not create rights for any party or waive any objection we may raise.
 
@@ -12,7 +12,7 @@ This policy explains how the Service operator responds to requests from law enfo
 
 1.1. We disclose hosted application user or end-user information only in response to valid, enforceable legal process appropriate to the type of information sought - for example, a subpoena for basic subscriber information, a court order for certain non-content records, or a warrant for content. We review each request for validity, scope, and authority, and will narrow or object to requests that are overbroad or legally deficient. Where a request concerns personal data protected by the EU or UK General Data Protection Regulation ("GDPR") or similar non-US comprehensive data protection law, we also assess the request for compatibility with applicable data protection law. Valid legal process in the requesting jurisdiction is not by itself a lawful basis for disclosure of such data.
 
-1.2. Requests must use the law-enforcement contact method published on the Agent-Native Site and must identify the requesting authority, the legal authority for the request, the specific records sought, and the relevant time period.
+1.2. Requests must use the law-enforcement contact method published on the FB Factory Site and must identify the requesting authority, the legal authority for the request, the specific records sought, and the relevant time period.
 
 2. Requests from Non-U.S. Authorities
 
@@ -28,11 +28,11 @@ Where a request is accompanied by a valid nondisclosure or gag order issued by a
 
 4. Hosted and End-User Data
 
-All data processed through Hosted Agent-Native Applications belongs to and is controlled by our users. Where appropriate and lawful, we will redirect requests for such data to the relevant user rather than producing it directly.
+All data processed through Hosted FB Factory Applications belongs to and is controlled by our users. Where appropriate and lawful, we will redirect requests for such data to the relevant user rather than producing it directly.
 
 5. Emergency Requests
 
-In emergencies involving a risk of death or serious physical harm, we may disclose limited information reasonably necessary to law enforcement without legal process where we believe in good faith that disclosure is necessary to prevent the harm. Emergency requests must use the law-enforcement contact method published on the Agent-Native Site and describe the nature of the emergency.
+In emergencies involving a risk of death or serious physical harm, we may disclose limited information reasonably necessary to law enforcement without legal process where we believe in good faith that disclosure is necessary to prevent the harm. Emergency requests must use the law-enforcement contact method published on the FB Factory Site and describe the nature of the emergency.
 
 6. What We Can Provide
 

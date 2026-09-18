@@ -415,8 +415,8 @@ describe("route-state client helpers", () => {
         init: {
           method: "DELETE",
           headers: {
-            "X-Agent-Native-CSRF": "1",
-            "X-Agent-Native-Browser-Tab": expect.any(String),
+            "X-FB Factory-CSRF": "1",
+            "X-FB Factory-Browser-Tab": expect.any(String),
             "X-Request-Source": "tab-1",
           },
           keepalive: undefined,

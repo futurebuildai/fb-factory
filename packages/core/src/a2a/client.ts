@@ -324,7 +324,7 @@ export class A2AClient {
 
   /**
    * Detect which A2A path the target agent uses.
-   * Agent-Native apps use /_agent-native/a2a, external agents may use /a2a.
+   * FB Factory apps use /_agent-native/a2a, external agents may use /a2a.
    */
   async resolveEndpoint(): Promise<void> {
     await this.ensureEndpointCandidates();

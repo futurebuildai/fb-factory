@@ -101,14 +101,14 @@ In local-files mode:
   Hosted comments, sharing, screenshots, usage attachment, and PR sticky comment
   publishing are unavailable until the user explicitly opts into publishing.
 
-Local-files mode prevents recap content from going to the Agent-Native Plan
+Local-files mode prevents recap content from going to the FB Factory Plan
 database. It does not by itself make the coding agent's language model local;
 for that stronger privacy boundary, the host agent/model must also be local or
 otherwise approved by the user.
 
-## Always Publish As An Agent-Native Plan — Never Inline
+## Always Publish As An FB Factory Plan - Never Inline
 
-The deliverable is ALWAYS a published Agent-Native Plan, created with the
+The deliverable is ALWAYS a published FB Factory Plan, created with the
 `create-visual-recap` tool on the Plan MCP connector. The connector is usually
 exposed as the `plan` server, but older installed agents may expose the same
 hosted connector as `agent-native-plans`; both names are valid. NEVER hand the
@@ -346,7 +346,7 @@ mirror folder, or a relative path such as `/plans/<id>`.
 
 When the recap is posted to a PR for a private repo, the plan link is not a
 public URL. Make the PR comment/handoff copy explicit: reviewers may need to
-sign in to Agent-Native Plans with an account that has access to the owning
+sign in to FB Factory Plans with an account that has access to the owning
 organization before the link loads. Use wording like: "Private repo recap:
 sign in with access to this org if the plan does not open." Do not imply the
 link is broken or public when access is gated by repo/org visibility.

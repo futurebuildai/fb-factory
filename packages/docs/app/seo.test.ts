@@ -15,14 +15,14 @@ function metaProperty(
 describe("withDefaultSocialImage", () => {
   it("backfills og:title, og:description, and og:type from the plain title/description", () => {
     const meta = withDefaultSocialImage([
-      { title: "Pricing — Agent-Native" },
+      { title: "Pricing - FB Factory" },
       {
         name: "description",
         content: "MIT licensed and free for unlimited users.",
       },
     ]);
 
-    expect(metaProperty(meta, "og:title")).toBe("Pricing — Agent-Native");
+    expect(metaProperty(meta, "og:title")).toBe("Pricing - FB Factory");
     expect(metaProperty(meta, "og:description")).toBe(
       "MIT licensed and free for unlimited users.",
     );
@@ -31,7 +31,7 @@ describe("withDefaultSocialImage", () => {
 
   it("does not override an explicitly provided og:title, og:description, or og:type", () => {
     const meta = withDefaultSocialImage([
-      { title: "Doc — Agent-Native" },
+      { title: "Doc - FB Factory" },
       { name: "description", content: "Plain description." },
       { property: "og:title", content: "Custom OG title" },
       { property: "og:description", content: "Custom OG description" },

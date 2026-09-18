@@ -51,7 +51,7 @@ function restoreEnv() {
   }
 }
 
-describe("embedded Agent-Native helpers", () => {
+describe("embedded FB Factory helpers", () => {
   afterEach(() => {
     vi.clearAllMocks();
     restoreEnv();

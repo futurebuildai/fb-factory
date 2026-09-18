@@ -192,7 +192,7 @@ describe("CSRF vs. independently-initialized action-route plugin (registration-o
     await expect(
       dispatch(nitroApp, "/_agent-native/actions/host-echo", {
         method: "POST",
-        headers: { "X-Agent-Native-CSRF": "1" },
+        headers: { "X-FB Factory-CSRF": "1" },
         body: { value: "ok" },
       }),
     ).resolves.toMatchObject({ status: 200, body: { ok: true } });

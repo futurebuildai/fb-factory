@@ -7,7 +7,7 @@ describe("about page metadata", () => {
     expect(meta()).toEqual(
       expect.arrayContaining([
         expect.objectContaining({
-          title: expect.stringContaining("Agent-Native"),
+          title: expect.stringContaining("FB Factory"),
         }),
       ]),
     );

@@ -1,5 +1,5 @@
 /**
- * Absolute links into the public Agent-Native docs site.
+ * Absolute links into the public FB Factory docs site.
  *
  * Call `docsUrl("content-slug")` at call sites so the path is visible inline
  * (`docsUrl("template-design")` → `/docs/template-design`). Relative

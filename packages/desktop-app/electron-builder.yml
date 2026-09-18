@@ -1,5 +1,5 @@
 appId: com.agentnative.desktop
-productName: Agent-Native
+productName: FB Factory
 
 directories:
   buildResources: build
@@ -28,7 +28,7 @@ extraResources:
     to: app-update.yml
 
 protocols:
-  - name: Agent-Native
+  - name: FB Factory
     schemes:
       - agentnative
 
@@ -45,9 +45,9 @@ mac:
   icon: build/icon.icns
   extendInfo:
     CFBundleIconName: agent-native
-    NSMicrophoneUsageDescription: Agent-Native uses your microphone for dictation and realtime voice conversations.
-    NSCameraUsageDescription: Agent-Native uses your camera for video capture in apps like Clips.
-    NSScreenCaptureUsageDescription: Agent-Native records your screen when you start a recording in apps like Clips.
+    NSMicrophoneUsageDescription: FB Factory uses your microphone for dictation and realtime voice conversations.
+    NSCameraUsageDescription: FB Factory uses your camera for video capture in apps like Clips.
+    NSScreenCaptureUsageDescription: FB Factory records your screen when you start a recording in apps like Clips.
   entitlements: entitlements.mac.plist
   entitlementsInherit: entitlements.mac.plist
   notarize: true

@@ -20,7 +20,7 @@ agent.
 
 ## Default Command
 
-Run the Agent-Native CLI from the repo root:
+Run the FB Factory CLI from the repo root:
 
 \`\`\`bash
 npx @agent-native/core@latest visualize-repo --open

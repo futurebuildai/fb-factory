@@ -1,5 +1,5 @@
 ---
-description: Create an interactive Agent-Native visual recap for a PR, branch, commit, or diff.
+description: Create an interactive FB Factory visual recap for a PR, branch, commit, or diff.
 argument-hint: [PR, branch, commit, diff, or scope]
 ---
 

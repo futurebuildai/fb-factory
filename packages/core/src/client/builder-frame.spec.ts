@@ -278,7 +278,7 @@ describe("isBuildAppOrAgentRequest", () => {
     "I want to build an app",
     "please create an agent",
     "let's build a new app",
-    "Build an Agent-Native App",
+    "Build an FB Factory App",
   ];
 
   for (const text of positives) {

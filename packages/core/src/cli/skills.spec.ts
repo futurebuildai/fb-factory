@@ -1196,9 +1196,7 @@ describe("agent-native skills", () => {
         ]),
         { baseDir: root, runCommand: async () => 0 },
       ),
-    ).rejects.toThrow(
-      "Refusing to replace symlinked Agent-Native skill folder",
-    );
+    ).rejects.toThrow("Refusing to replace symlinked FB Factory skill folder");
 
     expect(fs.lstatSync(skillDir).isSymbolicLink()).toBe(true);
     expect(fs.readFileSync(path.join(skillDir, "SKILL.md"), "utf8")).toBe(
@@ -1670,7 +1668,7 @@ describe("agent-native skills", () => {
 
     expect(result).toMatchObject({
       id: "agent-native",
-      displayName: "Agent-Native",
+      displayName: "FB Factory",
       skillNames: ["an"],
       mcpUrl: "https://dispatch.agent-native.com/mcp",
       mcpClients: ["claude-code"],
@@ -1721,7 +1719,7 @@ describe("agent-native skills", () => {
       expect(fs.existsSync(path.join(skillDir, "old.txt"))).toBe(false);
       expect(
         fs.readFileSync(path.join(skillDir, "SKILL.md"), "utf-8"),
-      ).toContain("# Agent-Native Plans");
+      ).toContain("# FB Factory Plans");
       const metadata = JSON.parse(
         fs.readFileSync(
           path.join(skillDir, AGENT_NATIVE_SKILL_METADATA_FILE),
@@ -1769,7 +1767,7 @@ describe("agent-native skills", () => {
           ]),
           { baseDir: root, runCommand: async () => 0 },
         ),
-      ).rejects.toThrow(/Cannot write Agent-Native skill folder .*visual-plan/);
+      ).rejects.toThrow(/Cannot write FB Factory skill folder .*visual-plan/);
     } finally {
       if (previousHome === undefined) delete process.env.HOME;
       else process.env.HOME = previousHome;
@@ -2100,7 +2098,7 @@ describe("agent-native skills", () => {
     }
   });
 
-  it("offers all Agent-Native skills while defaulting the Plan skills", async () => {
+  it("offers all FB Factory skills while defaulting the Plan skills", async () => {
     const root = tmpDir();
     let context:
       | { initialTargets: string[]; options: { value: string }[] }
@@ -2663,7 +2661,7 @@ describe("agent-native skills", () => {
           schemaVersion: 1,
           source: "agent-native",
           appSkillId: "visual-plans",
-          displayName: "Agent-Native Plans",
+          displayName: "FB Factory Plans",
           skillName: "visual-plan",
           contentHash: "old",
           mcpUrl: "https://plan.agent-native.com/mcp",
@@ -2748,7 +2746,7 @@ describe("agent-native skills", () => {
           schemaVersion: 1,
           source: "agent-native",
           appSkillId: "visual-plans",
-          displayName: "Agent-Native Plans",
+          displayName: "FB Factory Plans",
           skillName: "visual-plan",
           contentHash: "old",
           mcpUrl: "https://plan.agent-native.com/mcp",
@@ -2775,7 +2773,7 @@ describe("agent-native skills", () => {
     expect(runCommand).not.toHaveBeenCalled();
     expect(stdout.join("")).toContain("Updated 1 skill folder");
     expect(fs.readFileSync(path.join(skillDir, "SKILL.md"), "utf-8")).toContain(
-      "# Agent-Native Plans",
+      "# FB Factory Plans",
     );
     expect(
       fs.existsSync(path.join(skillDir, "references", "wireframe.md")),
@@ -3037,7 +3035,7 @@ describe("agent-native skills", () => {
         path.join(root, ".agents", "skills", "agent-native-docs", "SKILL.md"),
         "utf-8",
       ),
-    ).toContain("# Agent-Native Docs");
+    ).toContain("# FB Factory Docs");
     expect(fs.existsSync(path.join(root, "CLAUDE.md"))).toBe(true);
     expect(fs.existsSync(path.join(root, ".claude", "skills"))).toBe(true);
   });

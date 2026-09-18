@@ -502,7 +502,7 @@ describe("integrations plugin routes", () => {
 
     expect(result.status).toBe(200);
     expect(result.body).toMatchObject({
-      display_information: { name: "Agent-Native" },
+      display_information: { name: "FB Factory" },
       features: {
         app_home: {
           messages_tab_enabled: true,

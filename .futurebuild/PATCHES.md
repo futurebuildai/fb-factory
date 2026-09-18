@@ -31,6 +31,9 @@ not for upstream
 Purple accent theme for enabled apps | dispatch, assets, and tasks carry
 the platform accent (hsl 259 97% 65%) in their theme tokens and catalog
 colors | internal branding decision | not for upstream
+Workspace app Dockerfile and dockerignore | root Dockerfile builds one
+image per template app from the fork; needed for the factory deployment |
+internal deployment decision | not for upstream
 templates/fb-* apps | Additive micro apps under templates/fb-* designed
 to never conflict with upstream merges | product decision | not for
 upstream (additive only)

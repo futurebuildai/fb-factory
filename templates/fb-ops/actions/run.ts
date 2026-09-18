@@ -1,3 +1,3 @@
-import { runScript } from "@agent-native/core/server";
+import { runScript } from "@agent-native/core/scripts";
 
 export default runScript();

@@ -1,4 +1,4 @@
-import { defineAction } from "@agent-native/core/server";
+import { defineAction } from "@agent-native/core/action";
 import { z } from "zod";
 
 /** Read-only self-report: which app build is running and for how long. */

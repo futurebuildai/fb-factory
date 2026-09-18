@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+// Fork note: images build one app per tag, root Dockerfile.
 // Generates all logo/icon/favicon assets across the monorepo from the
 // canonical PNG in packages/core/src/assets/branding/favicon.png.
 //

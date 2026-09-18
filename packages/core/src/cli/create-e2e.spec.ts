@@ -240,7 +240,7 @@ describe("standalone scaffold — chat template", { timeout: 180_000 }, () => {
       runCommand: async () => 0,
     });
     expect(fs.readFileSync(toolkitSkill, "utf-8")).toContain(
-      "# FB Factory Toolkit",
+      "# Agent-Native Toolkit",
     );
   });
 

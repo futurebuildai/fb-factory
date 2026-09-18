@@ -24,7 +24,7 @@ function StatusDot({ healthy }: { healthy: boolean }) {
     <span
       aria-hidden
       className={`inline-block h-2.5 w-2.5 rounded-full ${
-        healthy ? "bg-emerald-500" : "bg-red-500"
+        healthy ? "bg-primary" : "bg-destructive"
       }`}
     />
   );
@@ -52,7 +52,7 @@ export default function Index() {
           <p className="text-sm text-muted-foreground">{t("home.loading")}</p>
         )}
         {health.error && (
-          <p className="text-sm text-red-500">{t("home.loadFailed")}</p>
+          <p className="text-sm text-destructive">{t("home.loadFailed")}</p>
         )}
         {health.data && (
           <ul className="flex flex-col gap-2">

@@ -1,6 +1,5 @@
 # React Router generated types
 .react-router/
-.generated/
 
 # Logs
 logs
@@ -13,8 +12,6 @@ build/
 dist
 dist-ssr
 .output/
-.netlify/
-.deploy-tmp/
 *.local
 
 # Editor directories and files
@@ -36,7 +33,6 @@ dist-ssr
 
 # Data
 **/data/
-data/pglite/
 data/uploads/
 data/settings.json
 data/.sessions.json

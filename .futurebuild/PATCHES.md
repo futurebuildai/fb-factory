@@ -17,7 +17,7 @@ Rules for entries:
   there and record it here.
 - Drop an entry only when upstream has merged the change, and say so in
   the commit that removes it.
-- New apps live under templates/fb-* and stay additive so upstream merges
+- New apps live under templates/fb-\* and stay additive so upstream merges
   do not conflict with them.
 - Write without em or en dashes, without dates, and without durations.
 
@@ -34,6 +34,6 @@ colors | internal branding decision | not for upstream
 Workspace app Dockerfile and dockerignore | root Dockerfile builds one
 image per template app from the fork; needed for the factory deployment |
 internal deployment decision | not for upstream
-templates/fb-* apps | Additive micro apps under templates/fb-* designed
+templates/fb-_ apps | Additive micro apps under templates/fb-_ designed
 to never conflict with upstream merges | product decision | not for
 upstream (additive only)

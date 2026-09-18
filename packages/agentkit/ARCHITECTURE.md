@@ -5,11 +5,11 @@ its agent interaction and experience layer. Toolkit is the semantic
 design-system and workspace layer. These layers are designed to work together
 without collapsing their ownership boundaries.
 
-| Layer        | Owns                                                                                       | Does not own                                    |
-| ------------ | ------------------------------------------------------------------------------------------ | ----------------------------------------------- |
+| Layer      | Owns                                                                                       | Does not own                                    |
+| ---------- | ------------------------------------------------------------------------------------------ | ----------------------------------------------- |
 | FB Factory | Actions, SQL, application state, agent execution, auth, access, persistence, deployment    | Portable conversation UI contracts              |
-| AgentKit     | Protocol, event validation, client state, transports, React bindings, agent UI composition | App data, authorization policy, agent execution |
-| Toolkit      | Semantic controls, composer building blocks, design-system adapters, workspace UI          | Conversation state or backend behavior          |
+| AgentKit   | Protocol, event validation, client state, transports, React bindings, agent UI composition | App data, authorization policy, agent execution |
+| Toolkit    | Semantic controls, composer building blocks, design-system adapters, workspace UI          | Conversation state or backend behavior          |
 
 AgentKit also runs with another backend. That backend must own the same
 execution and security responsibilities that FB Factory normally provides.

@@ -75,7 +75,7 @@ describe("normalizeCodeAgentTranscript", () => {
         type: "assistant_delta",
         seq: 3,
       }),
-      event("evt-final", "system", "**FB Factory**\n\n- `core` package", {
+      event("evt-final", "system", "**Agent-Native**\n\n- `core` package", {
         role: "assistant",
         seq: 4,
       }),
@@ -88,7 +88,7 @@ describe("normalizeCodeAgentTranscript", () => {
       expect.objectContaining({
         type: "assistant",
         source: "runner-stdout",
-        text: "**FB Factory**\n\n- `core` package",
+        text: "**Agent-Native**\n\n- `core` package",
         eventIds: ["evt-delta-1", "evt-delta-2", "evt-delta-3", "evt-final"],
         suppressedDuplicateEventIds: ["evt-final"],
       }),

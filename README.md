@@ -263,6 +263,15 @@ Explore the [full app gallery](https://agent-native.com/apps), or start with the
 - Read the [documentation](https://agent-native.com/docs).
 - Join [Discord](https://discord.gg/qm82StQ2NC) to ask questions, share what you're building, and get help.
 
+## Deployment
+
+The root Dockerfile builds one image per template app (build args
+APP_NAME and APP_BASE_PATH). The FutureBuild staging stack runs
+dispatch at the origin root with assets and tasks under path prefixes,
+one shared Postgres, behind one hostname; the compose, the env
+generator, and the operator runbook live in the infrastructure
+repository under factory/staging.
+
 ## Contributing
 
 Working on this repository itself? See [DEVELOPMENT.md](./DEVELOPMENT.md) for local setup, workspace structure, and guard scripts.

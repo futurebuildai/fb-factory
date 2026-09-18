@@ -214,7 +214,7 @@ function buildRegistryServer(
   const server: RegistryServer = {
     $schema: REGISTRY_SCHEMA,
     name: `${REGISTRY_NAMESPACE}/agent-native-${template.name}`,
-    title: `Agent-Native ${template.label}`,
+    title: `FB Factory ${template.label}`,
     description:
       REGISTRY_DESCRIPTION_OVERRIDES[template.name] ??
       normalizeDescription(template.hint),

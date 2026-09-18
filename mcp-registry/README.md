@@ -1,6 +1,6 @@
 # Official MCP Registry
 
-The repository generates one current `server.json` per public Agent-Native app
+The repository generates one current `server.json` per public FB Factory app
 from `packages/shared-app-config/templates.ts` and
 `scripts/netlify-production-sites.json`.
 

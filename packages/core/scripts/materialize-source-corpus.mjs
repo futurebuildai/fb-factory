@@ -260,7 +260,7 @@ function copySourceFiles(rootRel, targetName, baseDir) {
 
 function writeCorpusReadme(stats, baseDir) {
   const lines = [
-    "# Agent-Native Source Corpus",
+    "# FB Factory Source Corpus",
     "",
     "This directory is generated when `@agent-native/core` is built for npm.",
     "It gives coding agents a version-matched, searchable reference corpus",
@@ -268,7 +268,7 @@ function writeCorpusReadme(stats, baseDir) {
     "",
     "## Contents",
     "",
-    "- `templates/` -- source-only copies of first-party Agent-Native templates.",
+    "- `templates/` -- source-only copies of first-party FB Factory templates.",
     "",
     "Core and Toolkit source are not duplicated here: read the compiled sources",
     "and declarations under `node_modules/@agent-native/core/dist`, the docs",

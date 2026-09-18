@@ -3,7 +3,7 @@ import { defineConfig, devices } from "@playwright/test";
 import { BETA_E2E_TEST_TRAFFIC_HEADERS } from "./lib/test-traffic";
 
 /**
- * Browser E2E against the deployed Agent-Native beta fleet.
+ * Browser E2E against the deployed FB Factory beta fleet.
  *
  * This suite does not start a server. It drives the real beta deploys listed in
  * scripts/netlify-beta-sites.json to answer one question before a promotion:

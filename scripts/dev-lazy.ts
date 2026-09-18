@@ -674,7 +674,7 @@ function renderIndex(): string {
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Agent-Native Templates</title>
+    <title>FB Factory Templates</title>
     <meta name="color-scheme" content="light dark" />
     <style>
       :root { --bg: #fafafa; --fg: #171717; --muted: #737373; --card-bg: #ffffff; --card-border: #d4d4d4; }
@@ -689,7 +689,7 @@ function renderIndex(): string {
   </head>
   <body>
     <main>
-      <h1>Agent-Native Templates</h1>
+      <h1>FB Factory Templates</h1>
       <p class="muted">Open a template below. Dispatch is the default control plane when selected.</p>
       <div class="grid">
         ${apps

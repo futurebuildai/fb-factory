@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Materializes the on-disk copies of exported Agent-Native app skills and their
+ * Materializes the on-disk copies of exported FB Factory app skills and their
  * optional `references/*.md` files FROM the single source of truth:
  * `BUILT_IN_APP_SKILLS` in `packages/core/src/cli/skills.ts`.
  *

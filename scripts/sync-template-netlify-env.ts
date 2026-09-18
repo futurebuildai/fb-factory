@@ -225,7 +225,7 @@ Options:
   --source <file>         Env file inside each template. Can be repeated.
                            Defaults to ${DEFAULT_SOURCES.join(", ")}.
                            GA_MEASUREMENT_ID and GTM_CONTAINER_ID default to the
-                           hosted Agent-Native analytics configuration unless an
+                           hosted FB Factory analytics configuration unless an
                            env source overrides them.
                            SENTRY_AUTH_TOKEN, SENTRY_ORG, and SENTRY_PROJECT are
                            read from this shell's environment (not any template

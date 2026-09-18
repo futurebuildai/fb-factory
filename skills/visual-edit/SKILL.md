@@ -362,10 +362,10 @@ Fallback, only when `open-visual-edit` is unavailable:
   user sees the canvas. Prefer the MCP App; its host launcher carries the
   one-time capability. The credential-free `openUrl` is read-only fallback.
 - Never return or open a hand-built `/design/:id?_session=...` URL.
-- If the user is working in VS Code, the Agent-Native extension can open the
+- If the user is working in VS Code, the FB Factory extension can open the
   same URL via
   `vscode://builder.agent-native/open?url=<encoded-design-url>`. Its
-  `Agent-Native: Open Design Canvas` command also starts the local bridge and
+  `FB Factory: Open Design Canvas` command also starts the local bridge and
   opens hosted Design in the VS Code side panel.
 - Once `open-visual-edit` returns the expected `screenCount`, hand back the
   link and stop. Do not open it yourself in a browser-automation tool to

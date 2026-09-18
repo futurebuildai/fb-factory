@@ -128,7 +128,7 @@ for (const site of sites) {
       await environmentBadge.click();
       const popoverTitle = page.locator("#environment-popover-title");
       await expect(popoverTitle).toBeVisible();
-      await expect(popoverTitle).toHaveText("You're on Agent-Native Beta");
+      await expect(popoverTitle).toHaveText("You're on FB Factory Beta");
       const productionLink = page.locator("#environment-production-link");
       await expect(productionLink).toBeVisible();
       const productionHref = await productionLink.getAttribute("href");

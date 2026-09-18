@@ -10,7 +10,7 @@ describe("published OpenAPI document", () => {
     const spec = JSON.parse(fs.readFileSync(specPath, "utf8"));
 
     expect(spec.openapi).toBe("3.2.0");
-    expect(spec.info.title).toContain("Agent-Native");
+    expect(spec.info.title).toContain("FB Factory");
     expect(Object.keys(spec.paths)).toEqual(
       expect.arrayContaining([
         "/api/desktop-latest.json",

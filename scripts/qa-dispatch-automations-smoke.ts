@@ -281,7 +281,7 @@ Run the Dispatch automations smoke job.`;
         credentials: "include",
         headers: {
           "Content-Type": "application/json",
-          "X-Agent-Native-CSRF": "1",
+          "X-FB Factory-CSRF": "1",
         },
         body: JSON.stringify({
           path,

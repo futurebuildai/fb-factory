@@ -1,11 +1,11 @@
-# Agent-Native Browser Control
+# FB Factory Browser Control
 
 The bundled manifest key fixes the extension id at
 `oflpdgfpegnhakjociddiffecjnbnnad`, so the desktop native-host manifest can
 grant access to one exact extension origin instead of a wildcard.
 
 This private Manifest V3 extension is the Chrome-side capability adapter for the
-Agent-Native desktop app. It does not accept messages from web pages and it has
+FB Factory desktop app. It does not accept messages from web pages and it has
 no agent-supplied JavaScript evaluation command. The shared control service may
 evaluate one fixed, extension-owned phantom-cursor expression with bounded
 coordinates so users can see the current action; that expression removes its

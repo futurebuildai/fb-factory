@@ -252,4 +252,4 @@ if (failures.length > 0) {
   process.exit(1);
 }
 
-console.log("OK Agent-Native package publish metadata is public.");
+console.log("OK FB Factory package publish metadata is public.");

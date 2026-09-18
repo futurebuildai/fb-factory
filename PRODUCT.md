@@ -12,7 +12,7 @@ Developers and product teams building production agent-native applications. They
 
 ## Product Purpose
 
-Agent-Native is a framework for building applications where the user interface and AI agent are equal partners. It helps teams start from working, customizable applications and evolve them into product-specific workflows. Success means users and agents can complete the same work through shared capabilities and state.
+FB Factory is a framework for building applications where the user interface and AI agent are equal partners. It helps teams start from working, customizable applications and evolve them into product-specific workflows. Success means users and agents can complete the same work through shared capabilities and state.
 
 ## Positioning
 
@@ -32,7 +32,7 @@ Developers work in a TypeScript monorepo with reusable packages, first-party app
 
 ## Brand Commitments
 
-- The product name is Agent-Native.
+- The product name is FB Factory.
 
 ## Evidence on Hand
 

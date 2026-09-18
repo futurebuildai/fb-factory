@@ -12,6 +12,7 @@ RUN corepack enable \
   && rm -rf /var/lib/apt/lists/*
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
 COPY scripts ./scripts
+COPY .github ./.github
 COPY packages ./packages
 COPY templates ./templates
 ARG APP_NAME

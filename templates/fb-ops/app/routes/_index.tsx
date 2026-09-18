@@ -57,10 +57,7 @@ export default function Index() {
         {health.data && (
           <ul className="flex flex-col gap-2">
             {health.data.environments.map((env) => (
-              <li
-                key={env.name}
-                className="flex items-center gap-3 text-sm"
-              >
+              <li key={env.name} className="flex items-center gap-3 text-sm">
                 <StatusDot healthy={env.healthy} />
                 <span className="w-24 font-medium">{env.name}</span>
                 <a

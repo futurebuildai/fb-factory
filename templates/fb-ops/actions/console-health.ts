@@ -31,7 +31,9 @@ export default defineAction({
           });
           const body = await response.text();
           const healthy =
-            response.status === 200 || response.status === 401 || response.status === 403;
+            response.status === 200 ||
+            response.status === 401 ||
+            response.status === 403;
           let detail = `HTTP ${response.status}`;
           if (response.status === 401 || response.status === 403) {
             detail = "answering (guest scope response)";

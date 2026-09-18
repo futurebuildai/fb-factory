@@ -47,7 +47,7 @@ export function resolveStableUserDataPath(
 ): string {
   const legacyUserDataPath = path.join(
     appDataPath,
-    "Agent Native", // agent-native-brand-ok: preserve the legacy Electron profile directory.
+    "FB Factory", // agent-native-brand-ok: preserve the legacy Electron profile directory.
   );
   return pathExists(legacyUserDataPath)
     ? legacyUserDataPath
@@ -94,7 +94,7 @@ export function initializeDesktopStartup({
       : !isPackaged
         ? path.join(
             appDataPath,
-            "Agent Native Dev", // agent-native-brand-ok: preserve the legacy Electron profile directory.
+            "FB Factory Dev", // agent-native-brand-ok: preserve the legacy Electron profile directory.
           )
         : stableUserDataPath;
   if (isolatedUserDataPath) {

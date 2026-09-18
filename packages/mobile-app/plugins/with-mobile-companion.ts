@@ -13,13 +13,13 @@ import {
 
 const IOS_PERMISSION_DESCRIPTIONS = {
   NSCameraUsageDescription:
-    "Agent-Native uses the camera to capture photos and videos for your agents.",
+    "FB Factory uses the camera to capture photos and videos for your agents.",
   NSMicrophoneUsageDescription:
-    "Agent-Native uses the microphone to record audio and video and to dictate to your agents.",
+    "FB Factory uses the microphone to record audio and video and to dictate to your agents.",
   NSPhotoLibraryAddUsageDescription:
-    "Agent-Native saves captured photos and videos to your photo library when you ask it to.",
+    "FB Factory saves captured photos and videos to your photo library when you ask it to.",
   NSPhotoLibraryUsageDescription:
-    "Agent-Native accesses photos and videos you choose to share with your agents.",
+    "FB Factory accesses photos and videos you choose to share with your agents.",
 } as const;
 
 const ANDROID_PERMISSIONS = [
@@ -35,21 +35,21 @@ const QUICK_ACTIONS = [
     id: "capture_audio",
     url: "agentnative://capture/audio",
     title: "Record Audio",
-    longTitle: "Record Audio for Agent-Native",
+    longTitle: "Record Audio for FB Factory",
     iosIcon: "UIApplicationShortcutIconTypeAudio",
   },
   {
     id: "capture_video",
     url: "agentnative://capture/video",
     title: "Capture Video",
-    longTitle: "Capture Video for Agent-Native",
+    longTitle: "Capture Video for FB Factory",
     iosIcon: "UIApplicationShortcutIconTypeCaptureVideo",
   },
   {
     id: "capture_dictate",
     url: "agentnative://capture/dictate",
     title: "Start Dictation",
-    longTitle: "Start Dictation with Agent-Native",
+    longTitle: "Start Dictation with FB Factory",
     iosIcon: "UIApplicationShortcutIconTypeCompose",
   },
 ] as const;

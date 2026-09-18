@@ -12,14 +12,14 @@ import {
 describe("desktopRequestedUserDataPath", () => {
   it("uses Electron's switch when Chromium strips it from argv", () => {
     expect(
-      desktopRequestedUserDataPath("/tmp/electron-profile", ["Agent-Native"]),
+      desktopRequestedUserDataPath("/tmp/electron-profile", ["FB Factory"]),
     ).toBe("/tmp/electron-profile");
   });
 
   it("keeps the argv fallback for ordinary launches", () => {
     expect(
       desktopRequestedUserDataPath("", [
-        "Agent-Native",
+        "FB Factory",
         "--user-data-dir=/tmp/argv-profile",
       ]),
     ).toBe("/tmp/argv-profile");
@@ -36,7 +36,7 @@ function createDependencies(
       isPackaged: true,
       version: "0.1.150-desktop-sso-canary.20",
       appDataPath: "/application-support",
-      defaultUserDataPath: "/application-support/Agent-Native",
+      defaultUserDataPath: "/application-support/FB Factory",
       pathExists: vi.fn(() => false),
       createDirectory: vi.fn(() => events.push("create-directory")),
       setUserDataPath: vi.fn(() => events.push("set-user-data")),
@@ -57,11 +57,11 @@ describe("initializeDesktopStartup", () => {
   });
 
   it("keeps existing stable Desktop data in the legacy product directory", () => {
-    const legacyPath = "/application-support/Agent Native"; // agent-native-brand-ok: preserve the legacy Electron profile directory.
+    const legacyPath = "/application-support/FB Factory"; // agent-native-brand-ok: preserve the legacy Electron profile directory.
     expect(
       resolveStableUserDataPath(
         "/application-support",
-        "/application-support/Agent-Native",
+        "/application-support/FB Factory",
         (directoryPath) => directoryPath === legacyPath,
       ),
     ).toBe(legacyPath);
@@ -106,10 +106,10 @@ describe("initializeDesktopStartup", () => {
     initializeDesktopStartup(dependencies);
 
     expect(dependencies.createDirectory).toHaveBeenCalledWith(
-      "/application-support/Agent Native SSO Canary", // agent-native-brand-ok: preserve the legacy Electron profile directory.
+      "/application-support/FB Factory SSO Canary", // agent-native-brand-ok: preserve the legacy Electron profile directory.
     );
     expect(dependencies.setUserDataPath).toHaveBeenCalledWith(
-      "/application-support/Agent Native SSO Canary", // agent-native-brand-ok: preserve the legacy Electron profile directory.
+      "/application-support/FB Factory SSO Canary", // agent-native-brand-ok: preserve the legacy Electron profile directory.
     );
     expect(events).toEqual([
       "create-directory",
@@ -145,10 +145,10 @@ describe("initializeDesktopStartup", () => {
     initializeDesktopStartup(dependencies);
 
     expect(dependencies.createDirectory).toHaveBeenCalledWith(
-      "/application-support/Agent-Native",
+      "/application-support/FB Factory",
     );
     expect(dependencies.setUserDataPath).toHaveBeenCalledWith(
-      "/application-support/Agent-Native",
+      "/application-support/FB Factory",
     );
     expect(events).toEqual([
       "create-directory",
@@ -162,35 +162,33 @@ describe("initializeDesktopStartup", () => {
     const { dependencies } = createDependencies({
       version: "0.1.150",
       pathExists: vi.fn(
-        (directoryPath) =>
-          directoryPath === "/application-support/Agent Native", // agent-native-brand-ok: preserve the legacy Electron profile directory.
+        (directoryPath) => directoryPath === "/application-support/FB Factory", // agent-native-brand-ok: preserve the legacy Electron profile directory.
       ),
     });
 
     initializeDesktopStartup(dependencies);
 
     expect(dependencies.setUserDataPath).toHaveBeenCalledWith(
-      "/application-support/Agent Native", // agent-native-brand-ok: preserve the legacy Electron profile directory.
+      "/application-support/FB Factory", // agent-native-brand-ok: preserve the legacy Electron profile directory.
     );
   });
 
   it("reuses the legacy stable profile for packaged Nightly", () => {
     const { dependencies, events } = createDependencies({
       version: "0.1.150-nightly.296",
-      defaultUserDataPath: "/application-support/Agent-Native Nightly",
+      defaultUserDataPath: "/application-support/FB Factory Nightly",
       pathExists: vi.fn(
-        (directoryPath) =>
-          directoryPath === "/application-support/Agent Native", // agent-native-brand-ok: preserve the legacy Electron profile directory.
+        (directoryPath) => directoryPath === "/application-support/FB Factory", // agent-native-brand-ok: preserve the legacy Electron profile directory.
       ),
     });
 
     initializeDesktopStartup(dependencies);
 
     expect(dependencies.createDirectory).toHaveBeenCalledWith(
-      "/application-support/Agent Native", // agent-native-brand-ok: preserve the legacy Electron profile directory.
+      "/application-support/FB Factory", // agent-native-brand-ok: preserve the legacy Electron profile directory.
     );
     expect(dependencies.setUserDataPath).toHaveBeenCalledWith(
-      "/application-support/Agent Native", // agent-native-brand-ok: preserve the legacy Electron profile directory.
+      "/application-support/FB Factory", // agent-native-brand-ok: preserve the legacy Electron profile directory.
     );
     expect(events).toEqual([
       "create-directory",
@@ -203,14 +201,14 @@ describe("initializeDesktopStartup", () => {
   it("keeps a packaged Nightly install on its default profile when no legacy profile exists", () => {
     const { dependencies } = createDependencies({
       version: "0.1.150-nightly.296",
-      defaultUserDataPath: "/application-support/Agent-Native Nightly",
+      defaultUserDataPath: "/application-support/FB Factory Nightly",
       pathExists: vi.fn(() => false),
     });
 
     initializeDesktopStartup(dependencies);
 
     expect(dependencies.setUserDataPath).toHaveBeenCalledWith(
-      "/application-support/Agent-Native Nightly",
+      "/application-support/FB Factory Nightly",
     );
   });
 

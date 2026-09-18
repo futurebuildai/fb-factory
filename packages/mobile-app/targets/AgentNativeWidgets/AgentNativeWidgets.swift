@@ -226,7 +226,7 @@ struct AgentNativeDictationControl: ControlWidget {
       }
     }
     .displayName("Dictate")
-    .description("Prepare an Agent-Native dictation.")
+    .description("Prepare an FB Factory dictation.")
   }
 }
 
@@ -241,7 +241,7 @@ struct AgentNativeAudioControl: ControlWidget {
       }
     }
     .displayName("Record Audio")
-    .description("Prepare an Agent-Native audio recording.")
+    .description("Prepare an FB Factory audio recording.")
   }
 }
 
@@ -256,7 +256,7 @@ struct AgentNativeVideoControl: ControlWidget {
       }
     }
     .displayName("Capture Video")
-    .description("Prepare an Agent-Native video capture.")
+    .description("Prepare an FB Factory video capture.")
   }
 }
 

@@ -48,17 +48,17 @@ describe("resolveCodeAgentRunnerInvocation", () => {
       const root = createTempRoot();
       const resourcesPath = path.join(
         root,
-        "Agent-Native.app",
+        "FB Factory.app",
         "Contents",
         "Resources",
       );
       const repoRoot = path.join(root, "source-checkout");
       const electronPath = path.join(
         root,
-        "Agent-Native.app",
+        "FB Factory.app",
         "Contents",
         "MacOS",
-        "Agent-Native",
+        "FB Factory",
       );
       const runId = "task-20260719-abcdef01";
 

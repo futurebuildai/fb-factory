@@ -32,7 +32,7 @@ describe("desktop passive-access regressions", () => {
   });
 
   it("keeps remote status read-only", () => {
-    // The Agent-Native Code IPC handlers live in ./ipc/code-agents.ts.
+    // The FB Factory Code IPC handlers live in ./ipc/code-agents.ts.
     const codeAgentsIpc = source("./ipc/code-agents.ts");
     const handler = between(
       codeAgentsIpc,

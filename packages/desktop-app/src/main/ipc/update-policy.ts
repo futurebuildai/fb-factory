@@ -8,8 +8,8 @@ export function resolveDesktopUserDataDirectoryName(
   isPackaged: boolean,
   version: string,
 ): string | null {
-  if (!isPackaged) return "Agent Native Dev"; // agent-native-brand-ok: preserve the legacy Electron profile directory.
-  if (isDesktopSsoCanaryVersion(version)) return "Agent Native SSO Canary"; // agent-native-brand-ok: preserve the legacy Electron profile directory.
+  if (!isPackaged) return "FB Factory Dev"; // agent-native-brand-ok: preserve the legacy Electron profile directory.
+  if (isDesktopSsoCanaryVersion(version)) return "FB Factory SSO Canary"; // agent-native-brand-ok: preserve the legacy Electron profile directory.
   return null;
 }
 

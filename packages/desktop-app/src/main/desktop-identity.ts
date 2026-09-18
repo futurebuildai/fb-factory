@@ -1044,7 +1044,7 @@ export class DesktopIdentityBroker {
     if (!authority) {
       return Promise.resolve({
         ok: false,
-        error: "The Agent-Native identity service is unavailable.",
+        error: "The FB Factory identity service is unavailable.",
       });
     }
 
@@ -1129,7 +1129,7 @@ export class DesktopIdentityBroker {
           ? "The identity service did not respond in time. Please try again."
           : error instanceof Error
             ? error.message
-            : "Could not reach the Agent-Native identity service.",
+            : "Could not reach the FB Factory identity service.",
       );
     } finally {
       clearTimeout(timeoutTimer);
@@ -1196,7 +1196,7 @@ export class DesktopIdentityBroker {
           credentials: "include",
           headers: {
             Accept: "application/json",
-            "X-Agent-Native-Desktop-Verifier": verifier,
+            "X-FB Factory-Desktop-Verifier": verifier,
           },
         },
       );
@@ -1219,7 +1219,7 @@ export class DesktopIdentityBroker {
       identityWindow = this.options.createWindow({
         width: 520,
         height: 720,
-        title: "Sign in to Agent-Native",
+        title: "Sign in to FB Factory",
         show: true,
         backgroundColor: "#111111", // guard:allow-raw-color - native auth window stays neutral before app theme loads.
         parent: this.options.parentWindow?.() ?? undefined,
@@ -1362,7 +1362,7 @@ export class DesktopIdentityBroker {
     if (!authority) {
       return Promise.resolve({
         ok: false,
-        error: "The Agent-Native identity service is unavailable.",
+        error: "The FB Factory identity service is unavailable.",
       });
     }
 
@@ -1455,7 +1455,7 @@ export class DesktopIdentityBroker {
       return fail(
         error instanceof Error
           ? error.message
-          : "Could not reach the Agent-Native identity service.",
+          : "Could not reach the FB Factory identity service.",
       );
     }
 
@@ -1928,7 +1928,7 @@ export class DesktopIdentityBroker {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
-        "X-Agent-Native-CSRF": "1",
+        "X-FB Factory-CSRF": "1",
         ...(cookieHeader ? { Cookie: cookieHeader } : {}),
       },
       body: JSON.stringify({ app: target.id, path: "/", chrome: "minimal" }),
@@ -2538,7 +2538,7 @@ export class DesktopIdentityBroker {
           signal: controller.signal,
           headers: {
             Accept: "application/json",
-            "X-Agent-Native-Session-Check": "cookie-only",
+            "X-FB Factory-Session-Check": "cookie-only",
             ...(cookieHeader ? { Cookie: cookieHeader } : {}),
           },
         }),
@@ -3128,7 +3128,7 @@ export class DesktopIdentityBroker {
             headers: {
               Accept: "application/json",
               ...(verifier
-                ? { "X-Agent-Native-Desktop-Verifier": verifier }
+                ? { "X-FB Factory-Desktop-Verifier": verifier }
                 : {}),
             },
             credentials: "include",
@@ -3345,7 +3345,7 @@ export class DesktopIdentityBroker {
     const identityWindow = this.options.createWindow({
       width: 520,
       height: 720,
-      title: "Sign in to Agent-Native",
+      title: "Sign in to FB Factory",
       show: options.interactive !== false,
       backgroundColor: "#111111",
       parent: this.options.parentWindow?.() ?? undefined,

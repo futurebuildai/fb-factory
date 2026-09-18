@@ -511,7 +511,7 @@ export default function App() {
           </div>
         </div>
         <DesktopIdentityGate
-          appName="Agent-Native Desktop"
+          appName="FB Factory Desktop"
           status={desktopIdentityStatus}
           onSignIn={() => window.electronAPI?.identity?.signIn() ?? false}
           onAuthenticate={(request) =>

@@ -2,7 +2,7 @@
   "name": "@agent-native/agent-chrome-extension",
   "version": "0.1.0",
   "private": true,
-  "description": "First-party Chrome control bridge for the Agent-Native desktop agent.",
+  "description": "First-party Chrome control bridge for the FB Factory desktop agent.",
   "type": "module",
   "scripts": {
     "build": "vite build",

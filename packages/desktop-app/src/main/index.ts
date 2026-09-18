@@ -411,11 +411,11 @@ function isDesktopSsoEnabled(): boolean {
 
 // ---------- User-Agent marker ----------
 // Tag every request from this Electron app so the server can distinguish
-// Agent-Native desktop from other Electron-based webviews (Builder.io's
+// FB Factory desktop from other Electron-based webviews (Builder.io's
 // Fusion, Slack desktop, Discord, etc.). Without this, any Electron UA
 // would trigger the desktop-only OAuth deep-link page (`agentnative://...`),
-// stranding users in non-Agent-Native Electron contexts on a "Connected!
-// Open Agent-Native" screen whose deep link can't fire.
+// stranding users in non-FB Factory Electron contexts on a "Connected!
+// Open FB Factory" screen whose deep link can't fire.
 const desktopSsoCanaryMarker = isDesktopSsoCanaryVersion(app.getVersion())
   ? ` AgentNativeDesktopSsoCanary/${app.getVersion()}`
   : "";
@@ -1239,7 +1239,7 @@ async function handleShortcutUpsertDeepLink(parsed: URL) {
     buttons: ["Add Shortcut", "Cancel"],
     defaultId: 0,
     cancelId: 1,
-    message: "Add Agent-Native app shortcut?",
+    message: "Add FB Factory app shortcut?",
     detail: [
       `Shortcut: ${formatDesktopShortcutAccelerator(normalized.accelerator, process.platform)}`,
       `Target: ${appLabel}${view ? ` / ${view}` : ""}`,
@@ -3923,7 +3923,7 @@ async function pairRemoteCodeAgentConnector(
     return {
       ok: false,
       status: getRemoteConnectorStatus(),
-      error: "Enter a valid Agent-Native app URL to pair remote control.",
+      error: "Enter a valid FB Factory app URL to pair remote control.",
     };
   }
 
@@ -4773,10 +4773,10 @@ function reconcileInterruptedCodeAgentRun(
   appendCodeAgentStatusEvent(
     runId,
     approvalInterrupted
-      ? "Agent-Native Code approval was interrupted before it finished."
+      ? "FB Factory Code approval was interrupted before it finished."
       : reason === "shutdown"
-        ? "Agent-Native Code paused because Desktop closed."
-        : "Agent-Native Code was interrupted because Desktop restarted before this run finished.",
+        ? "FB Factory Code paused because Desktop closed."
+        : "FB Factory Code was interrupted because Desktop restarted before this run finished.",
     {
       source: "desktop-runner",
       status: approvalInterrupted ? "needs-approval" : "paused",
@@ -6144,7 +6144,7 @@ async function spawnCodeAgentRunner(
   if (!provider.ok) {
     appendCodeAgentStatusEvent(
       runId,
-      "Could not start Agent-Native Code process.",
+      "Could not start FB Factory Code process.",
       {
         source: "desktop-runner",
         error: provider.error,
@@ -6270,8 +6270,8 @@ async function spawnCodeAgentRunner(
         appendCodeAgentStatusEvent(
           runId,
           code === 0
-            ? "Agent-Native Code process exited."
-            : `Agent-Native Code process exited with ${signal ?? code}.`,
+            ? "FB Factory Code process exited."
+            : `FB Factory Code process exited with ${signal ?? code}.`,
           { source: "desktop-runner", code, signal },
         );
       });
@@ -6309,7 +6309,7 @@ async function spawnCodeAgentRunner(
       persistCodeAgentChildEvent(runId, "runner-error-status", () => {
         appendCodeAgentStatusEvent(
           runId,
-          "Agent-Native Code process could not continue.",
+          "FB Factory Code process could not continue.",
           { source: "desktop-runner" },
         );
       });
@@ -6329,7 +6329,7 @@ async function spawnCodeAgentRunner(
     persistCodeAgentChildEvent(runId, "runner-start-error-status", () => {
       appendCodeAgentStatusEvent(
         runId,
-        "Could not start Agent-Native Code process.",
+        "Could not start FB Factory Code process.",
         {
           source: "desktop-runner",
           error: err instanceof Error ? err.message : String(err),
@@ -6360,7 +6360,7 @@ function spawnCodeAgentApprovalRunner(
       ok: true,
       command: "approve",
       action: "refresh",
-      message: "This Agent-Native Code run already has an active process.",
+      message: "This FB Factory Code run already has an active process.",
     };
   }
   const provider = ensureCodeAgentLlmProvider();
@@ -6706,7 +6706,7 @@ async function sendDesktopCodeBackgroundAgentFollowUp(
       runId: input.runId,
       run: desktopCodeBackgroundAgentController.get(input.runId),
       queued: true,
-      message: "Follow-up queued for the active Agent-Native Code run.",
+      message: "Follow-up queued for the active FB Factory Code run.",
     };
   }
 
@@ -6744,7 +6744,7 @@ async function sendDesktopCodeBackgroundAgentFollowUp(
     runId: input.runId,
     run: desktopCodeBackgroundAgentController.get(input.runId),
     queued: false,
-    message: "Follow-up recorded for the Agent-Native Code run.",
+    message: "Follow-up recorded for the FB Factory Code run.",
   };
 }
 
@@ -6762,7 +6762,7 @@ function stopDesktopCodeBackgroundAgentRunWithoutSignal(
 ): DesktopBackgroundAgentControlResult {
   appendCodeAgentStatusEvent(
     runId,
-    "Stop requested for Agent-Native Code run. No process signal was sent.",
+    "Stop requested for FB Factory Code run. No process signal was sent.",
     {
       source: "desktop-background-agent-controller",
       stoppedWithoutSignal: true,
@@ -6782,8 +6782,7 @@ function stopDesktopCodeBackgroundAgentRunWithoutSignal(
     ok: true,
     runId,
     run: desktopCodeBackgroundAgentController.get(runId),
-    message:
-      "Agent-Native Code run marked stopped without signaling a process.",
+    message: "FB Factory Code run marked stopped without signaling a process.",
   };
 }
 
@@ -6817,7 +6816,7 @@ async function controlDesktopCodeBackgroundAgentRun(
         run: desktopCodeBackgroundAgentController.get(
           input.runId,
         ) as BackgroundAgentRun | null,
-        message: "This Agent-Native Code run is already finished.",
+        message: "This FB Factory Code run is already finished.",
       };
     }
 
@@ -6826,7 +6825,7 @@ async function controlDesktopCodeBackgroundAgentRun(
         activeCodeAgentProcesses.delete(input.runId);
         appendCodeAgentStatusEvent(
           input.runId,
-          "Stop requested for Agent-Native Code run.",
+          "Stop requested for FB Factory Code run.",
           {
             source: "desktop",
             pid: active.pid,
@@ -6845,7 +6844,7 @@ async function controlDesktopCodeBackgroundAgentRun(
           run: desktopCodeBackgroundAgentController.get(
             input.runId,
           ) as BackgroundAgentRun | null,
-          message: "Stop requested for this Agent-Native Code run.",
+          message: "Stop requested for this FB Factory Code run.",
         };
       }
       return {
@@ -6854,7 +6853,7 @@ async function controlDesktopCodeBackgroundAgentRun(
         run: desktopCodeBackgroundAgentController.get(
           input.runId,
         ) as BackgroundAgentRun | null,
-        message: "Could not stop this Agent-Native Code process.",
+        message: "Could not stop this FB Factory Code process.",
         error: `No process accepted SIGTERM for pid ${active.pid}.`,
       };
     }
@@ -6920,7 +6919,7 @@ async function controlDesktopCodeBackgroundAgentRun(
       run: desktopCodeBackgroundAgentController.get(
         input.runId,
       ) as BackgroundAgentRun | null,
-      message: "Agent-Native Code runner started.",
+      message: "FB Factory Code runner started.",
     };
   }
 
@@ -7717,7 +7716,7 @@ async function rerunCodeAgentRun(
     return {
       ok: false,
       sourceRunId,
-      message: "Agent-Native Code session was not found.",
+      message: "FB Factory Code session was not found.",
       error: `No run record exists for ${sourceRunId}.`,
     };
   }
@@ -7802,7 +7801,7 @@ async function rerunCodeAgentRun(
     ...result,
     sourceRunId,
     message: result.ok
-      ? "Agent-Native Code session re-run started."
+      ? "FB Factory Code session re-run started."
       : result.message,
   };
 }
@@ -7959,7 +7958,7 @@ function updateCodeAgentRun(input: unknown): CodeAgentUpdateRunResult {
   if (!runFile || !fs.existsSync(runFile)) {
     return {
       ok: false,
-      message: "Agent-Native Code session was not found.",
+      message: "FB Factory Code session was not found.",
       error: `No run record exists for ${runId}.`,
     };
   }
@@ -8064,7 +8063,7 @@ function updateCodeAgentRun(input: unknown): CodeAgentUpdateRunResult {
     ok: Boolean(run),
     run: run ?? undefined,
     message: run
-      ? "Agent-Native Code session updated."
+      ? "FB Factory Code session updated."
       : "Session update failed.",
     error: run ? undefined : "Could not read the updated session record.",
   };
@@ -8340,7 +8339,7 @@ function initializeMultiFrontierAppIntegrationForRuntime(): void {
 
 async function chooseCodeAgentProject(): Promise<CodeAgentProjectSelectResult> {
   const result = await dialog.showOpenDialog({
-    title: "Choose Agent-Native Code project folder",
+    title: "Choose FB Factory Code project folder",
     properties: ["openDirectory"],
   });
   if (result.canceled || result.filePaths.length === 0) {
@@ -11633,8 +11632,8 @@ function getCodeAgentLlmProviderStatus(): NonNullable<
   if (process.env.AGENT_NATIVE_CODE_AGENT_FAKE_RESPONSE !== undefined) {
     return {
       configured: true,
-      label: "Fake Agent-Native Code",
-      configuredProviders: ["Fake Agent-Native Code"],
+      label: "Fake FB Factory Code",
+      configuredProviders: ["Fake FB Factory Code"],
       missingEnvVars: [],
     };
   }
@@ -11744,7 +11743,7 @@ function ensureCodeAgentLlmProvider(): {
     return {
       ok: false,
       error:
-        "Agent-Native could not read the saved code provider keys. Reconnect the provider in Settings.",
+        "FB Factory could not read the saved code provider keys. Reconnect the provider in Settings.",
     };
   }
   return {
@@ -12420,7 +12419,7 @@ function retryCodeAgentRun(input: unknown): CodeAgentRetryRunResult {
     return {
       ok: true,
       run: readDesktopCodeAgentRun(runId) ?? undefined,
-      message: "This Agent-Native Code run is already running.",
+      message: "This FB Factory Code run is already running.",
     };
   }
 
@@ -12428,7 +12427,7 @@ function retryCodeAgentRun(input: unknown): CodeAgentRetryRunResult {
   if (!runRecord) {
     return {
       ok: false,
-      message: "Agent-Native Code session was not found.",
+      message: "FB Factory Code session was not found.",
       error: `No run record exists for ${runId}.`,
     };
   }
@@ -12474,7 +12473,7 @@ function retryCodeAgentRun(input: unknown): CodeAgentRetryRunResult {
   return {
     ok: true,
     run: readDesktopCodeAgentRun(runId) ?? undefined,
-    message: "Retry started for this Agent-Native Code run.",
+    message: "Retry started for this FB Factory Code run.",
   };
 }
 
@@ -12499,8 +12498,8 @@ async function controlCodeAgentRun(
       ok: false,
       command: command ?? "status",
       action: "none",
-      message: "Unknown Agent-Native Code goal.",
-      error: "Unknown Agent-Native Code goal.",
+      message: "Unknown FB Factory Code goal.",
+      error: "Unknown FB Factory Code goal.",
     };
   }
 
@@ -12653,12 +12652,12 @@ async function controlCodeAgentRun(
     ok: false,
     command: "status",
     action: "none",
-    message: "Unsupported Agent-Native Code command.",
-    error: "Unsupported Agent-Native Code command.",
+    message: "Unsupported FB Factory Code command.",
+    error: "Unsupported FB Factory Code command.",
   };
 }
 
-// ---------- IPC: Clipboard + Agent-Native Code (background code agents) ----------
+// ---------- IPC: Clipboard + FB Factory Code (background code agents) ----------
 // See main/ipc/code-agents.ts.
 registerCodeAgentsIpc({
   isObject,
@@ -13149,7 +13148,7 @@ function buildDesktopBuilderCliAuthUrl(callbackUrl: string): string {
   const authUrl = new URL("/cli-auth", getBuilderCliAuthHost());
   authUrl.searchParams.set("response_type", "code");
   authUrl.searchParams.set("host", "agent-native-desktop");
-  authUrl.searchParams.set("client_id", "Agent-Native Desktop");
+  authUrl.searchParams.set("client_id", "FB Factory Desktop");
   authUrl.searchParams.set("redirect_url", callback.toString());
   authUrl.searchParams.set("preview_url", callback.origin);
   authUrl.searchParams.set("framework", "agent-native");
@@ -13260,7 +13259,7 @@ function connectDesktopBuilderProvider(): Promise<CodeAgentProviderSettingsUpdat
       res.end(
         desktopBuilderCallbackPage(
           "success",
-          "You can close this tab and return to Agent-Native Desktop.",
+          "You can close this tab and return to FB Factory Desktop.",
         ),
       );
       finish({
@@ -14158,7 +14157,7 @@ function installApplicationMenu() {
       ...(desktopIdentityBroker && desktopIdentityBroker.getStatus() !== "idle"
         ? [
             {
-              label: "Sign Out of Agent-Native",
+              label: "Sign Out of FB Factory",
               click: () =>
                 void desktopIdentityBroker?.signOut(
                   listDesktopIdentityCleanupApps(),

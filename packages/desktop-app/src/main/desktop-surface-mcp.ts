@@ -212,7 +212,7 @@ export class DesktopSurfaceMcpBridge {
       "browser_screenshot",
       {
         description:
-          "Capture the pixels of the currently active Agent-Native inline browser surface, including an app tab or chat-first browser sidebar. Inactive tabs are never selected.",
+          "Capture the pixels of the currently active FB Factory inline browser surface, including an app tab or chat-first browser sidebar. Inactive tabs are never selected.",
         annotations: { readOnlyHint: true, openWorldHint: false },
       },
       async () => {
@@ -229,7 +229,7 @@ export class DesktopSurfaceMcpBridge {
       "open_app",
       {
         description:
-          "Open a workspace app in the Agent-Native desktop sidebar. Use the app id from list_apps. This changes the desktop UI and returns after the app tab is requested.",
+          "Open a workspace app in the FB Factory desktop sidebar. Use the app id from list_apps. This changes the desktop UI and returns after the app tab is requested.",
         inputSchema: {
           app: z.string().trim().min(1).max(80),
           path: z

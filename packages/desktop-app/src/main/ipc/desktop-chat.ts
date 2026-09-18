@@ -293,7 +293,7 @@ export default function (pi) {
 
   async function callMcp(serverName, method, params, signal) {
     const server = servers[serverName];
-    if (!server) throw new Error("Unknown Agent-Native MCP server: " + serverName);
+    if (!server) throw new Error("Unknown FB Factory MCP server: " + serverName);
     const sessionId = await getSessionId(serverName, server, signal);
     const result = await request(
       server,
@@ -326,19 +326,19 @@ export default function (pi) {
   pi.on("before_agent_start", (event) => ({
     systemPrompt:
       event.systemPrompt +
-      "\n\nThis Pi session is embedded in Agent-Native desktop. The active app context is exposed by the agent-native-desktop MCP server. Available MCP servers: " +
+      "\n\nThis Pi session is embedded in FB Factory desktop. The active app context is exposed by the agent-native-desktop MCP server. Available MCP servers: " +
       serverNames.join(", ") +
       (activeContext ? ". Current context: " + activeContext : "."),
   }));
 
   pi.registerTool({
     name: "agent_native_app",
-    label: "Agent-Native app",
+    label: "FB Factory app",
     description:
-      "List or call tools on the active Agent-Native desktop app. List tools before calling an app operation, and use agent-native-desktop to read the active app context.",
-    promptSnippet: "List or call tools on the active Agent-Native app",
+      "List or call tools on the active FB Factory desktop app. List tools before calling an app operation, and use agent-native-desktop to read the active app context.",
+    promptSnippet: "List or call tools on the active FB Factory app",
     promptGuidelines: [
-      "Use agent_native_app to operate the active Agent-Native app through its MCP server.",
+      "Use agent_native_app to operate the active FB Factory app through its MCP server.",
       "Call list_tools before call_tool when you do not already know the app tool schema.",
     ],
     parameters: {
@@ -542,7 +542,7 @@ function readMcpAuthHeaders(value: unknown): Record<string, string> {
   if (!value || typeof value !== "object" || Array.isArray(value)) return {};
   const headers = value as Record<string, unknown>;
   const authHeaders: Record<string, string> = {};
-  for (const name of ["Authorization", "X-Agent-Native-Owner-Email"]) {
+  for (const name of ["Authorization", "X-FB Factory-Owner-Email"]) {
     if (typeof headers[name] === "string" && headers[name].trim()) {
       authHeaders[name] = headers[name].trim();
     }

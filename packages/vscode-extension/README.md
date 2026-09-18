@@ -1,8 +1,8 @@
-# Agent-Native for VS Code
+# FB Factory for VS Code
 
-[Agent-Native](https://www.agent-native.com/docs) opens agent-native app surfaces
+[FB Factory](https://www.agent-native.com/docs) opens agent-native app surfaces
 inside VS Code: visual plans, visual recaps, and Design canvases next to the
-files being changed. It also connects your workspace to Agent-Native MCP apps so
+files being changed. It also connects your workspace to FB Factory MCP apps so
 agents like Claude Code, Codex, and GitHub Copilot can create and open those
 surfaces directly.
 
@@ -33,17 +33,17 @@ raw line-by-line review.
 ![Visual recap review surface animation](https://raw.githubusercontent.com/BuilderIO/skills/main/media/visual-recap.gif)
 
 Visual plans and recaps are MDX, customizable with your own components, and
-viewed with the [Agent-Native Plans app](https://www.agent-native.com/docs/template-plan).
+viewed with the [FB Factory Plans app](https://www.agent-native.com/docs/template-plan).
 [Source here](https://github.com/BuilderIO/agent-native/).
 
 ## `/visual-edit`
 
 Open a running local app in
-[Agent-Native Design](https://www.agent-native.com/docs/template-design) as
+[FB Factory Design](https://www.agent-native.com/docs/template-design) as
 URL-backed iframe screens for visual editing, route-state review, and flow
 comparison.
 
-The extension's **Agent-Native: Open Design Canvas** command starts the local
+The extension's **FB Factory: Open Design Canvas** command starts the local
 Design bridge for the current workspace and opens `https://design.agent-native.com`
 in the VS Code side panel so you can choose the localhost connection directly.
 
@@ -56,7 +56,7 @@ Without it, an agent's plan link opens in a separate browser tab. With it:
 - **One-click handoff from any agent.** Plans tools return a
   `vscode://builder.agent-native/open?url=...` link; the extension decodes it and
   opens the app in the editor.
-- **Connect your workspace to Agent-Native MCP.** A single command runs the
+- **Connect your workspace to FB Factory MCP.** A single command runs the
   `@agent-native/core` connect flow for VS Code / GitHub Copilot, so your agent
   can create plans, recaps, and Design artifacts directly.
 - **Open local apps in Design.** Start the `design connect` bridge and open the
@@ -65,7 +65,7 @@ Without it, an agent's plan link opens in a separate browser tab. With it:
 ## Install
 
 Install
-[Agent-Native](https://marketplace.visualstudio.com/items?itemName=Builder.agent-native)
+[FB Factory](https://marketplace.visualstudio.com/items?itemName=Builder.agent-native)
 from the Visual Studio Marketplace, or run:
 
 ```bash
@@ -81,17 +81,17 @@ npx @agent-native/skills@latest add
 
 ## Commands
 
-- **Agent-Native: Open Agent-Native** opens the configured default app.
-- **Agent-Native: Open Agent-Native URL** opens any `http(s)` Agent-Native app
+- **FB Factory: Open FB Factory** opens the configured default app.
+- **FB Factory: Open FB Factory URL** opens any `http(s)` FB Factory app
   URL or `vscode://builder.agent-native/open?url=...` handoff link.
-- **Agent-Native: Connect Workspace to Agent-Native MCP** runs the existing
+- **FB Factory: Connect Workspace to FB Factory MCP** runs the existing
   `@agent-native/core` connect flow for VS Code / GitHub Copilot MCP.
-- **Agent-Native: Open Design Canvas** starts the local Design bridge for a
+- **FB Factory: Open Design Canvas** starts the local Design bridge for a
   running app and opens Design in the VS Code side panel.
 
 ## Handoff URL
 
-External agents can open a focused Agent-Native app view with:
+External agents can open a focused FB Factory app view with:
 
 ```text
 vscode://builder.agent-native/open?url=https%3A%2F%2Fdesign.agent-native.com

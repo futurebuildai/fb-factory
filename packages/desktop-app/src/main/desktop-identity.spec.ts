@@ -1623,7 +1623,7 @@ describe("DesktopIdentityBroker", () => {
       expect.objectContaining({
         credentials: "include",
         headers: expect.objectContaining({
-          "X-Agent-Native-Desktop-Verifier": "magic-link-verifier",
+          "X-FB Factory-Desktop-Verifier": "magic-link-verifier",
         }),
       }),
     );
@@ -1777,7 +1777,7 @@ describe("DesktopIdentityBroker", () => {
           expect(init?.headers).toEqual(
             expect.objectContaining({
               Accept: "application/json",
-              "X-Agent-Native-Desktop-Verifier": expect.any(String),
+              "X-FB Factory-Desktop-Verifier": expect.any(String),
             }),
           );
           return new Response(
@@ -1808,7 +1808,7 @@ describe("DesktopIdentityBroker", () => {
               Cookie: expect.stringContaining(
                 "an_session_dispatch=desktop-session",
               ),
-              "X-Agent-Native-CSRF": "1",
+              "X-FB Factory-CSRF": "1",
             }),
           );
           expect(JSON.parse(String(init?.body))).toEqual({
@@ -2748,7 +2748,7 @@ describe("DesktopIdentityBroker", () => {
       expect.objectContaining({
         credentials: "include",
         headers: expect.objectContaining({
-          "X-Agent-Native-Desktop-Verifier": "magic-link-verifier",
+          "X-FB Factory-Desktop-Verifier": "magic-link-verifier",
         }),
       }),
     );

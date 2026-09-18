@@ -1,6 +1,6 @@
-# Agent-Native for Chrome
+# FB Factory for Chrome
 
-Public Manifest V3 side panel for page-aware Agent-Native chat and
+Public Manifest V3 side panel for page-aware FB Factory chat and
 origin-scoped browser control.
 
 ## Product behavior

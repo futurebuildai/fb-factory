@@ -13,7 +13,7 @@ export function defaultNativeHostConfigPath(): string {
     homedir(),
     "Library",
     "Application Support",
-    "Agent-Native",
+    "FB Factory",
     "browser-control",
     "native-host.json",
   );
@@ -24,7 +24,7 @@ export function legacyNativeHostConfigPath(): string {
     homedir(),
     "Library",
     "Application Support",
-    "Agent Native", // agent-native-brand-ok: preserve the legacy native-host config directory.
+    "FB Factory", // agent-native-brand-ok: preserve the legacy native-host config directory.
     "browser-control",
     "native-host.json",
   );

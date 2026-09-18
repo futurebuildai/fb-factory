@@ -290,7 +290,7 @@ async function clipsRequest<T>(
       headers: {
         Accept: "application/json",
         Authorization: `Bearer ${session.token}`,
-        "X-Agent-Native-Client": "mobile",
+        "X-FB Factory-Client": "mobile",
         ...options.headers,
       },
       body: options.body,
@@ -426,7 +426,7 @@ export async function createClipsCapture(
         id: recordingId,
         title: job.title,
         titleSource: "upload",
-        sourceAppName: "Agent-Native Mobile",
+        sourceAppName: "FB Factory Mobile",
         hasCamera: job.kind === "video",
         hasAudio: true,
         mimeType,

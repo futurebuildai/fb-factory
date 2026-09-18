@@ -56,7 +56,7 @@ export async function installChromeNativeHost(
   };
   const manifest = {
     name: HOST_NAME,
-    description: "Agent-Native desktop browser control bridge",
+    description: "FB Factory desktop browser control bridge",
     path: options.executablePath,
     type: "stdio",
     allowed_origins: [`chrome-extension://${options.extensionId}/`],
@@ -72,7 +72,7 @@ function defaultConfigPath(): string {
     homedir(),
     "Library",
     "Application Support",
-    "Agent-Native",
+    "FB Factory",
     "browser-control",
     "native-host.json",
   );

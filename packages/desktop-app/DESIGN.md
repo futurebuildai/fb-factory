@@ -5,7 +5,7 @@
 The desktop is a quiet command center: a narrow, persistent conversation rail,
 a generous chat canvas, and contextual app panes that appear when the user or
 agent asks for one. It borrows the information architecture of Codex and T3
-Code while keeping Agent-Native's existing surface, typography, iconography,
+Code while keeping FB Factory's existing surface, typography, iconography,
 and app URLs.
 
 ## Layout contract

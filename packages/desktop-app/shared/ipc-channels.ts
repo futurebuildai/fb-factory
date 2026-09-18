@@ -106,7 +106,7 @@ export const IPC = {
   /** Broadcast (main → renderer) */
   UPDATE_STATUS_CHANGED: "update:status-changed",
 
-  /** Agent-Native Code hub (renderer ↔ main) */
+  /** FB Factory Code hub (renderer ↔ main) */
   CODE_AGENTS_LIST_RUNS: "code-agents:list-runs",
   CODE_AGENTS_LIST_SCHEDULES: "code-agents:list-schedules",
   CODE_AGENTS_CREATE_SCHEDULE: "code-agents:create-schedule",

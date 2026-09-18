@@ -157,7 +157,7 @@ export default function UpcomingMeetingCard({
                 Be ready for your next meeting
               </Text>
               <Text className="text-text-muted text-xs leading-[17px] mt-1">
-                Connect your device calendar to see what’s next. Agent-Native
+                Connect your device calendar to see what’s next. FB Factory
                 never joins or starts recording on its own.
               </Text>
             </View>
@@ -234,7 +234,7 @@ export default function UpcomingMeetingCard({
           <View className="flex-row gap-2 mt-4">
             {state.meeting.joinUrl ? (
               <Pressable
-                accessibilityHint="Opens the meeting link outside Agent-Native"
+                accessibilityHint="Opens the meeting link outside FB Factory"
                 accessibilityRole="link"
                 onPress={() => void openJoinLink(state.meeting!.joinUrl!)}
                 className="items-center bg-gray-charcoal rounded-xl flex-row gap-2 justify-center h-10.5 px-3.5 active:opacity-70"

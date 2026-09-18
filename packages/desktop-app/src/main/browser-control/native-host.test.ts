@@ -27,8 +27,7 @@ describe("installBrowserNativeHost", () => {
     const installed = installBrowserNativeHost({
       baseUrl: "http://127.0.0.1:43123",
       bearerToken: "x".repeat(43),
-      executablePath:
-        "/Applications/Agent-Native.app/Contents/MacOS/Agent-Native",
+      executablePath: "/Applications/FB Factory.app/Contents/MacOS/FB Factory",
       hostEntryPath: "/example/app.asar/out/main/browser-control-host.js",
       stateDirectory: path.join(root, "state"),
       homeDirectory: path.join(root, "home"),

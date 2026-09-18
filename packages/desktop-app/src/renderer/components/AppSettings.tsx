@@ -80,7 +80,7 @@ interface AppSettingsProps {
 }
 
 type WorkspaceSsoAppConfig = AppConfig & {
-  /** Explicit opt-in for a non-built-in app that implements Agent-Native SSO. */
+  /** Explicit opt-in for a non-built-in app that implements FB Factory SSO. */
   workspaceSso?: boolean;
 };
 
@@ -214,7 +214,7 @@ function updateStatusCopy(status: UpdateStatus | null): {
   if (status.state === "checking") {
     return {
       label: "Checking",
-      description: "Looking for the newest Agent-Native release.",
+      description: "Looking for the newest FB Factory release.",
       tone: "pending",
     };
   }
@@ -246,7 +246,7 @@ function updateStatusCopy(status: UpdateStatus | null): {
   if (status.state === "not-available") {
     return {
       label: "Up to date",
-      description: `Agent-Native ${status.currentVersion} is the latest available version.`,
+      description: `FB Factory ${status.currentVersion} is the latest available version.`,
       tone: "ok",
     };
   }
@@ -261,7 +261,7 @@ function updateStatusCopy(status: UpdateStatus | null): {
 
   return {
     label: "Automatic",
-    description: "Agent-Native checks for updates in the background.",
+    description: "FB Factory checks for updates in the background.",
     tone: "ok",
   };
 }
@@ -782,7 +782,7 @@ export default function AppSettings({
     try {
       const result = await api.pairRemoteConnector({
         relayUrl: remotePairUrl.trim(),
-        label: "Agent-Native Desktop",
+        label: "FB Factory Desktop",
         workspacePath: remoteWorkspacePath.trim() || undefined,
       });
       setRemoteStatus(result.status);
@@ -1497,7 +1497,7 @@ export default function AppSettings({
                   <div className="w-full max-w-3xl space-y-8">
                     <SettingsGroup
                       title="Workspace account"
-                      description="One Agent-Native identity across first-party desktop apps. Provider connections remain separate."
+                      description="One FB Factory identity across first-party desktop apps. Provider connections remain separate."
                     >
                       <SettingsRow
                         label="Shared app sign-in"
@@ -1533,7 +1533,7 @@ export default function AppSettings({
                       ) : null}
                       {desktopSsoEnabled && identityStatus !== "idle" ? (
                         <SettingsRow
-                          label="Agent-Native workspace"
+                          label="FB Factory workspace"
                           description={
                             identityStatus === "signed-in"
                               ? "Signed in across eligible apps on this desktop."
@@ -1567,7 +1567,7 @@ export default function AppSettings({
                     </SettingsGroup>
                     <SettingsGroup
                       title="Software updates"
-                      description="Keep Agent-Native current."
+                      description="Keep FB Factory current."
                     >
                       <SoftwareUpdateCard />
                     </SettingsGroup>
@@ -2137,7 +2137,7 @@ export function AppEditForm({
               </div>
               <div className="settings-field-hint">
                 {canUseWorkspaceSso
-                  ? "Use only for an app that implements the Agent-Native identity endpoints. Arbitrary sites stay isolated."
+                  ? "Use only for an app that implements the FB Factory identity endpoints. Arbitrary sites stay isolated."
                   : "Set this app to Prod with an HTTPS production URL first."}
               </div>
             </div>

@@ -1,8 +1,8 @@
-# Agent-Native Content public roadmap
+# FB Factory Content public roadmap
 
 <!-- Generated from the atomic records in chapters/, features/, and capabilities/. Do not edit this projection directly. -->
 
-Agent-Native Content brings documents, data, connected sources, collaboration, and agent work into one durable place. People and agents work on the same real objects through the same permissions and operations. The result is a workspace that can begin as a Page, grow into a system, and remain understandable, portable, and recoverable as more people and automations become involved.
+FB Factory Content brings documents, data, connected sources, collaboration, and agent work into one durable place. People and agents work on the same real objects through the same permissions and operations. The result is a workspace that can begin as a Page, grow into a system, and remain understandable, portable, and recoverable as more people and automations become involved.
 
 ## How to read this roadmap
 

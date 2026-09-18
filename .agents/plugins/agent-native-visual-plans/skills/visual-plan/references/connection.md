@@ -8,7 +8,7 @@ inline fallback from memory.
 
 <!-- SHARED-CORE:connection START -->
 
-**The deliverable is ALWAYS a published Agent-Native Plan, never inline chat
+**The deliverable is ALWAYS a published FB Factory Plan, never inline chat
 content.** Do not hand the plan or recap to the user as Markdown prose, an ASCII
 sketch, a table, a fenced "wireframe", or a "here's the summary" paragraph. The
 entire value is the hosted, interactive, annotatable Plan; an inline summary is

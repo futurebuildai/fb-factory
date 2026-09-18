@@ -46,7 +46,7 @@ or Builder connector does not make a coding host an online host:
   availability of a Builder connector.
 - For the browser-only path, do not substitute the generic
   `create_workspace_app` MCP tool. That tool is a local workspace scaffolder,
-  not the Builder handoff. Connect the FB Factory Dispatch MCP connector
+  not the Builder handoff. Connect the Dispatch MCP connector
   only; Dispatch uses the authenticated Builder Projects API to reuse or
   provision the workspace project before starting the Builder Cloud Agent.
 - If the browser-only handoff action is unavailable or Dispatch is not
@@ -201,7 +201,7 @@ must not become a generic “what app do you want to make?” intake form.
 
 ## UI contract for generated apps
 
-Generated apps must follow the shared FB Factory surface model:
+Generated apps follow the shared FB Factory surface model:
 
 - Keep the domain workflow on a named route (`/workflow`, `/automations`,
   `/block`, or the source's equivalent). Preserve the scaffold's full-page
@@ -276,7 +276,7 @@ than claiming the app is complete.
 
 Choose a short slug from the workflow and create a new directory. Never
 overwrite an existing app. If the user supplied a directory, use it; otherwise
-use `apps/<slug>` inside an existing FB Factory workspace, or a new sibling
+use `apps/<slug>` inside an FB Factory workspace, or a new sibling
 directory when working outside one.
 
 Say once, before the first command, what this run will need to execute —
@@ -321,7 +321,7 @@ already on disk.
 
 Never work around it. Do not hand-build the app in another stack, do not edit a
 pinned dependency version to force an install through, and do not carry on
-against a half-created directory. An app that is not the real FB Factory
+against a half-created directory. An app that is not a real FB Factory
 scaffold is a different product, not a smaller version of this one, and a
 handoff that reports success for it is worse than no app at all.
 
@@ -481,6 +481,6 @@ support, and choices made where the source was silent.
 
 The handoff describes what exists, not what was intended. If the scaffold never
 completed, if a step was worked around, or if the app is not the real
-FB Factory scaffold, that is the headline - not a caveat below one. A handoff
+FB Factory scaffold, that is the headline - not a caveat. A handoff
 cannot report the build as complete and list the framework the app is built on as
 a future improvement; if both would be true, the build is not complete.

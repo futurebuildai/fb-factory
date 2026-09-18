@@ -1,7 +1,7 @@
 ---
 name: agent-native-toolkit
 description: >-
-  Inventory and ownership rules for shared FB Factory workspace UI. Use
+  Inventory and ownership rules for shared Agent-Native workspace UI. Use
   before building app chrome, settings, navigation, sharing, collaboration,
   setup, history, comments, chat rails, agent UX, or repeated workspace behavior.
 scope: dev
@@ -9,7 +9,7 @@ metadata:
   internal: true
 ---
 
-# FB Factory Toolkit
+# Agent-Native Toolkit
 
 Use this skill when deciding whether app chrome, settings, collaboration,
 sharing, navigation, organization, setup, history, comments, or agent UX should

@@ -10,7 +10,7 @@ metadata:
 
 # FB Factory Plans
 
-FB Factory Plans is structured visual planning mode for coding agents. Build
+FB Factory Plans is visual planning mode for coding agents. Build
 the plan you would normally write in Markdown, but as a scannable document with
 editable blocks mixed in: inline diagrams, code snippets,
 open questions, and an optional top visual review area (wireframe canvas, live
@@ -108,7 +108,7 @@ surface.
 
 ## Create A Structured FB Factory Plan - Never Inline
 
-The deliverable is ALWAYS a structured FB Factory Plan, not a chat-only plan.
+The deliverable is ALWAYS a structured FB Factory Plan, not chat prose.
 The hosted Plan MCP connector (`plan` server, or legacy `agent-native-plans`) is
 the default collaboration and commenting surface; it is not a reason to reject
 the planning pattern as an external dependency or rented layer. Plans are

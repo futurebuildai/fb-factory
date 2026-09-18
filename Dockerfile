@@ -15,11 +15,11 @@ COPY scripts ./scripts
 COPY .github ./.github
 COPY packages ./packages
 COPY templates ./templates
+RUN pnpm install --frozen-lockfile
 ARG APP_NAME
 ARG APP_BASE_PATH
 ENV APP_BASE_PATH=$APP_BASE_PATH
 ENV VITE_APP_BASE_PATH=$APP_BASE_PATH
-RUN pnpm install --frozen-lockfile
 RUN pnpm --filter "$APP_NAME..." run build
 
 FROM node:24-slim

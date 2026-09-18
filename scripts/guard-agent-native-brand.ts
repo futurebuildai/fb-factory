@@ -10,7 +10,7 @@ const SELF_PATHS = new Set([
   "scripts/guard-agent-native-brand.ts",
   "scripts/guard-agent-native-brand.test.ts",
 ]);
-const LEGACY_ASSET_RE = /\bagent[ \t]+native(?:[ \t]+nightly)?-/gi;
+const LEGACY_ASSET_RE = /\bagent[ \t-]+native(?:[ \t]+nightly)?-/gi;
 // The product name is "FB Factory". Any capitalized spelling of the upstream
 // name in prose is a violation; lowercase forms stay legal because they are
 // the technical namespace (package scope, CLI binary, routes, env vars,

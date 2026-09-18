@@ -1196,7 +1196,7 @@ export class DesktopIdentityBroker {
           credentials: "include",
           headers: {
             Accept: "application/json",
-            "X-FB Factory-Desktop-Verifier": verifier,
+            "X-Agent-Native-Desktop-Verifier": verifier,
           },
         },
       );
@@ -1928,7 +1928,7 @@ export class DesktopIdentityBroker {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
-        "X-FB Factory-CSRF": "1",
+        "X-Agent-Native-CSRF": "1",
         ...(cookieHeader ? { Cookie: cookieHeader } : {}),
       },
       body: JSON.stringify({ app: target.id, path: "/", chrome: "minimal" }),
@@ -2538,7 +2538,7 @@ export class DesktopIdentityBroker {
           signal: controller.signal,
           headers: {
             Accept: "application/json",
-            "X-FB Factory-Session-Check": "cookie-only",
+            "X-Agent-Native-Session-Check": "cookie-only",
             ...(cookieHeader ? { Cookie: cookieHeader } : {}),
           },
         }),
@@ -3128,7 +3128,7 @@ export class DesktopIdentityBroker {
             headers: {
               Accept: "application/json",
               ...(verifier
-                ? { "X-FB Factory-Desktop-Verifier": verifier }
+                ? { "X-Agent-Native-Desktop-Verifier": verifier }
                 : {}),
             },
             credentials: "include",

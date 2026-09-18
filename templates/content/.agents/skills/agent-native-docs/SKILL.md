@@ -10,7 +10,7 @@ metadata:
   internal: true
 ---
 
-# Agent-Native Docs Lookup
+# FB Factory Docs Lookup
 
 ## Rule
 

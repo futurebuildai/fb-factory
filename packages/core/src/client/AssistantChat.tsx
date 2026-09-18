@@ -704,7 +704,7 @@ function clearPendingSelection() {
     {
       method: "DELETE",
       keepalive: true,
-      headers: { "X-FB Factory-CSRF": "1" },
+      headers: { "X-Agent-Native-CSRF": "1" },
     },
   ).catch(() => {});
   if (typeof window !== "undefined") {

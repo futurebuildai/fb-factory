@@ -47,7 +47,7 @@ export function useNavigationState() {
 }
 ```
 
-`TAB_ID` comes from the framework's `getBrowserTabId()` (see the scaffolded `app/lib/tab-id.ts`; never redefine it). The server resolves tab-scoped `application_state` writes and page-local WebMCP calls (`X-FB Factory-Browser-Tab`) against this same id, so a hand-rolled random id silently breaks selection sync for hidden and background tabs.
+`TAB_ID` comes from the framework's `getBrowserTabId()` (see the scaffolded `app/lib/tab-id.ts`; never redefine it). The server resolves tab-scoped `application_state` writes and page-local WebMCP calls (`X-Agent-Native-Browser-Tab`) against this same id, so a hand-rolled random id silently breaks selection sync for hidden and background tabs.
 
 **Agent side** — read before acting:
 

@@ -23,7 +23,7 @@ When you add a data model, a list, or a read path, also follow the `performance`
 
 ## How It Works
 
-FB Factory apps use Drizzle ORM over PostgreSQL. Local development uses PGlite at `data/pglite`; production and shared preview deploys need a persistent hosted PostgreSQL `DATABASE_URL`.
+Agent-Native apps use Drizzle ORM over PostgreSQL. Local development uses PGlite at `data/pglite`; production and shared preview deploys need a persistent hosted PostgreSQL `DATABASE_URL`.
 
 For app code, use Drizzle's schema/query DSL by default. Raw SQL is an escape hatch for additive migrations, health checks, or one-off maintenance, not the normal way to build features.
 

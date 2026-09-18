@@ -232,7 +232,7 @@ function makeWebEvent(opts: MakeEventOpts): any {
     "content-type": "application/json",
     // A deployed app (non-loopback host) is authenticated — header-only
     // dev-open is loopback-only now (security: a public deploy with no
-    // secret must not be impersonable via X-FB Factory-Owner-Email).
+    // secret must not be impersonable via X-Agent-Native-Owner-Email).
     // Tests that exercise the unauthenticated path override this.
     authorization: "Bearer test-access-token",
     ...(opts.headers ?? {}),

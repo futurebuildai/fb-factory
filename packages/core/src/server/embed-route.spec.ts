@@ -428,7 +428,7 @@ describe("createEmbedStartRouteHandler", () => {
       expect(res.headers.get("Content-Type")).toContain("application/json");
       expect(res.headers.get("Access-Control-Allow-Origin")).toBe(origin);
       expect(res.headers.get("Access-Control-Allow-Headers")).toContain(
-        "X-FB Factory-Embed-Transplant",
+        "X-Agent-Native-Embed-Transplant",
       );
       await expect(res.json()).resolves.toEqual({
         location:

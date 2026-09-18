@@ -1,7 +1,7 @@
 ---
 name: turn-into-skill
 description: >-
-  Capture a proven thread or workflow as a reusable FB Factory skill and save
+  Capture a proven thread or workflow as a reusable Agent-Native skill and save
   it as a personal or organization resource. Use when a user invokes
   `/turn-into-skill` or asks to save a workflow for reuse.
 user-invocable: true

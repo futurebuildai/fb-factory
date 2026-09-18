@@ -32,9 +32,9 @@ const REALTIME_VOICE_PREFERENCES_KEY = "realtime-voice-prefs";
 
 const REALTIME_VOICE_SESSION_PATH = "/_agent-native/realtime-voice/session";
 const REALTIME_VOICE_TOOL_PATH = "/_agent-native/realtime-voice/tool";
-const REALTIME_VOICE_CAPABILITY_HEADER = "X-FB Factory-Realtime-Capability";
-const REALTIME_VOICE_PROTOCOL_HEADER = "X-FB Factory-Realtime-Protocol";
-const REALTIME_VOICE_MODEL_HEADER = "X-FB Factory-Realtime-Model";
+const REALTIME_VOICE_CAPABILITY_HEADER = "X-Agent-Native-Realtime-Capability";
+const REALTIME_VOICE_PROTOCOL_HEADER = "X-Agent-Native-Realtime-Protocol";
+const REALTIME_VOICE_MODEL_HEADER = "X-Agent-Native-Realtime-Model";
 const REALTIME_VOICE_CONNECTION_TIMEOUT_MS = 15_000;
 const REALTIME_VOICE_MAX_TOOLS = 32;
 const REALTIME_VOICE_MAX_TOOL_SCHEMA_BYTES = 32_000;
@@ -849,19 +849,19 @@ export async function createRealtimeVoiceSessionWithCapability(
     headers: {
       "Content-Type": "application/sdp",
       ...(options.browserTabId
-        ? { "X-FB Factory-Browser-Tab": options.browserTabId }
+        ? { "X-Agent-Native-Browser-Tab": options.browserTabId }
         : {}),
       ...(options.protocol
         ? { [REALTIME_VOICE_PROTOCOL_HEADER]: options.protocol }
         : {}),
       ...(preferences
         ? {
-            "X-FB Factory-Realtime-Language": resolveRealtimeVoiceLanguage(
+            "X-Agent-Native-Realtime-Language": resolveRealtimeVoiceLanguage(
               preferences.language,
               options.browserLanguages,
             ),
-            "X-FB Factory-Realtime-Intelligence": preferences.intelligence,
-            "X-FB Factory-Realtime-Voice": preferences.voice,
+            "X-Agent-Native-Realtime-Intelligence": preferences.intelligence,
+            "X-Agent-Native-Realtime-Voice": preferences.voice,
           }
         : {}),
     },
@@ -919,7 +919,7 @@ export async function executeRealtimeVoiceTool(input: {
     headers: {
       "Content-Type": "application/json",
       ...(input.browserTabId
-        ? { "X-FB Factory-Browser-Tab": input.browserTabId }
+        ? { "X-Agent-Native-Browser-Tab": input.browserTabId }
         : {}),
       ...(input.capability
         ? { [REALTIME_VOICE_CAPABILITY_HEADER]: input.capability }

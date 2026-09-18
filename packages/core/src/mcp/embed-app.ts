@@ -899,7 +899,7 @@ export function embedApp(
         redirect: "follow",
         headers: {
           Accept: "application/json",
-          "X-FB Factory-Embed-Transplant": "1"
+          "X-Agent-Native-Embed-Transplant": "1"
         }
       });
       const contentType = response.headers.get("content-type") || "";

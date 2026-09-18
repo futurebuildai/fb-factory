@@ -3461,7 +3461,7 @@ describe("instrumentAgentLoop OpenTelemetry export", () => {
   // Two different identifiers with two different lifetimes. `$ai_session_id`
   // is the thread (backend-owned, groups traces into a conversation);
   // `$session_id` is PostHog's frontend session, propagated from the
-  // `X-FB Factory-Session-Id` header so a trace joins session replay.
+  // `X-Agent-Native-Session-Id` header so a trace joins session replay.
   // Collapsing them would break whichever one lost.
   it("sends $ai_session_id (thread) and $session_id (browser) as distinct ids on every AI event", async () => {
     const events: TrackingEvent[] = [];

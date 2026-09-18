@@ -58,12 +58,12 @@ export function track(
       // Custom header forces a preflight cross-origin; the framework CSRF
       // middleware trusts it as a first-party marker. Matches the convention
       // used by other client writes (application-state, guided-questions).
-      "X-FB Factory-CSRF": "1",
+      "X-Agent-Native-CSRF": "1",
       [ANALYTICS_CLIENT_PLATFORM_HEADER]: clientPlatform,
       // Same session the action client and agent chat send, so a client event
       // and the server events from the same visit share one session.
       ...(browserSessionId
-        ? { "X-FB Factory-Session-Id": browserSessionId }
+        ? { "X-Agent-Native-Session-Id": browserSessionId }
         : {}),
     },
     body,

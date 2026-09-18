@@ -60,23 +60,23 @@ function log(msg: string): void {
  * through to the HTTP MCP endpoint as a JWT/identity bearer (when present)
  * so tool runs stay tenant-scoped. For local dev with a static ACCESS_TOKEN
  * the email is informational; for hosted JWT auth the token already carries
- * `sub`, so we only add an `X-FB Factory-Owner-Email` hint header.
+ * `sub`, so we only add an `X-Agent-Native-Owner-Email` hint header.
  */
 function authHeaders(env: NodeJS.ProcessEnv): Record<string, string> {
   const headers: Record<string, string> = {
-    "X-FB Factory-MCP-Client": "agent-native-mcp-proxy",
+    "X-Agent-Native-MCP-Client": "agent-native-mcp-proxy",
   };
   // Default to the compact/connector catalog + tool-search like every other
   // client. The local CLI no longer auto-pulls the full ~105-tool catalog;
   // opt in explicitly with AGENT_NATIVE_MCP_FULL_CATALOG=1 when you really want
   // every tool schema loaded up front.
   if (env.AGENT_NATIVE_MCP_FULL_CATALOG === "1") {
-    headers["X-FB Factory-MCP-Full-Catalog"] = "1";
+    headers["X-Agent-Native-MCP-Full-Catalog"] = "1";
   }
   const token = env.ACCESS_TOKEN || env.AGENT_NATIVE_MCP_TOKEN;
   if (token) headers["Authorization"] = `Bearer ${token}`;
   const owner = env.AGENT_NATIVE_OWNER_EMAIL;
-  if (owner) headers["X-FB Factory-Owner-Email"] = owner;
+  if (owner) headers["X-Agent-Native-Owner-Email"] = owner;
   return headers;
 }
 

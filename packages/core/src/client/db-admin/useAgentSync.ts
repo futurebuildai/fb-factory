@@ -195,7 +195,7 @@ export function useNavigateConsumer(
         fetch(navigatePath, {
           method: "DELETE",
           credentials: "include",
-          headers: headers({ "X-FB Factory-CSRF": "1" }),
+          headers: headers({ "X-Agent-Native-CSRF": "1" }),
         }).catch(() => {});
         handlerRef.current(target);
       }

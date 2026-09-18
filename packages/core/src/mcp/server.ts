@@ -274,7 +274,7 @@ export async function handleMcpRequest(
 
   // Auth check — extracts the caller's identity from the JWT (`sub`), or, on
   // the static-token / dev-open path, from the forwarded
-  // `X-FB Factory-Owner-Email` hint the stdio proxy sends (the
+  // `X-Agent-Native-Owner-Email` hint the stdio proxy sends (the
   // `agent-native mcp install` flow). Without this the install flow would run
   // every tool unscoped (userEmail === undefined).
   const authHeader = getRequestHeader(event, "authorization");

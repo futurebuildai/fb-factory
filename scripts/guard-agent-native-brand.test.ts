@@ -64,11 +64,13 @@ describe("agent-native brand guard", () => {
   it("allows the legacy desktop asset aliases", () => {
     const nightlyAsset = oldSpaced + " Nightly-arm64.dmg";
     const legacyAsset = ["agent", "native"].join(" ") + "-x64.dmg";
+    const dashedAsset = oldDashed + "-arm64.dmg";
 
     expect(
       findBrandViolations([
         { path: "fixture.ts", text: nightlyAsset },
         { path: "fixture.ts", text: legacyAsset },
+        { path: "fixture.ts", text: dashedAsset },
       ]),
     ).toEqual([]);
   });

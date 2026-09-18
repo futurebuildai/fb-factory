@@ -239,6 +239,7 @@ describe("standalone scaffold — chat template", { timeout: 180_000 }, () => {
       baseDir: root,
       runCommand: async () => 0,
     });
+    // agent-native-brand-ok: asserts the renamed template skill content
     expect(fs.readFileSync(toolkitSkill, "utf-8")).toContain(
       "# FB Factory Toolkit",
     );

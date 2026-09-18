@@ -2010,9 +2010,9 @@ export default {
 
     expect(response.status).toBe(204);
     const allowHeaders = response.headers.get("Access-Control-Allow-Headers");
-    expect(allowHeaders).toContain("X-FB Factory-Frontend");
-    expect(allowHeaders).toContain("X-FB Factory-Client-Compatibility");
-    expect(allowHeaders).toContain("X-FB Factory-Build-Id");
+    expect(allowHeaders).toContain("X-Agent-Native-Frontend");
+    expect(allowHeaders).toContain("X-Agent-Native-Client-Compatibility");
+    expect(allowHeaders).toContain("X-Agent-Native-Build-Id");
     expect(allowHeaders).toContain("X-User-Timezone");
   });
 

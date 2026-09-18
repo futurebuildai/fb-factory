@@ -143,7 +143,7 @@ describe("observability routes", () => {
   ] as const)(
     "tracks explicit %s sentiment with the user-scoped run model",
     async (feedbackType, sentiment) => {
-      vi.stubEnv("AGENT_NATIVE_APP", "FB Factory Analytics");
+      vi.stubEnv("AGENT_NATIVE_APP", "agent-native-analytics");
       vi.stubEnv("AGENT_NATIVE_TEMPLATE", "analytics");
       mockReadBody.mockResolvedValue({
         threadId: "thread-1",

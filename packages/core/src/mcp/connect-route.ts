@@ -393,7 +393,7 @@ function mcpResultPayload(
   const headers: Record<string, string> = {};
   if (auth.token) headers.Authorization = `Bearer ${auth.token}`;
   if (!auth.token && auth.ownerEmail) {
-    headers["X-FB Factory-Owner-Email"] = auth.ownerEmail;
+    headers["X-Agent-Native-Owner-Email"] = auth.ownerEmail;
   }
   // Intentionally do NOT inject the full-catalog header here. Every connector
   // used to receive it, which silently forced the ~105-tool full catalog on

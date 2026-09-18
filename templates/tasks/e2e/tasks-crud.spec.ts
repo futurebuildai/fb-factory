@@ -302,7 +302,7 @@ test.describe("Tasks CRUD", () => {
       {
         headers: {
           "Content-Type": "application/json",
-          "X-FB Factory-Frontend": "1",
+          "X-Agent-Native-Frontend": "1",
         },
         data: { title },
       },
@@ -323,7 +323,7 @@ test.describe("Tasks CRUD", () => {
       {
         headers: {
           "Content-Type": "application/json",
-          "X-FB Factory-Frontend": "1",
+          "X-Agent-Native-Frontend": "1",
         },
         data: { title },
       },
@@ -338,7 +338,7 @@ test.describe("Tasks CRUD", () => {
       {
         headers: {
           "Content-Type": "application/json",
-          "X-FB Factory-Frontend": "1",
+          "X-Agent-Native-Frontend": "1",
         },
         data: { taskId: id, done: true },
       },

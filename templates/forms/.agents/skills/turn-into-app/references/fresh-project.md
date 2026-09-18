@@ -57,7 +57,7 @@ project through the Builder Projects API, so do not ask the user to add a
 separate Builder CMS MCP for app creation.
 Builder's separate Fusion MCP is available as a custom remote connector at
 `https://mcp.builder.io/mcp/fusion` for direct Builder work. It can run an
-existing project, but it cannot provision the repo-backed Agent-Native
+existing project, but it cannot provision the repo-backed FB Factory
 workspace project, so it is optional and not a replacement for the Dispatch
 handoff in this skill. Do not add Builder's CMS MCP for this workflow.
 
@@ -87,7 +87,7 @@ In a new Project chat, say:
 ```text
 Turn this project into an app. Use the visible Project instructions,
 knowledge files, and any selected successful runs as the source. Create the
-app in the connected Agent-Native workspace through Dispatch and Builder, keep
+app in the connected FB Factory workspace through Dispatch and Builder, keep
 the source brief bounded, and report the real Builder branch/path and
 verification result. Do not build it in this chat's sandbox.
 ```

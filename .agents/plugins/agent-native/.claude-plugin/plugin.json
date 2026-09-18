@@ -1,8 +1,8 @@
 {
   "name": "agent-native",
-  "displayName": "Agent-Native",
-  "description": "Open and operate granted Agent-Native apps through Dispatch MCP, with inline app surfaces and current browser screen state.",
-  "author": { "name": "Agent-Native", "url": "https://agent-native.com" },
+  "displayName": "FB Factory",
+  "description": "Open and operate granted FB Factory apps through Dispatch MCP, with inline app surfaces and current browser screen state.",
+  "author": { "name": "FB Factory", "url": "https://agent-native.com" },
   "homepage": "https://dispatch.agent-native.com",
   "repository": "https://github.com/BuilderIO/agent-native",
   "license": "MIT",

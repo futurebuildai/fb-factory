@@ -81,13 +81,13 @@ class UpstreamError extends Error {
 }
 
 function isAgentNativeAsset(name: string): boolean {
-  const n = name.toLowerCase();
+  const n = name.toLowerCase().replace(/\s+/g, "-");
   return (
     n.startsWith("agent-native-") ||
-    n.startsWith("agent-native nightly-") ||
-    n.startsWith("agent native-") ||
-    n.startsWith("agent native nightly-") ||
-    n.startsWith("agent.native-")
+    n.startsWith("agent-native-nightly-") ||
+    n.startsWith("agent.native-") ||
+    n.startsWith("fb-factory-") ||
+    n.startsWith("fb-factory-nightly-")
   );
 }
 

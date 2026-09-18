@@ -3035,7 +3035,7 @@ describe("agent-native skills", () => {
         path.join(root, ".agents", "skills", "agent-native-docs", "SKILL.md"),
         "utf-8",
       ),
-    ).toContain("# FB Factory Docs");
+    ).toContain("# FB Factory Docs Lookup");
     expect(fs.existsSync(path.join(root, "CLAUDE.md"))).toBe(true);
     expect(fs.existsSync(path.join(root, ".claude", "skills"))).toBe(true);
   });

@@ -48,9 +48,10 @@ export const REALTIME_VOICE_MAX_SESSION_BYTES = 64_000;
  * this must outlast the provider's 60-minute maximum realtime session. */
 export const REALTIME_VOICE_TOOL_GRANT_TTL_MS = 75 * 60 * 1_000;
 export const REALTIME_VOICE_CAPABILITY_HEADER =
-  "X-FB Factory-Realtime-Capability";
-export const REALTIME_VOICE_PROTOCOL_HEADER = "X-FB Factory-Realtime-Protocol";
-export const REALTIME_VOICE_MODEL_HEADER = "X-FB Factory-Realtime-Model";
+  "X-Agent-Native-Realtime-Capability";
+export const REALTIME_VOICE_PROTOCOL_HEADER =
+  "X-Agent-Native-Realtime-Protocol";
+export const REALTIME_VOICE_MODEL_HEADER = "X-Agent-Native-Realtime-Model";
 
 const OPENAI_LIVE_SESSIONS_URL = "https://api.openai.com/v1/live/sessions";
 const OPENAI_REALTIME_CALLS_URL = "https://api.openai.com/v1/realtime/calls";

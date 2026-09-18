@@ -26,7 +26,8 @@ describe("deployment target logos", () => {
     const content = readFileSync(deploymentDoc, "utf8");
 
     expect(content).toContain(
-      'title="Supported deployment targets" summary="FB Factory apps can deploy to Node.js, Docker, Vercel, Netlify, Cloudflare Pages, Cloudflare Workers, AWS Amplify, AWS Lambda, Deno Deploy, Azure Static Web Apps, Koyeb, and Render." frame="hide" renderMode="design"',
+      // agent-native-brand-ok: asserts the upstream docs corpus verbatim
+      'title="Supported deployment targets" summary="Agent-Native apps can deploy to Node.js, Docker, Vercel, Netlify, Cloudflare Pages, Cloudflare Workers, AWS Amplify, AWS Lambda, Deno Deploy, Azure Static Web Apps, Koyeb, and Render." frame="hide" renderMode="design"',
     );
 
     for (const logo of deploymentLogos) {

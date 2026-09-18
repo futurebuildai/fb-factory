@@ -1,8 +1,8 @@
 {
   "name": "agent-native-visual-plans",
-  "version": "1.0.0+codex.93102d6bf147",
+  "version": "1.0.0+codex.05fe0aafcf68",
   "description": "Create rich interactive visual plans, recaps, and repo-native visual docs with diagrams, file maps, annotated code and diffs, API/schema summaries, feedback, and HTML export.",
-  "author": { "name": "Agent-Native", "url": "https://agent-native.com" },
+  "author": { "name": "FB Factory", "url": "https://agent-native.com" },
   "homepage": "https://plan.agent-native.com",
   "license": "MIT",
   "keywords": [
@@ -15,17 +15,17 @@
   "skills": "./skills/",
   "mcpServers": "./.mcp.json",
   "interface": {
-    "displayName": "Agent-Native Plan",
+    "displayName": "FB Factory Plan",
     "shortDescription": "Create rich interactive visual plans, recaps, and repo-native visual docs with diagrams, file maps, annotated code and diffs, API/schema summaries, feedback, and HTML export.",
-    "longDescription": "Agent-Native Plan packages agent instructions, app actions, an MCP connector, and inline UI surfaces as an installable skill. The plugin connects to hosted Agent-Native Plan by default; use the Agent-Native CLI when you need a custom/self-hosted app URL.",
-    "developerName": "Agent-Native",
+    "longDescription": "FB Factory Plan packages agent instructions, app actions, an MCP connector, and inline UI surfaces as an installable skill. The plugin connects to hosted FB Factory Plan by default; use the FB Factory CLI when you need a custom/self-hosted app URL.",
+    "developerName": "FB Factory",
     "category": "Productivity",
     "capabilities": ["Interactive", "Read", "Write"],
     "websiteURL": "https://plan.agent-native.com",
     "defaultPrompt": [
-      "Open Agent-Native Plan where useful",
-      "Use Agent-Native Plan for app-backed workflows",
-      "Search Agent-Native Plan and return usable context"
+      "Open FB Factory Plan where useful",
+      "Use FB Factory Plan for app-backed workflows",
+      "Search FB Factory Plan and return usable context"
     ],
     "brandColor": "#2563EB"
   }

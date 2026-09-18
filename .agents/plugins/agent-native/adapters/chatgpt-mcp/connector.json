@@ -1,6 +1,6 @@
 {
   "name": "agent-native-dispatch",
-  "title": "Agent-Native",
+  "title": "FB Factory",
   "url": "https://dispatch.agent-native.com/mcp",
   "auth": "oauth",
   "surfaces": [{ "id": "agent-native-app", "path": "/", "mediaTypes": [] }]

@@ -18,9 +18,6 @@
     "@agent-native/core": "workspace:*",
     "@agent-native/toolkit": "workspace:*",
     "zod": "^4.4.3",
-    "react": "catalog:",
-    "react-dom": "catalog:",
-    "react-router": "catalog:",
     "@tabler/icons-react": "catalog:"
   },
   "devDependencies": {
@@ -35,7 +32,10 @@
     "vite": "catalog:",
     "vitest": "catalog:",
     "@agent-native/code-agents-ui": "workspace:*",
-    "tsx": "catalog:"
+    "tsx": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:",
+    "react-router": "^8.1.0"
   },
   "engines": {
     "node": ">=22.22.0"

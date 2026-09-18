@@ -1,4 +1,4 @@
-// Fork note: FB Factory images build one app per tag from the root Dockerfile.
+// Fork note: images build one app per tag, root Dockerfile.
 #!/usr/bin/env node
 // Generates all logo/icon/favicon assets across the monorepo from the
 // canonical PNG in packages/core/src/assets/branding/favicon.png.

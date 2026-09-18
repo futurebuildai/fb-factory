@@ -1,6 +1,6 @@
 /*
  * Shared chat history list — used by Core's `HistoryPopover`
- * (MultiTabAssistantChat.tsx) and by Agent-Native Code's run rail
+ * (MultiTabAssistantChat.tsx) and by FB Factory Code's run rail
  * (code-agents-ui CodeAgentsApp.tsx). Stable, prefixed class names (not
  * Tailwind utilities) so the same visual language works in both a Tailwind
  * host (core/templates) and a plain-CSS host (code-agents-ui), matching the

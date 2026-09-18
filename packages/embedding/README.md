@@ -1,6 +1,6 @@
 # @agent-native/embedding
 
-Embed Agent-Native apps, pickers, and agents inside React or plain browser
+Embed FB Factory apps, pickers, and agents inside React or plain browser
 apps.
 
 ```tsx

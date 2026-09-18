@@ -432,7 +432,7 @@ describe("Dispatch NavContent", () => {
       (element) => element.textContent?.trim() === "Dispatch",
     );
     expect(sidebarLabel?.textContent?.trim()).toBe("Dispatch");
-    expect(container.textContent).not.toContain("Agent-Native Dispatch");
+    expect(container.textContent).not.toContain("FB Factory Dispatch");
     expect(
       sidebarLabel?.closest('a[href="/overview"], a[href*="/overview"]'),
     ).not.toBeNull();

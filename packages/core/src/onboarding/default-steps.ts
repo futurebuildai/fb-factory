@@ -158,7 +158,7 @@ const databaseStep: OnboardingStep = {
   required: false,
   title: "Database",
   description:
-    "Agent-Native stores app data in SQL. Set DATABASE_URL when you want to point this app at a specific database or opt into local PGlite.",
+    "FB Factory stores app data in SQL. Set DATABASE_URL when you want to point this app at a specific database or opt into local PGlite.",
   methods: [
     {
       id: "database-url",
@@ -254,7 +254,7 @@ const emailStep: OnboardingStep = {
           {
             key: "EMAIL_FROM",
             label: "EMAIL_FROM (from address)",
-            placeholder: "Agent-Native <noreply@yourdomain.com>",
+            placeholder: "FB Factory <noreply@yourdomain.com>",
           },
           {
             key: "APP_NAME",
@@ -281,7 +281,7 @@ const emailStep: OnboardingStep = {
           {
             key: "EMAIL_FROM",
             label: "EMAIL_FROM (from address)",
-            placeholder: "Agent-Native <noreply@yourdomain.com>",
+            placeholder: "FB Factory <noreply@yourdomain.com>",
           },
         ],
       },

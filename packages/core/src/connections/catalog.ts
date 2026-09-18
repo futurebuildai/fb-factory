@@ -430,7 +430,7 @@ export const WORKSPACE_CONNECTION_PROVIDERS = [
     id: "clips",
     label: "Clips",
     description:
-      "Agent-Native Clips exports and recordings for transcript import and searchable meeting context.",
+      "FB Factory Clips exports and recordings for transcript import and searchable meeting context.",
     credentialKeys: [],
     capabilities: ["search", "import", "meetings"],
     recommendedTemplateUses: ["brain", "clips"],
@@ -439,7 +439,7 @@ export const WORKSPACE_CONNECTION_PROVIDERS = [
     id: "anthropic-managed-agents",
     label: "Anthropic Managed Agents",
     description:
-      "Hosted Anthropic agents that run their own tools and context while Agent-Native keeps the app workflow and approvals.",
+      "Hosted Anthropic agents that run their own tools and context while FB Factory keeps the app workflow and approvals.",
     credentialKeys: [
       {
         key: "ANTHROPIC_API_KEY",

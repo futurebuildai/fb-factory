@@ -1,5 +1,5 @@
 /**
- * Cross-app SSO ("Sign in with Agent-Native") — the CLIENT side.
+ * Cross-app SSO ("Sign in with FB Factory") - the CLIENT side.
  *
  * Each hosted app has its own Better Auth store. Dispatch is the identity
  * authority, but the browser only ever carries a short-lived, one-time

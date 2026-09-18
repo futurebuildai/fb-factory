@@ -6,7 +6,7 @@ as the long-term architecture.
 ## Decision
 
 Use `cmdk` as the interaction engine, keep the command-menu shell and registry
-contract in shared Agent-Native code, and let each app register its own commands
+contract in shared FB Factory code, and let each app register its own commands
 and searchable resources.
 
 The shared layer should own the behavior that must be identical everywhere:
@@ -110,7 +110,7 @@ duplicated work and can drift in behavior.
   actions without raw API calls or a second data model.
 - Async providers show loading and empty states consistently and cannot display
   stale results from a previous query or route.
-- Cmd/Ctrl+K opens exactly one menu in a host containing multiple Agent-Native
+- Cmd/Ctrl+K opens exactly one menu in a host containing multiple FB Factory
   surfaces.
 - App-local commands remain localized and can link to the current resource,
   folder, meeting, or dictation context.

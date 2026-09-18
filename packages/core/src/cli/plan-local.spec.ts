@@ -350,7 +350,7 @@ function writeScaffoldExamplePlan(dir: string) {
       "",
       "# Scaffold",
       "",
-      "Author the structured plan or recap here. You can add Agent-Native Plan MDX",
+      "Author the structured plan or recap here. You can add FB Factory Plan MDX",
       'blocks such as `<WireframeBlock><Screen surface="browser">...</Screen></WireframeBlock>`,',
       "`<Diagram />`, `<TabsBlock />`, `<FileTree />`, or `<Diff />`; the local",
       "preview will show the source without publishing it to the Plan app.",

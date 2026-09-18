@@ -9,7 +9,7 @@ export const PLAN_SETUP_AUTH_MD = `## Setup & Authentication
 
 There are two ways into Plans.
 
-**Coding agent (CLI).** Install once with the Agent-Native CLI. The command
+**Coding agent (CLI).** Install once with the FB Factory CLI. The command
 installs the Plans skills, registers the hosted Plans MCP connector, and runs
 auth/setup for the selected local client(s) in the same step (a one-time browser
 sign-in at setup — this is intended), so the first tool call in that client does
@@ -49,7 +49,7 @@ the local bridge.
 Plain text skill
 installs (Vercel Skills CLI, copied GitHub files, etc.) can follow that same
 local flow if \`@agent-native/core\` is available. Text alone cannot register
-MCP tools; hosted/shareable Plans still need the Agent-Native CLI
+MCP tools; hosted/shareable Plans still need the FB Factory CLI
 install/reconnect step above.
 
 **Browser (people you share with).** Open the Plans editor and create & edit

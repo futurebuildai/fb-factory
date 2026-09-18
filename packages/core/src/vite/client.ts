@@ -478,7 +478,7 @@ function mirrorReactRouterVirtualInvalidation(
  *
  * `@react-router/dev`'s framework-mode plugin invalidates its virtual modules
  * through `server.moduleGraph` — Vite's deprecated back-compat graph, which
- * proxies only the `client` and `ssr` environments. Agent-Native serves SSR
+ * proxies only the `client` and `ssr` environments. FB Factory serves SSR
  * from Nitro's `nitro` environment, so that invalidation never reaches the
  * `virtual:react-router/server-build` the request path evaluates, and the route
  * table stays frozen at whatever it was when the dev server booted. A new route
@@ -1937,7 +1937,7 @@ export interface ClientConfigOptions {
    * React Router's native prefetch warms both `.data` and JS, but its `.data`
    * request uses browser link prefetch. Chrome sends `Sec-Purpose: prefetch`
    * on those requests, which some production CDNs reject for dynamic `.data`
-   * URLs before our SWR cache headers can help. Agent-Native therefore uses
+   * URLs before our SWR cache headers can help. FB Factory therefore uses
    * ordinary fetches for `.data` and `modulepreload` for route JS by default.
    */
   routeWarmup?: AgentNativeRouteWarmupConfigInput;
@@ -4681,7 +4681,7 @@ function createAgentNativeConfigPlugin(
 }
 
 /**
- * Agent-Native's Vite plugin preset.
+ * FB Factory's Vite plugin preset.
  *
  * Use this in ordinary Vite configs so `vite.config.ts` keeps Vite's native
  * `UserConfig` type surface:

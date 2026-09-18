@@ -26,7 +26,7 @@ export const CURATED_WORKSPACE_TEMPLATES: readonly CuratedWorkspaceTemplate[] =
       id: "mail",
       name: "Mail",
       description:
-        "Agent-Native email client with keyboard shortcuts and AI triage.",
+        "FB Factory email client with keyboard shortcuts and AI triage.",
       icon: "Mail",
       color: "#3B82F6",
       template: "mail",

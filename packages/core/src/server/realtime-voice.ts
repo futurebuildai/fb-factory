@@ -48,10 +48,9 @@ export const REALTIME_VOICE_MAX_SESSION_BYTES = 64_000;
  * this must outlast the provider's 60-minute maximum realtime session. */
 export const REALTIME_VOICE_TOOL_GRANT_TTL_MS = 75 * 60 * 1_000;
 export const REALTIME_VOICE_CAPABILITY_HEADER =
-  "X-Agent-Native-Realtime-Capability";
-export const REALTIME_VOICE_PROTOCOL_HEADER =
-  "X-Agent-Native-Realtime-Protocol";
-export const REALTIME_VOICE_MODEL_HEADER = "X-Agent-Native-Realtime-Model";
+  "X-FB Factory-Realtime-Capability";
+export const REALTIME_VOICE_PROTOCOL_HEADER = "X-FB Factory-Realtime-Protocol";
+export const REALTIME_VOICE_MODEL_HEADER = "X-FB Factory-Realtime-Model";
 
 const OPENAI_LIVE_SESSIONS_URL = "https://api.openai.com/v1/live/sessions";
 const OPENAI_REALTIME_CALLS_URL = "https://api.openai.com/v1/realtime/calls";
@@ -60,7 +59,7 @@ const LEGACY_MODEL = "gpt-realtime-2.1";
 const DEFAULT_DELEGATED_MODEL = "gpt-5.6-luna";
 const DEFAULT_VOICE = "marin";
 const DEFAULT_INSTRUCTIONS =
-  "You are the live voice interface for this Agent-Native app. Speak naturally, briefly, and conversationally. Use the available function tools when the user asks you to navigate or take an action. When the user asks about a previous conversation, saved chat details, or something they told you before, search with the `chat-history` tool before saying you cannot access it. Summarize a matching result and open a thread only when the user asks. If the user repeats a request, acknowledge the prior attempt and finish or correct the missing part instead of restarting from scratch or asking the same clarification again. Never claim an action succeeded until its tool result confirms success. If a tool requires approval, explain that the user must approve it in chat.";
+  "You are the live voice interface for this FB Factory app. Speak naturally, briefly, and conversationally. Use the available function tools when the user asks you to navigate or take an action. When the user asks about a previous conversation, saved chat details, or something they told you before, search with the `chat-history` tool before saying you cannot access it. Summarize a matching result and open a thread only when the user asks. If the user repeats a request, acknowledge the prior attempt and finish or correct the missing part instead of restarting from scratch or asking the same clarification again. Never claim an action succeeded until its tool result confirms success. If a tool requires approval, explain that the user must approve it in chat.";
 const MAX_INSTRUCTIONS_CHARS = 16_000;
 const MAX_TOOL_DESCRIPTION_CHARS = 2_000;
 const MAX_APPROVAL_KEY_CHARS = 1_024;

@@ -406,7 +406,7 @@ describe("createBuilderEngine", () => {
     ]);
   });
 
-  it("resolves auto to the Agent-Native default before posting to the gateway", async () => {
+  it("resolves auto to the FB Factory default before posting to the gateway", async () => {
     const fetchSpy = vi
       .fn()
       .mockResolvedValue(
@@ -812,7 +812,7 @@ describe("createBuilderEngine", () => {
     expect(stop?.error).toContain("monthly AI credits");
   });
 
-  it("routes upgradeUrl to the org-agnostic subscription page with Agent-Native attribution", async () => {
+  it("routes upgradeUrl to the org-agnostic subscription page with FB Factory attribution", async () => {
     credentialState.builderOrgName = "Acme Corp";
     vi.stubEnv("BUILDER_ORG_NAME", "Acme Corp");
     vi.stubGlobal(

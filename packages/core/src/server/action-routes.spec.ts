@@ -151,7 +151,7 @@ describe("mountActionRoutes", () => {
       _responseHeaders: {
         "cache-control": "no-store",
         "access-control-expose-headers":
-          "X-Agent-Native-Client-Mismatch,X-Agent-Native-Build-Id,X-Agent-Native-Client-Compatibility",
+          "X-FB Factory-Client-Mismatch,X-FB Factory-Build-Id,X-FB Factory-Client-Compatibility",
         "x-agent-native-client-mismatch": "1",
       },
     });
@@ -1662,7 +1662,7 @@ describe("mountActionRoutes", () => {
 
     mountActionRoutes(nitroApp, actions);
 
-    // No X-Agent-Native-Tool-Bridge header — this is a regular UI/agent call.
+    // No X-FB Factory-Tool-Bridge header - this is a regular UI/agent call.
     const event = {
       _method: "POST",
       _headers: {},
@@ -2959,7 +2959,7 @@ describe("mountWebMcpActionRoutes", () => {
     expect(compatibilityManifest.instructions).not.toContain("hidden");
   });
 
-  it("resolves getRequestRunContext().browserTabId from X-Agent-Native-Browser-Tab, on both the webmcp and /mcp/tool paths, and leaves it undefined without the header", async () => {
+  it("resolves getRequestRunContext().browserTabId from X-FB Factory-Browser-Tab, on both the webmcp and /mcp/tool paths, and leaves it undefined without the header", async () => {
     const { mountWebMcpActionRoutes } = await import("./action-routes.js");
     const mounted: Array<{ path: string; handler: any }> = [];
     // The action itself reads the context — same helper

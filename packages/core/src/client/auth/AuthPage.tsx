@@ -421,9 +421,9 @@ export function isElectron(
 }
 
 /**
- * Builder's desktop webview uses Electron without the Agent-Native marker.
+ * Builder's desktop webview uses Electron without the FB Factory marker.
  * This only selects the local workspace return origin; native deep-link
- * handling remains exclusive to Agent-Native Desktop.
+ * handling remains exclusive to FB Factory Desktop.
  */
 export function isBuilderDesktop(
   userAgent = typeof navigator === "undefined" ? "" : navigator.userAgent,
@@ -1338,7 +1338,7 @@ export function AuthPage(props: AuthPageProps) {
             `${apiPath("/_agent-native/auth/desktop-exchange")}?flow_id=${encodeURIComponent(flowId)}`,
             {
               headers: verifier
-                ? { "X-Agent-Native-Desktop-Verifier": verifier }
+                ? { "X-FB Factory-Desktop-Verifier": verifier }
                 : undefined,
             },
           );
@@ -1604,7 +1604,7 @@ export function AuthPage(props: AuthPageProps) {
           method: "POST",
           headers: {
             Accept: "application/json",
-            "X-Agent-Native-Desktop-Verifier": verifier,
+            "X-FB Factory-Desktop-Verifier": verifier,
           },
         },
       );
@@ -2947,7 +2947,7 @@ export function AuthPage(props: AuthPageProps) {
             <span>
               {t("newToApp").replace(
                 "{appName}",
-                marketingCopy.appName.replace(/^Agent-Native\s+/i, ""),
+                marketingCopy.appName.replace(/^FB Factory\s+/i, ""),
               )}
             </span>
             <span aria-hidden="true"> - </span>

@@ -317,7 +317,7 @@ export function isIdentitySsoAvailableForRequest(
   return canonicalRequest || isIdentitySsoExplicitlyEnabled();
 }
 
-/** @deprecated Browser sign-in with Agent-Native was removed. */
+/** @deprecated Browser sign-in with FB Factory was removed. */
 export function identitySsoLoginButtonHtml(
   _options: { requestHost?: string } = {},
 ): string {

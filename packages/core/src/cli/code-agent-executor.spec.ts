@@ -90,7 +90,7 @@ describe("executeCodeAgentRun", () => {
     ).toEqual(usage);
   });
 
-  it("runs a file-backed Agent-Native Code session with a fake engine", async () => {
+  it("runs a file-backed FB Factory Code session with a fake engine", async () => {
     useTempCodeAgentsHome();
     process.env.AGENT_NATIVE_CODE_AGENT_FAKE_RESPONSE =
       "I checked the workspace and found the issue.";
@@ -1002,7 +1002,7 @@ describe("executeCodeAgentRun", () => {
       expect.arrayContaining([
         expect.objectContaining({
           kind: "status",
-          message: "Agent-Native Code run completed; running queued follow-up.",
+          message: "FB Factory Code run completed; running queued follow-up.",
         }),
       ]),
     );

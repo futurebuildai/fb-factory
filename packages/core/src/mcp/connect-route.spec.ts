@@ -184,7 +184,7 @@ describe("handleMcpConnect", () => {
       const body = await res.text();
       expect(res.status).toBe(200);
       expect(body).not.toContain("Connect an external agent");
-      expect(body).not.toContain(">Agent-Native<");
+      expect(body).not.toContain(">FB Factory<");
       expect(body).not.toContain("app-pill");
       expect(body).not.toContain('connectionsStateEl.textContent = "None"');
       expect(body).toContain(
@@ -400,7 +400,7 @@ describe("handleMcpConnect", () => {
         Authorization: `Bearer ${data.token}`,
       });
       expect(data.mcpServerEntry.headers).not.toHaveProperty(
-        "X-Agent-Native-MCP-Full-Catalog",
+        "X-FB Factory-MCP-Full-Catalog",
       );
       expect(Math.round(lifetimeDays)).toBe(365);
       expect(tokenRows[0]).toMatchObject({
@@ -425,7 +425,7 @@ describe("handleMcpConnect", () => {
         type: "http",
         url: "http://localhost:4321/mcp",
         headers: {
-          "X-Agent-Native-Owner-Email": "u@example.com",
+          "X-FB Factory-Owner-Email": "u@example.com",
         },
       });
     });
@@ -647,7 +647,7 @@ describe("handleMcpConnect", () => {
       expect(data.status).toBe("approved");
       expect(data.token).toBe("");
       expect(data.mcpServerEntry.headers).toEqual({
-        "X-Agent-Native-Owner-Email": "u@example.com",
+        "X-FB Factory-Owner-Email": "u@example.com",
       });
     });
 
@@ -691,7 +691,7 @@ describe("handleMcpConnect", () => {
         Authorization: `Bearer ${data.token}`,
       });
       expect(data.mcpServerEntry.headers).not.toHaveProperty(
-        "X-Agent-Native-MCP-Full-Catalog",
+        "X-FB Factory-MCP-Full-Catalog",
       );
       expect(Math.round(lifetimeDays)).toBe(365);
       expect(verified?.jti).toBeTruthy();

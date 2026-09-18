@@ -27,7 +27,7 @@ vi.mock("@agent-native/core/client/i18n", () => ({
       "dispatch.pages.browserChatUnavailableTitle":
         "Browser chat session unavailable",
       "dispatch.pages.browserChatUnavailableDescription":
-        "Reconnect from the Agent-Native browser extension.",
+        "Reconnect from the FB Factory browser extension.",
       "dispatch.pages.browserChatPlaceholder": "Ask about this page…",
       "dispatch.pages.browserChatAttachedPlaceholder": `Ask about ${values?.page}…`,
     })[key] ?? key,

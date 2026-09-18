@@ -9,9 +9,9 @@ describe("resolveEmailPreviewAssets", () => {
   it("uses the canonical logo for browser previews", () => {
     expect(
       resolveEmailPreviewAssets(
-        '<img src="cid:agent-native-logo" alt="Agent-Native" />',
+        '<img src="cid:agent-native-logo" alt="FB Factory" />',
       ),
-    ).toBe(`${CSP_HEAD}<img src="/favicon.png" alt="Agent-Native" />`);
+    ).toBe(`${CSP_HEAD}<img src="/favicon.png" alt="FB Factory" />`);
   });
 
   it("leaves an explicit brand logo URL as text but blocks it from loading via CSP", () => {

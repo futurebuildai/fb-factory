@@ -503,7 +503,7 @@ async function createMigrationCodeAgentSession(
     runId: run.id,
     kind: "status",
     message:
-      "Migration dossier is ready. Resume the /migrate session from Agent-Native Code when you are ready to approve or continue.",
+      "Migration dossier is ready. Resume the /migrate session from FB Factory Code when you are ready to approve or continue.",
     metadata: { status: "needs-approval", phase: "intake" },
   });
 
@@ -536,7 +536,7 @@ function printMigrationStatus(opts: MigrateCliOptions): void {
       `Create one with: npx @agent-native/core@latest code /migrate <source>`,
     );
     console.error(
-      `The direct migrate command is a shortcut into that same Agent-Native Code slash command.`,
+      `The direct migrate command is a shortcut into that same FB Factory Code slash command.`,
     );
     process.exit(1);
   }
@@ -568,7 +568,7 @@ function printMigrationStop(_opts: MigrateCliOptions): void {
   console.log(
     [
       "",
-      "Agent-Native Code /migrate stop",
+      "FB Factory Code /migrate stop",
       "",
       "The migrate CLI creates resumable session records and artifacts; it does not daemonize a background process yet.",
       "Stop the terminal, Desktop run, or external coding agent that is actively working on the session.",
@@ -684,7 +684,7 @@ function renderCodeAgentMigrationSession(
 ): string {
   return [
     "",
-    "Agent-Native Code /migrate session created.",
+    "FB Factory Code /migrate session created.",
     "",
     `  Run:     ${run.id}`,
     "  Goal:    /migrate",
@@ -713,13 +713,13 @@ function renderCodeAgentMigrationSession(
     "  agent-native code status --last",
     "",
     "Desktop:",
-    "  Open Agent-Native Code in the left sidebar. This run appears as a /migrate session.",
+    "  Open FB Factory Code in the left sidebar. This run appears as a /migrate session.",
     "",
     "Use another agent:",
     `  Point Codex, Claude Code, Cursor, or another coding agent at ${shellQuote(dossier.dossierRoot)} and ask it to follow AGENTS.md plus MIGRATION_PLAYBOOK.md.`,
     "",
     "Default surface:",
-    "  Migration stays in Agent-Native Code. No hidden app/template was scaffolded.",
+    "  Migration stays in FB Factory Code. No hidden app/template was scaffolded.",
     "  The legacy --app-surface detail app has been removed.",
   ].join("\n");
 }
@@ -727,7 +727,7 @@ function renderCodeAgentMigrationSession(
 function renderCodeAgentMigrationStatus(runs: CodeAgentRunRecord[]): string {
   return [
     "",
-    "Agent-Native Code /migrate status",
+    "FB Factory Code /migrate status",
     "",
     runs.length === 0
       ? "  No /migrate sessions found. Start one with `agent-native code /migrate <source>`."
@@ -753,7 +753,7 @@ function renderCodeAgentMigrationStatus(runs: CodeAgentRunRecord[]): string {
     runs.length > 8 ? `  - ${runs.length - 8} more...` : "",
     "",
     "Shortcuts:",
-    "  agent-native migrate status --last shows the same Agent-Native Code sessions.",
+    "  agent-native migrate status --last shows the same FB Factory Code sessions.",
     "  The legacy --app-surface detail app has been removed.",
   ]
     .filter(Boolean)
@@ -764,7 +764,7 @@ function renderCodeAgentMigrationResume(run: CodeAgentRunRecord): string {
   const dossier = stringMetadata(run, "dossierRoot");
   return [
     "",
-    "Agent-Native Code /migrate resume",
+    "FB Factory Code /migrate resume",
     "",
     `  Run:     ${run.id}`,
     `  Status:  ${run.status}${run.phase ? ` (${run.phase})` : ""}`,
@@ -789,11 +789,11 @@ function renderCodeAgentMigrationResume(run: CodeAgentRunRecord): string {
 function renderCodeAgentMigrationUi(run: CodeAgentRunRecord): string {
   return [
     "",
-    "Agent-Native Code /migrate UI",
+    "FB Factory Code /migrate UI",
     "",
     `  Run: ${run.id}`,
     "",
-    "Open Agent-Native Desktop and choose Agent-Native Code from the left sidebar.",
+    "Open FB Factory Desktop and choose FB Factory Code from the left sidebar.",
     "The legacy migration detail app is no longer scaffolded.",
   ].join("\n");
 }
@@ -811,7 +811,7 @@ function renderEmitResult(result: EmitDossierResult): string {
     "Files:",
     ...result.files.map((file) => `  - ${file}`),
     "",
-    "Use with Agent-Native Code/Desktop:",
+    "Use with FB Factory Code/Desktop:",
     `  Point the agent at ${shellQuote(result.dossierRoot)} and ask it to follow AGENTS.md plus MIGRATION_PLAYBOOK.md.`,
     "",
     "Safety:",
@@ -838,7 +838,7 @@ function migrateUsage(): string {
     '  npx @agent-native/core@latest code /migrate --describe "A Rails admin app with reporting dashboards" --emit',
     "",
     "Default:",
-    "  Migration is an Agent-Native Code slash command. The legacy hidden migration app has been removed.",
+    "  Migration is an FB Factory Code slash command. The legacy hidden migration app has been removed.",
     "",
     "Options:",
     "  --source, --path <path>       Local source path",
@@ -1344,7 +1344,7 @@ Target: \`${DEFAULT_TARGET}\`
 
 ${ir.site.routes.map((route) => `- \`${route.path}\` (${route.kind}) from \`${route.filePath}\``).join("\n") || "- No routes detected."}
 
-## Agent-Native Focus Areas
+## FB Factory Focus Areas
 
 - Convert API routes and server mutations into actions unless they are uploads, webhooks, OAuth callbacks, or streams.
 - Move app-owned state into SQL with Drizzle and expose reads/writes through actions.
@@ -1365,9 +1365,9 @@ Target: \`${DEFAULT_TARGET}\`
 
 ## Inventory
 
-No local source path was provided, so this dossier does not include file-level IR. Use the URL or description as the intake brief, then let an Agent-Native Code or Desktop session inspect the real source before writing output.
+No local source path was provided, so this dossier does not include file-level IR. Use the URL or description as the intake brief, then let an FB Factory Code or Desktop session inspect the real source before writing output.
 
-## Agent-Native Focus Areas
+## FB Factory Focus Areas
 
 - Identify public pages, logged-in workflows, API endpoints, data ownership, auth, jobs, and direct LLM calls.
 - Convert operations into actions and keep application data in SQL.
@@ -1402,7 +1402,7 @@ ${planInputs ? "- Treat `02-plan-inputs.json` as binding planning input. Do not 
 
 ## Files In This Dossier
 
-- \`MIGRATION_PLAYBOOK.md\` - ordered workflow for Agent-Native Code/Desktop.
+- \`MIGRATION_PLAYBOOK.md\` - ordered workflow for FB Factory Code/Desktop.
 - \`01-assessment.md\` - initial source assessment.
 - \`02-plan-inputs.json\` - custom route ownership, AEM, Builder, jQuery, or verification profile when present.
 - \`ir.json\` - source inventory when available.
@@ -1430,7 +1430,7 @@ Classify routes, public pages, logged-in app surfaces, API endpoints, data store
 
 ${planInputs ? "Use `02-plan-inputs.json` as the customer-specific migration profile. Apply its route ownership, AEM evidence, Builder registration, headless, jQuery, and verification constraints before approving output writes.\n" : ""}
 
-## 3. Apply Agent-Native Rules
+## 3. Apply FB Factory Rules
 
 - Actions are the single source of truth for operations.
 - Data lives in SQL through Drizzle.
@@ -1447,9 +1447,9 @@ Migrate one representative route or workflow first. Verify it, tune the pattern,
 
 Run typecheck/build plus route, action, and data checks that fit the migrated app. Capture unresolved gaps in a report before handing off.
 
-## 6. Use With Agent-Native Code Or Desktop
+## 6. Use With FB Factory Code Or Desktop
 
-Point Codex, Claude Code, another code agent, or Agent-Native Desktop at this dossier directory. Ask it to follow \`AGENTS.md\`, then implement the plan in a separate output project.
+Point Codex, Claude Code, another code agent, or FB Factory Desktop at this dossier directory. Ask it to follow \`AGENTS.md\`, then implement the plan in a separate output project.
 `;
 }
 
@@ -1584,7 +1584,7 @@ function credentialStatusLines(): string[] {
   }
   return [
     `Headless credentials: none of ${MODEL_CREDENTIAL_ENV_NAMES.join(", ")} are set in this shell.`,
-    "Set credentials in the Workbench app env or use Desktop/Agent-Native Code credentials; the migrate CLI will not store them.",
+    "Set credentials in the Workbench app env or use Desktop/FB Factory Code credentials; the migrate CLI will not store them.",
   ];
 }
 

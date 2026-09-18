@@ -167,7 +167,7 @@ const { dispose } = mountPinpoint({
 // Call dispose() to unmount
 ```
 
-## Setup in an Agent-Native App
+## Setup in an FB Factory App
 
 ### 1. Install
 

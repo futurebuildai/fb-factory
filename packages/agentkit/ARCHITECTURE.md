@@ -1,22 +1,22 @@
 # AgentKit architecture
 
-Agent-Native is the application framework and execution platform. AgentKit is
+FB Factory is the application framework and execution platform. AgentKit is
 its agent interaction and experience layer. Toolkit is the semantic
 design-system and workspace layer. These layers are designed to work together
 without collapsing their ownership boundaries.
 
 | Layer        | Owns                                                                                       | Does not own                                    |
 | ------------ | ------------------------------------------------------------------------------------------ | ----------------------------------------------- |
-| Agent-Native | Actions, SQL, application state, agent execution, auth, access, persistence, deployment    | Portable conversation UI contracts              |
+| FB Factory | Actions, SQL, application state, agent execution, auth, access, persistence, deployment    | Portable conversation UI contracts              |
 | AgentKit     | Protocol, event validation, client state, transports, React bindings, agent UI composition | App data, authorization policy, agent execution |
 | Toolkit      | Semantic controls, composer building blocks, design-system adapters, workspace UI          | Conversation state or backend behavior          |
 
 AgentKit also runs with another backend. That backend must own the same
-execution and security responsibilities that Agent-Native normally provides.
+execution and security responsibilities that FB Factory normally provides.
 Each layer has one source of truth and a narrow dependency direction.
 
 ```text
-Agent-Native Core or another agent runtime
+FB Factory Core or another agent runtime
               ↓ runtime adapter
 versioned AgentKit protocol + validation
               ↓ transport
@@ -151,7 +151,7 @@ agent observability workspace.
 
 ## Adapter model
 
-Agent-Native provides the first-party production adapter:
+FB Factory provides the first-party production adapter:
 
 ```ts
 import { createAgentNativeAgentKitTransport } from "@agent-native/core/client/agent-chat";
@@ -162,7 +162,7 @@ const transport = createAgentNativeAgentKitTransport({
 });
 ```
 
-It binds the built-in Agent-Native chat endpoint to AgentKit thread snapshots,
+It binds the built-in FB Factory chat endpoint to AgentKit thread snapshots,
 run streams, approval continuation, feedback, durable queue operations, and
 thread forking. It preserves Core's runtime and request boundaries.
 
@@ -176,12 +176,12 @@ The protocol types and the HTTP adapter do not provide authentication,
 authorization, persistence, tenancy, or agent execution. Those remain backend
 responsibilities.
 
-## Agent-Native contract mapping
+## FB Factory contract mapping
 
 ### Actions
 
 AgentKit widgets carry stable action identifiers and serializable payloads.
-They call `AgentTransport.invokeAction`. In an Agent-Native app, map that
+They call `AgentTransport.invokeAction`. In an FB Factory app, map that
 operation to the same named `defineAction` surface used by the UI and agent.
 The production adapter advertises the `actions` capability only when the host
 supplies `operations.invokeAction`.
@@ -195,7 +195,7 @@ from a renderer.
 `AgentObjectReference` provides portable identity for a file, record, artifact,
 or view. `onOpenObject` resolves it into host navigation. `client.effect` and
 `client.deeplink` events reach `onClientEffect`. If opening an object changes
-Agent-Native application state, use the app's existing named helper or action.
+FB Factory application state, use the app's existing named helper or action.
 The protocol never writes `application_state` directly.
 
 ### Security
@@ -204,7 +204,7 @@ Thread ids, run ids, action ids, widget payloads, and smart objects are not
 authorization grants. The host must authenticate transport requests, scope
 thread reads and writes, assert action access, validate uploads, and re-resolve
 objects before navigation. Mount the generic HTTP handler only after those
-controls. Keep Agent-Native apps on Core's existing auth, request-context, and
+controls. Keep FB Factory apps on Core's existing auth, request-context, and
 ownable-data boundaries.
 
 ## Configure, compose, and eject
@@ -226,7 +226,7 @@ transport, and agent execution stay on public package contracts.
 
 ## Migration from Core chat UI
 
-An existing Agent-Native app can migrate presentation without replacing its
+An existing FB Factory app can migrate presentation without replacing its
 runtime:
 
 1. Keep the app shell, thread routing, actions, application-state keys, auth,

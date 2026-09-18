@@ -6,7 +6,7 @@ import { updateUserProfile } from "../store.js";
 
 export default defineAction({
   description:
-    "Update the current user's display name and optional onboarding role used across Agent-Native apps. Do not change the user's email address with this action.",
+    "Update the current user's display name and optional onboarding role used across FB Factory apps. Do not change the user's email address with this action.",
   schema: z.object({
     name: z
       .string()

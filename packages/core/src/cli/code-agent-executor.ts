@@ -179,7 +179,7 @@ export async function executeCodeAgentRun(
     appendCodeAgentTranscriptEvent({
       runId: existing.id,
       kind: "status",
-      message: "No prompt was found for this Agent-Native Code run.",
+      message: "No prompt was found for this FB Factory Code run.",
       metadata: { status: "errored", phase: "missing-prompt" },
     });
     return updateCodeAgentRunRecord(existing.id, {
@@ -220,7 +220,7 @@ export async function executeCodeAgentRun(
   appendCodeAgentTranscriptEvent({
     runId: existing.id,
     kind: "status",
-    message: "Agent-Native Code run started.",
+    message: "FB Factory Code run started.",
     metadata: { status: "running", phase: "executing" },
   });
 
@@ -516,7 +516,7 @@ export async function executeCodeAgentRun(
     }
     const approvalPending = getPendingApproval(existing.id);
     if (approvalPending) {
-      const message = `Agent-Native Code run paused for approval: ${approvalPending.reason}`;
+      const message = `FB Factory Code run paused for approval: ${approvalPending.reason}`;
       if (streamToolOutputToStdout) {
         options.stdout?.write(`\n${message}\n`);
       }
@@ -547,8 +547,8 @@ export async function executeCodeAgentRun(
     if (pendingFollowUp) {
       const message =
         pendingFollowUp.mode === "queued"
-          ? "Agent-Native Code run completed; running queued follow-up."
-          : "Agent-Native Code run completed; applying steering follow-up.";
+          ? "FB Factory Code run completed; running queued follow-up."
+          : "FB Factory Code run completed; applying steering follow-up.";
       appendCodeAgentTranscriptEvent({
         runId: existing.id,
         kind: "status",
@@ -579,7 +579,7 @@ export async function executeCodeAgentRun(
     appendCodeAgentTranscriptEvent({
       runId: existing.id,
       kind: "status",
-      message: "Agent-Native Code run completed.",
+      message: "FB Factory Code run completed.",
       metadata: { status: "completed", phase: "complete" },
     });
     return updateCodeAgentRunRecord(existing.id, {
@@ -604,12 +604,12 @@ export async function executeCodeAgentRun(
     await outputSmoother.flush().catch(() => undefined);
     const message = err instanceof Error ? err.message : String(err);
     if (streamToolOutputToStdout) {
-      options.stdout?.write(`\nAgent-Native Code run failed: ${message}\n`);
+      options.stdout?.write(`\nFB Factory Code run failed: ${message}\n`);
     }
     appendCodeAgentTranscriptEvent({
       runId: existing.id,
       kind: "status",
-      message: `Agent-Native Code run failed: ${message}`,
+      message: `FB Factory Code run failed: ${message}`,
       metadata: { status: "errored", phase: "error" },
     });
     return updateCodeAgentRunRecord(existing.id, {
@@ -842,7 +842,7 @@ function buildClaudeCliPrompt(run: CodeAgentRunRecord, prompt: string): string {
   const additionalSkillsRoot =
     process.env.AGENT_NATIVE_CODE_AGENT_SKILLS_ROOT?.trim();
   return [
-    `You are running from Agent-Native Code in ${run.cwd || process.cwd()}.`,
+    `You are running from FB Factory Code in ${run.cwd || process.cwd()}.`,
     `Treat ${run.cwd || process.cwd()} as the only project checkout for this run. Keep shell commands, file operations, git pushes, and pull requests rooted there; do not use absolute paths or .. to reach another checkout.`,
     "Follow the repository AGENTS.md and any relevant skill instructions.",
     ...(additionalSkillsRoot
@@ -1811,7 +1811,7 @@ function buildCodexCliPrompt(run: CodeAgentRunRecord, prompt: string): string {
   const additionalSkillsRoot =
     process.env.AGENT_NATIVE_CODE_AGENT_SKILLS_ROOT?.trim();
   return [
-    `You are running from Agent-Native Code in ${run.cwd || process.cwd()}.`,
+    `You are running from FB Factory Code in ${run.cwd || process.cwd()}.`,
     `Treat ${run.cwd || process.cwd()} as the only project checkout for this run. Keep shell commands, file operations, git pushes, and pull requests rooted there; do not use absolute paths or .. to reach another checkout.`,
     "Follow the repository AGENTS.md and any relevant skill instructions.",
     ...(additionalSkillsRoot
@@ -2223,7 +2223,7 @@ function hasAnyProviderCredential(): boolean {
 function createFakeCodeAgentEngine(text: string): AgentEngine {
   return {
     name: "fake-code-agent",
-    label: "Fake Agent-Native Code",
+    label: "Fake FB Factory Code",
     defaultModel: "fake-code-agent",
     supportedModels: ["fake-code-agent"],
     capabilities: {
@@ -2670,7 +2670,7 @@ export function codeAgentSystemPrompt(
     ? `\n\n${repoInstructionsBlock}`
     : "";
   const skillsSection = skillsBlock ? `\n\n${skillsBlock}` : "";
-  return `You are Agent-Native Code, a coding agent running in ${cwd}. You and the user share one workspace, and your job is to collaborate with them until their goal is genuinely handled.
+  return `You are FB Factory Code, a coding agent running in ${cwd}. You and the user share one workspace, and your job is to collaborate with them until their goal is genuinely handled.
 
 # General
 
@@ -2710,7 +2710,7 @@ Current run mode: ${mode} mode (${permissionMode}).
 
 - Stay with the work until the task is handled end to end within this turn whenever feasible. Don't stop at analysis or a proposal — implement the fix, and work through blockers yourself before handing them back. The exception is Plan mode, where you propose only.
 - Done means verified, not generated. Match the check to the change: use the narrowest relevant test, typecheck, formatter, or direct invocation for a localized edit; use \`pnpm run prep\` for shared or cross-cutting changes. Do not restart a dev server or run broad checks as a generic post-edit ritual. Fix failures before you call it done, and keep any repository-required guards or doctor checks that apply.
-- In an Agent-Native app or workspace, also run \`pnpm agent-native:doctor\` (or \`pnpm doctor\`) after source changes. Treat every finding as a fix-required security issue; do not disable a guard without a reviewer-readable reason.
+- In an FB Factory app or workspace, also run \`pnpm agent-native:doctor\` (or \`pnpm doctor\`) after source changes. Treat every finding as a fix-required security issue; do not disable a guard without a reviewer-readable reason.
 - Do not claim a change works, tests pass, or a build succeeds unless you actually ran it and saw the result. If you could not verify something, say exactly what is unverified and why.
 
 # Schedules and cooperating threads
@@ -2756,7 +2756,7 @@ function createLocalCodeAgentActions(
     beforeBash: ({ command }) => {
       const permission = classifyCodeAgentCommandPermission(command);
       if (permission.kind === "forbidden") {
-        return `Error: command is blocked by Agent-Native Code policy: ${permission.reason}`;
+        return `Error: command is blocked by FB Factory Code policy: ${permission.reason}`;
       }
       if (permission.kind !== "read") {
         const permissionError = permissionErrorForWrite(permissionMode, "bash");
@@ -2775,7 +2775,7 @@ function createLocalCodeAgentActions(
           `Approval required before running this command: ${permission.reason}.`,
           `Approval id: ${approval.id}`,
           `Command: ${command}`,
-          "The run is paused; approve from the Agent-Native Code UI/CLI if this command is intentional.",
+          "The run is paused; approve from the FB Factory Code UI/CLI if this command is intentional.",
         ].join("\n");
       }
       return null;
@@ -2815,7 +2815,7 @@ function resolveCodeAgentToolProfile(
   const normalized = value?.trim();
   if (!normalized) return undefined;
   if (normalized === RECAP_SOURCE_TOOL_PROFILE) return normalized;
-  throw new Error(`Unsupported Agent-Native Code tool profile: ${normalized}`);
+  throw new Error(`Unsupported FB Factory Code tool profile: ${normalized}`);
 }
 
 export type CodeAgentCommandPermission =

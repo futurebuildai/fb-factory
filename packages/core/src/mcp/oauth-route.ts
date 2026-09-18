@@ -888,7 +888,7 @@ async function handleAuthorize(
   if (method === "GET") {
     return html(
       renderConsentPage({
-        appName: options.appName || options.appId || "Agent-Native",
+        appName: options.appName || options.appId || "FB Factory",
         email: session.email,
         clientName: client.clientName || client.clientId,
         redirectUri,
@@ -989,7 +989,7 @@ async function handleAuthorize(
   if (isDeepLinkRedirect) {
     return html(
       renderAuthorizedPage({
-        appName: options.appName || options.appId || "Agent-Native",
+        appName: options.appName || options.appId || "FB Factory",
         clientName: client.clientName ?? null,
         redirectUrl: buildCodeRedirectUrl({
           redirectUri,

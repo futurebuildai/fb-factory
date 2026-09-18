@@ -95,7 +95,7 @@ function configuredDefaultOwnerForIncoming(
 
 function platformRequiresExplicitLink(incoming: IncomingMessage): boolean {
   // Telegram does not provide a verified email address. Require an explicit
-  // identity link before it can act as a Builder/Agent-Native user.
+  // identity link before it can act as a Builder/FB Factory user.
   return incoming.platform === "telegram";
 }
 
@@ -176,7 +176,7 @@ function formatTelegramLinkRequiredMessage(): string {
   const linkStep = identitiesUrl
     ? `Tap ${identitiesUrl}, create a Telegram link token, then send \`/link <token>\` here.`
     : "Open Dispatch while signed in, create a Telegram link token, then send `/link <token>` here.";
-  return `Telegram is connected, but this Telegram account is not linked to an Agent-Native user yet. ${linkStep} After that I can use your Builder.io org and connected apps.`;
+  return `Telegram is connected, but this Telegram account is not linked to an FB Factory user yet. ${linkStep} After that I can use your Builder.io org and connected apps.`;
 }
 
 function formatSlackLinkRequiredMessage(): string {
@@ -184,7 +184,7 @@ function formatSlackLinkRequiredMessage(): string {
   const linkStep = identitiesUrl
     ? `Open ${identitiesUrl}, create a Slack link token, then send \`/link <token>\` in this DM.`
     : "Open Dispatch while signed in, create a Slack link token, then send `/link <token>` in this DM.";
-  return `Agent-Native is ready, but this Slack account is not linked to an Agent-Native user yet. ${linkStep}`;
+  return `FB Factory is ready, but this Slack account is not linked to an FB Factory user yet. ${linkStep}`;
 }
 
 function formatSlackIdentityVerificationFailedMessage(): string {
@@ -466,7 +466,7 @@ export async function resolveDispatchOwner(
 
     // Slack gives us a user id in the event payload. Resolve it to a verified
     // workspace email and use that user's own org context when they are an
-    // Agent-Native member, so artifacts created via @agent-native are visible
+    // FB Factory member, so artifacts created via @agent-native are visible
     // when they open the target app.
     if (incoming.platform === "slack") {
       const slackOwner = await resolveSlackOwnerFromVerifiedEmail(incoming);
@@ -578,7 +578,7 @@ export async function resolveDispatchExecutionContext(
       access,
     );
   }
-  if (!scope) throw new Error("Slack channel is not enabled for Agent-Native");
+  if (!scope) throw new Error("Slack channel is not enabled for FB Factory");
   const decision = evaluateIntegrationScopePolicy(scope, {
     // Slack channel turns only arrive here after an explicit current-message
     // mention; keep the generic thread_reply trigger for other adapters.

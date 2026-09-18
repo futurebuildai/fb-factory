@@ -23,7 +23,7 @@ const commandSchema = z.discriminatedUnion("type", [
 
 export default defineAction({
   description:
-    "Route a command to the remote Agent-Native Code host through the integration relay.",
+    "Route a command to the remote FB Factory Code host through the integration relay.",
   schema: z.object({
     command: commandSchema,
     source: z

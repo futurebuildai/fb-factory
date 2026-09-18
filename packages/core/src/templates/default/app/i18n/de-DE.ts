@@ -87,12 +87,12 @@ const messages = {
     pages: {
       browserChatUnavailableTitle: "Browser-Chat-Sitzung nicht verfügbar",
       browserChatUnavailableDescription:
-        "Stelle die Verbindung über die Agent-Native-Erweiterung erneut her.",
+        "Stelle die Verbindung über die FB Factory-Erweiterung erneut her.",
       browserChatPlaceholder: "Zu dieser Seite fragen…",
       browserChatAttachedPlaceholder: "Zu {{page}} fragen…",
       browserConnectTitle: "Browser-Chat verbinden",
       browserConnectDescription:
-        "Erlaube der Agent-Native Chrome-Erweiterung, diese Dispatch-Sitzung zu öffnen. Die Verbindung verwendet ein einmaliges, kurzlebiges Ticket.",
+        "Erlaube der FB Factory Chrome-Erweiterung, diese Dispatch-Sitzung zu öffnen. Die Verbindung verwendet ein einmaliges, kurzlebiges Ticket.",
       browserConnectInvalid:
         "Diese Verbindungsanfrage ist ungültig. Starte erneut über die Erweiterung.",
       browserConnectConnected:
@@ -100,7 +100,7 @@ const messages = {
       browserConnectConnecting: "Verbindung wird hergestellt…",
       browserConnectButton: "Verbinden",
       browserConnectOpenFromExtension:
-        "Öffne diese Seite über die Agent-Native Chrome-Erweiterung.",
+        "Öffne diese Seite über die FB Factory Chrome-Erweiterung.",
       browserConnectFailed:
         "Die Browser-Erweiterung konnte keine Verbindung herstellen.",
       appsDescription:
@@ -234,7 +234,7 @@ const messages = {
     useBuilder: "Verwenden Sie Builder",
     openDesktopToEditCode: "Öffnen Sie den Desktop, um den Code zu bearbeiten",
     codeUnavailableDescription:
-      "Quellcodeänderungen und CLI-Zugriff sind in der Agent-Native-Desktop-App verfügbar.",
+      "Quellcodeänderungen und CLI-Zugriff sind in der FB Factory-Desktop-App verfügbar.",
     downloadDesktop: "Desktop herunterladen",
     chatMode: "Chat-Modus",
     chat: "Chat",
@@ -353,7 +353,7 @@ const messages = {
       '"{{feature}}" creates or modifies source code, which needs Desktop or Builder from this surface.',
     subtitle:
       "Diese Aktion erstellt oder ändert Quellcode, der Desktop oder Builder von dieser Oberfläche aus benötigt.",
-    desktopTitle: "Verwenden Sie den Agent-Native-Desktop",
+    desktopTitle: "Verwenden Sie den FB Factory-Desktop",
     desktopDescription:
       "Öffnen Sie das Projekt in der Desktop-App, um Quellbearbeitungen und CLI-Zugriff zu ermöglichen.",
     builderAgentTitle: "Verwenden Sie den Builder.io-Agenten",

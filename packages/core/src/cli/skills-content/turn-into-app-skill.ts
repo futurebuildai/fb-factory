@@ -2,7 +2,7 @@ export const TURN_INTO_APP_SKILL_MD = `---
 name: turn-into-app
 description: >-
   Turn visible project context, a proven thread, skill, or workflow into a
-  runnable Agent-Native app with simple buttons, visible agent steps, preview,
+  runnable FB Factory app with simple buttons, visible agent steps, preview,
   and deployment handoff. Use when a user invokes \`/turn-into-app\` or asks to
   make a workflow into an app, including from
   Claude or ChatGPT on the web, including when the source is a spreadsheet
@@ -46,7 +46,7 @@ or Builder connector does not make a coding host an online host:
   availability of a Builder connector.
 - For the browser-only path, do not substitute the generic
   \`create_workspace_app\` MCP tool. That tool is a local workspace scaffolder,
-  not the Builder handoff. Connect the Agent-Native Dispatch MCP connector
+  not the Builder handoff. Connect the FB Factory Dispatch MCP connector
   only; Dispatch uses the authenticated Builder Projects API to reuse or
   provision the workspace project before starting the Builder Cloud Agent.
 - If the browser-only handoff action is unavailable or Dispatch is not
@@ -74,7 +74,7 @@ the browser host.
   \`/turn-into-app /some-skill\` means “turn \`/some-skill\` into an app.”
 - With an attachment or path, read the supplied artifact as the source.
 - Do not ask the user to restate context that is already in the thread.
-- When invoked from an Agent-Native app, use its visible project context first,
+- When invoked from an FB Factory app, use its visible project context first,
   then the current thread. If the current runtime has a target checkout, use
   the local implementation path; use a workspace/coding-agent handoff only
   when the runtime cannot edit files. Do not claim the app exists without an
@@ -201,7 +201,7 @@ must not become a generic “what app do you want to make?” intake form.
 
 ## UI contract for generated apps
 
-Generated apps must follow the shared Agent-Native surface model:
+Generated apps must follow the shared FB Factory surface model:
 
 - Keep the domain workflow on a named route (\`/workflow\`, \`/automations\`,
   \`/block\`, or the source's equivalent). Preserve the scaffold's full-page
@@ -276,7 +276,7 @@ than claiming the app is complete.
 
 Choose a short slug from the workflow and create a new directory. Never
 overwrite an existing app. If the user supplied a directory, use it; otherwise
-use \`apps/<slug>\` inside an existing Agent-Native workspace, or a new sibling
+use \`apps/<slug>\` inside an existing FB Factory workspace, or a new sibling
 directory when working outside one.
 
 Say once, before the first command, what this run will need to execute —
@@ -284,7 +284,7 @@ dependency install, scaffold, typecheck, doctor, and a dev server. A host that
 asks per command will ask many times; one stated expectation up front is what
 keeps that from reading as something going wrong.
 
-For a new UI-bearing standalone app, use the current Agent-Native scaffold and
+For a new UI-bearing standalone app, use the current FB Factory scaffold and
 then read the generated \`AGENTS.md\`:
 
 \`\`\`bash
@@ -293,7 +293,7 @@ cd <app-directory>
 pnpm install
 \`\`\`
 
-When working inside an existing Agent-Native workspace, create the app from
+When working inside an existing FB Factory workspace, create the app from
 the workspace root instead:
 
 \`\`\`bash
@@ -321,7 +321,7 @@ already on disk.
 
 Never work around it. Do not hand-build the app in another stack, do not edit a
 pinned dependency version to force an install through, and do not carry on
-against a half-created directory. An app that is not the real Agent-Native
+against a half-created directory. An app that is not the real FB Factory
 scaffold is a different product, not a smaller version of this one, and a
 handoff that reports success for it is worse than no app at all.
 
@@ -410,7 +410,7 @@ export default defineAgentNativeConfig(({ isDev }) => ({
 \`\`\`
 
 The Vite preset loads this file automatically on supported Node versions. The
-JSON file remains the portable, inspectable fallback. See the [Agent-Native
+JSON file remains the portable, inspectable fallback. See the [FB Factory
 app configuration guide](/docs/agent-native-config) for precedence, supported
 modes, and the boundary between committed config and deployment secrets.
 
@@ -481,7 +481,7 @@ support, and choices made where the source was silent.
 
 The handoff describes what exists, not what was intended. If the scaffold never
 completed, if a step was worked around, or if the app is not the real
-Agent-Native scaffold, that is the headline — not a caveat below one. A handoff
+FB Factory scaffold, that is the headline - not a caveat below one. A handoff
 cannot report the build as complete and list the framework the app is built on as
 a future improvement; if both would be true, the build is not complete.
 `;
@@ -545,7 +545,7 @@ project through the Builder Projects API, so do not ask the user to add a
 separate Builder CMS MCP for app creation.
 Builder's separate Fusion MCP is available as a custom remote connector at
 \`https://mcp.builder.io/mcp/fusion\` for direct Builder work. It can run an
-existing project, but it cannot provision the repo-backed Agent-Native
+existing project, but it cannot provision the repo-backed FB Factory
 workspace project, so it is optional and not a replacement for the Dispatch
 handoff in this skill. Do not add Builder's CMS MCP for this workflow.
 
@@ -575,7 +575,7 @@ In a new Project chat, say:
 \`\`\`text
 Turn this project into an app. Use the visible Project instructions,
 knowledge files, and any selected successful runs as the source. Create the
-app in the connected Agent-Native workspace through Dispatch and Builder, keep
+app in the connected FB Factory workspace through Dispatch and Builder, keep
 the source brief bounded, and report the real Builder branch/path and
 verification result. Do not build it in this chat's sandbox.
 \`\`\`
@@ -805,5 +805,5 @@ these states into a successful empty source.
 export const TURN_INTO_APP_OPENAI_YAML = `interface:
   display_name: "Turn Into App"
   short_description: "Turn project context or a workflow into a runnable app"
-  default_prompt: "Use the visible project context first, then any supplied workflow. Turn the instructions, knowledge files, and selected successful runs into a new Agent-Native app with clear buttons, run it locally, verify it, and complete the deployment handoff."
+  default_prompt: "Use the visible project context first, then any supplied workflow. Turn the instructions, knowledge files, and selected successful runs into a new FB Factory app with clear buttons, run it locally, verify it, and complete the deployment handoff."
 `;

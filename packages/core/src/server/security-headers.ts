@@ -47,7 +47,7 @@
  * without COEP gives us most of the protection on normal responses; COEP is
  * only added for validated MCP embed-session page loads (see above).
  *
- * NOTE: `X-Frame-Options` is intentionally not set globally. Agent-Native apps
+ * NOTE: `X-Frame-Options` is intentionally not set globally. FB Factory apps
  * are expected to run inside iframe hosts such as Builder, Design, and MCP app
  * shells. Routes that render especially sensitive iframe-only documents should
  * set their own route-specific CSP / frame policy.

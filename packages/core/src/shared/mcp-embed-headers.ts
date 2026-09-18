@@ -1,5 +1,5 @@
 export const MCP_EMBED_CORS_ALLOW_HEADERS =
-  "Content-Type,Authorization,X-Requested-With,X-Request-Source,X-Agent-Native-Browser-Tab,X-Agent-Native-CSRF,X-Agent-Native-Frontend,X-Agent-Native-Client-Compatibility,X-Agent-Native-Build-Id,X-User-Timezone,X-Agent-Native-Session-Id,X-Agent-Native-Client-Platform,X-Agent-Native-Desktop-Verifier,X-Agent-Native-Embed-Target,X-Agent-Native-Embed-Transplant";
+  "Content-Type,Authorization,X-Requested-With,X-Request-Source,X-FB Factory-Browser-Tab,X-FB Factory-CSRF,X-FB Factory-Frontend,X-FB Factory-Client-Compatibility,X-FB Factory-Build-Id,X-User-Timezone,X-FB Factory-Session-Id,X-FB Factory-Client-Platform,X-FB Factory-Desktop-Verifier,X-FB Factory-Embed-Target,X-FB Factory-Embed-Transplant";
 export const EMBED_TRANSPLANT_HEADER = "x-agent-native-embed-transplant";
 
 const CLAUDE_MCP_CONTENT_HOST_RE = /^[a-f0-9]{32}\.claudemcpcontent\.com$/i;

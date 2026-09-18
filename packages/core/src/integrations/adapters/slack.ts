@@ -1188,7 +1188,7 @@ function setSlackAssistantStatus(
  * Block Kit payload for the final answer. We avoid auto-unfurl previews by
  * separating the deep-link out into a button instead of inlining it as a
  * `<url|text>` markdown link in the section body — that's what was producing
- * the giant "Agent-Native Dispatch" card in every thread reply.
+ * the giant "FB Factory Dispatch" card in every thread reply.
  */
 function buildResponseBlocks(
   text: string,

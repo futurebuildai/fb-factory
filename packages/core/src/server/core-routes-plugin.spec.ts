@@ -666,7 +666,7 @@ describe("resolveBuilderWaitlistFormTargetForRequest", () => {
     Object.assign(process.env, originalEnv);
   });
 
-  it("uses the Builder-org waitlist form on hosted Agent-Native domains", () => {
+  it("uses the Builder-org waitlist form on hosted FB Factory domains", () => {
     const event = createMockEvent(
       "https://forms.agent-native.com/_agent-native/builder/branch-waitlist",
     );

@@ -1,7 +1,7 @@
 /**
  * ACP (Agent Client Protocol) harness adapter.
  *
- * Lets Agent-Native act as an ACP *client* and drive a local coding agent —
+ * Lets FB Factory act as an ACP *client* and drive a local coding agent -
  * Gemini CLI, Claude Code, or any other ACP-compliant agent — through the
  * existing {@link AgentHarnessAdapter} substrate. The agent runs as a local
  * subprocess that owns its own loop, tools, and workspace filesystem access,
@@ -73,7 +73,7 @@ export interface AcpHarnessAdapterOptions {
 }
 
 const DEFAULT_CAPABILITIES: AgentHarnessCapabilities = {
-  // The agent runs locally with its own workspace access; Agent-Native does not
+  // The agent runs locally with its own workspace access; FB Factory does not
   // provide it an isolated sandbox.
   sandbox: false,
   // Best-effort: resumable when the agent advertises the `loadSession`
@@ -648,7 +648,7 @@ function acpPlanLabel(entries: AcpPlanEntry[] | undefined): string {
 }
 
 /**
- * Map an Agent-Native permission mode onto a decision for an ACP permission
+ * Map an FB Factory permission mode onto a decision for an ACP permission
  * request, using the tool-call kind the agent reports. Reads always run; edits
  * run under `allow-edits`; everything risky prompts unless `allow-all`.
  */

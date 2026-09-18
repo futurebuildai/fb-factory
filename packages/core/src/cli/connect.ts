@@ -425,7 +425,7 @@ async function promptForHostedApps(
   const clack = await import("@clack/prompts");
   const result = await clack.multiselect({
     message:
-      "Which Agent-Native apps do you want to connect?\n" +
+      "Which FB Factory apps do you want to connect?\n" +
       "  (all are selected by default; space toggles, enter confirms)",
     options: context.apps.map((app) => ({
       value: app.name,
@@ -554,7 +554,7 @@ function clientsNotIn(
 }
 
 function displayMcpServerName(serverName: string | undefined): string {
-  if (!serverName) return "Agent-Native MCP";
+  if (!serverName) return "FB Factory MCP";
   if (serverName === "plan") return "Plan MCP";
   return `"${serverName}" MCP`;
 }
@@ -1487,7 +1487,7 @@ function ownerEmailFromEntry(
 ): string | undefined {
   const headers = savedEntryHeaders(saved);
   return (
-    headers["X-Agent-Native-Owner-Email"] || decodeJwtSub(headers.Authorization)
+    headers["X-FB Factory-Owner-Email"] || decodeJwtSub(headers.Authorization)
   );
 }
 
@@ -1569,7 +1569,7 @@ async function devHeadersForApp(params: {
     headers.Authorization = `Bearer ${accessToken || a2aToken}`;
   }
   if (ownerEmail) {
-    headers["X-Agent-Native-Owner-Email"] = ownerEmail;
+    headers["X-FB Factory-Owner-Email"] = ownerEmail;
   }
   // Local dev defaults to the compact/connector catalog + tool-search, same as
   // every other client. The local server still honors AGENT_NATIVE_MCP_FULL_CATALOG=1
@@ -1745,7 +1745,7 @@ async function connectDevProfile(
         sourceEntry,
         baseDir,
       });
-      if (!headers?.["X-Agent-Native-Owner-Email"]) {
+      if (!headers?.["X-FB Factory-Owner-Email"]) {
         ownerWarnings.add(app.name);
       }
       const file = writeHttpEntryForClient(
@@ -1912,7 +1912,7 @@ async function resolveReconnectTarget(
     );
 
     if (matches.length === 0) {
-      logErr(`  No existing Agent-Native MCP entry found for ${mcpUrl}.`);
+      logErr(`  No existing FB Factory MCP entry found for ${mcpUrl}.`);
       logErr(
         "  First-time setup still uses: npx @agent-native/core@latest connect <url> --client <client>",
       );
@@ -1992,7 +1992,7 @@ async function resolveReconnectTarget(
   }
 
   if (byUrl.size === 0) {
-    logErr("  No existing Agent-Native MCP entry found to reconnect.");
+    logErr("  No existing FB Factory MCP entry found to reconnect.");
     logErr(
       "  Pass a URL, or use --name <serverName> if the entry has a custom name.",
     );
@@ -2027,7 +2027,7 @@ async function resolveReconnectTarget(
       string
     >({
       message:
-        "Multiple Agent-Native apps found. Which one do you want to reconnect?",
+        "Multiple FB Factory apps found. Which one do you want to reconnect?",
       options: urlList.map((u) => {
         const representativeEntry = byUrl.get(u)![0];
         return {
@@ -2055,7 +2055,7 @@ async function resolveReconnectTarget(
     };
   }
 
-  logErr("  Found multiple Agent-Native MCP entries:");
+  logErr("  Found multiple FB Factory MCP entries:");
   for (const [u, bucket] of byUrl) {
     logErr(`    ${bucket[0].serverName} → ${u}`);
   }

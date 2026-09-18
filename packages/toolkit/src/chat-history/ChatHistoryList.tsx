@@ -121,7 +121,7 @@ const DEFAULT_LABELS: ChatHistoryListLabels = {
 
 /**
  * Presentational chat history list shared by the Core `HistoryPopover`
- * and Agent-Native Code's run rail
+ * and FB Factory Code's run rail
  * (code-agents-ui). Styling is driven by stable `an-chat-history*` class
  * names (see `@agent-native/toolkit/chat-history.css`) rather than Tailwind utilities
  * so the same component renders correctly in a Tailwind host and in

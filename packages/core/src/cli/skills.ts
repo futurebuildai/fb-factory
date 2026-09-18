@@ -88,9 +88,9 @@ export const BUILT_IN_APP_SKILLS = {
     manifest: normalizeAppSkillManifest({
       schemaVersion: 1,
       id: "agent-native",
-      displayName: "Agent-Native",
+      displayName: "FB Factory",
       description:
-        "Open and operate granted Agent-Native apps through Dispatch MCP, with inline app surfaces and current browser screen state.",
+        "Open and operate granted FB Factory apps through Dispatch MCP, with inline app surfaces and current browser screen state.",
       hosted: {
         url: "https://dispatch.agent-native.com",
         mcpUrl: "https://dispatch.agent-native.com/mcp",
@@ -109,7 +109,7 @@ export const BUILT_IN_APP_SKILLS = {
           id: "agent-native-app",
           path: "/",
           description:
-            "Open a granted Agent-Native app or focused app route inline in a compatible MCP host.",
+            "Open a granted FB Factory app or focused app route inline in a compatible MCP host.",
         },
       ],
       skills: [
@@ -193,7 +193,7 @@ export const BUILT_IN_APP_SKILLS = {
       auth: {
         mode: "oauth",
         setup:
-          "Authenticate with the Content MCP connector in the host app. Local-folder synchronization requires a local Content app, Agent-Native Desktop, or trusted local bridge for filesystem access.",
+          "Authenticate with the Content MCP connector in the host app. Local-folder synchronization requires a local Content app, FB Factory Desktop, or trusted local bridge for filesystem access.",
       },
       surfaces: [
         {
@@ -345,7 +345,7 @@ export const BUILT_IN_APP_SKILLS = {
     manifest: normalizeAppSkillManifest({
       schemaVersion: 1,
       id: "visual-plans",
-      displayName: "Agent-Native Plan",
+      displayName: "FB Factory Plan",
       description:
         "Create rich interactive visual plans, recaps, and repo-native visual docs with diagrams, file maps, annotated code and diffs, API/schema summaries, feedback, and HTML export.",
       hosted: {
@@ -356,7 +356,7 @@ export const BUILT_IN_APP_SKILLS = {
       auth: {
         mode: "oauth",
         setup:
-          "The marketplace plugin uses hosted Agent-Native Plans by default. To choose local-files or self-hosted mode, install with the Agent-Native CLI. Authenticate only for hosted/account-backed sharing.",
+          "The marketplace plugin uses hosted FB Factory Plans by default. To choose local-files or self-hosted mode, install with the FB Factory CLI. Authenticate only for hosted/account-backed sharing.",
       },
       surfaces: [
         {
@@ -457,7 +457,7 @@ export const BUILT_IN_APP_SKILLS = {
       id: "turn-into-app",
       displayName: "Turn Into App",
       description:
-        "Turn visible project context, a proven thread, skill, or workflow into a runnable Agent-Native app. On Claude or ChatGPT Web, it hands a bounded source brief to Builder through Dispatch; local code agents can build and verify in a workspace.",
+        "Turn visible project context, a proven thread, skill, or workflow into a runnable FB Factory app. On Claude or ChatGPT Web, it hands a bounded source brief to Builder through Dispatch; local code agents can build and verify in a workspace.",
       hosted: {
         url: "https://dispatch.agent-native.com",
         mcpUrl: "https://dispatch.agent-native.com/mcp",
@@ -883,7 +883,7 @@ export interface RunSkillsOptions {
    */
   publicSkillEntries?: PublicSkillCatalogEntry[];
   /**
-   * Built-in Agent-Native skill prompt/list entries to hide for wrapper CLIs.
+   * Built-in FB Factory skill prompt/list entries to hide for wrapper CLIs.
    * Direct installs by explicit name still work; this only controls discovery.
    */
   hiddenBuiltInSkillTargets?: string[];
@@ -1168,7 +1168,7 @@ function contentModeInstructionBlock(input: {
 Default storage for this installation is Content's SQL database. This repo's
 \`agent-native.json\` declares \`docs/\`, \`blog/\`, \`content/\`, and
 \`resources/\` as local-folder sources with opaque connection ids; it does not
-select a separate application mode. A trusted local Content app or Agent-Native
+select a separate application mode. A trusted local Content app or FB Factory
 Desktop bridge imports those files into their workspace's canonical Files
 database, after which normal Content document actions read and edit the SQL-backed
 pages. Use \`sync-manifest-local-folder-source\` with each root's generated
@@ -1309,7 +1309,7 @@ function writeSkillFolder(
       fs.rmSync(tempDir, { recursive: true, force: true });
     } catch {}
     throw new Error(
-      `Cannot write Agent-Native skill folder ${dir}: ${error?.message ?? error}`,
+      `Cannot write FB Factory skill folder ${dir}: ${error?.message ?? error}`,
       { cause: error },
     );
   }
@@ -1325,7 +1325,7 @@ function assertSkillFolderIsNotSymlink(dir: string): void {
   }
   if (stat.isSymbolicLink()) {
     throw new Error(
-      `Refusing to replace symlinked Agent-Native skill folder ${dir}. Update the linked source or remove the symlink before installing.`,
+      `Refusing to replace symlinked FB Factory skill folder ${dir}. Update the linked source or remove the symlink before installing.`,
     );
   }
 }
@@ -1532,7 +1532,7 @@ function slashCommandForBuiltInSkill(skillName: string): string | null {
   }
   if (skillName === "visual-plan") {
     return `---
-description: Create an interactive Agent-Native visual plan for the current task.
+description: Create an interactive FB Factory visual plan for the current task.
 argument-hint: [optional request or scope]
 ---
 
@@ -1544,7 +1544,7 @@ $ARGUMENTS
   }
   if (skillName === "visual-recap") {
     return `---
-description: Create an interactive Agent-Native visual recap for a PR, branch, commit, or diff.
+description: Create an interactive FB Factory visual recap for a PR, branch, commit, or diff.
 argument-hint: [PR, branch, commit, diff, or scope]
 ---
 
@@ -1555,7 +1555,7 @@ $ARGUMENTS
   }
   if (skillName === "visualize-repo") {
     return `---
-description: Open or create a local Agent-Native visual docs workspace for this repo.
+description: Open or create a local FB Factory visual docs workspace for this repo.
 argument-hint: [optional targets or focus]
 ---
 
@@ -2763,7 +2763,7 @@ async function promptForSkills(
   const clack = await import("@clack/prompts");
   const result = await clack.multiselect({
     message:
-      "Which Agent-Native skills do you want to install?\n" +
+      "Which FB Factory skills do you want to install?\n" +
       "  (space toggles, enter confirms)",
     options: context.options,
     initialValues: context.initialTargets,
@@ -3425,9 +3425,7 @@ async function addPlainSkillRepo(
     );
   }
   if (parsed.mcpUrl && !installModeSkillNamesSelected(parsed.plainSkillNames)) {
-    throw new Error(
-      "--mcp-url only applies to app-backed Agent-Native skills.",
-    );
+    throw new Error("--mcp-url only applies to app-backed FB Factory skills.");
   }
 
   const clients = parsed.clients ?? resolveSkillsClientArg(parsed.client);
@@ -4234,7 +4232,7 @@ function targetsInstallMcp(
 
 function instructionContentForSkill(skillName: string): string | null {
   if (skillName === "an") {
-    return "When a user invokes /an or asks to open or operate an Agent-Native app, use the /an skill and Dispatch MCP.";
+    return "When a user invokes /an or asks to open or operate an FB Factory app, use the /an skill and Dispatch MCP.";
   }
   if (skillName === "quick-recap") {
     return "When writing final response status indicators, use the /quick-recap skill always.";
@@ -4338,12 +4336,12 @@ function runSkillsStatusOrUpdate(
   if (beforeCount === 0) {
     const target = parsed.target ? ` for ${parsed.target}` : "";
     const hint = isScaffoldGuidanceTarget(parsed.target)
-      ? `Run this from a generated Agent-Native app or workspace root.\n`
+      ? `Run this from a generated FB Factory app or workspace root.\n`
       : update
         ? `The update command only refreshes skill folders that already exist; it does not do first-time install, MCP registration, or auth. Run "npx @agent-native/core@latest skills add ${parsed.target ?? "visual-plan"}" for one-step setup.\n`
         : `Run "npx @agent-native/core@latest skills add ${parsed.target ?? "visual-plan"}" to install one.\n`;
     process.stdout.write(
-      `No installed Agent-Native skill copies found${target}.\n${hint}`,
+      `No installed FB Factory skill copies found${target}.\n${hint}`,
     );
     return;
   }

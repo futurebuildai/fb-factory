@@ -2854,7 +2854,7 @@ describe("instrumentAgentLoop OpenTelemetry export", () => {
   });
 
   // The shared event is stamped when the operation BEGAN — Mixpanel, Amplitude,
-  // webhooks and Agent-Native Analytics read it verbatim. PostHog's
+  // webhooks and FB Factory Analytics read it verbatim. PostHog's
   // timestamp-is-end convention is applied in its own provider.
   it("stamps generations and spans at the moment they began", async () => {
     const clock = manualClock();
@@ -3461,7 +3461,7 @@ describe("instrumentAgentLoop OpenTelemetry export", () => {
   // Two different identifiers with two different lifetimes. `$ai_session_id`
   // is the thread (backend-owned, groups traces into a conversation);
   // `$session_id` is PostHog's frontend session, propagated from the
-  // `X-Agent-Native-Session-Id` header so a trace joins session replay.
+  // `X-FB Factory-Session-Id` header so a trace joins session replay.
   // Collapsing them would break whichever one lost.
   it("sends $ai_session_id (thread) and $session_id (browser) as distinct ids on every AI event", async () => {
     const events: TrackingEvent[] = [];

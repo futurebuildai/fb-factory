@@ -726,7 +726,7 @@ describe("AgentKitClient", () => {
             source: {
               id: "app-agent-native",
               kind: "app",
-              label: "Agent-Native",
+              label: "FB Factory",
             },
           },
         }),
@@ -780,7 +780,7 @@ describe("AgentKitClient", () => {
     expect(thread.activities["activity-1"]).toMatchObject({
       agentId: "agent-planck",
       scope: "external",
-      source: { label: "Agent-Native" },
+      source: { label: "FB Factory" },
     });
   });
 

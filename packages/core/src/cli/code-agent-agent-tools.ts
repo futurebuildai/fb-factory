@@ -20,7 +20,7 @@ export function createCodeAgentAgentTools(
     "manage-schedules": {
       tool: {
         description:
-          "Create and manage durable local desktop schedules. A global schedule starts a new Agent-Native Code thread on every interval. A thread schedule queues a message into an existing thread. Use intervalMinutes for intervals such as 360 for every 6 hours.",
+          "Create and manage durable local desktop schedules. A global schedule starts a new FB Factory Code thread on every interval. A thread schedule queues a message into an existing thread. Use intervalMinutes for intervals such as 360 for every 6 hours.",
         parameters: {
           type: "object",
           properties: {
@@ -133,7 +133,7 @@ export function createCodeAgentAgentTools(
     "manage-agent-threads": {
       tool: {
         description:
-          "List threads, create a new Agent-Native Code thread, or queue a message to another thread. Messages are durable and include a source-agent marker in the recipient transcript.",
+          "List threads, create a new FB Factory Code thread, or queue a message to another thread. Messages are durable and include a source-agent marker in the recipient transcript.",
         parameters: {
           type: "object",
           properties: {

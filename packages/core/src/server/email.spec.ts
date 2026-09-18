@@ -26,7 +26,7 @@ describe("sendEmail", () => {
 
   it("uses deployment credentials for process-owned sends", async () => {
     vi.stubEnv("SENDGRID_API_KEY", "deployment-sendgrid-key");
-    vi.stubEnv("EMAIL_FROM", "Agent-Native <reports@example.com>");
+    vi.stubEnv("EMAIL_FROM", "FB Factory <reports@example.com>");
     vi.stubEnv("RESEND_API_KEY", "");
     const resolveSecret = vi
       .spyOn(credentialProvider, "resolveSecret")
@@ -49,7 +49,7 @@ describe("sendEmail", () => {
 
   it("overrides only the verified sender display name and maps Reply-To", async () => {
     vi.stubEnv("SENDGRID_API_KEY", "sendgrid-example-key");
-    vi.stubEnv("EMAIL_FROM", "Agent-Native <reports@example.com>");
+    vi.stubEnv("EMAIL_FROM", "FB Factory <reports@example.com>");
     const fetchMock = vi.fn(async () => new Response(null, { status: 202 }));
     vi.stubGlobal("fetch", fetchMock);
 
@@ -57,21 +57,21 @@ describe("sendEmail", () => {
       to: "reader@example.com",
       subject: "A Clip was shared",
       html: "<p>Open it below.</p>",
-      fromName: "Alex Doe (via Agent-Native Clips)",
+      fromName: "Alex Doe (via FB Factory Clips)",
       replyTo: "alex@example.com",
     });
 
     const body = JSON.parse(String(fetchMock.mock.calls[0]?.[1]?.body));
     expect(body.from).toEqual({
       email: "reports@example.com",
-      name: "Alex Doe (via Agent-Native Clips)",
+      name: "Alex Doe (via FB Factory Clips)",
     });
     expect(body.reply_to).toEqual({ email: "alex@example.com" });
   });
 
   it("adds an organization-scoped provider category for registered emails", async () => {
     vi.stubEnv("SENDGRID_API_KEY", "sendgrid-example-key");
-    vi.stubEnv("EMAIL_FROM", "Agent-Native <reports@example.com>");
+    vi.stubEnv("EMAIL_FROM", "FB Factory <reports@example.com>");
     const fetchMock = vi.fn(async () => new Response(null, { status: 202 }));
     vi.stubGlobal("fetch", fetchMock);
 
@@ -89,7 +89,7 @@ describe("sendEmail", () => {
 
   it("disables click tracking for security-sensitive links", async () => {
     vi.stubEnv("SENDGRID_API_KEY", "sendgrid-example-key");
-    vi.stubEnv("EMAIL_FROM", "Agent-Native <reports@example.com>");
+    vi.stubEnv("EMAIL_FROM", "FB Factory <reports@example.com>");
     const fetchMock = vi.fn(async () => new Response(null, { status: 202 }));
     vi.stubGlobal("fetch", fetchMock);
 
@@ -108,7 +108,7 @@ describe("sendEmail", () => {
 
   it("applies per-app sender branding on agent-native.com deployments", async () => {
     vi.stubEnv("SENDGRID_API_KEY", "sendgrid-example-key");
-    vi.stubEnv("EMAIL_FROM", "Agent-Native <noreply@agent-native.com>");
+    vi.stubEnv("EMAIL_FROM", "FB Factory <noreply@agent-native.com>");
     const fetchMock = vi.fn(async () => new Response(null, { status: 202 }));
     vi.stubGlobal("fetch", fetchMock);
 
@@ -117,7 +117,7 @@ describe("sendEmail", () => {
       subject: "Verify your email",
       html: "<p>hi</p>",
       appSender: {
-        name: "Agent-Native Clips",
+        name: "FB Factory Clips",
         slug: "clips",
         replyTo: "agent-native@builder.io",
       },
@@ -125,7 +125,7 @@ describe("sendEmail", () => {
 
     const body = JSON.parse(String(fetchMock.mock.calls[0]?.[1]?.body));
     expect(body.from).toEqual({
-      name: "Agent-Native Clips",
+      name: "FB Factory Clips",
       email: "clips@agent-native.com",
     });
     expect(body.reply_to).toEqual({ email: "agent-native@builder.io" });
@@ -133,7 +133,7 @@ describe("sendEmail", () => {
 
   it("keeps the branded address intact when APP_NAME contains header specials", async () => {
     vi.stubEnv("SENDGRID_API_KEY", "sendgrid-example-key");
-    vi.stubEnv("EMAIL_FROM", "Agent-Native <noreply@agent-native.com>");
+    vi.stubEnv("EMAIL_FROM", "FB Factory <noreply@agent-native.com>");
     const fetchMock = vi.fn(async () => new Response(null, { status: 202 }));
     vi.stubGlobal("fetch", fetchMock);
 
@@ -142,7 +142,7 @@ describe("sendEmail", () => {
       subject: "Verify your email",
       html: "<p>hi</p>",
       appSender: {
-        name: "Agent-Native Acme <Support>, Inc.",
+        name: "FB Factory Acme <Support>, Inc.",
         slug: "clips",
         replyTo: "agent-native@builder.io",
       },
@@ -150,7 +150,7 @@ describe("sendEmail", () => {
 
     const body = JSON.parse(String(fetchMock.mock.calls[0]?.[1]?.body));
     expect(body.from).toEqual({
-      name: "Agent-Native Acme Support , Inc.",
+      name: "FB Factory Acme Support , Inc.",
       email: "clips@agent-native.com",
     });
   });
@@ -166,7 +166,7 @@ describe("sendEmail", () => {
       subject: "Verify your email",
       html: "<p>hi</p>",
       appSender: {
-        name: "Agent-Native Clips",
+        name: "FB Factory Clips",
         slug: "clips",
         replyTo: "agent-native@builder.io",
       },
@@ -191,7 +191,7 @@ describe("sendEmail", () => {
         to: "reader@example.com",
         subject: "Verify your email",
         html: "<p>hi</p>",
-        appSender: { name: "Agent-Native Clips", slug: "clips" },
+        appSender: { name: "FB Factory Clips", slug: "clips" },
       });
 
     vi.stubEnv("EMAIL_FROM", "Tenant <ceo@tenant-one.example>");
@@ -210,7 +210,7 @@ describe("sendEmail", () => {
 
   it("maps inline CID attachments for SendGrid", async () => {
     vi.stubEnv("SENDGRID_API_KEY", "sendgrid-example-key");
-    vi.stubEnv("EMAIL_FROM", "Agent-Native <reports@example.com>");
+    vi.stubEnv("EMAIL_FROM", "FB Factory <reports@example.com>");
     const fetchMock = vi.fn(async () => new Response(null, { status: 202 }));
     vi.stubGlobal("fetch", fetchMock);
 
@@ -243,7 +243,7 @@ describe("sendEmail", () => {
 
   it("attaches the built-in brand logo when the HTML references it", async () => {
     vi.stubEnv("SENDGRID_API_KEY", "sendgrid-example-key");
-    vi.stubEnv("EMAIL_FROM", "Agent-Native <reports@example.com>");
+    vi.stubEnv("EMAIL_FROM", "FB Factory <reports@example.com>");
     const fetchMock = vi.fn(async () => new Response(null, { status: 202 }));
     vi.stubGlobal("fetch", fetchMock);
 
@@ -308,7 +308,7 @@ describe("sendEmail", () => {
 
   it("carries branded sender and reply-to through the Resend payload", async () => {
     vi.stubEnv("RESEND_API_KEY", "resend-example-key");
-    vi.stubEnv("EMAIL_FROM", "Agent-Native <noreply@agent-native.com>");
+    vi.stubEnv("EMAIL_FROM", "FB Factory <noreply@agent-native.com>");
     const fetchMock = vi.fn(async () => Response.json({ id: "email_123" }));
     vi.stubGlobal("fetch", fetchMock);
 
@@ -317,20 +317,20 @@ describe("sendEmail", () => {
       subject: "Verify your email",
       html: "<p>hi</p>",
       appSender: {
-        name: "Agent-Native Clips",
+        name: "FB Factory Clips",
         slug: "clips",
         replyTo: "agent-native@builder.io",
       },
     });
 
     const body = JSON.parse(String(fetchMock.mock.calls[0]?.[1]?.body));
-    expect(body.from).toBe('"Agent-Native Clips" <clips@agent-native.com>');
+    expect(body.from).toBe('"FB Factory Clips" <clips@agent-native.com>');
     expect(body.reply_to).toBe("agent-native@builder.io");
   });
 
   it("maps inline CID attachments for Resend", async () => {
     vi.stubEnv("RESEND_API_KEY", "resend-example-key");
-    vi.stubEnv("EMAIL_FROM", "Agent-Native <reports@example.com>");
+    vi.stubEnv("EMAIL_FROM", "FB Factory <reports@example.com>");
     const fetchMock = vi.fn(async () => Response.json({ id: "email_123" }));
     vi.stubGlobal("fetch", fetchMock);
 
@@ -362,7 +362,7 @@ describe("sendEmail", () => {
   it("aborts provider requests at the caller's delivery deadline", async () => {
     vi.useFakeTimers();
     vi.stubEnv("RESEND_API_KEY", "resend-example-key");
-    vi.stubEnv("EMAIL_FROM", "Agent-Native <reports@example.com>");
+    vi.stubEnv("EMAIL_FROM", "FB Factory <reports@example.com>");
     let requestSignal: AbortSignal | undefined;
     vi.stubGlobal(
       "fetch",
@@ -442,7 +442,7 @@ describe("sendEmail audit logging", () => {
 
   it("records the raw request and response on a successful send", async () => {
     vi.stubEnv("RESEND_API_KEY", "resend-example-key");
-    vi.stubEnv("EMAIL_FROM", "Agent-Native <reports@example.com>");
+    vi.stubEnv("EMAIL_FROM", "FB Factory <reports@example.com>");
     vi.stubGlobal(
       "fetch",
       vi.fn(async () => Response.json({ id: "email_123" }, { status: 200 })),
@@ -471,7 +471,7 @@ describe("sendEmail audit logging", () => {
 
   it("omits attachment bytes from the logged request payload", async () => {
     vi.stubEnv("RESEND_API_KEY", "resend-example-key");
-    vi.stubEnv("EMAIL_FROM", "Agent-Native <reports@example.com>");
+    vi.stubEnv("EMAIL_FROM", "FB Factory <reports@example.com>");
     vi.stubGlobal(
       "fetch",
       vi.fn(async () => Response.json({ id: "email_123" }, { status: 200 })),
@@ -502,7 +502,7 @@ describe("sendEmail audit logging", () => {
 
   it("omits the HTML and text body from the logged request payload (Resend)", async () => {
     vi.stubEnv("RESEND_API_KEY", "resend-example-key");
-    vi.stubEnv("EMAIL_FROM", "Agent-Native <reports@example.com>");
+    vi.stubEnv("EMAIL_FROM", "FB Factory <reports@example.com>");
     vi.stubGlobal(
       "fetch",
       vi.fn(async () => Response.json({ id: "email_123" }, { status: 200 })),
@@ -510,7 +510,7 @@ describe("sendEmail audit logging", () => {
 
     await sendEmail({
       to: "reader@example.com",
-      subject: "Sign in to Agent-Native",
+      subject: "Sign in to FB Factory",
       html: '<a href="https://app.example.com/verify?token=super-secret-one-time-token">Sign in</a>',
       text: "https://app.example.com/verify?token=super-secret-one-time-token",
       templateId: "core.magic-link",
@@ -526,7 +526,7 @@ describe("sendEmail audit logging", () => {
 
   it("omits the HTML and text body from the logged request payload (SendGrid)", async () => {
     vi.stubEnv("SENDGRID_API_KEY", "sendgrid-example-key");
-    vi.stubEnv("EMAIL_FROM", "Agent-Native <reports@example.com>");
+    vi.stubEnv("EMAIL_FROM", "FB Factory <reports@example.com>");
     vi.stubGlobal(
       "fetch",
       vi.fn(async () => new Response(null, { status: 202 })),
@@ -550,7 +550,7 @@ describe("sendEmail audit logging", () => {
 
   it("truncates an oversized logged response body", async () => {
     vi.stubEnv("RESEND_API_KEY", "resend-example-key");
-    vi.stubEnv("EMAIL_FROM", "Agent-Native <reports@example.com>");
+    vi.stubEnv("EMAIL_FROM", "FB Factory <reports@example.com>");
     const hugeBody = "x".repeat(20000);
     vi.stubGlobal(
       "fetch",
@@ -570,7 +570,7 @@ describe("sendEmail audit logging", () => {
 
   it("records the raw response and error on a non-2xx provider response, and rethrows", async () => {
     vi.stubEnv("RESEND_API_KEY", "resend-example-key");
-    vi.stubEnv("EMAIL_FROM", "Agent-Native <reports@example.com>");
+    vi.stubEnv("EMAIL_FROM", "FB Factory <reports@example.com>");
     vi.stubGlobal(
       "fetch",
       vi.fn(
@@ -627,7 +627,7 @@ describe("sendEmail audit logging", () => {
 
   it("still logs the attempt when the provider call throws instead of returning (network failure)", async () => {
     vi.stubEnv("RESEND_API_KEY", "resend-example-key");
-    vi.stubEnv("EMAIL_FROM", "Agent-Native <reports@example.com>");
+    vi.stubEnv("EMAIL_FROM", "FB Factory <reports@example.com>");
     vi.stubGlobal(
       "fetch",
       vi.fn(async () => {
@@ -684,7 +684,7 @@ describe("getEmailReadiness", () => {
   it("derives auth readiness from deployment credentials only", () => {
     vi.stubEnv("RESEND_API_KEY", "resend-example-key");
     vi.stubEnv("SENDGRID_API_KEY", "sendgrid-example-key");
-    vi.stubEnv("EMAIL_FROM", "Agent-Native <noreply@example.com>");
+    vi.stubEnv("EMAIL_FROM", "FB Factory <noreply@example.com>");
 
     expect(getDeploymentEmailReadiness()).toEqual({
       status: "ready",

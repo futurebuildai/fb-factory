@@ -189,7 +189,7 @@ function useRunsTrayState({
           agentNativePath(`/_agent-native/runs/${runId}`),
           {
             method: "DELETE",
-            headers: { "X-Agent-Native-CSRF": "1" },
+            headers: { "X-FB Factory-CSRF": "1" },
           },
         );
         if (!res.ok) throw new Error(`Dismiss failed (${res.status})`);
@@ -215,7 +215,7 @@ function useRunsTrayState({
           agentNativePath(`/_agent-native/agent-chat/runs/${runId}/stop`),
           {
             method: "POST",
-            headers: { "X-Agent-Native-CSRF": "1" },
+            headers: { "X-FB Factory-CSRF": "1" },
           },
         );
         if (!res.ok) throw new Error(`Stop failed (${res.status})`);

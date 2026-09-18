@@ -10,7 +10,7 @@ describe("normalizeCodeAgentTranscript", () => {
   it("coalesces legacy runner stdout and suppresses duplicate final assistant text", () => {
     const events = [
       event("evt-user", "user", "Fix the failing test."),
-      event("evt-start", "status", "Agent-Native Code run started.", {
+      event("evt-start", "status", "FB Factory Code run started.", {
         status: "running",
         phase: "executing",
       }),
@@ -23,7 +23,7 @@ describe("normalizeCodeAgentTranscript", () => {
       event("evt-final", "system", "I checked the specs.", {
         role: "assistant",
       }),
-      event("evt-complete", "status", "Agent-Native Code run completed.", {
+      event("evt-complete", "status", "FB Factory Code run completed.", {
         status: "completed",
         phase: "complete",
       }),
@@ -75,7 +75,7 @@ describe("normalizeCodeAgentTranscript", () => {
         type: "assistant_delta",
         seq: 3,
       }),
-      event("evt-final", "system", "**Agent-Native**\n\n- `core` package", {
+      event("evt-final", "system", "**FB Factory**\n\n- `core` package", {
         role: "assistant",
         seq: 4,
       }),
@@ -88,7 +88,7 @@ describe("normalizeCodeAgentTranscript", () => {
       expect.objectContaining({
         type: "assistant",
         source: "runner-stdout",
-        text: "**Agent-Native**\n\n- `core` package",
+        text: "**FB Factory**\n\n- `core` package",
         eventIds: ["evt-delta-1", "evt-delta-2", "evt-delta-3", "evt-final"],
         suppressedDuplicateEventIds: ["evt-final"],
       }),
@@ -234,7 +234,7 @@ describe("normalizeCodeAgentTranscript", () => {
 
   it("shows important approval and error statuses while hiding lifecycle noise", () => {
     const events = [
-      event("evt-queued", "status", "Remote Agent-Native Code run queued.", {
+      event("evt-queued", "status", "Remote FB Factory Code run queued.", {
         status: "queued",
         phase: "queued",
       }),
@@ -286,7 +286,7 @@ describe("normalizeCodeAgentTranscript", () => {
           "Approval required before running this command: destructive recursive delete.",
           "Approval id: approval-20260710120000",
           "Command: rm -rf tmp",
-          "The run is paused; approve from the Agent-Native Code UI/CLI if this command is intentional.",
+          "The run is paused; approve from the FB Factory Code UI/CLI if this command is intentional.",
         ].join("\n"),
       }),
     ];
@@ -317,7 +317,7 @@ describe("normalizeCodeAgentTranscript", () => {
           "Approval required before running this command: destructive recursive delete.",
           "Approval id: approval-20260710120000",
           "Command: rm -rf tmp",
-          "The run is paused; approve from the Agent-Native Code UI/CLI if this command is intentional.",
+          "The run is paused; approve from the FB Factory Code UI/CLI if this command is intentional.",
         ].join("\n"),
       }),
       // Mirrors executePendingCodeAgentApproval's resolution event in
@@ -560,7 +560,7 @@ describe("isCredentialGapCodeAgentEvent", () => {
   it("does not flag unrelated status events", () => {
     expect(
       isCredentialGapCodeAgentEvent({
-        message: "Agent-Native Code run started.",
+        message: "FB Factory Code run started.",
       }),
     ).toBe(false);
     expect(isCredentialGapCodeAgentEvent({})).toBe(false);

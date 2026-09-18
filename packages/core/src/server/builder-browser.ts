@@ -42,7 +42,7 @@ const DEFAULT_BUILDER_API_HOST = "https://api.builder.io";
 const DEFAULT_BUILDER_TEMPLATE_ID = "agent-native-starter";
 const BUILDER_API_REQUEST_TIMEOUT_MS = 30_000;
 const BUILDER_BROWSER_HOST = "agent-native-browser";
-const BUILDER_BROWSER_CLIENT_ID = "Agent-Native Browser";
+const BUILDER_BROWSER_CLIENT_ID = "FB Factory Browser";
 const DISPATCH_APP_CREATION_SETTINGS_KEY = "dispatch-app-creation-settings";
 
 export const BUILDER_CALLBACK_PATH = "/_agent-native/builder/callback";
@@ -2349,7 +2349,7 @@ function builderProjectFromRecord(
   const name =
     typeof record.name === "string" && record.name.trim()
       ? record.name.trim()
-      : "Agent-Native Workspace";
+      : "FB Factory Workspace";
   const repoUrl =
     typeof record.repoUrl === "string" && record.repoUrl.trim()
       ? record.repoUrl.trim()

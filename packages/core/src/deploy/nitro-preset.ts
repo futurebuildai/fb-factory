@@ -40,7 +40,7 @@ export function resolveAgentNativeNitroPreset({
   try {
     const marker = fs.readFileSync(filePath, "utf8").trim();
     if (!marker) {
-      throw new Error(`Agent-Native Nitro preset marker is empty: ${filePath}`);
+      throw new Error(`FB Factory Nitro preset marker is empty: ${filePath}`);
     }
     return marker;
   } catch (error) {

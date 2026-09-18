@@ -750,7 +750,7 @@ export async function bootstrapAdminOrganization(
 
   if (orgs.rows.length === 0) {
     const config = getAppConfig();
-    const name = config.app.name ?? config.app.id ?? "Agent-Native";
+    const name = config.app.name ?? config.app.id ?? "FB Factory";
     const identity = config.app.workspaceId ?? config.app.id ?? name;
     const id = `bootstrap-${createHash("sha256").update(identity).digest("hex").slice(0, 24)}`;
     try {

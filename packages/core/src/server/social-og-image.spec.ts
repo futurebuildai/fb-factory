@@ -42,12 +42,12 @@ describe("social OG image", () => {
 
   it("renders the title with the bundled font and a Bold-resolving weight", () => {
     const svg = renderAgentNativeOgImageSvg({
-      appName: "Agent-Native Analytics",
+      appName: "FB Factory Analytics",
       brand: "agent-native",
-      title: "Agent-Native Analytics",
+      title: "FB Factory Analytics",
       accentText: "100% free and open source",
     });
-    expect(svg).toContain("Agent-Native Analytics");
+    expect(svg).toContain("FB Factory Analytics");
     expect(svg).toContain("100% free and open source");
     expect(svg).toContain(OG_FONT_FAMILY);
     // resvg's fontdb maps font-weight 850 to Regular, not Bold — the title must
@@ -68,7 +68,7 @@ describe("social OG image", () => {
   it("renders Arabic titles with a bundled RTL font", () => {
     const svg = renderAgentNativeOgImageSvg({
       title: "الخطوات الأولى",
-      accentText: "Agent-Native Docs",
+      accentText: "FB Factory Docs",
     });
     expect(svg).toContain("الخطوات الأولى");
     expect(svg).toContain(OG_ARABIC_FONT_FAMILY);
@@ -80,13 +80,13 @@ describe("social OG image", () => {
   it("places accent text below wrapped title lines", () => {
     const svg = renderAgentNativeOgImageSvg({
       title: "Workspace Connections For Multi App Provider Grants",
-      accentText: "Agent-Native Docs",
+      accentText: "FB Factory Docs",
     });
     const titleMatch = svg.match(
       /<text x="80" y="(\d+)"[\s\S]*?<tspan x="80" dy="0">[\s\S]*?<\/tspan><tspan x="80" dy="(\d+)">[\s\S]*?<\/tspan><\/text>/,
     );
     const accentMatch = svg.match(
-      /<text x="84" y="(\d+)"[\s\S]*?<tspan x="84" dy="0">Agent-Native Docs<\/tspan><\/text>/,
+      /<text x="84" y="(\d+)"[\s\S]*?<tspan x="84" dy="0">FB Factory Docs<\/tspan><\/text>/,
     );
 
     expect(titleMatch).not.toBeNull();
@@ -101,17 +101,17 @@ describe("social OG image", () => {
   it("expands built-in app names before rendering the default title", () => {
     vi.stubEnv("APP_NAME", "Design");
     vi.stubEnv("npm_package_name", "design");
-    expect(resolveAgentNativeOgImageAppName()).toBe("Agent-Native Design");
+    expect(resolveAgentNativeOgImageAppName()).toBe("FB Factory Design");
     const designSvg = renderAgentNativeOgImageSvg();
-    expect(designSvg).toContain("Agent-Native Design");
+    expect(designSvg).toContain("FB Factory Design");
     expect(designSvg).toContain("100% free and open source");
     expect(designSvg).toContain('<path d="M26.8789');
 
     vi.stubEnv("APP_NAME", "slides");
     vi.stubEnv("npm_package_name", "slides");
     resetAppConfigForTests();
-    expect(resolveAgentNativeOgImageAppName()).toBe("Agent-Native Slides");
-    expect(renderAgentNativeOgImageSvg()).toContain("Agent-Native Slides");
+    expect(resolveAgentNativeOgImageAppName()).toBe("FB Factory Slides");
+    expect(renderAgentNativeOgImageSvg()).toContain("FB Factory Slides");
   });
 
   it("does not infer first-party branding from a custom display name", () => {
@@ -121,7 +121,7 @@ describe("social OG image", () => {
     const svg = renderAgentNativeOgImageSvg();
 
     expect(svg).toContain("Analytics");
-    expect(svg).not.toContain("Agent-Native");
+    expect(svg).not.toContain("FB Factory");
     expect(svg).not.toContain("100% free and open source");
     expect(svg).not.toContain('<path d="M26.8789');
     expect(renderAgentNativeOgImageSvg({ appName: "Analytics" })).not.toContain(
@@ -135,7 +135,7 @@ describe("social OG image", () => {
     expect(resolveAgentNativeOgImageAppName()).toBe("Acme Workspace");
     const svg = renderAgentNativeOgImageSvg();
     expect(svg).toContain("Acme Workspace");
-    expect(svg).not.toContain("Agent-Native");
+    expect(svg).not.toContain("FB Factory");
     expect(svg).not.toContain("100% free and open source");
     expect(svg).not.toContain('<path d="M26.8789');
   });
@@ -147,7 +147,7 @@ describe("social OG image", () => {
     const svg = renderAgentNativeOgImageSvg();
 
     expect(svg).toContain("Acme Configured");
-    expect(svg).not.toContain("Agent-Native");
+    expect(svg).not.toContain("FB Factory");
   });
 
   it("uses a custom package name without framework branding", () => {
@@ -156,7 +156,7 @@ describe("social OG image", () => {
     const svg = renderAgentNativeOgImageSvg();
 
     expect(svg).toContain("Try Marisco");
-    expect(svg).not.toContain("Agent-Native");
+    expect(svg).not.toContain("FB Factory");
     expect(svg).not.toContain("100% free and open source");
   });
 
@@ -170,7 +170,7 @@ describe("social OG image", () => {
       '<image x="0" y="0" width="114" height="66" href="https://cdn.example.com/acme.svg"',
     );
     expect(svg).not.toContain('<path d="M26.8789');
-    expect(svg).not.toContain("Agent-Native");
+    expect(svg).not.toContain("FB Factory");
 
     expect(renderAgentNativeOgImageSvg({ appName: "Acme Override" })).toContain(
       '<image x="0" y="0" width="114" height="66" href="https://cdn.example.com/acme.svg"',

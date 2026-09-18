@@ -88,12 +88,12 @@ const messages = {
     pages: {
       browserChatUnavailableTitle: "جلسة دردشة المتصفح غير متاحة",
       browserChatUnavailableDescription:
-        "أعد الاتصال من إضافة Agent-Native للمتصفح.",
+        "أعد الاتصال من إضافة FB Factory للمتصفح.",
       browserChatPlaceholder: "اسأل عن هذه الصفحة…",
       browserChatAttachedPlaceholder: "اسأل عن {{page}}…",
       browserConnectTitle: "ربط دردشة المتصفح",
       browserConnectDescription:
-        "اسمح لإضافة Agent-Native في Chrome بفتح جلسة Dispatch هذه. يستخدم الاتصال تذكرة قصيرة الأجل لمرة واحدة.",
+        "اسمح لإضافة FB Factory في Chrome بفتح جلسة Dispatch هذه. يستخدم الاتصال تذكرة قصيرة الأجل لمرة واحدة.",
       browserConnectInvalid:
         "طلب الاتصال هذا غير صالح. ابدأ مرة أخرى من الإضافة.",
       browserConnectConnected:
@@ -101,7 +101,7 @@ const messages = {
       browserConnectConnecting: "جارٍ الاتصال…",
       browserConnectButton: "اتصال",
       browserConnectOpenFromExtension:
-        "افتح هذه الصفحة من إضافة Agent-Native في Chrome.",
+        "افتح هذه الصفحة من إضافة FB Factory في Chrome.",
       browserConnectFailed: "لم تتصل إضافة المتصفح.",
       appsDescription:
         "افتح تطبيقات مساحة العمل وابدأ في إنشاء تطبيق جديد من Dispatch.",
@@ -232,7 +232,7 @@ const messages = {
     useBuilder: "استخدم منشئ",
     openDesktopToEditCode: "افتح سطح المكتب لتحرير التعليمات البرمجية",
     codeUnavailableDescription:
-      "تتوفر تغييرات التعليمات البرمجية المصدر والوصول إلى CLI في تطبيق Agent-Native Desktop.",
+      "تتوفر تغييرات التعليمات البرمجية المصدر والوصول إلى CLI في تطبيق FB Factory Desktop.",
     downloadDesktop: "تحميل سطح المكتب",
     chatMode: "وضع الدردشة",
     chat: "المحادثة",
@@ -361,7 +361,7 @@ const messages = {
       '"{{feature}}" creates or modifies source code, which needs Desktop or Builder from this surface.',
     subtitle:
       "يقوم هذا الإجراء بإنشاء أو تعديل التعليمات البرمجية المصدر، والتي تحتاج إلى Desktop أو Builder من هذا السطح.",
-    desktopTitle: "استخدم سطح المكتب Agent-Native",
+    desktopTitle: "استخدم سطح المكتب FB Factory",
     desktopDescription:
       "افتح المشروع في تطبيق سطح المكتب لتمكين تعديلات المصدر والوصول إلى CLI.",
     builderAgentTitle: "استخدم وكيل Builder.io",

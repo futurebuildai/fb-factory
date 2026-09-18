@@ -98,7 +98,7 @@ export function useNavigationState(
     fetch(dispatchApplicationStatePath("navigate", browserTabId), {
       method: "DELETE",
       headers: dispatchApplicationStateHeaders(browserTabId, {
-        "X-Agent-Native-CSRF": "1",
+        "X-FB Factory-CSRF": "1",
       }),
     }).catch(() => {});
     const cmd = navCommand as NavigationState;

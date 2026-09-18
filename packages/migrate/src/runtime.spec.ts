@@ -160,7 +160,7 @@ describe("migration runtime", () => {
 
     const planned = await planMigration(discovered.run, discovered.ir, {
       planInputs: {
-        summary: "Controlled AEM to Agent-Native + Builder migration",
+        summary: "Controlled AEM to FB Factory + Builder migration",
         aem: {
           modes: ["crawl", "api", "package", "code"],
           contentFragmentPolicy: "headless",

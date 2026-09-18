@@ -356,7 +356,7 @@ describe("beforeDispatchProcess", () => {
     expect(result).toEqual({
       handled: true,
       responseText:
-        "Telegram is connected, but this Telegram account is not linked to an Agent-Native user yet. Tap https://dispatch.agent-native.test/identities, create a Telegram link token, then send `/link <token>` here. After that I can use your Builder.io org and connected apps.",
+        "Telegram is connected, but this Telegram account is not linked to an FB Factory user yet. Tap https://dispatch.agent-native.test/identities, create a Telegram link token, then send `/link <token>` here. After that I can use your Builder.io org and connected apps.",
     });
     expect(mocks.resolveLinkedOwner).toHaveBeenCalledWith("telegram", "777", {
       allowAnyOrgFallback: true,
@@ -844,7 +844,7 @@ describe("managed Slack execution identity", () => {
       {
         handled: true,
         responseText:
-          "Agent-Native is ready, but this Slack account is not linked to an Agent-Native user yet. Open https://dispatch.agent-native.test/identities, create a Slack link token, then send `/link <token>` in this DM.",
+          "FB Factory is ready, but this Slack account is not linked to an FB Factory user yet. Open https://dispatch.agent-native.test/identities, create a Slack link token, then send `/link <token>` in this DM.",
       },
     );
   });

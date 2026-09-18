@@ -215,7 +215,7 @@ afterEach(() => {
   mocks.createBuilderProject.mockReset();
   mocks.createBuilderProject.mockResolvedValue({
     projectId: "project-created",
-    name: "Agent-Native Workspace",
+    name: "FB Factory Workspace",
     browserUrl: "https://builder.io/app/projects/project-created",
     created: true,
   });
@@ -1772,7 +1772,7 @@ describe("startWorkspaceAppCreation", () => {
     );
     mocks.createBuilderProject.mockResolvedValue({
       projectId: "project-provisioned",
-      name: "Agent-Native Workspace",
+      name: "FB Factory Workspace",
       browserUrl: "https://builder.io/app/projects/project-provisioned",
       created: true,
     });
@@ -1787,7 +1787,7 @@ describe("startWorkspaceAppCreation", () => {
     expect(result.mode).toBe("builder");
     expect(result.projectId).toBe("project-provisioned");
     expect(mocks.createBuilderProject).toHaveBeenCalledWith({
-      name: "Agent-Native Workspace",
+      name: "FB Factory Workspace",
     });
     expect(mocks.runBuilderAgent).toHaveBeenCalledWith(
       expect.objectContaining({ projectId: "project-provisioned" }),

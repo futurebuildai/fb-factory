@@ -2461,12 +2461,12 @@ export function createCoreRoutesPlugin(
         }),
       );
 
-      // Cross-app SSO ("Sign in with Agent-Native") — CLIENT side. `/login`
+      // Cross-app SSO ("Sign in with FB Factory") - CLIENT side. `/login`
       // 302s to the identity hub;
       // `/callback` verifies the hub-issued A2A-signed identity JWT and JIT-
       // links the verified email into this app's local Better Auth store. The
       // handler fails closed unless direct web SSO is configured or the
-      // packaged Desktop SSO Canary requests a canonical Agent-Native app.
+      // packaged Desktop SSO Canary requests a canonical FB Factory app.
       // Mounting the handler unconditionally lets that request-scoped decision
       // work.
       getH3App(nitroApp).use(
@@ -2552,7 +2552,7 @@ export function createCoreRoutesPlugin(
       registerFrameworkSecrets();
       registerBuiltinProviders();
       // Named for the destination it actually reaches: every configured
-      // tracking provider (PostHog, Mixpanel, Amplitude, Agent-Native
+      // tracking provider (PostHog, Mixpanel, Amplitude, FB Factory
       // Analytics, webhook), not just one of them.
       registerErrorCaptureProvider("tracking", (error, context) => {
         // Attribute to the in-flight request's user so server exceptions and
@@ -3588,7 +3588,7 @@ export function createCoreRoutesPlugin(
               );
             } catch (error) {
               console.error(
-                "[builder] Agent-Native account provisioning failed:",
+                "[builder] FB Factory account provisioning failed:",
                 error instanceof Error ? error.message : error,
               );
               if (isBuilderAccountAlreadyExistsError(error)) {
@@ -3869,9 +3869,9 @@ export function createCoreRoutesPlugin(
 
       // Branch-creation waitlist signup. Used by ConnectBuilderCard when the
       // current request has no Builder branch project configured. Hosted
-      // Agent-Native deployments submit into the Builder-org Forms waitlist;
+      // FB Factory deployments submit into the Builder-org Forms waitlist;
       // local/self-hosted deployments keep the analytics signal without
-      // sending private workspace data to Agent-Native.
+      // sending private workspace data to FB Factory.
       getH3App(nitroApp).use(
         `${P}/builder/branch-waitlist`,
         defineEventHandler(async (event: H3Event) => {
@@ -4782,7 +4782,7 @@ export function createCoreRoutesPlugin(
       // code can fan out to the SAME server-side providers (PostHog/Mixpanel/
       // etc.) that server `track()` reaches. Authenticated + first-party only:
       // the CSRF middleware above (mounted before route handlers) already
-      // requires the X-Agent-Native-CSRF marker the client helper sends, and we
+      // requires the X-FB Factory-CSRF marker the client helper sends, and we
       // require a resolved session so this can't become an open relay. Events
       // are attributed to the resolved user/org — never a client-supplied id.
       // Best-effort: invalid bodies 400, everything else returns 204 and

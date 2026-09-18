@@ -796,10 +796,10 @@ function remoteCommandPushPayload(
         : "Remote run updated";
   const body =
     status === "completed"
-      ? "Open Agent-Native to review the result."
+      ? "Open FB Factory to review the result."
       : status === "failed"
-        ? "Open Agent-Native to review the failure."
-        : "Open Agent-Native to review the latest status.";
+        ? "Open FB Factory to review the failure."
+        : "Open FB Factory to review the latest status.";
   return {
     title,
     body,
@@ -3141,7 +3141,7 @@ export function createIntegrationsPlugin(
                 installation.teamName || installation.enterpriseName || "Slack",
                 {
                   addAccount: true,
-                  appName: "Agent-Native",
+                  appName: "FB Factory",
                   returnUrl: state.returnUrl || "/messaging",
                 },
               );

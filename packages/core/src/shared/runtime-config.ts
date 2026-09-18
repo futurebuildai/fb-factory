@@ -199,7 +199,7 @@ export function buildRuntimeConfigPrompt(
     )
     .join("\n");
   return [
-    "Fix this Agent-Native deployment configuration issue.",
+    "Fix this FB Factory deployment configuration issue.",
     `Environment: ${report.environment}`,
     `Phase: ${report.phase}${appLine}`,
     "",

@@ -26,7 +26,7 @@ import { agentNativePath } from "./api-path.js";
  *
  * This is intentionally distinct from the framework's internal browser
  * analytics (`trackEvent` / pageview tracking in `analytics.ts`), which feeds
- * Agent-Native's own product telemetry. Use `track()` for your app's own
+ * FB Factory's own product telemetry. Use `track()` for your app's own
  * analytics events.
  */
 export function track(
@@ -58,12 +58,12 @@ export function track(
       // Custom header forces a preflight cross-origin; the framework CSRF
       // middleware trusts it as a first-party marker. Matches the convention
       // used by other client writes (application-state, guided-questions).
-      "X-Agent-Native-CSRF": "1",
+      "X-FB Factory-CSRF": "1",
       [ANALYTICS_CLIENT_PLATFORM_HEADER]: clientPlatform,
       // Same session the action client and agent chat send, so a client event
       // and the server events from the same visit share one session.
       ...(browserSessionId
-        ? { "X-Agent-Native-Session-Id": browserSessionId }
+        ? { "X-FB Factory-Session-Id": browserSessionId }
         : {}),
     },
     body,

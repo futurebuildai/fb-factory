@@ -1,5 +1,5 @@
 /**
- * Public, non-secret configuration for an Agent-Native app.
+ * Public, non-secret configuration for an FB Factory app.
  *
  * This module is intentionally free of Node and framework imports so it can be
  * used from a typed `agent-native.config.ts` file and from browser code after Vite
@@ -361,7 +361,7 @@ function validateAgentNativeConfigEnvFragment(
     if (!child) {
       const childPath = [...path, childKey].join(".");
       throw new Error(
-        `${key} contains unsupported Agent-Native config path ${childPath}`,
+        `${key} contains unsupported FB Factory config path ${childPath}`,
       );
     }
     validateAgentNativeConfigEnvFragment(childValue, child.path, key);
@@ -431,7 +431,7 @@ export function readAgentNativeConfigEnv(
     for (const key of agentNativeConfigEnvKeys(node)) {
       const previous = known.get(key);
       if (previous && previous.path.join(".") !== node.path.join(".")) {
-        throw new Error(`Duplicate Agent-Native config environment key ${key}`);
+        throw new Error(`Duplicate FB Factory config environment key ${key}`);
       }
       known.set(key, node);
     }
@@ -440,7 +440,7 @@ export function readAgentNativeConfigEnv(
   for (const key of Object.keys(env)) {
     if (isAgentNativeConfigEnvKey(key) && !known.has(key)) {
       throw new Error(
-        `${key} is not a supported Agent-Native config path. Use agent-native.config.ts or a documented config env alias.`,
+        `${key} is not a supported FB Factory config path. Use agent-native.config.ts or a documented config env alias.`,
       );
     }
   }
@@ -460,7 +460,7 @@ export function readAgentNativeConfigEnv(
     }
   }
 
-  return normalizeAgentNativeConfig(layer, "Agent-Native config environment");
+  return normalizeAgentNativeConfig(layer, "FB Factory config environment");
 }
 
 export function normalizeAgentNativeConfig(

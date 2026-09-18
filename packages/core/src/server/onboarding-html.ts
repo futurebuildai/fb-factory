@@ -1141,7 +1141,7 @@ export interface OnboardingHtmlOptions {
   requestOrigin?: string;
   /**
    * Optional email signup legal copy. Builder-hosted `*.agent-native.com`
-   * deployments get the Agent-Native links automatically; self-hosted and
+   * deployments get the FB Factory links automatically; self-hosted and
    * custom-domain apps must opt in with their own URLs.
    */
   signupLegalNotice?: SignupLegalNoticeOptions | false;

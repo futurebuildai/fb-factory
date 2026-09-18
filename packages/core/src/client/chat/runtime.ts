@@ -2158,9 +2158,8 @@ export function createAgentNativeChatRuntime(
   return createHttpAgentChatRuntime({
     id: runtimeId,
     kind: "agent-native",
-    label: options.label ?? "Agent-Native",
-    description:
-      options.description ?? "Agent-Native's built-in chat transport.",
+    label: options.label ?? "FB Factory",
+    description: options.description ?? "FB Factory's built-in chat transport.",
     endpoint: apiUrl,
     fetch: fetchImpl,
     headers: async (input) => {
@@ -2311,7 +2310,7 @@ export function createAgentNativeChatRuntime(
       if (!approval) {
         if (!continuation.prompt?.trim()) {
           throw new Error(
-            "Agent-Native continuation requires an approval or prompt.",
+            "FB Factory continuation requires an approval or prompt.",
           );
         }
         const messageState = messageStates.get(messageStateKey);

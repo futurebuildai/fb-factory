@@ -5,7 +5,7 @@
  * (https://posthog.com/docs/mcp-analytics/events) — `$mcp_tool_call`,
  * `$mcp_tool_name`, `$mcp_duration_ms`, … — but they are emitted through the
  * framework's provider-agnostic `track()`, so an app on Mixpanel, Amplitude,
- * a webhook, or Agent-Native Analytics receives the same events under the
+ * a webhook, or FB Factory Analytics receives the same events under the
  * same names. The vocabulary is borrowed rather than invented because
  * PostHog's MCP dashboards read these keys directly, and a second spelling
  * would strand every app already built on theirs.

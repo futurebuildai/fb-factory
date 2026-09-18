@@ -54,7 +54,7 @@ describe("built-in auth marketing layout contract", () => {
         /<a class="auth-marketing-learn-more"[^>]*href="([^"]+)"/,
       );
       expect(linkMatch?.[1]).toBeTruthy();
-      const shortName = marketing.appName.replace(/^Agent-Native\s+/i, "");
+      const shortName = marketing.appName.replace(/^FB Factory\s+/i, "");
       expect(html).toContain(`New to ${shortName}?`);
       expect(html).toContain(">Learn more<");
     },

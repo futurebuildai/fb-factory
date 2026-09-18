@@ -8,14 +8,14 @@
     srcset="https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F7628600bc10a4940b78f42c5df7628b0"
   />
   <img
-    alt="Agent-Native: The agentic application framework"
+    alt="FB Factory: The agentic application framework"
     src="https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F7628600bc10a4940b78f42c5df7628b0"
   />
 </picture>
 
-# Agent-Native
+# FB Factory
 
-Agent-Native is an open-source TypeScript framework for building agents that pair autonomous work with a purpose-built UI. Define each capability once as an [action](https://agent-native.com/docs/actions-overview): the agent uses it as a tool, and the UI calls it from code.
+FB Factory is an open-source TypeScript framework for building agents that pair autonomous work with a purpose-built UI. Define each capability once as an [action](https://agent-native.com/docs/actions-overview): the agent uses it as a tool, and the UI calls it from code.
 
 ## Quick start
 
@@ -31,7 +31,7 @@ Coding agents work with more than a text box. Their environment provides context
 
 Knowledge work needs that same kind of environment. A UI shows what an agent can do and gives people familiar ways to inspect, edit, approve, and share its work.
 
-## How Agent-Native works
+## How FB Factory works
 
 - **[Shared actions](https://agent-native.com/docs/actions-overview).** The agent calls each capability as a tool, and the UI calls it from code. Both paths use the same validation, permissions, and implementation.
 - **[Shared data](https://agent-native.com/docs/server-database).** Work done by the agent appears in the UI, and work done in the UI is available to the agent.
@@ -60,7 +60,7 @@ export default defineAction({
 });
 ```
 
-The agent receives `hello` as a tool. React calls the same function with `useActionQuery("hello", { name: "Alex" })`. Agent-Native also exposes it through HTTP, MCP, A2A, and the CLI.
+The agent receives `hello` as a tool. React calls the same function with `useActionQuery("hello", { name: "Alex" })`. FB Factory also exposes it through HTTP, MCP, A2A, and the CLI.
 
 ## Included
 
@@ -73,7 +73,7 @@ The agent receives `hello` as a tool. React calls the same function with `useAct
 
 Bring your LLM, SQL database, tools, and infrastructure. Everything you build stays yours.
 
-See Agent-Native in action:
+See FB Factory in action:
 
 https://github.com/user-attachments/assets/ef51644b-6506-46d8-8083-0af7b7e5b65c
 

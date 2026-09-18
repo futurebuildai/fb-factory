@@ -85,12 +85,12 @@ const messages = {
     pages: {
       browserChatUnavailableTitle: "ブラウザーチャットを利用できません",
       browserChatUnavailableDescription:
-        "Agent-Native ブラウザー拡張機能から再接続してください。",
+        "FB Factory ブラウザー拡張機能から再接続してください。",
       browserChatPlaceholder: "このページについて質問…",
       browserChatAttachedPlaceholder: "{{page}} について質問…",
       browserConnectTitle: "ブラウザーチャットを接続",
       browserConnectDescription:
-        "Agent-Native Chrome 拡張機能がこの Dispatch チャットを開くことを許可します。接続には一度だけ使える短期チケットを使用します。",
+        "FB Factory Chrome 拡張機能がこの Dispatch チャットを開くことを許可します。接続には一度だけ使える短期チケットを使用します。",
       browserConnectInvalid:
         "この接続リクエストは無効です。拡張機能からやり直してください。",
       browserConnectConnected:
@@ -98,7 +98,7 @@ const messages = {
       browserConnectConnecting: "接続中…",
       browserConnectButton: "接続",
       browserConnectOpenFromExtension:
-        "Agent-Native Chrome 拡張機能からこのページを開いてください。",
+        "FB Factory Chrome 拡張機能からこのページを開いてください。",
       browserConnectFailed: "ブラウザー拡張機能に接続できませんでした。",
       appsDescription:
         "ワークスペース アプリを開き、Dispatch から新しいアプリの作成を開始します。",
@@ -230,7 +230,7 @@ const messages = {
     useBuilder: "ビルダーを使用する",
     openDesktopToEditCode: "デスクトップを開いてコードを編集する",
     codeUnavailableDescription:
-      "ソース コードの変更と CLI へのアクセスは、Agent-Native デスクトップ アプリで利用できます。",
+      "ソース コードの変更と CLI へのアクセスは、FB Factory デスクトップ アプリで利用できます。",
     downloadDesktop: "デスクトップをダウンロード",
     chatMode: "チャットモード",
     chat: "チャット",
@@ -345,7 +345,7 @@ const messages = {
       '"{{feature}}" creates or modifies source code, which needs Desktop or Builder from this surface.',
     subtitle:
       "このアクションは、このサーフェスからのデスクトップまたはビルダーを必要とするソース コードを作成または変更します。",
-    desktopTitle: "Agent-Native Desktop を使用する",
+    desktopTitle: "FB Factory Desktop を使用する",
     desktopDescription:
       "デスクトップ アプリでプロジェクトを開き、ソース編集と CLI アクセスを有効にします。",
     builderAgentTitle: "Builder.io Agent を使用する",

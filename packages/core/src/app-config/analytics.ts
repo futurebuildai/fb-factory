@@ -11,7 +11,7 @@ export const analyticsConfig = z.object({
         "VITE_AGENT_NATIVE_ANALYTICS_PUBLIC_KEY",
         "AGENT_NATIVE_BUILD_ANALYTICS_PUBLIC_KEY",
       ],
-      doc: "Public key for first-party Agent-Native Analytics events.",
+      doc: "Public key for first-party FB Factory Analytics events.",
     }),
   agentNativeEndpoint: z
     .string()
@@ -23,6 +23,6 @@ export const analyticsConfig = z.object({
         "VITE_AGENT_NATIVE_ANALYTICS_ENDPOINT",
         "AGENT_NATIVE_BUILD_ANALYTICS_ENDPOINT",
       ],
-      doc: "Endpoint for first-party Agent-Native Analytics events.",
+      doc: "Endpoint for first-party FB Factory Analytics events.",
     }),
 });

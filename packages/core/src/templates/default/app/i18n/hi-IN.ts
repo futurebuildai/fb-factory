@@ -84,18 +84,17 @@ const messages = {
     pages: {
       browserChatUnavailableTitle: "ब्राउज़र चैट सत्र उपलब्ध नहीं है",
       browserChatUnavailableDescription:
-        "Agent-Native ब्राउज़र एक्सटेंशन से फिर से कनेक्ट करें।",
+        "FB Factory ब्राउज़र एक्सटेंशन से फिर से कनेक्ट करें।",
       browserChatPlaceholder: "इस पेज के बारे में पूछें…",
       browserChatAttachedPlaceholder: "{{page}} के बारे में पूछें…",
       browserConnectTitle: "ब्राउज़र चैट कनेक्ट करें",
       browserConnectDescription:
-        "Agent-Native Chrome एक्सटेंशन को यह Dispatch चैट सत्र खोलने दें। कनेक्शन एक बार उपयोग होने वाला अल्पकालिक टिकट इस्तेमाल करता है।",
+        "FB Factory Chrome एक्सटेंशन को यह Dispatch चैट सत्र खोलने दें। कनेक्शन एक बार उपयोग होने वाला अल्पकालिक टिकट इस्तेमाल करता है।",
       browserConnectInvalid: "यह कनेक्शन अनुरोध अमान्य है। एक्सटेंशन से फिर शुरू करें।",
       browserConnectConnected: "ब्राउज़र चैट कनेक्ट हो गई है। आप यह टैब बंद कर सकते हैं।",
       browserConnectConnecting: "कनेक्ट हो रहा है…",
       browserConnectButton: "कनेक्ट करें",
-      browserConnectOpenFromExtension:
-        "यह पेज Agent-Native Chrome एक्सटेंशन से खोलें।",
+      browserConnectOpenFromExtension: "यह पेज FB Factory Chrome एक्सटेंशन से खोलें।",
       browserConnectFailed: "ब्राउज़र एक्सटेंशन कनेक्ट नहीं हुआ।",
       appsDescription: "वर्कस्पेस ऐप्स खोलें और Dispatch से नए ऐप निर्माण शुरू करें।",
       appsDescriptionWithWorkspace:
@@ -221,7 +220,7 @@ const messages = {
     useBuilder: "बिल्डर का प्रयोग करें",
     openDesktopToEditCode: "कोड संपादित करने के लिए डेस्कटॉप खोलें",
     codeUnavailableDescription:
-      "सोर्स-कोड परिवर्तन और CLI एक्सेस Agent-Native डेस्कटॉप ऐप में उपलब्ध हैं।",
+      "सोर्स-कोड परिवर्तन और CLI एक्सेस FB Factory डेस्कटॉप ऐप में उपलब्ध हैं।",
     downloadDesktop: "डेस्कटॉप डाउनलोड करें",
     chatMode: "चैट मोड",
     chat: "चैट",
@@ -338,7 +337,7 @@ const messages = {
       '"{{feature}}" creates or modifies source code, which needs Desktop or Builder from this surface.',
     subtitle:
       "यह क्रिया स्रोत कोड बनाती या संशोधित करती है, जिसके लिए इस सतह से डेस्कटॉप या बिल्डर की आवश्यकता होती है।",
-    desktopTitle: "Agent-Native डेस्कटॉप का उपयोग करें",
+    desktopTitle: "FB Factory डेस्कटॉप का उपयोग करें",
     desktopDescription:
       "स्रोत संपादन और CLI एक्सेस सक्षम करने के लिए डेस्कटॉप ऐप में प्रोजेक्ट खोलें।",
     builderAgentTitle: "Builder.io एजेंट का प्रयोग करें",

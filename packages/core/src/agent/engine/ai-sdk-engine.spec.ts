@@ -657,7 +657,7 @@ describe("AISDKEngine OpenAI model selection", () => {
     expect(toolNames).not.toContain("tool-127");
   });
 
-  // Real prod incident (Sentry AGENT-NATIVE-BROWSER-94, gpt-5.6-terra): OpenAI
+  // Real prod incident (Sentry FB Factory-BROWSER-94, gpt-5.6-terra): OpenAI
   // rejects `reasoning_effort` together with function tools on the legacy
   // Chat Completions surface — "Function tools with reasoning_effort are not
   // supported for <model> in /v1/chat/completions." `createProviderModel`

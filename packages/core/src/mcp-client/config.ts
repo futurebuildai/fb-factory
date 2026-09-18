@@ -47,7 +47,7 @@ export interface McpHttpServerConfig {
   /** Extra headers to send with every request (e.g. Authorization). */
   headers?: Record<string, string>;
   /**
-   * Trusted first-party Agent-Native app. This is set only by framework-owned
+   * Trusted first-party FB Factory app. This is set only by framework-owned
    * org-scoped registrations, not by raw file/env config.
    */
   firstParty?: boolean;
@@ -194,7 +194,7 @@ export function resolveDesktopChildComputerMcpServer(
       url,
       headers: { Authorization: `Bearer ${token}` },
       description:
-        "Authenticated computer control for this Agent-Native desktop task",
+        "Authenticated computer control for this FB Factory desktop task",
     },
   };
 }

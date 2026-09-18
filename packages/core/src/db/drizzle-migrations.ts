@@ -13,9 +13,9 @@ function isMissingPath(error: unknown): boolean {
 }
 
 /**
- * Read Drizzle Kit's generated migration files as Agent-Native migrations.
+ * Read Drizzle Kit's generated migration files as FB Factory migrations.
  *
- * Drizzle Kit owns SQL generation. The Agent-Native runner remains the runtime
+ * Drizzle Kit owns SQL generation. The FB Factory runner remains the runtime
  * owner, so release authorization and bookkeeping stay in one place. The file
  * name becomes the stable migration name.
  *

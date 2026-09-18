@@ -375,7 +375,7 @@ export default defineAction({
           appUrl,
         );
         const appName =
-          process.env.APP_NAME || process.env.VITE_APP_NAME || "Agent-Native"; // config-ok: preserve legacy app-name aliases for existing deployments.
+          process.env.APP_NAME || process.env.VITE_APP_NAME || "FB Factory"; // config-ok: preserve legacy app-name aliases for existing deployments.
         let brandLogoUrl: string | undefined;
         if (reg.getLogoUrl) {
           try {

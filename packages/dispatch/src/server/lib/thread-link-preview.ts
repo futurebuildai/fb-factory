@@ -8,7 +8,7 @@ import {
 function previewDescription(thread: ChatThread): string {
   const preview = thread.preview.trim();
   if (preview) return preview.slice(0, 180);
-  return "Open this Agent-Native thread in Dispatch.";
+  return "Open this FB Factory thread in Dispatch.";
 }
 
 export async function loadThreadLinkPreview(
@@ -23,7 +23,7 @@ export async function loadThreadLinkPreview(
   const thread = await getThread(id).catch(() => null);
   if (!thread) return null;
   if (thread.ownerEmail !== viewerEmail) return null;
-  const title = thread.title.trim() || "Agent-Native thread";
+  const title = thread.title.trim() || "FB Factory thread";
   return {
     title,
     description: previewDescription(thread),

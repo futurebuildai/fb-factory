@@ -85,12 +85,12 @@ const messages = {
     pages: {
       browserChatUnavailableTitle: "Browser chat session unavailable",
       browserChatUnavailableDescription:
-        "Reconnect from the Agent-Native browser extension.",
+        "Reconnect from the FB Factory browser extension.",
       browserChatPlaceholder: "Ask about this page…",
       browserChatAttachedPlaceholder: "Ask about {{page}}…",
       browserConnectTitle: "Connect browser chat",
       browserConnectDescription:
-        "Allow the Agent-Native Chrome extension to open this Dispatch chat session. The connection uses a one-time, short-lived ticket.",
+        "Allow the FB Factory Chrome extension to open this Dispatch chat session. The connection uses a one-time, short-lived ticket.",
       browserConnectInvalid:
         "This connection request is invalid. Start again from the extension.",
       browserConnectConnected:
@@ -98,7 +98,7 @@ const messages = {
       browserConnectConnecting: "Connecting…",
       browserConnectButton: "Connect",
       browserConnectOpenFromExtension:
-        "Open this page from the Agent-Native Chrome extension.",
+        "Open this page from the FB Factory Chrome extension.",
       browserConnectFailed: "The browser extension did not connect.",
       appsDescription:
         "Open workspace apps and start new app creation from Dispatch.",
@@ -229,7 +229,7 @@ const messages = {
     useBuilder: "Use Builder",
     openDesktopToEditCode: "Open Desktop to edit code",
     codeUnavailableDescription:
-      "Source-code changes and CLI access are available in the Agent-Native Desktop app.",
+      "Source-code changes and CLI access are available in the FB Factory Desktop app.",
     downloadDesktop: "Download Desktop",
     chatMode: "Chat mode",
     chat: "Chat",
@@ -346,7 +346,7 @@ const messages = {
       '"{{feature}}" creates or modifies source code, which needs Desktop or Builder from this surface.',
     subtitle:
       "This action creates or modifies source code, which needs Desktop or Builder from this surface.",
-    desktopTitle: "Use Agent-Native Desktop",
+    desktopTitle: "Use FB Factory Desktop",
     desktopDescription:
       "Open the project in the desktop app to enable source edits and CLI access.",
     builderAgentTitle: "Use Builder.io Agent",

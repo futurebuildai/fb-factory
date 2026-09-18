@@ -302,7 +302,7 @@ describe("route chunk recovery", () => {
     expect(originalReload).not.toHaveBeenCalled();
   });
 
-  it("recovers the intended route inside Agent-Native desktop", () => {
+  it("recovers the intended route inside FB Factory desktop", () => {
     const { fakeWindow, fakeLocation, originalReload, dispatchDocument } =
       createFakeWindow("https://example.com/dispatch/apps", {
         userAgent: "Mozilla/5.0 Electron/41.2.2 AgentNativeDesktop/0.1.7",
@@ -458,7 +458,7 @@ describe("route chunk recovery", () => {
     expect(preventDefault).toHaveBeenCalled();
   });
 
-  it("recovers unhandled dynamic import navigation inside Agent-Native desktop", () => {
+  it("recovers unhandled dynamic import navigation inside FB Factory desktop", () => {
     const { fakeWindow, fakeLocation, dispatchDocument, dispatchWindow } =
       createFakeWindow("https://example.com/dispatch/apps", {
         userAgent: "Mozilla/5.0 Electron/41.2.2 AgentNativeDesktop/0.1.7",
@@ -701,7 +701,7 @@ describe("route chunk recovery", () => {
     expect(fakeLocation.assign).toHaveBeenCalledOnce();
   });
 
-  it("does not auto-reload stale chunks inside Agent-Native desktop", () => {
+  it("does not auto-reload stale chunks inside FB Factory desktop", () => {
     const { fakeWindow, fakeLocation } = createFakeWindow(
       "https://example.com/dispatch/apps",
       { userAgent: "Mozilla/5.0 Electron/41.2.2 AgentNativeDesktop/0.1.7" },

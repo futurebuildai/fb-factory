@@ -1,7 +1,7 @@
 ---
 name: customizing-agent-native
 description: >-
-  How to configure, compose, or eject Agent-Native features into app-owned
+  How to configure, compose, or eject FB Factory features into app-owned
   code. Use when overriding shared components or integrations, customizing a
   template, adding UI to chat or headless apps, or inspecting package source.
 scope: dev
@@ -9,7 +9,7 @@ metadata:
   internal: true
 ---
 
-# Customizing Agent-Native
+# Customizing FB Factory
 
 ## Rule
 
@@ -162,7 +162,7 @@ rg -n "<component or symbol>" node_modules/@agent-native/core/corpus
 Do not manually guess at sibling dependencies. The ejection manifest owns the
 required file closure and keeps protected contracts on public package imports.
 
-## Preserve The Agent-Native Contract
+## Preserve The FB Factory Contract
 
 UI ownership may change; product contracts should not:
 
@@ -205,7 +205,7 @@ UI ownership may change; product contracts should not:
 ## Don't
 
 - Don't edit or import from `node_modules/@agent-native/*/src` at runtime.
-- Don't add `pnpm.overrides`, patches, or resolutions for Agent-Native packages.
+- Don't add `pnpm.overrides`, patches, or resolutions for FB Factory packages.
 - Don't copy Core auth, DB, action, agent-loop, or transport internals.
 - Don't manually copy a first-party unit with a missing recipe; fix its manifest.
 - Don't eject a full package when a prop, slot, wrapper, or smaller unit works.

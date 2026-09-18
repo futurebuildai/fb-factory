@@ -605,7 +605,7 @@ export class McpOAuthClientProvider implements OAuthClientProvider {
       grant_types: ["authorization_code", "refresh_token"],
       response_types: ["code"],
       application_type: applicationTypeForRedirect(options.redirectUrl),
-      client_name: "Agent-Native MCP connector",
+      client_name: "FB Factory MCP connector",
     };
   }
 

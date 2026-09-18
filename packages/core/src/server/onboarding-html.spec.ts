@@ -178,7 +178,7 @@ describe("getOnboardingHtml", () => {
       const baseline = getOnboardingHtml();
       expect(baseline).not.toContain("identity-sso-btn");
       expect(baseline).not.toContain("/_agent-native/identity/login");
-      expect(baseline).not.toContain("Sign in with Agent-Native");
+      expect(baseline).not.toContain("Sign in with FB Factory");
 
       // Re-render with the env still unset → must be the exact same string.
       const again = getOnboardingHtml();
@@ -194,7 +194,7 @@ describe("getOnboardingHtml", () => {
       });
 
       expect(html).not.toContain("identity-sso-btn");
-      expect(html).not.toContain("Sign in with Agent-Native");
+      expect(html).not.toContain("Sign in with FB Factory");
       expect(readAuthPageData(html).identitySsoEnabled).toBe(true);
       expect(readAuthPageData(html).identitySsoAuto).toBe(true);
     });
@@ -214,7 +214,7 @@ describe("getOnboardingHtml", () => {
       const html = getOnboardingHtml();
       expect(html).not.toContain('id="identity-sso-btn"');
       expect(html).not.toContain('href="/_agent-native/identity/login"');
-      expect(html).not.toContain("Sign in with Agent-Native");
+      expect(html).not.toContain("Sign in with FB Factory");
       expect(readAuthPageData(html).identitySsoEnabled).toBe(true);
       expect(readAuthPageData(html).identitySsoAuto).toBe(false);
       expect(html).toContain("data-agent-native-embedded-init");
@@ -236,7 +236,7 @@ describe("getOnboardingHtml", () => {
       });
 
       expect(html).not.toContain("identity-sso-btn");
-      expect(html).not.toContain("Sign in with Agent-Native");
+      expect(html).not.toContain("Sign in with FB Factory");
     });
   });
 
@@ -703,7 +703,7 @@ describe("getOnboardingHtml", () => {
     });
 
     expect(html).toContain('class="marketing-panel"');
-    expect(html).toContain("Agent-Native Dispatch");
+    expect(html).toContain("FB Factory Dispatch");
     expect(html).toContain(
       "Your AI agent manages secrets, orchestrates other agents",
     );

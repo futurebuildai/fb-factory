@@ -24,7 +24,7 @@ function tempDir(): string {
   return dir;
 }
 
-describe("Agent-Native Nitro preset marker", () => {
+describe("FB Factory Nitro preset marker", () => {
   it("carries the vite.config preset into the post-build process", () => {
     const cwd = tempDir();
     writeAgentNativeNitroPresetMarker("cloudflare_module", cwd);

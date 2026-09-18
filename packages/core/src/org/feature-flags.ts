@@ -9,7 +9,7 @@ export const CROSS_APP_ORG_FEDERATION_FLAG = defineFeatureFlag({
   key: "organization.cross-app-federation",
   displayName: "Cross-app organization federation",
   description:
-    "Carry one verified organization identity across independent Agent-Native app deployments.",
+    "Carry one verified organization identity across independent FB Factory app deployments.",
 });
 
 export const CROSS_APP_ORG_FEDERATION_SCOPE =

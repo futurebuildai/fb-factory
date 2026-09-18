@@ -55,7 +55,7 @@ function packageDisplayName(
 
 function resolveBaseAppName(app: AppConfig["app"]): string {
   return stripCrlf(
-    app.name || packageDisplayName(app.packageName) || "Agent-Native",
+    app.name || packageDisplayName(app.packageName) || "FB Factory",
   );
 }
 
@@ -71,7 +71,7 @@ interface EmailBrand {
 
 /**
  * Recipient-facing brand for auth emails. Only a recognized first-party
- * template is presented as "Agent-Native <App>"; a custom deployment keeps
+ * template is presented as "FB Factory <App>"; a custom deployment keeps
  * its own name and logo.
  */
 function resolveBrand(): EmailBrand {
@@ -80,8 +80,8 @@ function resolveBrand(): EmailBrand {
   const baseName = resolveBaseAppName(app);
   return {
     name:
-      firstParty && baseName !== "Agent-Native"
-        ? `Agent-Native ${baseName}`
+      firstParty && baseName !== "FB Factory"
+        ? `FB Factory ${baseName}`
         : baseName,
     logoUrl: firstParty ? undefined : app.logoUrl,
     senderSlug: firstParty ? app.slug : undefined,
@@ -158,14 +158,14 @@ export interface RenderVerifySignupEmailArgs {
  */
 const VERIFY_EMAIL_DESCRIPTIONS: Record<string, string> = {
   calendar:
-    "Agent-Native Google Calendar replacement — manage events, sync, and public booking",
+    "FB Factory Google Calendar replacement - manage events, sync, and public booking",
   content:
     "Open-source Obsidian/Notion replacement for MDX — edit local docs with agent assistance",
   slides:
-    "Agent-Native Google Slides replacement — generate and edit React presentations",
+    "FB Factory Google Slides replacement - generate and edit React presentations",
   analytics:
-    "Agent-Native Amplitude/Mixpanel replacement — connect data sources, prompt for charts",
-  mail: "Agent-Native Superhuman replacement — email client with keyboard shortcuts and AI triage",
+    "FB Factory Amplitude/Mixpanel replacement - connect data sources, prompt for charts",
+  mail: "FB Factory Superhuman replacement - email client with keyboard shortcuts and AI triage",
 };
 
 export function renderVerifySignupEmail(

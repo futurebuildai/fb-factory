@@ -76,7 +76,7 @@ export const CODE_AGENT_CLI_GOALS: CodeAgentCliGoal[] = [
     slashCommand: "/task",
     aliases: ["task", "todo"],
     summary:
-      "Run a generic coding task as a resumable Agent-Native Code session.",
+      "Run a generic coding task as a resumable FB Factory Code session.",
     backingCommand: "task",
   },
   {
@@ -410,7 +410,7 @@ export async function handleCodeShellLine(
     }
 
     if (first === "exit" || first === "quit") {
-      writeLine(options.output, "Leaving Agent-Native Code.");
+      writeLine(options.output, "Leaving FB Factory Code.");
       return "exit";
     }
 
@@ -484,7 +484,7 @@ export async function handleCodeShellLine(
 export function codeUsage(): string {
   return `agent-native code
 
-Open the Agent-Native Code shell or run a coding-agent goal directly.
+Open the FB Factory Code shell or run a coding-agent goal directly.
 
 Usage:
   agent-native code
@@ -543,7 +543,7 @@ The existing shortcut still works:
 
 export function codeShellIntro(): string {
   return [
-    `Agent-Native Code v${getCorePackageVersion()}`,
+    `FB Factory Code v${getCorePackageVersion()}`,
     `cwd: ${process.cwd()}`,
     `default: ${formatCodeAgentRunMode(DEFAULT_CODE_AGENT_PERMISSION_MODE)} (${DEFAULT_CODE_AGENT_PERMISSION_MODE})`,
     "",
@@ -552,7 +552,7 @@ export function codeShellIntro(): string {
 }
 
 export function codeShellHelp(): string {
-  return `Agent-Native Code shell commands:
+  return `FB Factory Code shell commands:
   /help        Show this help
   /goals       List available coding-agent goals
   /migrate ... Move a source into agent-native
@@ -582,7 +582,7 @@ Shell context:
 }
 
 export function codeShellFreeTextMessage(): string {
-  return `Bare prompts run as generic Agent-Native Code sessions.
+  return `Bare prompts run as generic FB Factory Code sessions.
 Use /migrate and /audit for specialized goals.`;
 }
 
@@ -655,7 +655,7 @@ export function parseCodeShellArgs(
 }
 
 function renderGoalList(): string {
-  return `Available Agent-Native Code goals:
+  return `Available FB Factory Code goals:
 ${renderGoalRows()}
 ${renderProjectCommandRows()}`;
 }
@@ -815,7 +815,7 @@ async function runCodeAgentControl(
     allowPicker,
   );
   if (!effectiveArgs) {
-    writeLine(output, "No Agent-Native Code session selected.");
+    writeLine(output, "No FB Factory Code session selected.");
     return;
   }
   switch (subcommand) {
@@ -883,7 +883,7 @@ async function promptForRunSelection(
 ): Promise<CodeAgentRunRecord | null> {
   const choices = runs.slice(0, 10);
   writeLine(output, "");
-  writeLine(output, "Select an Agent-Native Code session:");
+  writeLine(output, "Select an FB Factory Code session:");
   choices.forEach((run, index) => {
     writeLine(output, `  ${index + 1}. ${run.id}`);
     writeLine(
@@ -925,10 +925,10 @@ async function promptForRunSelection(
 function renderCodeAgentSessionList(runs: CodeAgentRunRecord[]): string {
   return [
     "",
-    "Agent-Native Code sessions",
+    "FB Factory Code sessions",
     "",
     runs.length === 0
-      ? "  No Agent-Native Code sessions found."
+      ? "  No FB Factory Code sessions found."
       : `  ${runs.length} session${runs.length === 1 ? "" : "s"} found. Most recent first.`,
     ...runs.slice(0, 10).map(renderCodeAgentRunListItem),
     runs.length > 10 ? `  - ${runs.length - 10} more...` : "",
@@ -953,15 +953,15 @@ function renderCodeAgentStatus(
     defaultToLast: args.includes("--last") || hasExplicitRunId(args),
   });
   if (selected) {
-    return renderCodeAgentRunDetail("Agent-Native Code status", selected);
+    return renderCodeAgentRunDetail("FB Factory Code status", selected);
   }
 
   return [
     "",
-    "Agent-Native Code status",
+    "FB Factory Code status",
     "",
     runs.length === 0
-      ? "  No Agent-Native Code sessions found."
+      ? "  No FB Factory Code sessions found."
       : `  ${runs.length} session${runs.length === 1 ? "" : "s"} found.`,
     ...runs.slice(0, 10).map(renderCodeAgentRunListItem),
     runs.length > 10 ? `  - ${runs.length - 10} more...` : "",
@@ -981,9 +981,9 @@ function renderCodeAgentResume(
   if (!run) {
     return [
       "",
-      "Agent-Native Code resume",
+      "FB Factory Code resume",
       "",
-      "  No Agent-Native Code sessions found.",
+      "  No FB Factory Code sessions found.",
       "",
       'Start one with: agent-native code "what to change"',
     ].join("\n");
@@ -994,7 +994,7 @@ function renderCodeAgentResume(
   const followUpTarget = args.includes("--last") ? "--last" : run.id;
   return [
     "",
-    "Agent-Native Code resume",
+    "FB Factory Code resume",
     "",
     `  Run:     ${run.id}`,
     `  Goal:    /${run.goalId}`,
@@ -1025,9 +1025,9 @@ function renderCodeAgentUi(runs: CodeAgentRunRecord[], args: string[]): string {
   const run = selectCodeAgentRun(runs, args, { defaultToLast: true });
   return [
     "",
-    "Agent-Native Code UI",
+    "FB Factory Code UI",
     "",
-    "Open Agent-Native Desktop and choose Agent-Native Code from the left sidebar.",
+    "Open FB Factory Desktop and choose FB Factory Code from the left sidebar.",
     run ? `Run: ${run.id}` : "No run selected yet.",
     run ? `Deep link: agentnative://open?app=code-agents&run=${run.id}` : "",
   ]
@@ -1046,7 +1046,7 @@ function stopCodeAgentRun(runs: CodeAgentRunRecord[], args: string[]): string {
   ) {
     return [
       "",
-      "Agent-Native Code stop",
+      "FB Factory Code stop",
       "",
       `  Run: ${run.id}`,
       `  Status: ${run.status}${run.phase ? ` (${run.phase})` : ""}`,
@@ -1070,7 +1070,7 @@ function stopCodeAgentRun(runs: CodeAgentRunRecord[], args: string[]): string {
       runId: run.id,
       kind: "status",
       message: killed
-        ? "Stop requested for Agent-Native Code runner."
+        ? "Stop requested for FB Factory Code runner."
         : "Stop requested; no active runner process was found from the CLI.",
       metadata: {
         source: "cli-stop",
@@ -1098,9 +1098,9 @@ function stopCodeAgentRun(runs: CodeAgentRunRecord[], args: string[]): string {
   }
   return [
     "",
-    "Agent-Native Code stop",
+    "FB Factory Code stop",
     "",
-    run ? `  Run: ${run.id}` : "  No Agent-Native Code session selected.",
+    run ? `  Run: ${run.id}` : "  No FB Factory Code session selected.",
     "",
     run
       ? "  Stop requested. If a tracked runner process is active, it received SIGTERM."
@@ -1121,9 +1121,9 @@ async function approveCodeAgentRun(
       output,
       [
         "",
-        "Agent-Native Code approve",
+        "FB Factory Code approve",
         "",
-        "  No Agent-Native Code session selected.",
+        "  No FB Factory Code session selected.",
         "",
         "Try: agent-native code approve --last",
       ].join("\n"),
@@ -1135,7 +1135,7 @@ async function approveCodeAgentRun(
     output,
     [
       "",
-      "Agent-Native Code approve",
+      "FB Factory Code approve",
       "",
       `  Run: ${run.id}`,
       "",
@@ -1159,9 +1159,9 @@ async function approveAlwaysCodeAgentRun(
       output,
       [
         "",
-        "Agent-Native Code approve-always",
+        "FB Factory Code approve-always",
         "",
-        "  No Agent-Native Code session selected.",
+        "  No FB Factory Code session selected.",
         "",
         "Try: agent-native code approve-always --last",
       ].join("\n"),
@@ -1173,7 +1173,7 @@ async function approveAlwaysCodeAgentRun(
     output,
     [
       "",
-      "Agent-Native Code approve-always",
+      "FB Factory Code approve-always",
       "",
       `  Run: ${run.id}`,
       "",
@@ -1197,9 +1197,9 @@ async function denyCodeAgentRun(
       output,
       [
         "",
-        "Agent-Native Code deny",
+        "FB Factory Code deny",
         "",
-        "  No Agent-Native Code session selected.",
+        "  No FB Factory Code session selected.",
         "",
         "Try: agent-native code deny --last",
       ].join("\n"),
@@ -1211,7 +1211,7 @@ async function denyCodeAgentRun(
     output,
     [
       "",
-      "Agent-Native Code deny",
+      "FB Factory Code deny",
       "",
       `  Run: ${run.id}`,
       "",
@@ -1230,9 +1230,9 @@ function renderCodeAgentLogs(
   if (!run) {
     return [
       "",
-      "Agent-Native Code logs",
+      "FB Factory Code logs",
       "",
-      "  No Agent-Native Code session selected.",
+      "  No FB Factory Code session selected.",
       "",
       "Try: agent-native code logs --last",
     ].join("\n");
@@ -1240,7 +1240,7 @@ function renderCodeAgentLogs(
   const events = listCodeAgentTranscriptEvents(run.id);
   return [
     "",
-    `Agent-Native Code logs: ${run.id}`,
+    `FB Factory Code logs: ${run.id}`,
     `/${run.goalId} ${run.status}${run.phase ? ` (${run.phase})` : ""}`,
     run.title,
     `Updated: ${run.updatedAt}`,
@@ -1263,9 +1263,9 @@ async function attachCodeAgentRun(
       output,
       [
         "",
-        "Agent-Native Code attach",
+        "FB Factory Code attach",
         "",
-        "  No Agent-Native Code session selected.",
+        "  No FB Factory Code session selected.",
         "",
         "Try: agent-native code attach --last",
       ].join("\n"),
@@ -1276,7 +1276,7 @@ async function attachCodeAgentRun(
   const follow = !args.includes("--no-follow");
   const printed = new Set<string>();
   writeLine(output, "");
-  writeLine(output, `Attaching to Agent-Native Code run ${run.id}`);
+  writeLine(output, `Attaching to FB Factory Code run ${run.id}`);
   writeLine(
     output,
     "Press Ctrl C to detach. The session keeps its transcript.",
@@ -1453,7 +1453,7 @@ async function runCodeGoal(
     (candidate) => candidate.id === goalId,
   );
   if (!goal) {
-    throw new Error(`Unknown Agent-Native Code goal: ${goalId}`);
+    throw new Error(`Unknown FB Factory Code goal: ${goalId}`);
   }
 
   switch (goal.backingCommand) {
@@ -1523,7 +1523,7 @@ async function runTask(
   appendCodeAgentTranscriptEvent({
     runId: run.id,
     kind: "status",
-    message: "Starting local Agent-Native Code execution.",
+    message: "Starting local FB Factory Code execution.",
     metadata: {
       status: "running",
       phase: "starting",
@@ -1583,8 +1583,8 @@ async function recordCodeAgentFollowUpPrompt(
       [
         "",
         runId
-          ? `Agent-Native Code run not found: ${runId}`
-          : "No Agent-Native Code runs found.",
+          ? `FB Factory Code run not found: ${runId}`
+          : "No FB Factory Code runs found.",
         "",
         'Start one with: agent-native code "what to change"',
       ].join("\n"),
@@ -1748,7 +1748,7 @@ function truncateForDisplay(value: string, maxLength: number): string {
 function renderTaskStarted(run: CodeAgentRunRecord, prompt: string): string {
   return [
     "",
-    "Agent-Native Code session started.",
+    "FB Factory Code session started.",
     "",
     `  Run:    ${run.id}`,
     `  Prompt: ${truncateForDisplay(prompt, 160)}`,
@@ -1766,9 +1766,9 @@ function renderFollowUpRecorded(
   const active = isActiveCodeAgentRun(run);
   const heading = active
     ? mode === "queued"
-      ? "Queued follow-up prompt for Agent-Native Code run."
-      : "Recorded steering prompt for active Agent-Native Code run."
-    : "Running follow-up prompt for Agent-Native Code run.";
+      ? "Queued follow-up prompt for FB Factory Code run."
+      : "Recorded steering prompt for active FB Factory Code run."
+    : "Running follow-up prompt for FB Factory Code run.";
   return [
     "",
     heading,
@@ -1794,7 +1794,7 @@ function taskUsage(): string {
     '  agent-native code --auto "fix this and verify it"',
     `  agent-native code --permission-mode ${CODE_AGENT_PERMISSION_MODES.join("|")} "what to change"`,
     "",
-    "The task goal starts a local Agent-Native Code session, saves transcript events, and can be resumed with follow-up prompts.",
+    "The task goal starts a local FB Factory Code session, saves transcript events, and can be resumed with follow-up prompts.",
   ].join("\n");
 }
 

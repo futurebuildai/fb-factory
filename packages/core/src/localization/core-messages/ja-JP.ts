@@ -111,7 +111,7 @@ const messages: AgentChatTranslation = {
   "onboarding.capability.about": "{{label}}について",
   "onboarding.capability.why": "{{label}}が必要な理由",
   "onboarding.openAiKeySettings": "AIキー設定を開く",
-  "aboutAgentNative.title": "Agent-Native について",
+  "aboutAgentNative.title": "FB Factory について",
   "aboutAgentNative.version": "バージョン",
   "aboutAgentNative.environment": "環境",
   "aboutAgentNative.build": "ビルド",
@@ -278,7 +278,7 @@ const messages: AgentChatTranslation = {
   "composer.plan": "計画",
   "composer.planDescription": "まず読み取り専用で調査し、承認を得ます",
   "composer.planDesktopRequired":
-    "計画モードを使用するには Agent-Native Desktop を開いてください。",
+    "計画モードを使用するには FB Factory Desktop を開いてください。",
   "composer.previewAttachment": "{{name}} をプレビュー",
   "composer.reasoning": "推論",
   "composer.reasoningEffort.auto": "自動",

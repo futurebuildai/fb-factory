@@ -380,7 +380,7 @@ describe("AgentKitChat", () => {
             source: {
               id: "app-agent-native",
               kind: "app",
-              label: "Agent-Native",
+              label: "FB Factory",
               url: "/apps/agent-native",
             },
           },
@@ -429,7 +429,7 @@ describe("AgentKitChat", () => {
     expect(html).toContain("Planck");
     expect(html).toContain("started working");
     expect(html).toContain("Read framework contracts");
-    expect(html).toContain("Agent-Native");
+    expect(html).toContain("FB Factory");
     expect(html.match(/Read framework contracts/g)).toHaveLength(1);
   });
 

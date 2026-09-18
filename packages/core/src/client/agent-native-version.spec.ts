@@ -8,7 +8,7 @@ import {
   getAgentNativePackageVersions,
 } from "./agent-native-version.js";
 
-describe("Agent-Native build metadata", () => {
+describe("FB Factory build metadata", () => {
   afterEach(() => {
     vi.unstubAllGlobals();
   });

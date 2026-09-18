@@ -378,7 +378,7 @@ export interface CodeAgentsAppProps {
   suppressChatFirstUnavailableNotice?: boolean;
   /** Select the primary chat kind in the chat-first shell. */
   onChatFirstMainKindChange?: (kind: "agent" | "code") => void;
-  /** Host-rendered shared Agent-Native chat surface for the agent chat tab. */
+  /** Host-rendered shared FB Factory chat surface for the agent chat tab. */
   renderChatFirstMainSurface?: ReactNode;
   /** Host-rendered replacement for the chat stream and composer region. */
   renderChatFirstChatSurface?: ReactNode;
@@ -600,7 +600,7 @@ const CODE_AGENT_RUNTIME_OPTIONS = [
   {
     id: "default",
     label: "Default",
-    description: "Agent-Native hosted chat",
+    description: "FB Factory hosted chat",
   },
   {
     id: "codex",
@@ -1522,7 +1522,7 @@ export default function CodeAgentsApp({
           );
           return;
         }
-        toast("Local sign-in is only available in Agent-Native Desktop", {
+        toast("Local sign-in is only available in FB Factory Desktop", {
           description: "Open Settings to manage hosted providers instead.",
         });
         onOpenSettings?.();
@@ -1927,7 +1927,7 @@ export default function CodeAgentsApp({
     if (!host.chooseProject) {
       toast("Folder picker is not available here", {
         description:
-          "Open Agent-Native Desktop to choose folders from the native picker.",
+          "Open FB Factory Desktop to choose folders from the native picker.",
         duration: 3200,
       });
       return;
@@ -1989,7 +1989,7 @@ export default function CodeAgentsApp({
   async function openTerminal() {
     if (!host.openTerminal) {
       toast("Terminal is not available here", {
-        description: "Open Agent-Native Desktop to launch a native terminal.",
+        description: "Open FB Factory Desktop to launch a native terminal.",
         duration: 3200,
       });
       return;
@@ -2043,7 +2043,7 @@ export default function CodeAgentsApp({
   async function pairRemoteConnector(relayUrl: string) {
     if (!host.pairRemoteConnector) {
       toast("Mobile pairing is not available here", {
-        description: "Open Agent-Native Desktop to pair this Mac.",
+        description: "Open FB Factory Desktop to pair this Mac.",
         duration: 3200,
       });
       return;
@@ -2061,7 +2061,7 @@ export default function CodeAgentsApp({
     try {
       const result = await host.pairRemoteConnector({
         relayUrl: trimmedRelayUrl,
-        label: "Agent-Native Desktop",
+        label: "FB Factory Desktop",
       });
       setRemoteConnectorStatus(result.status);
       setRemoteConnectorMessage(result.error ?? result.message ?? null);
@@ -2085,7 +2085,7 @@ export default function CodeAgentsApp({
   async function setRemoteConnectorEnabled(enabled: boolean) {
     if (!host.setRemoteConnectorEnabled) {
       toast("Mobile pairing controls are not available here", {
-        description: "Open Agent-Native Desktop to manage mobile pairing.",
+        description: "Open FB Factory Desktop to manage mobile pairing.",
         duration: 3200,
       });
       return;
@@ -3407,7 +3407,7 @@ function AgentCapabilitySummary({
         title={
           desktopReady
             ? "Desktop Accessibility and Screen Recording permissions are ready."
-            : "Enable Accessibility and Screen Recording for Agent-Native in System Settings."
+            : "Enable Accessibility and Screen Recording for FB Factory in System Settings."
         }
         onClick={onOpenComputerSetup}
       >
@@ -3486,7 +3486,7 @@ function ComputerAccessDialog({
           <div>
             <DialogTitle>Computer access</DialogTitle>
             <DialogDescription id="computer-access-description">
-              Agent-Native only controls Chrome or your desktop while Agent is
+              FB Factory only controls Chrome or your desktop while Agent is
               working. Stop releases control immediately.
             </DialogDescription>
           </div>
@@ -3539,7 +3539,7 @@ function ComputerAccessDialog({
             title="Chrome"
             description={
               readiness.chromeReady
-                ? "The Agent-Native extension is connected."
+                ? "The FB Factory extension is connected."
                 : "Opens Chrome Extensions and reveals the bundled extension folder. Turn on Developer mode, choose Load unpacked, then select that folder."
             }
             ready={readiness.chromeReady}
@@ -3561,7 +3561,7 @@ function ComputerAccessDialog({
                   Restart once after enabling it so the new access takes effect.
                 </span>
               </div>
-              {actionButton("restart", "Restart Agent-Native")}
+              {actionButton("restart", "Restart FB Factory")}
             </div>
           )}
       </DialogContent>
@@ -5191,7 +5191,7 @@ function MobileConnectorPanel({
           <IconQrcode size={15} strokeWidth={1.8} />
           Mobile
         </p>
-        <h2>Agent-Native mobile</h2>
+        <h2>FB Factory mobile</h2>
         <p>
           Scan the QR code to open chats on your phone, then pair this Mac to
           start and continue local Agent work from mobile.
@@ -5239,7 +5239,7 @@ function MobileConnectorPanel({
               size={224}
               level="H"
               marginSize={3}
-              title="Open Agent-Native mobile chats"
+              title="Open FB Factory mobile chats"
               bgColor="#ffffff"
               fgColor="#111111"
             />

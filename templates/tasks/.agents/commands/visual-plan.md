@@ -1,5 +1,5 @@
 ---
-description: Create an interactive Agent-Native visual plan for the current task.
+description: Create an interactive FB Factory visual plan for the current task.
 argument-hint: [optional request or scope]
 ---
 

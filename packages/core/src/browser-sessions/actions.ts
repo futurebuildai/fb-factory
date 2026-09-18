@@ -49,7 +49,7 @@ async function resolveSessionId(
   const sessions = await listBrowserSessions(ownerEmail, { limit: 5 });
   if (sessions.length === 0) {
     throw new Error(
-      "No active browser sessions are connected. Open the embedded Agent-Native sidecar in the host app first.",
+      "No active browser sessions are connected. Open the embedded FB Factory sidecar in the host app first.",
     );
   }
   return sessions[0].sessionId;
@@ -104,7 +104,7 @@ export function createBrowserSessionActionEntries(
       readOnly: true,
       tool: {
         description:
-          "List active browser tabs connected through the Agent-Native embedding SDK. Use this when you need to choose which live host page to inspect or operate.",
+          "List active browser tabs connected through the FB Factory embedding SDK. Use this when you need to choose which live host page to inspect or operate.",
         parameters: {
           type: "object",
           properties: {

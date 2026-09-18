@@ -77,7 +77,7 @@ export interface StoredRemoteMcpServer {
   /** Reference to the encrypted OAuth credential bundle for this server. */
   oauthSecretKey?: string;
   /**
-   * Trusted first-party Agent-Native app. Only framework-controlled
+   * Trusted first-party FB Factory app. Only framework-controlled
    * registrations should set this; management routes intentionally do not
    * expose it for arbitrary user-added MCP servers.
    */

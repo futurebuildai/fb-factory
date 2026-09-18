@@ -84,12 +84,12 @@ const messages = {
     pages: {
       browserChatUnavailableTitle: "브라우저 채팅 세션을 사용할 수 없음",
       browserChatUnavailableDescription:
-        "Agent-Native 브라우저 확장 프로그램에서 다시 연결하세요.",
+        "FB Factory 브라우저 확장 프로그램에서 다시 연결하세요.",
       browserChatPlaceholder: "이 페이지에 대해 질문…",
       browserChatAttachedPlaceholder: "{{page}}에 대해 질문…",
       browserConnectTitle: "브라우저 채팅 연결",
       browserConnectDescription:
-        "Agent-Native Chrome 확장 프로그램이 이 Dispatch 채팅 세션을 열도록 허용합니다. 연결에는 일회용 단기 티켓이 사용됩니다.",
+        "FB Factory Chrome 확장 프로그램이 이 Dispatch 채팅 세션을 열도록 허용합니다. 연결에는 일회용 단기 티켓이 사용됩니다.",
       browserConnectInvalid:
         "잘못된 연결 요청입니다. 확장 프로그램에서 다시 시작하세요.",
       browserConnectConnected:
@@ -97,7 +97,7 @@ const messages = {
       browserConnectConnecting: "연결 중…",
       browserConnectButton: "연결",
       browserConnectOpenFromExtension:
-        "Agent-Native Chrome 확장 프로그램에서 이 페이지를 여세요.",
+        "FB Factory Chrome 확장 프로그램에서 이 페이지를 여세요.",
       browserConnectFailed: "브라우저 확장 프로그램이 연결되지 않았습니다.",
       appsDescription:
         "작업 공간 앱을 열고 Dispatch에서 새 앱 생성을 시작하세요.",
@@ -225,7 +225,7 @@ const messages = {
     useBuilder: "빌더 사용",
     openDesktopToEditCode: "데스크톱을 열어 코드 편집",
     codeUnavailableDescription:
-      "소스 코드 변경 및 CLI 액세스는 Agent-Native 데스크톱 앱에서 사용할 수 있습니다.",
+      "소스 코드 변경 및 CLI 액세스는 FB Factory 데스크톱 앱에서 사용할 수 있습니다.",
     downloadDesktop: "데스크탑 다운로드",
     chatMode: "채팅 모드",
     chat: "채팅",
@@ -339,7 +339,7 @@ const messages = {
       '"{{feature}}" creates or modifies source code, which needs Desktop or Builder from this surface.',
     subtitle:
       "이 작업은 이 표면의 Desktop 또는 Builder가 필요한 소스 코드를 생성하거나 수정합니다.",
-    desktopTitle: "Agent-Native 데스크탑 사용",
+    desktopTitle: "FB Factory 데스크탑 사용",
     desktopDescription:
       "소스 편집 및 CLI 액세스를 활성화하려면 데스크톱 앱에서 프로젝트를 엽니다.",
     builderAgentTitle: "Builder.io 에이전트 사용",

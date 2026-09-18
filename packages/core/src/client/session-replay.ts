@@ -1803,7 +1803,7 @@ async function sendReplayUpload(
       keepalive: canUseKeepalive,
       headers: {
         ...upload.headers,
-        "X-Agent-Native-Analytics-Key": options.publicKey,
+        "X-FB Factory-Analytics-Key": options.publicKey,
       },
       signal: timeout.signal,
     }),

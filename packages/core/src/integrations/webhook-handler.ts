@@ -1249,7 +1249,7 @@ async function processIncomingMessage(
     await Promise.resolve(
       progress.onEvent({
         type: "agent_call_progress",
-        agent: "Agent-Native",
+        agent: "FB Factory",
         state: "working",
         elapsedSeconds: 0,
         detail: "Continuing in the background",

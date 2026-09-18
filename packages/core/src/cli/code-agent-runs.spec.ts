@@ -304,7 +304,7 @@ describe("local code background agent controller", () => {
         phase: "stopped",
       },
       message:
-        "Agent-Native Code run marked stopped without signaling a process.",
+        "FB Factory Code run marked stopped without signaling a process.",
     });
     expect(getCodeAgentRunRecord(run.id)).toMatchObject({
       status: "paused",
@@ -317,7 +317,7 @@ describe("local code background agent controller", () => {
     });
     expect(listCodeAgentTranscriptEvents(run.id).at(-1)).toMatchObject({
       message:
-        "Stop requested for Agent-Native Code run. No process signal was sent.",
+        "Stop requested for FB Factory Code run. No process signal was sent.",
     });
   });
 
@@ -358,14 +358,14 @@ describe("local code background agent controller", () => {
     ).resolves.toMatchObject({
       ok: true,
       run: { id: resumeRun.id },
-      message: "Agent-Native Code run resuming in the background.",
+      message: "FB Factory Code run resuming in the background.",
     });
     await expect(
       controller.control({ runId: retryRun.id, command: "retry" }),
     ).resolves.toMatchObject({
       ok: true,
       run: { id: retryRun.id },
-      message: "Agent-Native Code run retrying in the background.",
+      message: "FB Factory Code run retrying in the background.",
     });
 
     // The background executions still complete (fake response) — wait for

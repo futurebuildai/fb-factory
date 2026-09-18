@@ -849,7 +849,7 @@ export interface ActionEntry {
    *  app iframes. CLI/non-UI hosts still receive the normal tool result and
    *  any deep link from `link`. */
   mcpApp?: import("../action.js").ActionMcpAppConfig;
-  /** Optional native Agent-Native chat renderer for this action's result. */
+  /** Optional native FB Factory chat renderer for this action's result. */
   chatUI?: import("../action-ui.js").ActionChatUIConfig;
   /**
    * Per-tool timeout override in milliseconds. When set, the agent loop uses
@@ -3656,7 +3656,7 @@ export async function executeAgentToolCall(
   let streamCalls = 0;
   const engine: AgentEngine = {
     name: "agent-native:single-tool",
-    label: "Agent-Native tool runtime",
+    label: "FB Factory tool runtime",
     defaultModel: "agent-native:single-tool",
     supportedModels: ["agent-native:single-tool"],
     capabilities: {
@@ -3704,7 +3704,7 @@ export async function executeAgentToolCall(
     await runAgentLoop({
       engine,
       model: engine.defaultModel,
-      systemPrompt: "Execute the selected Agent-Native tool call.",
+      systemPrompt: "Execute the selected FB Factory tool call.",
       tools,
       availableTools: tools,
       messages: [

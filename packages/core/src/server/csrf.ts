@@ -25,7 +25,7 @@
  *   2. is NOT clearly same-origin / first-party. We trust:
  *      - `Sec-Fetch-Site: same-origin` (sent by every modern browser on
  *        same-origin fetch — Chrome/Firefox/Safari/Edge all support it).
- *      - `X-Agent-Native-CSRF` custom header. Custom headers force a
+ *      - `X-FB Factory-CSRF` custom header. Custom headers force a
  *        preflight, so an attacker can't add one cross-origin.
  *      - `Content-Type: application/json` request body. Same logic — JSON
  *        Content-Type is a non-simple request that triggers preflight.
@@ -122,7 +122,7 @@ const STATE_CHANGING_METHODS = new Set(["POST", "PUT", "PATCH", "DELETE"]);
  *
  *   - `Sec-Fetch-Site: same-origin` (or `none` for top-level navigations
  *     to our own pages — but state-changing methods don't ship `none`).
- *   - `X-Agent-Native-CSRF` header (any value, even "1"). This is a custom
+ *   - `X-FB Factory-CSRF` header (any value, even "1"). This is a custom
  *     header so the browser forces a preflight cross-origin, which our
  *     CORS layer rejects for disallowed origins.
  *   - `Content-Type: application/json` (case-insensitive). JSON content
@@ -136,7 +136,7 @@ const STATE_CHANGING_METHODS = new Set(["POST", "PUT", "PATCH", "DELETE"]);
  * labels a request from a SIBLING subdomain (evil.example.com → app.example.com)
  * as `same-site` even though it is cross-origin and would ride the shared
  * session cookie — a CSRF vector. Legitimate first-party clients all also send
- * `X-Agent-Native-CSRF` or `application/json`, so they still pass via those
+ * `X-FB Factory-CSRF` or `application/json`, so they still pass via those
  * paths and iframe/embed flows are unaffected.
  */
 function looksFirstParty(event: any): boolean {
@@ -251,7 +251,7 @@ export function createCsrfMiddleware(
     setResponseStatus(event, 403);
     return {
       error:
-        "CSRF check failed: state-changing requests must include a same-origin marker. Set Content-Type: application/json or X-Agent-Native-CSRF: 1.",
+        "CSRF check failed: state-changing requests must include a same-origin marker. Set Content-Type: application/json or X-FB Factory-CSRF: 1.",
     };
   });
 }

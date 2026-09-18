@@ -140,7 +140,7 @@ export function buildThreadLinkPreviewMeta(preview: ThreadLinkPreview | null) {
   const title = preview?.title ? `${preview.title} - Dispatch` : "Dispatch";
   const description =
     preview?.description ||
-    "Open this Agent-Native thread in the Dispatch workspace.";
+    "Open this FB Factory thread in the Dispatch workspace.";
   const image = preview?.imageUrl ?? null;
   return [
     { title },

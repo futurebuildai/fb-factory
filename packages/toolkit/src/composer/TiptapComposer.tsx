@@ -993,7 +993,7 @@ function ModeSelector({
   const resolvedPlanModeDisabledReason =
     planModeDisabledReason ??
     t("agentChat.composer.planDesktopRequired", {
-      defaultValue: "Open Agent-Native Desktop to use Plan mode.",
+      defaultValue: "Open FB Factory Desktop to use Plan mode.",
     });
 
   return (
@@ -1748,7 +1748,7 @@ function ModelSelector({
                           {hostedHarness
                             ? t("agentChat.composer.hostedHarnessDescription", {
                                 defaultValue:
-                                  "Hosted mode uses app tools only. For full coding with a repository and shell, use Agent-Native Desktop.",
+                                  "Hosted mode uses app tools only. For full coding with a repository and shell, use FB Factory Desktop.",
                               })
                             : t("agentChat.composer.harnessAgentDescription", {
                                 defaultValue:
@@ -3310,7 +3310,7 @@ export function TiptapComposer({
     if (!voiceEnabled || !voice.supported) return;
     const handler = (e: KeyboardEvent) => {
       // e.key can be undefined on some trusted keydown events (autofill/IME
-      // quirks) — seen crashing in production (AGENT-NATIVE-BROWSER-S).
+      // quirks) - seen crashing in production (FB Factory-BROWSER-S).
       const isToggleCombo =
         typeof e.key === "string" &&
         e.key.toLowerCase() === "m" &&

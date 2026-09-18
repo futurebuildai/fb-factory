@@ -54,7 +54,7 @@ const enUS = {
     openAgentSettings: "Manage agent",
     connectApps: "Connect apps",
     connectAppsDescription:
-      "Sign in to another Agent-Native app with one handoff.",
+      "Sign in to another FB Factory app with one handoff.",
     openConnectApps: "Open Connect apps",
   },
   integrations: {
@@ -369,12 +369,12 @@ const enUS = {
       chatPromptPlaceholder: "Tell Dispatch what you’d like to make happen…",
       browserChatUnavailableTitle: "Browser chat session unavailable",
       browserChatUnavailableDescription:
-        "Reconnect from the Agent-Native browser extension.",
+        "Reconnect from the FB Factory browser extension.",
       browserChatPlaceholder: "Ask about this page…",
       browserChatAttachedPlaceholder: "Ask about {{page}}…",
       browserConnectTitle: "Connect browser chat",
       browserConnectDescription:
-        "Allow the Agent-Native Chrome extension to open this Dispatch chat session. The connection uses a one-time, short-lived ticket.",
+        "Allow the FB Factory Chrome extension to open this Dispatch chat session. The connection uses a one-time, short-lived ticket.",
       browserConnectInvalid:
         "This connection request is invalid. Start again from the extension.",
       browserConnectConnected:
@@ -382,7 +382,7 @@ const enUS = {
       browserConnectConnecting: "Connecting…",
       browserConnectButton: "Connect",
       browserConnectOpenFromExtension:
-        "Open this page from the Agent-Native Chrome extension.",
+        "Open this page from the FB Factory Chrome extension.",
       browserConnectFailed: "The browser extension did not connect.",
       suggestionWorkspaceHealth: "Summarize the current workspace health",
       suggestionOnboardingApp: "Create an app for onboarding requests",
@@ -1008,7 +1008,7 @@ export const messagesByLocale = {
           "管理代理的模型、API 密钥、语音和其他控制项。定时与事件触发的任务请使用自动化页面。",
         openAgentSettings: "管理代理",
         connectApps: "连接应用",
-        connectAppsDescription: "通过一次交接登录另一个 Agent-Native 应用。",
+        connectAppsDescription: "通过一次交接登录另一个 FB Factory 应用。",
         openConnectApps: "打开连接应用",
       },
       integrations: {
@@ -1299,18 +1299,18 @@ export const messagesByLocale = {
           chatPromptPlaceholder: "告诉 Dispatch 你想完成什么…",
           browserChatUnavailableTitle: "浏览器聊天会话不可用",
           browserChatUnavailableDescription:
-            "请从 Agent-Native 浏览器扩展重新连接。",
+            "请从 FB Factory 浏览器扩展重新连接。",
           browserChatPlaceholder: "询问此页面…",
           browserChatAttachedPlaceholder: "询问 {{page}}…",
           browserConnectTitle: "连接浏览器聊天",
           browserConnectDescription:
-            "允许 Agent-Native Chrome 扩展打开此 Dispatch 聊天会话。连接使用一次性的短期票据。",
+            "允许 FB Factory Chrome 扩展打开此 Dispatch 聊天会话。连接使用一次性的短期票据。",
           browserConnectInvalid: "此连接请求无效。请从扩展重新开始。",
           browserConnectConnected: "浏览器聊天已连接。你可以关闭此标签页。",
           browserConnectConnecting: "正在连接…",
           browserConnectButton: "连接",
           browserConnectOpenFromExtension:
-            "请从 Agent-Native Chrome 扩展打开此页面。",
+            "请从 FB Factory Chrome 扩展打开此页面。",
           browserConnectFailed: "浏览器扩展未能连接。",
           suggestionWorkspaceHealth: "总结当前工作区运行状况",
           suggestionOnboardingApp: "为入职请求创建一个应用",
@@ -1431,7 +1431,7 @@ export const messagesByLocale = {
         openAgentSettings: "Gestionar agente",
         connectApps: "Conectar apps",
         connectAppsDescription:
-          "Inicia sesión en otra app de Agent-Native con una sola transferencia.",
+          "Inicia sesión en otra app de FB Factory con una sola transferencia.",
         openConnectApps: "Abrir Conectar apps",
       },
       integrations: {
@@ -1752,12 +1752,12 @@ export const messagesByLocale = {
           browserChatUnavailableTitle:
             "La sesión de chat del navegador no está disponible",
           browserChatUnavailableDescription:
-            "Vuelve a conectarte desde la extensión Agent-Native.",
+            "Vuelve a conectarte desde la extensión FB Factory.",
           browserChatPlaceholder: "Pregunta sobre esta página…",
           browserChatAttachedPlaceholder: "Pregunta sobre {{page}}…",
           browserConnectTitle: "Conectar el chat del navegador",
           browserConnectDescription:
-            "Permite que la extensión de Chrome Agent-Native abra esta sesión de Dispatch. La conexión usa un ticket único y de corta duración.",
+            "Permite que la extensión de Chrome FB Factory abra esta sesión de Dispatch. La conexión usa un ticket único y de corta duración.",
           browserConnectInvalid:
             "Esta solicitud de conexión no es válida. Vuelve a empezar desde la extensión.",
           browserConnectConnected:
@@ -1765,7 +1765,7 @@ export const messagesByLocale = {
           browserConnectConnecting: "Conectando…",
           browserConnectButton: "Conectar",
           browserConnectOpenFromExtension:
-            "Abre esta página desde la extensión de Chrome Agent-Native.",
+            "Abre esta página desde la extensión de Chrome FB Factory.",
           browserConnectFailed: "La extensión del navegador no se conectó.",
           suggestionWorkspaceHealth:
             "Resume el estado actual del espacio de trabajo",
@@ -1893,7 +1893,7 @@ export const messagesByLocale = {
         openAgentSettings: "Gérer l’agent",
         connectApps: "Connecter des apps",
         connectAppsDescription:
-          "Connectez-vous à une autre app Agent-Native via un seul transfert.",
+          "Connectez-vous à une autre app FB Factory via un seul transfert.",
         openConnectApps: "Ouvrir Connecter des apps",
       },
       integrations: {
@@ -2214,12 +2214,12 @@ export const messagesByLocale = {
           browserChatUnavailableTitle:
             "La session de chat du navigateur est indisponible",
           browserChatUnavailableDescription:
-            "Reconnectez-vous depuis l’extension Agent-Native.",
+            "Reconnectez-vous depuis l’extension FB Factory.",
           browserChatPlaceholder: "Posez une question sur cette page…",
           browserChatAttachedPlaceholder: "Posez une question sur {{page}}…",
           browserConnectTitle: "Connecter le chat du navigateur",
           browserConnectDescription:
-            "Autorisez l’extension Chrome Agent-Native à ouvrir cette session Dispatch. La connexion utilise un ticket unique de courte durée.",
+            "Autorisez l’extension Chrome FB Factory à ouvrir cette session Dispatch. La connexion utilise un ticket unique de courte durée.",
           browserConnectInvalid:
             "Cette demande de connexion est invalide. Recommencez depuis l’extension.",
           browserConnectConnected:
@@ -2227,7 +2227,7 @@ export const messagesByLocale = {
           browserConnectConnecting: "Connexion…",
           browserConnectButton: "Connecter",
           browserConnectOpenFromExtension:
-            "Ouvrez cette page depuis l’extension Chrome Agent-Native.",
+            "Ouvrez cette page depuis l’extension Chrome FB Factory.",
           browserConnectFailed:
             "L’extension du navigateur ne s’est pas connectée.",
           suggestionWorkspaceHealth:
@@ -2356,7 +2356,7 @@ export const messagesByLocale = {
         openAgentSettings: "Agent verwalten",
         connectApps: "Apps verbinden",
         connectAppsDescription:
-          "Melde dich mit einer Übergabe bei einer anderen Agent-Native-App an.",
+          "Melde dich mit einer Übergabe bei einer anderen FB Factory-App an.",
         openConnectApps: "Apps verbinden öffnen",
       },
       integrations: {
@@ -2663,12 +2663,12 @@ export const messagesByLocale = {
           chatPromptPlaceholder: "Sag Dispatch, was du erledigen möchtest…",
           browserChatUnavailableTitle: "Browser-Chat-Sitzung nicht verfügbar",
           browserChatUnavailableDescription:
-            "Stelle die Verbindung über die Agent-Native-Erweiterung erneut her.",
+            "Stelle die Verbindung über die FB Factory-Erweiterung erneut her.",
           browserChatPlaceholder: "Zu dieser Seite fragen…",
           browserChatAttachedPlaceholder: "Zu {{page}} fragen…",
           browserConnectTitle: "Browser-Chat verbinden",
           browserConnectDescription:
-            "Erlaube der Agent-Native Chrome-Erweiterung, diese Dispatch-Sitzung zu öffnen. Die Verbindung verwendet ein einmaliges, kurzlebiges Ticket.",
+            "Erlaube der FB Factory Chrome-Erweiterung, diese Dispatch-Sitzung zu öffnen. Die Verbindung verwendet ein einmaliges, kurzlebiges Ticket.",
           browserConnectInvalid:
             "Diese Verbindungsanfrage ist ungültig. Starte erneut über die Erweiterung.",
           browserConnectConnected:
@@ -2676,7 +2676,7 @@ export const messagesByLocale = {
           browserConnectConnecting: "Verbindung wird hergestellt…",
           browserConnectButton: "Verbinden",
           browserConnectOpenFromExtension:
-            "Öffne diese Seite über die Agent-Native Chrome-Erweiterung.",
+            "Öffne diese Seite über die FB Factory Chrome-Erweiterung.",
           browserConnectFailed:
             "Die Browser-Erweiterung konnte keine Verbindung herstellen.",
           suggestionWorkspaceHealth:
@@ -2803,7 +2803,7 @@ export const messagesByLocale = {
         openAgentSettings: "エージェントを管理",
         connectApps: "アプリを接続",
         connectAppsDescription:
-          "1 回のハンドオフで別の Agent-Native アプリにサインインします。",
+          "1 回のハンドオフで別の FB Factory アプリにサインインします。",
         openConnectApps: "アプリ接続を開く",
       },
       integrations: {
@@ -3108,12 +3108,12 @@ export const messagesByLocale = {
           chatPromptPlaceholder: "Dispatch にやりたいことを伝える…",
           browserChatUnavailableTitle: "ブラウザーチャットを利用できません",
           browserChatUnavailableDescription:
-            "Agent-Native ブラウザー拡張機能から再接続してください。",
+            "FB Factory ブラウザー拡張機能から再接続してください。",
           browserChatPlaceholder: "このページについて質問…",
           browserChatAttachedPlaceholder: "{{page}} について質問…",
           browserConnectTitle: "ブラウザーチャットを接続",
           browserConnectDescription:
-            "Agent-Native Chrome 拡張機能がこの Dispatch チャットを開くことを許可します。接続には一度だけ使える短期チケットを使用します。",
+            "FB Factory Chrome 拡張機能がこの Dispatch チャットを開くことを許可します。接続には一度だけ使える短期チケットを使用します。",
           browserConnectInvalid:
             "この接続リクエストは無効です。拡張機能からやり直してください。",
           browserConnectConnected:
@@ -3121,7 +3121,7 @@ export const messagesByLocale = {
           browserConnectConnecting: "接続中…",
           browserConnectButton: "接続",
           browserConnectOpenFromExtension:
-            "Agent-Native Chrome 拡張機能からこのページを開いてください。",
+            "FB Factory Chrome 拡張機能からこのページを開いてください。",
           browserConnectFailed: "ブラウザー拡張機能に接続できませんでした。",
           suggestionWorkspaceHealth: "現在のワークスペース状況を要約",
           suggestionOnboardingApp: "オンボーディング依頼用のアプリを作成",
@@ -3245,7 +3245,7 @@ export const messagesByLocale = {
         openAgentSettings: "에이전트 관리",
         connectApps: "앱 연결",
         connectAppsDescription:
-          "한 번의 핸드오프로 다른 Agent-Native 앱에 로그인합니다.",
+          "한 번의 핸드오프로 다른 FB Factory 앱에 로그인합니다.",
         openConnectApps: "앱 연결 열기",
       },
       integrations: {
@@ -3546,12 +3546,12 @@ export const messagesByLocale = {
           chatPromptPlaceholder: "Dispatch에 원하는 작업을 알려주세요…",
           browserChatUnavailableTitle: "브라우저 채팅 세션을 사용할 수 없음",
           browserChatUnavailableDescription:
-            "Agent-Native 브라우저 확장 프로그램에서 다시 연결하세요.",
+            "FB Factory 브라우저 확장 프로그램에서 다시 연결하세요.",
           browserChatPlaceholder: "이 페이지에 대해 질문…",
           browserChatAttachedPlaceholder: "{{page}}에 대해 질문…",
           browserConnectTitle: "브라우저 채팅 연결",
           browserConnectDescription:
-            "Agent-Native Chrome 확장 프로그램이 이 Dispatch 채팅 세션을 열도록 허용합니다. 연결에는 일회용 단기 티켓이 사용됩니다.",
+            "FB Factory Chrome 확장 프로그램이 이 Dispatch 채팅 세션을 열도록 허용합니다. 연결에는 일회용 단기 티켓이 사용됩니다.",
           browserConnectInvalid:
             "잘못된 연결 요청입니다. 확장 프로그램에서 다시 시작하세요.",
           browserConnectConnected:
@@ -3559,7 +3559,7 @@ export const messagesByLocale = {
           browserConnectConnecting: "연결 중…",
           browserConnectButton: "연결",
           browserConnectOpenFromExtension:
-            "Agent-Native Chrome 확장 프로그램에서 이 페이지를 여세요.",
+            "FB Factory Chrome 확장 프로그램에서 이 페이지를 여세요.",
           browserConnectFailed: "브라우저 확장 프로그램이 연결되지 않았습니다.",
           suggestionWorkspaceHealth: "현재 워크스페이스 상태 요약",
           suggestionOnboardingApp: "온보딩 요청용 앱 만들기",
@@ -3681,7 +3681,7 @@ export const messagesByLocale = {
         openAgentSettings: "Gerenciar agente",
         connectApps: "Conectar apps",
         connectAppsDescription:
-          "Entre em outro app Agent-Native com uma única transferência.",
+          "Entre em outro app FB Factory com uma única transferência.",
         openConnectApps: "Abrir Conectar apps",
       },
       integrations: {
@@ -3997,12 +3997,12 @@ export const messagesByLocale = {
           browserChatUnavailableTitle:
             "Sessão de chat do navegador indisponível",
           browserChatUnavailableDescription:
-            "Reconecte pela extensão Agent-Native.",
+            "Reconecte pela extensão FB Factory.",
           browserChatPlaceholder: "Pergunte sobre esta página…",
           browserChatAttachedPlaceholder: "Pergunte sobre {{page}}…",
           browserConnectTitle: "Conectar chat do navegador",
           browserConnectDescription:
-            "Permita que a extensão Agent-Native do Chrome abra esta sessão do Dispatch. A conexão usa um ticket único e de curta duração.",
+            "Permita que a extensão FB Factory do Chrome abra esta sessão do Dispatch. A conexão usa um ticket único e de curta duração.",
           browserConnectInvalid:
             "Esta solicitação de conexão é inválida. Recomece pela extensão.",
           browserConnectConnected:
@@ -4010,7 +4010,7 @@ export const messagesByLocale = {
           browserConnectConnecting: "Conectando…",
           browserConnectButton: "Conectar",
           browserConnectOpenFromExtension:
-            "Abra esta página pela extensão Agent-Native do Chrome.",
+            "Abra esta página pela extensão FB Factory do Chrome.",
           browserConnectFailed: "A extensão do navegador não se conectou.",
           suggestionWorkspaceHealth:
             "Resumir a integridade atual do espaço de trabalho",
@@ -4134,7 +4134,7 @@ export const messagesByLocale = {
           "एजेंट के मॉडल, API कुंजियों, आवाज़ और अन्य नियंत्रणों को प्रबंधित करें। शेड्यूल और इवेंट-ट्रिगर जॉब्स के लिए ऑटोमेशन पेज का उपयोग करें।",
         openAgentSettings: "एजेंट प्रबंधित करें",
         connectApps: "ऐप कनेक्ट करें",
-        connectAppsDescription: "एक हैंडऑफ से दूसरे Agent-Native ऐप में साइन इन करें।",
+        connectAppsDescription: "एक हैंडऑफ से दूसरे FB Factory ऐप में साइन इन करें।",
         openConnectApps: "कनेक्ट ऐप्स खोलें",
       },
       integrations: {
@@ -4432,19 +4432,19 @@ export const messagesByLocale = {
           chatPromptPlaceholder: "Dispatch को बताएं कि आप क्या करना चाहते हैं…",
           browserChatUnavailableTitle: "ब्राउज़र चैट सत्र उपलब्ध नहीं है",
           browserChatUnavailableDescription:
-            "Agent-Native ब्राउज़र एक्सटेंशन से फिर से कनेक्ट करें।",
+            "FB Factory ब्राउज़र एक्सटेंशन से फिर से कनेक्ट करें।",
           browserChatPlaceholder: "इस पेज के बारे में पूछें…",
           browserChatAttachedPlaceholder: "{{page}} के बारे में पूछें…",
           browserConnectTitle: "ब्राउज़र चैट कनेक्ट करें",
           browserConnectDescription:
-            "Agent-Native Chrome एक्सटेंशन को यह Dispatch चैट सत्र खोलने दें। कनेक्शन एक बार उपयोग होने वाला अल्पकालिक टिकट इस्तेमाल करता है।",
+            "FB Factory Chrome एक्सटेंशन को यह Dispatch चैट सत्र खोलने दें। कनेक्शन एक बार उपयोग होने वाला अल्पकालिक टिकट इस्तेमाल करता है।",
           browserConnectInvalid: "यह कनेक्शन अनुरोध अमान्य है। एक्सटेंशन से फिर शुरू करें।",
           browserConnectConnected:
             "ब्राउज़र चैट कनेक्ट हो गई है। आप यह टैब बंद कर सकते हैं।",
           browserConnectConnecting: "कनेक्ट हो रहा है…",
           browserConnectButton: "कनेक्ट करें",
           browserConnectOpenFromExtension:
-            "यह पेज Agent-Native Chrome एक्सटेंशन से खोलें।",
+            "यह पेज FB Factory Chrome एक्सटेंशन से खोलें।",
           browserConnectFailed: "ब्राउज़र एक्सटेंशन कनेक्ट नहीं हुआ।",
           suggestionWorkspaceHealth: "वर्तमान कार्यस्थान की स्थिति का सार बताएँ",
           suggestionOnboardingApp: "ऑनबोर्डिंग अनुरोधों के लिए ऐप बनाएँ",
@@ -4563,7 +4563,7 @@ export const messagesByLocale = {
         openAgentSettings: "إدارة الوكيل",
         connectApps: "توصيل التطبيقات",
         connectAppsDescription:
-          "سجّل الدخول إلى تطبيق Agent-Native آخر عبر عملية تسليم واحدة.",
+          "سجّل الدخول إلى تطبيق FB Factory آخر عبر عملية تسليم واحدة.",
         openConnectApps: "فتح توصيل التطبيقات",
       },
       integrations: {
@@ -4899,12 +4899,12 @@ export const messagesByLocale = {
           chatPromptPlaceholder: "أخبر Dispatch بما تريد إنجازه…",
           browserChatUnavailableTitle: "جلسة دردشة المتصفح غير متاحة",
           browserChatUnavailableDescription:
-            "أعد الاتصال من إضافة Agent-Native للمتصفح.",
+            "أعد الاتصال من إضافة FB Factory للمتصفح.",
           browserChatPlaceholder: "اسأل عن هذه الصفحة…",
           browserChatAttachedPlaceholder: "اسأل عن {{page}}…",
           browserConnectTitle: "ربط دردشة المتصفح",
           browserConnectDescription:
-            "اسمح لإضافة Agent-Native في Chrome بفتح جلسة Dispatch هذه. يستخدم الاتصال تذكرة قصيرة الأجل لمرة واحدة.",
+            "اسمح لإضافة FB Factory في Chrome بفتح جلسة Dispatch هذه. يستخدم الاتصال تذكرة قصيرة الأجل لمرة واحدة.",
           browserConnectInvalid:
             "طلب الاتصال هذا غير صالح. ابدأ مرة أخرى من الإضافة.",
           browserConnectConnected:
@@ -4912,7 +4912,7 @@ export const messagesByLocale = {
           browserConnectConnecting: "جارٍ الاتصال…",
           browserConnectButton: "اتصال",
           browserConnectOpenFromExtension:
-            "افتح هذه الصفحة من إضافة Agent-Native في Chrome.",
+            "افتح هذه الصفحة من إضافة FB Factory في Chrome.",
           browserConnectFailed: "لم تتصل إضافة المتصفح.",
           suggestionWorkspaceHealth: "لخّص حالة مساحة العمل الحالية",
           suggestionOnboardingApp: "أنشئ تطبيقًا لطلبات الإعداد",

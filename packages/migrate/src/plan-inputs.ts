@@ -337,7 +337,7 @@ export function migrationPlanInputTasks(
       targetIds: matchingRouteIds(ir, rule.pattern),
       summary:
         rule.notes ??
-        "Preserve explicit route ownership so Builder pages, Builder sections, Agent-Native routes, headless routes, and manual exceptions do not blur together during the sweep.",
+        "Preserve explicit route ownership so Builder pages, Builder sections, FB Factory routes, headless routes, and manual exceptions do not blur together during the sweep.",
     });
   }
 
